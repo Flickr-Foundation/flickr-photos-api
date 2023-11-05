@@ -64,7 +64,7 @@ This library was created for use in [Flinumeratr](), [Flickypedia], and other [F
     def get_photos_with_tag(tag: str) -> CollectionOfPhotos: ...
     ```
     
-    Methods that return collections of photos also support `page` and `per_page` parameters to control paginaton.
+    Methods that return collections of photos also support `page` and `per_page` parameters to control pagination.
 
 [key]: https://www.flickr.com/services/api/misc.api_keys.html
 
