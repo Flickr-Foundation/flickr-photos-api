@@ -23,12 +23,12 @@ from flickr_photos_api._types import User
 )
 def test_methods_fail_if_not_found(
     api: FlickrPhotosApi, method: str, params: Dict[str, str]
-):
+) -> None:
     with pytest.raises(ResourceNotFound):
         getattr(api, method)(**params)
 
 
-def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str):
+def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
     api = FlickrPhotosApi(api_key="doesnotexist", user_agent=user_agent)
 
     with pytest.raises(FlickrApiException):

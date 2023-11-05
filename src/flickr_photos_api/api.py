@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 import httpx
 
 from .exceptions import FlickrApiException, LicenseNotFound, ResourceNotFound
+from .utils import find_required_elem, find_required_text
 from ._types import License, User
 
 
@@ -25,9 +26,7 @@ class BaseApi:
         )
 
     def call(self, method: str, **params: Union[str, int]) -> ET.Element:
-        params["method"] = method
-
-        resp = self.client.get(url="", params=params)
+        resp = self.client.get(url="", params={"method": method, **params})
         resp.raise_for_status()
 
         # Note: the xml.etree.ElementTree is not secure against maliciously
@@ -50,13 +49,13 @@ class BaseApi:
         # Different API endpoints have different codes, and so we just throw
         # and let calling functions decide how to handle it.
         if xml.attrib["stat"] == "fail":
-            errors = xml.find(".//err").attrib
+            errors = find_required_elem(xml, path=".//err").attrib
 
             # Although I haven't found any explicit documentation of this,
             # it seems like a pretty common convention that error code "1"
             # means "not found".
             if errors["code"] == "1":
-                raise ResourceNotFound(**params)
+                raise ResourceNotFound(method, **params)
             else:
                 raise FlickrApiException(errors)
 
@@ -73,7 +72,7 @@ class FlickrPhotosApi(BaseApi):
         """
         license_resp = self.call("flickr.photos.licenses.getInfo")
 
-        result = {}
+        result: Dict[str, License] = {}
 
         # Add a short ID which can be used to more easily refer to this
         # license throughout the codebase.
@@ -156,8 +155,8 @@ class FlickrPhotosApi(BaseApi):
         #       	<username>The British Library</username>
         #       </user>
         #
-        resp = self.call("flickr.urls.lookupUser", url=url)
-        user_id = resp.find(".//user").attrib["id"]
+        lookup_resp = self.call("flickr.urls.lookupUser", url=url)
+        user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         # The getInfo response is of the form:
 
@@ -169,15 +168,19 @@ class FlickrPhotosApi(BaseApi):
         #       …
         #     </person>
         #
-        resp = self.call("flickr.people.getInfo", user_id=user_id)
-        username = resp.find(".//username").text
-        photos_url = resp.find(".//photosurl").text
-        profile_url = resp.find(".//profileurl").text
+        info_resp = self.call("flickr.people.getInfo", user_id=user_id)
+        username = find_required_text(info_resp, path=".//username")
+        photos_url = find_required_text(info_resp, path=".//photosurl")
+        profile_url = find_required_text(info_resp, path=".//profileurl")
 
-        try:
-            realname = resp.find(".//realname").text
-        except AttributeError:
+        # If the user hasn't set a realname in their profile, the element
+        # will be absent from the response.
+        realname_elem = info_resp.find(path=".//realname")
+
+        if realname_elem is None:
             realname = None
+        else:
+            realname = realname_elem.text
 
         return {
             "id": user_id,

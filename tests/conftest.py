@@ -46,7 +46,7 @@ def vcr_cassette(cassette_name: str) -> Generator[None, None, None]:
 
 
 @pytest.fixture(scope="function")
-def api(cassette_name: str, user_agent: str) -> FlickrPhotosApi:
+def api(cassette_name: str, user_agent: str) -> Generator[FlickrPhotosApi, None, None]:
     """
     Creates an instance of the FlickrPhotosApi class for use in tests.
 
