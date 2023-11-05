@@ -1,3 +1,4 @@
+import datetime
 from typing import Dict
 
 import pytest
@@ -9,6 +10,7 @@ from flickr_photos_api.exceptions import (
     ResourceNotFound,
 )
 from flickr_photos_api._types import User
+from utils import get_fixture, jsonify
 
 
 @pytest.mark.parametrize(
@@ -18,6 +20,11 @@ from flickr_photos_api._types import User
             "lookup_user_by_url",
             {"url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
             id="lookup_user_by_url",
+        ),
+        pytest.param(
+            "get_single_photo",
+            {"photo_id": "12345678901234567890"},
+            id="get_single_photo",
         ),
     ],
 )
@@ -150,3 +157,64 @@ class TestLicenses:
 )
 def test_lookup_user_by_url(api: FlickrPhotosApi, url: str, user: User) -> None:
     assert api.lookup_user_by_url(url=url) == user
+
+
+class TestGetSinglePhoto:
+    def test_can_get_single_photo(self, api: FlickrPhotosApi) -> None:
+        resp = api.get_single_photo(photo_id="32812033543")
+
+        assert jsonify(resp) == get_fixture(filename="32812033543.json")
+
+    def test_sets_realname_to_none_if_empty(self, api: FlickrPhotosApi) -> None:
+        info = api.get_single_photo(photo_id="31073485032")
+
+        assert info["owner"]["realname"] is None
+
+    def test_sets_granularity_on_date_taken(self, api: FlickrPhotosApi) -> None:
+        info = api.get_single_photo(photo_id="5240741057")
+
+        assert info["date_taken"] == {
+            "value": datetime.datetime(1950, 1, 1, 0, 0, 0),
+            "granularity": "6",
+            "unknown": False,
+        }
+
+    def test_sets_date_unknown_on_date_taken(self, api: FlickrPhotosApi) -> None:
+        info = api.get_single_photo(photo_id="25868667441")
+
+        assert info["date_taken"] == {
+            "value": datetime.datetime(2016, 3, 21, 16, 15, 39),
+            "granularity": "0",
+            "unknown": True,
+        }
+
+    def test_gets_photo_description(self, api: FlickrPhotosApi) -> None:
+        photo = api.get_single_photo(photo_id="53248070597")
+        assert photo["description"] == "Paris Montmartre"
+
+    def test_empty_photo_description_is_none(self, api: FlickrPhotosApi) -> None:
+        photo = api.get_single_photo(photo_id="5536044022")
+        assert photo["description"] is None
+
+    def test_gets_photo_title(self, api: FlickrPhotosApi) -> None:
+        photo_with_title = api.get_single_photo(photo_id="20428374183")
+        assert photo_with_title["title"] == "Hapjeong"
+
+    def test_empty_photo_title_is_none(self, api: FlickrPhotosApi) -> None:
+        photo_without_title = api.get_single_photo(photo_id="20967567081")
+        assert photo_without_title["title"] is None
+
+    @pytest.mark.parametrize(
+        ["photo_id", "original_format"],
+        [
+            ("53248070597", None),
+            ("32812033543", "jpg"),
+            ("12533665685", "png"),
+            ("4079570071", "gif"),
+        ],
+    )
+    def test_gets_original_format(
+        self, api: FlickrPhotosApi, photo_id: str, original_format: str
+    ) -> None:
+        photo = api.get_single_photo(photo_id=photo_id)
+        assert photo["original_format"] == original_format

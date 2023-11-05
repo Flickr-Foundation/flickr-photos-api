@@ -1,8 +1,13 @@
+from typing import Optional
 import xml.etree.ElementTree as ET
 
 import pytest
 
-from flickr_photos_api.utils import find_required_elem, find_required_text
+from flickr_photos_api.utils import (
+    find_optional_text,
+    find_required_elem,
+    find_required_text,
+)
 
 
 XML = ET.fromstring(
@@ -11,6 +16,7 @@ XML = ET.fromstring(
     <greeting>
         <english>Hello world</english>
         <french/>
+        <hungarian></hungarian>
     </greeting>""".strip()
 )
 
@@ -38,3 +44,16 @@ def test_find_required_text_throws_if_finds_element_without_text() -> None:
 def test_find_required_text_throws_if_cannot_find_element() -> None:
     with pytest.raises(ValueError, match="Could not find required match"):
         find_required_text(XML, path=".//german")
+
+
+@pytest.mark.parametrize(
+    ["path", "expected"],
+    [
+        ("english", "Hello world"),
+        ("french", None),
+        ("german", None),
+        ("hungarian", None),
+    ],
+)
+def test_find_optional_text(path: str, expected: Optional[str]) -> None:
+    assert find_optional_text(XML, path=path) == expected

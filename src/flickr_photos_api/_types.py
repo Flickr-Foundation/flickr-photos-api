@@ -1,5 +1,6 @@
+import datetime
 import sys
-from typing import Optional
+from typing import List, Optional
 
 # See https://mypy.readthedocs.io/en/stable/runtime_troubles.html#using-new-additions-to-the-typing-module
 # See https://github.com/python/mypy/issues/8520
@@ -21,3 +22,32 @@ class User(TypedDict):
     realname: Optional[str]
     photos_url: str
     profile_url: str
+
+
+class DateTaken(TypedDict):
+    value: datetime.datetime
+    granularity: str
+    unknown: bool
+
+
+class Size(TypedDict):
+    label: str
+    width: int
+    height: int
+    media: str
+    source: str
+    url: str
+
+
+class SinglePhoto(TypedDict):
+    id: str
+    title: Optional[str]
+    description: Optional[str]
+    owner: User
+    date_posted: datetime.datetime
+    date_taken: DateTaken
+    safety_level: str
+    license: License
+    url: str
+    sizes: List[Size]
+    original_format: Optional[str]

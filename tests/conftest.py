@@ -15,18 +15,51 @@ def user_agent() -> str:
 
 @pytest.fixture(scope="function")
 def cassette_name(request: FixtureRequest) -> str:
-    # By default we use the name of the test as the cassette name,
-    # but if it's a test parametrised with @pytest.mark.parametrize,
-    # we include the parameter name to distinguish cassettes.
+    """
+    Returns the name of a cassette for vcr.py.
+
+    The name can be made up of (up to) three parts:
+
+    -   the name of the test class
+    -   the name of the test function
+    -   the ID of the test case in @pytest.mark.parametrize
+
+    """
+    name_parts = []
+
+    # The node ID gives us the relative path to the test file, the
+    # class name (if running in a class), and the function name.
+    #
+    # Prepend cassettes with their class name -- this avoids tests
+    # with the same function name in different classes from getting
+    # overlapping cassettes.
+    #
+    # Examples of request.node.nodeid:
+    #
+    #     tests/test_api.py::test_it_throws_if_bad_auth
+    #     tests/test_api.py::test_lookup_user_by_url[obamawhitehouse]
+    #
+    # See https://stackoverflow.com/a/68804077/1558022
+    node_id = request.node.nodeid.split("::")
+    if len(node_id) == 3:
+        test_class_name = node_id[1]
+        name_parts.append(test_class_name)
+
+    # Then add the name of the test function.
     #
     # See https://stackoverflow.com/a/67056955/1558022 for more info
     # on how this works.
     function_name = request.function.__name__
+    name_parts.append(function_name)
 
+    # Finally, add the name of the test case in @pytest.mark.parametrize,
+    # if there is one.
     try:
-        return f"{function_name}.{request.node.callspec.id}.yml"
-    except AttributeError:
-        return f"{function_name}.yml"
+        name_parts.append(request.node.callspec.id)
+    except AttributeError:  # not in a parametrised test
+        pass
+
+    return ".".join(name_parts) + ".yml"
 
 
 @pytest.fixture(scope="function")

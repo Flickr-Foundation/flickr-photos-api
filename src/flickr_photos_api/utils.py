@@ -1,9 +1,11 @@
+import datetime
+from typing import Optional
 import xml.etree.ElementTree as ET
 
 
 def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
     """
-    Find the first subelement matching ``match``, or throw if absent.
+    Find the first subelement matching ``path``, or throw if absent.
     """
     # We use this when we're parsing responses from the Flickr API, and
     # there are certain elements we know should always be present in responses.
@@ -31,7 +33,7 @@ def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
 
 def find_required_text(elem: ET.Element, *, path: str) -> str:
     """
-    Find the text of the first element matching ``match``, or throw if absent.
+    Find the text of the first element matching ``path``, or throw if absent.
     """
     # We use this when we're parsing responses from the Flickr API, and
     # there are certain elements we know should always be present and have text.
@@ -56,3 +58,38 @@ def find_required_text(elem: ET.Element, *, path: str) -> str:
         raise ValueError(f"Could not find required text in {matching_elem}")
 
     return text
+
+
+def find_optional_text(elem: ET.Element, *, path: str) -> Optional[str]:
+    """
+    Find the text of the first element matching ``path``, or return None
+    if the element is missing, has no text, or has empty text.
+    """
+    matching_elem = elem.find(path=path)
+
+    if matching_elem is None:
+        return None
+
+    return matching_elem.text or None
+
+
+def parse_date_posted(p: str) -> datetime.datetime:
+    # See https://www.flickr.com/services/api/misc.dates.html
+    #
+    #     The posted date is always passed around as a unix timestamp,
+    #     which is an unsigned integer specifying the number of seconds
+    #     since Jan 1st 1970 GMT.
+    #
+    # e.g. '1490376472'
+    return datetime.datetime.fromtimestamp(int(p), tz=datetime.timezone.utc)
+
+
+def parse_date_taken(p: str) -> datetime.datetime:
+    # See https://www.flickr.com/services/api/misc.dates.html
+    #
+    #     The date taken should always be displayed in the timezone
+    #     of the photo owner, which is to say, don't perform
+    #     any conversion on it.
+    #
+    # e.g. '2017-02-17 00:00:00'
+    return datetime.datetime.strptime(p, "%Y-%m-%d %H:%M:%S")
