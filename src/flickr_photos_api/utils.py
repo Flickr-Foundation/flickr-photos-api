@@ -2,7 +2,7 @@ import datetime
 from typing import Dict, Optional
 import xml.etree.ElementTree as ET
 
-from ._types import SafetyLevel
+from ._types import SafetyLevel, TakenGranularity
 
 
 def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
@@ -97,10 +97,30 @@ def parse_date_taken(p: str) -> datetime.datetime:
     return datetime.datetime.strptime(p, "%Y-%m-%d %H:%M:%S")
 
 
-def to_safety_level(s: str) -> SafetyLevel:
+def parse_date_taken_granularity(g: str) -> TakenGranularity:
+    """
+    Converts a numeric granularity level in the Flickr API into a
+    human-readable value.
+
+    See https://www.flickr.com/services/api/misc.dates.html
+    """
+    lookup_table: Dict[str, TakenGranularity] = {
+        "0": "second",
+        "4": "month",
+        "6": "year",
+        "8": "circa",
+    }
+
+    try:
+        return lookup_table[g]
+    except KeyError:
+        raise ValueError(f"Unrecognised date granularity: {g}")
+
+
+def parse_safety_level(s: str) -> SafetyLevel:
     """
     Converts a numeric safety level ID in the Flickr API into
-    a human-readable string.
+    a human-readable value.
 
     See https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters
     """

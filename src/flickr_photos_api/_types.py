@@ -1,6 +1,6 @@
 import datetime
 import sys
-from typing import List, Literal, Optional
+from typing import List, Literal, Optional, Union
 
 # See https://mypy.readthedocs.io/en/stable/runtime_troubles.html#using-new-additions-to-the-typing-module
 # See https://github.com/python/mypy/issues/8520
@@ -24,10 +24,23 @@ class User(TypedDict):
     profile_url: str
 
 
-class DateTaken(TypedDict):
+# Represents the accuracy to which we know a date taken to be true.
+#
+# See https://www.flickr.com/services/api/misc.dates.html
+TakenGranularity = Literal["second", "month", "year", "circa"]
+
+
+class KnownDateTaken(TypedDict):
     value: datetime.datetime
-    granularity: str
-    unknown: bool
+    granularity: TakenGranularity
+    unknown: Literal[False]
+
+
+class UnknownDateTaken(TypedDict):
+    unknown: Literal[True]
+
+
+DateTaken = Union[KnownDateTaken, UnknownDateTaken]
 
 
 class Size(TypedDict):

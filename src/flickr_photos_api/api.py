@@ -11,9 +11,16 @@ from .utils import (
     find_required_text,
     parse_date_posted,
     parse_date_taken,
-    to_safety_level,
+    parse_date_taken_granularity,
+    parse_safety_level,
 )
-from ._types import DateTaken, License, SinglePhoto, Size, User
+from ._types import (
+    DateTaken,
+    License,
+    SinglePhoto,
+    Size,
+    User,
+)
 
 
 class BaseApi:
@@ -251,11 +258,15 @@ class FlickrPhotosApi(BaseApi):
 
         date_posted = parse_date_posted(dates["posted"])
 
-        date_taken: DateTaken = {
-            "value": parse_date_taken(dates["taken"]),
-            "granularity": dates["takengranularity"],
-            "unknown": dates["takenunknown"] == "1",
-        }
+        date_taken: DateTaken
+        if dates["takenunknown"] == "1":
+            date_taken = {"unknown": True}
+        else:
+            date_taken = {
+                "value": parse_date_taken(dates["taken"]),
+                "granularity": parse_date_taken_granularity(dates["takengranularity"]),
+                "unknown": False,
+            }
 
         photo_page_url = find_required_text(
             photo_elem, path='.//urls/url[@type="photopage"]'
@@ -263,7 +274,7 @@ class FlickrPhotosApi(BaseApi):
 
         license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
 
-        safety_level = to_safety_level(photo_elem.attrib["safety_level"])
+        safety_level = parse_safety_level(photo_elem.attrib["safety_level"])
 
         # The originalformat parameter will only be returned if the user
         # allows downloads of the photo.
