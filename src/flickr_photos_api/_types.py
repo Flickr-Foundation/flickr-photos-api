@@ -1,13 +1,13 @@
 import datetime
 import sys
-from typing import List, Literal, Optional, Union
+from typing import List, Optional, Union
 
 # See https://mypy.readthedocs.io/en/stable/runtime_troubles.html#using-new-additions-to-the-typing-module
 # See https://github.com/python/mypy/issues/8520
 if sys.version_info >= (3, 8):
-    from typing import TypedDict
+    from typing import Literal, TypedDict
 else:
-    from typing_extensions import TypedDict
+    from typing_extensions import Literal, TypedDict
 
 
 class License(TypedDict):
