@@ -47,6 +47,11 @@ from utils import get_fixture, jsonify
             {"gallery_id": "12345678901234567890"},
             id="get_photos_in_gallery",
         ),
+        pytest.param(
+            "get_public_photos_by_user",
+            {"user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
+            id="get_public_photos_by_non_existent_user",
+        ),
     ],
 )
 def test_methods_fail_if_not_found(
@@ -354,6 +359,14 @@ def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
     assert jsonify(resp) == get_fixture(filename="gallery-72157677773252346.json")
 
 
+def test_get_public_photos_by_user(api: FlickrPhotosApi) -> None:
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/george"
+    )
+
+    assert jsonify(resp) == get_fixture(filename="user-george.json")
+
+
 @pytest.mark.parametrize(
     ["method", "kwargs"],
     [
@@ -369,6 +382,11 @@ def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
             "get_photos_in_gallery",
             {"gallery_id": "72157720932863274"},
             id="get_photos_in_gallery",
+        ),
+        pytest.param(
+            "get_public_photos_by_user",
+            {"user_url": "https://www.flickr.com/photos/george/"},
+            id="get_public_photos_by_user",
         ),
     ],
 )

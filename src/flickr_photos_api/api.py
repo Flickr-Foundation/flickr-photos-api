@@ -521,3 +521,29 @@ class FlickrPhotosApi(BaseApi):
             "total_photos": parsed_resp["total_photos"],
             "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }
+
+    def get_public_photos_by_user(
+        self, user_url: str, page: int = 1, per_page: int = 10
+    ) -> CollectionOfPhotos:
+        """
+        Get all the public photos by a user on Flickr.
+        """
+        user = self.lookup_user_by_url(url=user_url)
+
+        print(user["id"])
+
+        # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
+        photos_resp = self.call(
+            "flickr.people.getPublicPhotos",
+            user_id=user["id"],
+            extras=",".join(self.extras),
+            page=page,
+            per_page=per_page,
+        )
+
+        def get_owner(photo_elem: ET.Element) -> User:
+            return user
+
+        return self._parse_collection_of_photos_response(
+            find_required_elem(photos_resp, path=".//photos"), get_owner=get_owner
+        )
