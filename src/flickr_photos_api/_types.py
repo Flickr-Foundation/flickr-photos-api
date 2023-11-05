@@ -93,3 +93,12 @@ class GalleryInfo(TypedDict):
 
 class PhotosInGallery(CollectionOfPhotos):
     gallery: GalleryInfo
+
+
+class GroupInfo(TypedDict):
+    id: str
+    name: str
+
+
+class PhotosInGroup(CollectionOfPhotos):
+    group: GroupInfo

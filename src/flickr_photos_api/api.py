@@ -1,5 +1,5 @@
 import functools
-from typing import Callable, Dict, List, Union
+from typing import Dict, List, Optional, Union
 import xml.etree.ElementTree as ET
 
 import httpx
@@ -18,9 +18,11 @@ from .utils import (
 from ._types import (
     CollectionOfPhotos,
     DateTaken,
+    GroupInfo,
     License,
     PhotosInAlbum,
     PhotosInGallery,
+    PhotosInGroup,
     SinglePhoto,
     Size,
     User,
@@ -386,10 +388,13 @@ class FlickrPhotosApi(BaseApi):
         "url_l",  # Large
         "description",
         "safety_level",
+        "realname",
     ]
 
     def _parse_collection_of_photos_response(
-        self, elem: ET.Element, get_owner: Callable[[ET.Element], User]
+        self,
+        elem: ET.Element,
+        collection_owner: Optional[User] = None,
     ) -> CollectionOfPhotos:
         # The wrapper element includes a couple of attributes related
         # to pagination, e.g.
@@ -407,7 +412,22 @@ class FlickrPhotosApi(BaseApi):
             title = photo_elem.attrib["title"] or None
             description = find_optional_text(photo_elem, path="description")
 
-            owner = get_owner(photo_elem)
+            owner: User
+            if collection_owner is None:
+                path_alias = (
+                    photo_elem.attrib.get("pathalias") or photo_elem.attrib["owner"]
+                )
+
+                owner = {
+                    "id": photo_elem.attrib["owner"],
+                    "username": photo_elem.attrib["ownername"],
+                    "realname": photo_elem.attrib.get("realname") or None,
+                    "photos_url": f"https://www.flickr.com/photos/{path_alias}/",
+                    "profile_url": f"https://www.flickr.com/people/{path_alias}/",
+                }
+            else:
+                owner = collection_owner
+
             assert owner["photos_url"].endswith("/")
             url = owner["photos_url"] + photo_id + "/"
 
@@ -459,11 +479,8 @@ class FlickrPhotosApi(BaseApi):
             per_page=per_page,
         )
 
-        def get_owner(photo_elem: ET.Element) -> User:
-            return user
-
         parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photoset"), get_owner=get_owner
+            find_required_elem(resp, path=".//photoset"), collection_owner=user
         )
 
         # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
@@ -495,19 +512,8 @@ class FlickrPhotosApi(BaseApi):
             per_page=per_page,
         )
 
-        def get_owner(photo_elem: ET.Element) -> User:
-            path_alias = photo_elem.attrib["pathalias"] or photo_elem.attrib["owner"]
-
-            return {
-                "id": photo_elem.attrib["owner"],
-                "username": photo_elem.attrib["ownername"],
-                "realname": None,
-                "photos_url": f"https://www.flickr.com/photos/{path_alias}/",
-                "profile_url": f"https://www.flickr.com/people/{path_alias}/",
-            }
-
         parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photos"), get_owner=get_owner
+            find_required_elem(resp, path=".//photos")
         )
 
         gallery_elem = find_required_elem(resp, path=".//gallery")
@@ -530,8 +536,6 @@ class FlickrPhotosApi(BaseApi):
         """
         user = self.lookup_user_by_url(url=user_url)
 
-        print(user["id"])
-
         # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
         photos_resp = self.call(
             "flickr.people.getPublicPhotos",
@@ -541,9 +545,78 @@ class FlickrPhotosApi(BaseApi):
             per_page=per_page,
         )
 
-        def get_owner(photo_elem: ET.Element) -> User:
-            return user
+        return self._parse_collection_of_photos_response(
+            find_required_elem(photos_resp, path=".//photos"), collection_owner=user
+        )
+
+    def lookup_group_from_url(self, *, url: str) -> GroupInfo:
+        """
+        Given the link to a group's photos or profile, return some info.
+        """
+        resp = self.call("flickr.urls.lookupGroup", url=url)
+
+        # The lookupUser response is of the form:
+        #
+        #       <group id="34427469792@N01">
+        #         <groupname>FlickrCentral</groupname>
+        #       </group>
+        #
+        group_elem = find_required_elem(resp, path=".//group")
+
+        return {
+            "id": group_elem.attrib["id"],
+            "name": find_required_text(group_elem, path="groupname"),
+        }
+
+    def get_photos_in_group_pool(
+        self, group_url: str, page: int = 1, per_page: int = 10
+    ) -> PhotosInGroup:
+        """
+        Get all the photos in a group pool.
+        """
+        group_info = self.lookup_group_from_url(url=group_url)
+
+        # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
+        photos_resp = self.call(
+            "flickr.groups.pools.getPhotos",
+            group_id=group_info["id"],
+            extras=",".join(self.extras),
+            page=page,
+            per_page=per_page,
+        )
+
+        parsed_resp = self._parse_collection_of_photos_response(
+            find_required_elem(photos_resp, path=".//photos")
+        )
+
+        return {
+            "photos": parsed_resp["photos"],
+            "page_count": parsed_resp["page_count"],
+            "total_photos": parsed_resp["total_photos"],
+            "group": group_info,
+        }
+
+    def get_photos_with_tag(
+        self, tag: str, page: int = 1, per_page: int = 10
+    ) -> CollectionOfPhotos:
+        """
+        Get all the photos that use a given tag.
+        """
+        resp = self.call(
+            "flickr.photos.search",
+            tags=tag,
+            # This is so we get the same photos as you see on the "tag" page
+            # under "All Photos Tagged XYZ" -- if you click the URL to the
+            # full search results, you end up on a page like:
+            #
+            #     https://flickr.com/search/?sort=interestingness-desc&…
+            #
+            sort="interestingness-desc",
+            extras=",".join(self.extras),
+            page=page,
+            per_page=per_page,
+        )
 
         return self._parse_collection_of_photos_response(
-            find_required_elem(photos_resp, path=".//photos"), get_owner=get_owner
+            find_required_elem(resp, path=".//photos")
         )

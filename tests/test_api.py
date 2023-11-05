@@ -52,6 +52,11 @@ from utils import get_fixture, jsonify
             {"user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
             id="get_public_photos_by_non_existent_user",
         ),
+        pytest.param(
+            "get_photos_in_group_pool",
+            {"group_url": "https://www.flickr.com/groups/doesnotexist/pool/"},
+            id="get_photos_in_non_existent_group_pool",
+        ),
     ],
 )
 def test_methods_fail_if_not_found(
@@ -367,6 +372,20 @@ def test_get_public_photos_by_user(api: FlickrPhotosApi) -> None:
     assert jsonify(resp) == get_fixture(filename="user-george.json")
 
 
+def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
+    resp = api.get_photos_in_group_pool(
+        group_url="https://www.flickr.com/groups/slovenia/pool/"
+    )
+
+    assert jsonify(resp) == get_fixture(filename="group-slovenia.json")
+
+
+def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
+    resp = api.get_photos_with_tag(tag="sunset")
+
+    assert jsonify(resp) == get_fixture(filename="tag-sunset.json")
+
+
 @pytest.mark.parametrize(
     ["method", "kwargs"],
     [
@@ -387,6 +406,14 @@ def test_get_public_photos_by_user(api: FlickrPhotosApi) -> None:
             "get_public_photos_by_user",
             {"user_url": "https://www.flickr.com/photos/george/"},
             id="get_public_photos_by_user",
+        ),
+        pytest.param(
+            "get_photos_in_group_pool",
+            {"group_url": "https://www.flickr.com/groups/slovenia/pool/"},
+            id="get_photos_in_group_pool",
+        ),
+        pytest.param(
+            "get_photos_with_tag", {"tag": "sunset"}, id="get_photos_with_tag"
         ),
     ],
 )
