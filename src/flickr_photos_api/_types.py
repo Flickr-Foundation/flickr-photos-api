@@ -13,3 +13,11 @@ class License(TypedDict):
     id: str
     label: str
     url: Optional[str]
+
+
+class User(TypedDict):
+    id: str
+    username: str
+    realname: Optional[str]
+    photos_url: str
+    profile_url: str

@@ -1,10 +1,11 @@
 import functools
-from typing import Union
+from typing import Dict, Union
 import xml.etree.ElementTree as ET
 
 import httpx
 
 from .exceptions import FlickrApiException, LicenseNotFound, ResourceNotFound
+from ._types import License, User
 
 
 class BaseApi:
@@ -64,7 +65,7 @@ class BaseApi:
 
 class FlickrPhotosApi(BaseApi):
     @functools.lru_cache
-    def get_licenses(self):
+    def get_licenses(self) -> Dict[str, License]:
         """
         Returns a list of licenses, arranged by code.
 
@@ -110,7 +111,7 @@ class FlickrPhotosApi(BaseApi):
         return result
 
     @functools.lru_cache(maxsize=None)
-    def lookup_license_by_id(self, *, id: str):
+    def lookup_license_by_id(self, *, id: str) -> License:
         """
         Given a license ID from the Flickr API, return the license data.
 
@@ -120,7 +121,7 @@ class FlickrPhotosApi(BaseApi):
 
         Then you'd call this function to find out what that means:
 
-            >>> api.lookup_license_by_id(license_id="0")
+            >>> api.lookup_license_by_id(id="0")
             {"id": "in-copyright", "name": "All Rights Reserved", "url": None}
 
         See https://www.flickr.com/services/api/flickr.photos.licenses.getInfo.htm
@@ -131,3 +132,57 @@ class FlickrPhotosApi(BaseApi):
             return licenses[id]
         except KeyError:
             raise LicenseNotFound(license_id=id)
+
+    def lookup_user_by_url(self, *, url: str) -> User:
+        """
+        Given the link to a user's photos or profile, return their info.
+
+            >>> api.lookup_user_by_url(user_url="https://www.flickr.com/photos/britishlibrary/")
+            {
+                "id": "12403504@N02",
+                "username": "The British Library",
+                "realname": "British Library",
+                "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                "profile_url": "https://www.flickr.com/people/britishlibrary/",
+            }
+
+        See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
+        See https://www.flickr.com/services/api/flickr.people.getInfo.htm
+
+        """
+        # The lookupUser response is of the form:
+        #
+        #       <user id="12403504@N02">
+        #       	<username>The British Library</username>
+        #       </user>
+        #
+        resp = self.call("flickr.urls.lookupUser", url=url)
+        user_id = resp.find(".//user").attrib["id"]
+
+        # The getInfo response is of the form:
+
+        #     <person id="12403504@N02"…">
+        #   	<username>The British Library</username>
+        #       <realname>British Library</realname>
+        #       <photosurl>https://www.flickr.com/photos/britishlibrary/</photosurl>
+        #       <profileurl>https://www.flickr.com/people/britishlibrary/</profileurl>
+        #       …
+        #     </person>
+        #
+        resp = self.call("flickr.people.getInfo", user_id=user_id)
+        username = resp.find(".//username").text
+        photos_url = resp.find(".//photosurl").text
+        profile_url = resp.find(".//profileurl").text
+
+        try:
+            realname = resp.find(".//realname").text
+        except AttributeError:
+            realname = None
+
+        return {
+            "id": user_id,
+            "username": username,
+            "realname": realname,
+            "photos_url": photos_url,
+            "profile_url": profile_url,
+        }

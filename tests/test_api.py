@@ -1,7 +1,38 @@
+from typing import Dict
+
 import pytest
 
 from flickr_photos_api import FlickrPhotosApi
-from flickr_photos_api.exceptions import LicenseNotFound
+from flickr_photos_api.exceptions import (
+    FlickrApiException,
+    LicenseNotFound,
+    ResourceNotFound,
+)
+from flickr_photos_api._types import User
+
+
+@pytest.mark.parametrize(
+    ["method", "params"],
+    [
+        pytest.param(
+            "lookup_user_by_url",
+            {"url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
+            id="lookup_user_by_url",
+        ),
+    ],
+)
+def test_methods_fail_if_not_found(
+    api: FlickrPhotosApi, method: str, params: Dict[str, str]
+):
+    with pytest.raises(ResourceNotFound):
+        getattr(api, method)(**params)
+
+
+def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str):
+    api = FlickrPhotosApi(api_key="doesnotexist", user_agent=user_agent)
+
+    with pytest.raises(FlickrApiException):
+        api.lookup_user_by_url(url="https://www.flickr.com/photos/flickr/")
 
 
 class TestLicenses:
@@ -70,3 +101,52 @@ class TestLicenses:
     def test_throws_license_not_found_for_bad_id(self, api: FlickrPhotosApi) -> None:
         with pytest.raises(LicenseNotFound, match="ID -1"):
             api.lookup_license_by_id(id="-1")
+
+
+@pytest.mark.parametrize(
+    ["url", "user"],
+    [
+        # A user who doesn't have a "realname" assigned
+        pytest.param(
+            "https://www.flickr.com/photos/35591378@N03",
+            {
+                "id": "35591378@N03",
+                "username": "Obama White House Archived",
+                "realname": None,
+                "photos_url": "https://www.flickr.com/photos/obamawhitehouse/",
+                "profile_url": "https://www.flickr.com/people/obamawhitehouse/",
+            },
+            id="obamawhitehouse",
+        ),
+        # A user who has a username, but their username is different from
+        # their path alias.
+        #
+        # i.e. although the user URL ends 'britishlibrary', if you look up
+        # the user with username 'britishlibrary' you'll find somebody different.
+        pytest.param(
+            "https://www.flickr.com/photos/britishlibrary/",
+            {
+                "id": "12403504@N02",
+                "username": "The British Library",
+                "realname": "British Library",
+                "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                "profile_url": "https://www.flickr.com/people/britishlibrary/",
+            },
+            id="britishlibrary",
+        ),
+        # A user URL that uses the numeric ID rather than a path alias.
+        pytest.param(
+            "https://www.flickr.com/photos/199246608@N02",
+            {
+                "id": "199246608@N02",
+                "username": "cefarrjf87",
+                "realname": "Alex Chan",
+                "photos_url": "https://www.flickr.com/photos/199246608@N02/",
+                "profile_url": "https://www.flickr.com/people/199246608@N02/",
+            },
+            id="199246608@N02",
+        ),
+    ],
+)
+def test_lookup_user_by_url(api: FlickrPhotosApi, url: str, user: User) -> None:
+    assert api.lookup_user_by_url(url=url) == user
