@@ -26,13 +26,31 @@ from utils import get_fixture, jsonify
             {"photo_id": "12345678901234567890"},
             id="get_single_photo",
         ),
+        pytest.param(
+            "get_photos_in_album",
+            {
+                "user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist",
+                "album_id": "1234",
+            },
+            id="get_photos_in_album_with_missing_user",
+        ),
+        pytest.param(
+            "get_photos_in_album",
+            {
+                "user_url": "https://www.flickr.com/photos/britishlibrary/",
+                "album_id": "12345678901234567890",
+            },
+            id="get_photos_in_album_with_missing_album",
+        ),
     ],
 )
 def test_methods_fail_if_not_found(
     api: FlickrPhotosApi, method: str, params: Dict[str, str]
 ) -> None:
+    api_method = getattr(api, method)
+
     with pytest.raises(ResourceNotFound):
-        getattr(api, method)(**params)
+        api_method(**params)
 
 
 def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
@@ -323,3 +341,33 @@ class TestGetAlbum:
         assert all(
             isinstance(photo["description"], str) for photo in album_with_desc["photos"]
         )
+
+
+@pytest.mark.parametrize(
+    ["method", "kwargs"],
+    [
+        pytest.param(
+            "get_photos_in_album",
+            {
+                "user_url": "https://www.flickr.com/photos/spike_yun/",
+                "album_id": "72157677773252346",
+            },
+            id="get_photos_in_album",
+        ),
+    ],
+)
+def test_get_collection_methods_are_paginated(
+    api: FlickrPhotosApi, method: str, kwargs: Dict[str, str]
+) -> None:
+    api_method = getattr(api, method)
+
+    all_resp = api_method(**kwargs, page=1)
+
+    # Getting the 5th page with a page size of 1 means getting the 5th image
+    individual_resp = api_method(
+        **kwargs,
+        page=5,
+        per_page=1,
+    )
+
+    assert individual_resp["photos"][0] == all_resp["photos"][4]
