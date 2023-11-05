@@ -258,6 +258,16 @@ class FlickrPhotosApi(BaseApi):
 
         date_posted = parse_date_posted(dates["posted"])
 
+        # Note: we intentionally omit sending any 'date taken' information
+        # to callers if it's unknown.
+        #
+        # There will be a value in the API response, but if the taken date
+        # is unknown, it's defaulted to the date the photo was posted.
+        # See https://www.flickr.com/services/api/misc.dates.html
+        #
+        # This value isn't helpful to callers, so we omit it.  This reduces
+        # the risk of somebody skipping the ``unknown`` parameter and using
+        # the value in the wrong place.
         date_taken: DateTaken
         if dates["takenunknown"] == "1":
             date_taken = {"unknown": True}
