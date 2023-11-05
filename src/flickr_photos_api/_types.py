@@ -84,3 +84,12 @@ class AlbumInfo(TypedDict):
 
 class PhotosInAlbum(CollectionOfPhotos):
     album: AlbumInfo
+
+
+class GalleryInfo(TypedDict):
+    owner_name: str
+    title: str
+
+
+class PhotosInGallery(CollectionOfPhotos):
+    gallery: GalleryInfo

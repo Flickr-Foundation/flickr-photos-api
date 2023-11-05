@@ -42,6 +42,11 @@ from utils import get_fixture, jsonify
             },
             id="get_photos_in_album_with_missing_album",
         ),
+        pytest.param(
+            "get_photos_in_gallery",
+            {"gallery_id": "12345678901234567890"},
+            id="get_photos_in_gallery",
+        ),
     ],
 )
 def test_methods_fail_if_not_found(
@@ -343,6 +348,12 @@ class TestGetAlbum:
         )
 
 
+def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
+    resp = api.get_photos_in_gallery(gallery_id="72157720932863274")
+
+    assert jsonify(resp) == get_fixture(filename="gallery-72157677773252346.json")
+
+
 @pytest.mark.parametrize(
     ["method", "kwargs"],
     [
@@ -353,6 +364,11 @@ class TestGetAlbum:
                 "album_id": "72157677773252346",
             },
             id="get_photos_in_album",
+        ),
+        pytest.param(
+            "get_photos_in_gallery",
+            {"gallery_id": "72157720932863274"},
+            id="get_photos_in_gallery",
         ),
     ],
 )
