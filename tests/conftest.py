@@ -27,23 +27,9 @@ def cassette_name(request: FixtureRequest) -> str:
     """
     name_parts = []
 
-    # The node ID gives us the relative path to the test file, the
-    # class name (if running in a class), and the function name.
-    #
-    # Prepend cassettes with their class name -- this avoids tests
-    # with the same function name in different classes from getting
-    # overlapping cassettes.
-    #
-    # Examples of request.node.nodeid:
-    #
-    #     tests/test_api.py::test_it_throws_if_bad_auth
-    #     tests/test_api.py::test_lookup_user_by_url[obamawhitehouse]
-    #
-    # See https://stackoverflow.com/a/68804077/1558022
-    node_id = request.node.nodeid.split("::")
-    if len(node_id) == 3:
-        test_class_name = node_id[1]
-        name_parts.append(test_class_name)
+    test_class = request.cls
+    if test_class is not None:
+        name_parts.append(test_class.__name__)
 
     # Then add the name of the test function.
     #
