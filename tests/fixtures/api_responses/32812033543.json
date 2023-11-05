@@ -14,7 +14,7 @@
     "granularity": "0",
     "unknown": false
   },
-  "safety_level": "0",
+  "safety_level": "safe",
   "license": {
     "id": "usgov",
     "label": "United States Government Work",

@@ -1,6 +1,6 @@
 import datetime
 import sys
-from typing import List, Optional
+from typing import List, Literal, Optional
 
 # See https://mypy.readthedocs.io/en/stable/runtime_troubles.html#using-new-additions-to-the-typing-module
 # See https://github.com/python/mypy/issues/8520
@@ -39,6 +39,12 @@ class Size(TypedDict):
     url: str
 
 
+# Represents the safety level of a photo on Flickr.
+#
+# https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
+SafetyLevel = Literal["safe", "moderate", "restricted"]
+
+
 class SinglePhoto(TypedDict):
     id: str
     title: Optional[str]
@@ -46,7 +52,7 @@ class SinglePhoto(TypedDict):
     owner: User
     date_posted: datetime.datetime
     date_taken: DateTaken
-    safety_level: str
+    safety_level: SafetyLevel
     license: License
     url: str
     sizes: List[Size]

@@ -218,3 +218,7 @@ class TestGetSinglePhoto:
     ) -> None:
         photo = api.get_single_photo(photo_id=photo_id)
         assert photo["original_format"] == original_format
+
+    def test_sets_human_readable_safety_level(self, api: FlickrPhotosApi) -> None:
+        photo = api.get_single_photo(photo_id="53248070597")
+        assert photo["safety_level"] == "safe"

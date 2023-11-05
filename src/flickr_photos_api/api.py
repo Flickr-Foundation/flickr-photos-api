@@ -11,6 +11,7 @@ from .utils import (
     find_required_text,
     parse_date_posted,
     parse_date_taken,
+    to_safety_level,
 )
 from ._types import DateTaken, License, SinglePhoto, Size, User
 
@@ -262,7 +263,7 @@ class FlickrPhotosApi(BaseApi):
 
         license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
 
-        safety_level = photo_elem.attrib["safety_level"]
+        safety_level = to_safety_level(photo_elem.attrib["safety_level"])
 
         # The originalformat parameter will only be returned if the user
         # allows downloads of the photo.

@@ -1,6 +1,8 @@
 import datetime
-from typing import Optional
+from typing import Dict, Optional
 import xml.etree.ElementTree as ET
+
+from ._types import SafetyLevel
 
 
 def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
@@ -93,3 +95,22 @@ def parse_date_taken(p: str) -> datetime.datetime:
     #
     # e.g. '2017-02-17 00:00:00'
     return datetime.datetime.strptime(p, "%Y-%m-%d %H:%M:%S")
+
+
+def to_safety_level(s: str) -> SafetyLevel:
+    """
+    Converts a numeric safety level ID in the Flickr API into
+    a human-readable string.
+
+    See https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters
+    """
+    lookup_table: Dict[str, SafetyLevel] = {
+        "0": "safe",
+        "1": "moderate",
+        "2": "restricted",
+    }
+
+    try:
+        return lookup_table[s]
+    except KeyError:
+        raise ValueError(f"Unrecognised safety level: {s}")

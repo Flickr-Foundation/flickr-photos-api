@@ -7,6 +7,7 @@ from flickr_photos_api.utils import (
     find_optional_text,
     find_required_elem,
     find_required_text,
+    to_safety_level,
 )
 
 
@@ -57,3 +58,8 @@ def test_find_required_text_throws_if_cannot_find_element() -> None:
 )
 def test_find_optional_text(path: str, expected: Optional[str]) -> None:
     assert find_optional_text(XML, path=path) == expected
+
+
+def test_unrecognised_safety_level_is_error() -> None:
+    with pytest.raises(ValueError, match="Unrecognised safety level"):
+        to_safety_level("-1")
