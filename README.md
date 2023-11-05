@@ -4,6 +4,8 @@ This is a library for getting information about photos from the Flickr API.
 
 It's not a general-purpose Flickr API library -- it focuses on providing information about photos and photo collections.
 
+* tries to abstract away info about Flickr API e.g. safety level and date taken
+
 Examples:
 
 ```console
