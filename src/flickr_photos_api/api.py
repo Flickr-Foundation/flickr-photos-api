@@ -83,7 +83,7 @@ class BaseApi:
 
 
 class FlickrPhotosApi(BaseApi):
-    @functools.lru_cache
+    @functools.lru_cache()
     def get_licenses(self) -> Dict[str, License]:
         """
         Returns a list of licenses, arranged by code.
