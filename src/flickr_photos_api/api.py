@@ -1,5 +1,5 @@
 import functools
-from typing import Dict, List, Union
+from typing import Callable, Dict, List, Union
 import xml.etree.ElementTree as ET
 
 import httpx
@@ -13,10 +13,13 @@ from .utils import (
     parse_date_taken,
     parse_date_taken_granularity,
     parse_safety_level,
+    parse_sizes,
 )
 from ._types import (
+    CollectionOfPhotos,
     DateTaken,
     License,
+    PhotosInAlbum,
     SinglePhoto,
     Size,
     User,
@@ -204,6 +207,30 @@ class FlickrPhotosApi(BaseApi):
             "profile_url": profile_url,
         }
 
+    def _get_date_taken(
+        self, *, value: str, granularity: str, unknown: bool
+    ) -> DateTaken:
+        # Note: we intentionally omit sending any 'date taken' information
+        # to callers if it's unknown.
+        #
+        # There will be a value in the API response, but if the taken date
+        # is unknown, it's defaulted to the date the photo was posted.
+        # See https://www.flickr.com/services/api/misc.dates.html
+        #
+        # This value isn't helpful to callers, so we omit it.  This reduces
+        # the risk of somebody skipping the ``unknown`` parameter and using
+        # the value in the wrong place.
+        date_taken: DateTaken
+
+        if unknown:
+            return {"unknown": True}
+        else:
+            return {
+                "value": parse_date_taken(value),
+                "granularity": parse_date_taken_granularity(granularity),
+                "unknown": False,
+            }
+
     def get_single_photo(self, *, photo_id: str) -> SinglePhoto:
         """
         Look up the information for a single photo.
@@ -258,25 +285,11 @@ class FlickrPhotosApi(BaseApi):
 
         date_posted = parse_date_posted(dates["posted"])
 
-        # Note: we intentionally omit sending any 'date taken' information
-        # to callers if it's unknown.
-        #
-        # There will be a value in the API response, but if the taken date
-        # is unknown, it's defaulted to the date the photo was posted.
-        # See https://www.flickr.com/services/api/misc.dates.html
-        #
-        # This value isn't helpful to callers, so we omit it.  This reduces
-        # the risk of somebody skipping the ``unknown`` parameter and using
-        # the value in the wrong place.
-        date_taken: DateTaken
-        if dates["takenunknown"] == "1":
-            date_taken = {"unknown": True}
-        else:
-            date_taken = {
-                "value": parse_date_taken(dates["taken"]),
-                "granularity": parse_date_taken_granularity(dates["takengranularity"]),
-                "unknown": False,
-            }
+        date_taken = self._get_date_taken(
+            value=dates["taken"],
+            granularity=dates["takengranularity"],
+            unknown=dates["takenunknown"] == "1",
+        )
 
         photo_page_url = find_required_text(
             photo_elem, path='.//urls/url[@type="photopage"]'
@@ -334,7 +347,6 @@ class FlickrPhotosApi(BaseApi):
                     "height": int(s.attrib["height"]),
                     "media": s.attrib["media"],
                     "source": s.attrib["source"],
-                    "url": s.attrib["url"],
                 }
             )
 
@@ -350,4 +362,116 @@ class FlickrPhotosApi(BaseApi):
             "url": photo_page_url,
             "sizes": sizes,
             "original_format": original_format,
+        }
+
+    # There are a bunch of similar flickr.XXX.getPhotos methods;
+    # these are some constants and utility methods to help when
+    # calling them.
+    extras = [
+        "license",
+        "date_upload",
+        "date_taken",
+        "media",
+        "original_format",
+        "owner_name",
+        "url_sq",
+        "url_t",
+        "url_s",
+        "url_m",
+        "url_o",
+        # These parameters aren't documented, but they're quite
+        # useful for our purposes!
+        "url_q",  # Large Square
+        "url_l",  # Large
+        "description",
+        "safety_level",
+    ]
+
+    def _parse_collection_of_photos_response(
+        self, elem: ET.Element, get_owner: Callable[[ET.Element], User]
+    ) -> CollectionOfPhotos:
+        # The wrapper element includes a couple of attributes related
+        # to pagination, e.g.
+        #
+        #     <photoset pages="1" total="2" …>
+        #
+        page_count = int(elem.attrib["pages"])
+        total_photos = int(elem.attrib["total"])
+
+        photos: List[SinglePhoto] = []
+
+        for photo_elem in elem.findall(".//photo"):
+            title = photo_elem.attrib["title"] or None
+            description = find_optional_text(photo_elem, path="description")
+
+            owner = get_owner(photo_elem)
+            assert owner["photos_url"].endswith("/")
+            url = owner["photos_url"] + photo_elem.attrib["id"] + "/"
+
+            photos.append(
+                {
+                    "id": photo_elem.attrib["id"],
+                    "title": title,
+                    "description": description,
+                    "date_posted": parse_date_posted(photo_elem.attrib["dateupload"]),
+                    "date_taken": self._get_date_taken(
+                        value=photo_elem.attrib["datetaken"],
+                        granularity=photo_elem.attrib["datetakengranularity"],
+                        unknown=photo_elem.attrib["datetakenunknown"] == "1",
+                    ),
+                    "license": self.lookup_license_by_id(
+                        id=photo_elem.attrib["license"]
+                    ),
+                    "sizes": parse_sizes(photo_elem),
+                    "original_format": photo_elem.attrib.get("originalformat"),
+                    "safety_level": parse_safety_level(
+                        photo_elem.attrib["safety_level"]
+                    ),
+                    "owner": owner,
+                    "url": url,
+                }
+            )
+
+        return {
+            "page_count": page_count,
+            "total_photos": total_photos,
+            "photos": photos,
+        }
+
+    def get_photos_in_album(
+        self, *, user_url: str, album_id: str, page: int = 1, per_page: int = 10
+    ) -> PhotosInAlbum:
+        """
+        Get the photos in an album.
+        """
+        user = self.lookup_user_by_url(url=user_url)
+
+        # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
+        resp = self.call(
+            "flickr.photosets.getPhotos",
+            user_id=user["id"],
+            photoset_id=album_id,
+            extras=",".join(self.extras),
+            page=page,
+            per_page=per_page,
+        )
+
+        def get_owner(photo_elem: ET.Element) -> User:
+            return user
+
+        parsed_resp = self._parse_collection_of_photos_response(
+            find_required_elem(resp, path=".//photoset"), get_owner=get_owner
+        )
+
+        # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
+        album_resp = self.call(
+            "flickr.photosets.getInfo", user_id=user["id"], photoset_id=album_id
+        )
+        album_title = find_required_text(album_resp, path=".//title")
+
+        return {
+            "photos": parsed_resp["photos"],
+            "page_count": parsed_resp["page_count"],
+            "total_photos": parsed_resp["total_photos"],
+            "album": {"owner": user, "title": album_title},
         }

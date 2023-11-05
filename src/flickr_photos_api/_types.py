@@ -49,7 +49,6 @@ class Size(TypedDict):
     height: int
     media: str
     source: str
-    url: str
 
 
 # Represents the safety level of a photo on Flickr.
@@ -70,3 +69,18 @@ class SinglePhoto(TypedDict):
     url: str
     sizes: List[Size]
     original_format: Optional[str]
+
+
+class CollectionOfPhotos(TypedDict):
+    page_count: int
+    total_photos: int
+    photos: List[SinglePhoto]
+
+
+class AlbumInfo(TypedDict):
+    owner: User
+    title: str
+
+
+class PhotosInAlbum(CollectionOfPhotos):
+    album: AlbumInfo

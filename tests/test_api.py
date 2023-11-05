@@ -218,3 +218,108 @@ class TestGetSinglePhoto:
     def test_sets_human_readable_safety_level(self, api: FlickrPhotosApi) -> None:
         photo = api.get_single_photo(photo_id="53248070597")
         assert photo["safety_level"] == "safe"
+
+
+class TestCollectionsPhotoResponse:
+    """
+    This class contains tests for the _parse_collection_of_photos_response,
+    which is shared among all collection responses (albums, galleries, etc.)
+
+    We don't want to expose/test that function directly; instead we test
+    how it affects the final response.
+    """
+
+    def test_sets_owner_and_url_on_collection(self, api: FlickrPhotosApi) -> None:
+        resp = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/joshuatreenp/",
+            album_id="72157640898611483",
+        )
+
+        assert resp["photos"][0]["owner"] == {
+            "id": "115357548@N08",
+            "username": "Joshua Tree National Park",
+            "realname": None,
+            "photos_url": "https://www.flickr.com/photos/joshuatreenp/",
+            "profile_url": "https://www.flickr.com/people/joshuatreenp/",
+        }
+
+        assert (
+            resp["photos"][0]["url"]
+            == "https://www.flickr.com/photos/joshuatreenp/49021434741/"
+        )
+
+    def test_sets_date_unknown_on_date_taken_in_collection(
+        self, api: FlickrPhotosApi
+    ) -> None:
+        resp = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/nationalarchives/",
+            album_id="72157664284840282",
+        )
+
+        assert resp["photos"][0]["date_taken"] == {
+            "unknown": True,
+        }
+
+    def test_only_gets_publicly_available_sizes(self, api: FlickrPhotosApi) -> None:
+        # This user doesn't allow downloading of their original photos,
+        # so when we try to look up an album of their photos in the API,
+        # we shouldn't get an Original size.
+        resp = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/mary_faith/",
+            album_id="72157711742505183",
+        )
+
+        assert not any(
+            size for size in resp["photos"][0]["sizes"] if size["label"] == "Original"
+        )
+
+    def test_sets_originalformat_to_none_if_no_downloads(
+        self, api: FlickrPhotosApi
+    ) -> None:
+        # This user doesn't allow downloading of their original photos,
+        # so when we try to look up an album of their photos in the API,
+        # we shouldn't get an Original size.
+        resp = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/mary_faith/",
+            album_id="72157711742505183",
+        )
+
+        assert all(photo["original_format"] is None for photo in resp["photos"])
+
+
+class TestGetAlbum:
+    def test_can_get_album(self, api: FlickrPhotosApi) -> None:
+        resp = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/spike_yun/",
+            album_id="72157677773252346",
+        )
+
+        assert jsonify(resp) == get_fixture(filename="album-72157677773252346.json")
+
+    def test_empty_album_title_is_none(self, api: FlickrPhotosApi) -> None:
+        album = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/spike_yun/",
+            album_id="72157677773252346",
+        )
+
+        assert album["photos"][0]["title"] == "Seoul"
+        assert album["photos"][7]["title"] is None
+
+    def test_empty_album_description_is_none(self, api: FlickrPhotosApi) -> None:
+        album_without_desc = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/aljazeeraenglish/",
+            album_id="72157626164453131",
+        )
+
+        assert all(
+            photo["description"] is None for photo in album_without_desc["photos"]
+        )
+
+        album_with_desc = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/zeeyolqpictures/",
+            album_id="72157631707062493",
+        )
+
+        assert all(
+            isinstance(photo["description"], str) for photo in album_with_desc["photos"]
+        )

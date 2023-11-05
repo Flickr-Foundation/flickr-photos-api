@@ -1,8 +1,8 @@
 import datetime
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 import xml.etree.ElementTree as ET
 
-from ._types import SafetyLevel, TakenGranularity
+from ._types import SafetyLevel, Size, TakenGranularity
 
 
 def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
@@ -134,3 +134,45 @@ def parse_safety_level(s: str) -> SafetyLevel:
         return lookup_table[s]
     except KeyError:
         raise ValueError(f"Unrecognised safety level: {s}")
+
+
+def parse_sizes(photo_elem: ET.Element) -> List[Size]:
+    """
+    Get a list of sizes from a photo in a collection response.
+    """
+    # When you get a collection of photos (e.g. in an album)
+    # you can get some of the sizes on the <photo> element, e.g.
+    #
+    #     <
+    #       photo
+    #       url_t="https://live.staticflickr.com/2893/1234567890_t.jpg"
+    #       height_t="78"
+    #       width_t="100"
+    #       …
+    #     />
+    #
+    sizes: List[Size] = []
+
+    for suffix, label in [
+        ("sq", "Square"),
+        ("q", "Large Square"),
+        ("t", "Thumbnail"),
+        ("s", "Small"),
+        ("m", "Medium"),
+        ("l", "Large"),
+        ("o", "Original"),
+    ]:
+        try:
+            sizes.append(
+                {
+                    "height": int(photo_elem.attrib[f"height_{suffix}"]),
+                    "width": int(photo_elem.attrib[f"width_{suffix}"]),
+                    "label": label,
+                    "media": photo_elem.attrib["media"],
+                    "source": photo_elem.attrib[f"url_{suffix}"],
+                }
+            )
+        except KeyError:
+            pass
+
+    return sizes
