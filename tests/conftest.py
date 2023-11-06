@@ -25,27 +25,10 @@ def cassette_name(request: FixtureRequest) -> str:
     -   the ID of the test case in @pytest.mark.parametrize
 
     """
-    name_parts = []
-
-    test_class = request.cls
-    if test_class is not None:
-        name_parts.append(test_class.__name__)
-
-    # Then add the name of the test function.
-    #
-    # See https://stackoverflow.com/a/67056955/1558022 for more info
-    # on how this works.
-    function_name = request.function.__name__
-    name_parts.append(function_name)
-
-    # Finally, add the name of the test case in @pytest.mark.parametrize,
-    # if there is one.
-    try:
-        name_parts.append(request.node.callspec.id)
-    except AttributeError:  # not in a parametrised test
-        pass
-
-    return ".".join(name_parts) + ".yml"
+    if request.cls is not None:
+        return f"{request.cls.__name__}.{request.node.name}.yml"
+    else:
+        return f"{request.node.name}.yml"
 
 
 @pytest.fixture(scope="function")
