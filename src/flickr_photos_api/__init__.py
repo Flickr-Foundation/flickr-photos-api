@@ -3,8 +3,10 @@ from .exceptions import FlickrApiException, ResourceNotFound, LicenseNotFound
 from ._types import (
     License,
     User,
+    TakenGranularity,
     DateTaken,
     Size,
+    SafetyLevel,
     SinglePhoto,
     CollectionOfPhotos,
     PhotosInAlbum,
@@ -13,7 +15,7 @@ from ._types import (
 )
 
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 
 __all__ = [
@@ -23,8 +25,10 @@ __all__ = [
     "LicenseNotFound",
     "License",
     "User",
+    "TakenGranularity",
     "DateTaken",
     "Size",
+    "SafetyLevel",
     "SinglePhoto",
     "CollectionOfPhotos",
     "PhotosInAlbum",
