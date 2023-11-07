@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.4 - 2023-11-07
+
+Export a few additional types as part of the top-level module.
+
 ## v1.0.3 - 2023-11-06
 
 Export a few additional types as part of the top-level module.

@@ -12,10 +12,13 @@ from ._types import (
     PhotosInAlbum,
     PhotosInGallery,
     PhotosInGroup,
+    AlbumInfo,
+    GalleryInfo,
+    GroupInfo,
 )
 
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 
 __all__ = [
@@ -34,5 +37,8 @@ __all__ = [
     "PhotosInAlbum",
     "PhotosInGallery",
     "PhotosInGroup",
+    "AlbumInfo",
+    "GalleryInfo",
+    "GroupInfo",
     "__version__",
 ]
