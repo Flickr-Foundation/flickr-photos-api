@@ -102,3 +102,8 @@ class GroupInfo(TypedDict):
 
 class PhotosInGroup(CollectionOfPhotos):
     group: GroupInfo
+
+
+PhotosFromUrl = Union[
+    SinglePhoto, CollectionOfPhotos, PhotosInAlbum, PhotosInGallery, PhotosInGroup
+]
