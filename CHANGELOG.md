@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.0 - 2023-11-09
+
+Add a method `get_photos_from_flickr_url()` which can get all the photos from behind a particular URL on Flickr.com.
+
 ## v1.0.4 - 2023-11-07
 
 Export a few additional types as part of the top-level module.
