@@ -432,3 +432,56 @@ def test_get_collection_methods_are_paginated(
     )
 
     assert individual_resp["photos"][0] == all_resp["photos"][4]
+
+
+@pytest.mark.parametrize(
+    ["url", "filename"],
+    [
+        ("https://www.flickr.com/photos/coast_guard/32812033543", "32812033543.json"),
+        (
+            "https://www.flickr.com/photos/joshuatreenp/albums/72157640898611483",
+            "album-72157640898611483.json",
+        ),
+        (
+            "https://www.flickr.com/photos/joshuatreenp/albums/72157640898611483/page2",
+            "album-72157640898611483-page2.json",
+        ),
+        ("https://www.flickr.com/photos/spike_yun/", "user-spike_yun.json"),
+        (
+            "https://www.flickr.com/photos/meldaniel/galleries/72157716953066942/",
+            "gallery-72157716953066942.json",
+        ),
+        ("https://www.flickr.com/groups/geologists/", "group-geologists.json"),
+        ("https://www.flickr.com/photos/tags/botany", "tag-botany.json"),
+    ],
+)
+def test_get_photos_from_flickr_url(
+    api: FlickrPhotosApi, url: str, filename: str
+) -> None:
+    resp = api.get_photos_from_flickr_url(url)
+
+    assert jsonify(resp) == get_fixture(filename)
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://www.flickr.com/photos/joshuatreenp/albums/72157640898611483",
+        "https://www.flickr.com/photos/spike_yun",
+        "https://www.flickr.com/photos/meldaniel/galleries/72157716953066942",
+        "https://www.flickr.com/groups/geologists/pool",
+        "https://www.flickr.com/photos/tags/botany",
+    ],
+)
+def test_get_photos_from_flickr_url_is_paginated(
+    api: FlickrPhotosApi, url: str
+) -> None:
+    first_resp = api.get_photos_from_flickr_url(url)
+    second_resp = api.get_photos_from_flickr_url(url + "/page2")
+
+    assert first_resp["photos"] != second_resp["photos"]  # type: ignore
+
+
+def test_unrecognised_url_type_is_error(api: FlickrPhotosApi) -> None:
+    with pytest.raises(TypeError, match="Unrecognised URL type"):
+        api.get_photos_from_parsed_flickr_url(parsed_url={"type": "unknown"})  # type: ignore
