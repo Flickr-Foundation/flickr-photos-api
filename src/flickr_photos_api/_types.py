@@ -20,6 +20,7 @@ class User(TypedDict):
     id: str
     username: str
     realname: Optional[str]
+    path_alias: Optional[str]
     photos_url: str
     profile_url: str
 
