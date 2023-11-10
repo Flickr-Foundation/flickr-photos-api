@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.2.0 - 2023-11-10
+
+Add a `path_alias` field to the `User` model.
+
 ## v1.1.0 - 2023-11-09
 
 Add a method `get_photos_from_flickr_url()` which can get all the photos from behind a particular URL on Flickr.com.

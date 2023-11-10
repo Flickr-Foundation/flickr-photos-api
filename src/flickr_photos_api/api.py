@@ -165,6 +165,7 @@ class FlickrPhotosApi(BaseApi):
                 "realname": "British Library",
                 "photos_url": "https://www.flickr.com/photos/britishlibrary/",
                 "profile_url": "https://www.flickr.com/people/britishlibrary/",
+                "pathalias": "britishlibrary"
             }
 
         See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
@@ -181,8 +182,8 @@ class FlickrPhotosApi(BaseApi):
         user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         # The getInfo response is of the form:
-
-        #     <person id="12403504@N02"…">
+        #
+        #     <person id="12403504@N02" path_alias="britishlibrary" …>
         #   	<username>The British Library</username>
         #       <realname>British Library</realname>
         #       <photosurl>https://www.flickr.com/photos/britishlibrary/</photosurl>
@@ -191,13 +192,18 @@ class FlickrPhotosApi(BaseApi):
         #     </person>
         #
         info_resp = self.call("flickr.people.getInfo", user_id=user_id)
-        username = find_required_text(info_resp, path=".//username")
-        photos_url = find_required_text(info_resp, path=".//photosurl")
-        profile_url = find_required_text(info_resp, path=".//profileurl")
+
+        person_elem = find_required_elem(info_resp, path="person")
+
+        username = find_required_text(person_elem, path="username")
+        photos_url = find_required_text(person_elem, path="photosurl")
+        profile_url = find_required_text(person_elem, path="profileurl")
+
+        path_alias = person_elem.attrib["path_alias"] or None
 
         # If the user hasn't set a realname in their profile, the element
         # will be absent from the response.
-        realname_elem = info_resp.find(path=".//realname")
+        realname_elem = person_elem.find(path="realname")
 
         if realname_elem is None:
             realname = None
@@ -208,6 +214,7 @@ class FlickrPhotosApi(BaseApi):
             "id": user_id,
             "username": username,
             "realname": realname,
+            "path_alias": path_alias,
             "photos_url": photos_url,
             "profile_url": profile_url,
         }
@@ -276,14 +283,15 @@ class FlickrPhotosApi(BaseApi):
 
         owner_elem = find_required_elem(photo_elem, path="owner")
         user_id = owner_elem.attrib["nsid"]
-        path_alias = owner_elem.attrib["path_alias"] or user_id
+        path_alias = owner_elem.attrib["path_alias"] or None
 
         owner: User = {
             "id": user_id,
             "username": owner_elem.attrib["username"],
             "realname": owner_elem.attrib["realname"] or None,
-            "photos_url": f"https://www.flickr.com/photos/{path_alias}/",
-            "profile_url": f"https://www.flickr.com/people/{path_alias}/",
+            "path_alias": path_alias,
+            "photos_url": f"https://www.flickr.com/photos/{path_alias or user_id}/",
+            "profile_url": f"https://www.flickr.com/people/{path_alias or user_id}/",
         }
 
         dates = find_required_elem(photo_elem, path="dates").attrib
@@ -416,16 +424,16 @@ class FlickrPhotosApi(BaseApi):
 
             owner: User
             if collection_owner is None:
-                path_alias = (
-                    photo_elem.attrib.get("pathalias") or photo_elem.attrib["owner"]
-                )
+                owner_name = photo_elem.attrib["owner"]
+                path_alias = photo_elem.attrib.get("pathalias") or None
 
                 owner = {
                     "id": photo_elem.attrib["owner"],
                     "username": photo_elem.attrib["ownername"],
                     "realname": photo_elem.attrib.get("realname") or None,
-                    "photos_url": f"https://www.flickr.com/photos/{path_alias}/",
-                    "profile_url": f"https://www.flickr.com/people/{path_alias}/",
+                    "path_alias": path_alias,
+                    "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_name}/",
+                    "profile_url": f"https://www.flickr.com/people/{path_alias or owner_name}/",
                 }
             else:
                 owner = collection_owner
