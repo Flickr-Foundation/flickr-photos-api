@@ -26,11 +26,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:26 GMT
+      - Wed, 15 Nov 2023 16:47:26 GMT
       Via:
       - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - DzOZBDrCRvEhWW0d6cuFYHDm66cUnCuLA5LucQEB-R1fIeKl0vIs-w==
+      - -0avXkWUdrSe8EO0ZIWLqeHqtsPPOSYy6TbdbrZ-hepgUNckl0opnQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -41,7 +41,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -67,7 +67,7 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&group_id=31849566%40N00&method=flickr.groups.pools.getPhotos&page=1&per_page=10
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&group_id=31849566%40N00&method=flickr.groups.pools.getPhotos&page=1&per_page=10
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
       page=\"1\" pages=\"4453\" perpage=\"10\" total=\"44523\">\n\t<photo id=\"53333201595\"
@@ -76,7 +76,9 @@ interactions:
       dateadded=\"1700042775\" license=\"0\" safety_level=\"0\" dateupload=\"1700007404\"
       datetaken=\"2023-09-26 18:27:44\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       tags=\"dragonbridge zmajskimost dragon ljubljana slovenia slovenija slowenien\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53333201595_7174165ed0_s.jpg\"
+      latitude=\"46.051887\" longitude=\"14.510377\" accuracy=\"16\" context=\"0\"
+      place_id=\"\" woeid=\"3196359\" geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\"
+      geo_is_family=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53333201595_7174165ed0_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53333201595_7174165ed0_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53333201595_7174165ed0_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53333201595_7174165ed0.jpg\"
@@ -89,7 +91,9 @@ interactions:
       dateupload=\"1700031987\" datetaken=\"2023-11-05 13:22:33\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" realname=\"Vid Pogacnik\" tags=\"slovenia slovenija karavanke
       karawanken karawanks robe meadow outdoors outside hiking landscape mountain
-      autumn\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53333423543_0372c97642_s.jpg\"
+      autumn\" latitude=\"46.494824\" longitude=\"13.789956\" accuracy=\"16\" context=\"0\"
+      place_id=\"\" woeid=\"8987894\" geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\"
+      geo_is_family=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53333423543_0372c97642_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53333423543_0372c97642_t.jpg\"
       height_t=\"70\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53333423543_0372c97642_m.jpg\"
       height_s=\"167\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53333423543_0372c97642.jpg\"
@@ -102,8 +106,10 @@ interactions:
       license=\"0\" safety_level=\"0\" dateupload=\"1700031987\" datetaken=\"2023-11-05
       13:29:38\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Vid
       Pogacnik\" tags=\"slovenia slovenija karavanke karawanken karawanks robe meadow
-      outdoors outside hiking landscape mountain autumn\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53332320022_ee263e82c6_s.jpg\"
+      outdoors outside hiking landscape mountain autumn\" latitude=\"46.495600\" longitude=\"13.796072\"
+      accuracy=\"16\" context=\"0\" place_id=\"\" woeid=\"8987894\" geo_is_public=\"1\"
+      geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53332320022_ee263e82c6_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53332320022_ee263e82c6_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53332320022_ee263e82c6_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53332320022_ee263e82c6.jpg\"
@@ -115,8 +121,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"happy.apple\" dateadded=\"1699975783\"
       license=\"0\" safety_level=\"0\" dateupload=\"1699975775\" datetaken=\"2023-11-03
       09:32:15\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"\" tags=\"piran
-      slovenia slovenija adriatic sea waves morje firemen gasilci flooding\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331959248_4c9690e08b_s.jpg\"
+      slovenia slovenija adriatic sea waves morje firemen gasilci flooding\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53331959248_4c9690e08b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53331959248_4c9690e08b_t.jpg\"
       height_t=\"46\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53331959248_4c9690e08b_m.jpg\"
       height_s=\"111\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53331959248_4c9690e08b.jpg\"
@@ -128,7 +135,8 @@ interactions:
       dateadded=\"1699975783\" license=\"0\" safety_level=\"0\" dateupload=\"1699975775\"
       datetaken=\"2023-11-03 11:22:36\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       realname=\"\" tags=\"piran slovenia slovenija adriatic sea waves pine morje
-      bw\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53330861932_c41bab2a7e_s.jpg\"
+      bw\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53330861932_c41bab2a7e_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53330861932_c41bab2a7e_t.jpg\"
       height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53330861932_c41bab2a7e_m.jpg\"
       height_s=\"148\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53330861932_c41bab2a7e.jpg\"
@@ -140,7 +148,8 @@ interactions:
       dateadded=\"1699975782\" license=\"0\" safety_level=\"0\" dateupload=\"1699975774\"
       datetaken=\"2023-09-30 01:25:01\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       realname=\"\" tags=\"piran slovenia slovenija adriatic sea citywall morning
-      jutro morje\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331773996_c0c69c2484_s.jpg\"
+      jutro morje\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331773996_c0c69c2484_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53331773996_c0c69c2484_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53331773996_c0c69c2484_m.jpg\"
       height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53331773996_c0c69c2484.jpg\"
@@ -153,7 +162,8 @@ interactions:
       safety_level=\"0\" dateupload=\"1699975773\" datetaken=\"2023-08-30 09:37:15\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"\" tags=\"piran
       slovenia slovenija adriatic sea waves gulfoftrieste tr\u017Ea\u0161kizaliv morje\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53332098734_9b0206c441_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53332098734_9b0206c441_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53332098734_9b0206c441_t.jpg\"
       height_t=\"55\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53332098734_9b0206c441_m.jpg\"
       height_s=\"131\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53332098734_9b0206c441.jpg\"
@@ -165,7 +175,8 @@ interactions:
       ownername=\"happy.apple\" dateadded=\"1699975781\" license=\"0\" safety_level=\"0\"
       dateupload=\"1699975773\" datetaken=\"2023-10-28 09:29:18\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" realname=\"\" tags=\"hrastovlje kras karst slovenia slovenija
-      village landscape\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53332008793_ea9c79ca19_s.jpg\"
+      village landscape\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53332008793_ea9c79ca19_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53332008793_ea9c79ca19_t.jpg\"
       height_t=\"63\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53332008793_ea9c79ca19_m.jpg\"
       height_s=\"152\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53332008793_ea9c79ca19.jpg\"
@@ -178,8 +189,10 @@ interactions:
       safety_level=\"0\" dateupload=\"1699953738\" datetaken=\"2023-11-05 13:27:21\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Vid Pogacnik\"
       tags=\"slovenia slovenija karawanks karawanken karavanke outside outdoors hiking
-      landscape autumn fall mountain meadow panorama martuljekgroup julianalps\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331580779_86a49345f0_s.jpg\"
+      landscape autumn fall mountain meadow panorama martuljekgroup julianalps\" latitude=\"46.494750\"
+      longitude=\"13.792402\" accuracy=\"16\" context=\"0\" place_id=\"\" woeid=\"8987894\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331580779_86a49345f0_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53331580779_86a49345f0_t.jpg\"
       height_t=\"48\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53331580779_86a49345f0_m.jpg\"
       height_s=\"114\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53331580779_86a49345f0.jpg\"
@@ -193,8 +206,10 @@ interactions:
       dateadded=\"1699953741\" license=\"0\" safety_level=\"0\" dateupload=\"1699953738\"
       datetaken=\"2023-11-05 13:18:30\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       realname=\"Vid Pogacnik\" tags=\"slovenia slovenija karawanks karawanken karavanke
-      outside outdoors hiking landscape autumn fall mountain meadow\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331465898_5ea8d6fcc1_s.jpg\"
+      outside outdoors hiking landscape autumn fall mountain meadow\" latitude=\"46.494950\"
+      longitude=\"13.790214\" accuracy=\"16\" context=\"0\" place_id=\"\" woeid=\"8987894\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331465898_5ea8d6fcc1_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53331465898_5ea8d6fcc1_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53331465898_5ea8d6fcc1_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53331465898_5ea8d6fcc1.jpg\"
@@ -206,15 +221,15 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1829'
+      - '1984'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:26 GMT
+      - Wed, 15 Nov 2023 16:47:26 GMT
       Via:
       - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - jc56zVF02TXm0RAmJRoVM5Xc7sRP5_btLB9lirZydSN7Uc4Pme3z9g==
+      - nxNFGkRNXSSn_g1HcNQoSUoF6Fk4SxTJzHFtrco6X___Y0wt90_XCA==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -225,7 +240,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -276,11 +291,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:27 GMT
+      - Wed, 15 Nov 2023 16:47:26 GMT
       Via:
       - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - hHRrHpxfVZuOpKxLqHK-R_T6_oFknWWjeSs4l4NwPh8eCcH28NWuyA==
+      - h731VRlx-yYwpVkECEtHCsNIqJHoWgmT7KFr4NwyXS9PQUdsU0itGw==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -291,7 +306,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
