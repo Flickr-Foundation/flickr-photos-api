@@ -255,6 +255,10 @@ class TestGetSinglePhoto:
         photo = api.get_single_photo(photo_id="53248070597")
         assert photo["safety_level"] == "safe"
 
+    def test_get_empty_tags_for_untagged_photo(self, api: FlickrPhotosApi) -> None:
+        photo = api.get_single_photo(photo_id="53331717974")
+        assert photo["tags"] == []
+
 
 class TestCollectionsPhotoResponse:
     """

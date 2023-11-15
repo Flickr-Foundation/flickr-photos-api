@@ -6,13 +6,801 @@
   "page_count": 144,
   "photos": [
     {
+      "date_posted": "2023-11-15T00:40:13+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2020-09-20T09:41:47"
+      },
+      "description": "<i>Digitally analyzing stone trim along the house's southern elevation. The south paw is for scale. I could say that I carefully planned and framed this shot to create a hyperartistic chiaroscuro effect, but the fact is that I just had to put up with the dappling effect of the street trees behind me.</i>\n\nIn my final Robie photo, I'm departing from this series's main theme of brick geology to take a look at the second great exterior building material Frank Lloyd Wright used on this architectural tour de force.  \n\nIt's the Salem Limestone, known to builders as Bedford Stone or Indiana Limestone. And indeed it comes from the southern portion of the Hoosier State, where it has been quarried in such staggering quantities that it's a marvel there's any still attached to the Earth's crust. (But believe, me, there is.)\n\nThe striking Roman Brick from the great production center of St. Louis, Missouri is visible, just barely, at bottom. But it's much better displayed in all its iron-flecked glory in <a href=\"https://www.flickr.com/photos/196253572@N05/53283379996/in/dateposted-public/\">Part 12</a>, so I'll pass over it here. \n\nMuch more vivid is the diagonal layering of the Salem. This is a classic sedimentary-rock structure known as <i>crossbedding</i>. It forms in dunes and ripples deposited and moved by flowing  water or wind. For an example of it in a southern-Illinois sandstone outcrop, see <a href=\"https://www.flickr.com/photos/196253572@N05/53181572895/in/album-72177720302393036/\">this post</a>. \n\nThe reason this carbonate rock has crossbedding is that it's a <i>biocalcarenite</i> composed of tiny fossils and shell fragments. These came from marine creatures that lived in nearshore inlets, lagoons, and shoals some 340 Ma ago, during the Mississippian subperiod (Lower Carboniferous). The crossbedding often found in the Salem is one indicator that it formed in a high-energy environment of relatively shallow, agitated seawater.\n\n<b>For much more on this site and 200 others in the Windy City, see my book <i>Chicago in Stone and Clay</i>, described at <a href=\"http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..\" rel=\"noreferrer nofollow\">www.cornellpress.cornell.edu/book/9781501765063/chicago-i..</a>.\n\nAnd to see the other photos and descriptions of this series, pay a visit to <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302658037\">my <i>Geobrickology</i> album</a>.</b>\n\n\n",
+      "id": "53333116124",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "196253572@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/196253572@N05/",
+        "profile_url": "https://www.flickr.com/people/196253572@N05/",
+        "realname": "Raymond Wiggers",
+        "username": "rwgabbro1"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 67,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 160,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 333,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303.jpg",
+          "width": 500
+        },
+        {
+          "height": 683,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_d80f88a303_b.jpg",
+          "width": 1024
+        },
+        {
+          "height": 3072,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53333116124_be3dbd9bb6_o.jpg",
+          "width": 4608
+        }
+      ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "chicago",
+        "geology",
+        "illinois",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "robiehouse",
+        "stlouisbrick",
+        "romanbrick",
+        "ashlar",
+        "salemlimestone"
+      ],
+      "title": "Geobrickology, Part 13: Light Splashed on an Ancient Shoal, the Frederick C. Robie House, Hyde Park Neighborhood, Chicago, Illinois, USA (1909)",
+      "url": "https://www.flickr.com/photos/196253572@N05/53333116124/"
+    },
+    {
+      "date_posted": "2023-11-08T14:45:21+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2023-10-30T15:02:48"
+      },
+      "description": "Pamukkale, meaning &quot;cotton castle&quot; in Turkish, is a natural site in Denizli Province in southwestern Turkey. The area is famous for a carbonate mineral left by the flowing of thermal spring water.[1][2] It is located in Turkeys Inner Aegean region, in the River Menderes valley, which has a temperate climate for most of the year.\n\nThe ancient Greek city of Hierapolis was built on top of the travertine formation which is in total about 2,700 metres (8,860 ft) long, 600 m (1,970 ft) wide and 160 m (525 ft) high. It can be seen from the hills on the opposite side of the valley in the town of Denizli, 20 km away. This area has been drawing visitors to its thermal springs since the time of classical antiquity.[1] The Turkish name refers to the surface of the shimmering, snow-white limestone, shaped over millennia by calcite-rich springs.[2] Dripping slowly down the mountainside, mineral-rich waters collect in and cascade down the mineral terraces, into pools below.\n\nPamukkale sinter terraces\nIt was added as a UNESCO World Heritage Site in 1988 along with Hierapolis.\n\nGeology\n\nTravertine terrace formations\nPamukkale's terraces are made of travertine, a sedimentary rock deposited by mineral water from the hot springs.[1] In this area, there are 17 hot springs with temperatures ranging from 35 \u00b0C (95 \u00b0F) to 100 \u00b0C (212 \u00b0F). The water that emerges from the spring is transported 320 metres (1,050 ft) to the head of the travertine terraces and deposits calcium carbonate on a section 60 to 70 metres (200 to 230 ft) long covering an expanse of 24 metres (79 ft) to 30 metres (98 ft). When the water, supersaturated with calcium carbonate, reaches the surface, carbon dioxide de-gasses from it, and calcium carbonate is deposited. Calcium carbonate is deposited by the water as a soft gel which eventually crystallizes into travertine.\n\nArchaeology\nTravertine terraces at a hot spring at Pamukkale\nThere are only a few historical facts known about the origin of the city. No traces of the presence of Hittites or Persians have been found. The Phrygians built a temple, probably in the first half of the 7th century BC. This temple, originally used by the citizens of the nearby town of Laodicea, would later form the centre of Hierapolis.\n\nPools inside the archeological site\nHierapolis was founded as a thermal spa early in the 2nd century BC within the sphere of the Seleucid Empire. Antiochus the Great sent 2,000 Jewish families to Lydia and Phrygia from Babylon and Mesopotamia, later joined by more from Judea. The Jewish congregation grew in Hierapolis and has been estimated as high as 50,000 in 62 BC.[3] Hierapolis became a healing centre where doctors used the thermal springs as a treatment for their patients. The city began minting bronze coins in the 2nd century BC. These coins give the name Hieropolis. It remains unclear whether this name referred to the original temple (\u1f31\u03b5\u03c1\u03cc\u03bd, hieron) or honoured Hiera, the wife of Telephus, son of Heracles and the Mysian princess Auge. This name eventually changed into Hierapolis (&quot;holy city&quot;).[4] In 133 BC, when Attalus III died, he bequeathed his kingdom to Rome. Hierapolis thus became part of the Roman province of Asia. In AD 17, during the rule of Emperor Tiberius, a major earthquake destroyed the city.\n\nThrough the influence of the Christian Apostle Paul, a church was founded here while he was at Ephesus.[5] The Christian Apostle Philip spent the last years of his life here.[6] The town's Martyrium was alleged to have been built upon the spot where Philip was crucified in AD 80. His daughters were also said to have acted as prophetesses in the region.[7][8] During the 4th century, the Christians filled Pluto's Gate (a ploutonion) with stones, suggesting that Christianity had become the dominant religion and had begun displacing other faiths in the area. Originally a see of Phrygia Pacatiana,[9] the Byzantine Emperor Justinian raised the bishop of Hierapolis to the rank of metropolitan in 531. The Roman baths were transformed to a Christian basilica. During the Byzantine period, the city continued to flourish and also remained an important centre for Christianity. Wikipedia ",
+      "id": "53318448828",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": null,
+      "owner": {
+        "id": "10621515@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/10621515@N05/",
+        "profile_url": "https://www.flickr.com/people/10621515@N05/",
+        "realname": "tedesco57",
+        "username": "tedesco57"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 40,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 95,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 199,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2.jpg",
+          "width": 500
+        },
+        {
+          "height": 407,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53318448828_3f1a2883b2_b.jpg",
+          "width": 1024
+        }
+      ],
+      "tags": [],
+      "title": "Pamukkale",
+      "url": "https://www.flickr.com/photos/10621515@N05/53318448828/"
+    },
+    {
+      "date_posted": "2023-11-14T12:23:00+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2023-09-19T10:42:27"
+      },
+      "description": "There's actually quite a bit to this image, if you look at it long enough. First, for the Big Stuff: The Athabasca Glacier. According to Wikipedia, this glacier is &quot;one of six principal 'toes' of the Columbia Icefield in Jasper National Park. It loses about 16 feet (5 meters) per year and has receded almost a mile (1.5 km) and has lost half of its volume in the past 125 years. That may seem slow to you in this age of climate change and global warming, and only a blip in the geological record, but it's still quite a bit and really hits home as one hikes the trail to the toe of this glacier, reading signs along the way of where the glacier toe *used* to be before receding.\n\nIf you look closely at this image, to the far left, you can see a line of tiny black dots. Those are people on a guided hike out onto the glacier. A guided hike is the only way you can actually stand on the glacier if you don't feel like taking a big ice bus loaded with people out onto the glacier. Other than that, you are prohibited from going solo onto the glacier, and with good reason. Along the way are hidden holes covered by glacial till (rocks and sediment) filled with freezing, rushing water that could suck you under. Then, once you are out on the glacier, unless you know what to look for, you could easily slip and fall into a hidden crevasse. Both of those would ruin an otherwise perfectly nice day because it's pretty cold up there, even in the summer. \n\nDYK the glacier makes it's own weather, including winds known as &quot;katabatic winds&quot; which blow down the glacier and towards the hiker. I can tell you for a fact that it was pretty darned cold on the day I hiked the trail.\n\nSee that rock in the foreground of this image? See the striations (lines) gouged into the rock? Those striations were created by the weight of, and suspended rocks in, the glacier. Weight and ice together ground scratches into the rock as the glacial ice moved forward then receded. You can tell the direction the glacier moved by these scratches.\n\nPhotographically, this single composition is composed of two focus-stacked images. One image was focused for the glacier and landscape in the background and the other image was focused for the striated rock in the foreground. That was really the only way to get a completely (or almost completely) focused image of the entire area, even using a wide angle lens, which is what I used on my Fujifilm GFX100s medium format camera. The 23mm lens is analogous to a 17mm lens on a 35mm camera.",
+      "id": "53331801919",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": null,
+      "owner": {
+        "id": "133214433@N03",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/133214433@N03/",
+        "profile_url": "https://www.flickr.com/people/133214433@N03/",
+        "realname": "Rebecca Latson",
+        "username": "Where The Trails Take You Photography"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 75,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 180,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 375,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22.jpg",
+          "width": 500
+        },
+        {
+          "height": 768,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53331801919_5499fa4c22_b.jpg",
+          "width": 1024
+        }
+      ],
+      "tags": [
+        "canada",
+        "alberta",
+        "jaspernationalpark",
+        "glacier",
+        "geology",
+        "athabascaglacier",
+        "fujifilm",
+        "gfx100s",
+        "fujifilmgfx100s",
+        "mediumformat",
+        "23mm",
+        "wideangle",
+        "primelens",
+        "september",
+        "landscape",
+        "wherethetrailstakeyou",
+        "helicon",
+        "heliconfocus",
+        "focusstacked"
+      ],
+      "title": "Striated Rock And Athabasca Glacier",
+      "url": "https://www.flickr.com/photos/133214433@N03/53331801919/"
+    },
+    {
+      "date_posted": "2023-11-14T00:50:12+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "1978-04-13T00:25:05"
+      },
+      "description": "<i>Facing northeastward toward the western elevation.</i>\n\nEven relatively modest stone buildings are brimming over with geologic interest. For example, this oblique view shows the toll the process of weathering has exacted from ashlar (in this case, presumably the Upper Cretaceous Segovia Sandstone) subjected to the elements for nine centuries.\n\nIn various spots on the church's exterior it's evident that the blocks' outer surfaces have fallen away. This may be a simple case of water soaking into the porous sedimentary rock and eventually breaking down its cement matrix. \n\nHowever, it may also signal the presence of <i>case hardening</i>, where solutions migrating through the rock have deposited minerals on the surface, and turned it hard and brittle. This comes at the expense of the inner portion, which becomes soft, crumbly, and very vulnerable to decay when finally exposed. \n\nInterestingly, much more recent Google Earth Street View imagery reveals that those weathered faces are still there. So apparently the Segovia Sandstone, even when degraded, changes little over the span of a single human lifetime\u2014at least in this rather protected spot, hemmed in by other buildings.\n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720307451632\"><i>Architectural Geology: Spain</i> album</a>.</b>   \n\n",
+      "id": "53330855403",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "196253572@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/196253572@N05/",
+        "profile_url": "https://www.flickr.com/people/196253572@N05/",
+        "realname": "Raymond Wiggers",
+        "username": "rwgabbro1"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 100,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a_t.jpg",
+          "width": 71
+        },
+        {
+          "height": 240,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a_m.jpg",
+          "width": 169
+        },
+        {
+          "height": 500,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a.jpg",
+          "width": 353
+        },
+        {
+          "height": 1024,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_28f821ab5a_b.jpg",
+          "width": 723
+        },
+        {
+          "height": 5170,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53330855403_c09e6d3c8e_o.jpg",
+          "width": 3649
+        }
+      ],
+      "tags": [
+        "architecturalgeology",
+        "archaeology",
+        "architecture",
+        "church",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "santissimatrinidadchurch",
+        "segovia",
+        "spain",
+        "ashlar",
+        "sandstone"
+      ],
+      "title": "Architectural Geology of Segovia, Spain, Part 24: Santissima Trinidad Church (12th Century AD)",
+      "url": "https://www.flickr.com/photos/196253572@N05/53330855403/"
+    },
+    {
+      "date_posted": "2023-11-13T00:18:35+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2003-07-28T14:10:59"
+      },
+      "description": "<i>Taken along Great Lake Road, in the National Forest's Pond Pine Wilderness. This spot is about 10 mi (16 km) south-southwest of the town of Havelock.</i>\n\nOccasionally I revisit photos I posted on Flickr quite a while ago and flesh out their descriptions, to the consternation of those visitors who can't tolerate anything longer than tweet-sized commentary. And then I add them if possible to a series I've established subsequently. \n\nSuch was the case with this set's <a href=\"https://www.flickr.com/photos/196253572@N05/52288349284/in/album-72177720309413739/\">Part 14</a>, which shows a nice stand of Pond Pine (<i>Pinus serotina</i>) growing in a special kind of Coastal Plain peatland known as a <i>pocosin</i>. This is pronounced <b>puh-COE-zin</b>, as I learned from a Croatan NF staffer. Before she diplomatically corrected me, I was trying to make it <b>POCK-ah-sun</b>, to rhyme with moccasin. \n\nApparently this word, whether spoken correctly or not, derives from an Algonquian term for &quot;wetland in a high place,&quot; or something similar. That's a good description, because pocosins are generally classified as one type of raised bog, with a subtly domed profile.\n\nThis shot, like the one cited above, shows Pond Pines growing very happily indeed in the sandy, mucky Histosol (organic soil). The plants that inhabit this boggy substrate have adapted to unusually low-pH (acidic) conditions.  \n\n<b>The other photos and descriptions of this series can be found in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720309413739\">my <i>Botany of the Carolinas Coastal Plain</i> album</a>.</b>\n\n  ",
+      "id": "53328431474",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "196253572@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/196253572@N05/",
+        "profile_url": "https://www.flickr.com/people/196253572@N05/",
+        "realname": "Raymond Wiggers",
+        "username": "rwgabbro1"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 75,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 180,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 375,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef.jpg",
+          "width": 500
+        },
+        {
+          "height": 768,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_c7bc033aef_b.jpg",
+          "width": 1024
+        },
+        {
+          "height": 1200,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53328431474_2d4ab5464e_o.jpg",
+          "width": 1600
+        }
+      ],
+      "tags": [
+        "botany",
+        "dendrology",
+        "geology",
+        "landscape",
+        "nature",
+        "plants",
+        "croatannationalforest",
+        "northcarolina",
+        "pocosin",
+        "peatland",
+        "pinusserotina",
+        "pondpine"
+      ],
+      "title": "Botany of the Carolinas Coastal Plain, Part 15: A Narrow Road through the Boggy Wilderness, Croatan National Forest, North Carolina, USA",
+      "url": "https://www.flickr.com/photos/196253572@N05/53328431474/"
+    },
+    {
+      "date_posted": "2023-11-12T16:52:48+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2023-10-14T06:31:30"
+      },
+      "description": "This one erupts about every 6 minutes on average. See following photos for image of the original Geysir - now mostly dormant - from which all other geysers are named.",
+      "id": "53327449274",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "9746040@N08",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/9746040@N08/",
+        "profile_url": "https://www.flickr.com/people/9746040@N08/",
+        "realname": "Wayne Chadwick",
+        "username": "Wayne~Chadwick"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 100,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25_t.jpg",
+          "width": 75
+        },
+        {
+          "height": 240,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25_m.jpg",
+          "width": 180
+        },
+        {
+          "height": 500,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25.jpg",
+          "width": 375
+        },
+        {
+          "height": 1024,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_1baa369b25_b.jpg",
+          "width": 768
+        },
+        {
+          "height": 4739,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53327449274_b891d533ba_o.jpg",
+          "width": 3554
+        }
+      ],
+      "tags": [],
+      "title": "Geysir Strokkur - Iceland",
+      "url": "https://www.flickr.com/photos/9746040@N08/53327449274/"
+    },
+    {
+      "date_posted": "2022-08-15T18:53:26+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2003-07-23T00:00:00"
+      },
+      "description": "<i>Taken along Catfish Lake Farm Road, about 7.4 mi (12 km) southeast of Pollocksville.</i>\n\nThe Gulf-Atlantic Coastal Plain is such a wonderful region for pine-spotting. This species, growing in the fascinating Southeastern type of peatland known as a <i>pocosin</i>, is Pond Pine, <i>Pinus serotina</i>. \n\nMany members of this much-beloved and much-utilized needle-leaved genus thrive in dry or rocky soils. But the <i>P. serotina</i> makes its home instead in this boggy wetland habitat, which is notable for its poor drainage and waterlogged Histosol (organic soil) with considerable sand content. It's a highly acidic environment. \n\nFrom what I've read, ecologists have further subdivided pocosins into specific categories. This one, I simply have to assume, is the Pond Pine Woodland association. It's characteristically found where the peatland has a slightly domed surface.\n\nAs an old bogtrotter much more familiar with peatlands from Downeast Maine to the Indiana Dunes and Michigan's Upper Peninsula, this pocosin variant came as quite a revelation to me. \n\nMore shots of this locale in Croatan follow.\n\n<b>The other photos and descriptions of this series can be found in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720309413739\">my <i>Botany of the Carolinas Coastal Plain</i> album</a>.</b>\n\n",
+      "id": "52288349284",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "196253572@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/196253572@N05/",
+        "profile_url": "https://www.flickr.com/people/196253572@N05/",
+        "realname": "Raymond Wiggers",
+        "username": "rwgabbro1"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 75,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 180,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 375,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660.jpg",
+          "width": 500
+        },
+        {
+          "height": 768,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_d7ccd15660_b.jpg",
+          "width": 1024
+        },
+        {
+          "height": 1200,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/52288349284_e39a467885_o.jpg",
+          "width": 1600
+        }
+      ],
+      "tags": [
+        "trees",
+        "botany",
+        "pocosin",
+        "carolinas",
+        "dendrology",
+        "pinusserotina",
+        "croatannationalforest",
+        "peatland",
+        "bog"
+      ],
+      "title": "Botany of the Carolinas Coastal Plain, Part 14: Pines of a Pocosin, Croatan National Forest, North Carolina, USA",
+      "url": "https://www.flickr.com/photos/196253572@N05/52288349284/"
+    },
+    {
+      "date_posted": "2023-11-10T00:31:14+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2019-04-19T12:03:05"
+      },
+      "description": "<i>Looking northeastward, at the church's southern and western elevations. It was a splendid early-spring day in this Upper Illinois River Valley town. What a lovely blue sky with cumulus fractus clouds.</i>\n\nWhile by no means the Prairie State's most imposing house of worship, the Gothic-Revival First Presbyterian of Morris has a lot to commend it, geologically.\n\nTo begin with, it was built fourteen years before Chicago's 1871 Great Fire (or actually its <i>first</i> Great Fire; there was also one in 1874). Due to a paucity of records, I'm not sure of the exact source of striking fieldstone that adorns this building's  exterior. But I assume the builders did what their equivalents in other regional communities did, and harvested <i>erratics</i> (glacially transported boulders) from local farm fields.\n\nA lot of effort went into mounting those boulders. Almost certainly they were split and mounted rubble-style with their flat faces inward. However, their outward faces may have been worked, too. They have a rock-faced texture, but do not project out much, as do the stones at <a href=\"https://www.flickr.com/photos/196253572@N05/53100065302/in/album-72177720310008578/\">Chicago's Epworth United Methodist Church</a>.\n\nWhat strikes my eye the most, though, is the high proportion of pink-to-red alkali-feldspar granites. Perhaps the masons preferentially selected them for their cheerful color. Or it may just be that the Wisconsin-stage ice sheet dumped a lot of them in this vicinity.  \n\nHowever, the church's reddest erratics are rhyolite, the extrusive equivalent of granite. We'll take a closer look at them and many of their companions before long.\n\n<b>To peruse the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720310008578\"><i>Geology of Fieldstone &amp; Cobblestone Buildings</i> album</a>.</b>  \n\n\n",
+      "id": "53321406776",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "196253572@N05",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/196253572@N05/",
+        "profile_url": "https://www.flickr.com/people/196253572@N05/",
+        "realname": "Raymond Wiggers",
+        "username": "rwgabbro1"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 75,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 181,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 376,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31.jpg",
+          "width": 500
+        },
+        {
+          "height": 771,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_0ae90d1d31_b.jpg",
+          "width": 1024
+        },
+        {
+          "height": 3264,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321406776_b13e98076a_o.jpg",
+          "width": 4335
+        }
+      ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "illinois",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "firstpresbyterianchurchofmorris",
+        "morrisillinois",
+        "fieldstonearchitecture",
+        "fieldstone"
+      ],
+      "title": "Geology of Fieldstone & Cobblestone Buildings, Part 17: First Presbyterian Church, Morris, Illinois, USA (1857)",
+      "url": "https://www.flickr.com/photos/196253572@N05/53321406776/"
+    },
+    {
+      "date_posted": "2023-11-09T17:40:40+00:00",
+      "date_taken": {
+        "granularity": "second",
+        "unknown": false,
+        "value": "2023-10-10T01:18:05"
+      },
+      "description": "Very interesting geology.  Frosty morning.",
+      "id": "53321171440",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "original_format": "jpg",
+      "owner": {
+        "id": "9746040@N08",
+        "path_alias": null,
+        "photos_url": "https://www.flickr.com/photos/9746040@N08/",
+        "profile_url": "https://www.flickr.com/people/9746040@N08/",
+        "realname": "Wayne Chadwick",
+        "username": "Wayne~Chadwick"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 62,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 148,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 308,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725.jpg",
+          "width": 500
+        },
+        {
+          "height": 630,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_3feffbf725_b.jpg",
+          "width": 1024
+        },
+        {
+          "height": 3767,
+          "label": "Original",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/53321171440_81d49d25af_o.jpg",
+          "width": 6125
+        }
+      ],
+      "tags": [],
+      "title": "Views at Oldervik, Norway",
+      "url": "https://www.flickr.com/photos/9746040@N08/53321171440/"
+    },
+    {
       "date_posted": "2023-11-09T00:28:09+00:00",
       "date_taken": {
         "granularity": "second",
         "unknown": false,
         "value": "2021-04-10T09:33:11"
       },
-      "description": "<i>I've finally made it to the relative saftety of the sidewalk. Looking up Clark Street, at the building's northern half.</i>\n\nFor my current book-writing project, <i>Chicago Suburbs in Stone and Clay</i>, I've been reviewing for the umpteenth time the surprisingly abundant geologic literature on the sand-and-gravel spits that now form low ridges in the city, the North Shore, and Oak Park and Forest Park areas. \n\nThis foray into spitology reminded me that North Clark and its unusual northwest-southeast trend is the result of its being the crest of the Graceland Spit. This landform, named for the graveyard I feature prominently in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670513\">my <i>Cemetery Science</i> album</a>, was built in the nearshore waters of Lake Chicago about 5.5 ka ago. \n\nIn previous shots of this series, I've described the Northwestern Terra Cotta Company cladding, formed from Pennsylvanian (Upper Carboniferous) clays mined in the Illinois Basin, that adorns the lower portion of this storage warehouse. Here it is at much closer range.\n\nOf course the most eye-catching item is the olive-skinned representation of one of the original Reebie Brothers decked out as Ramses II. His sibling is an identical Ramses II, out of sight on the other side of the entrance. \n\nBut the rest of the building's face is a nice assortment of botanical references, especially to <i>Nymphaea lotus</i>, the Egyptian Lotus. This aquatic plant was to the ancients a potent symbol of death and resurrection. Its flower buds emerge and rise above the waters of the Nile and open by day, then close and submerge again at night, and reemerge the following day.\n\nThe Egyptian Lotus is present here both in closed-bud and opened-flower forms. And there are also palm-leaf motifs in the capitals of the squat columns. \n\n<b>For more on this site, see my book <i>Chicago in Stone and Clay</i>, described at <a href=\"http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..\" rel=\"noreferrer nofollow\">www.cornellpress.cornell.edu/book/9781501765063/chicago-i..</a>. \n\nTo see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670488\"><i>Terra-Cottalogy</i> album</a>.</b> \n \n\n\n",
+      "description": "<i>I've finally made it to the relative saftety of the sidewalk. Looking up Clark Street, at the building's northern half.</i>\n\nFor my current book-writing project, <i>Chicago Suburbs in Stone and Clay</i>, I've been reviewing for the umpteenth time the surprisingly abundant geologic literature on the sand-and-gravel spits that now form low ridges in the city, the North Shore, and Oak Park and Forest Park areas. \n\nThis foray into spitology reminded me that North Clark and its unusual northwest-southeast trend is the result of its being the crest of the Graceland Spit. This landform, named for the graveyard I feature prominently in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670513\">my <i>Cemetery Science</i> album</a>, was built in the nearshore waters of Lake Chicago during its Nipissing phases, about 5.5 ka ago. \n\nIn previous shots of this series, I've described the Northwestern Terra Cotta Company cladding, formed from Pennsylvanian (Upper Carboniferous) clays mined in the Illinois Basin, that adorns the lower portion of this storage warehouse. Here it is at much closer range.\n\nOf course the most eye-catching item is the olive-skinned representation of one of the original Reebie Brothers decked out as Ramses II. His sibling is an identical Ramses II, out of sight on the other side of the entrance. \n\nBut the rest of the building's face is a nice assortment of botanical references, especially to <i>Nymphaea lotus</i>, the Egyptian Lotus. This aquatic plant was to the ancients a potent symbol of death and resurrection. Its flower buds emerge and rise above the waters of the Nile and open by day, then close and submerge again at night, and reemerge the following day.\n\nThe Egyptian Lotus is present here both in closed-bud and opened-flower forms. And there are also palm-leaf motifs in the capitals of the squat columns. \n\n<b>For more on this site, see my book <i>Chicago in Stone and Clay</i>, described at <a href=\"http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..\" rel=\"noreferrer nofollow\">www.cornellpress.cornell.edu/book/9781501765063/chicago-i..</a>. \n\nTo see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670488\"><i>Terra-Cottalogy</i> album</a>.</b> \n \n\n\n",
       "id": "53319292481",
       "license": {
         "id": "in-copyright",
@@ -22,11 +810,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -80,6 +868,20 @@
           "width": 4608
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "botany",
+        "chicago",
+        "geology",
+        "illinois",
+        "northwesternterracottacompany",
+        "terracotta",
+        "reebiestoragewarehouse",
+        "nymphaealotus",
+        "egyptianlotus",
+        "egyptianrevivalarchitecture"
+      ],
       "title": "The Geology of Terra-Cotta, Part 13: Detail of the Lower Facade, Reebie Storage Warehouse, Lincoln Park Neighborhood, Chicago, Illinois, USA (1922)",
       "url": "https://www.flickr.com/photos/196253572@N05/53319292481/"
     },
@@ -100,11 +902,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "56837663@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/56837663@N03/",
         "profile_url": "https://www.flickr.com/people/56837663@N03/",
         "realname": "Stan Celestian",
-        "username": "Stan Celestian",
-        "path_alias": null
+        "username": "Stan Celestian"
       },
       "safety_level": "safe",
       "sizes": [
@@ -158,6 +960,10 @@
           "width": 5382
         }
       ],
+      "tags": [
+        "beryl",
+        "emerald"
+      ],
       "title": "Beryl (Variety Emerald)",
       "url": "https://www.flickr.com/photos/56837663@N03/53317770887/"
     },
@@ -178,11 +984,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -236,6 +1042,22 @@
           "width": 2816
         }
       ],
+      "tags": [
+        "botany",
+        "geology",
+        "illinois",
+        "landscape",
+        "nature",
+        "parks",
+        "plants",
+        "rock",
+        "rocks",
+        "stone",
+        "bellsmithsprings",
+        "shawneenationalforest",
+        "sandstone",
+        "streams"
+      ],
       "title": "The Bounty of Bell Smith Springs, Part 6: Terms of Separation, and Essential Connections; Bell Smith Springs, Shawnee National Forest, Illinois, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53317049926/"
     },
@@ -256,11 +1078,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -314,6 +1136,22 @@
           "width": 4514
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "monroewisconsin",
+        "greencountycourthouse",
+        "montellogranite",
+        "granite",
+        "dolostone"
+      ],
       "title": "Architectural Geology of Southwestern Wisconsin, Part 12: A View from the Porch, Green County Courthouse, Monroe, Wisconsin, USA (1891)",
       "url": "https://www.flickr.com/photos/196253572@N05/53314994733/"
     },
@@ -334,11 +1172,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -392,6 +1230,26 @@
           "width": 4973
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "greece",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "paestumarcheologicalsite",
+        "firsttempleofhera",
+        "temple",
+        "greekarchitecture",
+        "doricarchitecture",
+        "travertine",
+        "sandstone"
+      ],
       "title": "Architectural Geology of Paestum, Part 1: First Temple of Hera; Magna Graecia, Campania, Italy (ca. 550 BC)",
       "url": "https://www.flickr.com/photos/196253572@N05/53312512568/"
     },
@@ -412,11 +1270,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/9746040@N08/",
         "profile_url": "https://www.flickr.com/people/9746040@N08/",
         "realname": "Wayne Chadwick",
-        "username": "Wayne~Chadwick",
-        "path_alias": null
+        "username": "Wayne~Chadwick"
       },
       "safety_level": "safe",
       "sizes": [
@@ -470,6 +1328,7 @@
           "width": 4962
         }
       ],
+      "tags": [],
       "title": "Rock feature east of Prineville, Oregon",
       "url": "https://www.flickr.com/photos/9746040@N08/53309412534/"
     },
@@ -490,11 +1349,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "88572252@N06",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/88572252@N06/",
         "profile_url": "https://www.flickr.com/people/88572252@N06/",
         "realname": null,
-        "username": "aussiejeff",
-        "path_alias": null
+        "username": "aussiejeff"
       },
       "safety_level": "safe",
       "sizes": [
@@ -548,6 +1407,14 @@
           "width": 6667
         }
       ],
+      "tags": [
+        "aussiejeff",
+        "australia",
+        "canon",
+        "jeffc",
+        "wa",
+        "serpentine"
+      ],
       "title": "1 November 2023 - Zoomed view of rocky outcrop at Serpentine Falls, Serpentine, Western Australia",
       "url": "https://www.flickr.com/photos/88572252@N06/53305412092/"
     },
@@ -568,11 +1435,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -626,6 +1493,23 @@
           "width": 2325
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "oldcityhall",
+        "marquette",
+        "michigan",
+        "lakesuperiorbrownstone",
+        "jacobsvillesandstone",
+        "ashlar"
+      ],
       "title": "The Brownstone Chronicles, Part 22: Detail of Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)",
       "url": "https://www.flickr.com/photos/196253572@N05/53308046833/"
     },
@@ -646,11 +1530,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -704,6 +1588,10 @@
           "width": 3088
         }
       ],
+      "tags": [
+        "hawaii",
+        "lx100"
+      ],
       "title": "Steaming Fumerole",
       "url": "https://www.flickr.com/photos/114641806@N08/53305252827/"
     },
@@ -724,11 +1612,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "88123769@N02",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/88123769@N02/",
         "profile_url": "https://www.flickr.com/people/88123769@N02/",
         "realname": "Bernard Spragg. NZ",
-        "username": "Bernard Spragg",
-        "path_alias": null
+        "username": "Bernard Spragg"
       },
       "safety_level": "safe",
       "sizes": [
@@ -782,6 +1670,7 @@
           "width": 5055
         }
       ],
+      "tags": [],
       "title": "Folded Limestone. Kaikoura NZ",
       "url": "https://www.flickr.com/photos/88123769@N02/53301663756/"
     },
@@ -802,11 +1691,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -860,6 +1749,18 @@
           "width": 5760
         }
       ],
+      "tags": [
+        "botany",
+        "nature",
+        "parks",
+        "plants",
+        "texas",
+        "wildflowers",
+        "hechtiatexensis",
+        "falseagave",
+        "bigbendnationalpark",
+        "boquillascanyon"
+      ],
       "title": "From Persimmon Gap to Boquillas Canyon, Part 10: One More Look at a Fascinating Species, Big Bend National Park, Texas, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53301344368/"
     },
@@ -880,11 +1781,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "188808032@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/188808032@N05/",
         "profile_url": "https://www.flickr.com/people/188808032@N05/",
         "realname": "Marcin Stepien",
-        "username": "sadebudy",
-        "path_alias": null
+        "username": "sadebudy"
       },
       "safety_level": "safe",
       "sizes": [
@@ -938,6 +1839,20 @@
           "width": 4178
         }
       ],
+      "tags": [
+        "polska",
+        "poland",
+        "polonia",
+        "gambezia",
+        "sadebudy",
+        "koparka",
+        "dolores",
+        "kleczew",
+        "fisheye",
+        "pentax",
+        "k1",
+        "excavator"
+      ],
       "title": "SRs-1800 \"Dolores\", Kleczew",
       "url": "https://www.flickr.com/photos/188808032@N05/53299913910/"
     },
@@ -958,11 +1873,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1016,6 +1931,22 @@
           "width": 5585
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "greece",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "treasuryofatreus",
+        "tombofagamemnon",
+        "mycenae",
+        "ashlar"
+      ],
       "title": "Architectural Geology of Mycenae, Part 24: Entrance to the \"Treasury of Atreus,\" Peloponnese, Greece",
       "url": "https://www.flickr.com/photos/196253572@N05/53297798697/"
     },
@@ -1036,11 +1967,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1094,6 +2025,24 @@
           "width": 3687
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "church",
+        "geology",
+        "greece",
+        "limestone",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "transfigurationofthesaviourchurch",
+        "byzantinearchitecture",
+        "athens"
+      ],
       "title": "Architectural Geology of Byzantine Athens, Part 8: Transfiguration of the Saviour Church (early 11th century AD, with subsequent changes)",
       "url": "https://www.flickr.com/photos/196253572@N05/53293393949/"
     },
@@ -1114,11 +2063,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1172,6 +2121,22 @@
           "width": 3072
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "botany",
+        "plants",
+        "rock",
+        "rocks",
+        "stone",
+        "hoytmonument",
+        "granite",
+        "narragansettpiergranite",
+        "westerlygranite",
+        "gracelandcemetery"
+      ],
       "title": "Graveyard Geology of Chicago, Part 15: Detail of the William M. Hoyt Monument, Graceland Cemetery, Uptown Neighborhood (1883)",
       "url": "https://www.flickr.com/photos/196253572@N05/53288576060/"
     },
@@ -1192,11 +2157,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1250,6 +2215,13 @@
           "width": 6000
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption",
+        "lava"
+      ],
       "title": "What Fumes Just Beyond",
       "url": "https://www.flickr.com/photos/114641806@N08/53286195151/"
     },
@@ -1270,11 +2242,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1328,6 +2300,13 @@
           "width": 5348
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption",
+        "lava"
+      ],
       "title": "She Would To Drink The Sea",
       "url": "https://www.flickr.com/photos/114641806@N08/53286194936/"
     },
@@ -1348,11 +2327,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1406,6 +2385,12 @@
           "width": 5714
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption"
+      ],
       "title": "Plume",
       "url": "https://www.flickr.com/photos/114641806@N08/53286564679/"
     },
@@ -1426,11 +2411,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1484,6 +2469,12 @@
           "width": 5633
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "lava"
+      ],
       "title": "As Earth Once Was",
       "url": "https://www.flickr.com/photos/114641806@N08/53286564844/"
     },
@@ -1504,11 +2495,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1562,6 +2553,13 @@
           "width": 4553
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption",
+        "lava"
+      ],
       "title": "Breathe at Own Risk",
       "url": "https://www.flickr.com/photos/114641806@N08/53285302377/"
     },
@@ -1582,11 +2580,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1640,6 +2638,12 @@
           "width": 5810
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption"
+      ],
       "title": "Sulfur Dioxide",
       "url": "https://www.flickr.com/photos/114641806@N08/53285302477/"
     },
@@ -1660,11 +2664,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1718,6 +2722,12 @@
           "width": 6000
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "lava"
+      ],
       "title": "Volcanic Glass",
       "url": "https://www.flickr.com/photos/114641806@N08/53286195406/"
     },
@@ -1738,11 +2748,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1796,6 +2806,12 @@
           "width": 5773
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption"
+      ],
       "title": "Last Look Back",
       "url": "https://www.flickr.com/photos/114641806@N08/53286564369/"
     },
@@ -1816,11 +2832,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1874,6 +2890,13 @@
           "width": 5598
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption",
+        "lava"
+      ],
       "title": "Unquenchable Thirst",
       "url": "https://www.flickr.com/photos/114641806@N08/53286657005/"
     },
@@ -1894,11 +2917,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -1952,6 +2975,13 @@
           "width": 5282
         }
       ],
+      "tags": [
+        "hawaii",
+        "volcano",
+        "kilauea",
+        "eruption",
+        "lava"
+      ],
       "title": "The Angry Furnaces",
       "url": "https://www.flickr.com/photos/114641806@N08/53286657155/"
     },
@@ -1972,11 +3002,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2030,6 +3060,20 @@
           "width": 5351
         }
       ],
+      "tags": [
+        "geology",
+        "nature",
+        "parks",
+        "rock",
+        "rocks",
+        "stone",
+        "texas",
+        "tuffcanyon",
+        "bigbendnationalpark",
+        "breccia",
+        "lahar",
+        "transpecostexas"
+      ],
       "title": "In and About Tuff Canyon, Part 7: A Rock of Rocks, Big Bend National Park, Texas, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53284905642/"
     },
@@ -2050,11 +3094,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2108,6 +3152,21 @@
           "width": 4608
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "chicago",
+        "geology",
+        "illinois",
+        "masonry",
+        "robiehouse",
+        "stlouisbrick",
+        "romanbrick",
+        "mortar",
+        "prairieschoolarchitecture",
+        "franklloydwright"
+      ],
       "title": "Geobrickology, Part 12: Yipes! Stripes! at the Frederick C. Robie House, Hyde Park Neighborhood, Chicago, Illinois, USA (1909)",
       "url": "https://www.flickr.com/photos/196253572@N05/53283379996/"
     },
@@ -2128,11 +3187,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2186,6 +3245,10 @@
           "width": 6000
         }
       ],
+      "tags": [
+        "lassen",
+        "ca"
+      ],
       "title": "Lassen and Sulfur",
       "url": "https://www.flickr.com/photos/114641806@N08/53281370801/"
     },
@@ -2206,11 +3269,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2264,6 +3327,11 @@
           "width": 6000
         }
       ],
+      "tags": [
+        "lassen",
+        "ca",
+        "mudpot"
+      ],
       "title": "Boiling Mud in Lassen",
       "url": "https://www.flickr.com/photos/114641806@N08/53281839315/"
     },
@@ -2284,11 +3352,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/114641806@N08/",
         "profile_url": "https://www.flickr.com/people/114641806@N08/",
         "realname": null,
-        "username": "incidencematrix",
-        "path_alias": null
+        "username": "incidencematrix"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2342,6 +3410,10 @@
           "width": 6000
         }
       ],
+      "tags": [
+        "lassen",
+        "ca"
+      ],
       "title": "Volcanic Hillside",
       "url": "https://www.flickr.com/photos/114641806@N08/53281837945/"
     },
@@ -2362,11 +3434,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2420,6 +3492,22 @@
           "width": 3840
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "sanjuandeloscaballeroschurch",
+        "segovia",
+        "spain",
+        "ashlar"
+      ],
       "title": "Architectural Geology of Segovia, Spain, Part 23: San Juan de los Caballeros Church (late 11th Century AD)",
       "url": "https://www.flickr.com/photos/196253572@N05/53281283364/"
     },
@@ -2440,11 +3528,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "43164076@N06",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/43164076@N06/",
         "profile_url": "https://www.flickr.com/people/43164076@N06/",
         "realname": "David Hoffman",
-        "username": "David Hoffman '41",
-        "path_alias": null
+        "username": "David Hoffman '41"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2498,6 +3586,7 @@
           "width": 3648
         }
       ],
+      "tags": [],
       "title": "In Pound Gap",
       "url": "https://www.flickr.com/photos/43164076@N06/53226069018/"
     },
@@ -2518,11 +3607,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2576,6 +3665,23 @@
           "width": 1291
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "cobblestonehouse",
+        "dodgehouse",
+        "portwashington",
+        "basalt",
+        "dolostone",
+        "granitoids"
+      ],
       "title": "Geology of Fieldstone & Cobblestone Buildings, Part 16: One More Close-up of the Edward Dodge House, Port Washington, Wisconsin, USA (1848)",
       "url": "https://www.flickr.com/photos/196253572@N05/53275648005/"
     },
@@ -2596,11 +3702,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2654,6 +3760,19 @@
           "width": 4565
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "chicago",
+        "geology",
+        "illinois",
+        "masonry",
+        "terracotta",
+        "glazedbrick",
+        "enameledbrick",
+        "reebiestoragewarehouse"
+      ],
       "title": "The Geology of Terra-Cotta, Part 12: Still Closing in on the Reebie Storage Warehouse, Lincoln Park Neighborhood, Chicago, Illinois, USA (1922)",
       "url": "https://www.flickr.com/photos/196253572@N05/53272885351/"
     },
@@ -2674,11 +3793,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/9746040@N08/",
         "profile_url": "https://www.flickr.com/people/9746040@N08/",
         "realname": "Wayne Chadwick",
-        "username": "Wayne~Chadwick",
-        "path_alias": null
+        "username": "Wayne~Chadwick"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2732,6 +3851,7 @@
           "width": 10375
         }
       ],
+      "tags": [],
       "title": "Panorama of typical terrain",
       "url": "https://www.flickr.com/photos/9746040@N08/53272515055/"
     },
@@ -2752,11 +3872,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2810,6 +3930,22 @@
           "width": 2816
         }
       ],
+      "tags": [
+        "dendrology",
+        "geology",
+        "illinois",
+        "landscape",
+        "nature",
+        "parks",
+        "rock",
+        "rocks",
+        "stone",
+        "trees",
+        "naturalbridge",
+        "bellsmithsprings",
+        "shawneenationalforest",
+        "sandstone"
+      ],
       "title": "The Bounty of Bell Smith Springs, Part 5: High-Anxiety Time Atop the Natural Bridge, Bell Smith Springs, Shawnee National Forest, Illinois, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53271012034/"
     },
@@ -2820,7 +3956,7 @@
         "unknown": false,
         "value": "2019-05-31T12:26:14"
       },
-      "description": "<i>Looking northwestward toward one section of the courthouse's eastern elevation.</i>\n\nThis portion of this Richardsonian Romanesque building reminds me powerfully of the arcaded porches of the original version of the Romanesque style, as articulated in the churches of Segovia, Spain. Here's <a href=\"https://www.flickr.com/photos/196253572@N05/53042100663/in/album-72177720307451632/\">one example of that</a>.\n\nThe three main exterior building materials, all products of Wisconsin, are visible in this shot, though the richly red Maiden Rock Brick here takes a back seat to the great mass of Regional Silurian Dolostone. Note the striking checkerboard masonry of widely spaced ashlar blocks under the columns. It almost looks like a wind baffle. At any rate, the masons who set the stone must have had tremendous fun with all the different patterns they got to play with.  \n\nAs I noted in <a href=\"https://www.flickr.com/photos/196253572@N05/53212741652/in/dateposted-public/\">the Part 10 description</a>, I'm guessing that the buff-to-buttery-yellow ashlar is specifically Wauwatosa Dolostone, quarried in the Menomonee River Valley just west of Milwaukee. If it isn't, though, it comes from another locality in the eastern portion of the Badger State.\n\nAnd then there are those beautiful gleaming column shafts of Montello Granite. This intrusive igneous rock was a costly and  premium-grade selection. Paleoproterozoic in age, it has an unusually high quartz content that made it devilishly difficult to cut, shape, and polish. But when all that extra effort was taken, the result was what may well be the most enduring of all building and monumental stones. \n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302395101\"><i>Architectural Geology: Southwestern Wisconsin</i> album</a>.</b>\n\n",
+      "description": "<i>Looking northwestward toward one section of the courthouse's eastern elevation.</i>\n\nThis portion of this Richardsonian Romanesque building reminds me powerfully of the arcaded porches of the original version of the Romanesque style, as articulated in the churches of Segovia, Spain. Here's <a href=\"https://www.flickr.com/photos/196253572@N05/53042100663/in/album-72177720307451632/\">one example of that</a>.\n\nThe three main exterior building materials, all products of Wisconsin, are visible in this shot, though the richly red Maiden Rock Brick here takes a back seat to the great mass of Regional Silurian Dolostone. Note the striking checkerboard of gaps and widely spaced ashlar blocks under the columns. This is what is known, believe it or not, as <i>hit-or-miss masonry</i>. It's much more commonly used in garden-wall brickwork, where the builders want some air and light to come through. There's actually nothing hit-or-miss about it; it requires  quite some skill to get the pattern right.\n\nAs I noted in <a href=\"https://www.flickr.com/photos/196253572@N05/53212741652/in/dateposted-public/\">the Part 10 description</a>, I'm guessing that the buff-to-buttery-yellow ashlar is specifically Wauwatosa Dolostone, quarried in the Menomonee River Valley just west of Milwaukee. If it isn't, though, it comes from another locality in the eastern portion of the Badger State.\n\nAnd then there are those beautiful gleaming column shafts of Montello Granite. This intrusive igneous rock was a costly and  premium-grade selection. Paleoproterozoic in age, it has an unusually high quartz content that made it devilishly difficult to cut, shape, and polish. But when all that extra effort was taken, the result was what may well be the most enduring of all building and monumental stones. \n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302395101\"><i>Architectural Geology: Southwestern Wisconsin</i> album</a>.</b>\n\n",
       "id": "53267563072",
       "license": {
         "id": "in-copyright",
@@ -2830,11 +3966,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2888,6 +4024,23 @@
           "width": 4405
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "greencountycourthouse",
+        "monroewisconsin",
+        "ashlar",
+        "dolostone",
+        "granite"
+      ],
       "title": "Architectural Geology of Southwestern Wisconsin, Part 11: A Closer Look at the Green County Courthouse, Monroe, Wisconsin, USA (1891)",
       "url": "https://www.flickr.com/photos/196253572@N05/53267563072/"
     },
@@ -2908,11 +4061,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "188808032@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/188808032@N05/",
         "profile_url": "https://www.flickr.com/people/188808032@N05/",
         "realname": "Marcin Stepien",
-        "username": "sadebudy",
-        "path_alias": null
+        "username": "sadebudy"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2966,6 +4119,18 @@
           "width": 3749
         }
       ],
+      "tags": [
+        "elbe",
+        "\u0142aba",
+        "rzeka",
+        "river",
+        "pentax",
+        "k1",
+        "fisheye",
+        "saxony",
+        "deutschland",
+        "konigstein"
+      ],
       "title": "\u0141aba // Elbe",
       "url": "https://www.flickr.com/photos/188808032@N05/53267108158/"
     },
@@ -2986,11 +4151,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3044,6 +4209,23 @@
           "width": 3800
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "brick",
+        "geology",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "palaceoftheporphyrogenitus",
+        "istanbul",
+        "constantinople",
+        "byzantinearchitecture"
+      ],
       "title": "A Marvel of Masonry, Part 6: The Palace of the Porphyrogenitus (late 13th Century) and the Blachernae Walls (different sections in different centuries), Istanbul, Turkey",
       "url": "https://www.flickr.com/photos/196253572@N05/53266595260/"
     },
@@ -3064,11 +4246,11 @@
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/37075433@N00/",
         "profile_url": "https://www.flickr.com/people/37075433@N00/",
         "realname": "Vid Pogacnik",
-        "username": "Vid Pogacnik",
-        "path_alias": null
+        "username": "Vid Pogacnik"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3115,6 +4297,20 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "slovenija",
+        "istra",
+        "river",
+        "outside",
+        "outdoors",
+        "hiking",
+        "slovenia",
+        "geology",
+        "wading",
+        "istria",
+        "flysch",
+        "dragonja"
+      ],
       "title": "More flysch at Dragonja",
       "url": "https://www.flickr.com/photos/37075433@N00/53264776014/"
     },
@@ -3135,11 +4331,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3193,6 +4389,24 @@
           "width": 4035
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "stsavaserbianorthodoxcathedral",
+        "copper",
+        "milwaukee",
+        "ashlar",
+        "dolostone"
+      ],
       "title": "The Glory of Regional Silurian Dolostone, Part 28: Detail of St. Sava Serbian Orthodox Cathedral, Lyons Park Neighborhood, Milwaukee, Wisconsin, USA (1958)",
       "url": "https://www.flickr.com/photos/196253572@N05/53263600006/"
     },
@@ -3213,11 +4427,11 @@
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/37075433@N00/",
         "profile_url": "https://www.flickr.com/people/37075433@N00/",
         "realname": "Vid Pogacnik",
-        "username": "Vid Pogacnik",
-        "path_alias": null
+        "username": "Vid Pogacnik"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3264,6 +4478,20 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "river",
+        "landscape",
+        "outside",
+        "outdoors",
+        "hiking",
+        "slovenia",
+        "geology",
+        "slovenija",
+        "istria",
+        "istra",
+        "flysch",
+        "dragonja"
+      ],
       "title": "Dragonja river",
       "url": "https://www.flickr.com/photos/37075433@N00/53262610065/"
     },
@@ -3284,11 +4512,11 @@
       "original_format": null,
       "owner": {
         "id": "31154073@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/31154073@N05/",
         "profile_url": "https://www.flickr.com/people/31154073@N05/",
         "realname": null,
-        "username": "Dah Professor",
-        "path_alias": null
+        "username": "Dah Professor"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3335,6 +4563,14 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "kh0831",
+        "montana",
+        "landscape",
+        "2023yellowstonetrip",
+        "day17",
+        "img66826691"
+      ],
       "title": "The Bad Lands",
       "url": "https://www.flickr.com/photos/31154073@N05/53253776390/"
     },
@@ -3355,11 +4591,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3413,6 +4649,24 @@
           "width": 5760
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "greece",
+        "landscape",
+        "limestone",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "mycenae",
+        "treasuryofatreus",
+        "tholostomb",
+        "conglomerate"
+      ],
       "title": "Architectural Geology of Mycenae, Part 23: Long-distance Tomb-gazing; Peloponnese, Greece",
       "url": "https://www.flickr.com/photos/196253572@N05/53256398103/"
     },
@@ -3433,11 +4687,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3491,6 +4745,25 @@
           "width": 5760
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "archaeology",
+        "architecture",
+        "brick",
+        "geology",
+        "greece",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "incorporealangelschurch",
+        "athens",
+        "byzantine",
+        "church",
+        "terracotta",
+        "ashlar"
+      ],
       "title": "Architectural Geology of Byzantine Athens, Part 7: Incorporeal Angels Church (late 11th century AD, with subsequent rebuilding and restoration)",
       "url": "https://www.flickr.com/photos/196253572@N05/53254060408/"
     },
@@ -3511,11 +4784,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3569,6 +4842,21 @@
           "width": 2814
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "stone",
+        "stonework",
+        "rocks",
+        "rock",
+        "gracelandcemetery",
+        "narragansettpiergranite",
+        "granite",
+        "monumentalstone"
+      ],
       "title": "Graveyard Geology of Chicago, Part 14: William M. Hoyt Monument, Graceland Cemetery, Uptown Neighborhood (1883)",
       "url": "https://www.flickr.com/photos/196253572@N05/53250733547/"
     },
@@ -3589,11 +4877,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3647,6 +4935,22 @@
           "width": 3711
         }
       ],
+      "tags": [
+        "geology",
+        "nature",
+        "parks",
+        "rock",
+        "stone",
+        "texas",
+        "rocks",
+        "tuffcanyon",
+        "transpecostexas",
+        "bigbendnationalpark",
+        "ballisticblocks",
+        "pyroclasticdeposits",
+        "lahar",
+        "debrisflow"
+      ],
       "title": "In and About Tuff Canyon, Part 6: My Morbid Fascination with Flying Boulders, Big Bend National Park, Texas, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53249755023/"
     },
@@ -3667,11 +4971,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3725,6 +5029,27 @@
           "width": 4560
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "robiehouse",
+        "franklloydwright",
+        "stlouisbrick",
+        "romanbrick",
+        "brick",
+        "brickwork",
+        "ashlar",
+        "salemlimestone"
+      ],
       "title": "Geobrickology, Part 11: Close-up of the Frederick C. Robie House, Hyde Park Neighborhood, Chicago, Illinois, USA (1909)",
       "url": "https://www.flickr.com/photos/196253572@N05/53247185858/"
     },
@@ -3745,11 +5070,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3803,6 +5128,24 @@
           "width": 3840
         }
       ],
+      "tags": [
+        "architecture",
+        "architecturalgeology",
+        "church",
+        "geology",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "segovia",
+        "sanjuandeloscaballeroschurch",
+        "spain",
+        "brick",
+        "ashlar",
+        "romanesque",
+        "sandstone"
+      ],
       "title": "Architectural Geology of Segovia, Spain, Part 22: San Juan de los Caballeros Church (late 11th Century AD)",
       "url": "https://www.flickr.com/photos/196253572@N05/53245930917/"
     },
@@ -3823,11 +5166,11 @@
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/37075433@N00/",
         "profile_url": "https://www.flickr.com/people/37075433@N00/",
         "realname": "Vid Pogacnik",
-        "username": "Vid Pogacnik",
-        "path_alias": null
+        "username": "Vid Pogacnik"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3874,6 +5217,15 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "slovenia",
+        "prekmurje",
+        "nuskova",
+        "mineralwater",
+        "spring",
+        "source",
+        "geology"
+      ],
       "title": "Slatinski vrelec",
       "url": "https://www.flickr.com/photos/37075433@N00/53242900910/"
     },
@@ -3894,11 +5246,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -3952,6 +5304,21 @@
           "width": 1842
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "stonework",
+        "stone",
+        "rocks",
+        "rock",
+        "wisconsin",
+        "milwaukeeinstoneandclay",
+        "milwaukee",
+        "creamcitybrick",
+        "brick",
+        "terracotta"
+      ],
       "title": "Milwaukee in Stone and Clay: A Guide to the Cream City's Architectural Geology (NIU Imprint of Cornell University Press)",
       "url": "https://www.flickr.com/photos/196253572@N05/53241541841/"
     },
@@ -3972,11 +5339,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4030,6 +5397,23 @@
           "width": 4275
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "portwashington",
+        "dodgehouse",
+        "cobblestonehouses",
+        "cobble",
+        "pebble",
+        "ashlar"
+      ],
       "title": "Geology of Fieldstone & Cobblestone Buildings, Part 15: Close-up of the Edward Dodge House, Port Washington, Wisconsin, USA (1848)",
       "url": "https://www.flickr.com/photos/196253572@N05/53239745750/"
     },
@@ -4050,11 +5434,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4108,6 +5492,16 @@
           "width": 3742
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "reebiestoragewarehouse",
+        "terracotta",
+        "northwesternterracottacompany"
+      ],
       "title": "The Geology of Terra-Cotta, Part 11: Closing in on the Reebie Storage Warehouse, Lincoln Park Neighborhood, Chicago, Illinois, USA (1922)",
       "url": "https://www.flickr.com/photos/196253572@N05/53237534859/"
     },
@@ -4128,11 +5522,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4186,6 +5580,22 @@
           "width": 5760
         }
       ],
+      "tags": [
+        "botany",
+        "geology",
+        "dendrology",
+        "illinois",
+        "landscape",
+        "nature",
+        "parks",
+        "plants",
+        "rock",
+        "rocks",
+        "stone",
+        "bellsmithsprings",
+        "naturalbridge",
+        "shawneenationalforest"
+      ],
       "title": "The Bounty of Bell Smith Springs, Part 4: Detail of the Upper Surface of the Natural Bridge, Bell Smith Springs, Shawnee National Forest, Illinois, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53237492035/"
     },
@@ -4204,11 +5614,11 @@
       "original_format": "png",
       "owner": {
         "id": "128501237@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/128501237@N03/",
         "profile_url": "https://www.flickr.com/people/128501237@N03/",
         "realname": "Thomas Williamson",
-        "username": "thomasedward63",
-        "path_alias": null
+        "username": "thomasedward63"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4262,6 +5672,14 @@
           "width": 3741
         }
       ],
+      "tags": [
+        "nacimientoformation",
+        "paleocene",
+        "kutz",
+        "canyon",
+        "new",
+        "mexico"
+      ],
       "title": "2023-08-17-20h30m08s221B",
       "url": "https://www.flickr.com/photos/128501237@N03/53234046374/"
     },
@@ -4280,11 +5698,11 @@
       "original_format": "png",
       "owner": {
         "id": "128501237@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/128501237@N03/",
         "profile_url": "https://www.flickr.com/people/128501237@N03/",
         "realname": "Thomas Williamson",
-        "username": "thomasedward63",
-        "path_alias": null
+        "username": "thomasedward63"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4338,6 +5756,7 @@
           "width": 3840
         }
       ],
+      "tags": [],
       "title": "2023-08-17-20h34m03s113",
       "url": "https://www.flickr.com/photos/128501237@N03/53234196195/"
     },
@@ -4358,11 +5777,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "39398829@N02",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/39398829@N02/",
         "profile_url": "https://www.flickr.com/people/39398829@N02/",
         "realname": "Dave Coppedge",
-        "username": "Chief Bwana",
-        "path_alias": null
+        "username": "Chief Bwana"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4416,6 +5835,16 @@
           "width": 6742
         }
       ],
+      "tags": [
+        "az",
+        "arizona",
+        "chinleformation",
+        "geology",
+        "rainbowvalley",
+        "houserockvalley",
+        "psa104",
+        "chiefbwana"
+      ],
       "title": "Natural tapestry: Chinle stripes detail",
       "url": "https://www.flickr.com/photos/39398829@N02/53233073025/"
     },
@@ -4436,11 +5865,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4494,6 +5923,24 @@
           "width": 4043
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "monroe",
+        "greencountycourthouse",
+        "ashlar",
+        "regionalsiluriandolostone",
+        "montellogranite",
+        "brick",
+        "maidenrockbrick"
+      ],
       "title": "Architectural Geology of Southwestern Wisconsin, Part 10: Detail of the Green County Courthouse, Monroe, Wisconsin, USA (1891)",
       "url": "https://www.flickr.com/photos/196253572@N05/53212741652/"
     },
@@ -4514,11 +5961,11 @@
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/34457823@N04/",
         "profile_url": "https://www.flickr.com/people/34457823@N04/",
         "realname": "Karen  Portin",
-        "username": "KPortin",
-        "path_alias": null
+        "username": "KPortin"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4565,6 +6012,18 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "thorswell",
+        "oregon",
+        "capeperpetua",
+        "surf",
+        "man",
+        "dog",
+        "ocean",
+        "pacificocean",
+        "basalt",
+        "rockformations"
+      ],
       "title": "Thor's Well",
       "url": "https://www.flickr.com/photos/34457823@N04/53208562441/"
     },
@@ -4585,11 +6044,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4643,6 +6102,23 @@
           "width": 5671
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "palaceoftheporphyrogenitus",
+        "istanbul",
+        "turkey",
+        "byzantine",
+        "ashlar",
+        "brick"
+      ],
       "title": "A Marvel of Masonry, Part 5: The Palace of the Porphyrogenitus (late 13th Century) and the Blachernae Walls (different sections in different centuries), Istanbul, Turkey",
       "url": "https://www.flickr.com/photos/196253572@N05/53209055865/"
     },
@@ -4663,11 +6139,11 @@
       "original_format": null,
       "owner": {
         "id": "44273756@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/44273756@N08/",
         "profile_url": "https://www.flickr.com/people/44273756@N08/",
         "realname": null,
-        "username": "mikek666",
-        "path_alias": null
+        "username": "mikek666"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4707,6 +6183,7 @@
           "width": 500
         }
       ],
+      "tags": [],
       "title": "Shake hole NW of Glyntawe Sept 2023",
       "url": "https://www.flickr.com/photos/44273756@N08/53206992501/"
     },
@@ -4727,11 +6204,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4785,6 +6262,24 @@
           "width": 2816
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "oldcityhall",
+        "marquette",
+        "michigan",
+        "jacobsvillesandstone",
+        "lakesuperiorbrownstone",
+        "marquettebrick",
+        "brick",
+        "ashlar"
+      ],
       "title": "The Brownstone Chronicles, Part 21: Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)",
       "url": "https://www.flickr.com/photos/196253572@N05/53205525427/"
     },
@@ -4805,11 +6300,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4863,6 +6358,21 @@
           "width": 5710
         }
       ],
+      "tags": [
+        "geology",
+        "landscape",
+        "nature",
+        "parks",
+        "plants",
+        "rock",
+        "rocks",
+        "stone",
+        "texas",
+        "transpecos",
+        "riogrande",
+        "bigbendnationalpark",
+        "boquillascanyontrail"
+      ],
       "title": "From Persimmon Gap to Boquillas Canyon, Part 8: Reaching Road's End and the River At Last, Big Bend National Park, Texas, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53202518625/"
     },
@@ -4883,11 +6393,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -4941,6 +6451,27 @@
           "width": 5760
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "greece",
+        "landscape",
+        "masonry",
+        "limestone",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "mycenae",
+        "houseoftheoilmerchant",
+        "conglomerate",
+        "terrarossa",
+        "soil",
+        "pedology",
+        "ruins"
+      ],
       "title": "Architectural Geology of Mycenae, Part 22: Fuori le Mura, or, in the Vulgar, That Which Lies Beyond the Citadel; Peloponnese, Greece",
       "url": "https://www.flickr.com/photos/196253572@N05/53200208410/"
     },
@@ -4959,11 +6490,11 @@
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/93408882@N03/",
         "profile_url": "https://www.flickr.com/people/93408882@N03/",
         "realname": "Janis Morrison",
-        "username": "Freshairphotography by Janis Morrison",
-        "path_alias": null
+        "username": "Freshairphotography by Janis Morrison"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5010,6 +6541,28 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "palouse",
+        "palousefalls",
+        "palousefallsstatepark",
+        "washingtonstatewaterfall",
+        "waterflow",
+        "waterfalls",
+        "waterfall",
+        "basalt",
+        "volcanic",
+        "geology",
+        "geological",
+        "naturalwonder",
+        "washington",
+        "washingtonstate",
+        "easternwashington",
+        "columbiariverbasaltgroup",
+        "palouseriver",
+        "columnarbasalt",
+        "canyon",
+        "missoulafloods"
+      ],
       "title": "Palouse Falls Palouse Falls State Park, Washington",
       "url": "https://www.flickr.com/photos/93408882@N03/53196825815/"
     },
@@ -5030,11 +6583,11 @@
       "original_format": null,
       "owner": {
         "id": "29409244@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/29409244@N03/",
         "profile_url": "https://www.flickr.com/people/29409244@N03/",
         "realname": "Lilian Alizert",
-        "username": "Lilian Alizert",
-        "path_alias": null
+        "username": "Lilian Alizert"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5081,6 +6634,17 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "teeth",
+        "tooth",
+        "dent",
+        "shark",
+        "requin",
+        "miocene",
+        "pliocene",
+        "nouvellecal\u00e9donie",
+        "newcaledonia"
+      ],
       "title": "Fossile de dent de requin Megalodon",
       "url": "https://www.flickr.com/photos/29409244@N03/53195466740/"
     },
@@ -5101,11 +6665,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5159,6 +6723,31 @@
           "width": 5700
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "greece",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "athens",
+        "holytrinitychurch",
+        "byzantinearchitecture",
+        "cloisonne",
+        "ashlar",
+        "datepalm",
+        "phoenixdactylifera",
+        "botany",
+        "plants",
+        "trees",
+        "dendrology"
+      ],
       "title": "Architectural Geology of Byzantine Athens, Part 6: Holy Trinity Church (early 11th century AD, with a major renovation and rebuilding in the 19th century)",
       "url": "https://www.flickr.com/photos/196253572@N05/53194508679/"
     },
@@ -5179,11 +6768,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5237,6 +6826,23 @@
           "width": 4608
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "rosehillcemtery",
+        "dolostone",
+        "regionalsiluriandolostone",
+        "lemontjolietdolostone",
+        "ashlar"
+      ],
       "title": "Graveyard Geology of Chicago, Part 13: Detail of the Entrance Gate, Rosehill Cemetery, Edgewater Neighborhood (1864)",
       "url": "https://www.flickr.com/photos/196253572@N05/53192457283/"
     },
@@ -5255,11 +6861,11 @@
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/93408882@N03/",
         "profile_url": "https://www.flickr.com/people/93408882@N03/",
         "realname": "Janis Morrison",
-        "username": "Freshairphotography by Janis Morrison",
-        "path_alias": null
+        "username": "Freshairphotography by Janis Morrison"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5306,6 +6912,33 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "oregon",
+        "paintedhillsoregon",
+        "paintedhills",
+        "johndayfossilbedsnationalmonument",
+        "paintedhillsunit",
+        "volcanic",
+        "volcanicash",
+        "ancient",
+        "historic",
+        "geological",
+        "geology",
+        "centraloregon",
+        "claystone",
+        "layersofcolor",
+        "millionsofyearsold",
+        "amazing",
+        "fossils",
+        "johndaymonument",
+        "interesting",
+        "fascinating",
+        "naturesart",
+        "pacificnorthwest",
+        "unique",
+        "unusual",
+        "usa"
+      ],
       "title": "Painted Hills, John Day Fossil Beds National Monument A closer look of the \u2018toes\u2019 of the hills Wheeler County, Oregon",
       "url": "https://www.flickr.com/photos/93408882@N03/53191825160/"
     },
@@ -5324,11 +6957,11 @@
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/93408882@N03/",
         "profile_url": "https://www.flickr.com/people/93408882@N03/",
         "realname": "Janis Morrison",
-        "username": "Freshairphotography by Janis Morrison",
-        "path_alias": null
+        "username": "Freshairphotography by Janis Morrison"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5375,6 +7008,33 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "oregon",
+        "paintedhillsoregon",
+        "paintedhills",
+        "johndayfossilbedsnationalmonument",
+        "paintedhillsunit",
+        "volcanic",
+        "volcanicash",
+        "ancient",
+        "historic",
+        "geological",
+        "geology",
+        "centraloregon",
+        "claystone",
+        "layersofcolor",
+        "millionsofyearsold",
+        "amazing",
+        "fossils",
+        "johndaymonument",
+        "interesting",
+        "fascinating",
+        "naturesart",
+        "pacificnorthwest",
+        "unique",
+        "unusual",
+        "usa"
+      ],
       "title": "Painted Hills, John Day Fossil Beds National Monument A closer look of the \u2018toes\u2019 of the hills Wheeler County, Oregon",
       "url": "https://www.flickr.com/photos/93408882@N03/53191170072/"
     },
@@ -5393,11 +7053,11 @@
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/93408882@N03/",
         "profile_url": "https://www.flickr.com/people/93408882@N03/",
         "realname": "Janis Morrison",
-        "username": "Freshairphotography by Janis Morrison",
-        "path_alias": null
+        "username": "Freshairphotography by Janis Morrison"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5444,6 +7104,33 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "oregon",
+        "paintedhillsoregon",
+        "paintedhills",
+        "johndayfossilbedsnationalmonument",
+        "paintedhillsunit",
+        "volcanic",
+        "volcanicash",
+        "ancient",
+        "historic",
+        "geological",
+        "geology",
+        "centraloregon",
+        "claystone",
+        "layersofcolor",
+        "millionsofyearsold",
+        "amazing",
+        "fossils",
+        "johndaymonument",
+        "interesting",
+        "fascinating",
+        "naturesart",
+        "pacificnorthwest",
+        "unique",
+        "unusual",
+        "usa"
+      ],
       "title": "Painted Hills, John Day Fossil Beds National Monument A closer look of the \u2018toes\u2019 of the hills Wheeler County, Oregon",
       "url": "https://www.flickr.com/photos/93408882@N03/53191431509/"
     },
@@ -5462,11 +7149,11 @@
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/93408882@N03/",
         "profile_url": "https://www.flickr.com/people/93408882@N03/",
         "realname": "Janis Morrison",
-        "username": "Freshairphotography by Janis Morrison",
-        "path_alias": null
+        "username": "Freshairphotography by Janis Morrison"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5513,6 +7200,21 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "paintedhills",
+        "paintedcovetrail",
+        "johndayfossilbedsnationalmonument",
+        "paintedhillsoregon",
+        "wheelercounty",
+        "geological",
+        "fossils",
+        "claystone",
+        "reds",
+        "naturesart",
+        "volcanic",
+        "volcanicash",
+        "paintedhillsunit"
+      ],
       "title": "Painted Cove Trail  John Day Fossil Beds National Monument Wheeler County, Oregon",
       "url": "https://www.flickr.com/photos/93408882@N03/53190651270/"
     },
@@ -5533,11 +7235,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5591,6 +7293,26 @@
           "width": 4570
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "robiehouse",
+        "franklloydwright",
+        "prairiestyle",
+        "romanbrick",
+        "stlouisbrick",
+        "salemlimestone",
+        "brick"
+      ],
       "title": "Geobrickology, Part 9: The Frederick C. Robie House, Hyde Park Neighborhood, Chicago, Illinois, USA (1909)",
       "url": "https://www.flickr.com/photos/196253572@N05/53189462917/"
     },
@@ -5611,11 +7333,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5669,6 +7391,23 @@
           "width": 5625
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "spain",
+        "segovia",
+        "sanjuandeloscaballeros",
+        "sandstone",
+        "ashlar",
+        "weathering"
+      ],
       "title": "Architectural Geology of Segovia, Spain, Part 21: San Juan de los Caballeros Church (late 11th Century AD)",
       "url": "https://www.flickr.com/photos/196253572@N05/53187912844/"
     },
@@ -5689,11 +7428,11 @@
       "original_format": null,
       "owner": {
         "id": "74486811@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/74486811@N00/",
         "profile_url": "https://www.flickr.com/people/74486811@N00/",
         "realname": "Eric",
-        "username": "eb78",
-        "path_alias": null
+        "username": "eb78"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5740,6 +7479,17 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "ca",
+        "california",
+        "mojavedesert",
+        "amboycrater",
+        "drone",
+        "aerialphotography",
+        "djimavicpro2",
+        "volcano",
+        "droneography"
+      ],
       "title": "crater",
       "url": "https://www.flickr.com/photos/74486811@N00/53185186275/"
     },
@@ -5760,11 +7510,11 @@
       "original_format": null,
       "owner": {
         "id": "75916004@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/75916004@N00/",
         "profile_url": "https://www.flickr.com/people/75916004@N00/",
         "realname": "paolo alias opaxir",
-        "username": "opaxir",
-        "path_alias": null
+        "username": "opaxir"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5811,6 +7561,18 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "maremma",
+        "toscana",
+        "tuscany",
+        "riolite",
+        "rhyolite",
+        "riolyth",
+        "sassoforte",
+        "paesaggio",
+        "landscape",
+        "rocce"
+      ],
       "title": "MAREMMA TOSCANA - LA SELVA DEL SASSOFORTE 3228",
       "url": "https://www.flickr.com/photos/75916004@N00/53184710710/"
     },
@@ -5831,11 +7593,11 @@
       "original_format": null,
       "owner": {
         "id": "75916004@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/75916004@N00/",
         "profile_url": "https://www.flickr.com/people/75916004@N00/",
         "realname": "paolo alias opaxir",
-        "username": "opaxir",
-        "path_alias": null
+        "username": "opaxir"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5882,6 +7644,18 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "maremma",
+        "toscana",
+        "tuscany",
+        "riolite",
+        "rhyolite",
+        "riolyth",
+        "sassoforte",
+        "paesaggio",
+        "landscape",
+        "rocce"
+      ],
       "title": "MAREMMA TOSCANA - LA SELVA DEL SASSOFORTE 3242",
       "url": "https://www.flickr.com/photos/75916004@N00/53183796992/"
     },
@@ -5902,11 +7676,11 @@
       "original_format": null,
       "owner": {
         "id": "75916004@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/75916004@N00/",
         "profile_url": "https://www.flickr.com/people/75916004@N00/",
         "realname": "paolo alias opaxir",
-        "username": "opaxir",
-        "path_alias": null
+        "username": "opaxir"
       },
       "safety_level": "safe",
       "sizes": [
@@ -5953,6 +7727,18 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "maremma",
+        "toscana",
+        "tuscany",
+        "riolite",
+        "rhyolite",
+        "riolyth",
+        "sassoforte",
+        "paesaggio",
+        "landscape",
+        "rocce"
+      ],
       "title": "MAREMMA TOSCANA - LA SELVA DEL SASSOFORTE 3244",
       "url": "https://www.flickr.com/photos/75916004@N00/53184879493/"
     },
@@ -5973,11 +7759,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6031,6 +7817,22 @@
           "width": 3663
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "portwashington",
+        "dodgehouse",
+        "cobblestonehouses",
+        "lannondolostone",
+        "dolostone"
+      ],
       "title": "Geology of Fieldstone & Cobblestone Buildings, Part 14: The Edward Dodge House, Port Washington, Wisconsin, USA (1848)",
       "url": "https://www.flickr.com/photos/196253572@N05/53183776200/"
     },
@@ -6051,11 +7853,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6109,6 +7911,16 @@
           "width": 4126
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "chicago",
+        "geology",
+        "illinois",
+        "terracotta",
+        "northwesternterracottacompany",
+        "reebiestoragewarehouse"
+      ],
       "title": "The Geology of Terra-Cotta, Part 10: The Reebie Storage Warehouse, Lincoln Park Neighborhood, Chicago, Illinois, USA (1922)",
       "url": "https://www.flickr.com/photos/196253572@N05/53181735133/"
     },
@@ -6129,11 +7941,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6187,6 +7999,23 @@
           "width": 3840
         }
       ],
+      "tags": [
+        "geology",
+        "illinois",
+        "nature",
+        "parks",
+        "rock",
+        "rocks",
+        "stone",
+        "sandstone",
+        "poundssandstone",
+        "caseyvilleformation",
+        "bellsmithsprings",
+        "canyon",
+        "naturalbridge",
+        "shawneenationalforest",
+        "crossbedding"
+      ],
       "title": "The Bounty of Bell Smith Springs, Part 3: Close-Up of the Cliff Wall behind the Natural Bridge, Bell Smith Springs, Shawnee National Forest, Illinois, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53181572895/"
     },
@@ -6207,11 +8036,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6265,6 +8094,20 @@
           "width": 3705
         }
       ],
+      "tags": [
+        "geology",
+        "architecture",
+        "archaeology",
+        "brick",
+        "stone",
+        "concrete",
+        "rome",
+        "italy",
+        "italia",
+        "roma",
+        "colosseum",
+        "masonry"
+      ],
       "title": "Colosseum Geology 101, Part 5: The Flavian Amphitheater, Rome, Italy (AD 80)",
       "url": "https://www.flickr.com/photos/196253572@N05/52561295192/"
     },
@@ -6285,11 +8128,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6343,6 +8186,24 @@
           "width": 3034
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "greencountycourthouse",
+        "monroewisconsin",
+        "dolostone",
+        "maidenrockbrick",
+        "ashlar",
+        "montellogranite",
+        "granite"
+      ],
       "title": "Architectural Geology of Southwestern Wisconsin, Part 9: Green County Courthouse, Monroe, Wisconsin, USA (1891)",
       "url": "https://www.flickr.com/photos/196253572@N05/53178381291/"
     },
@@ -6363,11 +8224,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6421,6 +8282,22 @@
           "width": 3696
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "palaceoftheporphyrogenitus",
+        "istanbul",
+        "turkey",
+        "brick"
+      ],
       "title": "A Marvel of Masonry, Part 4: The Palace of the Porphyrogenitus (late 13th Century) and the Blachernae Walls (different sections in different centuries), Istanbul, Turkey",
       "url": "https://www.flickr.com/photos/196253572@N05/53175199817/"
     },
@@ -6441,11 +8318,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "15029120@N00",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/15029120@N00/",
         "profile_url": "https://www.flickr.com/people/15029120@N00/",
         "realname": null,
-        "username": "michael_jeddah",
-        "path_alias": null
+        "username": "michael_jeddah"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6499,6 +8376,7 @@
           "width": 4003
         }
       ],
+      "tags": [],
       "title": "Sharm el Sheikh",
       "url": "https://www.flickr.com/photos/15029120@N00/53041855087/"
     },
@@ -6519,11 +8397,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6577,6 +8455,24 @@
           "width": 4313
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "architecture",
+        "church",
+        "geology",
+        "masonry",
+        "rocks",
+        "rock",
+        "stone",
+        "stonework",
+        "wisconsin",
+        "dolostone",
+        "milwaukee",
+        "ashlar",
+        "stsavaserbianorthodoxcathedral",
+        "limestone",
+        "copper"
+      ],
       "title": "The Glory of Regional Silurian Dolostone, Part 27: St. Sava Serbian Orthodox Cathedral, Lyons Park Neighborhood, Milwaukee, Wisconsin, USA (1958)",
       "url": "https://www.flickr.com/photos/196253572@N05/53174146605/"
     },
@@ -6597,11 +8493,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6655,6 +8551,27 @@
           "width": 5498
         }
       ],
+      "tags": [
+        "geology",
+        "landscape",
+        "nature",
+        "parks",
+        "rock",
+        "rocks",
+        "stone",
+        "texas",
+        "transpecos",
+        "bigbendnationalpark",
+        "dike",
+        "landform",
+        "penformation",
+        "claystone",
+        "shale",
+        "daggerplant",
+        "yuccafaxoniana",
+        "faxonyucca",
+        "plants"
+      ],
       "title": "From Persimmon Gap to Boquillas Canyon, Part 7: As the Shadows Fall, Big Bend National Park, Texas, USA",
       "url": "https://www.flickr.com/photos/196253572@N05/53171036752/"
     },
@@ -6675,11 +8592,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6733,6 +8650,23 @@
           "width": 3791
         }
       ],
+      "tags": [
+        "archaeology",
+        "architecturalgeology",
+        "architecture",
+        "geology",
+        "greece",
+        "limestone",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "stonework",
+        "mycenae",
+        "rubble",
+        "shaftgrave",
+        "gravecirclea"
+      ],
       "title": "Architectural Geology of Mycenae, Part 21: Close-Up of Limestone Masonry, Grave Circle A, Peloponnese, Greece",
       "url": "https://www.flickr.com/photos/196253572@N05/53171453716/"
     },
@@ -6753,11 +8687,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/9746040@N08/",
         "profile_url": "https://www.flickr.com/people/9746040@N08/",
         "realname": "Wayne Chadwick",
-        "username": "Wayne~Chadwick",
-        "path_alias": null
+        "username": "Wayne~Chadwick"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6811,6 +8745,7 @@
           "width": 5870
         }
       ],
+      "tags": [],
       "title": "Rocks and trees and skies (no seas)",
       "url": "https://www.flickr.com/photos/9746040@N08/53170887847/"
     },
@@ -6831,11 +8766,11 @@
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/34457823@N04/",
         "profile_url": "https://www.flickr.com/people/34457823@N04/",
         "realname": "Karen  Portin",
-        "username": "KPortin",
-        "path_alias": null
+        "username": "KPortin"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6882,6 +8817,15 @@
           "width": 1024
         }
       ],
+      "tags": [
+        "hoodoos",
+        "vermilioncliffs",
+        "sandstone",
+        "rockformations",
+        "erosion",
+        "arizona",
+        "geology"
+      ],
       "title": "Hoodoos Below Vermilion Cliffs",
       "url": "https://www.flickr.com/photos/34457823@N04/53171803383/"
     },
@@ -6902,11 +8846,11 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
-        "username": "rwgabbro1",
-        "path_alias": null
+        "username": "rwgabbro1"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6960,693 +8904,28 @@
           "width": 5745
         }
       ],
+      "tags": [
+        "architecturalgeology",
+        "archaeology",
+        "architecture",
+        "church",
+        "geology",
+        "greece",
+        "masonry",
+        "rock",
+        "rocks",
+        "stone",
+        "athens",
+        "byzantine",
+        "cloisonne",
+        "limestone",
+        "ashlar",
+        "stonework",
+        "ststheodoreschurch"
+      ],
       "title": "Architectural Geology of Byzantine Athens, Part 5: Pardon Our Dust at Sts. Theodores Church (ca. mid-11th century AD)",
       "url": "https://www.flickr.com/photos/196253572@N05/53168957021/"
-    },
-    {
-      "date_posted": "2023-09-06T04:45:11+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": "From a large glacier moved boulder south of Sylvan Lake St. Park and east of the Sawatch Range.",
-      "id": "53168153703",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 87,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 209,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 435,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718.jpg",
-          "width": 500
-        },
-        {
-          "height": 891,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_4282403718_b.jpg",
-          "width": 1024
-        },
-        {
-          "height": 3872,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53168153703_806ef4f829_o.jpg",
-          "width": 4449
-        }
-      ],
-      "title": "3669 Metamorphic rock flow patterns Eagle Co CO",
-      "url": "https://www.flickr.com/photos/7665648@N04/53168153703/"
-    },
-    {
-      "date_posted": "2023-09-05T23:01:32+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167670223",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 66,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 159,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 331,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000.jpg",
-          "width": 500
-        },
-        {
-          "height": 678,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_768b200000_b.jpg",
-          "width": 1024
-        },
-        {
-          "height": 3264,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167670223_e01b0ca7fc_o.jpg",
-          "width": 4928
-        }
-      ],
-      "title": "3336 Chinle Fm outcrop on Squaw Creek trail Eagle Co CO",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167670223/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:14+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": "Near vertical outcrop on one way road south of Sylvan Lake St. Park and east of the Sawatch Range.",
-      "id": "53166622932",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 100,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206_t.jpg",
-          "width": 67
-        },
-        {
-          "height": 240,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206_m.jpg",
-          "width": 160
-        },
-        {
-          "height": 500,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206.jpg",
-          "width": 333
-        },
-        {
-          "height": 1024,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_e0c61e7206_b.jpg",
-          "width": 683
-        },
-        {
-          "height": 6000,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53166622932_9d3ce9c38b_o.jpg",
-          "width": 4000
-        }
-      ],
-      "title": "3638 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk",
-      "url": "https://www.flickr.com/photos/7665648@N04/53166622932/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:13+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167646080",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 77,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 184,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 383,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2.jpg",
-          "width": 500
-        },
-        {
-          "height": 785,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_69975742c2_b.jpg",
-          "width": 1024
-        },
-        {
-          "height": 1897,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646080_d74c7aec22_o.jpg",
-          "width": 2474
-        }
-      ],
-      "title": "3637 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk-2",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167646080/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:13+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167413449",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 67,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 160,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 333,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a.jpg",
-          "width": 500
-        },
-        {
-          "height": 683,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_5b9174382a_b.jpg",
-          "width": 1024
-        },
-        {
-          "height": 4000,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413449_0093d303f3_o.jpg",
-          "width": 6000
-        }
-      ],
-      "title": "3637 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167413449/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:12+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167695508",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 100,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132_t.jpg",
-          "width": 75
-        },
-        {
-          "height": 240,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132_m.jpg",
-          "width": 180
-        },
-        {
-          "height": 500,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132.jpg",
-          "width": 375
-        },
-        {
-          "height": 1024,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_6c69a0a132_b.jpg",
-          "width": 769
-        },
-        {
-          "height": 5327,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695508_bd5dfd6ddb_o.jpg",
-          "width": 4000
-        }
-      ],
-      "title": "3636 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167695508/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:11+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167695558",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 100,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac_t.jpg",
-          "width": 95
-        },
-        {
-          "height": 240,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac_m.jpg",
-          "width": 227
-        },
-        {
-          "height": 500,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac.jpg",
-          "width": 473
-        },
-        {
-          "height": 1024,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_5a278f81ac_b.jpg",
-          "width": 968
-        },
-        {
-          "height": 4231,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167695558_a31f9a82c4_o.jpg",
-          "width": 4000
-        }
-      ],
-      "title": "3635 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167695558/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:11+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": null,
-      "id": "53167413444",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 100,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c_t.jpg",
-          "width": 67
-        },
-        {
-          "height": 240,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c_m.jpg",
-          "width": 160
-        },
-        {
-          "height": 500,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c.jpg",
-          "width": 333
-        },
-        {
-          "height": 1024,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_ebdb565b1c_b.jpg",
-          "width": 683
-        },
-        {
-          "height": 6000,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167413444_be70d7d86f_o.jpg",
-          "width": 4000
-        }
-      ],
-      "title": "3634 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167413444/"
-    },
-    {
-      "date_posted": "2023-09-05T23:15:10+00:00",
-      "date_taken": {
-        "unknown": true
-      },
-      "description": "Tilted ripple marked rocks along a slope of Forest Rd 400, south of Sylvan Lakes, south of Eagle, Colorado.",
-      "id": "53167646265",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "original_format": "jpg",
-      "owner": {
-        "id": "7665648@N04",
-        "photos_url": "https://www.flickr.com/photos/7665648@N04/",
-        "profile_url": "https://www.flickr.com/people/7665648@N04/",
-        "realname": "Steve",
-        "username": "Singingstone48",
-        "path_alias": null
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 100,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c_t.jpg",
-          "width": 93
-        },
-        {
-          "height": 240,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c_m.jpg",
-          "width": 224
-        },
-        {
-          "height": 500,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c.jpg",
-          "width": 466
-        },
-        {
-          "height": 1024,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_e690b6993c_b.jpg",
-          "width": 955
-        },
-        {
-          "height": 1327,
-          "label": "Original",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/53167646265_89a69082e7_o.jpg",
-          "width": 1237
-        }
-      ],
-      "title": "3633 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake St Pk-2 Eagle Co Colorado",
-      "url": "https://www.flickr.com/photos/7665648@N04/53167646265/"
     }
   ],
-  "total_photos": 14336
+  "total_photos": 14345
 }
