@@ -5,6 +5,7 @@ from ._types import (
     User,
     TakenGranularity,
     DateTaken,
+    LocationInfo,
     Size,
     SafetyLevel,
     SinglePhoto,
@@ -19,7 +20,7 @@ from ._types import (
 )
 
 
-__version__ = "1.3.0"
+__version__ = "1.3.1"
 
 
 __all__ = [
@@ -28,6 +29,7 @@ __all__ = [
     "ResourceNotFound",
     "LicenseNotFound",
     "License",
+    "LocationInfo",
     "User",
     "TakenGranularity",
     "DateTaken",

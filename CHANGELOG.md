@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.3.1 - 2023-11-15
+
+Expose the `LocationInfo` type introduced in v1.3.0 as part of the top-level module.
+
 ## v1.3.0 - 2023-11-15
 
 Fetch user tags and location data from the Flickr APi.
