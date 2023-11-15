@@ -47,8 +47,15 @@ class BaseApi:
             headers={"User-Agent": user_agent},
         )
 
-    def call(self, method: str, **params: Union[str, int]) -> ET.Element:
-        resp = self.client.get(url="", params={"method": method, **params})
+    def call(
+        self, *, method: str, params: Optional[Dict[str, Union[str, int]]] = None
+    ) -> ET.Element:
+        if params is not None:
+            get_params = {"method": method, **params}
+        else:
+            get_params = {"method": method}
+
+        resp = self.client.get(url="", params=get_params, timeout=15)
         resp.raise_for_status()
 
         # Note: the xml.etree.ElementTree is not secure against maliciously
@@ -58,6 +65,8 @@ class BaseApi:
         #
         # [1]: https://docs.python.org/3/library/xml.etree.elementtree.html
         xml = ET.fromstring(resp.text)
+
+        # print(resp.text)
 
         # If the Flickr API call fails, it will return a block of XML like:
         #
@@ -77,7 +86,7 @@ class BaseApi:
             # it seems like a pretty common convention that error code "1"
             # means "not found".
             if errors["code"] == "1":
-                raise ResourceNotFound(method, **params)
+                raise ResourceNotFound(method, params)
             else:
                 raise FlickrApiException(errors)
 
@@ -92,7 +101,7 @@ class FlickrPhotosApi(BaseApi):
 
         See https://www.flickr.com/services/api/flickr.photos.licenses.getInfo.htm
         """
-        license_resp = self.call("flickr.photos.licenses.getInfo")
+        license_resp = self.call(method="flickr.photos.licenses.getInfo")
 
         result: Dict[str, License] = {}
 
@@ -178,7 +187,7 @@ class FlickrPhotosApi(BaseApi):
         #       	<username>The British Library</username>
         #       </user>
         #
-        lookup_resp = self.call("flickr.urls.lookupUser", url=url)
+        lookup_resp = self.call(method="flickr.urls.lookupUser", params={"url": url})
         user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         # The getInfo response is of the form:
@@ -191,7 +200,9 @@ class FlickrPhotosApi(BaseApi):
         #       …
         #     </person>
         #
-        info_resp = self.call("flickr.people.getInfo", user_id=user_id)
+        info_resp = self.call(
+            method="flickr.people.getInfo", params={"user_id": user_id}
+        )
 
         person_elem = find_required_elem(info_resp, path="person")
 
@@ -247,8 +258,12 @@ class FlickrPhotosApi(BaseApi):
         """
         Look up the information for a single photo.
         """
-        info_resp = self.call("flickr.photos.getInfo", photo_id=photo_id)
-        sizes_resp = self.call("flickr.photos.getSizes", photo_id=photo_id)
+        info_resp = self.call(
+            method="flickr.photos.getInfo", params={"photo_id": photo_id}
+        )
+        sizes_resp = self.call(
+            method="flickr.photos.getSizes", params={"photo_id": photo_id}
+        )
 
         # The getInfo response is a blob of XML of the form:
         #
@@ -481,12 +496,14 @@ class FlickrPhotosApi(BaseApi):
 
         # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
         resp = self.call(
-            "flickr.photosets.getPhotos",
-            user_id=user["id"],
-            photoset_id=album_id,
-            extras=",".join(self.extras),
-            page=page,
-            per_page=per_page,
+            method="flickr.photosets.getPhotos",
+            params={
+                "user_id": user["id"],
+                "photoset_id": album_id,
+                "extras": ",".join(self.extras),
+                "page": page,
+                "per_page": per_page,
+            },
         )
 
         parsed_resp = self._parse_collection_of_photos_response(
@@ -495,7 +512,8 @@ class FlickrPhotosApi(BaseApi):
 
         # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
         album_resp = self.call(
-            "flickr.photosets.getInfo", user_id=user["id"], photoset_id=album_id
+            method="flickr.photosets.getInfo",
+            params={"user_id": user["id"], "photoset_id": album_id},
         )
         album_title = find_required_text(album_resp, path=".//title")
 
@@ -514,12 +532,14 @@ class FlickrPhotosApi(BaseApi):
         """
         # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
         resp = self.call(
-            "flickr.galleries.getPhotos",
-            gallery_id=gallery_id,
-            get_gallery_info="1",
-            extras=",".join(self.extras + ["path_alias"]),
-            page=page,
-            per_page=per_page,
+            method="flickr.galleries.getPhotos",
+            params={
+                "gallery_id": gallery_id,
+                "get_gallery_info": "1",
+                "extras": ",".join(self.extras + ["path_alias"]),
+                "page": page,
+                "per_page": per_page,
+            },
         )
 
         parsed_resp = self._parse_collection_of_photos_response(
@@ -548,11 +568,13 @@ class FlickrPhotosApi(BaseApi):
 
         # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
         photos_resp = self.call(
-            "flickr.people.getPublicPhotos",
-            user_id=user["id"],
-            extras=",".join(self.extras),
-            page=page,
-            per_page=per_page,
+            method="flickr.people.getPublicPhotos",
+            params={
+                "user_id": user["id"],
+                "extras": ",".join(self.extras),
+                "page": page,
+                "per_page": per_page,
+            },
         )
 
         return self._parse_collection_of_photos_response(
@@ -563,7 +585,7 @@ class FlickrPhotosApi(BaseApi):
         """
         Given the link to a group's photos or profile, return some info.
         """
-        resp = self.call("flickr.urls.lookupGroup", url=url)
+        resp = self.call(method="flickr.urls.lookupGroup", params={"url": url})
 
         # The lookupUser response is of the form:
         #
@@ -588,11 +610,13 @@ class FlickrPhotosApi(BaseApi):
 
         # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
         photos_resp = self.call(
-            "flickr.groups.pools.getPhotos",
-            group_id=group_info["id"],
-            extras=",".join(self.extras),
-            page=page,
-            per_page=per_page,
+            method="flickr.groups.pools.getPhotos",
+            params={
+                "group_id": group_info["id"],
+                "extras": ",".join(self.extras),
+                "page": page,
+                "per_page": per_page,
+            },
         )
 
         parsed_resp = self._parse_collection_of_photos_response(
@@ -613,18 +637,20 @@ class FlickrPhotosApi(BaseApi):
         Get all the photos that use a given tag.
         """
         resp = self.call(
-            "flickr.photos.search",
-            tags=tag,
-            # This is so we get the same photos as you see on the "tag" page
-            # under "All Photos Tagged XYZ" -- if you click the URL to the
-            # full search results, you end up on a page like:
-            #
-            #     https://flickr.com/search/?sort=interestingness-desc&…
-            #
-            sort="interestingness-desc",
-            extras=",".join(self.extras),
-            page=page,
-            per_page=per_page,
+            method="flickr.photos.search",
+            params={
+                "tags": tag,
+                # This is so we get the same photos as you see on the "tag" page
+                # under "All Photos Tagged XYZ" -- if you click the URL to the
+                # full search results, you end up on a page like:
+                #
+                #     https://flickr.com/search/?sort=interestingness-desc&…
+                #
+                "sort": "interestingness-desc",
+                "extras": ",".join(self.extras),
+                "page": page,
+                "per_page": per_page,
+            },
         )
 
         return self._parse_collection_of_photos_response(
