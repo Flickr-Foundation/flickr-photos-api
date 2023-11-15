@@ -287,6 +287,8 @@ class FlickrPhotosApi(BaseApi):
         #       	<urls>
         #       		<url type="photopage">https://www.flickr.com/photos/coast_guard/32812033543/</url>
         #       	</urls>
+        #           <tags>
+        #    		  <tag raw="indian ocean" …>indianocean</tag>
         #           …
         #       </photo>
         #       </rsp>
@@ -378,6 +380,21 @@ class FlickrPhotosApi(BaseApi):
                 }
             )
 
+        # We have two options with tags: we can use the 'raw' version
+        # entered by the user, or we can use the normalised version in
+        # the tag text.
+        #
+        # e.g. "bay of bengal" vs "bayofbengal"
+        #
+        # We prefer the normalised version because it makes it possible
+        # to compare tags across photos, and we only get the normalised
+        # versions from the collection endpoints.
+        tags_elem = photo_elem.find(".//tags")
+        if tags_elem is not None:
+            tags = [t.text for t in tags_elem.findall("tag")]
+        else:
+            tags = []
+
         return {
             "id": photo_id,
             "title": title,
@@ -390,6 +407,7 @@ class FlickrPhotosApi(BaseApi):
             "url": photo_page_url,
             "sizes": sizes,
             "original_format": original_format,
+            "tags": tags,  # type: ignore
         }
 
     # There are a bunch of similar flickr.XXX.getPhotos methods;
@@ -407,6 +425,7 @@ class FlickrPhotosApi(BaseApi):
         "url_s",
         "url_m",
         "url_o",
+        "tags",
         # These parameters aren't documented, but they're quite
         # useful for our purposes!
         "url_q",  # Large Square
@@ -436,6 +455,8 @@ class FlickrPhotosApi(BaseApi):
 
             title = photo_elem.attrib["title"] or None
             description = find_optional_text(photo_elem, path="description")
+
+            tags = photo_elem.attrib["tags"].split()
 
             owner: User
             if collection_owner is None:
@@ -477,6 +498,7 @@ class FlickrPhotosApi(BaseApi):
                     ),
                     "owner": owner,
                     "url": url,
+                    "tags": tags,
                 }
             )
 

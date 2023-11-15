@@ -1,6 +1,4 @@
 {
-  "page_count": 9,
-  "total_photos": 84,
   "photos": [
     {
       "id": "18250964001",
@@ -12,7 +10,6 @@
         "granularity": "second",
         "unknown": false
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -56,10 +53,10 @@
         },
         {
           "height": 683,
+          "width": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/7738/18250964001_df26421e40_b.jpg",
-          "width": 1024
+          "source": "https://live.staticflickr.com/7738/18250964001_df26421e40_b.jpg"
         },
         {
           "height": 4847,
@@ -70,6 +67,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -78,7 +76,13 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/18250964001/"
+      "url": "https://www.flickr.com/photos/spike_yun/18250964001/",
+      "tags": [
+        "seoul",
+        "streetphotography",
+        "travel",
+        "\ud55c\uc625\ub9c8\uc744"
+      ]
     },
     {
       "id": "19722996319",
@@ -88,7 +92,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -132,10 +135,10 @@
         },
         {
           "height": 678,
+          "width": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/331/19722996319_d19a7b9291_b.jpg",
-          "width": 1024
+          "source": "https://live.staticflickr.com/331/19722996319_d19a7b9291_b.jpg"
         },
         {
           "height": 847,
@@ -146,6 +149,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -154,7 +158,11 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/19722996319/"
+      "url": "https://www.flickr.com/photos/spike_yun/19722996319/",
+      "tags": [
+        "korea",
+        "ricohgr"
+      ]
     },
     {
       "id": "19777368608",
@@ -166,7 +174,6 @@
         "granularity": "second",
         "unknown": false
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -210,10 +217,10 @@
         },
         {
           "height": 1024,
+          "width": 678,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/513/19777368608_0bca88747b_b.jpg",
-          "width": 678
+          "source": "https://live.staticflickr.com/513/19777368608_0bca88747b_b.jpg"
         },
         {
           "height": 4928,
@@ -224,6 +231,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -232,7 +240,8 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/19777368608/"
+      "url": "https://www.flickr.com/photos/spike_yun/19777368608/",
+      "tags": []
     },
     {
       "id": "19995531304",
@@ -242,7 +251,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -286,10 +294,10 @@
         },
         {
           "height": 1024,
+          "width": 683,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/650/19995531304_613af003d9_b.jpg",
-          "width": 683
+          "source": "https://live.staticflickr.com/650/19995531304_613af003d9_b.jpg"
         },
         {
           "height": 1536,
@@ -300,6 +308,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -308,7 +317,15 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/19995531304/"
+      "url": "https://www.flickr.com/photos/spike_yun/19995531304/",
+      "tags": [
+        "nikon",
+        "streetphotography",
+        "seoul",
+        "\uba85\ub3d9",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20434367760",
@@ -318,7 +335,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -362,10 +378,10 @@
         },
         {
           "height": 1024,
+          "width": 683,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/630/20434367760_1196dbfc73_b.jpg",
-          "width": 683
+          "source": "https://live.staticflickr.com/630/20434367760_1196dbfc73_b.jpg"
         },
         {
           "height": 1536,
@@ -376,6 +392,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -384,7 +401,16 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20434367760/"
+      "url": "https://www.flickr.com/photos/spike_yun/20434367760/",
+      "tags": [
+        "nikon",
+        "streetphotography",
+        "korea",
+        "seoul",
+        "\uba85\ub3d9",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20671286152",
@@ -394,7 +420,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -438,10 +463,10 @@
         },
         {
           "height": 683,
+          "width": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/707/20671286152_705894de24_b.jpg",
-          "width": 1024
+          "source": "https://live.staticflickr.com/707/20671286152_705894de24_b.jpg"
         },
         {
           "height": 1025,
@@ -452,6 +477,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -460,7 +486,15 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20671286152/"
+      "url": "https://www.flickr.com/photos/spike_yun/20671286152/",
+      "tags": [
+        "summer",
+        "nikon",
+        "streetphotography",
+        "vietnam",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20889037076",
@@ -470,7 +504,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -514,10 +547,10 @@
         },
         {
           "height": 1024,
+          "width": 678,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/5617/20889037076_79f7303c15_b.jpg",
-          "width": 678
+          "source": "https://live.staticflickr.com/5617/20889037076_79f7303c15_b.jpg"
         },
         {
           "height": 1536,
@@ -528,6 +561,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -536,7 +570,16 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20889037076/"
+      "url": "https://www.flickr.com/photos/spike_yun/20889037076/",
+      "tags": [
+        "streetphotography",
+        "seoul",
+        "blacknwhite",
+        "ricohgr",
+        "myeongdong",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20967567081",
@@ -546,7 +589,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -590,10 +632,10 @@
         },
         {
           "height": 1024,
+          "width": 678,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/685/20967567081_59dc6d67f2_b.jpg",
-          "width": 678
+          "source": "https://live.staticflickr.com/685/20967567081_59dc6d67f2_b.jpg"
         },
         {
           "height": 1536,
@@ -604,6 +646,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -612,7 +655,15 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20967567081/"
+      "url": "https://www.flickr.com/photos/spike_yun/20967567081/",
+      "tags": [
+        "streetphotography",
+        "seoul",
+        "blacknwhite",
+        "ricohgr",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20351005903",
@@ -622,7 +673,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -666,10 +716,10 @@
         },
         {
           "height": 678,
+          "width": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/568/20351005903_3d53183ff8_b.jpg",
-          "width": 1024
+          "source": "https://live.staticflickr.com/568/20351005903_3d53183ff8_b.jpg"
         },
         {
           "height": 1017,
@@ -680,6 +730,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -688,7 +739,17 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20351005903/"
+      "url": "https://www.flickr.com/photos/spike_yun/20351005903/",
+      "tags": [
+        "blackwhite",
+        "streetphotography",
+        "seoul",
+        "blacknwhite",
+        "ricohgr",
+        "namsan",
+        "streettogs",
+        "vscocam"
+      ]
     },
     {
       "id": "20428374183",
@@ -698,7 +759,6 @@
       "date_taken": {
         "unknown": true
       },
-      "safety_level": "safe",
       "license": {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -742,10 +802,10 @@
         },
         {
           "height": 678,
+          "width": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/5717/20428374183_76c77aaf6b_b.jpg",
-          "width": 1024
+          "source": "https://live.staticflickr.com/5717/20428374183_76c77aaf6b_b.jpg"
         },
         {
           "height": 1017,
@@ -756,6 +816,7 @@
         }
       ],
       "original_format": "jpg",
+      "safety_level": "safe",
       "owner": {
         "id": "132051449@N06",
         "username": "Jeong Vin, Yoon",
@@ -764,18 +825,28 @@
         "photos_url": "https://www.flickr.com/photos/spike_yun/",
         "profile_url": "https://www.flickr.com/people/spike_yun/"
       },
-      "url": "https://www.flickr.com/photos/spike_yun/20428374183/"
+      "url": "https://www.flickr.com/photos/spike_yun/20428374183/",
+      "tags": [
+        "blackwhite",
+        "streetphotography",
+        "seoul",
+        "ricohgr",
+        "streettogs",
+        "vscocam"
+      ]
     }
   ],
+  "page_count": 9,
+  "total_photos": 84,
   "album": {
     "owner": {
       "id": "132051449@N06",
-      "photos_url": "https://www.flickr.com/photos/spike_yun/",
-      "profile_url": "https://www.flickr.com/people/spike_yun/",
-      "path_alias": "spike_yun",
+      "username": "Jeong Vin, Yoon",
       "realname": "Jeong Vin Yoon",
-      "username": "Jeong Vin, Yoon"
+      "path_alias": "spike_yun",
+      "photos_url": "https://www.flickr.com/photos/spike_yun/",
+      "profile_url": "https://www.flickr.com/people/spike_yun/"
     },
-    "title": "포트폴리오 제작용"
+    "title": "\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \uc81c\uc791\uc6a9"
   }
 }

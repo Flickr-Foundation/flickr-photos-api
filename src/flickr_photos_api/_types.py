@@ -70,6 +70,7 @@ class SinglePhoto(TypedDict):
     url: str
     sizes: List[Size]
     original_format: Optional[str]
+    tags: List[str]
 
 
 class CollectionOfPhotos(TypedDict):

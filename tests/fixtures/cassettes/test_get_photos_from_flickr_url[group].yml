@@ -26,24 +26,22 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Thu, 09 Nov 2023 15:57:40 GMT
+      - Wed, 15 Nov 2023 10:56:15 GMT
       Via:
-      - 1.1 332a44a061773053817570525bb4fcae.cloudfront.net (CloudFront)
+      - 1.1 090f307c9c89f89a94f72ca34a59c174.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 9INF2iGGdTDO7FoeUMK6QAW-JEq7JsY0aDkzbIfyfyDSjkU4sa68VQ==
+      - Iz8O4AMKq8IiFBS4UPW6YXkTHkps_-w6k7OMk-FVUAKrzAVZyj_2MQ==
       X-Amz-Cf-Pop:
-      - LHR50-P8
+      - EZE50-P1
       X-Cache:
       - Miss from cloudfront
       content-encoding:
       - gzip
       server:
-      - Apache/2.4.57 (Ubuntu)
+      - Apache/2.4.58 (Ubuntu)
       set-cookie:
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Sat, 09-Dec-2023 15:57:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Sat, 09-Dec-2023 15:57:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 15-Dec-2023 10:56:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -62,25 +60,362 @@ interactions:
       connection:
       - keep-alive
       cookie:
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D
       host:
       - api.flickr.com
       user-agent:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&group_id=66832458%40N00&method=flickr.groups.pools.getPhotos&page=1&per_page=100
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&group_id=66832458%40N00&method=flickr.groups.pools.getPhotos&page=1&per_page=100
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
-      page=\"1\" pages=\"144\" perpage=\"100\" total=\"14336\">\n\t<photo id=\"53319292481\"
-      owner=\"196253572@N05\" secret=\"3ba9db3d5c\" server=\"65535\" farm=\"66\" title=\"The
-      Geology of Terra-Cotta, Part 13: Detail of the Lower Facade, Reebie Storage
-      Warehouse, Lincoln Park Neighborhood, Chicago, Illinois, USA (1922)\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699492708\"
-      license=\"0\" safety_level=\"0\" dateupload=\"1699489689\" datetaken=\"2021-04-10
-      09:33:11\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"be77c63a2e\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53319292481_3ba9db3d5c_s.jpg\"
+      page=\"1\" pages=\"144\" perpage=\"100\" total=\"14345\">\n\t<photo id=\"53333116124\"
+      owner=\"196253572@N05\" secret=\"d80f88a303\" server=\"65535\" farm=\"66\" title=\"Geobrickology,
+      Part 13: Light Splashed on an Ancient Shoal, the Frederick C. Robie House, Hyde
+      Park Neighborhood, Chicago, Illinois, USA (1909)\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1700011894\" license=\"0\"
+      safety_level=\"0\" dateupload=\"1700008813\" datetaken=\"2020-09-20 09:41:47\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"architecturalgeology architecture brick chicago geology illinois masonry
+      rock rocks stone stonework robiehouse stlouisbrick romanbrick ashlar salemlimestone\"
+      originalsecret=\"be3dbd9bb6\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53333116124_d80f88a303_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53333116124_d80f88a303_t.jpg\"
+      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53333116124_d80f88a303_m.jpg\"
+      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53333116124_d80f88a303.jpg\"
+      height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53333116124_be3dbd9bb6_o.jpg\"
+      height_o=\"3072\" width_o=\"4608\" url_q=\"https://live.staticflickr.com/65535/53333116124_d80f88a303_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53333116124_d80f88a303_b.jpg\"
+      height_l=\"683\" width_l=\"1024\">\n\t\t<description>&lt;i&gt;Digitally analyzing
+      stone trim along the house&#039;s southern elevation. The south paw is for scale.
+      I could say that I carefully planned and framed this shot to create a hyperartistic
+      chiaroscuro effect, but the fact is that I just had to put up with the dappling
+      effect of the street trees behind me.&lt;/i&gt;\n\nIn my final Robie photo,
+      I&#039;m departing from this series&#039;s main theme of brick geology to take
+      a look at the second great exterior building material Frank Lloyd Wright used
+      on this architectural tour de force.  \n\nIt&#039;s the Salem Limestone, known
+      to builders as Bedford Stone or Indiana Limestone. And indeed it comes from
+      the southern portion of the Hoosier State, where it has been quarried in such
+      staggering quantities that it&#039;s a marvel there&#039;s any still attached
+      to the Earth&#039;s crust. (But believe, me, there is.)\n\nThe striking Roman
+      Brick from the great production center of St. Louis, Missouri is visible, just
+      barely, at bottom. But it&#039;s much better displayed in all its iron-flecked
+      glory in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/53283379996/in/dateposted-public/&quot;&gt;Part
+      12&lt;/a&gt;, so I&#039;ll pass over it here. \n\nMuch more vivid is the diagonal
+      layering of the Salem. This is a classic sedimentary-rock structure known as
+      &lt;i&gt;crossbedding&lt;/i&gt;. It forms in dunes and ripples deposited and
+      moved by flowing  water or wind. For an example of it in a southern-Illinois
+      sandstone outcrop, see &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/53181572895/in/album-72177720302393036/&quot;&gt;this
+      post&lt;/a&gt;. \n\nThe reason this carbonate rock has crossbedding is that
+      it&#039;s a &lt;i&gt;biocalcarenite&lt;/i&gt; composed of tiny fossils and shell
+      fragments. These came from marine creatures that lived in nearshore inlets,
+      lagoons, and shoals some 340 Ma ago, during the Mississippian subperiod (Lower
+      Carboniferous). The crossbedding often found in the Salem is one indicator that
+      it formed in a high-energy environment of relatively shallow, agitated seawater.\n\n&lt;b&gt;For
+      much more on this site and 200 others in the Windy City, see my book &lt;i&gt;Chicago
+      in Stone and Clay&lt;/i&gt;, described at &lt;a href=&quot;http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;www.cornellpress.cornell.edu/book/9781501765063/chicago-i..&lt;/a&gt;.\n\nAnd
+      to see the other photos and descriptions of this series, pay a visit to &lt;a
+      href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720302658037&quot;&gt;my
+      &lt;i&gt;Geobrickology&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;\n\n\n</description>\n\t</photo>\n\t<photo
+      id=\"53318448828\" owner=\"10621515@N05\" secret=\"3f1a2883b2\" server=\"65535\"
+      farm=\"66\" title=\"Pamukkale\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+      ownername=\"tedesco57\" dateadded=\"1699967855\" license=\"0\" safety_level=\"0\"
+      dateupload=\"1699454721\" datetaken=\"2023-10-30 15:02:48\" datetakengranularity=\"0\"
+      datetakenunknown=\"0\" realname=\"tedesco57\" tags=\"\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2_t.jpg\"
+      height_t=\"40\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2_m.jpg\"
+      height_s=\"95\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2.jpg\"
+      height_m=\"199\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53318448828_3f1a2883b2_b.jpg\"
+      height_l=\"407\" width_l=\"1024\">\n\t\t<description>Pamukkale, meaning &amp;quot;cotton
+      castle&amp;quot; in Turkish, is a natural site in Denizli Province in southwestern
+      Turkey. The area is famous for a carbonate mineral left by the flowing of thermal
+      spring water.[1][2] It is located in Turkeys Inner Aegean region, in the River
+      Menderes valley, which has a temperate climate for most of the year.\n\nThe
+      ancient Greek city of Hierapolis was built on top of the travertine formation
+      which is in total about 2,700 metres (8,860 ft) long, 600 m (1,970 ft) wide
+      and 160 m (525 ft) high. It can be seen from the hills on the opposite side
+      of the valley in the town of Denizli, 20 km away. This area has been drawing
+      visitors to its thermal springs since the time of classical antiquity.[1] The
+      Turkish name refers to the surface of the shimmering, snow-white limestone,
+      shaped over millennia by calcite-rich springs.[2] Dripping slowly down the mountainside,
+      mineral-rich waters collect in and cascade down the mineral terraces, into pools
+      below.\n\nPamukkale sinter terraces\nIt was added as a UNESCO World Heritage
+      Site in 1988 along with Hierapolis.\n\nGeology\n\nTravertine terrace formations\nPamukkale&#039;s
+      terraces are made of travertine, a sedimentary rock deposited by mineral water
+      from the hot springs.[1] In this area, there are 17 hot springs with temperatures
+      ranging from 35 \xB0C (95 \xB0F) to 100 \xB0C (212 \xB0F). The water that emerges
+      from the spring is transported 320 metres (1,050 ft) to the head of the travertine
+      terraces and deposits calcium carbonate on a section 60 to 70 metres (200 to
+      230 ft) long covering an expanse of 24 metres (79 ft) to 30 metres (98 ft).
+      When the water, supersaturated with calcium carbonate, reaches the surface,
+      carbon dioxide de-gasses from it, and calcium carbonate is deposited. Calcium
+      carbonate is deposited by the water as a soft gel which eventually crystallizes
+      into travertine.\n\nArchaeology\nTravertine terraces at a hot spring at Pamukkale\nThere
+      are only a few historical facts known about the origin of the city. No traces
+      of the presence of Hittites or Persians have been found. The Phrygians built
+      a temple, probably in the first half of the 7th century BC. This temple, originally
+      used by the citizens of the nearby town of Laodicea, would later form the centre
+      of Hierapolis.\n\nPools inside the archeological site\nHierapolis was founded
+      as a thermal spa early in the 2nd century BC within the sphere of the Seleucid
+      Empire. Antiochus the Great sent 2,000 Jewish families to Lydia and Phrygia
+      from Babylon and Mesopotamia, later joined by more from Judea. The Jewish congregation
+      grew in Hierapolis and has been estimated as high as 50,000 in 62 BC.[3] Hierapolis
+      became a healing centre where doctors used the thermal springs as a treatment
+      for their patients. The city began minting bronze coins in the 2nd century BC.
+      These coins give the name Hieropolis. It remains unclear whether this name referred
+      to the original temple (\u1F31\u03B5\u03C1\u03CC\u03BD, hieron) or honoured
+      Hiera, the wife of Telephus, son of Heracles and the Mysian princess Auge. This
+      name eventually changed into Hierapolis (&amp;quot;holy city&amp;quot;).[4]
+      In 133 BC, when Attalus III died, he bequeathed his kingdom to Rome. Hierapolis
+      thus became part of the Roman province of Asia. In AD 17, during the rule of
+      Emperor Tiberius, a major earthquake destroyed the city.\n\nThrough the influence
+      of the Christian Apostle Paul, a church was founded here while he was at Ephesus.[5]
+      The Christian Apostle Philip spent the last years of his life here.[6] The town&#039;s
+      Martyrium was alleged to have been built upon the spot where Philip was crucified
+      in AD 80. His daughters were also said to have acted as prophetesses in the
+      region.[7][8] During the 4th century, the Christians filled Pluto&#039;s Gate
+      (a ploutonion) with stones, suggesting that Christianity had become the dominant
+      religion and had begun displacing other faiths in the area. Originally a see
+      of Phrygia Pacatiana,[9] the Byzantine Emperor Justinian raised the bishop of
+      Hierapolis to the rank of metropolitan in 531. The Roman baths were transformed
+      to a Christian basilica. During the Byzantine period, the city continued to
+      flourish and also remained an important centre for Christianity. Wikipedia </description>\n\t</photo>\n\t<photo
+      id=\"53331801919\" owner=\"133214433@N03\" secret=\"5499fa4c22\" server=\"65535\"
+      farm=\"66\" title=\"Striated Rock And Athabasca Glacier\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" ownername=\"Where The Trails Take You Photography\" dateadded=\"1699964585\"
+      license=\"0\" safety_level=\"0\" dateupload=\"1699964580\" datetaken=\"2023-09-19
+      10:42:27\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Rebecca
+      Latson\" tags=\"canada alberta jaspernationalpark glacier geology athabascaglacier
+      fujifilm gfx100s fujifilmgfx100s mediumformat 23mm wideangle primelens september
+      landscape wherethetrailstakeyou helicon heliconfocus focusstacked\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22_t.jpg\"
+      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22_m.jpg\"
+      height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22.jpg\"
+      height_m=\"375\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53331801919_5499fa4c22_b.jpg\"
+      height_l=\"768\" width_l=\"1024\">\n\t\t<description>There&#039;s actually quite
+      a bit to this image, if you look at it long enough. First, for the Big Stuff:
+      The Athabasca Glacier. According to Wikipedia, this glacier is &amp;quot;one
+      of six principal &#039;toes&#039; of the Columbia Icefield in Jasper National
+      Park. It loses about 16 feet (5 meters) per year and has receded almost a mile
+      (1.5 km) and has lost half of its volume in the past 125 years. That may seem
+      slow to you in this age of climate change and global warming, and only a blip
+      in the geological record, but it&#039;s still quite a bit and really hits home
+      as one hikes the trail to the toe of this glacier, reading signs along the way
+      of where the glacier toe *used* to be before receding.\n\nIf you look closely
+      at this image, to the far left, you can see a line of tiny black dots. Those
+      are people on a guided hike out onto the glacier. A guided hike is the only
+      way you can actually stand on the glacier if you don&#039;t feel like taking
+      a big ice bus loaded with people out onto the glacier. Other than that, you
+      are prohibited from going solo onto the glacier, and with good reason. Along
+      the way are hidden holes covered by glacial till (rocks and sediment) filled
+      with freezing, rushing water that could suck you under. Then, once you are out
+      on the glacier, unless you know what to look for, you could easily slip and
+      fall into a hidden crevasse. Both of those would ruin an otherwise perfectly
+      nice day because it&#039;s pretty cold up there, even in the summer. \n\nDYK
+      the glacier makes it&#039;s own weather, including winds known as &amp;quot;katabatic
+      winds&amp;quot; which blow down the glacier and towards the hiker. I can tell
+      you for a fact that it was pretty darned cold on the day I hiked the trail.\n\nSee
+      that rock in the foreground of this image? See the striations (lines) gouged
+      into the rock? Those striations were created by the weight of, and suspended
+      rocks in, the glacier. Weight and ice together ground scratches into the rock
+      as the glacial ice moved forward then receded. You can tell the direction the
+      glacier moved by these scratches.\n\nPhotographically, this single composition
+      is composed of two focus-stacked images. One image was focused for the glacier
+      and landscape in the background and the other image was focused for the striated
+      rock in the foreground. That was really the only way to get a completely (or
+      almost completely) focused image of the entire area, even using a wide angle
+      lens, which is what I used on my Fujifilm GFX100s medium format camera. The
+      23mm lens is analogous to a 17mm lens on a 35mm camera.</description>\n\t</photo>\n\t<photo
+      id=\"53330855403\" owner=\"196253572@N05\" secret=\"28f821ab5a\" server=\"65535\"
+      farm=\"66\" title=\"Architectural Geology of Segovia, Spain, Part 24: Santissima
+      Trinidad Church (12th Century AD)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+      ownername=\"rwgabbro1\" dateadded=\"1699925324\" license=\"0\" safety_level=\"0\"
+      dateupload=\"1699923012\" datetaken=\"1978-04-13 00:25:05\" datetakengranularity=\"0\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      archaeology architecture church geology masonry rock rocks stone stonework santissimatrinidadchurch
+      segovia spain ashlar sandstone\" originalsecret=\"c09e6d3c8e\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a_t.jpg\"
+      height_t=\"100\" width_t=\"71\" url_s=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a_m.jpg\"
+      height_s=\"240\" width_s=\"169\" url_m=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a.jpg\"
+      height_m=\"500\" width_m=\"353\" url_o=\"https://live.staticflickr.com/65535/53330855403_c09e6d3c8e_o.jpg\"
+      height_o=\"5170\" width_o=\"3649\" url_q=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53330855403_28f821ab5a_b.jpg\"
+      height_l=\"1024\" width_l=\"723\">\n\t\t<description>&lt;i&gt;Facing northeastward
+      toward the western elevation.&lt;/i&gt;\n\nEven relatively modest stone buildings
+      are brimming over with geologic interest. For example, this oblique view shows
+      the toll the process of weathering has exacted from ashlar (in this case, presumably
+      the Upper Cretaceous Segovia Sandstone) subjected to the elements for nine centuries.\n\nIn
+      various spots on the church&#039;s exterior it&#039;s evident that the blocks&#039;
+      outer surfaces have fallen away. This may be a simple case of water soaking
+      into the porous sedimentary rock and eventually breaking down its cement matrix.
+      \n\nHowever, it may also signal the presence of &lt;i&gt;case hardening&lt;/i&gt;,
+      where solutions migrating through the rock have deposited minerals on the surface,
+      and turned it hard and brittle. This comes at the expense of the inner portion,
+      which becomes soft, crumbly, and very vulnerable to decay when finally exposed.
+      \n\nInterestingly, much more recent Google Earth Street View imagery reveals
+      that those weathered faces are still there. So apparently the Segovia Sandstone,
+      even when degraded, changes little over the span of a single human lifetime\u2014at
+      least in this rather protected spot, hemmed in by other buildings.\n\n&lt;b&gt;To
+      see the other photos and descriptions in this series, visit my &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720307451632&quot;&gt;&lt;i&gt;Architectural
+      Geology: Spain&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;   \n\n</description>\n\t</photo>\n\t<photo
+      id=\"53328431474\" owner=\"196253572@N05\" secret=\"c7bc033aef\" server=\"65535\"
+      farm=\"66\" title=\"Botany of the Carolinas Coastal Plain, Part 15: A Narrow
+      Road through the Boggy Wilderness, Croatan National Forest, North Carolina,
+      USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699838064\"
+      license=\"0\" safety_level=\"0\" dateupload=\"1699834715\" datetaken=\"2003-07-28
+      14:10:59\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
+      Wiggers\" tags=\"botany dendrology geology landscape nature plants croatannationalforest
+      northcarolina pocosin peatland pinusserotina pondpine\" originalsecret=\"2d4ab5464e\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef_t.jpg\"
+      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef_m.jpg\"
+      height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef.jpg\"
+      height_m=\"375\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53328431474_2d4ab5464e_o.jpg\"
+      height_o=\"1200\" width_o=\"1600\" url_q=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53328431474_c7bc033aef_b.jpg\"
+      height_l=\"768\" width_l=\"1024\">\n\t\t<description>&lt;i&gt;Taken along Great
+      Lake Road, in the National Forest&#039;s Pond Pine Wilderness. This spot is
+      about 10 mi (16 km) south-southwest of the town of Havelock.&lt;/i&gt;\n\nOccasionally
+      I revisit photos I posted on Flickr quite a while ago and flesh out their descriptions,
+      to the consternation of those visitors who can&#039;t tolerate anything longer
+      than tweet-sized commentary. And then I add them if possible to a series I&#039;ve
+      established subsequently. \n\nSuch was the case with this set&#039;s &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/52288349284/in/album-72177720309413739/&quot;&gt;Part
+      14&lt;/a&gt;, which shows a nice stand of Pond Pine (&lt;i&gt;Pinus serotina&lt;/i&gt;)
+      growing in a special kind of Coastal Plain peatland known as a &lt;i&gt;pocosin&lt;/i&gt;.
+      This is pronounced &lt;b&gt;puh-COE-zin&lt;/b&gt;, as I learned from a Croatan
+      NF staffer. Before she diplomatically corrected me, I was trying to make it
+      &lt;b&gt;POCK-ah-sun&lt;/b&gt;, to rhyme with moccasin. \n\nApparently this
+      word, whether spoken correctly or not, derives from an Algonquian term for &amp;quot;wetland
+      in a high place,&amp;quot; or something similar. That&#039;s a good description,
+      because pocosins are generally classified as one type of raised bog, with a
+      subtly domed profile.\n\nThis shot, like the one cited above, shows Pond Pines
+      growing very happily indeed in the sandy, mucky Histosol (organic soil). The
+      plants that inhabit this boggy substrate have adapted to unusually low-pH (acidic)
+      conditions.  \n\n&lt;b&gt;The other photos and descriptions of this series can
+      be found in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720309413739&quot;&gt;my
+      &lt;i&gt;Botany of the Carolinas Coastal Plain&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;\n\n
+      \ </description>\n\t</photo>\n\t<photo id=\"53327449274\" owner=\"9746040@N08\"
+      secret=\"1baa369b25\" server=\"65535\" farm=\"66\" title=\"Geysir Strokkur -
+      Iceland\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Wayne~Chadwick\"
+      dateadded=\"1699808219\" license=\"0\" safety_level=\"0\" dateupload=\"1699807968\"
+      datetaken=\"2023-10-14 06:31:30\" datetakengranularity=\"0\" datetakenunknown=\"0\"
+      realname=\"Wayne Chadwick\" tags=\"\" originalsecret=\"b891d533ba\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53327449274_1baa369b25_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53327449274_1baa369b25_t.jpg\"
+      height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53327449274_1baa369b25_m.jpg\"
+      height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/65535/53327449274_1baa369b25.jpg\"
+      height_m=\"500\" width_m=\"375\" url_o=\"https://live.staticflickr.com/65535/53327449274_b891d533ba_o.jpg\"
+      height_o=\"4739\" width_o=\"3554\" url_q=\"https://live.staticflickr.com/65535/53327449274_1baa369b25_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53327449274_1baa369b25_b.jpg\"
+      height_l=\"1024\" width_l=\"768\">\n\t\t<description>This one erupts about every
+      6 minutes on average. See following photos for image of the original Geysir
+      - now mostly dormant - from which all other geysers are named.</description>\n\t</photo>\n\t<photo
+      id=\"52288349284\" owner=\"196253572@N05\" secret=\"d7ccd15660\" server=\"65535\"
+      farm=\"66\" title=\"Botany of the Carolinas Coastal Plain, Part 14: Pines of
+      a Pocosin, Croatan National Forest, North Carolina, USA\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699751371\" license=\"0\"
+      safety_level=\"0\" dateupload=\"1660589606\" datetaken=\"2003-07-23 00:00:00\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"trees botany pocosin carolinas dendrology pinusserotina croatannationalforest
+      peatland bog\" originalsecret=\"e39a467885\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660_t.jpg\"
+      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660_m.jpg\"
+      height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660.jpg\"
+      height_m=\"375\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/52288349284_e39a467885_o.jpg\"
+      height_o=\"1200\" width_o=\"1600\" url_q=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/52288349284_d7ccd15660_b.jpg\"
+      height_l=\"768\" width_l=\"1024\">\n\t\t<description>&lt;i&gt;Taken along Catfish
+      Lake Farm Road, about 7.4 mi (12 km) southeast of Pollocksville.&lt;/i&gt;\n\nThe
+      Gulf-Atlantic Coastal Plain is such a wonderful region for pine-spotting. This
+      species, growing in the fascinating Southeastern type of peatland known as a
+      &lt;i&gt;pocosin&lt;/i&gt;, is Pond Pine, &lt;i&gt;Pinus serotina&lt;/i&gt;.
+      \n\nMany members of this much-beloved and much-utilized needle-leaved genus
+      thrive in dry or rocky soils. But the &lt;i&gt;P. serotina&lt;/i&gt; makes its
+      home instead in this boggy wetland habitat, which is notable for its poor drainage
+      and waterlogged Histosol (organic soil) with considerable sand content. It&#039;s
+      a highly acidic environment. \n\nFrom what I&#039;ve read, ecologists have further
+      subdivided pocosins into specific categories. This one, I simply have to assume,
+      is the Pond Pine Woodland association. It&#039;s characteristically found where
+      the peatland has a slightly domed surface.\n\nAs an old bogtrotter much more
+      familiar with peatlands from Downeast Maine to the Indiana Dunes and Michigan&#039;s
+      Upper Peninsula, this pocosin variant came as quite a revelation to me. \n\nMore
+      shots of this locale in Croatan follow.\n\n&lt;b&gt;The other photos and descriptions
+      of this series can be found in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720309413739&quot;&gt;my
+      &lt;i&gt;Botany of the Carolinas Coastal Plain&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;\n\n</description>\n\t</photo>\n\t<photo
+      id=\"53321406776\" owner=\"196253572@N05\" secret=\"0ae90d1d31\" server=\"65535\"
+      farm=\"66\" title=\"Geology of Fieldstone &amp; Cobblestone Buildings, Part
+      17: First Presbyterian Church, Morris, Illinois, USA (1857)\" ispublic=\"1\"
+      isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699579698\"
+      license=\"0\" safety_level=\"0\" dateupload=\"1699576274\" datetaken=\"2019-04-19
+      12:03:05\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
+      Wiggers\" tags=\"architecturalgeology architecture church geology illinois masonry
+      rock rocks stone stonework firstpresbyterianchurchofmorris morrisillinois fieldstonearchitecture
+      fieldstone\" originalsecret=\"b13e98076a\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31_t.jpg\"
+      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31_m.jpg\"
+      height_s=\"181\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31.jpg\"
+      height_m=\"376\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53321406776_b13e98076a_o.jpg\"
+      height_o=\"3264\" width_o=\"4335\" url_q=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53321406776_0ae90d1d31_b.jpg\"
+      height_l=\"771\" width_l=\"1024\">\n\t\t<description>&lt;i&gt;Looking northeastward,
+      at the church&#039;s southern and western elevations. It was a splendid early-spring
+      day in this Upper Illinois River Valley town. What a lovely blue sky with cumulus
+      fractus clouds.&lt;/i&gt;\n\nWhile by no means the Prairie State&#039;s most
+      imposing house of worship, the Gothic-Revival First Presbyterian of Morris has
+      a lot to commend it, geologically.\n\nTo begin with, it was built fourteen years
+      before Chicago&#039;s 1871 Great Fire (or actually its &lt;i&gt;first&lt;/i&gt;
+      Great Fire; there was also one in 1874). Due to a paucity of records, I&#039;m
+      not sure of the exact source of striking fieldstone that adorns this building&#039;s
+      \ exterior. But I assume the builders did what their equivalents in other regional
+      communities did, and harvested &lt;i&gt;erratics&lt;/i&gt; (glacially transported
+      boulders) from local farm fields.\n\nA lot of effort went into mounting those
+      boulders. Almost certainly they were split and mounted rubble-style with their
+      flat faces inward. However, their outward faces may have been worked, too. They
+      have a rock-faced texture, but do not project out much, as do the stones at
+      &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/53100065302/in/album-72177720310008578/&quot;&gt;Chicago&#039;s
+      Epworth United Methodist Church&lt;/a&gt;.\n\nWhat strikes my eye the most,
+      though, is the high proportion of pink-to-red alkali-feldspar granites. Perhaps
+      the masons preferentially selected them for their cheerful color. Or it may
+      just be that the Wisconsin-stage ice sheet dumped a lot of them in this vicinity.
+      \ \n\nHowever, the church&#039;s reddest erratics are rhyolite, the extrusive
+      equivalent of granite. We&#039;ll take a closer look at them and many of their
+      companions before long.\n\n&lt;b&gt;To peruse the other photos and descriptions
+      of this series, visit my &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720310008578&quot;&gt;&lt;i&gt;Geology
+      of Fieldstone &amp;amp; Cobblestone Buildings&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;
+      \ \n\n\n</description>\n\t</photo>\n\t<photo id=\"53321171440\" owner=\"9746040@N08\"
+      secret=\"3feffbf725\" server=\"65535\" farm=\"66\" title=\"Views at Oldervik,
+      Norway\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Wayne~Chadwick\"
+      dateadded=\"1699551841\" license=\"0\" safety_level=\"0\" dateupload=\"1699551640\"
+      datetaken=\"2023-10-10 01:18:05\" datetakengranularity=\"0\" datetakenunknown=\"0\"
+      realname=\"Wayne Chadwick\" tags=\"\" originalsecret=\"81d49d25af\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53321171440_3feffbf725_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53321171440_3feffbf725_t.jpg\"
+      height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53321171440_3feffbf725_m.jpg\"
+      height_s=\"148\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53321171440_3feffbf725.jpg\"
+      height_m=\"308\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53321171440_81d49d25af_o.jpg\"
+      height_o=\"3767\" width_o=\"6125\" url_q=\"https://live.staticflickr.com/65535/53321171440_3feffbf725_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53321171440_3feffbf725_b.jpg\"
+      height_l=\"630\" width_l=\"1024\">\n\t\t<description>Very interesting geology.
+      \ Frosty morning.</description>\n\t</photo>\n\t<photo id=\"53319292481\" owner=\"196253572@N05\"
+      secret=\"3ba9db3d5c\" server=\"65535\" farm=\"66\" title=\"The Geology of Terra-Cotta,
+      Part 13: Detail of the Lower Facade, Reebie Storage Warehouse, Lincoln Park
+      Neighborhood, Chicago, Illinois, USA (1922)\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699492708\" license=\"0\"
+      safety_level=\"0\" dateupload=\"1699489689\" datetaken=\"2021-04-10 09:33:11\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"architecturalgeology architecture botany chicago geology illinois northwesternterracottacompany
+      terracotta reebiestoragewarehouse nymphaealotus egyptianlotus egyptianrevivalarchitecture\"
+      originalsecret=\"be77c63a2e\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53319292481_3ba9db3d5c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53319292481_3ba9db3d5c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53319292481_3ba9db3d5c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53319292481_3ba9db3d5c.jpg\"
@@ -98,22 +433,22 @@ interactions:
       of its being the crest of the Graceland Spit. This landform, named for the graveyard
       I feature prominently in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720302670513&quot;&gt;my
       &lt;i&gt;Cemetery Science&lt;/i&gt; album&lt;/a&gt;, was built in the nearshore
-      waters of Lake Chicago about 5.5 ka ago. \n\nIn previous shots of this series,
-      I&#039;ve described the Northwestern Terra Cotta Company cladding, formed from
-      Pennsylvanian (Upper Carboniferous) clays mined in the Illinois Basin, that
-      adorns the lower portion of this storage warehouse. Here it is at much closer
-      range.\n\nOf course the most eye-catching item is the olive-skinned representation
-      of one of the original Reebie Brothers decked out as Ramses II. His sibling
-      is an identical Ramses II, out of sight on the other side of the entrance. \n\nBut
-      the rest of the building&#039;s face is a nice assortment of botanical references,
-      especially to &lt;i&gt;Nymphaea lotus&lt;/i&gt;, the Egyptian Lotus. This aquatic
-      plant was to the ancients a potent symbol of death and resurrection. Its flower
-      buds emerge and rise above the waters of the Nile and open by day, then close
-      and submerge again at night, and reemerge the following day.\n\nThe Egyptian
-      Lotus is present here both in closed-bud and opened-flower forms. And there
-      are also palm-leaf motifs in the capitals of the squat columns. \n\n&lt;b&gt;For
-      more on this site, see my book &lt;i&gt;Chicago in Stone and Clay&lt;/i&gt;,
-      described at &lt;a href=&quot;http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..&quot;
+      waters of Lake Chicago during its Nipissing phases, about 5.5 ka ago. \n\nIn
+      previous shots of this series, I&#039;ve described the Northwestern Terra Cotta
+      Company cladding, formed from Pennsylvanian (Upper Carboniferous) clays mined
+      in the Illinois Basin, that adorns the lower portion of this storage warehouse.
+      Here it is at much closer range.\n\nOf course the most eye-catching item is
+      the olive-skinned representation of one of the original Reebie Brothers decked
+      out as Ramses II. His sibling is an identical Ramses II, out of sight on the
+      other side of the entrance. \n\nBut the rest of the building&#039;s face is
+      a nice assortment of botanical references, especially to &lt;i&gt;Nymphaea lotus&lt;/i&gt;,
+      the Egyptian Lotus. This aquatic plant was to the ancients a potent symbol of
+      death and resurrection. Its flower buds emerge and rise above the waters of
+      the Nile and open by day, then close and submerge again at night, and reemerge
+      the following day.\n\nThe Egyptian Lotus is present here both in closed-bud
+      and opened-flower forms. And there are also palm-leaf motifs in the capitals
+      of the squat columns. \n\n&lt;b&gt;For more on this site, see my book &lt;i&gt;Chicago
+      in Stone and Clay&lt;/i&gt;, described at &lt;a href=&quot;http://www.cornellpress.cornell.edu/book/9781501765063/chicago-i..&quot;
       rel=&quot;noreferrer nofollow&quot;&gt;www.cornellpress.cornell.edu/book/9781501765063/chicago-i..&lt;/a&gt;.
       \n\nTo see the other photos and descriptions of this series, visit my &lt;a
       href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720302670488&quot;&gt;&lt;i&gt;Terra-Cottalogy&lt;/i&gt;
@@ -122,8 +457,8 @@ interactions:
       (Variety Emerald)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Stan
       Celestian\" dateadded=\"1699468283\" license=\"0\" safety_level=\"0\" dateupload=\"1699467992\"
       datetaken=\"2023-11-08 10:57:35\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Stan Celestian\" originalsecret=\"6806bd2147\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53317770887_24d0321a8f_s.jpg\"
+      realname=\"Stan Celestian\" tags=\"beryl emerald\" originalsecret=\"6806bd2147\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53317770887_24d0321a8f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53317770887_24d0321a8f_t.jpg\"
       height_t=\"91\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53317770887_24d0321a8f_m.jpg\"
       height_s=\"219\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53317770887_24d0321a8f.jpg\"
@@ -140,8 +475,9 @@ interactions:
       USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699403562\"
       license=\"0\" safety_level=\"0\" dateupload=\"1699401147\" datetaken=\"2007-04-15
       11:36:11\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"1e30cb6cb2\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53317049926_850c906435_s.jpg\"
+      Wiggers\" tags=\"botany geology illinois landscape nature parks plants rock
+      rocks stone bellsmithsprings shawneenationalforest sandstone streams\" originalsecret=\"1e30cb6cb2\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53317049926_850c906435_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53317049926_850c906435_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53317049926_850c906435_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53317049926_850c906435.jpg\"
@@ -176,7 +512,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699320434\"
       license=\"0\" safety_level=\"0\" dateupload=\"1699314994\" datetaken=\"2019-05-31
       12:27:03\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"7663074008\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"architecturalgeology architecture geology masonry rock rocks
+      stone stonework wisconsin monroewisconsin greencountycourthouse montellogranite
+      granite dolostone\" originalsecret=\"7663074008\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53314994733_8d7c12b2b1_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53314994733_8d7c12b2b1_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53314994733_8d7c12b2b1_m.jpg\"
@@ -219,8 +557,10 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1699232825\" license=\"0\"
       safety_level=\"0\" dateupload=\"1699229583\" datetaken=\"1975-06-01 00:00:00\"
       datetakengranularity=\"4\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"7fb0bf3603\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53312512568_b5348ecdd5_s.jpg\"
+      tags=\"archaeology architecturalgeology architecture geology greece limestone
+      masonry rock rocks stone stonework paestumarcheologicalsite firsttempleofhera
+      temple greekarchitecture doricarchitecture travertine sandstone\" originalsecret=\"7fb0bf3603\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53312512568_b5348ecdd5_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53312512568_b5348ecdd5_t.jpg\"
       height_t=\"77\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53312512568_b5348ecdd5_m.jpg\"
       height_s=\"185\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53312512568_b5348ecdd5.jpg\"
@@ -250,7 +590,7 @@ interactions:
       of Prineville, Oregon\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Wayne~Chadwick\"
       dateadded=\"1699117430\" license=\"0\" safety_level=\"0\" dateupload=\"1699117342\"
       datetaken=\"2023-10-21 15:21:18\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Wayne Chadwick\" originalsecret=\"7cae7507ce\" originalformat=\"jpg\"
+      realname=\"Wayne Chadwick\" tags=\"\" originalsecret=\"7cae7507ce\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53309412534_9c96557444_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53309412534_9c96557444_t.jpg\"
       height_t=\"71\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53309412534_9c96557444_m.jpg\"
@@ -265,8 +605,8 @@ interactions:
       Western Australia\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"aussiejeff\"
       dateadded=\"1699078505\" license=\"0\" safety_level=\"0\" dateupload=\"1698991329\"
       datetaken=\"2023-11-01 12:08:45\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      originalsecret=\"891d015fa5\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53305412092_c79ae94e5e_s.jpg\"
+      tags=\"aussiejeff australia canon jeffc wa serpentine\" originalsecret=\"891d015fa5\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53305412092_c79ae94e5e_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53305412092_c79ae94e5e_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53305412092_c79ae94e5e_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53305412092_c79ae94e5e.jpg\"
@@ -287,7 +627,9 @@ interactions:
       (1894)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1699057233\" license=\"0\" safety_level=\"0\" dateupload=\"1699053878\"
       datetaken=\"2007-09-09 07:59:42\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"0753a03497\" originalformat=\"jpg\"
+      realname=\"Raymond Wiggers\" tags=\"architecturalgeology architecture brick
+      geology masonry rock rocks stone stonework oldcityhall marquette michigan lakesuperiorbrownstone
+      jacobsvillesandstone ashlar\" originalsecret=\"0753a03497\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53308046833_ae575ebee4_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53308046833_ae575ebee4_t.jpg\"
       height_t=\"90\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53308046833_ae575ebee4_m.jpg\"
@@ -329,7 +671,7 @@ interactions:
       farm=\"66\" title=\"Steaming Fumerole\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698986065\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698985693\" datetaken=\"2020-12-17 06:23:54\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"9e97925b21\" originalformat=\"jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii lx100\" originalsecret=\"9e97925b21\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53305252827_86d8dabc85_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53305252827_86d8dabc85_t.jpg\"
       height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53305252827_86d8dabc85_m.jpg\"
@@ -343,8 +685,8 @@ interactions:
       isfamily=\"0\" ownername=\"Bernard Spragg\" dateadded=\"1698819864\" license=\"10\"
       safety_level=\"0\" dateupload=\"1698817604\" datetaken=\"2017-05-15 14:09:47\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Bernard Spragg.
-      NZ\" originalsecret=\"291cfd9e4f\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53301663756_66920daffa_s.jpg\"
+      NZ\" tags=\"\" originalsecret=\"291cfd9e4f\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53301663756_66920daffa_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53301663756_66920daffa_t.jpg\"
       height_t=\"65\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53301663756_66920daffa_m.jpg\"
       height_s=\"156\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53301663756_66920daffa.jpg\"
@@ -359,8 +701,9 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1698796182\"
       license=\"0\" safety_level=\"0\" dateupload=\"1698794011\" datetaken=\"2002-03-11
       11:35:41\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"93e8d4c79b\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53301344368_709067322c_s.jpg\"
+      Wiggers\" tags=\"botany nature parks plants texas wildflowers hechtiatexensis
+      falseagave bigbendnationalpark boquillascanyon\" originalsecret=\"93e8d4c79b\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53301344368_709067322c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53301344368_709067322c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53301344368_709067322c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53301344368_709067322c.jpg\"
@@ -393,7 +736,8 @@ interactions:
       &quot;Dolores&quot;, Kleczew\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"sadebudy\" dateadded=\"1698741482\" license=\"0\" safety_level=\"0\"
       dateupload=\"1698740604\" datetaken=\"2023-10-25 08:10:09\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Marcin Stepien\" originalsecret=\"944a538a5f\"
+      datetakenunknown=\"0\" realname=\"Marcin Stepien\" tags=\"polska poland polonia
+      gambezia sadebudy koparka dolores kleczew fisheye pentax k1 excavator\" originalsecret=\"944a538a5f\"
       originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53299913910_6129035fb4_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53299913910_6129035fb4_t.jpg\"
       height_t=\"61\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53299913910_6129035fb4_m.jpg\"
@@ -408,6 +752,8 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1698710480\" license=\"0\"
       safety_level=\"0\" dateupload=\"1698706907\" datetaken=\"1976-03-05 02:01:03\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"archaeology architecturalgeology architecture geology greece masonry
+      rock rocks stone stonework treasuryofatreus tombofagamemnon mycenae ashlar\"
       originalsecret=\"32dd18de2a\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53297798697_9d5038db22_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53297798697_9d5038db22_t.jpg\"
@@ -445,8 +791,10 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1698536439\"
       license=\"0\" safety_level=\"0\" dateupload=\"1698534420\" datetaken=\"1978-02-23
       01:35:45\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"3e6d1582ec\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53293393949_2a009484cd_s.jpg\"
+      Wiggers\" tags=\"archaeology architecturalgeology architecture brick church
+      geology greece limestone masonry rocks rock stone stonework transfigurationofthesaviourchurch
+      byzantinearchitecture athens\" originalsecret=\"3e6d1582ec\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53293393949_2a009484cd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53293393949_2a009484cd_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53293393949_2a009484cd_m.jpg\"
       height_s=\"240\" width_s=\"162\" url_m=\"https://live.staticflickr.com/65535/53293393949_2a009484cd.jpg\"
@@ -476,7 +824,9 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1698362170\"
       license=\"0\" safety_level=\"0\" dateupload=\"1698359273\" datetaken=\"2021-06-12
       08:48:34\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"d7c8857fe9\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"architecturalgeology architecture chicago geology botany plants
+      rock rocks stone hoytmonument granite narragansettpiergranite westerlygranite
+      gracelandcemetery\" originalsecret=\"d7c8857fe9\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53288576060_6d97fe5d37_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53288576060_6d97fe5d37_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53288576060_6d97fe5d37_m.jpg\"
@@ -510,8 +860,8 @@ interactions:
       farm=\"66\" title=\"What Fumes Just Beyond\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294703\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294102\" datetaken=\"2016-12-20 19:24:57\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"ca42d50ba8\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286195151_ab03ca5f86_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea eruption lava\" originalsecret=\"ca42d50ba8\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286195151_ab03ca5f86_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286195151_ab03ca5f86_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286195151_ab03ca5f86_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286195151_ab03ca5f86.jpg\"
@@ -523,8 +873,9 @@ interactions:
       farm=\"66\" title=\"She Would To Drink The Sea\" ispublic=\"1\" isfriend=\"0\"
       isfamily=\"0\" ownername=\"incidencematrix\" dateadded=\"1698294358\" license=\"4\"
       safety_level=\"0\" dateupload=\"1698294104\" datetaken=\"2016-12-20 19:49:42\"
-      datetakengranularity=\"0\" datetakenunknown=\"0\" originalsecret=\"edd20b0581\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286194936_592f426f9c_s.jpg\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" tags=\"hawaii volcano kilauea
+      eruption lava\" originalsecret=\"edd20b0581\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286194936_592f426f9c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286194936_592f426f9c_t.jpg\"
       height_t=\"59\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286194936_592f426f9c_m.jpg\"
       height_s=\"142\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286194936_592f426f9c.jpg\"
@@ -536,8 +887,8 @@ interactions:
       farm=\"66\" title=\"Plume\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"incidencematrix\"
       dateadded=\"1698294124\" license=\"4\" safety_level=\"0\" dateupload=\"1698294102\"
       datetaken=\"2016-12-20 19:31:24\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      originalsecret=\"5538e07410\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53286564679_f10bf46e0f_s.jpg\"
+      tags=\"hawaii volcano kilauea eruption\" originalsecret=\"5538e07410\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286564679_f10bf46e0f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286564679_f10bf46e0f_t.jpg\"
       height_t=\"70\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286564679_f10bf46e0f_m.jpg\"
       height_s=\"168\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286564679_f10bf46e0f.jpg\"
@@ -549,8 +900,8 @@ interactions:
       farm=\"66\" title=\"As Earth Once Was\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294123\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294101\" datetaken=\"2016-12-20 18:27:42\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"5c460a013d\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286564844_636479a6bd_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea lava\" originalsecret=\"5c460a013d\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286564844_636479a6bd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286564844_636479a6bd_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286564844_636479a6bd_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286564844_636479a6bd.jpg\"
@@ -562,8 +913,8 @@ interactions:
       farm=\"66\" title=\"Breathe at Own Risk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294123\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294101\" datetaken=\"2016-12-20 18:23:58\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"c7cb5d7488\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53285302377_35c061b712_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea eruption lava\" originalsecret=\"c7cb5d7488\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53285302377_35c061b712_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53285302377_35c061b712_t.jpg\"
       height_t=\"88\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53285302377_35c061b712_m.jpg\"
       height_s=\"211\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53285302377_35c061b712.jpg\"
@@ -575,8 +926,8 @@ interactions:
       farm=\"66\" title=\"Sulfur Dioxide\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294122\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294100\" datetaken=\"2016-12-20 18:20:59\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"d02ab48a98\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53285302477_b82bb770eb_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea eruption\" originalsecret=\"d02ab48a98\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53285302477_b82bb770eb_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53285302477_b82bb770eb_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53285302477_b82bb770eb_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53285302477_b82bb770eb.jpg\"
@@ -588,8 +939,8 @@ interactions:
       farm=\"66\" title=\"Volcanic Glass\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294121\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294099\" datetaken=\"2016-12-20 17:30:29\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"6deeef7cf5\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286195406_7460d3ef22_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea lava\" originalsecret=\"6deeef7cf5\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286195406_7460d3ef22_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286195406_7460d3ef22_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286195406_7460d3ef22_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286195406_7460d3ef22.jpg\"
@@ -601,8 +952,8 @@ interactions:
       farm=\"66\" title=\"Last Look Back\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294120\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294084\" datetaken=\"2016-12-20 20:22:51\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"fdec7ecea2\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286564369_78c6e48b67_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea eruption\" originalsecret=\"fdec7ecea2\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286564369_78c6e48b67_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286564369_78c6e48b67_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286564369_78c6e48b67_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286564369_78c6e48b67.jpg\"
@@ -614,8 +965,8 @@ interactions:
       farm=\"66\" title=\"Unquenchable Thirst\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698294119\" license=\"4\" safety_level=\"0\"
       dateupload=\"1698294082\" datetaken=\"2016-12-20 19:57:47\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"e47a819c49\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286657005_8ce0f16e7b_s.jpg\"
+      datetakenunknown=\"0\" tags=\"hawaii volcano kilauea eruption lava\" originalsecret=\"e47a819c49\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286657005_8ce0f16e7b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286657005_8ce0f16e7b_t.jpg\"
       height_t=\"48\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286657005_8ce0f16e7b_m.jpg\"
       height_s=\"114\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286657005_8ce0f16e7b.jpg\"
@@ -629,8 +980,9 @@ interactions:
       secret=\"07a69f08cd\" server=\"65535\" farm=\"66\" title=\"The Angry Furnaces\"
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"incidencematrix\" dateadded=\"1698294118\"
       license=\"4\" safety_level=\"0\" dateupload=\"1698294080\" datetaken=\"2016-12-20
-      19:57:29\" datetakengranularity=\"0\" datetakenunknown=\"0\" originalsecret=\"898505c869\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286657155_07a69f08cd_s.jpg\"
+      19:57:29\" datetakengranularity=\"0\" datetakenunknown=\"0\" tags=\"hawaii volcano
+      kilauea eruption lava\" originalsecret=\"898505c869\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53286657155_07a69f08cd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53286657155_07a69f08cd_t.jpg\"
       height_t=\"53\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53286657155_07a69f08cd_m.jpg\"
       height_s=\"128\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53286657155_07a69f08cd.jpg\"
@@ -643,8 +995,9 @@ interactions:
       National Park, Texas, USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1698278026\" license=\"0\" safety_level=\"0\" dateupload=\"1698274569\"
       datetaken=\"2002-03-14 04:10:35\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"7997969012\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53284905642_28034390bd_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"geology nature parks rock rocks stone texas
+      tuffcanyon bigbendnationalpark breccia lahar transpecostexas\" originalsecret=\"7997969012\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53284905642_28034390bd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53284905642_28034390bd_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53284905642_28034390bd_m.jpg\"
       height_s=\"162\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53284905642_28034390bd.jpg\"
@@ -682,7 +1035,9 @@ interactions:
       Chicago, Illinois, USA (1909)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1698191478\" license=\"0\" safety_level=\"0\"
       dateupload=\"1698187094\" datetaken=\"2020-09-20 09:42:22\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"85004f5867\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      architecture brick chicago geology illinois masonry robiehouse stlouisbrick
+      romanbrick mortar prairieschoolarchitecture franklloydwright\" originalsecret=\"85004f5867\"
       originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53283379996_5bb057ff1b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53283379996_5bb057ff1b_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53283379996_5bb057ff1b_m.jpg\"
@@ -727,7 +1082,7 @@ interactions:
       farm=\"66\" title=\"Lassen and Sulfur\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698186837\" license=\"5\" safety_level=\"0\"
       dateupload=\"1698122916\" datetaken=\"2023-07-19 16:20:19\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"e08d903fb2\" originalformat=\"jpg\"
+      datetakenunknown=\"0\" tags=\"lassen ca\" originalsecret=\"e08d903fb2\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53281370801_729dc190d2_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53281370801_729dc190d2_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53281370801_729dc190d2_m.jpg\"
@@ -740,8 +1095,8 @@ interactions:
       farm=\"66\" title=\"Boiling Mud in Lassen\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698186805\" license=\"5\" safety_level=\"0\"
       dateupload=\"1698122919\" datetaken=\"2023-07-19 16:22:57\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"0cd421d875\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53281839315_85750e9f7f_s.jpg\"
+      datetakenunknown=\"0\" tags=\"lassen ca mudpot\" originalsecret=\"0cd421d875\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53281839315_85750e9f7f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53281839315_85750e9f7f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53281839315_85750e9f7f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53281839315_85750e9f7f.jpg\"
@@ -753,7 +1108,7 @@ interactions:
       farm=\"66\" title=\"Volcanic Hillside\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"incidencematrix\" dateadded=\"1698186761\" license=\"5\" safety_level=\"0\"
       dateupload=\"1698122924\" datetaken=\"2023-07-19 16:25:27\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"8b6ee1b97f\" originalformat=\"jpg\"
+      datetakenunknown=\"0\" tags=\"lassen ca\" originalsecret=\"8b6ee1b97f\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53281837945_ed1c95d715_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53281837945_ed1c95d715_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53281837945_ed1c95d715_m.jpg\"
@@ -768,6 +1123,8 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1698108025\" license=\"0\"
       safety_level=\"0\" dateupload=\"1698104516\" datetaken=\"1978-04-13 00:40:50\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"archaeology architecturalgeology architecture church geology masonry
+      rock rocks stone stonework sanjuandeloscaballeroschurch segovia spain ashlar\"
       originalsecret=\"03675109eb\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53281283364_461b7fd491_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53281283364_461b7fd491_t.jpg\"
@@ -809,8 +1166,8 @@ interactions:
       ownername=\"David Hoffman &#039;41\" dateadded=\"1698064048\" license=\"1\"
       safety_level=\"0\" dateupload=\"1696679602\" datetaken=\"2018-10-27 10:17:25\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"David Hoffman\"
-      originalsecret=\"69d512bffe\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53226069018_10dea3f4ed_s.jpg\"
+      tags=\"\" originalsecret=\"69d512bffe\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53226069018_10dea3f4ed_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53226069018_10dea3f4ed_t.jpg\"
       height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53226069018_10dea3f4ed_m.jpg\"
       height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/65535/53226069018_10dea3f4ed.jpg\"
@@ -830,8 +1187,10 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1697931851\"
       license=\"0\" safety_level=\"0\" dateupload=\"1697928783\" datetaken=\"2019-04-09
       13:11:33\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"690a83184e\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53275648005_0ef49f2b6f_s.jpg\"
+      Wiggers\" tags=\"architecturalgeology architecture geology masonry rock rocks
+      stone stonework wisconsin cobblestonehouse dodgehouse portwashington basalt
+      dolostone granitoids\" originalsecret=\"690a83184e\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53275648005_0ef49f2b6f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53275648005_0ef49f2b6f_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53275648005_0ef49f2b6f_m.jpg\"
       height_s=\"240\" width_s=\"161\" url_m=\"https://live.staticflickr.com/65535/53275648005_0ef49f2b6f.jpg\"
@@ -865,8 +1224,10 @@ interactions:
       Chicago, Illinois, USA (1922)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1697842444\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697837540\" datetaken=\"2021-04-10 09:32:35\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"95e676a7ac\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53272885351_0c4c1089a0_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      architecture brick chicago geology illinois masonry terracotta glazedbrick enameledbrick
+      reebiestoragewarehouse\" originalsecret=\"95e676a7ac\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53272885351_0c4c1089a0_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53272885351_0c4c1089a0_t.jpg\"
       height_t=\"54\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53272885351_0c4c1089a0_m.jpg\"
       height_s=\"130\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53272885351_0c4c1089a0.jpg\"
@@ -916,8 +1277,8 @@ interactions:
       isfamily=\"0\" ownername=\"Wayne~Chadwick\" dateadded=\"1697813500\" license=\"0\"
       safety_level=\"0\" dateupload=\"1697813340\" datetaken=\"2023-09-27 05:44:45\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Wayne Chadwick\"
-      originalsecret=\"b59b31e2d3\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53272515055_71d67e7c13_s.jpg\"
+      tags=\"\" originalsecret=\"b59b31e2d3\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53272515055_71d67e7c13_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53272515055_71d67e7c13_t.jpg\"
       height_t=\"37\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53272515055_71d67e7c13_m.jpg\"
       height_s=\"89\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53272515055_71d67e7c13.jpg\"
@@ -931,8 +1292,10 @@ interactions:
       USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1697757572\"
       license=\"0\" safety_level=\"0\" dateupload=\"1697753560\" datetaken=\"2007-04-15
       11:35:47\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"46711b1276\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53271012034_be0536d33e_s.jpg\"
+      Wiggers\" tags=\"dendrology geology illinois landscape nature parks rock rocks
+      stone trees naturalbridge bellsmithsprings shawneenationalforest sandstone\"
+      originalsecret=\"46711b1276\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53271012034_be0536d33e_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53271012034_be0536d33e_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53271012034_be0536d33e_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53271012034_be0536d33e.jpg\"
@@ -969,7 +1332,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1697669992\"
       license=\"0\" safety_level=\"0\" dateupload=\"1697666253\" datetaken=\"2019-05-31
       12:26:14\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"5cbee2100e\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"architecturalgeology architecture brick geology masonry rock
+      rocks stone stonework wisconsin greencountycourthouse monroewisconsin ashlar
+      dolostone granite\" originalsecret=\"5cbee2100e\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53267563072_6d2da4aca6_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53267563072_6d2da4aca6_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53267563072_6d2da4aca6_m.jpg\"
@@ -985,10 +1350,12 @@ interactions:
       example of that&lt;/a&gt;.\n\nThe three main exterior building materials, all
       products of Wisconsin, are visible in this shot, though the richly red Maiden
       Rock Brick here takes a back seat to the great mass of Regional Silurian Dolostone.
-      Note the striking checkerboard masonry of widely spaced ashlar blocks under
-      the columns. It almost looks like a wind baffle. At any rate, the masons who
-      set the stone must have had tremendous fun with all the different patterns they
-      got to play with.  \n\nAs I noted in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/53212741652/in/dateposted-public/&quot;&gt;the
+      Note the striking checkerboard of gaps and widely spaced ashlar blocks under
+      the columns. This is what is known, believe it or not, as &lt;i&gt;hit-or-miss
+      masonry&lt;/i&gt;. It&#039;s much more commonly used in garden-wall brickwork,
+      where the builders want some air and light to come through. There&#039;s actually
+      nothing hit-or-miss about it; it requires  quite some skill to get the pattern
+      right.\n\nAs I noted in &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/53212741652/in/dateposted-public/&quot;&gt;the
       Part 10 description&lt;/a&gt;, I&#039;m guessing that the buff-to-buttery-yellow
       ashlar is specifically Wauwatosa Dolostone, quarried in the Menomonee River
       Valley just west of Milwaukee. If it isn&#039;t, though, it comes from another
@@ -1004,7 +1371,8 @@ interactions:
       farm=\"66\" title=\"\u0141aba // Elbe\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"sadebudy\" dateadded=\"1697614473\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697614137\" datetaken=\"2023-07-21 17:19:01\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Marcin Stepien\" originalsecret=\"cc68ce53e5\"
+      datetakenunknown=\"0\" realname=\"Marcin Stepien\" tags=\"elbe \u0142aba rzeka
+      river pentax k1 fisheye saxony deutschland konigstein\" originalsecret=\"cc68ce53e5\"
       originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53267108158_2f71e1ec92_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53267108158_2f71e1ec92_t.jpg\"
       height_t=\"69\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53267108158_2f71e1ec92_m.jpg\"
@@ -1019,7 +1387,9 @@ interactions:
       centuries), Istanbul, Turkey\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1697585125\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697581386\" datetaken=\"1976-11-05 05:45:20\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"e1af4a815f\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"archaeology architecturalgeology
+      architecture brick geology limestone masonry rock rocks stone stonework palaceoftheporphyrogenitus
+      istanbul constantinople byzantinearchitecture\" originalsecret=\"e1af4a815f\"
       originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53266595260_15255fc587_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53266595260_15255fc587_t.jpg\"
       height_t=\"100\" width_t=\"69\" url_s=\"https://live.staticflickr.com/65535/53266595260_15255fc587_m.jpg\"
@@ -1064,7 +1434,8 @@ interactions:
       isfamily=\"0\" ownername=\"Vid Pogacnik\" dateadded=\"1697529752\" license=\"0\"
       safety_level=\"0\" dateupload=\"1697529721\" datetaken=\"2013-04-14 00:00:09\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Vid Pogacnik\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53264776014_658b5bf722_s.jpg\"
+      tags=\"slovenija istra river outside outdoors hiking slovenia geology wading
+      istria flysch dragonja\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53264776014_658b5bf722_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53264776014_658b5bf722_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53264776014_658b5bf722_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53264776014_658b5bf722.jpg\"
@@ -1078,7 +1449,9 @@ interactions:
       Wisconsin, USA (1958)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1697499945\" license=\"0\" safety_level=\"0\" dateupload=\"1697497920\"
       datetaken=\"2020-02-14 13:05:57\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"0474b1ae46\" originalformat=\"jpg\"
+      realname=\"Raymond Wiggers\" tags=\"architecturalgeology architecture church
+      geology limestone masonry rock rocks stone stonework wisconsin stsavaserbianorthodoxcathedral
+      copper milwaukee ashlar dolostone\" originalsecret=\"0474b1ae46\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53263600006_9bfe848f89_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53263600006_9bfe848f89_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53263600006_9bfe848f89_m.jpg\"
@@ -1109,8 +1482,9 @@ interactions:
       farm=\"66\" title=\"Dragonja river\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"Vid Pogacnik\" dateadded=\"1697456366\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697456358\" datetaken=\"2013-04-14 00:00:05\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Vid Pogacnik\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53262610065_8fcb504321_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Vid Pogacnik\" tags=\"river landscape outside
+      outdoors hiking slovenia geology slovenija istria istra flysch dragonja\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53262610065_8fcb504321_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53262610065_8fcb504321_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53262610065_8fcb504321_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53262610065_8fcb504321.jpg\"
@@ -1123,7 +1497,8 @@ interactions:
       farm=\"66\" title=\"The Bad Lands\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"Dah Professor\" dateadded=\"1697296144\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697130533\" datetaken=\"2023-05-22 17:58:46\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53253776390_9cd472775d_s.jpg\"
+      datetakenunknown=\"0\" tags=\"kh0831 montana landscape 2023yellowstonetrip day17
+      img66826691\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53253776390_9cd472775d_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53253776390_9cd472775d_t.jpg\"
       height_t=\"33\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53253776390_9cd472775d_m.jpg\"
       height_s=\"80\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53253776390_9cd472775d.jpg\"
@@ -1140,7 +1515,9 @@ interactions:
       Tomb-gazing; Peloponnese, Greece\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1697241655\" license=\"0\" safety_level=\"0\"
       dateupload=\"1697240419\" datetaken=\"1976-03-05 00:31:50\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"d371fb8d3a\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"archaeology architecturalgeology
+      architecture geology greece landscape limestone masonry rocks rock stone stonework
+      mycenae treasuryofatreus tholostomb conglomerate\" originalsecret=\"d371fb8d3a\"
       originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53256398103_4dccf67c7d_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53256398103_4dccf67c7d_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53256398103_4dccf67c7d_m.jpg\"
@@ -1172,8 +1549,10 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1697149816\"
       license=\"0\" safety_level=\"0\" dateupload=\"1697145283\" datetaken=\"1978-02-23
       01:24:03\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"440392877a\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53254060408_13f4486696_s.jpg\"
+      Wiggers\" tags=\"architecturalgeology archaeology architecture brick geology
+      greece masonry rocks rock stone stonework incorporealangelschurch athens byzantine
+      church terracotta ashlar\" originalsecret=\"440392877a\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53254060408_13f4486696_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53254060408_13f4486696_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53254060408_13f4486696_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53254060408_13f4486696.jpg\"
@@ -1206,6 +1585,8 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1697067307\" license=\"0\"
       safety_level=\"0\" dateupload=\"1697060097\" datetaken=\"2021-06-12 08:46:51\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"architecturalgeology architecture chicago geology illinois stone stonework
+      rocks rock gracelandcemetery narragansettpiergranite granite monumentalstone\"
       originalsecret=\"aa5662b704\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53250733547_5e4f1be5ef_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53250733547_5e4f1be5ef_t.jpg\"
@@ -1260,8 +1641,9 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1696980641\" license=\"0\"
       safety_level=\"0\" dateupload=\"1696977917\" datetaken=\"2002-03-14 03:11:42\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"2a8f464065\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53249755023_a71d19cb5f_s.jpg\"
+      tags=\"geology nature parks rock stone texas rocks tuffcanyon transpecostexas
+      bigbendnationalpark ballisticblocks pyroclasticdeposits lahar debrisflow\" originalsecret=\"2a8f464065\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53249755023_a71d19cb5f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53249755023_a71d19cb5f_t.jpg\"
       height_t=\"100\" width_t=\"66\" url_s=\"https://live.staticflickr.com/65535/53249755023_a71d19cb5f_m.jpg\"
       height_s=\"240\" width_s=\"159\" url_m=\"https://live.staticflickr.com/65535/53249755023_a71d19cb5f.jpg\"
@@ -1306,8 +1688,10 @@ interactions:
       Illinois, USA (1909)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1696895432\" license=\"0\" safety_level=\"0\" dateupload=\"1696891934\"
       datetaken=\"2020-09-20 09:41:30\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"517810cd03\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53247185858_151d0986c2_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"architecturalgeology architecture chicago
+      geology illinois limestone masonry rock rocks stone stonework robiehouse franklloydwright
+      stlouisbrick romanbrick brick brickwork ashlar salemlimestone\" originalsecret=\"517810cd03\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53247185858_151d0986c2_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53247185858_151d0986c2_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53247185858_151d0986c2_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53247185858_151d0986c2.jpg\"
@@ -1361,8 +1745,10 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1696890809\" license=\"0\"
       safety_level=\"0\" dateupload=\"1696889094\" datetaken=\"1978-04-13 00:16:44\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"1f50a36562\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53245930917_9f924d39db_s.jpg\"
+      tags=\"architecture architecturalgeology church geology masonry rocks rock stone
+      stonework segovia sanjuandeloscaballeroschurch spain brick ashlar romanesque
+      sandstone\" originalsecret=\"1f50a36562\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53245930917_9f924d39db_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53245930917_9f924d39db_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53245930917_9f924d39db_m.jpg\"
       height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53245930917_9f924d39db.jpg\"
@@ -1389,7 +1775,8 @@ interactions:
       farm=\"66\" title=\"Slatinski vrelec\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"Vid Pogacnik\" dateadded=\"1696750634\" license=\"0\" safety_level=\"0\"
       dateupload=\"1696750629\" datetaken=\"2023-10-01 13:02:38\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Vid Pogacnik\" media=\"photo\" media_status=\"ready\"
+      datetakenunknown=\"0\" realname=\"Vid Pogacnik\" tags=\"slovenia prekmurje nuskova
+      mineralwater spring source geology\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53242900910_1b1962bf38_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53242900910_1b1962bf38_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53242900910_1b1962bf38_m.jpg\"
@@ -1407,8 +1794,10 @@ interactions:
       of Cornell University Press)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1696716992\" license=\"0\" safety_level=\"0\"
       dateupload=\"1696714439\" datetaken=\"2023-10-07 00:00:00\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"731d0ea5bd\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53241541841_5fb4981884_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      architecture geology stonework stone rocks rock wisconsin milwaukeeinstoneandclay
+      milwaukee creamcitybrick brick terracotta\" originalsecret=\"731d0ea5bd\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53241541841_5fb4981884_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53241541841_5fb4981884_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53241541841_5fb4981884_m.jpg\"
       height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53241541841_5fb4981884.jpg\"
@@ -1436,7 +1825,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1696632384\"
       license=\"0\" safety_level=\"0\" dateupload=\"1696628343\" datetaken=\"2019-04-09
       13:11:23\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"0c171e7979\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"architecturalgeology architecture geology masonry rock rocks
+      stone stonework wisconsin portwashington dodgehouse cobblestonehouses cobble
+      pebble ashlar\" originalsecret=\"0c171e7979\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53239745750_d9cb083dff_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53239745750_d9cb083dff_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53239745750_d9cb083dff_m.jpg\"
@@ -1481,8 +1872,10 @@ interactions:
       Chicago, Illinois, USA (1922)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1696548219\" license=\"0\" safety_level=\"0\"
       dateupload=\"1696544813\" datetaken=\"2021-04-10 09:31:39\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"c2862d210a\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53237534859_ee72c7238e_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      architecture chicago geology illinois reebiestoragewarehouse terracotta northwesternterracottacompany\"
+      originalsecret=\"c2862d210a\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53237534859_ee72c7238e_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53237534859_ee72c7238e_t.jpg\"
       height_t=\"69\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53237534859_ee72c7238e_m.jpg\"
       height_s=\"166\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53237534859_ee72c7238e.jpg\"
@@ -1520,8 +1913,10 @@ interactions:
       Illinois, USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1696544089\" license=\"0\" safety_level=\"0\" dateupload=\"1696538760\"
       datetaken=\"1997-04-01 00:00:00\" datetakengranularity=\"4\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"09406363ae\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53237492035_e9936a2852_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"botany geology dendrology illinois landscape
+      nature parks plants rock rocks stone bellsmithsprings naturalbridge shawneenationalforest\"
+      originalsecret=\"09406363ae\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53237492035_e9936a2852_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53237492035_e9936a2852_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53237492035_e9936a2852_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53237492035_e9936a2852.jpg\"
@@ -1562,8 +1957,8 @@ interactions:
       isfamily=\"0\" ownername=\"thomasedward63\" dateadded=\"1696446554\" license=\"0\"
       safety_level=\"0\" dateupload=\"1696423878\" datetaken=\"2023-10-04 06:32:53\"
       datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Thomas Williamson\"
-      originalsecret=\"aede108af6\" originalformat=\"png\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53234046374_e7ea847193_s.jpg\"
+      tags=\"nacimientoformation paleocene kutz canyon new mexico\" originalsecret=\"aede108af6\"
+      originalformat=\"png\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53234046374_e7ea847193_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53234046374_e7ea847193_t.jpg\"
       height_t=\"54\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53234046374_e7ea847193_m.jpg\"
       height_s=\"129\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53234046374_e7ea847193.jpg\"
@@ -1577,8 +1972,8 @@ interactions:
       isfamily=\"0\" ownername=\"thomasedward63\" dateadded=\"1696423885\" license=\"0\"
       safety_level=\"0\" dateupload=\"1696423880\" datetaken=\"2023-10-04 06:47:51\"
       datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Thomas Williamson\"
-      originalsecret=\"5e98d91229\" originalformat=\"png\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53234196195_b95e1e8d6c_s.jpg\"
+      tags=\"\" originalsecret=\"5e98d91229\" originalformat=\"png\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53234196195_b95e1e8d6c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53234196195_b95e1e8d6c_t.jpg\"
       height_t=\"56\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53234196195_b95e1e8d6c_m.jpg\"
       height_s=\"135\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53234196195_b95e1e8d6c.jpg\"
@@ -1592,7 +1987,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"Chief Bwana\" dateadded=\"1696374477\"
       license=\"0\" safety_level=\"0\" dateupload=\"1696374476\" datetaken=\"2021-04-23
       18:53:17\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Dave
-      Coppedge\" originalsecret=\"457e1020cd\" originalformat=\"jpg\" media=\"photo\"
+      Coppedge\" tags=\"az arizona chinleformation geology rainbowvalley houserockvalley
+      psa104 chiefbwana\" originalsecret=\"457e1020cd\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53233073025_1119837ca8_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53233073025_1119837ca8_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53233073025_1119837ca8_m.jpg\"
@@ -1611,8 +2007,10 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1695679305\"
       license=\"0\" safety_level=\"0\" dateupload=\"1695677303\" datetaken=\"2019-05-31
       12:37:56\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"e5c4349c79\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53212741652_45d1433361_s.jpg\"
+      Wiggers\" tags=\"architecturalgeology architecture geology masonry rocks rock
+      stone stonework wisconsin monroe greencountycourthouse ashlar regionalsiluriandolostone
+      montellogranite brick maidenrockbrick\" originalsecret=\"e5c4349c79\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53212741652_45d1433361_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53212741652_45d1433361_t.jpg\"
       height_t=\"85\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53212741652_45d1433361_m.jpg\"
       height_s=\"203\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53212741652_45d1433361.jpg\"
@@ -1644,7 +2042,8 @@ interactions:
       farm=\"66\" title=\"Thor&#039;s Well\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"KPortin\" dateadded=\"1695512306\" license=\"0\" safety_level=\"0\"
       dateupload=\"1695512300\" datetaken=\"2023-09-22 18:22:50\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Karen  Portin\" media=\"photo\" media_status=\"ready\"
+      datetakenunknown=\"0\" realname=\"Karen  Portin\" tags=\"thorswell oregon capeperpetua
+      surf man dog ocean pacificocean basalt rockformations\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53208562441_7d9075050a_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53208562441_7d9075050a_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53208562441_7d9075050a_m.jpg\"
@@ -1665,7 +2064,9 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1695510905\"
       license=\"0\" safety_level=\"0\" dateupload=\"1695509146\" datetaken=\"1976-11-05
       06:05:25\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"a8fd49aef2\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"archaeology architecturalgeology architecture geology masonry
+      rock rocks stone stonework palaceoftheporphyrogenitus istanbul turkey byzantine
+      ashlar brick\" originalsecret=\"a8fd49aef2\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53209055865_7e76900805_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53209055865_7e76900805_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53209055865_7e76900805_m.jpg\"
@@ -1691,8 +2092,8 @@ interactions:
       farm=\"66\" title=\"Shake hole NW of Glyntawe Sept 2023\" ispublic=\"1\" isfriend=\"0\"
       isfamily=\"0\" ownername=\"mikek666\" dateadded=\"1695454305\" license=\"0\"
       safety_level=\"0\" dateupload=\"1695454072\" datetaken=\"2023-09-22 13:54:20\"
-      datetakengranularity=\"0\" datetakenunknown=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53206992501_ffc04e5fab_s.jpg\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" tags=\"\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53206992501_ffc04e5fab_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53206992501_ffc04e5fab_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53206992501_ffc04e5fab_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53206992501_ffc04e5fab.jpg\"
@@ -1703,8 +2104,11 @@ interactions:
       Upper Peninsula of Michigan, USA (1894)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1695428335\" license=\"0\" safety_level=\"0\"
       dateupload=\"1695424864\" datetaken=\"2007-09-09 07:58:09\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"7df24721d4\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53205525427_ea00e93810_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"architecturalgeology
+      architecture geology masonry rock rocks stone stonework oldcityhall marquette
+      michigan jacobsvillesandstone lakesuperiorbrownstone marquettebrick brick ashlar\"
+      originalsecret=\"7df24721d4\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53205525427_ea00e93810_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53205525427_ea00e93810_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53205525427_ea00e93810_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53205525427_ea00e93810.jpg\"
@@ -1745,8 +2149,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1695253870\"
       license=\"0\" safety_level=\"0\" dateupload=\"1695252120\" datetaken=\"2002-03-11
       03:08:52\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"6dd188d0f6\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53202518625_92705c4d19_s.jpg\"
+      Wiggers\" tags=\"geology landscape nature parks plants rock rocks stone texas
+      transpecos riogrande bigbendnationalpark boquillascanyontrail\" originalsecret=\"6dd188d0f6\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53202518625_92705c4d19_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53202518625_92705c4d19_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53202518625_92705c4d19_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53202518625_92705c4d19.jpg\"
@@ -1775,8 +2180,11 @@ interactions:
       Beyond the Citadel; Peloponnese, Greece\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"rwgabbro1\" dateadded=\"1695168557\" license=\"0\" safety_level=\"0\"
       dateupload=\"1695166531\" datetaken=\"1976-03-05 01:41:59\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" originalsecret=\"3da0025bdb\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53200208410_a306fc89a9_s.jpg\"
+      datetakenunknown=\"0\" realname=\"Raymond Wiggers\" tags=\"archaeology architecturalgeology
+      architecture geology greece landscape masonry limestone rock rocks stone stonework
+      mycenae houseoftheoilmerchant conglomerate terrarossa soil pedology ruins\"
+      originalsecret=\"3da0025bdb\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53200208410_a306fc89a9_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53200208410_a306fc89a9_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53200208410_a306fc89a9_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53200208410_a306fc89a9.jpg\"
@@ -1804,7 +2212,11 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"Freshairphotography by Janis Morrison\"
       dateadded=\"1695055467\" license=\"0\" safety_level=\"0\" dateupload=\"1695055450\"
       datetaken=\"2023-09-18 09:37:40\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Janis Morrison\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53196825815_56d0667d49_s.jpg\"
+      realname=\"Janis Morrison\" tags=\"palouse palousefalls palousefallsstatepark
+      washingtonstatewaterfall waterflow waterfalls waterfall basalt volcanic geology
+      geological naturalwonder washington washingtonstate easternwashington columbiariverbasaltgroup
+      palouseriver columnarbasalt canyon missoulafloods\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53196825815_56d0667d49_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53196825815_56d0667d49_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53196825815_56d0667d49_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53196825815_56d0667d49.jpg\"
@@ -1827,7 +2239,8 @@ interactions:
       requin Megalodon\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Lilian
       Alizert\" dateadded=\"1695007579\" license=\"0\" safety_level=\"0\" dateupload=\"1695007576\"
       datetaken=\"2023-09-18 13:25:27\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Lilian Alizert\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53195466740_e56e80b89a_s.jpg\"
+      realname=\"Lilian Alizert\" tags=\"teeth tooth dent shark requin miocene pliocene
+      nouvellecal\xE9donie newcaledonia\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53195466740_e56e80b89a_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53195466740_e56e80b89a_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53195466740_e56e80b89a_m.jpg\"
       height_s=\"179\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53195466740_e56e80b89a.jpg\"
@@ -1841,8 +2254,11 @@ interactions:
       in the 19th century)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1694992817\" license=\"0\" safety_level=\"0\" dateupload=\"1694989059\"
       datetaken=\"1978-02-23 01:03:27\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"b79e172382\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53194508679_73509a6125_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"archaeology architecturalgeology architecture
+      church geology greece limestone masonry rock rocks stone stonework athens holytrinitychurch
+      byzantinearchitecture cloisonne ashlar datepalm phoenixdactylifera botany plants
+      trees dendrology\" originalsecret=\"b79e172382\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53194508679_73509a6125_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53194508679_73509a6125_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53194508679_73509a6125_m.jpg\"
       height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53194508679_73509a6125.jpg\"
@@ -1883,8 +2299,10 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694906579\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694903172\" datetaken=\"2019-02-05 11:52:01\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"37a0429910\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53192457283_42bd51fce1_s.jpg\"
+      tags=\"architecturalgeology architecture chicago geology illinois masonry rock
+      rocks stone stonework rosehillcemtery dolostone regionalsiluriandolostone lemontjolietdolostone
+      ashlar\" originalsecret=\"37a0429910\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53192457283_42bd51fce1_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53192457283_42bd51fce1_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53192457283_42bd51fce1_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53192457283_42bd51fce1.jpg\"
@@ -1925,7 +2343,11 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"Freshairphotography by Janis Morrison\"
       dateadded=\"1694889331\" license=\"0\" safety_level=\"0\" dateupload=\"1694889323\"
       datetaken=\"2023-09-16 11:25:25\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Janis Morrison\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191825160_1c3ecbd6cb_s.jpg\"
+      realname=\"Janis Morrison\" tags=\"oregon paintedhillsoregon paintedhills johndayfossilbedsnationalmonument
+      paintedhillsunit volcanic volcanicash ancient historic geological geology centraloregon
+      claystone layersofcolor millionsofyearsold amazing fossils johndaymonument interesting
+      fascinating naturesart pacificnorthwest unique unusual usa\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191825160_1c3ecbd6cb_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53191825160_1c3ecbd6cb_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53191825160_1c3ecbd6cb_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53191825160_1c3ecbd6cb.jpg\"
@@ -1953,7 +2375,11 @@ interactions:
       ownername=\"Freshairphotography by Janis Morrison\" dateadded=\"1694889331\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694889323\" datetaken=\"2023-09-16
       11:25:43\" datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Janis
-      Morrison\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191170072_ea3f984dbc_s.jpg\"
+      Morrison\" tags=\"oregon paintedhillsoregon paintedhills johndayfossilbedsnationalmonument
+      paintedhillsunit volcanic volcanicash ancient historic geological geology centraloregon
+      claystone layersofcolor millionsofyearsold amazing fossils johndaymonument interesting
+      fascinating naturesart pacificnorthwest unique unusual usa\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191170072_ea3f984dbc_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53191170072_ea3f984dbc_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53191170072_ea3f984dbc_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53191170072_ea3f984dbc.jpg\"
@@ -1981,7 +2407,11 @@ interactions:
       ownername=\"Freshairphotography by Janis Morrison\" dateadded=\"1694889330\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694889322\" datetaken=\"2023-09-16
       11:24:55\" datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Janis
-      Morrison\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191431509_0278d3d1a2_s.jpg\"
+      Morrison\" tags=\"oregon paintedhillsoregon paintedhills johndayfossilbedsnationalmonument
+      paintedhillsunit volcanic volcanicash ancient historic geological geology centraloregon
+      claystone layersofcolor millionsofyearsold amazing fossils johndaymonument interesting
+      fascinating naturesart pacificnorthwest unique unusual usa\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53191431509_0278d3d1a2_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53191431509_0278d3d1a2_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53191431509_0278d3d1a2_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53191431509_0278d3d1a2.jpg\"
@@ -2008,7 +2438,10 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"Freshairphotography by Janis Morrison\"
       dateadded=\"1694840738\" license=\"0\" safety_level=\"0\" dateupload=\"1694840732\"
       datetaken=\"2023-09-15 22:03:33\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Janis Morrison\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53190651270_f7696784ca_s.jpg\"
+      realname=\"Janis Morrison\" tags=\"paintedhills paintedcovetrail johndayfossilbedsnationalmonument
+      paintedhillsoregon wheelercounty geological fossils claystone reds naturesart
+      volcanic volcanicash paintedhillsunit\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53190651270_f7696784ca_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53190651270_f7696784ca_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53190651270_f7696784ca_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53190651270_f7696784ca.jpg\"
@@ -2026,8 +2459,10 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694820004\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694815332\" datetaken=\"2019-01-09 13:38:51\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"9cc48a850b\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53189462917_4433a72757_s.jpg\"
+      tags=\"architecturalgeology architecture chicago geology illinois limestone
+      masonry rock rocks stone stonework robiehouse franklloydwright prairiestyle
+      romanbrick stlouisbrick salemlimestone brick\" originalsecret=\"9cc48a850b\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53189462917_4433a72757_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53189462917_4433a72757_t.jpg\"
       height_t=\"64\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53189462917_4433a72757_m.jpg\"
       height_s=\"153\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53189462917_4433a72757.jpg\"
@@ -2063,6 +2498,8 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694734712\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694731283\" datetaken=\"1978-04-13 00:02:22\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
+      tags=\"architecturalgeology architecture church geology masonry rock rocks stone
+      stonework spain segovia sanjuandeloscaballeros sandstone ashlar weathering\"
       originalsecret=\"e543443123\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
       url_sq=\"https://live.staticflickr.com/65535/53187912844_157daf5049_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53187912844_157daf5049_t.jpg\"
@@ -2105,7 +2542,8 @@ interactions:
       farm=\"66\" title=\"crater\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"eb78\"
       dateadded=\"1694711464\" license=\"0\" safety_level=\"0\" dateupload=\"1694620958\"
       datetaken=\"2021-05-16 07:08:46\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Eric\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53185186275_0cfa692568_s.jpg\"
+      realname=\"Eric\" tags=\"ca california mojavedesert amboycrater drone aerialphotography
+      djimavicpro2 volcano droneography\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53185186275_0cfa692568_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53185186275_0cfa692568_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53185186275_0cfa692568_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53185186275_0cfa692568.jpg\"
@@ -2117,7 +2555,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"opaxir\" dateadded=\"1694601318\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694600856\" datetaken=\"2023-09-04
       16:28:25\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"paolo
-      alias opaxir\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53184710710_0b315a6f88_s.jpg\"
+      alias opaxir\" tags=\"maremma toscana tuscany riolite rhyolite riolyth sassoforte
+      paesaggio landscape rocce\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53184710710_0b315a6f88_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53184710710_0b315a6f88_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53184710710_0b315a6f88_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53184710710_0b315a6f88.jpg\"
@@ -2129,7 +2568,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"opaxir\" dateadded=\"1694601318\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694600856\" datetaken=\"2023-09-04
       17:23:07\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"paolo
-      alias opaxir\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53183796992_1e0816e046_s.jpg\"
+      alias opaxir\" tags=\"maremma toscana tuscany riolite rhyolite riolyth sassoforte
+      paesaggio landscape rocce\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53183796992_1e0816e046_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53183796992_1e0816e046_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53183796992_1e0816e046_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53183796992_1e0816e046.jpg\"
@@ -2141,7 +2581,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"opaxir\" dateadded=\"1694601317\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694600855\" datetaken=\"2023-09-04
       17:27:57\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"paolo
-      alias opaxir\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53184879493_a70e765e0c_s.jpg\"
+      alias opaxir\" tags=\"maremma toscana tuscany riolite rhyolite riolyth sassoforte
+      paesaggio landscape rocce\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53184879493_a70e765e0c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53184879493_a70e765e0c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53184879493_a70e765e0c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53184879493_a70e765e0c.jpg\"
@@ -2154,7 +2595,9 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694557651\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694555150\" datetaken=\"2019-04-09
       13:23:47\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"f0eb5114dd\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"architecturalgeology architecture geology masonry rocks rock
+      stone stonework wisconsin portwashington dodgehouse cobblestonehouses lannondolostone
+      dolostone\" originalsecret=\"f0eb5114dd\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53183776200_d2148cc559_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53183776200_d2148cc559_t.jpg\"
       height_t=\"80\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53183776200_d2148cc559_m.jpg\"
@@ -2187,8 +2630,10 @@ interactions:
       USA (1922)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1694475720\" license=\"0\" safety_level=\"0\" dateupload=\"1694472813\"
       datetaken=\"2021-04-10 09:32:10\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"d161298f91\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53181735133_135a7e643f_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"architecturalgeology architecture chicago
+      geology illinois terracotta northwesternterracottacompany reebiestoragewarehouse\"
+      originalsecret=\"d161298f91\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53181735133_135a7e643f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53181735133_135a7e643f_t.jpg\"
       height_t=\"74\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53181735133_135a7e643f_m.jpg\"
       height_s=\"178\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53181735133_135a7e643f.jpg\"
@@ -2226,7 +2671,9 @@ interactions:
       ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694471884\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694469105\" datetaken=\"1997-04-01
       00:00:00\" datetakengranularity=\"4\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"fdbdc9d448\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"geology illinois nature parks rock rocks stone sandstone poundssandstone
+      caseyvilleformation bellsmithsprings canyon naturalbridge shawneenationalforest
+      crossbedding\" originalsecret=\"fdbdc9d448\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53181572895_9177229528_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53181572895_9177229528_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53181572895_9177229528_m.jpg\"
@@ -2255,8 +2702,9 @@ interactions:
       Rome, Italy (AD 80)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1694438694\" license=\"0\" safety_level=\"0\" dateupload=\"1670966005\"
       datetaken=\"1975-07-01 00:00:00\" datetakengranularity=\"4\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"a402828a5b\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52561295192_e2c7e37609_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"geology architecture archaeology brick stone
+      concrete rome italy italia roma colosseum masonry\" originalsecret=\"a402828a5b\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52561295192_e2c7e37609_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52561295192_e2c7e37609_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/52561295192_e2c7e37609_m.jpg\"
       height_s=\"240\" width_s=\"161\" url_m=\"https://live.staticflickr.com/65535/52561295192_e2c7e37609.jpg\"
@@ -2285,8 +2733,10 @@ interactions:
       isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694387605\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694380904\" datetaken=\"2019-05-31 12:37:10\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond Wiggers\"
-      originalsecret=\"f45115a44b\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53178381291_bbfde1e3a1_s.jpg\"
+      tags=\"architecturalgeology architecture geology masonry rocks rock stone stonework
+      wisconsin greencountycourthouse monroewisconsin dolostone maidenrockbrick ashlar
+      montellogranite granite\" originalsecret=\"f45115a44b\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53178381291_bbfde1e3a1_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53178381291_bbfde1e3a1_t.jpg\"
       height_t=\"100\" width_t=\"79\" url_s=\"https://live.staticflickr.com/65535/53178381291_bbfde1e3a1_m.jpg\"
       height_s=\"240\" width_s=\"189\" url_m=\"https://live.staticflickr.com/65535/53178381291_bbfde1e3a1.jpg\"
@@ -2336,7 +2786,9 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694298282\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694295122\" datetaken=\"1976-11-05
       05:22:09\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"d17b81983b\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"archaeology architecturalgeology architecture geology limestone
+      masonry rock rocks stone stonework palaceoftheporphyrogenitus istanbul turkey
+      brick\" originalsecret=\"d17b81983b\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53175199817_3ded77afd6_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53175199817_3ded77afd6_t.jpg\"
       height_t=\"100\" width_t=\"69\" url_s=\"https://live.staticflickr.com/65535/53175199817_3ded77afd6_m.jpg\"
@@ -2367,7 +2819,7 @@ interactions:
       farm=\"66\" title=\"Sharm el Sheikh\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
       ownername=\"michael_jeddah\" dateadded=\"1694243145\" license=\"0\" safety_level=\"0\"
       dateupload=\"1689231959\" datetaken=\"2023-07-01 11:17:33\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" originalsecret=\"85d792127b\" originalformat=\"jpg\"
+      datetakenunknown=\"0\" tags=\"\" originalsecret=\"85d792127b\" originalformat=\"jpg\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53041855087_700e0b24b5_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53041855087_700e0b24b5_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53041855087_700e0b24b5_m.jpg\"
@@ -2382,8 +2834,10 @@ interactions:
       (1958)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1694214597\" license=\"0\" safety_level=\"0\" dateupload=\"1694211444\"
       datetaken=\"2020-02-14 13:12:54\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"d9ff4cb784\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53174146605_77bc81d5d3_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"architecturalgeology architecture church
+      geology masonry rocks rock stone stonework wisconsin dolostone milwaukee ashlar
+      stsavaserbianorthodoxcathedral limestone copper\" originalsecret=\"d9ff4cb784\"
+      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53174146605_77bc81d5d3_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53174146605_77bc81d5d3_t.jpg\"
       height_t=\"64\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53174146605_77bc81d5d3_m.jpg\"
       height_s=\"153\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53174146605_77bc81d5d3.jpg\"
@@ -2419,7 +2873,9 @@ interactions:
       USA\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694131225\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694128432\" datetaken=\"2002-03-11
       04:30:42\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"14f40eda87\" originalformat=\"jpg\" media=\"photo\"
+      Wiggers\" tags=\"geology landscape nature parks rock rocks stone texas transpecos
+      bigbendnationalpark dike landform penformation claystone shale daggerplant yuccafaxoniana
+      faxonyucca plants\" originalsecret=\"14f40eda87\" originalformat=\"jpg\" media=\"photo\"
       media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53171036752_a71fbd8439_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53171036752_a71fbd8439_t.jpg\"
       height_t=\"39\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53171036752_a71fbd8439_m.jpg\"
@@ -2454,8 +2910,10 @@ interactions:
       Peloponnese, Greece\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\"
       dateadded=\"1694127189\" license=\"0\" safety_level=\"0\" dateupload=\"1694122092\"
       datetaken=\"1976-03-05 00:02:29\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      realname=\"Raymond Wiggers\" originalsecret=\"d88f1d60b6\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53171453716_6f3e82e74f_s.jpg\"
+      realname=\"Raymond Wiggers\" tags=\"archaeology architecturalgeology architecture
+      geology greece limestone masonry rock rocks stone stonework mycenae rubble shaftgrave
+      gravecirclea\" originalsecret=\"d88f1d60b6\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53171453716_6f3e82e74f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53171453716_6f3e82e74f_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53171453716_6f3e82e74f_m.jpg\"
       height_s=\"240\" width_s=\"161\" url_m=\"https://live.staticflickr.com/65535/53171453716_6f3e82e74f.jpg\"
@@ -2486,8 +2944,8 @@ interactions:
       isfamily=\"0\" ownername=\"Wayne~Chadwick\" dateadded=\"1694123230\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694122838\" datetaken=\"2023-08-11 13:38:25\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Wayne Chadwick\"
-      originalsecret=\"10969d00d9\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53170887847_4b94fd2149_s.jpg\"
+      tags=\"\" originalsecret=\"10969d00d9\" originalformat=\"jpg\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53170887847_4b94fd2149_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53170887847_4b94fd2149_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53170887847_4b94fd2149_m.jpg\"
       height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53170887847_4b94fd2149.jpg\"
@@ -2500,6 +2958,7 @@ interactions:
       isfamily=\"0\" ownername=\"KPortin\" dateadded=\"1694119086\" license=\"0\"
       safety_level=\"0\" dateupload=\"1694119075\" datetaken=\"2023-03-12 12:05:35\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Karen  Portin\"
+      tags=\"hoodoos vermilioncliffs sandstone rockformations erosion arizona geology\"
       media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53171803383_9a36bd3df0_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53171803383_9a36bd3df0_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53171803383_9a36bd3df0_m.jpg\"
@@ -2514,8 +2973,10 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" ownername=\"rwgabbro1\" dateadded=\"1694031942\"
       license=\"0\" safety_level=\"0\" dateupload=\"1694028850\" datetaken=\"1978-02-23
       03:55:50\" datetakengranularity=\"0\" datetakenunknown=\"0\" realname=\"Raymond
-      Wiggers\" originalsecret=\"c552118e57\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53168957021_69f45df45f_s.jpg\"
+      Wiggers\" tags=\"architecturalgeology archaeology architecture church geology
+      greece masonry rock rocks stone athens byzantine cloisonne limestone ashlar
+      stonework ststheodoreschurch\" originalsecret=\"c552118e57\" originalformat=\"jpg\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53168957021_69f45df45f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53168957021_69f45df45f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53168957021_69f45df45f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53168957021_69f45df45f.jpg\"
@@ -2539,160 +3000,31 @@ interactions:
       shape overall. \n\nAlso note the striking brick-and-thick-mortar patterns adorning
       the upper reaches of the arched windows.\n\n&lt;b&gt;To see the other photos
       and descriptions in this series, visit my &lt;a href=&quot;https://www.flickr.com/photos/196253572@N05/albums/72177720303792872&quot;&gt;&lt;i&gt;Byzantine
-      and Late Roman Worlds&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;\n\n\n</description>\n\t</photo>\n\t<photo
-      id=\"53168153703\" owner=\"7665648@N04\" secret=\"4282403718\" server=\"65535\"
-      farm=\"66\" title=\"3669 Metamorphic rock flow patterns Eagle Co CO\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\" dateadded=\"1694024276\"
-      license=\"0\" safety_level=\"0\" dateupload=\"1693975511\" datetaken=\"2023-09-05
-      23:44:31\" datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Steve\"
-      originalsecret=\"806ef4f829\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53168153703_4282403718_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53168153703_4282403718_t.jpg\"
-      height_t=\"87\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53168153703_4282403718_m.jpg\"
-      height_s=\"209\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53168153703_4282403718.jpg\"
-      height_m=\"435\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53168153703_806ef4f829_o.jpg\"
-      height_o=\"3872\" width_o=\"4449\" url_q=\"https://live.staticflickr.com/65535/53168153703_4282403718_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53168153703_4282403718_b.jpg\"
-      height_l=\"891\" width_l=\"1024\">\n\t\t<description>From a large glacier moved
-      boulder south of Sylvan Lake St. Park and east of the Sawatch Range.</description>\n\t</photo>\n\t<photo
-      id=\"53167670223\" owner=\"7665648@N04\" secret=\"768b200000\" server=\"65535\"
-      farm=\"66\" title=\"3336 Chinle Fm outcrop on Squaw Creek trail Eagle Co CO\"
-      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\" dateadded=\"1693975365\"
-      license=\"0\" safety_level=\"0\" dateupload=\"1693954892\" datetaken=\"2023-09-05
-      17:59:24\" datetakengranularity=\"0\" datetakenunknown=\"1\" realname=\"Steve\"
-      originalsecret=\"e01b0ca7fc\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53167670223_768b200000_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167670223_768b200000_t.jpg\"
-      height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53167670223_768b200000_m.jpg\"
-      height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53167670223_768b200000.jpg\"
-      height_m=\"331\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53167670223_e01b0ca7fc_o.jpg\"
-      height_o=\"3264\" width_o=\"4928\" url_q=\"https://live.staticflickr.com/65535/53167670223_768b200000_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167670223_768b200000_b.jpg\"
-      height_l=\"678\" width_l=\"1024\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53166622932\" owner=\"7665648@N04\" secret=\"e0c61e7206\" server=\"65535\"
-      farm=\"66\" title=\"3638 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975156\" license=\"0\" safety_level=\"0\" dateupload=\"1693955714\"
-      datetaken=\"2023-09-05 18:14:23\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"9d3ce9c38b\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206_t.jpg\"
-      height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206_m.jpg\"
-      height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206.jpg\"
-      height_m=\"500\" width_m=\"333\" url_o=\"https://live.staticflickr.com/65535/53166622932_9d3ce9c38b_o.jpg\"
-      height_o=\"6000\" width_o=\"4000\" url_q=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53166622932_e0c61e7206_b.jpg\"
-      height_l=\"1024\" width_l=\"683\">\n\t\t<description>Near vertical outcrop on
-      one way road south of Sylvan Lake St. Park and east of the Sawatch Range.</description>\n\t</photo>\n\t<photo
-      id=\"53167646080\" owner=\"7665648@N04\" secret=\"69975742c2\" server=\"65535\"
-      farm=\"66\" title=\"3637 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk-2\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975134\" license=\"0\" safety_level=\"0\" dateupload=\"1693955713\"
-      datetaken=\"2023-09-05 18:14:18\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"d74c7aec22\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167646080_69975742c2_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167646080_69975742c2_t.jpg\"
-      height_t=\"77\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53167646080_69975742c2_m.jpg\"
-      height_s=\"184\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53167646080_69975742c2.jpg\"
-      height_m=\"383\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53167646080_d74c7aec22_o.jpg\"
-      height_o=\"1897\" width_o=\"2474\" url_q=\"https://live.staticflickr.com/65535/53167646080_69975742c2_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167646080_69975742c2_b.jpg\"
-      height_l=\"785\" width_l=\"1024\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53167413449\" owner=\"7665648@N04\" secret=\"5b9174382a\" server=\"65535\"
-      farm=\"66\" title=\"3637 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975098\" license=\"0\" safety_level=\"0\" dateupload=\"1693955713\"
-      datetaken=\"2023-09-05 18:14:26\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"0093d303f3\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167413449_5b9174382a_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167413449_5b9174382a_t.jpg\"
-      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53167413449_5b9174382a_m.jpg\"
-      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53167413449_5b9174382a.jpg\"
-      height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53167413449_0093d303f3_o.jpg\"
-      height_o=\"4000\" width_o=\"6000\" url_q=\"https://live.staticflickr.com/65535/53167413449_5b9174382a_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167413449_5b9174382a_b.jpg\"
-      height_l=\"683\" width_l=\"1024\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53167695508\" owner=\"7665648@N04\" secret=\"6c69a0a132\" server=\"65535\"
-      farm=\"66\" title=\"3636 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975072\" license=\"0\" safety_level=\"0\" dateupload=\"1693955712\"
-      datetaken=\"2023-09-05 18:14:25\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"bd5dfd6ddb\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132_t.jpg\"
-      height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132_m.jpg\"
-      height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132.jpg\"
-      height_m=\"500\" width_m=\"375\" url_o=\"https://live.staticflickr.com/65535/53167695508_bd5dfd6ddb_o.jpg\"
-      height_o=\"5327\" width_o=\"4000\" url_q=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167695508_6c69a0a132_b.jpg\"
-      height_l=\"1024\" width_l=\"769\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53167695558\" owner=\"7665648@N04\" secret=\"5a278f81ac\" server=\"65535\"
-      farm=\"66\" title=\"3635 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975040\" license=\"0\" safety_level=\"0\" dateupload=\"1693955711\"
-      datetaken=\"2023-09-05 18:14:26\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"a31f9a82c4\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac_t.jpg\"
-      height_t=\"100\" width_t=\"95\" url_s=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac_m.jpg\"
-      height_s=\"240\" width_s=\"227\" url_m=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac.jpg\"
-      height_m=\"500\" width_m=\"473\" url_o=\"https://live.staticflickr.com/65535/53167695558_a31f9a82c4_o.jpg\"
-      height_o=\"4231\" width_o=\"4000\" url_q=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167695558_5a278f81ac_b.jpg\"
-      height_l=\"1024\" width_l=\"968\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53167413444\" owner=\"7665648@N04\" secret=\"ebdb565b1c\" server=\"65535\"
-      farm=\"66\" title=\"3634 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693975011\" license=\"0\" safety_level=\"0\" dateupload=\"1693955711\"
-      datetaken=\"2023-09-05 18:14:26\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"be70d7d86f\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c_t.jpg\"
-      height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c_m.jpg\"
-      height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c.jpg\"
-      height_m=\"500\" width_m=\"333\" url_o=\"https://live.staticflickr.com/65535/53167413444_be70d7d86f_o.jpg\"
-      height_o=\"6000\" width_o=\"4000\" url_q=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167413444_ebdb565b1c_b.jpg\"
-      height_l=\"1024\" width_l=\"683\">\n\t\t<description />\n\t</photo>\n\t<photo
-      id=\"53167646265\" owner=\"7665648@N04\" secret=\"e690b6993c\" server=\"65535\"
-      farm=\"66\" title=\"3633 Tilted rocks ripple marks Forest Rd 400 Sylvan Lake
-      St Pk-2 Eagle Co Colorado\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" ownername=\"Singingstone48\"
-      dateadded=\"1693974211\" license=\"0\" safety_level=\"0\" dateupload=\"1693955710\"
-      datetaken=\"2023-09-05 18:14:25\" datetakengranularity=\"0\" datetakenunknown=\"1\"
-      realname=\"Steve\" originalsecret=\"89a69082e7\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53167646265_e690b6993c_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53167646265_e690b6993c_t.jpg\"
-      height_t=\"100\" width_t=\"93\" url_s=\"https://live.staticflickr.com/65535/53167646265_e690b6993c_m.jpg\"
-      height_s=\"240\" width_s=\"224\" url_m=\"https://live.staticflickr.com/65535/53167646265_e690b6993c.jpg\"
-      height_m=\"500\" width_m=\"466\" url_o=\"https://live.staticflickr.com/65535/53167646265_89a69082e7_o.jpg\"
-      height_o=\"1327\" width_o=\"1237\" url_q=\"https://live.staticflickr.com/65535/53167646265_e690b6993c_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53167646265_e690b6993c_b.jpg\"
-      height_l=\"1024\" width_l=\"955\">\n\t\t<description>Tilted ripple marked rocks
-      along a slope of Forest Rd 400, south of Sylvan Lakes, south of Eagle, Colorado.</description>\n\t</photo>\n</photos>\n</rsp>\n"
+      and Late Roman Worlds&lt;/i&gt; album&lt;/a&gt;.&lt;/b&gt;\n\n\n</description>\n\t</photo>\n</photos>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '54216'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Thu, 09 Nov 2023 15:57:40 GMT
+      - Wed, 15 Nov 2023 10:56:16 GMT
+      Transfer-Encoding:
+      - chunked
       Via:
-      - 1.1 332a44a061773053817570525bb4fcae.cloudfront.net (CloudFront)
+      - 1.1 090f307c9c89f89a94f72ca34a59c174.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - X45PgTjd49YJmmOBT9Eq3V8VG8kf0UTzxT3dyx8UL32RwyhFxVyNZw==
+      - uxlQwl3DQXxK4DtNPppR8ip4hN8Sgwf_J6xcvhei_8olumTSFDDLzg==
       X-Amz-Cf-Pop:
-      - LHR50-P8
+      - EZE50-P1
       X-Cache:
       - Miss from cloudfront
       content-encoding:
       - gzip
       server:
-      - Apache/2.4.57 (Ubuntu)
+      - Apache/2.4.58 (Ubuntu)
       set-cookie:
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Sat, 09-Dec-2023 15:57:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 15-Dec-2023 10:56:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -2711,7 +3043,7 @@ interactions:
       connection:
       - keep-alive
       cookie:
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D
       host:
       - api.flickr.com
       user-agent:
@@ -2743,22 +3075,22 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Thu, 09 Nov 2023 15:57:40 GMT
+      - Wed, 15 Nov 2023 10:56:16 GMT
       Via:
-      - 1.1 332a44a061773053817570525bb4fcae.cloudfront.net (CloudFront)
+      - 1.1 090f307c9c89f89a94f72ca34a59c174.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - BscgQqL-LziiGZpHKO19VMDzMuCFTQXfCDgirp_ELuleKdDmqv3KNA==
+      - UX8Vr9MOyQ9_wmkkq6LEq9nVxt1IWbAkwP8aaagb0qe2R8VUFAJ1Aw==
       X-Amz-Cf-Pop:
-      - LHR50-P8
+      - EZE50-P1
       X-Cache:
       - Miss from cloudfront
       content-encoding:
       - gzip
       server:
-      - Apache/2.4.57 (Ubuntu)
+      - Apache/2.4.58 (Ubuntu)
       set-cookie:
-      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Sat, 09-Dec-2023 15:57:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 15-Dec-2023 10:56:16 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:

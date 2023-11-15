@@ -78,7 +78,13 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/53310991033/"
+      "url": "https://www.flickr.com/photos/george/53310991033/",
+      "tags": [
+        "london",
+        "ferry",
+        "dusk",
+        "canarywharf"
+      ]
     },
     {
       "id": "53282436419",
@@ -156,7 +162,13 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/53282436419/"
+      "url": "https://www.flickr.com/photos/george/53282436419/",
+      "tags": [
+        "towerbridge",
+        "night",
+        "atnight",
+        "riverthames"
+      ]
     },
     {
       "id": "53237018379",
@@ -234,7 +246,8 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/53237018379/"
+      "url": "https://www.flickr.com/photos/george/53237018379/",
+      "tags": []
     },
     {
       "id": "53100996733",
@@ -312,7 +325,8 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/53100996733/"
+      "url": "https://www.flickr.com/photos/george/53100996733/",
+      "tags": []
     },
     {
       "id": "52957366694",
@@ -388,7 +402,16 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52957366694/"
+      "url": "https://www.flickr.com/photos/george/52957366694/",
+      "tags": [
+        "cultureburn",
+        "australia",
+        "australiaaustralian",
+        "renewal",
+        "grass",
+        "indigenousknowledge",
+        "adelaide"
+      ]
     },
     {
       "id": "52957605480",
@@ -466,7 +489,8 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52957605480/"
+      "url": "https://www.flickr.com/photos/george/52957605480/",
+      "tags": []
     },
     {
       "id": "52956623732",
@@ -542,7 +566,8 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52956623732/"
+      "url": "https://www.flickr.com/photos/george/52956623732/",
+      "tags": []
     },
     {
       "id": "52957602825",
@@ -618,7 +643,17 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52957602825/"
+      "url": "https://www.flickr.com/photos/george/52957602825/",
+      "tags": [
+        "cultureburn",
+        "indigenousknowledge",
+        "australian",
+        "australia",
+        "victorsteffensen",
+        "audience",
+        "crowd",
+        "fire"
+      ]
     },
     {
       "id": "52956620847",
@@ -694,7 +729,17 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52956620847/"
+      "url": "https://www.flickr.com/photos/george/52956620847/",
+      "tags": [
+        "cultureburn",
+        "indigenousknowledge",
+        "australian",
+        "australia",
+        "victorsteffensen",
+        "audience",
+        "crowd",
+        "fire"
+      ]
     },
     {
       "id": "52957218821",
@@ -770,7 +815,17 @@
         "photos_url": "https://www.flickr.com/photos/george/",
         "profile_url": "https://www.flickr.com/people/george/"
       },
-      "url": "https://www.flickr.com/photos/george/52957218821/"
+      "url": "https://www.flickr.com/photos/george/52957218821/",
+      "tags": [
+        "cultureburn",
+        "indigenousknowledge",
+        "australian",
+        "australia",
+        "victorsteffensen",
+        "audience",
+        "crowd",
+        "fire"
+      ]
     }
   ]
 }
