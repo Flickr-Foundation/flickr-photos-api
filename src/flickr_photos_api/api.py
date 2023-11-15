@@ -389,11 +389,8 @@ class FlickrPhotosApi(BaseApi):
         # We prefer the normalised version because it makes it possible
         # to compare tags across photos, and we only get the normalised
         # versions from the collection endpoints.
-        tags_elem = photo_elem.find(".//tags")
-        if tags_elem is not None:
-            tags = [t.text for t in tags_elem.findall("tag")]
-        else:
-            tags = []
+        tags_elem = find_required_elem(photo_elem, path=".//tags")
+        tags = [t.text for t in tags_elem.findall("tag")]
 
         return {
             "id": photo_id,
