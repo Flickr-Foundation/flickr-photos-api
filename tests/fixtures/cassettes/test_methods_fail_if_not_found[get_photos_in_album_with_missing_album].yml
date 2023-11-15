@@ -26,11 +26,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:09 GMT
+      - Wed, 15 Nov 2023 16:46:24 GMT
       Via:
-      - 1.1 2909ba9703b8efb8a3df0f4d03f81ee4.cloudfront.net (CloudFront)
+      - 1.1 dfe38bddfe2e252d54a7cc2e361b6cb6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - _Ld8sIdQKrY4zYx-FE1GOfv9wH65mCphmE6NEV5EMKLTYsSl3KC6bA==
+      - XzLgHXqeLZcvMUU-7x09NXtt-PqqfOxEOOE8dGfkT_2L4gi0dqt7UA==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -41,7 +41,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:09 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:24 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -119,11 +119,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:10 GMT
+      - Wed, 15 Nov 2023 16:46:25 GMT
       Via:
-      - 1.1 2909ba9703b8efb8a3df0f4d03f81ee4.cloudfront.net (CloudFront)
+      - 1.1 dfe38bddfe2e252d54a7cc2e361b6cb6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - GvY4VSFPeO3VbXbcCpo4oFRddWB85aDyh9411XhaPokPTi5ga5jWKA==
+      - fUVP9VWMxGBThFXf_skBw7iN4rxMLCy_f-Fh-eTyUcxAVE0kypILlw==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -134,7 +134,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:10 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:24 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -160,7 +160,7 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photosets.getPhotos&page=1&per_page=10&photoset_id=12345678901234567890&user_id=12403504%40N02
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photosets.getPhotos&page=1&per_page=10&photoset_id=12345678901234567890&user_id=12403504%40N02
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
       code=\"1\" msg=\"Photoset not found\" />\n</rsp>\n"
@@ -172,11 +172,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:10 GMT
+      - Wed, 15 Nov 2023 16:46:25 GMT
       Via:
-      - 1.1 2909ba9703b8efb8a3df0f4d03f81ee4.cloudfront.net (CloudFront)
+      - 1.1 dfe38bddfe2e252d54a7cc2e361b6cb6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - SKCI0j1afiFIIPHj0cAdZf2zFa8TSrvR0ZvaBJOlg4h9iDqwqU9Zyw==
+      - mWNFuBShtaeH2wyK1vhZmzkghGkLZEEzk18L5gR0uujDDj5x0vh2Hw==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -187,7 +187,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:10 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:

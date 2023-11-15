@@ -26,11 +26,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:56:12 GMT
+      - Wed, 15 Nov 2023 16:46:53 GMT
       Via:
-      - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
+      - 1.1 85a0caf6c6c2c3b3b73aefe2289d78ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - E0dVnGVE95GFmV6VtDR5GEwttqyc-MxEHxy1oKee7K37ATWzKIiDmQ==
+      - 72r2QcJVtHK826iFS4RU90_5cK3ypG2h1zEnftS4f2QJ2AHMDNF_EA==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -41,7 +41,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:56:11 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -91,11 +91,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:56:12 GMT
+      - Wed, 15 Nov 2023 16:46:53 GMT
       Via:
-      - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
+      - 1.1 85a0caf6c6c2c3b3b73aefe2289d78ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 4hNVK1pRflaHgm2_RiHiCvp_xjOo6MAN9zRUGwT2tDXQ45W6Cedofg==
+      - GQB39Eb4N3gipQsy0Y6kHDeoR8nU0faauxwhSKKxni2xugBse3bCMQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -106,7 +106,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:56:12 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -132,7 +132,7 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photosets.getPhotos&page=2&per_page=100&photoset_id=72157640898611483&user_id=115357548%40N08
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photosets.getPhotos&page=2&per_page=100&photoset_id=72157640898611483&user_id=115357548%40N08
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photoset
       id=\"72157640898611483\" primary=\"40750084443\" owner=\"115357548@N08\" ownername=\"Joshua
@@ -144,7 +144,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"california bird nationalpark desert joshuatree vulture buzzard
       roost cathartesaura oasisofmara\" originalsecret=\"6afd5d50bc\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5793/21834340709_7d96779f62_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5793/21834340709_7d96779f62_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5793/21834340709_7d96779f62_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5793/21834340709_7d96779f62_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5793/21834340709_7d96779f62.jpg\"
@@ -158,7 +159,8 @@ interactions:
       17:47:09\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert joshuatree vulture
       buzzard roost cathartesaura oasisofmara\" originalsecret=\"1e39a5a021\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/611/22031134421_75667196cd_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/611/22031134421_75667196cd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/611/22031134421_75667196cd_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/611/22031134421_75667196cd_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/611/22031134421_75667196cd.jpg\"
@@ -172,7 +174,8 @@ interactions:
       17:45:54\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert joshuatree vulture
       buzzard roost cathartesaura oasisofmara\" originalsecret=\"54e7e42817\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/723/22031142221_8cc7887a23_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/723/22031142221_8cc7887a23_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/723/22031142221_8cc7887a23_t.jpg\"
       height_t=\"61\" width_t=\"100\" url_s=\"https://live.staticflickr.com/723/22031142221_8cc7887a23_m.jpg\"
       height_s=\"147\" width_s=\"240\" url_m=\"https://live.staticflickr.com/723/22031142221_8cc7887a23.jpg\"
@@ -185,9 +188,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1481144468\" datetaken=\"2015-09-17 09:06:44\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding\"
-      originalsecret=\"1536d403aa\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d_t.jpg\"
+      originalsecret=\"1536d403aa\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5554/31454495166_b975ddf64d.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/5554/31454495166_1536d403aa_o.jpg\"
@@ -200,7 +203,8 @@ interactions:
       12:18:35\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird rain nationalpark desert birding nationalparkservice
       loggerheadshrike joshuatreenationalpark\" originalsecret=\"9e2c8509ae\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/662/23535656970_d03855ff9c_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/662/23535656970_d03855ff9c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/662/23535656970_d03855ff9c_t.jpg\"
       height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/662/23535656970_d03855ff9c_m.jpg\"
       height_s=\"190\" width_s=\"240\" url_m=\"https://live.staticflickr.com/662/23535656970_d03855ff9c.jpg\"
@@ -213,9 +217,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1443813957\" datetaken=\"2015-09-11
       09:28:13\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california water nationalpark desert joshuatree
-      mojave barkerdam\" originalsecret=\"b65c50f76c\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee_t.jpg\"
+      mojave barkerdam\" originalsecret=\"b65c50f76c\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/756/21903071801_85c19ac3ee.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/756/21903071801_b65c50f76c_o.jpg\"
@@ -228,7 +233,8 @@ interactions:
       13:58:49\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert joshuatree mojave
       cactuswren campylorhynchusbrunneicapillus\" originalsecret=\"0145e26c56\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7758/17388054719_ba490c3bed_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7758/17388054719_ba490c3bed_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7758/17388054719_ba490c3bed_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7758/17388054719_ba490c3bed_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7758/17388054719_ba490c3bed.jpg\"
@@ -242,7 +248,8 @@ interactions:
       13:58:02\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert joshuatree mojave
       cactuswren campylorhynchusbrunneicapillus\" originalsecret=\"ee8303725c\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7687/17548051726_dfbca55e30_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7687/17548051726_dfbca55e30_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7687/17548051726_dfbca55e30_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7687/17548051726_dfbca55e30_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7687/17548051726_dfbca55e30.jpg\"
@@ -258,7 +265,8 @@ interactions:
       11:16:55\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california desert joshuatree science research climatechange
       joshuatreenationalpark\" originalsecret=\"0cf30b0337\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7698/17116116200_008bfa2a9b_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7698/17116116200_008bfa2a9b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7698/17116116200_008bfa2a9b_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7698/17116116200_008bfa2a9b_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7698/17116116200_008bfa2a9b.jpg\"
@@ -272,7 +280,8 @@ interactions:
       09:09:30\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california desert joshuatree science research climatechange
       joshuatreenationalpark\" originalsecret=\"9554970f6a\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7692/17116108720_70782a8b08_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7692/17116108720_70782a8b08_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7692/17116108720_70782a8b08_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7692/17116108720_70782a8b08_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7692/17116108720_70782a8b08.jpg\"
@@ -285,9 +294,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1428347568\" datetaken=\"2015-03-23
       00:12:45\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark jay joshuatree scrubjay joshuatreenationalpark
-      joshuatreenp\" originalsecret=\"8e9bb0a5a1\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc_t.jpg\"
+      joshuatreenp\" originalsecret=\"8e9bb0a5a1\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8811/17056404742_efda30fbcc.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/8811/17056404742_8e9bb0a5a1_o.jpg\"
@@ -300,7 +310,8 @@ interactions:
       02:55:24\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert joshuatree sparrow
       blackthroated amphispizabilineata\" originalsecret=\"5f71d00125\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8731/16750828608_7cf5f3bc50_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8731/16750828608_7cf5f3bc50_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8731/16750828608_7cf5f3bc50_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/8731/16750828608_7cf5f3bc50_m.jpg\"
       height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/8731/16750828608_7cf5f3bc50.jpg\"
@@ -315,9 +326,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1427396111\" datetaken=\"2015-03-18
       02:02:38\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert hawk joshuatree redtailed
-      buteojamaicensis\" originalsecret=\"1c691691f7\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f_t.jpg\"
+      buteojamaicensis\" originalsecret=\"1c691691f7\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8741/16937513751_35f8b9c30f.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/8741/16937513751_1c691691f7_o.jpg\"
@@ -329,9 +341,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1426545764\" datetaken=\"2015-03-10
       05:08:57\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree joshuatreenationalpark
-      joshuatreenp\" originalsecret=\"5546a7d444\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7636/16215875144_105ca56428_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7636/16215875144_105ca56428_t.jpg\"
+      joshuatreenp\" originalsecret=\"5546a7d444\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/7636/16215875144_105ca56428_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/7636/16215875144_105ca56428_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7636/16215875144_105ca56428_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7636/16215875144_105ca56428.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/7636/16215875144_5546a7d444_o.jpg\"
@@ -343,9 +356,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1426545765\" datetaken=\"2015-03-10
       05:08:57\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree joshuatreenationalpark
-      joshuatreenp\" originalsecret=\"33a4aa3477\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e_t.jpg\"
+      joshuatreenp\" originalsecret=\"33a4aa3477\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8665/16215871384_ba0159be7e.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/8665/16215871384_33a4aa3477_o.jpg\"
@@ -357,9 +371,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1426545765\" datetaken=\"2015-03-10
       04:49:36\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree raven joshuatreenationalpark
-      joshuatreenp\" originalsecret=\"f5b928670d\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9_t.jpg\"
+      joshuatreenp\" originalsecret=\"f5b928670d\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8749/16838220775_fdefb8b0c9.jpg\"
       height_m=\"334\" width_m=\"500\" url_o=\"https://live.staticflickr.com/8749/16838220775_f5b928670d_o.jpg\"
@@ -373,7 +388,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"california nationalpark desert joshuatree scat mojave mistletoe
       rattlesnakecanyon phainopepla nitens phoradendroncalifornicum\" originalsecret=\"2bc6eecaec\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8561/15963492823_c3b6a8bfca_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8561/15963492823_c3b6a8bfca_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8561/15963492823_c3b6a8bfca_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8561/15963492823_c3b6a8bfca_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8561/15963492823_c3b6a8bfca.jpg\"
@@ -387,7 +403,8 @@ interactions:
       07:47:26\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california snow ice nationalpark desert joshuatree
       mojave newyearseve raven joshuatreenationalpark\" originalsecret=\"ed32aaa947\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7533/16278014916_2c4b06e42f_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7533/16278014916_2c4b06e42f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7533/16278014916_2c4b06e42f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7533/16278014916_2c4b06e42f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7533/16278014916_2c4b06e42f.jpg\"
@@ -401,7 +418,8 @@ interactions:
       13:54:14\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert joshuatree quail
       callipeplagambelii gambels\" originalsecret=\"218df7a501\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8750/16750987760_3e7da6b779_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8750/16750987760_3e7da6b779_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8750/16750987760_3e7da6b779_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8750/16750987760_3e7da6b779_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8750/16750987760_3e7da6b779.jpg\"
@@ -414,9 +432,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951206\" datetaken=\"2014-11-04 11:34:47\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"513a5d4580\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4444/37897470922_6164603d00_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4444/37897470922_6164603d00_t.jpg\"
+      originalsecret=\"513a5d4580\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4444/37897470922_6164603d00_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4444/37897470922_6164603d00_t.jpg\"
       height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4444/37897470922_6164603d00_m.jpg\"
       height_s=\"191\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4444/37897470922_6164603d00.jpg\"
       height_m=\"397\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4444/37897470922_513a5d4580_o.jpg\"
@@ -430,9 +448,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1408743615\" datetaken=\"2014-08-06 09:12:00\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"nps wildlife sparrow joshuatreenationalpark npsphoto blackthroatedsparrow\"
-      originalsecret=\"2e00a598ae\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/3891/14979852526_33d3644d63_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/3891/14979852526_33d3644d63_t.jpg\"
+      originalsecret=\"2e00a598ae\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3891/14979852526_33d3644d63_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3891/14979852526_33d3644d63_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3891/14979852526_33d3644d63_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3891/14979852526_33d3644d63.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/3891/14979852526_2e00a598ae_o.jpg\"
@@ -447,9 +465,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1415408081\" datetaken=\"2014-06-26 14:05:15\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"bird wildlife joshuatree flycatcher joshuatreenationalpark creosotebush\"
-      originalsecret=\"ac142b36c2\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2_t.jpg\"
+      originalsecret=\"ac142b36c2\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3952/15116149633_c06883f3d2.jpg\"
       height_m=\"332\" width_m=\"500\" url_o=\"https://live.staticflickr.com/3952/15116149633_ac142b36c2_o.jpg\"
@@ -462,7 +480,8 @@ interactions:
       dateupload=\"1415408081\" datetaken=\"2014-06-26 14:04:32\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"bird wildlife
       joshuatree flycatcher joshuatreenationalpark creosotebush\" originalsecret=\"49aba76447\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5610/15115581524_b338ea671b_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5610/15115581524_b338ea671b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5610/15115581524_b338ea671b_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5610/15115581524_b338ea671b_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5610/15115581524_b338ea671b.jpg\"
@@ -476,7 +495,8 @@ interactions:
       09:59:08\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert joshuatree quail
       callipeplagambelii gambels\" originalsecret=\"2b638c8fca\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5673/20117663704_4173537681_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5673/20117663704_4173537681_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5673/20117663704_4173537681_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5673/20117663704_4173537681_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5673/20117663704_4173537681.jpg\"
@@ -490,7 +510,8 @@ interactions:
       09:55:19\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california nationalpark desert joshuatree chick
       quail callipeplagambelii gambels\" originalsecret=\"e6512592ab\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5707/20678432374_b8ed9e0c01_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5707/20678432374_b8ed9e0c01_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5707/20678432374_b8ed9e0c01_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5707/20678432374_b8ed9e0c01_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5707/20678432374_b8ed9e0c01.jpg\"
@@ -503,9 +524,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1441910594\" datetaken=\"2014-05-12
       08:51:34\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california birds nationalpark desert joshuatree
-      roadrunner quail\" originalsecret=\"cc029767cc\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/688/21113230218_482c3eeba3_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/688/21113230218_482c3eeba3_t.jpg\"
+      roadrunner quail\" originalsecret=\"cc029767cc\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/688/21113230218_482c3eeba3_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/688/21113230218_482c3eeba3_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/688/21113230218_482c3eeba3_m.jpg\"
       height_s=\"162\" width_s=\"240\" url_m=\"https://live.staticflickr.com/688/21113230218_482c3eeba3.jpg\"
       height_m=\"337\" width_m=\"500\" url_o=\"https://live.staticflickr.com/688/21113230218_cc029767cc_o.jpg\"
@@ -518,7 +540,8 @@ interactions:
       14:08:27\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark desert hawk wildlife joshuatree
       joshuatreenationalpark\" originalsecret=\"2c950cb4f3\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5495/14045509068_d335acbb0a_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5495/14045509068_d335acbb0a_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5495/14045509068_d335acbb0a_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5495/14045509068_d335acbb0a_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5495/14045509068_d335acbb0a.jpg\"
@@ -532,7 +555,8 @@ interactions:
       datetaken=\"2014-04-06 09:54:50\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"animal nationalpark desert wildlife
       joshuatree tarantula joshuatreenationalpark\" originalsecret=\"e5eed30402\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2896/14045718200_51c68aa940_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2896/14045718200_51c68aa940_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2896/14045718200_51c68aa940_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2896/14045718200_51c68aa940_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2896/14045718200_51c68aa940.jpg\"
@@ -547,7 +571,8 @@ interactions:
       dateupload=\"1440101266\" datetaken=\"2014-03-11 03:29:34\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"california
       nationalpark desert joshuatree mojave barkerdam\" originalsecret=\"17ca86ce00\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/638/20740872075_217df27901_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/638/20740872075_217df27901_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/638/20740872075_217df27901_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/638/20740872075_217df27901_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/638/20740872075_217df27901.jpg\"
@@ -561,7 +586,8 @@ interactions:
       datetaken=\"2014-03-05 16:59:15\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"california bird nationalpark
       woodpecker desert joshuatree ladderbacked picoidesscalaris\" originalsecret=\"6cbfd36a25\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/653/20730957142_b88d5e35e0_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/653/20730957142_b88d5e35e0_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/653/20730957142_b88d5e35e0_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/653/20730957142_b88d5e35e0_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/653/20730957142_b88d5e35e0.jpg\"
@@ -577,9 +603,9 @@ interactions:
       dateupload=\"1440099549\" datetaken=\"2014-03-03 12:53:34\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"california
       cactus bird nationalpark desert joshuatree wren cholla teddybearcholla campylorhynchusbrunneicapillus\"
-      originalsecret=\"578851d1af\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/5666/20740265425_e525e23768_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/5666/20740265425_e525e23768_t.jpg\"
+      originalsecret=\"578851d1af\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5666/20740265425_e525e23768_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5666/20740265425_e525e23768_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5666/20740265425_e525e23768_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5666/20740265425_e525e23768.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/5666/20740265425_578851d1af_o.jpg\"
@@ -595,7 +621,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"65d5aebf39\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3801/12937904435_2a76f11a82_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3801/12937904435_2a76f11a82_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3801/12937904435_2a76f11a82_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3801/12937904435_2a76f11a82_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3801/12937904435_2a76f11a82.jpg\"
@@ -609,9 +636,9 @@ interactions:
       dateupload=\"1440099549\" datetaken=\"2014-03-03 12:48:45\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"california
       cactus bird nationalpark desert joshuatree wren cholla teddybearcholla campylorhynchusbrunneicapillus\"
-      originalsecret=\"4871b6cae9\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/571/20730946272_59c684292c_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/571/20730946272_59c684292c_t.jpg\"
+      originalsecret=\"4871b6cae9\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/571/20730946272_59c684292c_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/571/20730946272_59c684292c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/571/20730946272_59c684292c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/571/20730946272_59c684292c.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/571/20730946272_4871b6cae9_o.jpg\"
@@ -625,7 +652,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"01ac904f3b\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7360/12938027583_75fb1f4286_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7360/12938027583_75fb1f4286_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7360/12938027583_75fb1f4286_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7360/12938027583_75fb1f4286_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7360/12938027583_75fb1f4286.jpg\"
@@ -640,7 +668,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"1b6ef2d1d0\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7356/12938042023_f24d201fbb_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7356/12938042023_f24d201fbb_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7356/12938042023_f24d201fbb_t.jpg\"
       height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/7356/12938042023_f24d201fbb_m.jpg\"
       height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/7356/12938042023_f24d201fbb.jpg\"
@@ -655,7 +684,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"5d4076b312\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3756/12938364434_9a7535bbf7_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3756/12938364434_9a7535bbf7_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3756/12938364434_9a7535bbf7_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3756/12938364434_9a7535bbf7_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3756/12938364434_9a7535bbf7.jpg\"
@@ -670,7 +700,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"1e02e13759\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2823/12938376254_7062e133e7_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2823/12938376254_7062e133e7_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2823/12938376254_7062e133e7_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2823/12938376254_7062e133e7_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2823/12938376254_7062e133e7.jpg\"
@@ -685,7 +716,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"dbf1f6e57b\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3681/12938385904_93f88758e6_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3681/12938385904_93f88758e6_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3681/12938385904_93f88758e6_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3681/12938385904_93f88758e6_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3681/12938385904_93f88758e6.jpg\"
@@ -700,7 +732,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"b51d74dcd3\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2833/12938396024_7aa52bc323_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2833/12938396024_7aa52bc323_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2833/12938396024_7aa52bc323_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2833/12938396024_7aa52bc323_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2833/12938396024_7aa52bc323.jpg\"
@@ -715,7 +748,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"b125eaa18e\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3732/12937993255_ee57a15ae7_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3732/12937993255_ee57a15ae7_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3732/12937993255_ee57a15ae7_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3732/12937993255_ee57a15ae7_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3732/12937993255_ee57a15ae7.jpg\"
@@ -730,7 +764,8 @@ interactions:
       ownername=\"Joshua Tree National Park\" tags=\"cactus building bird nationalpark
       nest joshuatree teddybear wren cholla joshuatreenationalpark campylorhynchusbrunneicapillus
       cylindropuntiabigelovii\" originalsecret=\"8c94d788e2\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2858/12938005155_15d47cabf9_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2858/12938005155_15d47cabf9_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2858/12938005155_15d47cabf9_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2858/12938005155_15d47cabf9_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2858/12938005155_15d47cabf9.jpg\"
@@ -744,7 +779,8 @@ interactions:
       11:12:04\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"cactus bird nationalpark joshuatree wren joshuatreenationalpark
       campylorhynchusbrunneicapillus\" originalsecret=\"8aa187f4cf\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7349/12938423854_d5ef58080c_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7349/12938423854_d5ef58080c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7349/12938423854_d5ef58080c_t.jpg\"
       height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7349/12938423854_d5ef58080c_m.jpg\"
       height_s=\"150\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7349/12938423854_d5ef58080c.jpg\"
@@ -758,7 +794,8 @@ interactions:
       11:11:43\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"cactus bird nationalpark joshuatree wren joshuatreenationalpark
       campylorhynchusbrunneicapillus\" originalsecret=\"87e8198f78\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7390/12938133183_f9a168e0df_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7390/12938133183_f9a168e0df_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7390/12938133183_f9a168e0df_t.jpg\"
       height_t=\"41\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7390/12938133183_f9a168e0df_m.jpg\"
       height_s=\"99\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7390/12938133183_f9a168e0df.jpg\"
@@ -772,7 +809,8 @@ interactions:
       15:31:53\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark hummingbird joshuatree joshuatreenationalpark
       chuparosa justiciacalifornica\" originalsecret=\"327dc3c98b\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2858/12938044225_d8fe4586f3_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2858/12938044225_d8fe4586f3_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2858/12938044225_d8fe4586f3_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2858/12938044225_d8fe4586f3_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2858/12938044225_d8fe4586f3.jpg\"
@@ -786,7 +824,8 @@ interactions:
       15:31:50\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark hummingbird joshuatree joshuatreenationalpark
       chuparosa justiciacalifornica\" originalsecret=\"62b74cac2b\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7345/12938158613_963dd91509_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7345/12938158613_963dd91509_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7345/12938158613_963dd91509_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7345/12938158613_963dd91509_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7345/12938158613_963dd91509.jpg\"
@@ -799,9 +838,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1393977669\" datetaken=\"2014-02-28
       15:31:23\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark hummingbird joshuatree joshuatreenationalpark
-      oasisofmara\" originalsecret=\"03ae6495cc\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3_t.jpg\"
+      oasisofmara\" originalsecret=\"03ae6495cc\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3822/12938163583_0016d7c3d3.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/3822/12938163583_03ae6495cc_o.jpg\"
@@ -814,7 +854,8 @@ interactions:
       16:12:44\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree quail joshuatreenationalpark
       callipeplagambelii gambels\" originalsecret=\"f54f8cf51e\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7342/12938471544_2a412e5dc9_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7342/12938471544_2a412e5dc9_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7342/12938471544_2a412e5dc9_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7342/12938471544_2a412e5dc9_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7342/12938471544_2a412e5dc9.jpg\"
@@ -828,7 +869,8 @@ interactions:
       16:11:49\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree quail joshuatreenationalpark
       callipeplagambelii gambels\" originalsecret=\"b63206468c\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3822/12938064105_d0cce101bb_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3822/12938064105_d0cce101bb_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3822/12938064105_d0cce101bb_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3822/12938064105_d0cce101bb_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3822/12938064105_d0cce101bb.jpg\"
@@ -842,7 +884,8 @@ interactions:
       16:10:59\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree quail joshuatreenationalpark
       callipeplagambelii gambels\" originalsecret=\"d499685a75\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7404/12938068595_490b0fa004_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7404/12938068595_490b0fa004_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7404/12938068595_490b0fa004_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7404/12938068595_490b0fa004_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7404/12938068595_490b0fa004.jpg\"
@@ -855,9 +898,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1392409622\" datetaken=\"2014-02-13
       16:51:04\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree phainopepla joshuatreenationalpark
-      phainopeplanitens\" originalsecret=\"f1674d5182\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb_t.jpg\"
+      phainopeplanitens\" originalsecret=\"f1674d5182\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb_t.jpg\"
       height_t=\"63\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb_m.jpg\"
       height_s=\"151\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3719/12526697173_19765dd2bb.jpg\"
       height_m=\"315\" width_m=\"500\" url_o=\"https://live.staticflickr.com/3719/12526697173_f1674d5182_o.jpg\"
@@ -869,9 +913,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1392409622\" datetaken=\"2014-02-13
       16:50:17\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark hummingbird joshuatree joshuatreenationalpark
-      oasisofmara\" originalsecret=\"792361f85f\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7456/12526584705_5688c6e731_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7456/12526584705_5688c6e731_t.jpg\"
+      oasisofmara\" originalsecret=\"792361f85f\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/7456/12526584705_5688c6e731_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/7456/12526584705_5688c6e731_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7456/12526584705_5688c6e731_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7456/12526584705_5688c6e731.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/7456/12526584705_792361f85f_o.jpg\"
@@ -883,9 +928,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1392409621\" datetaken=\"2014-02-13
       16:49:50\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark hummingbird joshuatree joshuatreenationalpark
-      oasisofmara\" originalsecret=\"26017d40a4\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5533/12526707753_35c46d6353_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5533/12526707753_35c46d6353_t.jpg\"
+      oasisofmara\" originalsecret=\"26017d40a4\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/5533/12526707753_35c46d6353_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/5533/12526707753_35c46d6353_t.jpg\"
       height_t=\"65\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5533/12526707753_35c46d6353_m.jpg\"
       height_s=\"157\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5533/12526707753_35c46d6353.jpg\"
       height_m=\"327\" width_m=\"500\" url_o=\"https://live.staticflickr.com/5533/12526707753_26017d40a4_o.jpg\"
@@ -898,7 +944,8 @@ interactions:
       datetaken=\"2014-02-07 09:42:43\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"california bird nationalpark
       desert joshuatree mockingbird mimuspolyglottos oasisofmara\" originalsecret=\"8daf313fc0\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5816/20553519219_69e34256d8_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5816/20553519219_69e34256d8_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5816/20553519219_69e34256d8_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5816/20553519219_69e34256d8_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5816/20553519219_69e34256d8.jpg\"
@@ -912,7 +959,8 @@ interactions:
       10:47:32\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert wildlife joshuatree
       mojave roadrunner geococcyxcalifornianus\" originalsecret=\"081aa45729\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5732/20092404753_506e16a816_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5732/20092404753_506e16a816_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5732/20092404753_506e16a816_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5732/20092404753_506e16a816_m.jpg\"
       height_s=\"159\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5732/20092404753_506e16a816.jpg\"
@@ -926,7 +974,8 @@ interactions:
       15:54:18\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree greater roadrunner
       joshuatreenationalpark geococcyxcalifornianus\" originalsecret=\"a04f8b0689\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7363/12938079055_1ba381494a_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7363/12938079055_1ba381494a_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7363/12938079055_1ba381494a_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7363/12938079055_1ba381494a_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7363/12938079055_1ba381494a.jpg\"
@@ -940,7 +989,8 @@ interactions:
       15:54:10\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree greater roadrunner
       joshuatreenationalpark geococcyxcalifornianus\" originalsecret=\"cbd82343fc\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3729/12938501944_bf3fe62778_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3729/12938501944_bf3fe62778_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3729/12938501944_bf3fe62778_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3729/12938501944_bf3fe62778_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3729/12938501944_bf3fe62778.jpg\"
@@ -954,7 +1004,8 @@ interactions:
       15:53:09\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree greater roadrunner
       joshuatreenationalpark geococcyxcalifornianus\" originalsecret=\"19d1c23388\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3736/12938204193_d27f29d0b8_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3736/12938204193_d27f29d0b8_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3736/12938204193_d27f29d0b8_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3736/12938204193_d27f29d0b8_m.jpg\"
       height_s=\"161\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3736/12938204193_d27f29d0b8.jpg\"
@@ -968,7 +1019,8 @@ interactions:
       15:52:49\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert joshuatree greater
       roadrunner geococcyxcalifornianus\" originalsecret=\"1812b28cd7\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5696/20553531759_a74e9b0022_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5696/20553531759_a74e9b0022_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5696/20553531759_a74e9b0022_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5696/20553531759_a74e9b0022_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5696/20553531759_a74e9b0022.jpg\"
@@ -982,7 +1034,8 @@ interactions:
       15:52:49\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree greater roadrunner
       joshuatreenationalpark geococcyxcalifornianus\" originalsecret=\"1fc02c7806\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3771/12938113005_8fe462144f_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3771/12938113005_8fe462144f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3771/12938113005_8fe462144f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3771/12938113005_8fe462144f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3771/12938113005_8fe462144f.jpg\"
@@ -996,7 +1049,8 @@ interactions:
       15:52:39\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"california bird nationalpark desert joshuatree roadrunner
       geococcyxcalifornianus\" originalsecret=\"864fda8cba\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/1470/25192500806_3646c2ae8d_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/1470/25192500806_3646c2ae8d_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/1470/25192500806_3646c2ae8d_t.jpg\"
       height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/1470/25192500806_3646c2ae8d_m.jpg\"
       height_s=\"191\" width_s=\"240\" url_m=\"https://live.staticflickr.com/1470/25192500806_3646c2ae8d.jpg\"
@@ -1011,9 +1065,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951210\" datetaken=\"2014-01-28 15:49:51\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"9229e514be\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331_t.jpg\"
+      originalsecret=\"9229e514be\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331_t.jpg\"
       height_t=\"58\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331_m.jpg\"
       height_s=\"140\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4485/37875503046_fa4efdd331.jpg\"
       height_m=\"291\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4485/37875503046_9229e514be_o.jpg\"
@@ -1026,7 +1080,8 @@ interactions:
       15:46:58\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree greater roadrunner
       joshuatreenationalpark geococcyxcalifornianus\" originalsecret=\"1145129deb\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7431/12938224753_b2cb55ae88_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7431/12938224753_b2cb55ae88_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7431/12938224753_b2cb55ae88_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7431/12938224753_b2cb55ae88_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7431/12938224753_b2cb55ae88.jpg\"
@@ -1040,7 +1095,8 @@ interactions:
       15:46:15\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatree nationalpark california desert roadrunner
       geococcyxcalifornianus\" originalsecret=\"f180aa03a6\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8378/29756622201_dd8ec42282_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8378/29756622201_dd8ec42282_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8378/29756622201_dd8ec42282_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8378/29756622201_dd8ec42282_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/8378/29756622201_dd8ec42282.jpg\"
@@ -1054,7 +1110,8 @@ interactions:
       14:57:24\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird insect nationalpark joshuatree greater roadrunner
       joshuatreenationalpark californianus geococcyx\" originalsecret=\"3afb60cea6\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2868/12937890555_83914a2792_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2868/12937890555_83914a2792_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2868/12937890555_83914a2792_t.jpg\"
       height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2868/12937890555_83914a2792_m.jpg\"
       height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2868/12937890555_83914a2792.jpg\"
@@ -1067,9 +1124,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951209\" datetaken=\"2014-01-14 11:23:13\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"cb2572de9d\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3_t.jpg\"
+      originalsecret=\"cb2572de9d\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3_t.jpg\"
       height_t=\"100\" width_t=\"77\" url_s=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3_m.jpg\"
       height_s=\"240\" width_s=\"184\" url_m=\"https://live.staticflickr.com/4475/37875507526_0485a4c9f3.jpg\"
       height_m=\"500\" width_m=\"383\" url_o=\"https://live.staticflickr.com/4475/37875507526_cb2572de9d_o.jpg\"
@@ -1081,9 +1138,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1508951208\" datetaken=\"2014-01-13
       08:50:49\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird
-      birding birds\" originalsecret=\"40c0484e54\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4490/26152839669_50f77c908e_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4490/26152839669_50f77c908e_t.jpg\"
+      birding birds\" originalsecret=\"40c0484e54\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/4490/26152839669_50f77c908e_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4490/26152839669_50f77c908e_t.jpg\"
       height_t=\"100\" width_t=\"73\" url_s=\"https://live.staticflickr.com/4490/26152839669_50f77c908e_m.jpg\"
       height_s=\"240\" width_s=\"176\" url_m=\"https://live.staticflickr.com/4490/26152839669_50f77c908e.jpg\"
       height_m=\"500\" width_m=\"366\" url_o=\"https://live.staticflickr.com/4490/26152839669_40c0484e54_o.jpg\"
@@ -1097,7 +1155,8 @@ interactions:
       dateupload=\"1508951205\" datetaken=\"2014-01-02 16:14:29\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"joshuatree
       joshuatreenationalpark nationalpark bird birding birds owl\" originalsecret=\"6c6ea527e0\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4512/37219062444_61776673fd_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4512/37219062444_61776673fd_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4512/37219062444_61776673fd_t.jpg\"
       height_t=\"82\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4512/37219062444_61776673fd_m.jpg\"
       height_s=\"196\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4512/37219062444_61776673fd.jpg\"
@@ -1110,9 +1169,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1508951212\" datetaken=\"2014-01-02
       14:30:58\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird
-      birding birds\" originalsecret=\"59740d154b\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4480/37897406642_8254494134_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4480/37897406642_8254494134_t.jpg\"
+      birding birds\" originalsecret=\"59740d154b\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/4480/37897406642_8254494134_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4480/37897406642_8254494134_t.jpg\"
       height_t=\"100\" width_t=\"76\" url_s=\"https://live.staticflickr.com/4480/37897406642_8254494134_m.jpg\"
       height_s=\"240\" width_s=\"184\" url_m=\"https://live.staticflickr.com/4480/37897406642_8254494134.jpg\"
       height_m=\"500\" width_m=\"382\" url_o=\"https://live.staticflickr.com/4480/37897406642_59740d154b_o.jpg\"
@@ -1126,9 +1186,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951207\" datetaken=\"2014-01-02 13:45:43\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"43d312d726\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4476/37875523336_79a5492013_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4476/37875523336_79a5492013_t.jpg\"
+      originalsecret=\"43d312d726\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4476/37875523336_79a5492013_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4476/37875523336_79a5492013_t.jpg\"
       height_t=\"74\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4476/37875523336_79a5492013_m.jpg\"
       height_s=\"179\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4476/37875523336_79a5492013.jpg\"
       height_m=\"372\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4476/37875523336_43d312d726_o.jpg\"
@@ -1140,9 +1200,10 @@ interactions:
       isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1508951207\" datetaken=\"2014-01-02
       13:42:21\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird
-      birding birds\" originalsecret=\"d9d174f1d8\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c_t.jpg\"
+      birding birds\" originalsecret=\"d9d174f1d8\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c_t.jpg\"
       height_t=\"100\" width_t=\"73\" url_s=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c_m.jpg\"
       height_s=\"240\" width_s=\"175\" url_m=\"https://live.staticflickr.com/4503/24077445788_bfc1c98f9c.jpg\"
       height_m=\"500\" width_m=\"364\" url_o=\"https://live.staticflickr.com/4503/24077445788_d9d174f1d8_o.jpg\"
@@ -1154,9 +1215,10 @@ interactions:
       license=\"10\" safety_level=\"0\" dateupload=\"1508951208\" datetaken=\"2014-01-02
       12:57:59\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird
-      birding birds\" originalsecret=\"c0ef9dca25\" originalformat=\"jpg\" media=\"photo\"
-      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4451/37875513876_6423791281_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4451/37875513876_6423791281_t.jpg\"
+      birding birds\" originalsecret=\"c0ef9dca25\" originalformat=\"jpg\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/4451/37875513876_6423791281_s.jpg\" height_sq=\"75\"
+      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4451/37875513876_6423791281_t.jpg\"
       height_t=\"100\" width_t=\"79\" url_s=\"https://live.staticflickr.com/4451/37875513876_6423791281_m.jpg\"
       height_s=\"240\" width_s=\"190\" url_m=\"https://live.staticflickr.com/4451/37875513876_6423791281.jpg\"
       height_m=\"500\" width_m=\"396\" url_o=\"https://live.staticflickr.com/4451/37875513876_c0ef9dca25_o.jpg\"
@@ -1169,9 +1231,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951211\" datetaken=\"2013-12-05 12:25:56\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"c4062fb578\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8_t.jpg\"
+      originalsecret=\"c4062fb578\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8_t.jpg\"
       height_t=\"98\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8_m.jpg\"
       height_s=\"236\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4502/37875488226_fb514fffb8.jpg\"
       height_m=\"491\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4502/37875488226_c4062fb578_o.jpg\"
@@ -1183,9 +1245,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951206\" datetaken=\"2011-01-23 17:44:15\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"43d9c5c976\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d_t.jpg\"
+      originalsecret=\"43d9c5c976\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4461/24077447618_9d3655a45d.jpg\"
       height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4461/24077447618_43d9c5c976_o.jpg\"
@@ -1198,7 +1260,8 @@ interactions:
       17:37:16\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree joshuatreenationalpark
       californiathrasher toxostomaredivium\" originalsecret=\"4c4c0cd434\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3684/12488732673_f909777704_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3684/12488732673_f909777704_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3684/12488732673_f909777704_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3684/12488732673_f909777704_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3684/12488732673_f909777704.jpg\"
@@ -1213,9 +1276,9 @@ interactions:
       safety_level=\"0\" dateupload=\"1508951212\" datetaken=\"2011-01-23 17:35:39\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark bird birding birds\"
-      originalsecret=\"2f36450dd1\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/4501/26152800689_6662672276_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/4501/26152800689_6662672276_t.jpg\"
+      originalsecret=\"2f36450dd1\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4501/26152800689_6662672276_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4501/26152800689_6662672276_t.jpg\"
       height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4501/26152800689_6662672276_m.jpg\"
       height_s=\"189\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4501/26152800689_6662672276.jpg\"
       height_m=\"393\" width_m=\"500\" url_o=\"https://live.staticflickr.com/4501/26152800689_2f36450dd1_o.jpg\"
@@ -1228,7 +1291,8 @@ interactions:
       17:35:39\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree scrubjay joshuatreenationalpark
       aphelocomacalifornica\" originalsecret=\"79fa28b499\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5528/12488572145_8a728bdf42_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5528/12488572145_8a728bdf42_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5528/12488572145_8a728bdf42_t.jpg\"
       height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5528/12488572145_8a728bdf42_m.jpg\"
       height_s=\"189\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5528/12488572145_8a728bdf42.jpg\"
@@ -1243,7 +1307,8 @@ interactions:
       dateupload=\"1508951211\" datetaken=\"2010-12-06 17:05:02\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"joshuatree
       joshuatreenationalpark nationalpark bird birding birds\" originalsecret=\"a15901e296\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4508/37928527071_fee51b14de_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4508/37928527071_fee51b14de_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4508/37928527071_fee51b14de_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4508/37928527071_fee51b14de_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4508/37928527071_fee51b14de.jpg\"
@@ -1258,7 +1323,8 @@ interactions:
       dateupload=\"1392248016\" datetaken=\"2010-10-24 15:18:48\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"bird nationalpark
       joshuatree phainopepla joshuatreenationalpark phainopeplanitens\" originalsecret=\"91ecfdb43b\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3687/12488610755_cbe104ab92_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3687/12488610755_cbe104ab92_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3687/12488610755_cbe104ab92_t.jpg\"
       height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/3687/12488610755_cbe104ab92_m.jpg\"
       height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/3687/12488610755_cbe104ab92.jpg\"
@@ -1274,7 +1340,8 @@ interactions:
       07:28:31\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree raptor coopershawk
       joshuatreenationalpark accipitercooperii\" originalsecret=\"dd5c66073e\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7379/12488613975_1e1dcabb1c_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7379/12488613975_1e1dcabb1c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7379/12488613975_1e1dcabb1c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7379/12488613975_1e1dcabb1c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7379/12488613975_1e1dcabb1c.jpg\"
@@ -1290,7 +1357,8 @@ interactions:
       06:56:29\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree cactuswren joshuatreenationalpark
       campylorhynchusbrunneicapillus\" originalsecret=\"2e8a9802a7\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3707/12488590625_fd1c208818_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3707/12488590625_fd1c208818_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3707/12488590625_fd1c208818_t.jpg\"
       height_t=\"69\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3707/12488590625_fd1c208818_m.jpg\"
       height_s=\"167\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3707/12488590625_fd1c208818.jpg\"
@@ -1306,9 +1374,9 @@ interactions:
       dateupload=\"1393977680\" datetaken=\"2010-05-10 18:03:11\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"bird nationalpark
       joshuatree chick greathornedowl yuccabrevifolia blackrock bubovirginianus nestling\"
-      originalsecret=\"f73cb3cccf\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44_t.jpg\"
+      originalsecret=\"f73cb3cccf\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44_t.jpg\"
       height_t=\"100\" width_t=\"62\" url_s=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44_m.jpg\"
       height_s=\"240\" width_s=\"150\" url_m=\"https://live.staticflickr.com/2853/12938307524_cb4f8d9f44.jpg\"
       height_m=\"500\" width_m=\"312\" url_o=\"https://live.staticflickr.com/2853/12938307524_f73cb3cccf_o.jpg\"
@@ -1322,7 +1390,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"bird nationalpark joshuatree chick greathornedowl yuccabrevifolia
       blackrock bubovirginianus nestling\" originalsecret=\"3ec0a20b9f\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7457/12938309124_c74174ca4f_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7457/12938309124_c74174ca4f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7457/12938309124_c74174ca4f_t.jpg\"
       height_t=\"59\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7457/12938309124_c74174ca4f_m.jpg\"
       height_s=\"141\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7457/12938309124_c74174ca4f.jpg\"
@@ -1337,7 +1406,8 @@ interactions:
       datetaken=\"2010-02-04 18:22:49\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"bird nationalpark joshuatree
       loggerheadshrike joshuatreenationalpark laniusludovicianus queenvalley\" originalsecret=\"2561e6698e\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7422/12488581405_1b47b51bda_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7422/12488581405_1b47b51bda_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7422/12488581405_1b47b51bda_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7422/12488581405_1b47b51bda_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7422/12488581405_1b47b51bda.jpg\"
@@ -1352,7 +1422,8 @@ interactions:
       safety_level=\"0\" dateupload=\"1508949717\" datetaken=\"2008-12-07 16:23:45\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatree joshuatreenationalpark nationalpark nest\" originalsecret=\"3395b813ca\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4465/37218459734_4f64e3fee6_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4465/37218459734_4f64e3fee6_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4465/37218459734_4f64e3fee6_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4465/37218459734_4f64e3fee6_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4465/37218459734_4f64e3fee6.jpg\"
@@ -1368,7 +1439,8 @@ interactions:
       14:46:53\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird nationalpark joshuatree raven yuccabrevifolia
       joshuatreenationalpark corvuscorax queenvalley\" originalsecret=\"64cf85da54\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5522/12488695243_abfaa2b505_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/5522/12488695243_abfaa2b505_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/5522/12488695243_abfaa2b505_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/5522/12488695243_abfaa2b505_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/5522/12488695243_abfaa2b505.jpg\"
@@ -1384,7 +1456,8 @@ interactions:
       17:23:50\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"bird clouds fan nationalpark joshuatree palm turkeyvulture
       joshuatreenationalpark cathartesaura oasisofmara\" originalsecret=\"ac86ce617d\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3745/12488734983_e179abcf6d_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3745/12488734983_e179abcf6d_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3745/12488734983_e179abcf6d_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3745/12488734983_e179abcf6d_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3745/12488734983_e179abcf6d.jpg\"
@@ -1400,7 +1473,8 @@ interactions:
       datetaken=\"2020-09-15 08:40:21\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice
       joshuatree nationalpark wildlife cottonwoodspring turkeyvulture birds\" originalsecret=\"68772a8236\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568693166_f7156af715_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568693166_f7156af715_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50568693166_f7156af715_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50568693166_f7156af715_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50568693166_f7156af715.jpg\"
@@ -1415,7 +1489,8 @@ interactions:
       datetaken=\"2020-09-15 08:40:47\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice
       joshuatree nationalpark wildlife cottonwoodspring turkeyvulture birds\" originalsecret=\"88fd55bb56\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568824392_4980369788_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568824392_4980369788_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50568824392_4980369788_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50568824392_4980369788_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50568824392_4980369788.jpg\"
@@ -1431,7 +1506,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree nationalpark
       wildlife cottonwoodspring turkeyvulture birds\" originalsecret=\"6673030843\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568692636_ea3f7d6692_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568692636_ea3f7d6692_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50568692636_ea3f7d6692_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50568692636_ea3f7d6692_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50568692636_ea3f7d6692.jpg\"
@@ -1447,7 +1523,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree nationalpark
       wildlife cottonwoodspring turkeyvulture birds\" originalsecret=\"c3d8e40ce1\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568824042_94b278a102_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568824042_94b278a102_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50568824042_94b278a102_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50568824042_94b278a102_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50568824042_94b278a102.jpg\"
@@ -1463,7 +1540,8 @@ interactions:
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua Tree National
       Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree nationalpark
       wildlife cottonwoodspring birds turkeyvulture\" originalsecret=\"c9d980c19b\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50567941333_ba9f39281b_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50567941333_ba9f39281b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50567941333_ba9f39281b_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50567941333_ba9f39281b_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50567941333_ba9f39281b.jpg\"
@@ -1479,7 +1557,8 @@ interactions:
       08:29:52\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark cottonwoodspring wildlife birds turkeyvulture\" originalsecret=\"e33c122f56\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50567941068_b16144963c_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50567941068_b16144963c_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50567941068_b16144963c_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50567941068_b16144963c_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50567941068_b16144963c.jpg\"
@@ -1495,7 +1574,8 @@ interactions:
       08:39:44\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark wildlife cottonwoodspring turkeyvulture bird\" originalsecret=\"2d57565a77\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568692491_2cfed25303_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50568692491_2cfed25303_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50568692491_2cfed25303_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50568692491_2cfed25303_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50568692491_2cfed25303.jpg\"
@@ -1509,7 +1589,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" license=\"10\" safety_level=\"0\" dateupload=\"1604874393\"
       datetaken=\"2020-11-02 17:07:27\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"Joshua Tree National Park\" tags=\"\" originalsecret=\"63dd00d207\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50580537498_d924b4851f_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50580537498_d924b4851f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50580537498_d924b4851f_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50580537498_d924b4851f_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50580537498_d924b4851f.jpg\"
@@ -1525,7 +1606,8 @@ interactions:
       09:51:54\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark wildlife bird birds sparrow\" originalsecret=\"c287ffe2d5\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50601992453_bb3c5e5422_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50601992453_bb3c5e5422_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50601992453_bb3c5e5422_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50601992453_bb3c5e5422_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50601992453_bb3c5e5422.jpg\"
@@ -1541,7 +1623,8 @@ interactions:
       09:57:45\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark verdin bird birds creosote contact mine wildlife\" originalsecret=\"c567251488\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50602851462_103ed5b137_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50602851462_103ed5b137_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50602851462_103ed5b137_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50602851462_103ed5b137_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50602851462_103ed5b137.jpg\"
@@ -1556,7 +1639,8 @@ interactions:
       09:50:10\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark bird birds wildlife sparrow\" originalsecret=\"5d6ba51a1f\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50601992733_f42da06a1f_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50601992733_f42da06a1f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50601992733_f42da06a1f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50601992733_f42da06a1f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50601992733_f42da06a1f.jpg\"
@@ -1571,7 +1655,8 @@ interactions:
       dateupload=\"1605470116\" datetaken=\"2020-03-12 14:07:48\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"joshuatreenationalpark
       nationalparkservice joshuatree nationalpark raven birds\" originalsecret=\"5973e085eb\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50606566307_5eca509c05_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50606566307_5eca509c05_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50606566307_5eca509c05_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50606566307_5eca509c05_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50606566307_5eca509c05.jpg\"
@@ -1587,7 +1672,8 @@ interactions:
       14:07:08\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Joshua
       Tree National Park\" tags=\"joshuatreenationalpark nationalparkservice joshuatree
       nationalpark oasisofmara wildlife birds bird raven californiafanpalm\" originalsecret=\"776ab91f3b\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50607016096_bb77890b9e_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50607016096_bb77890b9e_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50607016096_bb77890b9e_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50607016096_bb77890b9e_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50607016096_bb77890b9e.jpg\"
@@ -1603,8 +1689,8 @@ interactions:
       dateupload=\"1605479206\" datetaken=\"2020-03-12 14:07:02\" datetakengranularity=\"0\"
       datetakenunknown=\"0\" ownername=\"Joshua Tree National Park\" tags=\"joshuatreenationalpark
       nationalparkservice joshuatree nationalpark cactuswren bird wildlife oasisofmara\"
-      originalsecret=\"265546542f\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/50606271783_f06cb3e44b_s.jpg\"
+      originalsecret=\"265546542f\" originalformat=\"jpg\" latitude=\"0\" longitude=\"0\"
+      accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50606271783_f06cb3e44b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50606271783_f06cb3e44b_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50606271783_f06cb3e44b_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50606271783_f06cb3e44b.jpg\"
@@ -1618,15 +1704,15 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '14293'
+      - '14350'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:56:12 GMT
+      - Wed, 15 Nov 2023 16:46:56 GMT
       Via:
-      - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
+      - 1.1 85a0caf6c6c2c3b3b73aefe2289d78ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - wxcIundJcXcUYSU0Rr3kXCmSbaz6jCRDtjzvD8E1KDflrGzIk8c0Sw==
+      - bc1Ac9eXT9cwWi-7pxQgzkrFarjRRtV8UWkO5C0nbjMjB7AM7FgPTQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -1637,7 +1723,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:56:12 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:54 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -1688,11 +1774,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:56:12 GMT
+      - Wed, 15 Nov 2023 16:46:56 GMT
       Via:
-      - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
+      - 1.1 85a0caf6c6c2c3b3b73aefe2289d78ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - -YuemXQXfqx5DyBJhCqUMrTpRo_uED9qdrvcbbYuNhjpdRuLQbN3WA==
+      - ItZsBXzb68EUUQ1icbrXQFl97DcnSjg67WwM_G4w7dPm0HzUVxCvPg==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -1703,7 +1789,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:56:12 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:56 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -1746,11 +1832,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:56:13 GMT
+      - Wed, 15 Nov 2023 16:46:56 GMT
       Via:
-      - 1.1 2ee9a973245ee110bff6037af5589b14.cloudfront.net (CloudFront)
+      - 1.1 85a0caf6c6c2c3b3b73aefe2289d78ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - FA0b6QyWj6jPj9-MB8zLxAeyl9htDDpMk6jH6z7UqLYukeyDhWXS1g==
+      - uxk3rMZvoSZ6csDcpVkfU6Egt7guSKq6GEvWnotpDYI9ShbbNAk6Cw==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -1761,7 +1847,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:56:12 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:46:56 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:

@@ -19,6 +19,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.789808,
+        "longitude": -87.596096
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -115,6 +120,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 15,
+        "latitude": 37.923397,
+        "longitude": 29.123854
+      },
       "original_format": null,
       "owner": {
         "id": "10621515@N05",
@@ -187,6 +197,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "133214433@N03",
@@ -278,6 +289,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 40.951352,
+        "longitude": -4.122525
       },
       "original_format": "jpg",
       "owner": {
@@ -374,6 +390,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 14,
+        "latitude": 34.845733,
+        "longitude": -77.064036
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -466,6 +487,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -544,6 +566,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 12,
+        "latitude": 34.947724,
+        "longitude": -77.124881
       },
       "original_format": "jpg",
       "owner": {
@@ -633,6 +660,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.360458,
+        "longitude": -88.422444
       },
       "original_format": "jpg",
       "owner": {
@@ -728,6 +760,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -806,6 +839,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.924691,
+        "longitude": -87.63969
       },
       "original_format": "jpg",
       "owner": {
@@ -899,6 +937,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "56837663@N03",
@@ -980,6 +1019,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.518091,
+        "longitude": -88.65691
       },
       "original_format": "jpg",
       "owner": {
@@ -1075,6 +1119,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.601717,
+        "longitude": -89.639041
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -1168,6 +1217,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 40.419323,
+        "longitude": 15.005369
       },
       "original_format": "jpg",
       "owner": {
@@ -1267,6 +1321,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -1345,6 +1400,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": -32.367783,
+        "longitude": 116.011226
       },
       "original_format": "jpg",
       "owner": {
@@ -1431,6 +1491,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 46.543988,
+        "longitude": -87.396274
       },
       "original_format": "jpg",
       "owner": {
@@ -1527,6 +1592,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -1609,6 +1675,11 @@
         "label": "Public Domain Mark",
         "url": "https://creativecommons.org/publicdomain/mark/1.0/"
       },
+      "location": {
+        "accuracy": 15,
+        "latitude": -42.414296,
+        "longitude": 173.704891
+      },
       "original_format": "jpg",
       "owner": {
         "id": "88123769@N02",
@@ -1687,6 +1758,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 29.200567,
+        "longitude": -102.918679
       },
       "original_format": "jpg",
       "owner": {
@@ -1777,6 +1853,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 52.400697,
+        "longitude": 18.215321
       },
       "original_format": "jpg",
       "owner": {
@@ -1869,6 +1950,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.726825,
+        "longitude": 22.753756
       },
       "original_format": "jpg",
       "owner": {
@@ -1963,6 +2049,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.973021,
+        "longitude": 23.726539
       },
       "original_format": "jpg",
       "owner": {
@@ -2060,6 +2151,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.95816,
+        "longitude": -87.660493
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -2154,6 +2250,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2239,6 +2336,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2324,6 +2422,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2408,6 +2507,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2492,6 +2592,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2577,6 +2678,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2661,6 +2763,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2745,6 +2848,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2829,6 +2933,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2914,6 +3019,7 @@
         "label": "CC BY 2.0",
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -2998,6 +3104,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 15,
+        "latitude": 29.151644,
+        "longitude": -103.486108
       },
       "original_format": "jpg",
       "owner": {
@@ -3090,6 +3201,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.789808,
+        "longitude": -87.596096
       },
       "original_format": "jpg",
       "owner": {
@@ -3184,6 +3300,7 @@
         "label": "CC BY-SA 2.0",
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -3266,6 +3383,7 @@
         "label": "CC BY-SA 2.0",
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -3349,6 +3467,7 @@
         "label": "CC BY-SA 2.0",
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -3430,6 +3549,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 40.951019,
+        "longitude": -4.117471
       },
       "original_format": "jpg",
       "owner": {
@@ -3525,6 +3649,11 @@
         "label": "CC BY-NC-SA 2.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/2.0/"
       },
+      "location": {
+        "accuracy": 13,
+        "latitude": 37.154228,
+        "longitude": -82.632379
+      },
       "original_format": "jpg",
       "owner": {
         "id": "43164076@N06",
@@ -3603,6 +3732,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 43.387736,
+        "longitude": -87.869598
       },
       "original_format": "jpg",
       "owner": {
@@ -3699,6 +3833,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.924691,
+        "longitude": -87.63969
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -3790,6 +3929,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -3868,6 +4008,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.518091,
+        "longitude": -88.65691
       },
       "original_format": "jpg",
       "owner": {
@@ -3962,6 +4107,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.601717,
+        "longitude": -89.639041
       },
       "original_format": "jpg",
       "owner": {
@@ -4058,6 +4208,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 14,
+        "latitude": 50.91962,
+        "longitude": 14.057478
+      },
       "original_format": "jpg",
       "owner": {
         "id": "188808032@N05",
@@ -4147,6 +4302,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.033814,
+        "longitude": 28.94041
       },
       "original_format": "jpg",
       "owner": {
@@ -4243,6 +4403,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 45.467587,
+        "longitude": 13.762522
+      },
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
@@ -4327,6 +4492,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.986641,
+        "longitude": -87.978871
       },
       "original_format": "jpg",
       "owner": {
@@ -4424,6 +4594,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 45.46791,
+        "longitude": 13.762522
+      },
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
@@ -4509,6 +4684,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 47.06407,
+        "longitude": -104.674111
+      },
       "original_format": null,
       "owner": {
         "id": "31154073@N05",
@@ -4587,6 +4767,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.729863,
+        "longitude": 22.757221
       },
       "original_format": "jpg",
       "owner": {
@@ -4683,6 +4868,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.97774,
+        "longitude": 23.721068
       },
       "original_format": "jpg",
       "owner": {
@@ -4781,6 +4971,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.95816,
+        "longitude": -87.660493
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -4873,6 +5068,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 15,
+        "latitude": 29.153255,
+        "longitude": -103.485915
       },
       "original_format": "jpg",
       "owner": {
@@ -4967,6 +5167,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.789808,
+        "longitude": -87.596096
       },
       "original_format": "jpg",
       "owner": {
@@ -5067,6 +5272,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 40.951019,
+        "longitude": -4.117471
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -5163,6 +5373,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 46.810523,
+        "longitude": 16.025234
+      },
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
@@ -5242,6 +5457,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 13,
+        "latitude": 43.039837,
+        "longitude": -87.908082
       },
       "original_format": "jpg",
       "owner": {
@@ -5335,6 +5555,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 43.387736,
+        "longitude": -87.869598
       },
       "original_format": "jpg",
       "owner": {
@@ -5431,6 +5656,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.924691,
+        "longitude": -87.63969
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -5518,6 +5748,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.518091,
+        "longitude": -88.65691
       },
       "original_format": "jpg",
       "owner": {
@@ -5611,6 +5846,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "png",
       "owner": {
         "id": "128501237@N03",
@@ -5695,6 +5931,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "png",
       "owner": {
         "id": "128501237@N03",
@@ -5774,6 +6011,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "39398829@N02",
@@ -5861,6 +6099,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.601702,
+        "longitude": -89.639287
       },
       "original_format": "jpg",
       "owner": {
@@ -5958,6 +6201,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6040,6 +6284,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.033814,
+        "longitude": 28.94041
       },
       "original_format": "jpg",
       "owner": {
@@ -6136,6 +6385,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "44273756@N08",
@@ -6200,6 +6450,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 46.543988,
+        "longitude": -87.396274
       },
       "original_format": "jpg",
       "owner": {
@@ -6297,6 +6552,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 14,
+        "latitude": 29.200662,
+        "longitude": -102.918814
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -6389,6 +6649,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.730423,
+        "longitude": 22.756116
       },
       "original_format": "jpg",
       "owner": {
@@ -6487,6 +6752,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
@@ -6580,6 +6846,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 9,
+        "latitude": -19.913965,
+        "longitude": 163.800659
+      },
       "original_format": null,
       "owner": {
         "id": "29409244@N03",
@@ -6661,6 +6932,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.973292,
+        "longitude": 23.733974
       },
       "original_format": "jpg",
       "owner": {
@@ -6765,6 +7041,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.986708,
+        "longitude": -87.67531
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -6858,6 +7139,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
@@ -6954,6 +7236,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
@@ -7050,6 +7333,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
@@ -7146,6 +7430,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "93408882@N03",
@@ -7231,6 +7516,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.789808,
+        "longitude": -87.596096
       },
       "original_format": "jpg",
       "owner": {
@@ -7330,6 +7620,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 40.951019,
+        "longitude": -4.117471
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -7425,6 +7720,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 13,
+        "latitude": 34.545307,
+        "longitude": -115.790405
+      },
       "original_format": null,
       "owner": {
         "id": "74486811@N00",
@@ -7506,6 +7806,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 14,
+        "latitude": 43.033607,
+        "longitude": 11.100139
       },
       "original_format": null,
       "owner": {
@@ -7590,6 +7895,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 14,
+        "latitude": 43.033607,
+        "longitude": 11.100139
+      },
       "original_format": null,
       "owner": {
         "id": "75916004@N00",
@@ -7673,6 +7983,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 14,
+        "latitude": 43.033607,
+        "longitude": 11.100139
+      },
       "original_format": null,
       "owner": {
         "id": "75916004@N00",
@@ -7755,6 +8070,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 43.387736,
+        "longitude": -87.869598
       },
       "original_format": "jpg",
       "owner": {
@@ -7850,6 +8170,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.924691,
+        "longitude": -87.63969
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -7937,6 +8262,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.518091,
+        "longitude": -88.65691
       },
       "original_format": "jpg",
       "owner": {
@@ -8033,6 +8363,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.8903,
+        "longitude": 12.491873
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -8124,6 +8459,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.601702,
+        "longitude": -89.639287
       },
       "original_format": "jpg",
       "owner": {
@@ -8221,6 +8561,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 41.033814,
+        "longitude": 28.94041
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -8315,6 +8660,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 27.919904,
+        "longitude": 34.368549
+      },
       "original_format": "jpg",
       "owner": {
         "id": "15029120@N00",
@@ -8393,6 +8743,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 16,
+        "latitude": 42.986641,
+        "longitude": -87.978871
       },
       "original_format": "jpg",
       "owner": {
@@ -8489,6 +8844,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 14,
+        "latitude": 29.194219,
+        "longitude": -103.005889
       },
       "original_format": "jpg",
       "owner": {
@@ -8589,6 +8949,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.730482,
+        "longitude": 22.75647
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -8684,6 +9049,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -8763,6 +9129,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -8842,6 +9209,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 15,
+        "latitude": 37.979443,
+        "longitude": 23.730056
       },
       "original_format": "jpg",
       "owner": {

@@ -16,6 +16,12 @@ class License(TypedDict):
     url: Optional[str]
 
 
+class LocationInfo(TypedDict):
+    latitude: float
+    longitude: float
+    accuracy: int
+
+
 class User(TypedDict):
     id: str
     username: str
@@ -71,6 +77,7 @@ class SinglePhoto(TypedDict):
     sizes: List[Size]
     original_format: Optional[str]
     tags: List[str]
+    location: Optional[LocationInfo]
 
 
 class CollectionOfPhotos(TypedDict):

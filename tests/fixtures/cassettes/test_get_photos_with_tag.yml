@@ -14,10 +14,10 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photos.search&page=1&per_page=10&sort=interestingness-desc&tags=sunset
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.photos.search&page=1&per_page=10&sort=interestingness-desc&tags=sunset
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
-      page=\"1\" pages=\"194928\" perpage=\"10\" total=\"1949279\">\n\t<photo id=\"52611651477\"
+      page=\"1\" pages=\"214351\" perpage=\"10\" total=\"2143508\">\n\t<photo id=\"52611651477\"
       owner=\"61397695@N05\" secret=\"5360f4acda\" server=\"65535\" farm=\"66\" title=\"Seagulls
       at sunset\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"0\" safety_level=\"0\"
       dateupload=\"1673083959\" datetaken=\"2023-01-07 23:14:00\" datetakengranularity=\"0\"
@@ -26,7 +26,9 @@ interactions:
       sun sunset riodelaplata riverplate birds birdflight rocks colors red shot picture
       paint seagullsatsunset shadows moon uruguayapeacefulbeautifulandpurenaturecountry
       marinebuoywithgreenlightandanotherwithredlightthatindicatetheentrancetotheport\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52611651477_5360f4acda_s.jpg\"
+      latitude=\"-34.912570\" longitude=\"-56.194250\" accuracy=\"16\" context=\"0\"
+      place_id=\"\" woeid=\"10098021\" geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\"
+      geo_is_family=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52611651477_5360f4acda_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52611651477_5360f4acda_t.jpg\"
       height_t=\"47\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52611651477_5360f4acda_m.jpg\"
       height_s=\"114\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52611651477_5360f4acda.jpg\"
@@ -52,8 +54,10 @@ interactions:
       candid candidportrait coastal dramatic dark dusk dreamy goldenhour impressionistic
       landscape light nature neighborhood nostalgia evening ocean outdoors pacificocean
       pacific sea serene peaceful touristattraction topaz view vintage vacation water
-      white williamshakespeare romeoandjuliet fineart\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/51540860321_09897ecb2b_s.jpg\"
+      white williamshakespeare romeoandjuliet fineart\" latitude=\"32.960981\" longitude=\"-117.269022\"
+      accuracy=\"13\" context=\"0\" place_id=\"\" woeid=\"5342353\" geo_is_public=\"1\"
+      geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/51540860321_09897ecb2b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/51540860321_09897ecb2b_t.jpg\"
       height_t=\"64\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/51540860321_09897ecb2b_m.jpg\"
       height_s=\"154\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/51540860321_09897ecb2b.jpg\"
@@ -71,8 +75,10 @@ interactions:
       lakeconstance water sports dreil\xE4ndereck bregenz austria schiff yacht minimalism
       sky sunset \u5965\u5730\u5229 \u6E38\u8247 boat boot sonnenuntergang wassersport
       wasser refection reflexion \u53CD\u5C04 europe earth himmel blues minimalismus
-      nikkor nikon z2470mmf4s z6 mondayblues\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/50187213808_6e419d6690_s.jpg\"
+      nikkor nikon z2470mmf4s z6 mondayblues\" latitude=\"47.515113\" longitude=\"9.734230\"
+      accuracy=\"11\" context=\"0\" place_id=\"\" woeid=\"7872656\" geo_is_public=\"1\"
+      geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50187213808_6e419d6690_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50187213808_6e419d6690_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50187213808_6e419d6690_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50187213808_6e419d6690.jpg\"
@@ -89,8 +95,10 @@ interactions:
       clouds colors countryside colorful cloud fineart forest flowers olympus omd
       outdoor outside poland polska pov lowlight mood photography landschaft hitech
       silhouettes goldcollection powerofcommunication multiplicityinphotography multiplancomposition
-      c poeticphotography fineartphotography goldenhour\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/50012182441_a4a2437a96_s.jpg\"
+      c poeticphotography fineartphotography goldenhour\" latitude=\"51.447949\" longitude=\"20.476670\"
+      accuracy=\"16\" context=\"0\" place_id=\"NpZ1Y0RWVbhTuXM\" woeid=\"772915\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/50012182441_a4a2437a96_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/50012182441_a4a2437a96_t.jpg\"
       height_t=\"56\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/50012182441_a4a2437a96_m.jpg\"
       height_s=\"135\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/50012182441_a4a2437a96.jpg\"
@@ -105,9 +113,11 @@ interactions:
       ownername=\"Gio guarda le stelle\" realname=\"Giovanni Spina\" tags=\"dolomites
       dolomiten antorno sunset landscape lake reflection sky cloudds wind italy mountainscape
       sugarclouds nature quiet ry\u016Bichisakamoto aereidicarta bolledisapone dolomiti
-      life love laughs tears memories wow\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/2837/34265174086_28013dd742_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/2837/34265174086_28013dd742_t.jpg\"
+      life love laughs tears memories wow\" latitude=\"46.596058\" longitude=\"12.265334\"
+      accuracy=\"14\" context=\"0\" place_id=\"PIB1fDJWU7Jn6Zk\" woeid=\"718421\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/2837/34265174086_28013dd742_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/2837/34265174086_28013dd742_t.jpg\"
       height_t=\"69\" width_t=\"100\" url_s=\"https://live.staticflickr.com/2837/34265174086_28013dd742_m.jpg\"
       height_s=\"165\" width_s=\"240\" url_m=\"https://live.staticflickr.com/2837/34265174086_28013dd742.jpg\"
       height_m=\"344\" width_m=\"500\" url_q=\"https://live.staticflickr.com/2837/34265174086_28013dd742_q.jpg\"
@@ -129,8 +139,10 @@ interactions:
       Takens\" realname=\"Maarten Takens\" tags=\"lazio sunset europa blauestunde
       italie italy romans stones rome longexposure crepuscolo water colorfulnightshot
       romeinen blau klotz takens italien reflection europe nachtfotografie roma\"
-      originalsecret=\"77f48f4313\" originalformat=\"jpg\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/33341956935_7582f79e75_s.jpg\"
+      originalsecret=\"77f48f4313\" originalformat=\"jpg\" latitude=\"41.890880\"
+      longitude=\"12.490510\" accuracy=\"14\" context=\"0\" place_id=\"FphPyURWU7ux6h4\"
+      woeid=\"711883\" geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\"
+      geo_is_family=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/33341956935_7582f79e75_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/33341956935_7582f79e75_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/33341956935_7582f79e75_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/33341956935_7582f79e75.jpg\"
@@ -147,7 +159,10 @@ interactions:
       doveviaggi pedersenlagoon travelphotography unitedstates alaska colors dove
       forest glacier green kenai lagoon landscape light magazine mountains nature
       ocean outdoors premiun reportage scenery seward sun sundown sunset travel usa
-      wild wildlife\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3793/33133935262_85f3382e6b_s.jpg\"
+      wild wildlife\" latitude=\"59.884458\" longitude=\"-149.729232\" accuracy=\"12\"
+      context=\"0\" place_id=\"n1gD0_xQUL.I3Wh1Kg\" woeid=\"12587564\" geo_is_public=\"1\"
+      geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3793/33133935262_85f3382e6b_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3793/33133935262_85f3382e6b_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3793/33133935262_85f3382e6b_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3793/33133935262_85f3382e6b.jpg\"
@@ -162,9 +177,11 @@ interactions:
       19:18:58\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Richard
       Larssen\" realname=\"Richard Larssen\" tags=\"old sunset white black church
       norway zeiss norge cross sony norwegen churchyard grav a7 gamle solnedgang j\xE6ren
-      rogaland kirke kors kirkeg\xE5rd h\xE5 varhaug\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_t.jpg\"
+      rogaland kirke kors kirkeg\xE5rd h\xE5 varhaug\" latitude=\"58.611463\" longitude=\"5.619120\"
+      accuracy=\"13\" context=\"0\" place_id=\"_M1NOKRYUrLD_j_HvQ\" woeid=\"90855654\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/7414/14197191475_4f4281b036.jpg\"
       height_m=\"333\" width_m=\"500\" url_q=\"https://live.staticflickr.com/7414/14197191475_4f4281b036_q.jpg\"
@@ -181,7 +198,10 @@ interactions:
       decay farm unique garage traditional horizon country ruin atlantic haunted spooky
       fox wierd hd colourful geology nikkor heights gareth hdr bungalow donegal foreland
       spookey lonesome wray gweedore strabane bunbeg tonemapped derrybeg 1024mm creativemindsphotography
-      d5200 hdfox\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3694/10993715623_34d0842a5f_s.jpg\"
+      d5200 hdfox\" latitude=\"55.090599\" longitude=\"-8.320298\" accuracy=\"14\"
+      context=\"0\" place_id=\"cUrlRNhUVLo093A\" woeid=\"560620\" geo_is_public=\"1\"
+      geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3694/10993715623_34d0842a5f_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3694/10993715623_34d0842a5f_t.jpg\"
       height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3694/10993715623_34d0842a5f_m.jpg\"
       height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3694/10993715623_34d0842a5f.jpg\"
@@ -194,9 +214,11 @@ interactions:
       isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1381924798\" datetaken=\"2012-12-29
       14:06:44\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"celta4\"
       tags=\"city sunset cars portugal clouds buildings atardecer lights luces edificios
-      lisboa lisbon ciudad nubes autos coches\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/3709/10308653944_65f659551e_s.jpg\" height_sq=\"75\"
-      width_sq=\"75\" url_t=\"https://live.staticflickr.com/3709/10308653944_65f659551e_t.jpg\"
+      lisboa lisbon ciudad nubes autos coches\" latitude=\"38.720819\" longitude=\"-9.148096\"
+      accuracy=\"13\" context=\"0\" place_id=\"685PthNWVrwoGfg\" woeid=\"746954\"
+      geo_is_public=\"1\" geo_is_contact=\"0\" geo_is_friend=\"0\" geo_is_family=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/3709/10308653944_65f659551e_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/3709/10308653944_65f659551e_t.jpg\"
       height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/3709/10308653944_65f659551e_m.jpg\"
       height_s=\"148\" width_s=\"240\" url_m=\"https://live.staticflickr.com/3709/10308653944_65f659551e.jpg\"
       height_m=\"308\" width_m=\"500\" url_q=\"https://live.staticflickr.com/3709/10308653944_65f659551e_q.jpg\"
@@ -211,15 +233,15 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '4871'
+      - '5342'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:27 GMT
+      - Wed, 15 Nov 2023 16:47:27 GMT
       Via:
-      - 1.1 0e0ad29313cce66bcaa3fd8596e1b5de.cloudfront.net (CloudFront)
+      - 1.1 5d9a524e4aca6aab7126483cd2dfb87a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - O_AkutntvcP2VmOfaWHZOtKdoxqz7QxDiS8ytd3yqr6x66lqIIadgA==
+      - ahwTfwyRZaukvpSSJKXuZEGkeVlkZZgB4FsUjj7d1bAOUrH5Z4znUQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -230,7 +252,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -281,11 +303,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:27 GMT
+      - Wed, 15 Nov 2023 16:47:27 GMT
       Via:
-      - 1.1 0e0ad29313cce66bcaa3fd8596e1b5de.cloudfront.net (CloudFront)
+      - 1.1 5d9a524e4aca6aab7126483cd2dfb87a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Wv6EWrb88NHhVOrxHW0d7lxKwgnk980Scus5fvhnt468aEmrwBMWGg==
+      - swVOWUzhVFb9_Pd3GrlDW9co4Yij0sEL-9WJvTN9G_Mg5RiU1XXseQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -296,7 +318,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:

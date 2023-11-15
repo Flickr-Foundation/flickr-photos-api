@@ -26,11 +26,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:25 GMT
+      - Wed, 15 Nov 2023 16:47:24 GMT
       Via:
-      - 1.1 3e4df971a572827d7b2a18db7147bb96.cloudfront.net (CloudFront)
+      - 1.1 53d49718a7680ca68c2936c1e210f48a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - KF_cKOJqpD3EqTmwgbGumBv5BCciLauqsXlnIm9K3-wuMNBp10ImZA==
+      - iF4LQ9x9LNZ1W7e1dRoDjl4RV118pTiGaVtdlmac56sw5ojFu-lDmQ==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -41,7 +41,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:24 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -92,11 +92,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:25 GMT
+      - Wed, 15 Nov 2023 16:47:24 GMT
       Via:
-      - 1.1 3e4df971a572827d7b2a18db7147bb96.cloudfront.net (CloudFront)
+      - 1.1 53d49718a7680ca68c2936c1e210f48a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - OAp4sPivKtjgjWuyD8iNqI18FxGiW4yYN9uZkndXc_qzOiFRSvPQ7Q==
+      - Q-ZM-GtE7RqB_UoJPBNA4gU5mj4uEpCxFtYM0MJkgyFIbOLbKkXHeA==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -107,7 +107,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:24 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -133,7 +133,7 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=34427469121%40N01
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=34427469121%40N01
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
       page=\"1\" pages=\"782\" perpage=\"10\" total=\"7812\">\n\t<photo id=\"53310991033\"
@@ -142,7 +142,8 @@ interactions:
       safety_level=\"0\" dateupload=\"1699188836\" datetaken=\"2023-11-04 16:21:45\"
       datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"George\" realname=\"George
       Oates\" tags=\"london ferry dusk canarywharf\" originalsecret=\"16814783a9\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53310991033_05bb562937_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53310991033_05bb562937_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53310991033_05bb562937_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53310991033_05bb562937_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53310991033_05bb562937.jpg\"
@@ -156,7 +157,8 @@ interactions:
       license=\"9\" safety_level=\"0\" dateupload=\"1698152248\" datetaken=\"2023-10-19
       19:20:10\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"George\"
       realname=\"George Oates\" tags=\"towerbridge night atnight riverthames\" originalsecret=\"474c66ea1b\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53282436419_363c6cf811_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53282436419_363c6cf811_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53282436419_363c6cf811_t.jpg\"
       height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53282436419_363c6cf811_m.jpg\"
       height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/65535/53282436419_363c6cf811.jpg\"
@@ -169,7 +171,8 @@ interactions:
       isfamily=\"0\" license=\"4\" safety_level=\"0\" dateupload=\"1696528696\" datetaken=\"2023-10-03
       13:16:01\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"George\"
       realname=\"George Oates\" tags=\"\" originalsecret=\"e77e160e9a\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53237018379_ab0a485064_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53237018379_ab0a485064_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53237018379_ab0a485064_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53237018379_ab0a485064_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53237018379_ab0a485064.jpg\"
@@ -182,7 +185,8 @@ interactions:
       isfriend=\"0\" isfamily=\"0\" license=\"1\" safety_level=\"0\" dateupload=\"1691435739\"
       datetaken=\"2023-08-06 17:08:01\" datetakengranularity=\"0\" datetakenunknown=\"0\"
       ownername=\"George\" realname=\"George Oates\" tags=\"\" originalsecret=\"c381e8d3de\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53100996733_99ffbffac7_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53100996733_99ffbffac7_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53100996733_99ffbffac7_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53100996733_99ffbffac7_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53100996733_99ffbffac7.jpg\"
@@ -196,7 +200,8 @@ interactions:
       dateupload=\"1686135300\" datetaken=\"2023-06-07 03:50:50\" datetakengranularity=\"0\"
       datetakenunknown=\"1\" ownername=\"George\" realname=\"George Oates\" tags=\"cultureburn
       australia australiaaustralian renewal grass indigenousknowledge adelaide\" originalsecret=\"76f1887840\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957366694_1b9d7de1cc_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957366694_1b9d7de1cc_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52957366694_1b9d7de1cc_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52957366694_1b9d7de1cc_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52957366694_1b9d7de1cc.jpg\"
@@ -209,7 +214,8 @@ interactions:
       isfamily=\"0\" license=\"4\" safety_level=\"0\" dateupload=\"1686135299\" datetaken=\"2023-06-07
       03:50:50\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"George\"
       realname=\"George Oates\" tags=\"\" originalsecret=\"5a4b6f94b8\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957605480_3576c93a42_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957605480_3576c93a42_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52957605480_3576c93a42_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52957605480_3576c93a42_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52957605480_3576c93a42.jpg\"
@@ -224,7 +230,8 @@ interactions:
       isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1686135299\" datetaken=\"2023-06-07
       03:50:50\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"George\"
       realname=\"George Oates\" tags=\"\" originalsecret=\"a6f3d9ee83\" originalformat=\"jpg\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52956623732_85231f55f3_s.jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52956623732_85231f55f3_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52956623732_85231f55f3_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52956623732_85231f55f3_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52956623732_85231f55f3.jpg\"
@@ -238,7 +245,8 @@ interactions:
       03:47:51\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"George\"
       realname=\"George Oates\" tags=\"cultureburn indigenousknowledge australian
       australia victorsteffensen audience crowd fire\" originalsecret=\"473eb21e4f\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957602825_581fdf3211_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957602825_581fdf3211_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52957602825_581fdf3211_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52957602825_581fdf3211_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52957602825_581fdf3211.jpg\"
@@ -253,7 +261,8 @@ interactions:
       03:47:51\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"George\"
       realname=\"George Oates\" tags=\"cultureburn indigenousknowledge australian
       australia victorsteffensen audience crowd fire\" originalsecret=\"2eea8ddd3a\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52956620847_dc15721c73_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52956620847_dc15721c73_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52956620847_dc15721c73_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52956620847_dc15721c73_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52956620847_dc15721c73.jpg\"
@@ -268,7 +277,8 @@ interactions:
       03:47:52\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"George\"
       realname=\"George Oates\" tags=\"cultureburn indigenousknowledge australian
       australia victorsteffensen audience crowd fire\" originalsecret=\"d308598570\"
-      originalformat=\"jpg\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957218821_3aaa92f320_s.jpg\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/52957218821_3aaa92f320_s.jpg\"
       height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/52957218821_3aaa92f320_t.jpg\"
       height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/52957218821_3aaa92f320_m.jpg\"
       height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/52957218821_3aaa92f320.jpg\"
@@ -281,15 +291,15 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1822'
+      - '1852'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:26 GMT
+      - Wed, 15 Nov 2023 16:47:25 GMT
       Via:
-      - 1.1 3e4df971a572827d7b2a18db7147bb96.cloudfront.net (CloudFront)
+      - 1.1 53d49718a7680ca68c2936c1e210f48a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 4hZE6HrvfLLfIr7oER_c654idwIXh1Azg8-4sVrpHKy7aHtt1RrGUg==
+      - 2quNYQQUMn5ec60LUDkYqQ9s0V9bsQqdFDk1jd5kGlQfjzxCXUjP_Q==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -300,7 +310,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:
@@ -351,11 +361,11 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 15 Nov 2023 10:58:26 GMT
+      - Wed, 15 Nov 2023 16:47:25 GMT
       Via:
-      - 1.1 3e4df971a572827d7b2a18db7147bb96.cloudfront.net (CloudFront)
+      - 1.1 53d49718a7680ca68c2936c1e210f48a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - -nxerSqxh3-DWNIcf4br4L3C5vU45EHXFrhTdjJiOhSNgnSx8Q6jtQ==
+      - TO-2oQAsH39RytzciTzSKwJnjnWvpsry3skK_0AV9SBVibJPbe7QAg==
       X-Amz-Cf-Pop:
       - EZE50-P1
       X-Cache:
@@ -366,7 +376,7 @@ interactions:
       - Apache/2.4.58 (Ubuntu)
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 15-Dec-2023 10:58:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 15-Dec-2023 16:47:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-frame-options:

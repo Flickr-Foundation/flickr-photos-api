@@ -21,6 +21,7 @@ from ._types import (
     DateTaken,
     GroupInfo,
     License,
+    LocationInfo,
     PhotosFromUrl,
     PhotosInAlbum,
     PhotosInGallery,
@@ -389,12 +390,26 @@ class FlickrPhotosApi(BaseApi):
         # We prefer the normalised version because it makes it possible
         # to compare tags across photos, and we only get the normalised
         # versions from the collection endpoints.
-        tags_elem = find_required_elem(photo_elem, path=".//tags")
+        tags_elem = find_required_elem(photo_elem, path="tags")
 
-        tags: List[str]
+        tags = []
         for t in tags_elem.findall("tag"):
             assert t.text is not None
             tags.append(t.text)
+
+        # The <location> tag is only present in photos which have
+        # location data; if the user hasn't made location available to
+        # public users, it'll be missing.
+        location_elem = photo_elem.find(path="location")
+
+        if location_elem is not None:
+            location: Optional[LocationInfo] = {
+                "latitude": float(location_elem.attrib["latitude"]),
+                "longitude": float(location_elem.attrib["longitude"]),
+                "accuracy": int(location_elem.attrib["accuracy"]),
+            }
+        else:
+            location = None
 
         return {
             "id": photo_id,
@@ -409,6 +424,7 @@ class FlickrPhotosApi(BaseApi):
             "sizes": sizes,
             "original_format": original_format,
             "tags": tags,
+            "location": location,
         }
 
     # There are a bunch of similar flickr.XXX.getPhotos methods;
@@ -427,6 +443,7 @@ class FlickrPhotosApi(BaseApi):
         "url_m",
         "url_o",
         "tags",
+        "geo",
         # These parameters aren't documented, but they're quite
         # useful for our purposes!
         "url_q",  # Large Square
@@ -478,6 +495,22 @@ class FlickrPhotosApi(BaseApi):
             assert owner["photos_url"].endswith("/")
             url = owner["photos_url"] + photo_id + "/"
 
+            # The lat/long/accuracy fields will always be populated, even
+            # if there's no geo-information on this photo -- they're just
+            # set to zeroes.
+            #
+            # We have to use the presence of geo permissions on the
+            # <photo> element to determine if there's actually location
+            # information here, or if we're getting the defaults.
+            if photo_elem.attrib.get("geo_is_public") == "1":
+                location: Optional[LocationInfo] = {
+                    "latitude": float(photo_elem.attrib["latitude"]),
+                    "longitude": float(photo_elem.attrib["longitude"]),
+                    "accuracy": int(photo_elem.attrib["accuracy"]),
+                }
+            else:
+                location = None
+
             photos.append(
                 {
                     "id": photo_id,
@@ -500,6 +533,7 @@ class FlickrPhotosApi(BaseApi):
                     "owner": owner,
                     "url": url,
                     "tags": tags,
+                    "location": location,
                 }
             )
 

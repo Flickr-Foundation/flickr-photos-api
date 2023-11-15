@@ -19,6 +19,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 20.647242,
+        "longitude": 58.875732
+      },
       "original_format": null,
       "owner": {
         "id": "78978556@N06",
@@ -118,6 +123,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "34869895@N06",
@@ -206,6 +212,11 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": {
+        "accuracy": 16,
+        "latitude": 37.850272,
+        "longitude": -119.660264
+      },
       "original_format": null,
       "owner": {
         "id": "9846013@N04",
@@ -292,6 +303,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": "jpg",
       "owner": {
         "id": "144999844@N06",
@@ -388,6 +400,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 11,
+        "latitude": 49.175643,
+        "longitude": -123.621597
       },
       "original_format": "jpg",
       "owner": {
@@ -506,6 +523,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "49910084@N03",
@@ -589,6 +607,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "38382651@N04",
@@ -660,6 +679,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 15,
+        "latitude": 36.087089,
+        "longitude": -114.931159
       },
       "original_format": null,
       "owner": {
@@ -733,6 +757,7 @@
         "label": "All Rights Reserved",
         "url": null
       },
+      "location": null,
       "original_format": null,
       "owner": {
         "id": "194968553@N08",
@@ -804,6 +829,11 @@
         "id": "in-copyright",
         "label": "All Rights Reserved",
         "url": null
+      },
+      "location": {
+        "accuracy": 11,
+        "latitude": 42.825724,
+        "longitude": 10.313072
       },
       "original_format": "jpg",
       "owner": {

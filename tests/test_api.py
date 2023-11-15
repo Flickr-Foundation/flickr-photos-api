@@ -259,6 +259,22 @@ class TestGetSinglePhoto:
         photo = api.get_single_photo(photo_id="53331717974")
         assert photo["tags"] == []
 
+    def test_gets_location_for_photo(self, api: FlickrPhotosApi) -> None:
+        photo = api.get_single_photo(photo_id="52578982111")
+
+        assert photo["location"] == {
+            "latitude": 8.079310,
+            "longitude": 77.550004,
+            "accuracy": 0,
+        }
+
+    def test_get_empty_location_for_photo_without_geo(
+        self, api: FlickrPhotosApi
+    ) -> None:
+        photo = api.get_single_photo(photo_id="53305573272")
+
+        assert photo["location"] is None
+
 
 class TestCollectionsPhotoResponse:
     """
