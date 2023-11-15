@@ -390,7 +390,11 @@ class FlickrPhotosApi(BaseApi):
         # to compare tags across photos, and we only get the normalised
         # versions from the collection endpoints.
         tags_elem = find_required_elem(photo_elem, path=".//tags")
-        tags = [t.text for t in tags_elem.findall("tag")]
+
+        tags: List[str]
+        for t in tags_elem.findall("tag"):
+            assert t.text is not None
+            tags.append(t.text)
 
         return {
             "id": photo_id,
@@ -404,7 +408,7 @@ class FlickrPhotosApi(BaseApi):
             "url": photo_page_url,
             "sizes": sizes,
             "original_format": original_format,
-            "tags": tags,  # type: ignore
+            "tags": tags,
         }
 
     # There are a bunch of similar flickr.XXX.getPhotos methods;
