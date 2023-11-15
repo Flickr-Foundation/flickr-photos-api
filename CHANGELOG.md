@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.3.0 - 2023-11-15
+
+Fetch user tags and location data from the Flickr APi.
+
 ## v1.2.0 - 2023-11-10
 
 Add a `path_alias` field to the `User` model.
