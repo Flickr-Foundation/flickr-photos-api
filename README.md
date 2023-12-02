@@ -1,3 +1,11 @@
+**This library is no longer maintained.**
+
+I originally extracted this library from [Flinumeratr] and [Flickypedia], thinking it would be useful to have a shared library for calling the Flickr API.
+In practice, there was less overlap than I thought, and the two projects actually want to call the Flickr API in different ways.
+I inlined this library back into the two projects, and then I archived this library. –A
+
+---
+
 # flickr-photos-api
 
 This is a library for getting information about photos from the Flickr API.
@@ -40,30 +48,30 @@ This library was created for use in [Flinumeratr](), [Flickypedia], and other [F
 
 2.  Construct an instance of `FlickrPhotosApi`.
     You need to pass a user-agent that identifies you, and a [Flickr API key][key].
-    
+
     ```python
     from flickr_photos_api import FlickrPhotosApi
-    
+
     api = FlickrPhotosApi(api_key="…", user_agent="…")
     ```
 
 3.  Call methods on FlickrPhotosApi.
     The methods meant for public use are:
-    
+
     ```python
     def get_single_photo(photo_id: str) -> SinglePhoto: ...
-  
+
     def get_photos_in_album(user_url: str, album_id: str) -> PhotosInAlbum: ...
-  
+
     def get_photos_in_gallery(gallery_id: str) -> PhotosInGallery: ...
-  
+
     def get_public_photos_by_user(user_url: str) -> CollectionOfPhotos: ...
-  
+
     def get_photos_in_group_pool(group_url: str) -> PhotosInGroup: ...
-    
+
     def get_photos_with_tag(tag: str) -> CollectionOfPhotos: ...
     ```
-    
+
     Methods that return collections of photos also support `page` and `per_page` parameters to control pagination.
 
 [key]: https://www.flickr.com/services/api/misc.api_keys.html
@@ -108,7 +116,7 @@ To create a new version on PyPI:
     $ python3 -m build
     $ python3 -m twine upload dist/* --username=__token__
     ```
-    
+
     You will need [a PyPI API token](https://pypi.org/help/#apitoken) to publish packages.
     This token is stored in 1Password.
 
