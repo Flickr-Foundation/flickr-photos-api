@@ -1,5 +1,4 @@
 import functools
-from typing import Dict, List, Optional, Union
 import xml.etree.ElementTree as ET
 
 from flickr_url_parser import ParseResult, parse_flickr_url
@@ -48,9 +47,7 @@ class BaseApi:
             headers={"User-Agent": user_agent},
         )
 
-    def call(
-        self, *, method: str, params: Optional[Dict[str, Union[str, int]]] = None
-    ) -> ET.Element:
+    def call(self, *, method: str, params: dict[str, str] | None = None) -> ET.Element:
         if params is not None:
             get_params = {"method": method, **params}
         else:
@@ -96,7 +93,7 @@ class BaseApi:
 
 class FlickrPhotosApi(BaseApi):
     @functools.lru_cache()
-    def get_licenses(self) -> Dict[str, License]:
+    def get_licenses(self) -> dict[str, License]:
         """
         Returns a list of licenses, arranged by code.
 
@@ -104,7 +101,7 @@ class FlickrPhotosApi(BaseApi):
         """
         license_resp = self.call(method="flickr.photos.licenses.getInfo")
 
-        result: Dict[str, License] = {}
+        result: dict[str, License] = {}
 
         # Add a short ID which can be used to more easily refer to this
         # license throughout the codebase.
@@ -244,8 +241,6 @@ class FlickrPhotosApi(BaseApi):
         # This value isn't helpful to callers, so we omit it.  This reduces
         # the risk of somebody skipping the ``unknown`` parameter and using
         # the value in the wrong place.
-        date_taken: DateTaken
-
         if unknown:
             return {"unknown": True}
         else:
@@ -368,7 +363,7 @@ class FlickrPhotosApi(BaseApi):
         #
         # Within this function, we just return all the sizes -- we leave it up to the
         # caller to decide which size is most appropriate for their purposes.
-        sizes: List[Size] = []
+        sizes: list[Size] = []
 
         for s in sizes_resp.findall(".//size"):
             sizes.append(
@@ -403,7 +398,7 @@ class FlickrPhotosApi(BaseApi):
         location_elem = photo_elem.find(path="location")
 
         if location_elem is not None:
-            location: Optional[LocationInfo] = {
+            location: LocationInfo | None = {
                 "latitude": float(location_elem.attrib["latitude"]),
                 "longitude": float(location_elem.attrib["longitude"]),
                 "accuracy": int(location_elem.attrib["accuracy"]),
@@ -456,7 +451,7 @@ class FlickrPhotosApi(BaseApi):
     def _parse_collection_of_photos_response(
         self,
         elem: ET.Element,
-        collection_owner: Optional[User] = None,
+        collection_owner: User | None = None,
     ) -> CollectionOfPhotos:
         # The wrapper element includes a couple of attributes related
         # to pagination, e.g.
@@ -466,7 +461,7 @@ class FlickrPhotosApi(BaseApi):
         page_count = int(elem.attrib["pages"])
         total_photos = int(elem.attrib["total"])
 
-        photos: List[SinglePhoto] = []
+        photos: list[SinglePhoto] = []
 
         for photo_elem in elem.findall(".//photo"):
             photo_id = photo_elem.attrib["id"]
@@ -503,7 +498,7 @@ class FlickrPhotosApi(BaseApi):
             # <photo> element to determine if there's actually location
             # information here, or if we're getting the defaults.
             if photo_elem.attrib.get("geo_is_public") == "1":
-                location: Optional[LocationInfo] = {
+                location: LocationInfo | None = {
                     "latitude": float(photo_elem.attrib["latitude"]),
                     "longitude": float(photo_elem.attrib["longitude"]),
                     "accuracy": int(photo_elem.attrib["accuracy"]),
@@ -558,8 +553,8 @@ class FlickrPhotosApi(BaseApi):
                 "user_id": user["id"],
                 "photoset_id": album_id,
                 "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
+                "page": str(page),
+                "per_page": str(per_page),
             },
         )
 
@@ -594,8 +589,8 @@ class FlickrPhotosApi(BaseApi):
                 "gallery_id": gallery_id,
                 "get_gallery_info": "1",
                 "extras": ",".join(self.extras + ["path_alias"]),
-                "page": page,
-                "per_page": per_page,
+                "page": str(page),
+                "per_page": str(per_page),
             },
         )
 
@@ -629,8 +624,8 @@ class FlickrPhotosApi(BaseApi):
             params={
                 "user_id": user["id"],
                 "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
+                "page": str(page),
+                "per_page": str(per_page),
             },
         )
 
@@ -671,8 +666,8 @@ class FlickrPhotosApi(BaseApi):
             params={
                 "group_id": group_info["id"],
                 "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
+                "page": str(page),
+                "per_page": str(per_page),
             },
         )
 
@@ -705,8 +700,8 @@ class FlickrPhotosApi(BaseApi):
                 #
                 "sort": "interestingness-desc",
                 "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
+                "page": str(page),
+                "per_page": str(per_page),
             },
         )
 
