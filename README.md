@@ -24,7 +24,7 @@ Examples:
 'https://www.flickr.com/photos/lassennps/14898030836/'
 ```
 
-This library was created for use in [Flinumeratr](), [Flickypedia], and other [Flickr Foundation] projects.
+This library was created for use in [Flinumeratr], [Flickypedia], and other [Flickr Foundation] projects.
 
 [Flinumeratr]: https://github.com/Flickr-Foundation/flinumeratr
 [Flickypedia]: https://commons.wikimedia.org/wiki/Commons:Flickypedia
