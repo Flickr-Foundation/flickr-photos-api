@@ -1,6 +1,6 @@
 from .api import FlickrPhotosApi
 from .exceptions import FlickrApiException, ResourceNotFound, LicenseNotFound
-from ._types import (
+from .types import (
     License,
     User,
     TakenGranularity,

@@ -9,7 +9,6 @@
       "date_posted": "2022-09-24T16:14:04+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-09-24T17:50:41"
       },
       "description": "While we were shooting some waders on the ground, noticed flock of Greater Flamingos flying at a distance. I had no time to change the settings on the camera, just clicked One shot. \n\nI thought of sharing with you.\n\nTaken at Masirah Island, Oman. \nNikkor 200-500mm Lens handheld. \n\nHave a peaceful weekend everyone.\n\nThank you so much for dropping by my photostream and leaving all the kind comments. They are very much appreciated.\n\n85A_0883",
@@ -113,7 +112,6 @@
       "date_posted": "2022-09-29T00:00:52+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2021-08-25T19:27:42"
       },
       "description": "Brooklyn, New York",
@@ -202,7 +200,6 @@
       "date_posted": "2022-09-19T21:32:53+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-07-25T19:56:03"
       },
       "description": null,
@@ -293,10 +290,9 @@
       "date_posted": "2022-09-29T15:19:00+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-09-27T19:59:28"
       },
-      "description": "C\u00f4te vend\u00e9enne .... France \nLa lagune au 1er plan , la plage et l' oc\u00e9an ! \ud83d\ude0d",
+      "description": "Côte vendéenne .... France \nLa lagune au 1er plan , la plage et l' océan ! 😍",
       "id": "52393258045",
       "license": {
         "id": "in-copyright",
@@ -366,22 +362,22 @@
         }
       ],
       "tags": [
-        "ext\u00e9rieur",
+        "extérieur",
         "nature",
         "paysage",
         "coucherdesoleil",
         "sunset",
         "plage",
         "mer",
-        "oc\u00e9an",
+        "océan",
         "eau",
         "silhouette",
         "couleurs",
         "ciel",
         "personnes",
         "ombre",
-        "lumi\u00e8re",
-        "vend\u00e9e",
+        "lumière",
+        "vendée",
         "lagune"
       ],
       "title": "Contemplation !",
@@ -391,7 +387,6 @@
       "date_posted": "2022-10-06T08:03:00+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-08-30T19:44:00"
       },
       "description": null,
@@ -479,7 +474,7 @@
         "ship",
         "coast",
         "coastline",
-        "k\u00fcste",
+        "küste",
         "mountain",
         "mountains",
         "sun",
@@ -492,19 +487,19 @@
         "ocaso",
         "sonnenuntergang",
         "coucherdesoleil",
-        "p\u00f4rdosol",
+        "pôrdosol",
         "tramonto",
-        "\u0437\u0430\u043a\u0430\u0442",
+        "закат",
         "zonsondergang",
-        "zach\u00f3ds\u0142o\u0144ca",
-        "solnedg\u00e5ng",
+        "zachódsłońca",
+        "solnedgång",
         "solnedgang",
         "auringonlasku",
         "apus",
-        "\u0437\u0430\u043b\u0435\u0437",
+        "залез",
         "matahariterbenam",
-        "m\u1eb7ttr",
-        "\uce90\ub098\ub2e4"
+        "mặttr",
+        "캐나다"
       ],
       "title": "Sunset seen from onboard a ferry bound for Vancouver Island, Canada",
       "url": "https://www.flickr.com/photos/59238173@N07/52402720516/"
@@ -513,7 +508,6 @@
       "date_posted": "2022-09-22T13:12:54+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2010-06-19T19:57:41"
       },
       "description": null,
@@ -597,7 +591,6 @@
       "date_posted": "2022-10-01T23:52:15+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2021-09-25T17:56:34"
       },
       "description": null,
@@ -662,7 +655,9 @@
           "width": 581
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Sunsetting Reflections on the Pacific!",
       "url": "https://www.flickr.com/photos/38382651@N04/52398380693/"
     },
@@ -670,7 +665,6 @@
       "date_posted": "2022-09-30T11:06:23+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-09-27T18:16:02"
       },
       "description": null,
@@ -739,7 +733,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Sunset, Palms, and Hills!",
       "url": "https://www.flickr.com/photos/38382651@N04/52394890775/"
     },
@@ -747,7 +743,6 @@
       "date_posted": "2022-10-08T17:12:02+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2022-04-30T06:56:09"
       },
       "description": "Vasco da Gama Bridge, Lisboa - Portugal",
@@ -764,7 +759,7 @@
         "path_alias": "juvenalia_de_oliveira",
         "photos_url": "https://www.flickr.com/photos/juvenalia_de_oliveira/",
         "profile_url": "https://www.flickr.com/people/juvenalia_de_oliveira/",
-        "realname": "Juven\u00e1lia  de Oliveira",
+        "realname": "Juvenália  de Oliveira",
         "username": "mjuvenalia"
       },
       "safety_level": "safe",
@@ -812,7 +807,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "The beauty of sunrise...",
       "url": "https://www.flickr.com/photos/juvenalia_de_oliveira/52412509807/"
     },
@@ -820,7 +817,6 @@
       "date_posted": "2022-10-08T07:38:14+00:00",
       "date_taken": {
         "granularity": "second",
-        "unknown": false,
         "value": "2018-08-16T20:19:04"
       },
       "description": "Portoferraio - Isola d'Elba... a destra l'isola di Capraia.",

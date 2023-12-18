@@ -1,7 +1,7 @@
 import datetime
 import xml.etree.ElementTree as ET
 
-from ._types import SafetyLevel, Size, TakenGranularity
+from .types import SafetyLevel, Size, TakenGranularity
 
 
 def find_required_elem(elem: ET.Element, *, path: str) -> ET.Element:
