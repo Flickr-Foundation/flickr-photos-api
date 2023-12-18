@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.4.0 - 2023-12-18
+
+*   Bump the minimum Python version to 3.12.
+*   Slightly rejig the "date_taken" field – it now returns `None` if the taken date is unknown, rather than `{"unknown": True}`.
+
 ## v1.3.1 - 2023-11-15
 
 Expose the `LocationInfo` type introduced in v1.3.0 as part of the top-level module.
