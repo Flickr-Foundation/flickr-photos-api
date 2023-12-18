@@ -5,17 +5,7 @@ from flickr_url_parser import ParseResult, parse_flickr_url
 import httpx
 
 from .exceptions import FlickrApiException, LicenseNotFound, ResourceNotFound
-from .utils import (
-    find_optional_text,
-    find_required_elem,
-    find_required_text,
-    parse_date_posted,
-    parse_date_taken,
-    parse_date_taken_granularity,
-    parse_safety_level,
-    parse_sizes,
-)
-from ._types import (
+from .types import (
     CollectionOfPhotos,
     DateTaken,
     GroupInfo,
@@ -28,6 +18,16 @@ from ._types import (
     SinglePhoto,
     Size,
     User,
+)
+from .utils import (
+    find_optional_text,
+    find_required_elem,
+    find_required_text,
+    parse_date_posted,
+    parse_date_taken,
+    parse_date_taken_granularity,
+    parse_safety_level,
+    parse_sizes,
 )
 
 
@@ -230,7 +230,7 @@ class FlickrPhotosApi(BaseApi):
 
     def _get_date_taken(
         self, *, value: str, granularity: str, unknown: bool
-    ) -> DateTaken:
+    ) -> DateTaken | None:
         # Note: we intentionally omit sending any 'date taken' information
         # to callers if it's unknown.
         #
@@ -242,12 +242,11 @@ class FlickrPhotosApi(BaseApi):
         # the risk of somebody skipping the ``unknown`` parameter and using
         # the value in the wrong place.
         if unknown:
-            return {"unknown": True}
+            return None
         else:
             return {
                 "value": parse_date_taken(value),
                 "granularity": parse_date_taken_granularity(granularity),
-                "unknown": False,
             }
 
     def get_single_photo(self, *, photo_id: str) -> SinglePhoto:

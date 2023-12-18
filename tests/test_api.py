@@ -2,13 +2,13 @@ import datetime
 
 import pytest
 
-from flickr_photos_api import FlickrPhotosApi
-from flickr_photos_api.exceptions import (
+from flickr_photos_api import (
+    FlickrPhotosApi,
     FlickrApiException,
     LicenseNotFound,
     ResourceNotFound,
+    User,
 )
-from flickr_photos_api._types import User
 from utils import get_fixture, jsonify
 
 
@@ -211,13 +211,12 @@ class TestGetSinglePhoto:
         assert info["date_taken"] == {
             "value": datetime.datetime(1950, 1, 1, 0, 0, 0),
             "granularity": "year",
-            "unknown": False,
         }
 
     def test_sets_date_unknown_on_date_taken(self, api: FlickrPhotosApi) -> None:
         info = api.get_single_photo(photo_id="25868667441")
 
-        assert info["date_taken"] == {"unknown": True}
+        assert info["date_taken"] is None
 
     def test_gets_photo_description(self, api: FlickrPhotosApi) -> None:
         photo = api.get_single_photo(photo_id="53248070597")
@@ -312,9 +311,7 @@ class TestCollectionsPhotoResponse:
             album_id="72157664284840282",
         )
 
-        assert resp["photos"][0]["date_taken"] == {
-            "unknown": True,
-        }
+        assert resp["photos"][0]["date_taken"] is None
 
     def test_only_gets_publicly_available_sizes(self, api: FlickrPhotosApi) -> None:
         # This user doesn't allow downloading of their original photos,
