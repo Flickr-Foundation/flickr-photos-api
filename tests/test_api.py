@@ -213,8 +213,28 @@ class TestGetSinglePhoto:
             "granularity": "year",
         }
 
-    def test_sets_date_unknown_on_date_taken(self, api: FlickrPhotosApi) -> None:
-        info = api.get_single_photo(photo_id="25868667441")
+    @pytest.mark.parametrize(
+        "photo_id",
+        [
+            # This is a random example of a photo I found in which the
+            # taken date is unknown, i.e.:
+            #
+            #     <dates takenunknown="1" …>
+            #
+            "25868667441",
+            #
+            # This is a video I found in which the taken date is allegedly
+            # known, but it's all zeroes, i.e.:
+            #
+            #     <dates taken="0000-00-00 00:00:00" takenunknown="0" … />
+            #
+            "52052991809",
+        ],
+    )
+    def test_sets_date_unknown_on_date_taken(
+        self, api: FlickrPhotosApi, photo_id: str
+    ) -> None:
+        info = api.get_single_photo(photo_id=photo_id)
 
         assert info["date_taken"] is None
 
