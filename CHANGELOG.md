@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.1 - 2023-12-19
+
+*   Discard location information with an accuracy level of `0`, which seems to mean "so vague as to be meaningless".
+
 ## v1.5.0 - 2023-12-19
 
 *   Add a method `get_buddy_icon_url(user_id: str)` for retrieving the buddy icon of a user.
