@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.2 - 2023-12-19
+
+*   Fix a bug in the handling of "date taken" when the value returned by the Flickr API is `0000-00-00 00:00:00`.
+
 ## v1.5.1 - 2023-12-19
 
 *   Discard location information with an accuracy level of `0`, which seems to mean "so vague as to be meaningless".

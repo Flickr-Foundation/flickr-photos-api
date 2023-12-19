@@ -243,6 +243,14 @@ class FlickrPhotosApi(BaseApi):
         # the value in the wrong place.
         if unknown:
             return None
+
+        # This is a weird value I've seen returned on some videos; I'm
+        # not sure what it means, but it's not something we can interpret
+        # as a valid date, so we treat "date taken" as unknown even if
+        # the API thinks it knows it.
+        elif value == "0000-00-00 00:00:00":
+            return None
+
         else:
             return {
                 "value": parse_date_taken(value),

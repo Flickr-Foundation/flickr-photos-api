@@ -1,0 +1,214 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=52052991809
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+      id=\"52052991809\" secret=\"fdda0e4aab\" server=\"0\" farm=\"0\" dateuploaded=\"1651783847\"
+      isfavorite=\"0\" license=\"10\" safety_level=\"0\" rotation=\"0\" originalsecret=\"0567023d05\"
+      originalformat=\"mp4\" views=\"261\" media=\"video\">\n\t<owner nsid=\"61270229@N05\"
+      username=\"NavyMedicine\" realname=\"Navy Medicine\" location=\"Washington,
+      DC, USA\" iconserver=\"65535\" iconfarm=\"66\" path_alias=\"navymedicine\">\n\t\t<gift
+      gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>Navy Medicine Sailor
+      of the Year ceremony FY21</title>\n\t<description>Navy Medicine Sailor of the
+      Year ceremony FY21. 5/5/2022.\n\nBUMED #22-0005-054 </description>\n\t<visibility
+      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1651783847\"
+      taken=\"0000-00-00 00:00:00\" takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1651784756\"
+      />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+      cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+      canprint=\"0\" canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people
+      haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"61264889-52052991809-7410886\" author=\"61270229@N05\"
+      authorname=\"NavyMedicine\" raw=\"Hospital Corps\" machine_tag=\"0\">hospitalcorps</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+      type=\"photopage\">https://www.flickr.com/photos/navymedicine/52052991809/</url>\n\t</urls>\n\t<video
+      ready=\"1\" failed=\"0\" pending=\"0\" duration=\"1608\" width=\"500\" height=\"281\"
+      />\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '776'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 19 Dec 2023 14:42:39 GMT
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - CNhsjqB61DWlI5Z82svDl8hm4daP-8_mI4cIOO6xUfZiEdIJLW-n3Q==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 18-Jan-2024 14:42:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 18-Jan-2024 14:42:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=52052991809
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+      canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\" width=\"75\"
+      height=\"75\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_s.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/sq/\" media=\"photo\"
+      />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_q.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/q/\" media=\"photo\"
+      />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"56\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_t.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/t/\" media=\"photo\"
+      />\n\t<size label=\"Small\" width=\"240\" height=\"135\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_m.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/s/\" media=\"photo\"
+      />\n\t<size label=\"Small 320\" width=\"320\" height=\"180\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_n.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/n/\" media=\"photo\"
+      />\n\t<size label=\"Small 400\" width=\"400\" height=\"225\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_w.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/w/\" media=\"photo\"
+      />\n\t<size label=\"Medium\" width=\"500\" height=\"281\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/m/\" media=\"photo\"
+      />\n\t<size label=\"Medium 640\" width=\"640\" height=\"360\" source=\"https://live.staticflickr.com/31337/52052991809_fdda0e4aab_z.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/z/\" media=\"photo\"
+      />\n\t<size label=\"Original\" width=\"640\" height=\"360\" source=\"https://live.staticflickr.com/31337/52052991809_0567023d05_o.jpg\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/sizes/o/\" media=\"photo\"
+      />\n\t<size label=\"Video Player\" width=\"500\" height=\"281\" source=\"https://www.flickr.com/apps/video/stewart.swf?v=2968162862&amp;photo_id=52052991809&amp;photo_secret=fdda0e4aab\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/\" media=\"video\"
+      />\n\t<size label=\"360p\" width=\"640\" height=\"360\" source=\"https://www.flickr.com/photos/navymedicine/52052991809/play/360p/fdda0e4aab/\"
+      url=\"https://www.flickr.com/photos/navymedicine/52052991809/\" media=\"video\"
+      />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '500'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 19 Dec 2023 14:42:39 GMT
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - OQ6pbVxUsLdJre_E97x_jmAmBB1P14EqvfsAdiHOXQWXgcMsnkQkkA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 18-Jan-2024 14:42:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+      id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+      License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+      id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+      />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+      url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license id=\"2\"
+      name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+      />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+      url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license id=\"5\"
+      name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+      />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+      />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+      />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+      />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+      />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '395'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 19 Dec 2023 14:42:39 GMT
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RxtAMKWvr7yltr9dCehw1_kHD8R6w7EqoXN7TTyA4pueP6YxolBLUw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 18-Jan-2024 14:42:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
