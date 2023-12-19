@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.0 - 2023-12-19
+
+*   Add a method `get_buddy_icon_url(user_id: str)` for retrieving the buddy icon of a user.
+
 ## v1.4.0 - 2023-12-18
 
 *   Bump the minimum Python version to 3.12.

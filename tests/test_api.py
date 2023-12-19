@@ -526,3 +526,24 @@ def test_get_photos_from_flickr_url_is_paginated(
 def test_unrecognised_url_type_is_error(api: FlickrPhotosApi) -> None:
     with pytest.raises(TypeError, match="Unrecognised URL type"):
         api.get_photos_from_parsed_flickr_url(parsed_url={"type": "unknown"})  # type: ignore
+
+
+@pytest.mark.parametrize(
+    ["user_id", "expected_url"],
+    [
+        pytest.param(
+            "199246608@N02",
+            "https://www.flickr.com/images/buddyicon.gif",
+            id="user_with_no_buddyicon",
+        ),
+        pytest.param(
+            "28660070@N07",
+            "https://farm6.staticflickr.com/5556/buddyicons/28660070@N07.jpg",
+            id="user_with_buddyicon",
+        ),
+    ],
+)
+def test_get_buddy_icon_url(
+    api: FlickrPhotosApi, user_id: str, expected_url: str
+) -> None:
+    assert api.get_buddy_icon_url(user_id=user_id) == expected_url
