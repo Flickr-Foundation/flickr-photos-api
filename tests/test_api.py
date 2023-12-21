@@ -624,6 +624,31 @@ def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
     assert len(resp["photos"]) == 10
 
 
+def test_a_timeout_is_retried(api: FlickrPhotosApi) -> None:
+    # This client throws a timeout error on the first GET request,
+    # and then makes regular HTTP requests after that.
+    class FlakyClient:
+        def __init__(self, underlying: httpx.Client):
+            self.underlying = underlying
+            self.get_request_count = 0
+
+        def get(self, url: str, params: dict[str, str], timeout: int) -> httpx.Response:
+            self.get_request_count += 1
+
+            if self.get_request_count == 1:
+                raise httpx.ReadTimeout("The read operation timed out")
+            else:
+                return self.underlying.get(url=url, params=params, timeout=timeout)
+
+    api.client = FlakyClient(underlying=api.client)  # type: ignore
+
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
+
+    assert len(resp["photos"]) == 10
+
+
 def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
     # The cassette for this test was constructed manually: I copy/pasted
     # the 500 response from the previous test so that there were more
