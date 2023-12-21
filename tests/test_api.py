@@ -603,11 +603,21 @@ def test_invalid_api_key_is_error(user_agent: str) -> None:
     with pytest.raises(InvalidApiKey):
         api.get_single_photo(photo_id="52578982111")
 
+    # Note: we need to explicitly close the httpx client here,
+    # or we get a warning in the 'setup' of the next test:
+    #
+    #     ResourceWarning: unclosed <ssl.SSLSocket fd=13, family=2,
+    #     type=1, proto=0, laddr=('…', 58686), raddr=('…', 443)>
+    #
+    api.client.close()
 
-def test_gets_5xx_error(api: FlickrPhotosApi) -> None:
-    with pytest.raises(FlickrApiException) as e:
-        api.get_public_photos_by_user(user_url="https://www.flickr.com/photos/navymedicine/")
 
-    print(e)
+def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add a 500 response as the first response,
+    # then we want to see it make a second request to retry it.
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
 
-    assert 0
+    assert len(resp["photos"]) == 10
