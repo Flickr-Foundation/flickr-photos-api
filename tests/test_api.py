@@ -1,5 +1,6 @@
 import datetime
 
+import httpx
 import pytest
 
 from flickr_photos_api import (
@@ -621,3 +622,15 @@ def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
     )
 
     assert len(resp["photos"]) == 10
+
+
+def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I copy/pasted
+    # the 500 response from the previous test so that there were more
+    # than it would retry.
+    with pytest.raises(httpx.HTTPStatusError) as err:
+        api.get_public_photos_by_user(
+            user_url="https://www.flickr.com/photos/navymedicine/"
+        )
+
+    assert err.value.response.status_code == 500
