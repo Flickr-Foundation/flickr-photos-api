@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from flickr_url_parser import ParseResult, parse_flickr_url
 import httpx
 
-from .exceptions import FlickrApiException, LicenseNotFound, ResourceNotFound
+from .exceptions import FlickrApiException, InvalidApiKey, LicenseNotFound, ResourceNotFound
 from .types import (
     CollectionOfPhotos,
     DateTaken,
@@ -90,6 +90,8 @@ class BaseApi:
             # means "not found".
             if errors["code"] == "1":
                 raise ResourceNotFound(method, params)
+            elif errors["code"] == "100":
+                raise InvalidApiKey()
             else:
                 raise FlickrApiException(errors)
 

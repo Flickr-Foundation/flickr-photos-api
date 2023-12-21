@@ -6,6 +6,14 @@ class FlickrApiException(Exception):
     pass
 
 
+class InvalidApiKey(FlickrApiException):
+    """
+    Thrown when you try to use an API key with an invalid format.
+    """
+    def __init__(self):
+        super().__init__("Flickr API rejected the API key as invalid")
+
+
 class ResourceNotFound(FlickrApiException):
     """
     Thrown when you try to look up a resource that doesn't exist.
