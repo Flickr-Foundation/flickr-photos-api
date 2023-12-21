@@ -634,3 +634,10 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
         )
 
     assert err.value.response.status_code == 500
+
+
+def test_an_unrecognised_error_is_generic_exception(api: FlickrPhotosApi) -> None:
+    with pytest.raises(FlickrApiException) as exc:
+        api.call(method="flickr.test.null")
+
+    assert exc.value.args[0]["code"] == "99"
