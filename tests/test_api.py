@@ -5,6 +5,7 @@ import pytest
 from flickr_photos_api import (
     FlickrPhotosApi,
     FlickrApiException,
+    InvalidApiKey,
     LicenseNotFound,
     ResourceNotFound,
     User,
@@ -601,3 +602,12 @@ def test_invalid_api_key_is_error(user_agent: str) -> None:
 
     with pytest.raises(InvalidApiKey):
         api.get_single_photo(photo_id="52578982111")
+
+
+def test_gets_5xx_error(api: FlickrPhotosApi) -> None:
+    with pytest.raises(FlickrApiException) as e:
+        api.get_public_photos_by_user(user_url="https://www.flickr.com/photos/navymedicine/")
+
+    print(e)
+
+    assert 0

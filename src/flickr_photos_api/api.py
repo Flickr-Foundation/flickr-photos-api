@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 from flickr_url_parser import ParseResult, parse_flickr_url
 import httpx
+from tenacity import retry, retry_if_exception_type, RetryError, stop_after_attempt, wait_fixed
 
 from .exceptions import FlickrApiException, InvalidApiKey, LicenseNotFound, ResourceNotFound
 from .types import (
@@ -53,6 +54,17 @@ class BaseApi:
         )
 
     def call(self, *, method: str, params: dict[str, str] | None = None) -> ET.Element:
+        try:
+            self._call_api(method=method, params=params)
+        except RetryError as retry_err:
+            retry_err.reraise()
+
+    @retry(
+        retry=(retry_if_exception_type(FlickrApiException)),
+        stop=stop_after_attempt(3),
+        wait=wait_fixed(1),
+    )
+    def _call_api(self, *, method: str, params: dict[str, str] | None) -> ET.Element:
         if params is not None:
             get_params = {"method": method, **params}
         else:

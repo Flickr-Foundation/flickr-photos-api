@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.4 - 2023-12-21
+
+*   Add some basic retrying logic to the API.
+
 ## v1.5.3 - 2023-12-21
 
 *   Provide a better error when you pass an empty string as a Flickr API key.
