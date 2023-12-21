@@ -587,3 +587,10 @@ def test_get_buddy_icon_url(
     api: FlickrPhotosApi, user_id: str, expected_url: str
 ) -> None:
     assert api.get_buddy_icon_url(user_id=user_id) == expected_url
+
+
+def test_empty_api_key_is_error(user_agent: str) -> None:
+    with pytest.raises(
+        ValueError, match="Cannot create a client with an empty string as the API key"
+    ):
+        FlickrPhotosApi(api_key="", user_agent=user_agent)
