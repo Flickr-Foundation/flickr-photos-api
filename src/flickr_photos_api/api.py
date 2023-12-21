@@ -41,6 +41,11 @@ class BaseApi:
     """
 
     def __init__(self, *, api_key: str, user_agent: str) -> None:
+        if not api_key:
+            raise ValueError(
+                "Cannot create a client with an empty string as the API key"
+            )
+
         self.client = httpx.Client(
             base_url="https://api.flickr.com/services/rest/",
             params={"api_key": api_key},

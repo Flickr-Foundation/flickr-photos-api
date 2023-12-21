@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.5.3 - 2023-12-21
+
+*   Provide a better error when you pass an empty string as a Flickr API key.
+    Now it will fail when you create the client, whereas previously it would fail with an `Invalid API Key` error when you tried to call the Flickr API.
+
 ## v1.5.2 - 2023-12-19
 
 *   Fix a bug in the handling of "date taken" when the value returned by the Flickr API is `0000-00-00 00:00:00`.
