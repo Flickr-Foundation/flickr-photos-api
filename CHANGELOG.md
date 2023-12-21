@@ -1,10 +1,14 @@
 # CHANGELOG
 
+## v1.5.5 - 2023-12-21
+
+*   Expand the retrying logic, so read timeouts will also be retried up to three times before failing.
+
 ## v1.5.4 - 2023-12-21
 
 *   Add some basic retrying logic to the client.
     If you get a 500 Internal Server Error from the Flickr API, the request will now be retried up to three times before failing.
-    
+
     All other errors will raise immediately.
 
 ## v1.5.3 - 2023-12-21

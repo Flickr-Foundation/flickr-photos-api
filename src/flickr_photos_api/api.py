@@ -43,6 +43,21 @@ from .utils import (
 )
 
 
+def is_retryable(exc: BaseException) -> bool:
+    """
+    Returns True if this is an exception we can safely retry (i.e. flaky
+    or transient errors that might return a different result),or
+    False otherwise.
+    """
+    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code == 500:
+        return True
+
+    if isinstance(exc, httpx.ReadTimeout):
+        return True
+
+    return False
+
+
 class BaseApi:
     """
     This is a thin wrapper for calling the Flickr API.
@@ -71,10 +86,7 @@ class BaseApi:
             retry_err.reraise()
 
     @retry(
-        retry=retry_if_exception(
-            lambda exc: isinstance(exc, httpx.HTTPStatusError)
-            and exc.response.status_code == 500
-        ),
+        retry=retry_if_exception(is_retryable),
         stop=stop_after_attempt(3),
         wait=wait_fixed(1),
     )
