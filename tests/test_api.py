@@ -231,6 +231,13 @@ class TestGetSinglePhoto:
             #     <dates taken="0000-00-00 00:00:00" takenunknown="0" … />
             #
             "52052991809",
+            #
+            # This is a photo I found in which the date taken is allegedly
+            # known, but it's mostly zeroes, i.e.:
+            #
+            #    <dates taken="0000-01-01 00:00:00" takenunknown="0" … />
+            #
+            "3701264363",
         ],
     )
     def test_sets_date_unknown_on_date_taken(

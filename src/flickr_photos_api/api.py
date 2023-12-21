@@ -293,7 +293,7 @@ class FlickrPhotosApi(BaseApi):
         # not sure what it means, but it's not something we can interpret
         # as a valid date, so we treat "date taken" as unknown even if
         # the API thinks it knows it.
-        elif value == "0000-00-00 00:00:00":
+        elif value.startswith("0000-"):
             return None
 
         else:
