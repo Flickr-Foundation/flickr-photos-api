@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.5.4 - 2023-12-21
+
+*   Add some basic retrying logic to the client.
+    If you get a 500 Internal Server Error from the Flickr API, the request will now be retried up to three times before failing.
+    
+    All other errors will raise immediately.
+
 ## v1.5.3 - 2023-12-21
 
 *   Provide a better error when you pass an empty string as a Flickr API key.

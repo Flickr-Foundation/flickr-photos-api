@@ -1,10 +1,12 @@
 import datetime
 
+import httpx
 import pytest
 
 from flickr_photos_api import (
     FlickrPhotosApi,
     FlickrApiException,
+    InvalidApiKey,
     LicenseNotFound,
     ResourceNotFound,
     User,
@@ -594,3 +596,48 @@ def test_empty_api_key_is_error(user_agent: str) -> None:
         ValueError, match="Cannot create a client with an empty string as the API key"
     ):
         FlickrPhotosApi(api_key="", user_agent=user_agent)
+
+
+def test_invalid_api_key_is_error(user_agent: str) -> None:
+    api = FlickrPhotosApi(api_key="<bad key>", user_agent=user_agent)
+
+    with pytest.raises(InvalidApiKey):
+        api.get_single_photo(photo_id="52578982111")
+
+    # Note: we need to explicitly close the httpx client here,
+    # or we get a warning in the 'setup' of the next test:
+    #
+    #     ResourceWarning: unclosed <ssl.SSLSocket fd=13, family=2,
+    #     type=1, proto=0, laddr=('…', 58686), raddr=('…', 443)>
+    #
+    api.client.close()
+
+
+def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add a 500 response as the first response,
+    # then we want to see it make a second request to retry it.
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
+
+    assert len(resp["photos"]) == 10
+
+
+def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I copy/pasted
+    # the 500 response from the previous test so that there were more
+    # than it would retry.
+    with pytest.raises(httpx.HTTPStatusError) as err:
+        api.get_public_photos_by_user(
+            user_url="https://www.flickr.com/photos/navymedicine/"
+        )
+
+    assert err.value.response.status_code == 500
+
+
+def test_an_unrecognised_error_is_generic_exception(api: FlickrPhotosApi) -> None:
+    with pytest.raises(FlickrApiException) as exc:
+        api.call(method="flickr.test.null")
+
+    assert exc.value.args[0]["code"] == "99"

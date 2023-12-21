@@ -1,5 +1,10 @@
 from .api import FlickrPhotosApi
-from .exceptions import FlickrApiException, ResourceNotFound, LicenseNotFound
+from .exceptions import (
+    FlickrApiException,
+    InvalidApiKey,
+    ResourceNotFound,
+    LicenseNotFound,
+)
 from .types import (
     License,
     User,
@@ -27,6 +32,7 @@ __all__ = [
     "FlickrPhotosApi",
     "FlickrApiException",
     "ResourceNotFound",
+    "InvalidApiKey",
     "LicenseNotFound",
     "License",
     "LocationInfo",
