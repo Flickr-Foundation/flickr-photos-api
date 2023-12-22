@@ -608,8 +608,13 @@ def test_empty_api_key_is_error(user_agent: str) -> None:
 def test_invalid_api_key_is_error(user_agent: str) -> None:
     api = FlickrPhotosApi(api_key="<bad key>", user_agent=user_agent)
 
-    with pytest.raises(InvalidApiKey):
+    with pytest.raises(InvalidApiKey) as err:
         api.get_single_photo(photo_id="52578982111")
+
+    assert (
+        err.value.args[0]
+        == "Flickr API rejected the API key as invalid (Key has invalid format)"
+    )
 
     # Note: we need to explicitly close the httpx client here,
     # or we get a warning in the 'setup' of the next test:
