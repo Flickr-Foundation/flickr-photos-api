@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## v1.5.6 - 2023-12-21
+## v1.5.7 - 2023-12-22
+
+*   Slightly improve the error message you get if you pass an invalid API key.
+
+## v1.5.6 - 2023-12-22
 
 *   Fix another bug in the handling of "date taken" when the value returned by the Flickr API is unusable, e.g. `0000-01-01 00:00:00`.
 
