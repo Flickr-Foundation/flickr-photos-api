@@ -1,0 +1,230 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=3701264363
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+      id=\"3701264363\" secret=\"6e80035605\" server=\"2463\" farm=\"3\" dateuploaded=\"1247077836\"
+      isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"8d339be74d\"
+      originalformat=\"jpg\" views=\"18640\" media=\"photo\">\n\t<owner nsid=\"7167652@N06\"
+      username=\"George Eastman Museum\" realname=\"George Eastman Museum\" location=\"Rochester,
+      NY, United States\" iconserver=\"2013\" iconfarm=\"3\" path_alias=\"george_eastman_house\">\n\t\t<gift
+      gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>Cour de Rouen - boulevard
+      St. Germain</title>\n\t<description>\n&lt;b&gt;Digital Accession Number:&lt;/b&gt;
+      1978:1628:0030.0001\n\n&lt;b&gt;Maker:&lt;/b&gt; Eug\xE8ne Atget (French, 1857-1927)\n\n&lt;b&gt;Title:&lt;/b&gt;
+      Cour de Rouen - boulevard St. Germain\n\n&lt;b&gt;Date:&lt;/b&gt; undated\n\n&lt;b&gt;Medium:&lt;/b&gt;
+      albumen print\n\n&lt;b&gt;Dimensions:&lt;/b&gt; 22.8 x 17.5 cm. (trimmed)\n\n\n&lt;i&gt;George
+      Eastman House Collection&lt;/i&gt;\n\nGeneral \u2013 information about the George
+      Eastman House Photography Collection is available at &lt;a href=&quot;http://www.eastmanhouse.org/inc/collections/photography.php&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;www.eastmanhouse.org/inc/collections/photography.php&lt;/a&gt;.\n\nFor
+      information on obtaining reproductions go to: &lt;a href=&quot;http://www.eastmanhouse.org/flickr/index.php?pid=197816280030&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;www.eastmanhouse.org/flickr/index.php?pid=197816280030&lt;/a&gt;.</description>\n\t<visibility
+      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1247077836\"
+      taken=\"0000-01-01 00:00:00\" takengranularity=\"6\" takenunknown=\"0\" lastupdate=\"1375242583\"
+      />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+      cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+      canprint=\"0\" canshare=\"1\" />\n\t<comments>1</comments>\n\t<notes />\n\t<people
+      haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"7122330-3701264363-215330\" author=\"7167652@N06\"
+      authorname=\"George Eastman Museum\" raw=\"George_Eastman_House\" machine_tag=\"0\">georgeeastmanhouse</tag>\n\t\t<tag
+      id=\"7122330-3701264363-42491597\" author=\"7167652@N06\" authorname=\"George
+      Eastman Museum\" raw=\"geh:accession=1978:1628:0030\" machine_tag=\"1\">geh:accession=197816280030</tag>\n\t\t<tag
+      id=\"7122330-3701264363-36789027\" author=\"7167652@N06\" authorname=\"George
+      Eastman Museum\" raw=\"geh:medium=albumen print\" machine_tag=\"1\">geh:medium=albumenprint</tag>\n\t\t<tag
+      id=\"7122330-3701264363-42491409\" author=\"7167652@N06\" authorname=\"George
+      Eastman Museum\" raw=\"geh:maker=Atget, Eug\xE8ne\" machine_tag=\"1\">geh:maker=atgeteug\xE8ne</tag>\n\t\t<tag
+      id=\"7122330-3701264363-3127\" author=\"61361160@N00\" authorname=\"L\xFA_\"
+      raw=\"gate\" machine_tag=\"0\">gate</tag>\n\t\t<tag id=\"7122330-3701264363-484\"
+      author=\"61361160@N00\" authorname=\"L\xFA_\" raw=\"Paris\" machine_tag=\"0\">paris</tag>\n\t\t<tag
+      id=\"7122330-3701264363-553\" author=\"57845960@N00\" authorname=\"ninakuriloff\"
+      raw=\"building\" machine_tag=\"0\">building</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+      type=\"photopage\">https://www.flickr.com/photos/george_eastman_house/3701264363/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1235'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 22 Dec 2023 05:50:53 GMT
+      Via:
+      - 1.1 da0472696f37c3fd9136c0c43a0dc866.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - uh-W8dg_WVU8kbpszIl3a95vfSRGaYvsuW3KAhaPm2ywzrfvOLO0yg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sun, 21-Jan-2024 05:50:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sun, 21-Jan-2024 05:50:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=3701264363
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+      canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\" width=\"75\"
+      height=\"75\" source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_s.jpg\"
+      url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/sq/\"
+      media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_q.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/q/\"
+      media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"85\" height=\"100\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_t.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/t/\"
+      media=\"photo\" />\n\t<size label=\"Small\" width=\"204\" height=\"240\" source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_m.jpg\"
+      url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/s/\"
+      media=\"photo\" />\n\t<size label=\"Small 320\" width=\"272\" height=\"320\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_n.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/n/\"
+      media=\"photo\" />\n\t<size label=\"Small 400\" width=\"340\" height=\"400\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_w.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/w/\"
+      media=\"photo\" />\n\t<size label=\"Medium\" width=\"425\" height=\"500\" source=\"https://live.staticflickr.com/2463/3701264363_6e80035605.jpg\"
+      url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/m/\"
+      media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"543\" height=\"640\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_z.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/z/\"
+      media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"679\" height=\"800\"
+      source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_c.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/c/\"
+      media=\"photo\" />\n\t<size label=\"Large\" width=\"849\" height=\"1000\" source=\"https://live.staticflickr.com/2463/3701264363_6e80035605_b.jpg\"
+      url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/l/\"
+      media=\"photo\" />\n\t<size label=\"Original\" width=\"849\" height=\"1000\"
+      source=\"https://live.staticflickr.com/2463/3701264363_8d339be74d_o.jpg\" url=\"https://www.flickr.com/photos/george_eastman_house/3701264363/sizes/o/\"
+      media=\"photo\" />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '446'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 22 Dec 2023 05:50:54 GMT
+      Via:
+      - 1.1 da0472696f37c3fd9136c0c43a0dc866.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Jdca3xqSm5UFp0082mdNPCr-NbN4KQ9yUaR0-bpQi1QX9CSYr7mtSw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sun, 21-Jan-2024 05:50:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+      id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+      License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+      id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+      />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+      url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license id=\"2\"
+      name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+      />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+      url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license id=\"5\"
+      name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+      />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+      />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+      />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+      />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+      />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '395'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 22 Dec 2023 05:50:54 GMT
+      Via:
+      - 1.1 da0472696f37c3fd9136c0c43a0dc866.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - AvgE1jvFgq43cpQBGdfh82mvG5euJa_wvM9AV4ZZybuzFPgn-KNcJQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - Apache/2.4.58 (Ubuntu)
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sun, 21-Jan-2024 05:50:54 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      x-robots-tag:
+      - noindex
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

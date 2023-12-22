@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.6 - 2023-12-21
+
+*   Fix another bug in the handling of "date taken" when the value returned by the Flickr API is unusable, e.g. `0000-01-01 00:00:00`.
+
 ## v1.5.5 - 2023-12-21
 
 *   Expand the retrying logic, so read timeouts will also be retried up to three times before failing.
