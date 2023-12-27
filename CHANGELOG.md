@@ -1,9 +1,5 @@
 # CHANGELOG
 
-## v1.5.8 - 2023-12-27
-
-*   Internal refactoring to use our new silver-nitrate library rather than repeating code across projects.
-
 ## v1.5.7 - 2023-12-22
 
 *   Slightly improve the error message you get if you pass an invalid API key.
