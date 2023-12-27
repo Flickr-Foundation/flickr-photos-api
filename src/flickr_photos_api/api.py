@@ -3,6 +3,11 @@ import xml.etree.ElementTree as ET
 
 from flickr_url_parser import ParseResult, parse_flickr_url
 import httpx
+from nitrate.xml import (
+    find_optional_text,
+    find_required_elem,
+    find_required_text,
+)
 from tenacity import (
     retry,
     retry_if_exception,
@@ -32,9 +37,6 @@ from .types import (
     User,
 )
 from .utils import (
-    find_optional_text,
-    find_required_elem,
-    find_required_text,
     parse_date_posted,
     parse_date_taken,
     parse_date_taken_granularity,
