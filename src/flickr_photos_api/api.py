@@ -208,11 +208,11 @@ class FlickrPhotosApi(BaseApi):
         except KeyError:
             raise LicenseNotFound(license_id=id)
 
-    def lookup_user_by_url(self, *, url: str) -> User:
+    def lookup_user_by_id(self, *, user_id: str) -> User:
         """
         Given the link to a user's photos or profile, return their info.
 
-            >>> api.lookup_user_by_url(user_url="https://www.flickr.com/photos/britishlibrary/")
+            >>> api.lookup_user_by_id(user_id="12403504@N02")
             {
                 "id": "12403504@N02",
                 "username": "The British Library",
@@ -222,19 +222,9 @@ class FlickrPhotosApi(BaseApi):
                 "pathalias": "britishlibrary"
             }
 
-        See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
         See https://www.flickr.com/services/api/flickr.people.getInfo.htm
 
         """
-        # The lookupUser response is of the form:
-        #
-        #       <user id="12403504@N02">
-        #       	<username>The British Library</username>
-        #       </user>
-        #
-        lookup_resp = self.call(method="flickr.urls.lookupUser", params={"url": url})
-        user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
-
         # The getInfo response is of the form:
         #
         #     <person id="12403504@N02" path_alias="britishlibrary" …>
@@ -274,6 +264,35 @@ class FlickrPhotosApi(BaseApi):
             "photos_url": photos_url,
             "profile_url": profile_url,
         }
+
+    def lookup_user_by_url(self, *, url: str) -> User:
+        """
+        Given the link to a user's photos or profile, return their info.
+
+            >>> api.lookup_user_by_url(user_url="https://www.flickr.com/photos/britishlibrary/")
+            {
+                "id": "12403504@N02",
+                "username": "The British Library",
+                "realname": "British Library",
+                "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                "profile_url": "https://www.flickr.com/people/britishlibrary/",
+                "pathalias": "britishlibrary"
+            }
+
+        See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
+        See https://www.flickr.com/services/api/flickr.people.getInfo.htm
+
+        """
+        # The lookupUser response is of the form:
+        #
+        #       <user id="12403504@N02">
+        #       	<username>The British Library</username>
+        #       </user>
+        #
+        lookup_resp = self.call(method="flickr.urls.lookupUser", params={"url": url})
+        user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
+
+        return self.lookup_user_by_id(user_id=user_id)
 
     def _get_date_taken(
         self, *, value: str, granularity: str, unknown: bool

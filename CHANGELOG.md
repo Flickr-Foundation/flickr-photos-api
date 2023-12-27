@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.6.0 - 2023-12-27
+
+*   Add a new method `lookup_user_by_id` for looking up users with their NSID.
+    This allows for slightly faster lookups in cases where you already have the user's NSID, compared to `lookup_user_by_url`.
+
 ## v1.5.7 - 2023-12-22
 
 *   Slightly improve the error message you get if you pass an invalid API key.

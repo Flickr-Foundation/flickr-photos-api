@@ -23,6 +23,11 @@ from utils import get_fixture, jsonify
             id="lookup_user_by_url",
         ),
         pytest.param(
+            "lookup_user_by_id",
+            {"user_id": "1234567@N00"},
+            id="lookup_user_by_id",
+        ),
+        pytest.param(
             "get_single_photo",
             {"photo_id": "12345678901234567890"},
             id="get_single_photo",
@@ -194,6 +199,17 @@ class TestLicenses:
 )
 def test_lookup_user_by_url(api: FlickrPhotosApi, url: str, user: User) -> None:
     assert api.lookup_user_by_url(url=url) == user
+
+
+def test_lookup_user_by_id(api: FlickrPhotosApi) -> None:
+    assert api.lookup_user_by_id(user_id="12403504@N02") == {
+        "id": "12403504@N02",
+        "username": "The British Library",
+        "realname": "British Library",
+        "path_alias": "britishlibrary",
+        "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+        "profile_url": "https://www.flickr.com/people/britishlibrary/",
+    }
 
 
 class TestGetSinglePhoto:
