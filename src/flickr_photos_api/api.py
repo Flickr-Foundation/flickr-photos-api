@@ -825,7 +825,6 @@ class FlickrPhotosApi(BaseApi):
                 per_page=100,
             )
         elif parsed_url["type"] == "user":
-            print(parsed_url["user_url"])
             return self.get_public_photos_by_user(
                 user_url=parsed_url["user_url"], page=parsed_url["page"], per_page=100
             )
