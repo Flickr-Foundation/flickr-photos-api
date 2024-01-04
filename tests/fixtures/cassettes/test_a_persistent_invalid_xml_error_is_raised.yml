@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fnavymedicine%2F
+  response:
+    content: "{\"stat\":\"fail\",\"message\":\"Sorry, the Flickr API service is not currently available.\",\"code\":201},"
+    headers:
+      Content-Type:
+      - text/xml; charset=utf-8
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fnavymedicine%2F
+  response:
+    content: "{\"stat\":\"fail\",\"message\":\"Sorry, the Flickr API service is not currently available.\",\"code\":201},"
+    headers:
+      Content-Type:
+      - text/xml; charset=utf-8
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fnavymedicine%2F
+  response:
+    content: "{\"stat\":\"fail\",\"message\":\"Sorry, the Flickr API service is not currently available.\",\"code\":201},"
+    headers:
+      Content-Type:
+      - text/xml; charset=utf-8
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fnavymedicine%2F
+  response:
+    content: "{\"stat\":\"fail\",\"message\":\"Sorry, the Flickr API service is not currently available.\",\"code\":201},"
+    headers:
+      Content-Type:
+      - text/xml; charset=utf-8
+    http_version: HTTP/1.1
+    status_code: 200

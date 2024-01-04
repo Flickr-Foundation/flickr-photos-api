@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.7.0 - 2024-01-04
+
+*   Add a new exception `InvalidXmlException` which is thrown when the Flickr API returns a response which isn't valid XML.  The error will be retried up to three times in case it's a transient error, and if not, the offending XML is included in the error message.
+
 ## v1.6.0 - 2023-12-27
 
 *   Add a new method `lookup_user_by_id` for looking up users with their NSID.

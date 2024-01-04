@@ -5,6 +5,7 @@ from flickr_photos_api import (
     FlickrPhotosApi,
     FlickrApiException,
     InvalidApiKey,
+    InvalidXmlException,
     ResourceNotFound,
 )
 
@@ -103,17 +104,6 @@ def test_invalid_api_key_is_error(user_agent: str) -> None:
     api.client.close()
 
 
-def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
-    # The cassette for this test was constructed manually: I edited
-    # an existing cassette to add a 500 response as the first response,
-    # then we want to see it make a second request to retry it.
-    resp = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/navymedicine/"
-    )
-
-    assert len(resp["photos"]) == 10
-
-
 def test_a_timeout_is_retried(api: FlickrPhotosApi) -> None:
     # This client throws a timeout error on the first GET request,
     # and then makes regular HTTP requests after that.
@@ -139,6 +129,17 @@ def test_a_timeout_is_retried(api: FlickrPhotosApi) -> None:
     assert len(resp["photos"]) == 10
 
 
+def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add a 500 response as the first response,
+    # then we want to see it make a second request to retry it.
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
+
+    assert len(resp["photos"]) == 10
+
+
 def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
     # The cassette for this test was constructed manually: I copy/pasted
     # the 500 response from the previous test so that there were more
@@ -149,6 +150,27 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
         )
 
     assert err.value.response.status_code == 500
+
+
+def test_retries_invalid_xml_error(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add the invalid XML as the first response,
+    # then we want to see it make a second request to retry it.
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
+
+    assert len(resp["photos"]) == 10
+
+
+def test_a_persistent_invalid_xml_error_is_raised(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I copy/pasted
+    # the invalid XML from the previous test so that there were more
+    # than it would retry.
+    with pytest.raises(InvalidXmlException):
+        api.get_public_photos_by_user(
+            user_url="https://www.flickr.com/photos/navymedicine/"
+        )
 
 
 def test_an_unrecognised_error_is_generic_exception(api: FlickrPhotosApi) -> None:
