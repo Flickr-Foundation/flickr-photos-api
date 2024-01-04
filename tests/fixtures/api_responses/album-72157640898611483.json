@@ -13,10 +13,16 @@
   "page_count": 4,
   "photos": [
     {
-      "date_posted": "2019-11-06T00:55:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-11-06T00:55:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T16:59:38"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T16:59:38"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt Text: An owl with closed eyes near the top of a palm tree.",
       "id": "49021434741",
@@ -104,10 +110,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/49021434741/"
     },
     {
-      "date_posted": "2019-11-06T00:55:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-11-06T00:55:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T16:51:32"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T16:51:32"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt Text: An owl near the top of a palm tree.",
       "id": "49020912923",
@@ -195,10 +207,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/49020912923/"
     },
     {
-      "date_posted": "2019-11-06T00:55:17+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-11-06T00:55:17+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T16:47:41"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T16:47:41"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt Text: An owl near the top of a palm tree.",
       "id": "49021639582",
@@ -286,10 +304,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/49021639582/"
     },
     {
-      "date_posted": "2019-11-06T00:55:17+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-11-06T00:55:17+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T16:36:08"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T16:36:08"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt Text: An owl near the top of a palm tree.",
       "id": "49021436591",
@@ -377,10 +401,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/49021436591/"
     },
     {
-      "date_posted": "2019-11-06T00:55:17+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-11-06T00:55:17+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T16:31:56"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T16:31:56"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt Text: An owl with closed eyes near the top of a palm tree.",
       "id": "49020914453",
@@ -468,10 +498,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/49020914453/"
     },
     {
-      "date_posted": "2019-10-31T18:55:19+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-10-31T18:55:19+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T15:09:01"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T15:09:01"
+        }
       },
       "description": "NPS / Alessandra Puig-Santana\n\nAlt text: A barn owl (Tyto alba) with his head looking back near the top of a palm tree.",
       "id": "48992137491",
@@ -556,10 +592,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/48992137491/"
     },
     {
-      "date_posted": "2019-10-31T18:55:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-10-31T18:55:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-10-29T15:01:19"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-10-29T15:01:19"
+        }
       },
       "description": "NPS / Alessandra Puig-Santana\n\nAlt text: An owl with closed eyes near the top of a palm tree.",
       "id": "48992335797",
@@ -644,10 +686,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/48992335797/"
     },
     {
-      "date_posted": "2019-04-25T23:46:53+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-25T23:46:53+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-04-16T16:28:22"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-04-16T16:28:22"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: Small baby birds nestle in a round nest made of twigs within a spiky cholla cactus.",
       "id": "40733986283",
@@ -728,10 +776,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/40733986283/"
     },
     {
-      "date_posted": "2019-04-25T23:46:54+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-25T23:46:54+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-04-16T16:28:16"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-04-16T16:28:16"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "32757107117",
@@ -812,10 +866,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32757107117/"
     },
     {
-      "date_posted": "2019-04-25T23:46:54+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-25T23:46:54+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-04-08T19:28:49"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-04-08T19:28:49"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "47647261722",
@@ -896,10 +956,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47647261722/"
     },
     {
-      "date_posted": "2019-04-25T23:46:55+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-25T23:46:55+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-04-08T19:28:33"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-04-08T19:28:33"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "32757106377",
@@ -980,10 +1046,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32757106377/"
     },
     {
-      "date_posted": "2019-03-20T23:44:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-03-20T23:44:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-03-15T09:58:11"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-03-15T09:58:11"
+        }
       },
       "description": "NPS/ Shay Spatz",
       "id": "46515565425",
@@ -1062,10 +1134,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/46515565425/"
     },
     {
-      "date_posted": "2019-03-20T23:35:29+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-03-20T23:35:29+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-03-15T09:28:34"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-03-15T09:28:34"
+        }
       },
       "description": "NPS/ Shay Spatz",
       "id": "33554687048",
@@ -1141,10 +1219,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33554687048/"
     },
     {
-      "date_posted": "2019-04-27T21:27:47+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:27:47+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-03-07T11:36:02"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-03-07T11:36:02"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "40750084443",
@@ -1222,10 +1306,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/40750084443/"
     },
     {
-      "date_posted": "2019-04-27T21:35:22+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:35:22+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-03-04T13:32:04"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-03-04T13:32:04"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A roadrunner perches on a branch holding a lizard with its beak.",
       "id": "32773239567",
@@ -1296,17 +1386,21 @@
           "width": 3067
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Greater roadrunner (Geococcyx californianus) with lizard offering",
       "url": "https://www.flickr.com/photos/joshuatreenp/32773239567/"
     },
     {
-      "date_posted": "2019-04-27T21:31:37+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:31:37+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-03-02T18:14:10"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-03-02T18:14:10"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A hummingbird sits in her nest among a tangle of green branches.",
       "id": "33839347748",
@@ -1384,10 +1478,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33839347748/"
     },
     {
-      "date_posted": "2019-04-16T23:40:23+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:23+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:48:44"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:48:44"
+        }
       },
       "description": "NPS / Glauco Puig-Santana\n\nIt's important to drive slowly in the park, especially at night when wildlife are active but difficult to see.",
       "id": "47625552741",
@@ -1458,17 +1558,21 @@
           "width": 3929
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Raven and roadkill",
       "url": "https://www.flickr.com/photos/joshuatreenp/47625552741/"
     },
     {
-      "date_posted": "2019-04-16T23:40:22+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:22+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:47:48"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:47:48"
+        }
       },
       "description": "NPS / Glauco Puig-Santana\nIt's important to drive slowly in the park, especially at night when wildlife are active but difficult to see.",
       "id": "47625553891",
@@ -1539,17 +1643,21 @@
           "width": 4308
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Ravens and roadkill",
       "url": "https://www.flickr.com/photos/joshuatreenp/47625553891/"
     },
     {
-      "date_posted": "2019-04-16T23:40:22+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:22+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:47:28"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:47:28"
+        }
       },
       "description": "NPS / Glauco Puig-Santana\nIt's important to drive slowly in the park, especially at night when wildlife are active but difficult to see.",
       "id": "33748283028",
@@ -1620,17 +1728,21 @@
           "width": 5193
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Ravens and roadkill",
       "url": "https://www.flickr.com/photos/joshuatreenp/33748283028/"
     },
     {
-      "date_posted": "2019-04-16T23:40:21+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:21+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:45:01"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:45:01"
+        }
       },
       "description": "NPS / Glauco Puig-Santana",
       "id": "40659177473",
@@ -1701,17 +1813,21 @@
           "width": 4315
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Red-tailed hawk and Joshua tree",
       "url": "https://www.flickr.com/photos/joshuatreenp/40659177473/"
     },
     {
-      "date_posted": "2019-04-16T23:40:20+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:20+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:44:12"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:44:12"
+        }
       },
       "description": "NPS / Glauco Puig-Santana",
       "id": "46710043795",
@@ -1782,17 +1898,21 @@
           "width": 3104
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Red-tailed hawk and roadkill",
       "url": "https://www.flickr.com/photos/joshuatreenp/46710043795/"
     },
     {
-      "date_posted": "2019-04-16T23:40:19+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-16T23:40:19+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-21T08:43:25"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-21T08:43:25"
+        }
       },
       "description": "NPS / Glauco Puig-Santana",
       "id": "46901244194",
@@ -1863,17 +1983,21 @@
           "width": 2592
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Red-tailed hawk and roadkill",
       "url": "https://www.flickr.com/photos/joshuatreenp/46901244194/"
     },
     {
-      "date_posted": "2019-04-27T21:27:47+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:27:47+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T09:13:31"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T09:13:31"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A quail perches on a branch surrounded by green desert vegetation.",
       "id": "46800219385",
@@ -1951,10 +2075,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/46800219385/"
     },
     {
-      "date_posted": "2019-04-27T21:33:42+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:33:42+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T09:04:25"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T09:04:25"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: Two northern flickers sit in palm fronds over a cluster of palm fruit.",
       "id": "47716570601",
@@ -2032,10 +2162,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47716570601/"
     },
     {
-      "date_posted": "2019-04-27T21:36:36+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:36:36+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T09:01:48"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T09:01:48"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A white-crowned sparrow happily hops with a small round object in its mouth.",
       "id": "40750137553",
@@ -2106,17 +2242,21 @@
           "width": 2282
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "White-crowned sparrow (Zonotrichia leucophrys) with palm fruit",
       "url": "https://www.flickr.com/photos/joshuatreenp/40750137553/"
     },
     {
-      "date_posted": "2019-04-27T21:22:37+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:22:37+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T08:47:07"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T08:47:07"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "47716505701",
@@ -2199,10 +2339,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47716505701/"
     },
     {
-      "date_posted": "2019-04-27T21:22:37+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:22:37+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T08:47:07"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T08:47:07"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "47663515852",
@@ -2285,10 +2431,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47663515852/"
     },
     {
-      "date_posted": "2019-04-27T21:22:36+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:22:36+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-17T08:46:43"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-17T08:46:43"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "47716507401",
@@ -2371,10 +2523,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47716507401/"
     },
     {
-      "date_posted": "2019-04-27T21:24:59+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:24:59+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-10T08:40:44"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-10T08:40:44"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: a hawk with brown and white feathers perches on a branch of a fan palm tree.",
       "id": "47716525831",
@@ -2453,10 +2611,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47716525831/"
     },
     {
-      "date_posted": "2019-04-27T21:25:00+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:25:00+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-10T08:38:37"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-10T08:38:37"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "47663532772",
@@ -2535,10 +2699,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47663532772/"
     },
     {
-      "date_posted": "2019-04-27T21:25:01+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:25:01+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-10T08:38:36"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-10T08:38:36"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "33839300808",
@@ -2617,10 +2787,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33839300808/"
     },
     {
-      "date_posted": "2019-04-27T21:29:26+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:29:26+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2019-02-02T17:49:07"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2019-02-02T17:49:07"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A white great egret stands among creosote on a rainy day.",
       "id": "40750095253",
@@ -2701,10 +2877,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/40750095253/"
     },
     {
-      "date_posted": "2019-04-27T21:31:38+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:31:38+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-12-16T12:53:53"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-12-16T12:53:53"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A Costa's hummingbird hovers above wildflowers and drinks nectar.",
       "id": "33839346788",
@@ -2782,10 +2964,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33839346788/"
     },
     {
-      "date_posted": "2019-04-27T21:27:48+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:27:48+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-12-15T16:25:15"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-12-15T16:25:15"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "40750083433",
@@ -2863,10 +3051,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/40750083433/"
     },
     {
-      "date_posted": "2019-04-27T21:27:46+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:27:46+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-12-15T15:16:34"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-12-15T15:16:34"
+        }
       },
       "description": "NPS / Renata Harrison",
       "id": "40750085043",
@@ -2944,10 +3138,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/40750085043/"
     },
     {
-      "date_posted": "2019-04-27T21:27:46+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:27:46+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-12-15T14:28:02"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-12-15T14:28:02"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A quail, mid-stride and suspended in mid-air, runs across a paved path.\n",
       "id": "46800220365",
@@ -3025,10 +3225,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/46800220365/"
     },
     {
-      "date_posted": "2019-04-27T21:31:38+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2019-04-27T21:31:38+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-11-19T15:41:45"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-11-19T15:41:45"
+        }
       },
       "description": "NPS / Renata Harrison\n\nAlt text: A tiny Costa's hummingbird sits on a far-off branch against a vast gray sky.",
       "id": "47716554311",
@@ -3106,10 +3312,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/47716554311/"
     },
     {
-      "date_posted": "2018-10-25T23:19:28+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:28+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T19:16:28"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T19:16:28"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\n",
       "id": "45507949072",
@@ -3195,10 +3407,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/45507949072/"
     },
     {
-      "date_posted": "2018-10-25T23:19:28+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:28+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T19:15:23"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T19:15:23"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\n",
       "id": "44644124795",
@@ -3284,10 +3502,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/44644124795/"
     },
     {
-      "date_posted": "2018-10-25T23:19:27+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:27+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T19:15:04"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T19:15:04"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\n",
       "id": "44644127765",
@@ -3373,10 +3597,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/44644127765/"
     },
     {
-      "date_posted": "2018-10-25T23:19:27+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:27+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T18:47:06"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T18:47:06"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nThe Greater Yellowleg is a rare sight in the park. This one was likely migrating through in the late spring and stopped at Barker Dam for food and a drink.  \n\nAlt text: A white and brown speckled shorebird with yellow legs walks through shallow water. ",
       "id": "31685686998",
@@ -3460,10 +3690,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31685686998/"
     },
     {
-      "date_posted": "2018-10-25T23:19:26+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:26+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T18:47:03"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T18:47:03"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nThe Greater Yellowleg is a rare sight in the park. This one was likely migrating through in the late spring and stopped at Barker Dam for food and a drink.  \n\nAlt text: A brown and white speckled shorebird with a long bill and long yellow legs dips its bill into shallow water, looking for food.",
       "id": "44644132705",
@@ -3547,10 +3783,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/44644132705/"
     },
     {
-      "date_posted": "2018-10-25T23:19:26+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2018-10-25T23:19:26+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2018-05-09T18:47:00"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2018-05-09T18:47:00"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nThe Greater Yellowleg is a rare sight in the park. This one was likely migrating through in the late spring and stopped at Barker Dam for food and a drink.  ",
       "id": "43740732990",
@@ -3634,10 +3876,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/43740732990/"
     },
     {
-      "date_posted": "2017-10-31T17:43:44+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-10-31T17:43:44+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-10-30T17:28:31"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-10-30T17:28:31"
+        }
       },
       "description": "NPS / Glauco Puig-Santana\n\nAlt text: A tiny green costa's hummingbird with a purple head sits atop a small twig.",
       "id": "26293146609",
@@ -3719,10 +3967,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/26293146609/"
     },
     {
-      "date_posted": "2017-08-19T22:45:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-08-19T22:45:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-05-04T15:15:21"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-05-04T15:15:21"
+        }
       },
       "description": "Perched just outside the park's West Boundary. Owls are some of the harder to spot park inhabitants. \n\nNPS/Hannah Schwalbe",
       "id": "36630962606",
@@ -3806,10 +4060,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/36630962606/"
     },
     {
-      "date_posted": "2017-08-28T20:14:47+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-08-28T20:14:47+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-04-27T18:22:53"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-04-27T18:22:53"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt text: a bird with brown feathers perches on top of green spikes from a Joshua tree.",
       "id": "36736481471",
@@ -3889,10 +4149,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/36736481471/"
     },
     {
-      "date_posted": "2017-08-28T20:14:46+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-08-28T20:14:46+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-04-27T18:22:50"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-04-27T18:22:50"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "36876280445",
@@ -3972,10 +4238,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/36876280445/"
     },
     {
-      "date_posted": "2017-08-28T20:14:46+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-08-28T20:14:46+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-04-27T18:21:12"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-04-27T18:21:12"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt text: a bird with disorganized brown feathers perches on top of green spikes from a Joshua tree.",
       "id": "36067782373",
@@ -4055,10 +4327,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/36067782373/"
     },
     {
-      "date_posted": "2017-04-10T21:07:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-04-10T21:07:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-23T18:09:14"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-23T18:09:14"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33832000471",
@@ -4141,10 +4419,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33832000471/"
     },
     {
-      "date_posted": "2017-03-31T22:25:14+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:14+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:36:42"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:36:42"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33378082190",
@@ -4226,10 +4510,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33378082190/"
     },
     {
-      "date_posted": "2017-03-31T22:25:11+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:11+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:35:53"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:35:53"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33721734626",
@@ -4311,10 +4601,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33721734626/"
     },
     {
-      "date_posted": "2017-03-31T22:25:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:35:41"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:35:41"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33378080680",
@@ -4396,10 +4692,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33378080680/"
     },
     {
-      "date_posted": "2017-03-31T22:25:10+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:10+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:35:35"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:35:35"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33633601601",
@@ -4481,10 +4783,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33633601601/"
     },
     {
-      "date_posted": "2017-03-31T22:25:12+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:12+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:35:25"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:35:25"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33633592731",
@@ -4566,10 +4874,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33633592731/"
     },
     {
-      "date_posted": "2017-03-31T22:25:13+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:13+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:34:31"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:34:31"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33378084920",
@@ -4651,10 +4965,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33378084920/"
     },
     {
-      "date_posted": "2017-03-31T22:25:11+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:11+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:29:58"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:29:58"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "32949751173",
@@ -4736,10 +5056,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32949751173/"
     },
     {
-      "date_posted": "2017-03-31T22:25:11+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:11+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:29:55"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:29:55"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "33633597131",
@@ -4821,10 +5147,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33633597131/"
     },
     {
-      "date_posted": "2017-03-31T22:25:10+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-31T22:25:10+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-22T09:10:51"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-22T09:10:51"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "32919511814",
@@ -4906,10 +5238,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32919511814/"
     },
     {
-      "date_posted": "2017-03-17T20:32:48+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-17T20:32:48+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-15T11:56:05"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-15T11:56:05"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33368883441",
@@ -4992,10 +5330,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33368883441/"
     },
     {
-      "date_posted": "2017-03-17T20:32:48+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-17T20:32:48+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-15T11:52:10"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-15T11:52:10"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33341120212",
@@ -5078,10 +5422,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33341120212/"
     },
     {
-      "date_posted": "2017-03-16T19:11:19+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:19+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T17:38:04"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T17:38:04"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "32664351143",
@@ -5170,10 +5520,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32664351143/"
     },
     {
-      "date_posted": "2017-03-16T19:11:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T17:37:48"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T17:37:48"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33437625536",
@@ -5262,10 +5618,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33437625536/"
     },
     {
-      "date_posted": "2017-03-16T19:11:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T17:36:52"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T17:36:52"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "32635298424",
@@ -5354,10 +5716,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32635298424/"
     },
     {
-      "date_posted": "2017-03-16T19:11:17+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:17+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T17:36:38"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T17:36:38"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33322509322",
@@ -5446,10 +5814,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33322509322/"
     },
     {
-      "date_posted": "2017-03-16T19:11:16+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:16+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T16:54:36"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T16:54:36"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33350369341",
@@ -5539,10 +5913,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33350369341/"
     },
     {
-      "date_posted": "2017-03-16T19:11:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T16:49:49"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T16:49:49"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33350378881",
@@ -5631,10 +6011,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33350378881/"
     },
     {
-      "date_posted": "2017-03-16T19:11:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T16:46:14"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T16:46:14"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33322536122",
@@ -5722,10 +6108,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33322536122/"
     },
     {
-      "date_posted": "2017-03-16T19:11:13+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:13+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T16:42:17"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T16:42:17"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33322611082",
@@ -5814,10 +6206,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33322611082/"
     },
     {
-      "date_posted": "2017-03-16T19:11:19+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-03-16T19:11:19+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-03-08T16:42:06"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-03-08T16:42:06"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "33095017500",
@@ -5906,10 +6304,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/33095017500/"
     },
     {
-      "date_posted": "2017-02-18T22:04:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-02-18T22:04:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2017-02-03T15:29:00"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2017-02-03T15:29:00"
+        }
       },
       "description": "NPS / Brad Sutton",
       "id": "32133748614",
@@ -5996,10 +6400,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/32133748614/"
     },
     {
-      "date_posted": "2016-12-07T21:01:12+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:12+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T15:01:27"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T15:01:27"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31120579320",
@@ -6081,10 +6491,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31120579320/"
     },
     {
-      "date_posted": "2016-12-07T21:01:12+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:12+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T15:01:07"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T15:01:07"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "30650775364",
@@ -6166,10 +6582,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30650775364/"
     },
     {
-      "date_posted": "2016-12-07T21:01:11+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:11+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T13:08:35"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T13:08:35"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31120589340",
@@ -6251,10 +6673,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31120589340/"
     },
     {
-      "date_posted": "2016-12-07T21:01:09+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:09+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T12:01:07"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T12:01:07"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31454484296",
@@ -6336,10 +6764,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31454484296/"
     },
     {
-      "date_posted": "2016-12-07T21:01:17+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:17+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T09:57:28"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T09:57:28"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31345341962",
@@ -6423,10 +6857,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31345341962/"
     },
     {
-      "date_posted": "2016-12-07T21:01:16+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:16+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-06T09:57:18"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-06T09:57:18"
+        }
       },
       "description": "NPS/Hannah Schwalbe\n\nAlt text: A hawk sitting on top of a large boulder against a blue sky.",
       "id": "31345350132",
@@ -6510,10 +6950,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31345350132/"
     },
     {
-      "date_posted": "2016-12-07T21:01:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-04T13:40:15"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-04T13:40:15"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31491785695",
@@ -6595,10 +7041,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31491785695/"
     },
     {
-      "date_posted": "2016-12-07T21:01:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-04T13:38:37"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-04T13:38:37"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31345355352",
@@ -6680,10 +7132,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31345355352/"
     },
     {
-      "date_posted": "2016-12-07T21:01:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-04T13:34:45"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-04T13:34:45"
+        }
       },
       "description": "NPS / Hannah Schwalbe\n\nAlt text: A greater roadrunner (Geococcyx californianus) stands on sandy ground as its tailfeathers are illuminated shades of blue and green by the sun.\n\nRoadrunner tail feathers typically look black, but in just the right light multiple colors can be seen. ",
       "id": "30682851463",
@@ -6765,10 +7223,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30682851463/"
     },
     {
-      "date_posted": "2016-12-07T21:01:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:15+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-04T12:23:12"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-04T12:23:12"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "30650749574",
@@ -6850,10 +7314,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30650749574/"
     },
     {
-      "date_posted": "2016-12-07T21:01:13+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-07T21:01:13+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-12-04T11:26:40"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-12-04T11:26:40"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "30650766524",
@@ -6935,10 +7405,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30650766524/"
     },
     {
-      "date_posted": "2016-12-01T23:53:35+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-01T23:53:35+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-11-29T15:17:16"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-11-29T15:17:16"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "30993795700",
@@ -7021,10 +7497,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30993795700/"
     },
     {
-      "date_posted": "2016-12-01T23:53:35+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-01T23:53:35+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-11-29T15:04:57"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-11-29T15:04:57"
+        }
       },
       "description": "Many animals eat the fruit of the desert palm tree including this white-crowned sparrow. \n\nNPS/Hannah Schwalbe",
       "id": "30541101814",
@@ -7107,10 +7589,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30541101814/"
     },
     {
-      "date_posted": "2016-12-01T23:53:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-01T23:53:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-11-29T15:04:56"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-11-29T15:04:56"
+        }
       },
       "description": "Many animals eat the fruit of the desert palm tree including this juvenile white-crowned sparrow. \n\nNPS / Hannah Schwalbe",
       "id": "31326686376",
@@ -7193,10 +7681,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31326686376/"
     },
     {
-      "date_posted": "2016-12-01T23:53:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-12-01T23:53:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-11-29T15:02:13"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-11-29T15:02:13"
+        }
       },
       "description": "NPS/Hannah Schwalbe",
       "id": "31247916371",
@@ -7282,10 +7776,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/31247916371/"
     },
     {
-      "date_posted": "2016-10-18T17:14:39+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-10-18T17:14:39+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-10-12T17:03:45"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-10-12T17:03:45"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "30374294396",
@@ -7371,10 +7871,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/30374294396/"
     },
     {
-      "date_posted": "2016-09-21T19:15:28+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-09-21T19:15:28+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-02-25T17:56:20"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-02-25T17:56:20"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "29756596001",
@@ -7459,10 +7965,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/29756596001/"
     },
     {
-      "date_posted": "2016-09-21T21:50:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-09-21T21:50:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-02-25T17:54:49"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-02-25T17:54:49"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "29758913021",
@@ -7546,10 +8058,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/29758913021/"
     },
     {
-      "date_posted": "2016-02-08T01:15:37+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-02-08T01:15:37+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2016-02-02T17:29:00"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2016-02-02T17:29:00"
+        }
       },
       "description": "NPS/ Hannah Schwalbe",
       "id": "24884604535",
@@ -7631,10 +8149,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/24884604535/"
     },
     {
-      "date_posted": "2015-10-07T15:43:26+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:26+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:57:35"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:57:35"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "22031144541",
@@ -7719,10 +8243,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/22031144541/"
     },
     {
-      "date_posted": "2015-10-07T15:43:26+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:26+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:56:53"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:56:53"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21833116010",
@@ -7807,10 +8337,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21833116010/"
     },
     {
-      "date_posted": "2015-10-07T15:43:25+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:25+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:55:39"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:55:39"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "22021289285",
@@ -7895,10 +8431,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/22021289285/"
     },
     {
-      "date_posted": "2015-10-07T15:43:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:55:14"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:55:14"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21400039143",
@@ -7985,10 +8527,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21400039143/"
     },
     {
-      "date_posted": "2015-10-07T15:43:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:53:19"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:53:19"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21398417714",
@@ -8075,10 +8623,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21398417714/"
     },
     {
-      "date_posted": "2015-10-07T15:43:33+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:33+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:51:34"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:51:34"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21400065653",
@@ -8165,10 +8719,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21400065653/"
     },
     {
-      "date_posted": "2015-10-07T15:43:33+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:33+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:51:04"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:51:04"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "22021220465",
@@ -8255,10 +8815,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/22021220465/"
     },
     {
-      "date_posted": "2015-10-07T15:43:32+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:32+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:50:56"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:50:56"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21834317359",
@@ -8345,10 +8911,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21834317359/"
     },
     {
-      "date_posted": "2015-10-07T15:43:31+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:31+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:49:58"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:49:58"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21834325379",
@@ -8435,10 +9007,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21834325379/"
     },
     {
-      "date_posted": "2015-10-07T15:43:31+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:31+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:48:50"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:48:50"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21833401558",
@@ -8525,10 +9103,16 @@
       "url": "https://www.flickr.com/photos/joshuatreenp/21833401558/"
     },
     {
-      "date_posted": "2015-10-07T15:43:30+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-10-07T15:43:30+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-10-06T17:48:19"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-10-06T17:48:19"
+        }
       },
       "description": "NPS/Brad Sutton",
       "id": "21834337789",

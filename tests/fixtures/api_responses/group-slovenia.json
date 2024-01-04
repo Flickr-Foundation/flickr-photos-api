@@ -6,10 +6,16 @@
   "page_count": 4453,
   "photos": [
     {
-      "date_posted": "2023-11-15T00:16:44+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-15T00:16:44+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-09-26T18:27:44"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-09-26T18:27:44"
+        }
       },
       "description": "Ljubljana, Slovenia",
       "id": "53333201595",
@@ -90,10 +96,16 @@
       "url": "https://www.flickr.com/photos/98623843@N05/53333201595/"
     },
     {
-      "date_posted": "2023-11-15T07:06:27+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-15T07:06:27+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-05T13:22:33"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-05T13:22:33"
+        }
       },
       "description": "Behind is Martuljek Group, Julian Alps.",
       "id": "53333423543",
@@ -180,10 +192,16 @@
       "url": "https://www.flickr.com/photos/37075433@N00/53333423543/"
     },
     {
-      "date_posted": "2023-11-15T07:06:27+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-15T07:06:27+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-05T13:29:38"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-05T13:29:38"
+        }
       },
       "description": "Behind is the massif of Prisojnik, Julian Alps.",
       "id": "53332320022",
@@ -270,10 +288,16 @@
       "url": "https://www.flickr.com/photos/37075433@N00/53332320022/"
     },
     {
-      "date_posted": "2023-11-14T15:29:35+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T15:29:35+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-03T09:32:15"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-03T09:32:15"
+        }
       },
       "description": null,
       "id": "53331959248",
@@ -353,10 +377,16 @@
       "url": "https://www.flickr.com/photos/29022619@N03/53331959248/"
     },
     {
-      "date_posted": "2023-11-14T15:29:35+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T15:29:35+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-03T11:22:36"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-03T11:22:36"
+        }
       },
       "description": null,
       "id": "53330861932",
@@ -435,10 +465,16 @@
       "url": "https://www.flickr.com/photos/29022619@N03/53330861932/"
     },
     {
-      "date_posted": "2023-11-14T15:29:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T15:29:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-09-30T01:25:01"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-09-30T01:25:01"
+        }
       },
       "description": null,
       "id": "53331773996",
@@ -517,10 +553,16 @@
       "url": "https://www.flickr.com/photos/29022619@N03/53331773996/"
     },
     {
-      "date_posted": "2023-11-14T15:29:33+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T15:29:33+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-08-30T09:37:15"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-08-30T09:37:15"
+        }
       },
       "description": null,
       "id": "53332098734",
@@ -592,17 +634,23 @@
         "sea",
         "waves",
         "gulfoftrieste",
-        "tržaškizaliv",
+        "tr\u017ea\u0161kizaliv",
         "morje"
       ],
       "title": "Storm in Gulf of Trieste",
       "url": "https://www.flickr.com/photos/29022619@N03/53332098734/"
     },
     {
-      "date_posted": "2023-11-14T15:29:33+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T15:29:33+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-10-28T09:29:18"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-10-28T09:29:18"
+        }
       },
       "description": null,
       "id": "53332008793",
@@ -679,10 +727,16 @@
       "url": "https://www.flickr.com/photos/29022619@N03/53332008793/"
     },
     {
-      "date_posted": "2023-11-14T09:22:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T09:22:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-05T13:27:21"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-05T13:27:21"
+        }
       },
       "description": "Hiking above Kranjska Gora, on the Karawanks side of Sava valley has the advantage of enjoying great views on Julian Alps.",
       "id": "53331580779",
@@ -772,10 +826,16 @@
       "url": "https://www.flickr.com/photos/37075433@N00/53331580779/"
     },
     {
-      "date_posted": "2023-11-14T09:22:18+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2023-11-14T09:22:18+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2023-11-05T13:18:30"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2023-11-05T13:18:30"
+        }
       },
       "description": "The best times for autumn colours are already over, but some scenes are still fine.",
       "id": "53331465898",
