@@ -2,6 +2,7 @@ from .api import FlickrPhotosApi
 from .exceptions import (
     FlickrApiException,
     InvalidApiKey,
+    InvalidXmlException,
     ResourceNotFound,
     LicenseNotFound,
 )
@@ -25,7 +26,7 @@ from .types import (
 )
 
 
-__version__ = "1.6.0"
+__version__ = "1.7.0"
 
 
 __all__ = [
@@ -33,6 +34,7 @@ __all__ = [
     "FlickrApiException",
     "ResourceNotFound",
     "InvalidApiKey",
+    "InvalidXmlException",
     "LicenseNotFound",
     "License",
     "LocationInfo",

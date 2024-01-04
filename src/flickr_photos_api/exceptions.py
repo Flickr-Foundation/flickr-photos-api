@@ -9,6 +9,14 @@ class FlickrApiException(Exception):
     pass
 
 
+class InvalidXmlException(FlickrApiException):
+    """
+    Thrown when we get invalid XML from the Flickr API.
+    """
+
+    pass
+
+
 class InvalidApiKey(FlickrApiException):
     """
     Thrown when you try to use an API key with an invalid format.

@@ -19,6 +19,7 @@ from tenacity import (
 from .exceptions import (
     FlickrApiException,
     InvalidApiKey,
+    InvalidXmlException,
     LicenseNotFound,
     ResourceNotFound,
 )
@@ -55,6 +56,9 @@ def is_retryable(exc: BaseException) -> bool:
         return True
 
     if isinstance(exc, httpx.ReadTimeout):
+        return True
+
+    if isinstance(exc, InvalidXmlException):
         return True
 
     return False
@@ -106,10 +110,18 @@ class BaseApi:
         # fine here -- we're only using it for responses from the Flickr API,
         # which we trust.
         #
+        # However, on occasion I have seen it return error messages in
+        # JSON rather than XML, which causes this method to fail -- make
+        # sure we log the offending text, and allow it to be retried as
+        # a temporary failure.
+        #
         # [1]: https://docs.python.org/3/library/xml.etree.elementtree.html
-        xml = ET.fromstring(resp.text)
-
-        # print(resp.text)
+        try:
+            xml = ET.fromstring(resp.text)
+        except ET.ParseError as err:
+            raise InvalidXmlException(
+                f"Unable to parse response as XML ({resp.text!r}), got error {err}"
+            )
 
         # If the Flickr API call fails, it will return a block of XML like:
         #
