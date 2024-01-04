@@ -8,15 +8,21 @@
       "realname": "Jeong Vin Yoon",
       "username": "Jeong Vin, Yoon"
     },
-    "title": "포트폴리오 제작용"
+    "title": "\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \uc81c\uc791\uc6a9"
   },
   "page_count": 9,
   "photos": [
     {
-      "date_posted": "2016-09-26T06:13:00+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2016-09-26T06:13:00+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-05-18T16:11:59"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-05-18T16:11:59"
+        }
       },
       "description": null,
       "id": "18250964001",
@@ -91,13 +97,16 @@
         "seoul",
         "streetphotography",
         "travel",
-        "한옥마을"
+        "\ud55c\uc625\ub9c8\uc744"
       ],
       "title": "Seoul",
       "url": "https://www.flickr.com/photos/spike_yun/18250964001/"
     },
     {
-      "date_posted": "2015-07-22T08:52:55+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-07-22T08:52:55+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "19722996319",
@@ -176,10 +185,16 @@
       "url": "https://www.flickr.com/photos/spike_yun/19722996319/"
     },
     {
-      "date_posted": "2015-07-24T09:49:34+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-07-24T09:49:34+00:00"
+      },
       "date_taken": {
         "granularity": "second",
-        "value": "2015-07-22T19:48:40"
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2015-07-22T19:48:40"
+        }
       },
       "description": null,
       "id": "19777368608",
@@ -250,14 +265,15 @@
           "width": 3264
         }
       ],
-      "tags": [
-
-      ],
+      "tags": [],
       "title": "Jiri Mountain",
       "url": "https://www.flickr.com/photos/spike_yun/19777368608/"
     },
     {
-      "date_posted": "2015-08-16T08:38:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-16T08:38:15+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "19995531304",
@@ -332,7 +348,7 @@
         "nikon",
         "streetphotography",
         "seoul",
-        "명동",
+        "\uba85\ub3d9",
         "streettogs",
         "vscocam"
       ],
@@ -340,7 +356,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/19995531304/"
     },
     {
-      "date_posted": "2015-08-16T12:11:21+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-16T12:11:21+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20434367760",
@@ -416,7 +435,7 @@
         "streetphotography",
         "korea",
         "seoul",
-        "명동",
+        "\uba85\ub3d9",
         "streettogs",
         "vscocam"
       ],
@@ -424,7 +443,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/20434367760/"
     },
     {
-      "date_posted": "2015-08-18T13:29:04+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-18T13:29:04+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20671286152",
@@ -507,7 +529,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/20671286152/"
     },
     {
-      "date_posted": "2015-08-27T03:54:30+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-27T03:54:30+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20889037076",
@@ -591,7 +616,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/20889037076/"
     },
     {
-      "date_posted": "2015-08-28T21:30:15+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-28T21:30:15+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20967567081",
@@ -674,7 +702,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/20967567081/"
     },
     {
-      "date_posted": "2015-08-29T09:01:55+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-08-29T09:01:55+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20351005903",
@@ -759,7 +790,10 @@
       "url": "https://www.flickr.com/photos/spike_yun/20351005903/"
     },
     {
-      "date_posted": "2015-09-01T03:00:45+00:00",
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2015-09-01T03:00:45+00:00"
+      },
       "date_taken": null,
       "description": null,
       "id": "20428374183",
