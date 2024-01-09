@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.8.0 - 2024-01-09
+
+*   Fix a bug where some photos would be returned with location information, even though the location accuracy is `0`, which means it's so vague as to be unusable.
+*   Reshuffle some of the internal utility methods to make them slightly easier to reuse in downstream code.
+
 ## v1.7.0 - 2024-01-04
 
 *   Add a new exception `InvalidXmlException` which is thrown when the Flickr API returns a response which isn't valid XML.  The error will be retried up to three times in case it's a transient error, and if not, the offending XML is included in the error message.

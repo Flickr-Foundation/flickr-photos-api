@@ -341,16 +341,19 @@ class TestCollectionsPhotoResponse:
         assert all(photo["original_format"] is None for photo in resp["photos"])
 
     def test_discards_location_if_accuracy_zero(self, api: FlickrPhotosApi) -> None:
-        # This is an album where every photo has some geo/location information,
-        # but the accuracy parameter is 0, which we treat as such low accuracy
-        # as to be unusable.
+        # This retrieves an album which a photo that has location accuracy 0,
+        # so we want to make sure we discard the location info.
         resp = api.get_photos_in_album(
-            user_url="https://www.flickr.com/photos/rudrpeter/",
-            album_id="72157633859840285",
-            per_page=1,
+            user_url="https://www.flickr.com/photos/howardtj/",
+            album_id="72157710756587587",
+            per_page=500,
         )
 
-        assert all(photo["location"] is None for photo in resp["photos"])
+        photo_from_album = [
+            photo for photo in resp["photos"] if photo["id"] == "53283697350"
+        ][0]
+
+        assert photo_from_album["location"] is None
 
 
 class TestGetAlbum:
