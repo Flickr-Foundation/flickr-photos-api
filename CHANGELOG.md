@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.8.1 - 2024-03-21
+
+*   Fix a bug where looking up videos could throw a ValueError.
+
 ## v1.8.0 - 2024-01-09
 
 *   Fix a bug where some photos would be returned with location information, even though the location accuracy is `0`, which means it's so vague as to be unusable.

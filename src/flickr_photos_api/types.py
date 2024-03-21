@@ -34,18 +34,11 @@ class DateTaken(TypedDict):
     granularity: TakenGranularity
 
 
-class NewSize(TypedDict):
-    width: int
-    height: int
-    media: str
-    source: str
-
-
 class Size(TypedDict):
     label: str
-    width: int
-    height: int
-    media: str
+    width: int | None
+    height: int | None
+    media: Literal["photo", "video"]
     source: str
 
 
