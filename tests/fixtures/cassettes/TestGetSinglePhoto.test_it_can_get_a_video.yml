@@ -1,0 +1,220 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=4960396261
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+      id=\"4960396261\" secret=\"18120df31a\" server=\"4118\" farm=\"5\" dateuploaded=\"1283708608\"
+      isfavorite=\"0\" license=\"0\" safety_level=\"0\" rotation=\"0\" originalsecret=\"db574f5a7d\"
+      originalformat=\"jpg\" views=\"486\" media=\"video\">\n\t<owner nsid=\"91178292@N00\"
+      username=\"Bram Pitoyo\" realname=\"Bram Pitoyo\" location=\"Wellington, New
+      Zealand\" iconserver=\"4366\" iconfarm=\"5\" path_alias=\"brampitoyo\">\n\t\t<gift
+      gift_eligible=\"1\" new_flow=\"1\">\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations
+      />\n\t\t\t<eligible_durations />\n\t\t</gift>\n\t</owner>\n\t<title>Chandni
+      Chowk Bazaar, 360\xB0</title>\n\t<description />\n\t<visibility ispublic=\"1\"
+      isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1283708608\" taken=\"2010-09-05
+      10:43:28\" takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1283787057\"
+      />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+      cancomment=\"1\" canaddmeta=\"0\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+      canprint=\"0\" canshare=\"1\" />\n\t<comments>2</comments>\n\t<notes />\n\t<people
+      haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"5127903-4960396261-5898\" author=\"91178292@N00\"
+      authorname=\"Bram Pitoyo\" raw=\"Delhi\" machine_tag=\"0\">delhi</tag>\n\t\t<tag
+      id=\"5127903-4960396261-393\" author=\"91178292@N00\" authorname=\"Bram Pitoyo\"
+      raw=\"India\" machine_tag=\"0\">india</tag>\n\t\t<tag id=\"5127903-4960396261-362057\"
+      author=\"91178292@N00\" authorname=\"Bram Pitoyo\" raw=\"Chandni\" machine_tag=\"0\">chandni</tag>\n\t\t<tag
+      id=\"5127903-4960396261-362058\" author=\"91178292@N00\" authorname=\"Bram Pitoyo\"
+      raw=\"Chowk\" machine_tag=\"0\">chowk</tag>\n\t\t<tag id=\"5127903-4960396261-26234\"
+      author=\"91178292@N00\" authorname=\"Bram Pitoyo\" raw=\"bazaar\" machine_tag=\"0\">bazaar</tag>\n\t\t<tag
+      id=\"5127903-4960396261-4566\" author=\"91178292@N00\" authorname=\"Bram Pitoyo\"
+      raw=\"market\" machine_tag=\"0\">market</tag>\n\t</tags>\n\t<location latitude=\"28.656738\"
+      longitude=\"77.230796\" accuracy=\"14\" context=\"0\">\n\t\t<locality woeid=\"2295019\">New
+      Delhi</locality>\n\t\t<county woeid=\"28743737\">Central Delhi</county>\n\t\t<region
+      woeid=\"20070458\">Delhi</region>\n\t\t<country woeid=\"23424848\">India</country>\n\t\t<neighbourhood
+      woeid=\"29215723\">Chandni Chowk Area</neighbourhood>\n\t</location>\n\t<geoperms
+      ispublic=\"1\" iscontact=\"0\" isfriend=\"0\" isfamily=\"0\" />\n\t<urls>\n\t\t<url
+      type=\"photopage\">https://www.flickr.com/photos/brampitoyo/4960396261/</url>\n\t</urls>\n\t<video
+      ready=\"1\" failed=\"0\" pending=\"0\" duration=\"23\" width=\"640\" height=\"480\"
+      />\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 21 Mar 2024 12:03:39 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 a4fe4605acede182bb5c399b9c69b8c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 7Axj2pMhCqk4oAZDH3z-I_ic_NJhzayOgVl8M74o6pm-dwTCzhZzjA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-65fc221b-72417443156ef7662c19d6bd;Root=1-65fc221b-127406b3699532f45618ab11
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.5.219
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=4960396261
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+      canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\" width=\"75\"
+      height=\"75\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_s.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/sq/\" media=\"photo\"
+      />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_q.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/q/\" media=\"photo\"
+      />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"75\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_t.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/t/\" media=\"photo\"
+      />\n\t<size label=\"Small\" width=\"240\" height=\"180\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_m.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/s/\" media=\"photo\"
+      />\n\t<size label=\"Small 320\" width=\"320\" height=\"240\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_n.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/n/\" media=\"photo\"
+      />\n\t<size label=\"Small 400\" width=\"400\" height=\"300\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_w.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/w/\" media=\"photo\"
+      />\n\t<size label=\"Medium\" width=\"500\" height=\"375\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/m/\" media=\"photo\"
+      />\n\t<size label=\"Medium 640\" width=\"640\" height=\"480\" source=\"https://live.staticflickr.com/4118/4960396261_18120df31a_z.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/z/\" media=\"photo\"
+      />\n\t<size label=\"Original\" width=\"640\" height=\"480\" source=\"https://live.staticflickr.com/4118/4960396261_db574f5a7d_o.jpg\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/sizes/o/\" media=\"photo\"
+      />\n\t<size label=\"Video Player\" width=\"640\" height=\"480\" source=\"https://www.flickr.com/apps/video/stewart.swf?v=1710975344&amp;photo_id=4960396261&amp;photo_secret=18120df31a\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/\" media=\"video\"
+      />\n\t<size label=\"700\" width=\"\" height=\"\" source=\"https://www.flickr.com/photos/brampitoyo/4960396261/play/700/18120df31a/\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/\" media=\"video\"
+      />\n\t<size label=\"iphone_wifi\" width=\"\" height=\"\" source=\"https://www.flickr.com/photos/brampitoyo/4960396261/play/iphone_wifi/18120df31a/\"
+      url=\"https://www.flickr.com/photos/brampitoyo/4960396261/\" media=\"video\"
+      />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 21 Mar 2024 12:03:39 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 a4fe4605acede182bb5c399b9c69b8c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - cuuG-X0QijYlpKOVzy_nCAGIqQDGZo3j6txFxiFHosh67D_bZTQ3Bw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-65fc221b-14043d877f31a3cf44eb30df;Root=1-65fc221b-6af6b2061f3ec77f1c6fd87b
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.16.171
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+      id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+      License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+      id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+      />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+      url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license id=\"2\"
+      name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+      />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+      url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license id=\"5\"
+      name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+      />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+      />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+      />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+      />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+      />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 21 Mar 2024 12:03:40 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 a4fe4605acede182bb5c399b9c69b8c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - X304GUsZGZZhkIEQTCzNP2_ZcJUy-7vUDBadM8uZpZMzhQ_Ig62hdg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-65fc221b-72416e830e71db0d6b61ec99;Root=1-65fc221b-39818a513f9e641624e1af07
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.3.152
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

@@ -122,12 +122,17 @@ def parse_sizes(photo_elem: ET.Element) -> list[Size]:
         ("o", "Original"),
     ]:
         try:
+            media = photo_elem.attrib["media"]
+
+            if media not in ("video", "photo"):  # pragma: no cover
+                raise ValueError(f"Unrecognised media: {media!r}")
+
             sizes.append(
                 {
                     "height": int(photo_elem.attrib[f"height_{suffix}"]),
                     "width": int(photo_elem.attrib[f"width_{suffix}"]),
                     "label": label,
-                    "media": photo_elem.attrib["media"],
+                    "media": media,  # type: ignore
                     "source": photo_elem.attrib[f"url_{suffix}"],
                 }
             )

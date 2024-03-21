@@ -274,6 +274,17 @@ class TestGetSinglePhoto:
 
         assert photo["location"] is None
 
+    def test_it_can_get_a_video(self, api: FlickrPhotosApi) -> None:
+        video = api.get_single_photo(photo_id="4960396261")
+
+        assert video["sizes"][-1] == {
+            "label": "iphone_wifi",
+            "width": None,
+            "height": None,
+            "source": "https://www.flickr.com/photos/brampitoyo/4960396261/play/iphone_wifi/18120df31a/",
+            "media": "video",
+        }
+
 
 class TestCollectionsPhotoResponse:
     """
@@ -354,6 +365,12 @@ class TestCollectionsPhotoResponse:
         ][0]
 
         assert photo_from_album["location"] is None
+
+    def test_can_get_collection_with_videos(self, api: FlickrPhotosApi) -> None:
+        api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/brampitoyo/",
+            album_id="72157624715342071",
+        )
 
 
 class TestGetAlbum:

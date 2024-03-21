@@ -36,9 +36,9 @@ class DateTaken(TypedDict):
 
 class Size(TypedDict):
     label: str
-    width: int
-    height: int
-    media: str
+    width: int | None
+    height: int | None
+    media: Literal["photo", "video"]
     source: str
 
 

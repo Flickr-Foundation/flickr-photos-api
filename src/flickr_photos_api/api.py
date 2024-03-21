@@ -420,15 +420,39 @@ class FlickrPhotosApi(BaseApi):
         sizes: list[Size] = []
 
         for s in sizes_resp.findall(".//size"):
-            sizes.append(
-                {
-                    "label": s.attrib["label"],
-                    "width": int(s.attrib["width"]),
-                    "height": int(s.attrib["height"]),
-                    "media": s.attrib["media"],
-                    "source": s.attrib["source"],
-                }
-            )
+            if s.attrib["media"] == "photo":
+                sizes.append(
+                    {
+                        "label": s.attrib["label"],
+                        "width": int(s.attrib["width"]),
+                        "height": int(s.attrib["height"]),
+                        "media": "photo",
+                        "source": s.attrib["source"],
+                    }
+                )
+
+            elif s.attrib["media"] == "video":
+                try:
+                    width = int(s.attrib["width"])
+                except ValueError:
+                    width = None
+
+                try:
+                    height = int(s.attrib["height"])
+                except ValueError:
+                    height = None
+
+                sizes.append(
+                    {
+                        "label": s.attrib["label"],
+                        "width": width,
+                        "height": height,
+                        "media": "video",
+                        "source": s.attrib["source"],
+                    }
+                )
+            else:  # pragma: no cover
+                raise ValueError(f"Unrecognised media type: {s.attrib['media']}")
 
         # We have two options with tags: we can use the 'raw' version
         # entered by the user, or we can use the normalised version in
