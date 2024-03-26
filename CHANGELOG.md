@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.9.1 - 2024-03-26
+
+*   Remember to expose the `UserInfo` type at the top level.
+    Now you can import it as `from flickr_photos_api import UserInfo`.
+
 ## v1.9.0 - 2024-03-26
 
 *   Return more information from the `lookup_user_by_id()` and `lookup_user_by_url()` methods.

@@ -9,6 +9,7 @@ from .exceptions import (
 from .types import (
     License,
     User,
+    UserInfo,
     TakenGranularity,
     DateTaken,
     LocationInfo,
@@ -26,7 +27,7 @@ from .types import (
 )
 
 
-__version__ = "1.9.0"
+__version__ = "1.9.1"
 
 
 __all__ = [
@@ -39,6 +40,7 @@ __all__ = [
     "License",
     "LocationInfo",
     "User",
+    "UserInfo",
     "TakenGranularity",
     "DateTaken",
     "Size",
