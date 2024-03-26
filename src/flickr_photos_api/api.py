@@ -59,6 +59,21 @@ def is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, InvalidXmlException):
         return True
 
+    # Sometimes we get an error from the Flickr API like:
+    #
+    #     <err
+    #       code="201"
+    #       msg="Sorry, the Flickr API service is not currently available."
+    #     />
+    #
+    # but this indicates a flaky connection rather than a genuine failure.
+    if (
+        isinstance(exc, FlickrApiException)
+        and isinstance(exc.args[0], dict)
+        and exc.args[0].get("code") == "201"
+    ):
+        return True
+
     return False
 
 
