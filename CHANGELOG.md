@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.9.0 - 2024-03-26
+
+*   Return more information from the `lookup_user_by_id()` and `lookup_user_by_url()` methods.
+
+    In particular, they now return a new type `UserInfo` which includes three new fields:
+    
+    - `count_photos` (int)
+    - `description` (str or None)
+    - `has_pro_account` (bool)
+
 ## v1.8.2 - 2024-03-26
 
 *   Retry errors with code 201 from the Flickr API, which usually indicates a transient issue rather than a permanent failure.

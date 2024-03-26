@@ -34,6 +34,7 @@ from .types import (
     SinglePhoto,
     Size,
     User,
+    UserInfo,
 )
 from .utils import (
     parse_date_posted,
@@ -233,7 +234,7 @@ class FlickrPhotosApi(BaseApi):
         except KeyError:
             raise LicenseNotFound(license_id=id)
 
-    def lookup_user_by_id(self, *, user_id: str) -> User:
+    def lookup_user_by_id(self, *, user_id: str) -> UserInfo:
         """
         Given the link to a user's photos or profile, return their info.
 
@@ -244,7 +245,10 @@ class FlickrPhotosApi(BaseApi):
                 "realname": "British Library",
                 "photos_url": "https://www.flickr.com/photos/britishlibrary/",
                 "profile_url": "https://www.flickr.com/people/britishlibrary/",
-                "pathalias": "britishlibrary"
+                "pathalias": "britishlibrary",
+                "description": "The British Library’s collections…",
+                "has_pro_account": True,
+                "count_photos": 1234,
             }
 
         See https://www.flickr.com/services/api/flickr.people.getInfo.htm
@@ -255,8 +259,12 @@ class FlickrPhotosApi(BaseApi):
         #     <person id="12403504@N02" path_alias="britishlibrary" …>
         #   	<username>The British Library</username>
         #       <realname>British Library</realname>
-        #       <photosurl>https://www.flickr.com/photos/britishlibrary/</photosurl>
-        #       <profileurl>https://www.flickr.com/people/britishlibrary/</profileurl>
+        #       <description>The British Library’s collections…</description>
+        #       <photosurl>flickr.com/photos/britishlibrary/</photosurl>
+        #       <profileurl>flickr.com/people/britishlibrary/</profileurl>
+        #       <photos>
+        #         <count>1234</count>
+        #       </photos>
         #       …
         #     </person>
         #
@@ -269,8 +277,15 @@ class FlickrPhotosApi(BaseApi):
         username = find_required_text(person_elem, path="username")
         photos_url = find_required_text(person_elem, path="photosurl")
         profile_url = find_required_text(person_elem, path="profileurl")
+        description = find_optional_text(person_elem, path="description")
 
         path_alias = person_elem.attrib["path_alias"] or None
+
+        photos_elem = find_required_elem(person_elem, path="photos")
+        count_photos = int(find_required_text(photos_elem, path="count"))
+
+        # This is a 0/1 boolean attribute
+        has_pro_account = person_elem.attrib["ispro"] == "1"
 
         # If the user hasn't set a realname in their profile, the element
         # will be absent from the response.
@@ -285,12 +300,15 @@ class FlickrPhotosApi(BaseApi):
             "id": user_id,
             "username": username,
             "realname": realname,
+            "description": description,
+            "has_pro_account": has_pro_account,
             "path_alias": path_alias,
             "photos_url": photos_url,
             "profile_url": profile_url,
+            "count_photos": count_photos,
         }
 
-    def lookup_user_by_url(self, *, url: str) -> User:
+    def lookup_user_by_url(self, *, url: str) -> UserInfo:
         """
         Given the link to a user's photos or profile, return their info.
 
@@ -301,7 +319,10 @@ class FlickrPhotosApi(BaseApi):
                 "realname": "British Library",
                 "photos_url": "https://www.flickr.com/photos/britishlibrary/",
                 "profile_url": "https://www.flickr.com/people/britishlibrary/",
-                "pathalias": "britishlibrary"
+                "pathalias": "britishlibrary",
+                "description": "The British Library’s collections…",
+                "has_pro_account": True,
+                "count_photos": 1234,
             }
 
         See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
@@ -576,7 +597,14 @@ class FlickrPhotosApi(BaseApi):
                     "profile_url": f"https://www.flickr.com/people/{path_alias or owner_name}/",
                 }
             else:
-                owner = collection_owner
+                owner = {
+                    "id": collection_owner["id"],
+                    "username": collection_owner["username"],
+                    "realname": collection_owner["realname"],
+                    "path_alias": collection_owner["path_alias"],
+                    "photos_url": collection_owner["photos_url"],
+                    "profile_url": collection_owner["profile_url"],
+                }
 
             assert owner["photos_url"].endswith("/")
             url = owner["photos_url"] + photo_id + "/"
@@ -631,7 +659,16 @@ class FlickrPhotosApi(BaseApi):
         """
         Get the photos in an album.
         """
-        user = self.lookup_user_by_url(url=user_url)
+        user_info = self.lookup_user_by_url(url=user_url)
+
+        user: User = {
+            "id": user_info["id"],
+            "username": user_info["username"],
+            "realname": user_info["realname"],
+            "path_alias": user_info["path_alias"],
+            "photos_url": user_info["photos_url"],
+            "profile_url": user_info["profile_url"],
+        }
 
         # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
         resp = self.call(
@@ -804,8 +841,6 @@ class FlickrPhotosApi(BaseApi):
         This can throw a ``NotAFlickrUrl`` and ``UnrecognisedUrl`` exceptions.
         """
         parsed_url = parse_flickr_url(url)
-
-        print(parsed_url)
 
         return self.get_photos_from_parsed_flickr_url(parsed_url)
 

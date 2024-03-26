@@ -23,6 +23,12 @@ class User(TypedDict):
     profile_url: str
 
 
+class UserInfo(User):
+    description: str | None
+    has_pro_account: bool
+    count_photos: int
+
+
 # Represents the accuracy to which we know a date taken to be true.
 #
 # See https://www.flickr.com/services/api/misc.dates.html
