@@ -109,6 +109,7 @@ class TestLookupUser:
             "path_alias": None,
             "photos_url": "https://www.flickr.com/photos/199246608@N02/",
             "profile_url": "https://www.flickr.com/people/199246608@N02/",
+            "count_photos": 38,
         }
 
     def test_lookup_user_by_url_doesnt_use_username(self, api: FlickrPhotosApi) -> None:
@@ -133,6 +134,7 @@ class TestLookupUser:
             "profile_url": "https://www.flickr.com/people/alexwlchan/",
             "description": "Tech lead at the Flickr Foundation.",
             "has_pro_account": False,
+            "count_photos": 1,
         }
 
     @pytest.mark.parametrize(

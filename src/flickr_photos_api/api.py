@@ -248,6 +248,7 @@ class FlickrPhotosApi(BaseApi):
                 "pathalias": "britishlibrary",
                 "description": "The British Library’s collections…",
                 "has_pro_account": True,
+                "count_photos": 1234,
             }
 
         See https://www.flickr.com/services/api/flickr.people.getInfo.htm
@@ -259,8 +260,11 @@ class FlickrPhotosApi(BaseApi):
         #   	<username>The British Library</username>
         #       <realname>British Library</realname>
         #       <description>The British Library’s collections…</description>
-        #       <photosurl>https://www.flickr.com/photos/britishlibrary/</photosurl>
-        #       <profileurl>https://www.flickr.com/people/britishlibrary/</profileurl>
+        #       <photosurl>flickr.com/photos/britishlibrary/</photosurl>
+        #       <profileurl>flickr.com/people/britishlibrary/</profileurl>
+        #       <photos>
+        #         <count>1234</count>
+        #       </photos>
         #       …
         #     </person>
         #
@@ -276,6 +280,9 @@ class FlickrPhotosApi(BaseApi):
         description = find_optional_text(person_elem, path="description")
 
         path_alias = person_elem.attrib["path_alias"] or None
+
+        photos_elem = find_required_elem(person_elem, path="photos")
+        count_photos = int(find_required_text(photos_elem, path="count"))
 
         # This is a 0/1 boolean attribute
         has_pro_account = person_elem.attrib["ispro"] == "1"
@@ -298,6 +305,7 @@ class FlickrPhotosApi(BaseApi):
             "path_alias": path_alias,
             "photos_url": photos_url,
             "profile_url": profile_url,
+            "count_photos": count_photos,
         }
 
     def lookup_user_by_url(self, *, url: str) -> UserInfo:
@@ -314,6 +322,7 @@ class FlickrPhotosApi(BaseApi):
                 "pathalias": "britishlibrary",
                 "description": "The British Library’s collections…",
                 "has_pro_account": True,
+                "count_photos": 1234,
             }
 
         See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
