@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.8.2 - 2024-03-26
+
+*   Retry errors with code 201 from the Flickr API, which usually indicates a transient issue rather than a permanent failure.
+    This should make using the API slightly more reliable.
+
 ## v1.8.1 - 2024-03-21
 
 *   Fix a bug where looking up videos could throw a ValueError.

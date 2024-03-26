@@ -173,6 +173,32 @@ def test_a_persistent_invalid_xml_error_is_raised(api: FlickrPhotosApi) -> None:
         )
 
 
+def test_retries_error_code_201(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add the invalid XML as the first response,
+    # then we want to see it make a second request to retry it.
+    resp = api.get_public_photos_by_user(
+        user_url="https://www.flickr.com/photos/navymedicine/"
+    )
+
+    assert len(resp["photos"]) == 10
+
+
+def test_a_persistent_error_201_is_raised(api: FlickrPhotosApi) -> None:
+    # The cassette for this test was constructed manually: I edited
+    # an existing cassette to add the invalid XML as the first response,
+    # then we want to see it make a second request to retry it.
+    with pytest.raises(FlickrApiException) as exc:
+        api.get_public_photos_by_user(
+            user_url="https://www.flickr.com/photos/navymedicine/"
+        )
+
+    assert exc.value.args[0] == {
+        "code": "201",
+        "msg": "Sorry, the Flickr API service is not currently available.",
+    }
+
+
 def test_an_unrecognised_error_is_generic_exception(api: FlickrPhotosApi) -> None:
     with pytest.raises(FlickrApiException) as exc:
         api.call(method="flickr.test.null")
