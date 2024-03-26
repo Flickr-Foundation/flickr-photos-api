@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=35591378%40N03
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+      id=\"35591378@N03\" nsid=\"35591378@N03\" ispro=\"1\" is_deleted=\"0\" iconserver=\"475\"
+      iconfarm=\"1\" path_alias=\"obamawhitehouse\" has_stats=\"0\" pro_badge=\"standard\"
+      expire=\"0\" has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>Obama
+      White House Archived</username>\n\t<location>Washington, DC</location>\n\t<timezone
+      label=\"Eastern Time (US &amp; Canada)\" offset=\"-05:00\" timezone_id=\"EST5EDT\"
+      timezone=\"14\" />\n\t<description>This account will be maintained by the National
+      Archives and Records Administration (NARA) and will serve as an archive of Obama
+      Administration content.</description>\n\t<photosurl>https://www.flickr.com/photos/obamawhitehouse/</photosurl>\n\t<profileurl>https://www.flickr.com/people/obamawhitehouse/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/obamawhitehouse/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2005-06-12
+      01:25:15</firstdatetaken>\n\t\t<firstdate>1240962741</firstdate>\n\t\t<count>6668</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 26 Mar 2024 10:54:07 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 454abb506de84114b90eb4ff9b2798f6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BkiDlE1lU22AV2x46KBqcKiEGfEHxBFH3vSNONP6JXIdJ0xkaIFnUw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6602a94f-541cf270384bf7f7574b6274;Root=1-6602a94f-7890698d39e50db35ee29cdb
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.39.10
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

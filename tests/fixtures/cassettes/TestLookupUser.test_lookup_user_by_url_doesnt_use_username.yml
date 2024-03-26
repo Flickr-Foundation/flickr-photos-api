@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fbritishlibrary%2F
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<user
+      id=\"12403504@N02\">\n\t<username>The British Library</username>\n</user>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 26 Mar 2024 10:55:37 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cebcb0d17c62ea30e361587bfe114ca0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - TdrixgZ7_IhigNpNECX_k3VjYSBIsxopPR1reO2qAoun1J26i33x4w==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6602a9a9-17443d383b22fc2e5f461797;Root=1-6602a9a9-570be90c2bc8f81503ad9747
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.16.171
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=12403504%40N02
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+      id=\"12403504@N02\" nsid=\"12403504@N02\" ispro=\"1\" is_deleted=\"0\" iconserver=\"65535\"
+      iconfarm=\"66\" path_alias=\"britishlibrary\" has_stats=\"0\" pro_badge=\"standard\"
+      expire=\"2025666000\" has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>The
+      British Library</username>\n\t<realname>British Library</realname>\n\t<description>Can&#039;t
+      find our images? They&#039;re now listed as type &#039;illustration/art&#039;
+      (not &#039;photos&#039;), so you&#039;ll need to &lt;a href=&quot;https://www.flickr.com/search/?advanced=1&amp;amp;content_types=0,2&amp;amp;video_content_types=0,1,2,3&quot;&gt;use
+      Advanced Search to find our images&lt;/a&gt;. Find out how to &#039;&lt;a href=&quot;https://www.flickrhelp.com/hc/en-us/articles/19964841478036&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;Search by Content Type&lt;/a&gt;&#039;
+      and &#039;&lt;a href=&quot;https://www.flickrhelp.com/hc/en-us/articles/4404381838100&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;Using Advanced Search&lt;/a&gt;&#039;.\n\n--\nThe
+      British Library\u2019s collections on Flickr Commons offer access to millions
+      of public domain images, which we encourage you to explore and &lt;a href=&quot;https://www.bl.uk/about-us/terms-and-conditions/content-on-flickr-and-wikimedia-commons&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;re-use&lt;/a&gt;. The &lt;a href=&quot;https://www.bl.uk/about-us/terms-and-conditions/content-on-flickr-and-wikimedia-commons&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;release of these collections into the
+      public domain&lt;/a&gt; represent the Library&#039;s desire to improve knowledge
+      of and about them, to enable novel and unexpected ways of using them, and to
+      begin working with researchers to explore and interpret large scale digital
+      collections.\n\nPublic Domain Mark and CC0 images from British Library collections
+      are being made available to increase access and encourage reuse of our open
+      materials. These works are marked \u201Cno known copyright restrictions\u201D,
+      indicating that the British Library is unaware of any current copyright restrictions
+      on these works. Please see our &lt;a href=&quot;https://www.bl.uk/help/ethical-terms-of-use&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;ethical terms of use&lt;/a&gt; statement
+      for culturally sensitive images.\n\nThe &lt;a href=&quot;http://britishlibrary.typepad.co.uk/digital-scholarship/2013/12/a-million-first-steps.html&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;first set&lt;/a&gt; we have added come
+      from a &lt;a href=&quot;http://labs.bl.uk/&quot; rel=&quot;noreferrer nofollow&quot;&gt;British
+      Library Labs&lt;/a&gt; project dubbed the &lt;a href=&quot;http://mechanicalcurator.tumblr.com&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;Mechanical Curator&lt;/a&gt;, which located
+      more than a million images from within our digitised collection of over 65,000
+      books from the 17th, 18th and 19th centuries. \n\nThis account is managed by
+      the British Library Digital Research Team. You can follow us on Mastodon &lt;a
+      href=&quot;https://techhub.social/@BL_DigiSchol&quot; rel=&quot;noreferrer nofollow&quot;&gt;@BL_DigiSchol@techhub.social
+      &lt;/a&gt; or Bluesky &lt;a href=&quot;https://bsky.app/profile/bldigischol.bsky.social&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;@bldigischol.bsky.social&lt;/a&gt;, or
+      get in touch by emailing &lt;a href=&quot;mailto:digitalresearch@bl.uk&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;digitalresearch@bl.uk&lt;/a&gt;.\n\n&lt;i&gt;The
+      British Library is the national library of the United Kingdom and one of the
+      world&#039;s greatest libraries. We hold over 14 million books, 920,000 journal
+      and newspaper titles, 57 million patents, 3 million sound recordings, and much,
+      much more. &lt;/i&gt;</description>\n\t<photosurl>https://www.flickr.com/photos/britishlibrary/</photosurl>\n\t<profileurl>https://www.flickr.com/people/britishlibrary/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/britishlibrary/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>1823-01-01
+      00:00:00</firstdatetaken>\n\t\t<firstdate>1385042795</firstdate>\n\t\t<count>1073589</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 26 Mar 2024 10:55:38 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cebcb0d17c62ea30e361587bfe114ca0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - xLz3qw8xM72Go7BSPb_fhkskIy9mTk42Fk9XpD3i6cy1K8kdWa7VFQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6602a9a9-014a44e3582dc31b2588d906;Root=1-6602a9a9-69e549f174b1aeb63a27f9a3
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.32.246
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

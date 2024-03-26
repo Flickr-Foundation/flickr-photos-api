@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=199258389%40N04
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+      id=\"199258389@N04\" nsid=\"199258389@N04\" ispro=\"0\" is_deleted=\"0\" iconserver=\"65535\"
+      iconfarm=\"66\" path_alias=\"alexwlchan\" has_stats=\"0\" has_adfree=\"0\" has_free_standard_shipping=\"0\"
+      has_free_educational_resources=\"0\">\n\t<username>alexwlchan</username>\n\t<realname>Alex
+      Chan</realname>\n\t<location />\n\t<description>Tech lead at the Flickr Foundation.</description>\n\t<photosurl>https://www.flickr.com/photos/alexwlchan/</photosurl>\n\t<profileurl>https://www.flickr.com/people/alexwlchan/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/alexwlchan/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2024-02-07
+      06:26:16</firstdatetaken>\n\t\t<firstdate>1707315985</firstdate>\n\t\t<count>1</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 26 Mar 2024 10:48:19 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 37e34b9c40877c3dfcda3d91f889e98e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - oxiXQyNgFnosvi4dlRIu0rAXgYo4FPo_oLxF8oky6SsfQLmZ5I-vXw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6602a7f3-220b5ab65526f1e604e1c201;Root=1-6602a7f3-433b0190653cfce25da796c5
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.32.246
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
