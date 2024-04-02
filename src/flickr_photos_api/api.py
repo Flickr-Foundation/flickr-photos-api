@@ -13,7 +13,7 @@ from tenacity import (
     retry_if_exception,
     RetryError,
     stop_after_attempt,
-    wait_fixed,
+    wait_random_exponential,
 )
 
 from .exceptions import (
@@ -107,8 +107,8 @@ class BaseApi:
 
     @retry(
         retry=retry_if_exception(is_retryable),
-        stop=stop_after_attempt(3),
-        wait=wait_fixed(1),
+        stop=stop_after_attempt(5),
+        wait=wait_random_exponential(),
     )
     def _call_api(self, *, method: str, params: dict[str, str] | None) -> ET.Element:
         if params is not None:
