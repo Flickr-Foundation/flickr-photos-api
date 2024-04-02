@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.9.2 - 2024-04-02
+
+*   Tweak the retrying on flaky API calls to (i) retry up to 5 times, up from 1 and (ii) use an exponential backoff to wait between retries.  Both of these should make it more likely that a flaky API call will eventually succeed.
+
 ## v1.9.1 - 2024-03-26
 
 *   Remember to expose the `UserInfo` type at the top level.
