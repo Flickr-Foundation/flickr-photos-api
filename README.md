@@ -3,10 +3,15 @@
 This is a library for getting information about photos from the Flickr API.
 
 It's not a general-purpose Flickr API library.
-Instead, it focuses on providing information about photos and photo collections.
-It tries to abstract away some of the details of the Flickr API -- for example, licenses are returned as complete dictionaries, rather than as the numeric license IDs returned by Flickr API methods.
+It's designed for use at the [Flickr Foundation], and provides a subset of Flickr API methods with the following goals:
 
-Examples:
+*   Abstract away some of the details of the Flickr API -- for example, licenses are returned as complete dictionaries, rather than as the numeric license IDs returned by Flickr API methods.
+
+*   Apply types to all results, so the Flickr API can be used safely in a typed context.
+
+[Flickr Foundation]: https://www.flickr.org/
+
+## Examples
 
 ```console
 >>> from flickr_photos_api import FlickrPhotosApi
@@ -23,12 +28,6 @@ Examples:
 >>> photo["url"]
 'https://www.flickr.com/photos/lassennps/14898030836/'
 ```
-
-This library was created for use in [Flinumeratr], [Flickypedia], and other [Flickr Foundation] projects.
-
-[Flinumeratr]: https://github.com/Flickr-Foundation/flinumeratr
-[Flickypedia]: https://commons.wikimedia.org/wiki/Commons:Flickypedia
-[Flickr Foundation]: https://www.flickr.org/
 
 ## Usage
 
