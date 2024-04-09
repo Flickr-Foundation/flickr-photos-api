@@ -7,6 +7,7 @@ from .exceptions import (
     LicenseNotFound,
 )
 from .types import (
+    Comment,
     License,
     User,
     UserInfo,
@@ -27,7 +28,7 @@ from .types import (
 )
 
 
-__version__ = "1.9.2"
+__version__ = "1.10.0"
 
 
 __all__ = [
@@ -42,6 +43,7 @@ __all__ = [
     "User",
     "UserInfo",
     "TakenGranularity",
+    "Comment",
     "DateTaken",
     "Size",
     "SafetyLevel",

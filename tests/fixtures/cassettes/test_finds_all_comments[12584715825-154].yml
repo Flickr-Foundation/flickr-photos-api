@@ -1,0 +1,1290 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=12584715825
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<comments
+      photo_id=\"12584715825\">\n\t<comment id=\"47267889-12584715825-72157641105783494\"
+      author=\"79549245@N06\" author_is_deleted=\"0\" authorname=\"DannyM8\" iconserver=\"8129\"
+      iconfarm=\"9\" datecreate=\"1392630182\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641105783494\"
+      path_alias=\"\" realname=\"\">Having read the above I understand where you are
+      and I am sure you took a long time to make this decision.\n\n&lt;b&gt; That
+      said - I believe you have made a bad decision. &lt;/b&gt;\n\nAny other Library
+      in the world would give their right arm to have a commons presence half as good
+      as you have.\nYour operation is world class and a great credit to the NLI and
+      all who work there.\nThere must be a solution that would allow the photostream
+      continue, could the regular commentators help?\n\nI would ask the people who
+      regularly look at this photostream to join me in asking you to reconsider this
+      decision.\n\np.s. Nice Dog</comment>\n\t<comment id=\"47267889-12584715825-72157641106082494\"
+      author=\"39191857@N05\" author_is_deleted=\"0\" authorname=\"Swordscookie\"
+      iconserver=\"3461\" iconfarm=\"4\" datecreate=\"1392630817\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641106082494\"
+      path_alias=\"swordscookie\" realname=\"\">I agree with what Danny has just written.
+      \ I realise the demands on the staff running and working in the National Library
+      and the amount of time this must take to research, choose, digitise and then
+      upload each shot with the moderation that is necessary if you are to keep spammers
+      out.  \nOn the other hand this stream was reaching all over the world and garnering
+      valuable information on the photographs and the time when they were taken.  It
+      would be a pity to lose the momentum that has been gained and I for one would
+      be happy to help in a practical way if that were possible!\nWell trained dogs
+      are a great asset, going to your rivals house would be really good training:-)</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641106503443\" author=\"38401430@N06\" author_is_deleted=\"0\"
+      authorname=\"billh35\" iconserver=\"2885\" iconfarm=\"3\" datecreate=\"1392632587\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641106503443\"
+      path_alias=\"\" realname=\"\">Having seen this I have written to NLI -  &lt;a
+      href=&quot;http://www.flickr.com/groups/2095211@N25/discuss/72157641106924204/&quot;&gt;www.flickr.com/groups/2095211@N25/discuss/72157641106924204/&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641103263655\" author=\"75556178@N05\" author_is_deleted=\"0\"
+      authorname=\"Inverarra\" iconserver=\"7189\" iconfarm=\"8\" datecreate=\"1392632831\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641103263655\"
+      path_alias=\"\" realname=\"Mike\">The greatest enemy of data gathering on old
+      photographs is Time. Danny and Swordscookie have made very valuable points and
+      I can only add that every week that goes by must make it more difficult to gather
+      personal information and reminiscences. Great photo and a great doggy yarn.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641108574894\" author=\"24469639@N00\" author_is_deleted=\"0\"
+      authorname=\"whatsthatpicture\" iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1392636075\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641108574894\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">[http://www.flickr.com/photos/79549245@N06]
+      [http://www.flickr.com/photos/swordscookie] [http://www.flickr.com/photos/38401430@N06]
+      [http://www.flickr.com/photos/75556178@N05]  I&#039;d echo what you&#039;re
+      all saying here, having worked in the cultural sector on digital projects for
+      many, many years. I&#039;ve also read with interest your comments on the previous
+      thread. I&#039;d also add that not just any Library, but particularly any commercial
+      company, would give big bucks to have someone who could build and engage with
+      an audience the same way that this photostream has done for the last few years.\n\nIt&#039;s
+      ironic that a reason given here is to allow information to be integrated into
+      the catalogue, something that is relatively easy using the API, compared with,
+      say, trying to harness information from Twitter replies or Facebook comments.
+      And also that the stock reply seems to be to look at the online catalogue, which
+      although good by most museums&#039; standards is still difficult to use and
+      crucially has no crowdsourcing or social elements to it.\n\nI&#039;ll end with
+      a few NL Ireland stats that I hope give some perspective and objectiveness (though
+      it&#039;s hard to find directly comparable metrics, and they&#039;re rather
+      hastily thrown together so could do with verifying):\n\nFlickr Commons \n- taking
+      the image before last as a typical example (&lt;a href=&quot;http://www.flickr.com/photos/nlireland/12218808006/&quot;&gt;www.flickr.com/photos/nlireland/12218808006/&lt;/a&gt;)
+      this has had 33,356 views, 110 favourites and 11 comments. The comments have
+      identified the date and are generally very informed (and to coin a social media
+      phrase, the commenters are very &#039;engaged&#039;).\n- as was posted on the
+      previous image, the most popular image has had over 250,000 &#039;views&#039;,
+      and a number of images have had over 100 comments (with high tens being the
+      norm from what I have seen)\n\nTwitter\n- the most popular recent @nlireland
+      tweet (&lt;a href=&quot;https://twitter.com/NLIreland/status/434260885830258688&quot;
+      rel=&quot;nofollow&quot;&gt;twitter.com/NLIreland/status/434260885830258688&lt;/a&gt;)
+      has had 41 retweets, 19 favourites and five replies, four of which were along
+      the lines of &#039;How sweet&#039;.\n- there have been about 340 links to &lt;a
+      href=&quot;http://catalogue.nli.ie/*&quot; rel=&quot;nofollow&quot;&gt;catalogue.nli.ie/*&lt;/a&gt;
+      in tweets over the last two years or so. In roughly the same period there were
+      660 links to flickr.com/photos/nlireland/*\n\nFacebook\n- the recent post of
+      WW1 images for Valentine&#039;s Day attracted 90 likes, 42 shares and 5 comments\n\nPinterest\n-
+      I also always find Pinterest a great indicative measure of engagement and if
+      you take a look at &lt;a href=&quot;http://www.pinterest.com/source/catalogue.nli.ie/&quot;
+      rel=&quot;nofollow&quot;&gt;www.pinterest.com/source/catalogue.nli.ie/&lt;/a&gt;
+      I can see just 264 Pins in two years, which is very low. Unfortunately you can
+      only do this at domain level so it is not possible (as far as I know) to just
+      look at a specific Flickr photostream, but I suspect The NLI Flickr Commons
+      images would be very well represented.\n\nThinking with my professional hat
+      on, I would love to take a look at the NLI site&#039;s web stats and also their
+      Flickr stats and check referrals from these channels as this would give a must
+      more meaningful measure of &#039;success&#039;.</comment>\n\t<comment id=\"47267889-12584715825-72157641109132324\"
+      author=\"56225952@N06\" author_is_deleted=\"0\" authorname=\"richard39a\" iconserver=\"4131\"
+      iconfarm=\"5\" datecreate=\"1392637179\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641109132324\"
+      path_alias=\"\" realname=\"Richard Cowdell\">An appalling decision. I regret
+      to say it but I suspect you are stopping posting temporarily in the hope that
+      we will just lose interest and go away and you will then stop on a permanent
+      basis using lack of interest in the site as an excuse. Given the incredible
+      amount of erudition evident in the comments on this site there are surely numerous
+      people in and around Dublin who could continue the posting and who would &#039;sell
+      their soul&#039; to do so. The photographs posted on this site have greatly
+      increased my appreciation of Irish history and encouraged me to read extensively
+      on the subject, something we are not taught in schools in the UK (in 1968, believe
+      it or not,  Parnell and Home Rule were mentioned as a sideline to Victorian
+      History and that was it), and literature. It is an invaluable site for anyone
+      with an interest in and who appreciates the works of James Joyce and considering
+      the amount of quotations from Joyce are many. Please can you reconsider your
+      decision and resume your posting sooner rather than later.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641106545545\" author=\"30622421@N03\" author_is_deleted=\"0\"
+      authorname=\"Vab2009\" iconserver=\"8533\" iconfarm=\"9\" datecreate=\"1392639491\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641106545545\"
+      path_alias=\"vab2009\" realname=\"\">Hmmm .... what to say. I think to abandon
+      this project will be the NLI&#039;s loss. I believe that there was an award
+      for the project? A lot of the Flickr researchers are of the age that know how
+      to carry out research and verify it, but are also at retirement age so have
+      the skills and the dual benefits of time and memories going back over  50 or
+      60 years. That is a highly prized combination which I suggest should be used
+      before they die off! And all for free!</comment>\n\t<comment id=\"47267889-12584715825-72157641110363744\"
+      author=\"8214568@N08\" author_is_deleted=\"0\" authorname=\"Gerry Ward\" iconserver=\"5330\"
+      iconfarm=\"6\" datecreate=\"1392639528\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110363744\"
+      path_alias=\"gerryward\" realname=\"Gerry Ward\">This is a monumental mistake
+      by NLI.\n\nThe digitalisation of our nation\u2019s photographic archives and
+      publication on Flickr has provided an opportunity for interested parties to
+      research and comment.  The interest in Ireland\u2019s history that this site
+      has inspired is phenomenal \u2013 as evidenced by the number of views and comments
+      that each photograph provokes.\n\nThis is the wrong decision and I join the
+      others above in asking NLI to reconsider and reverse it!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641110845224\" author=\"54968992@N03\" author_is_deleted=\"0\"
+      authorname=\"ClickKen04\" iconserver=\"3800\" iconfarm=\"4\" datecreate=\"1392640392\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110845224\"
+      path_alias=\"photoken04\" realname=\"\">To whom it concerns, I suspected that
+      once Carol left that the (historical baton), would be dropped and the brilliant,
+      tenacious task that she carried around the world would be no more.....how my
+      instinct was right!\n\nThe &amp;quot;decision&amp;quot; taken is like the the
+      way lots of (Typical) Irish Historical decisions are taken, the perception of
+      &amp;quot;unimportance&amp;quot; \nHistorians would have loved pictures of the
+      Battle of Clontarf, or of many similar historic incidents, instead we got artistic
+      &amp;quot;impressions,&amp;quot; yet we have an abundance of Photographic records
+      of the Irish state developing and what is happening it??\n\nConsigned to some
+      big massive file some where that will be ignored or forgotten about till another
+      &amp;quot;Carol&amp;quot; comes along with the knowledge, tenacity, for sight
+      &amp;amp;  intelligence she had to keep the site going!\n\nWhat&#039;s that
+      old expression, &amp;quot;if you don&#039;t learn from history, you keep repeating
+      the same mistakes, over and over&amp;quot;\n\nPlease excuse the exact wording
+      but the sentiment is I think, understood!\n\nReview, rethink, return!!!\n\nIt
+      made me think, if the NLI found the big Trunk of Father Browns negatives, what
+      would they have done with them?\nRegards, Ken</comment>\n\t<comment id=\"47267889-12584715825-72157641110870463\"
+      author=\"30622421@N03\" author_is_deleted=\"0\" authorname=\"Vab2009\" iconserver=\"8533\"
+      iconfarm=\"9\" datecreate=\"1392641307\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110870463\"
+      path_alias=\"vab2009\" realname=\"\">I will add that I worked in a museum and
+      too much of the collection remained archived and not seen. There is a limited
+      time to gather the information from the generation that have been helping you
+      with this project on Flickr... they will die. At this time their memories go
+      back to the 1950s and provide a link to the changes that have occurred at many
+      of the locations photographed.</comment>\n\t<comment id=\"47267889-12584715825-72157641108032305\"
+      author=\"63996328@N05\" author_is_deleted=\"0\" authorname=\"Meglatron\" iconserver=\"5064\"
+      iconfarm=\"6\" datecreate=\"1392642173\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641108032305\"
+      path_alias=\"meglatron\" realname=\"\">Please don&#039;t stop this project!
+      I am just an ordinary person in the USA, but have become fascinated with your
+      beautiful country and her history. Please reconsider your decision to take a
+      break.</comment>\n\t<comment id=\"47267889-12584715825-72157641112458803\" author=\"40708286@N07\"
+      author_is_deleted=\"1\" authorname=\"sparkling chicken\" iconserver=\"0\" iconfarm=\"0\"
+      datecreate=\"1392644060\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641112458803\"
+      path_alias=\"bellster\" realname=\"\">Speaking from Australia you would be very
+      foolish to stop this project  and the insight into the history of your fascinating
+      country.</comment>\n\t<comment id=\"47267889-12584715825-72157641113163224\"
+      author=\"79549245@N06\" author_is_deleted=\"0\" authorname=\"DannyM8\" iconserver=\"8129\"
+      iconfarm=\"9\" datecreate=\"1392644415\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641113163224\"
+      path_alias=\"\" realname=\"\">&lt;a href=&quot;http://www.irishtimes.com/culture/national-library-increases-its-exposure-by-sharing-pictures-on-google-platform-1.1579973&quot;
+      rel=&quot;nofollow&quot;&gt;www.irishtimes.com/culture/national-library-increases-its...&lt;/a&gt;\n\nIn
+      this article from the Irish Times from last November the NLI said with regards
+      to the Google Cultural Institute.\n\n\u201CWhat this does is it allows us to
+      take advantage of the platform that\u2019s there to put those photographs online
+      . . . and bring them to the attention of people all over the world,\u201D said
+      xxx xxx , head of services at the library.\n\n&lt;b&gt;\u2018Tip of the iceberg\u2019
+      &lt;/b&gt;\nShe said the library intends to make significantly more items available.
+      \u201CThe National Library has 5.3 million photographs so that\u2019s definitely
+      the tip of the iceberg; the plan is to facilitate as much of the material as
+      possible, ultimately millions and millions of items,\u201D she said.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641110348525\" author=\"8468254@N02\" author_is_deleted=\"0\"
+      authorname=\"derangedlemur\" iconserver=\"232\" iconfarm=\"1\" datecreate=\"1392646103\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110348525\"
+      path_alias=\"\" realname=\"\">Hear, hear! Say No to NLI Flickr Shutdown!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641110754305\" author=\"35727396@N03\" author_is_deleted=\"0\"
+      authorname=\"chrisper2009\" iconserver=\"3561\" iconfarm=\"4\" datecreate=\"1392646737\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110754305\"
+      path_alias=\"\" realname=\"chris routledge\">Thank you Danny for alerting me
+      to the above and thank you for the invitation to comment. Since discovering
+      the NLI site I have been a regular visitor. It seems to be the only Commons
+      site where the active involvement of the many contributors (not least Danny8)
+      have led to the discovery of so much more information which can only add to
+      this great catalogue of history. My Great Grandparents were born somewhere round
+      Sligo, Fermanagh so I have a vested interest in keeping my eye open. Unfortunately
+      Major Ruttledge-Fair is doubtfully related. \n\nUnlike the American Congress
+      Commons site, the many contributors to this site, add so much more interest.
+      I am sorry to hear the decision to pause. You may be dispensing with a great
+      asset in those many contributors mentioned. I would ask you to reconsider -
+      Chris Routledge</comment>\n\t<comment id=\"47267889-12584715825-72157641110914345\"
+      author=\"13073434@N03\" author_is_deleted=\"0\" authorname=\"robinparkes\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1392647002\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641110914345\"
+      path_alias=\"\" realname=\"Robin Parkes\">It would be a sad day if NLI on The
+      Commons ceased to function. We have had many good discussions and a lot of detective
+      work done in order to identify the location of many of the photos that were
+      posted never mind the historical background to the photographs. This information
+      is priceless. I would plead with those in charge of the account to keep it open
+      and resume posting as soon as practical.</comment>\n\t<comment id=\"47267889-12584715825-72157641111085205\"
+      author=\"59941010@N06\" author_is_deleted=\"0\" authorname=\"dorameulman\" iconserver=\"8002\"
+      iconfarm=\"9\" datecreate=\"1392647273\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641111085205\"
+      path_alias=\"dorameulman\" realname=\"Dora Meulman\">Thank you all for your
+      wonderful photo&#039;s over the past few years. You will be missed and I hope
+      to see you return soon.</comment>\n\t<comment id=\"47267889-12584715825-72157641115586644\"
+      author=\"77199267@N03\" author_is_deleted=\"0\" authorname=\"ccferrie\" iconserver=\"7180\"
+      iconfarm=\"8\" datecreate=\"1392648075\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641115586644\"
+      path_alias=\"\" realname=\"\">It is a shame that this decision has been taken
+      and I&#039;d like to assume it is not taken lightly but is a result of diminished
+      resources in the NLI which in turn is a reflection on the current government&#039;s
+      attitude to anything which doesn&#039;t immediately and explicitly pay its way.
+      The collective research carried out over the last number of years on the NLI
+      Flickr stream is immeasurable but invaluable.\n\nIf it is a question of resources
+      there are many ways in which this could be tackled in the absence of public
+      funding: outsourcing to volunteers; unpaid internships for young archivists;
+      crowdfunding through FundIt or other sources...etc.\n\nWhere there is a will
+      there is a way and, judging by the comments so far on this post, the will is
+      certainly not absent!\n\nI hope that NLI reconsider their decision and work
+      with the many dedicated volunteers who have contributed to the success of these
+      pages to find a way of continuing the process.</comment>\n\t<comment id=\"47267889-12584715825-72157641115254203\"
+      author=\"56753145@N02\" author_is_deleted=\"0\" authorname=\"DMC .\" iconserver=\"7495\"
+      iconfarm=\"8\" datecreate=\"1392648426\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641115254203\"
+      path_alias=\"\" realname=\"D MC\">Its a real pity that the NLI are &amp;quot;pausing&amp;quot;.
+      \ I&#039;ve learnt so much from your photos over the years and will really miss
+      you. Can&#039;t wait for your return.</comment>\n\t<comment id=\"47267889-12584715825-72157641116237094\"
+      author=\"48236157@N02\" author_is_deleted=\"0\" authorname=\"TEXASJOHN\" iconserver=\"8442\"
+      iconfarm=\"9\" datecreate=\"1392648947\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641116237094\"
+      path_alias=\"\" realname=\"John Sanders\">Thank you!</comment>\n\t<comment id=\"47267889-12584715825-72157641117695464\"
+      author=\"16489083@N05\" author_is_deleted=\"0\" authorname=\"maorlando - God
+      keeps me as I lean on Him!!\" iconserver=\"7428\" iconfarm=\"8\" datecreate=\"1392651124\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641117695464\"
+      path_alias=\"maorlando\" realname=\"Angela  Orlando\">I concur that the decision
+      made by the NLI should be rethought...\nsad... very valid points have been made...
+      and your reason to\n discontinue is rather vague and not in the best interest
+      of the\n people of Ireland and us of Irish descent around the world... \npraying
+      you will reconsider and continue with this most \nworthwhile project bringing
+      in a wealth of information to be\npassed on to future generations!!! Thank you!!!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641114883415\" author=\"22575440@N07\" author_is_deleted=\"0\"
+      authorname=\"tammybeck\" iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1392652704\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641114883415\"
+      path_alias=\"tammybeck\" realname=\"Tammy\">let&#039;s hope that this is temporary
+      and not a permanent thing. Many people enjoy seeing these precious photos and
+      learning from them. What a great meeting place for those who love Ireland and
+      it&#039;s history...</comment>\n\t<comment id=\"47267889-12584715825-72157641118571093\"
+      author=\"36844288@N00\" author_is_deleted=\"0\" authorname=\"mikeyashworth\"
+      iconserver=\"7446\" iconfarm=\"8\" datecreate=\"1392653170\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641118571093\"
+      path_alias=\"\" realname=\"\">I&#039;d agree that it would be more than sad
+      if NLI ceased posting - despite Flick&#039;s recent often unhelpful  changes
+      it is still a remarkable and open public site that allows for cultural and historic
+      exchange. I would have thought that should be at the core of institutions such
+      as NLI .</comment>\n\t<comment id=\"47267889-12584715825-72157641118941023\"
+      author=\"72163146@N08\" author_is_deleted=\"0\" authorname=\"mcginley2012\"
+      iconserver=\"5601\" iconfarm=\"6\" datecreate=\"1392653695\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641118941023\"
+      path_alias=\"\" realname=\"Anne McGinley\">Shame that NLI have chosen to pause
+      this very worthy project. I looked forward every day to seeing what image would
+      be on display and enjoyed the witty banter between the well informed contributors.
+      I hope that you will resume posting images very soon.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641119892534\" author=\"54708393@N08\" author_is_deleted=\"0\"
+      authorname=\"Philip Ward\" iconserver=\"6067\" iconfarm=\"7\" datecreate=\"1392654222\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641119892534\"
+      path_alias=\"\" realname=\"philip ward\">......and fade to black.Lets hope not.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641120182823\" author=\"69587809@N05\" author_is_deleted=\"0\"
+      authorname=\"Myrtle26\" iconserver=\"7030\" iconfarm=\"8\" datecreate=\"1392655407\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641120182823\"
+      path_alias=\"mosskayree\" realname=\"Mossy Carey\">Our good friends in Scotland,
+      ahead of us so often in bringing their heritage to the people, took a very different
+      line with pictures on its Flickr site. As far as I can see it doesn&#039;t encourage
+      or answer comments - though the few comments it gets stay there as orphans on
+      Flickr&#039;s great site.  What a pity if the National Library of Ireland changes
+      its course of gaining knowledge while it is there.  I once had a man from the
+      60s identified - but  he was already beginning to slip from the local collective
+      memory.</comment>\n\t<comment id=\"47267889-12584715825-72157641121763034\"
+      author=\"34695930@N00\" author_is_deleted=\"0\" authorname=\"_Harry Lime_\"
+      iconserver=\"3691\" iconfarm=\"4\" datecreate=\"1392656821\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641121763034\"
+      path_alias=\"seanryan\" realname=\"Sean Ryan\">Big mistake to pause :(</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641121971394\" author=\"30369211@N00\" author_is_deleted=\"0\"
+      authorname=\"Niall McAuley\" iconserver=\"3682\" iconfarm=\"4\" datecreate=\"1392657103\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641121971394\"
+      path_alias=\"gnmcauley\" realname=\"Niall McAuley\">I understand that the NLI
+      has limited resources, but I do think putting pictures here and getting comments
+      would be a better use of resources than putting them on Facebook, where tagging,
+      searching and commenting are so much less useful. People comment here somethimes
+      months after the photos are posted, when an image search finds the photo. Facebook
+      postings disappear in very short order, and are not usually found by image searches.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641122272074\" author=\"55955471@N06\" author_is_deleted=\"0\"
+      authorname=\"rjbutler201\" iconserver=\"8227\" iconfarm=\"9\" datecreate=\"1392657549\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641122272074\"
+      path_alias=\"\" realname=\"Richard Butler\">A big mistake to stop posting photos
+      - I hope the NLI senior officers will reconsider this decision.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641118660405\" author=\"34305619@N06\" author_is_deleted=\"0\"
+      authorname=\"Wendy:\" iconserver=\"5539\" iconfarm=\"6\" datecreate=\"1392658028\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641118660405\"
+      path_alias=\"lizinitaly\" realname=\"\">Thanks to Danny for alerting me to this
+      shortsighted decision... I agree with all previous pleas to reinstate and garner
+      as much associated info for each image as possible while the knowledge is still
+      available and freely given!</comment>\n\t<comment id=\"47267889-12584715825-72157641120857735\"
+      author=\"7225349@N03\" author_is_deleted=\"0\" authorname=\"Tadgh \xF3 Maoildearg\"
+      iconserver=\"3867\" iconfarm=\"4\" datecreate=\"1392661102\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641120857735\"
+      path_alias=\"timstimes\" realname=\"Tadgh \xD3 Maoildearg\">I come from the
+      double &amp;quot;T&amp;quot; Ruttledge variant and I am fascinated by this great
+      photo and the photographer of course! Thanks to DannyM8 for the info. and NLI
+      keep the pause short!</comment>\n\t<comment id=\"47267889-12584715825-72157641125039093\"
+      author=\"35277876@N05\" author_is_deleted=\"0\" authorname=\"chrisw09\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1392662220\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641125039093\"
+      path_alias=\"\" realname=\"Chris Wilkins\">Hi NLI - do keep posting - I love
+      looking at the photos from your archives!</comment>\n\t<comment id=\"47267889-12584715825-72157641125878804\"
+      author=\"54968992@N03\" author_is_deleted=\"0\" authorname=\"ClickKen04\" iconserver=\"3800\"
+      iconfarm=\"4\" datecreate=\"1392662534\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641125878804\"
+      path_alias=\"photoken04\" realname=\"\">There seems to be an impression that
+      the proposal of uploading photos will return to Flickr from NLI.\n\nHate to
+      be the one reading between the lines, if they cannot afford to upload now they
+      are hardly likely to have someone to upload in the future.\n\nThey have said
+      it&#039;s too time consuming, there are cut backs all through Civil Service
+      Goverment, so I think it&#039;s naive to think it will return.\nIt seems blatantly
+      obvious the the NLI was just waiting to put a stop to the uploading of photos
+      to Flickr, so I think it&#039;s wakey wakey time, NLI have their priorities
+      else where, not only that, complimenting them for what they have done seems
+      bizarre, the person we should be complimenting is GONE!\n\nThey have no obvious
+      intention of coming back, their response to leaving here was, Customarily Vague
+      as most Government agencies are!\n\nIt would be interesting to find out who
+      made the decision as it&#039;s detrimental to Irish Visual History, the photos
+      will be consigned to History alright, never to be seen again!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641125640913\" author=\"30687643@N00\" author_is_deleted=\"0\"
+      authorname=\"mogey\" iconserver=\"43\" iconfarm=\"1\" datecreate=\"1392663089\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641125640913\"
+      path_alias=\"mogey\" realname=\"Moira\">@nli dont do it! Its a shortsighted
+      decision and will be regretted. The ( free) research of all the &amp;quot;flickeroonies&amp;quot;
+      is a resource that should be encouraged not closed down!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641122402415\" author=\"94819917@N00\" author_is_deleted=\"0\"
+      authorname=\"Perfesser_Bear\" iconserver=\"3681\" iconfarm=\"4\" datecreate=\"1392663190\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641122402415\"
+      path_alias=\"perfesser_bear\" realname=\"Perfesser Bear\">I hope this is a short
+      break -- not a &lt;i&gt;complete&lt;/i&gt; break -- and the NLI will start digitizing
+      and posting on Flickr again, soon.  I drool over almost anything historical,
+      and some of the material the Library has made available over the past few years
+      is beyond priceless.  It has been nothing less than preserving the legacy of
+      the Family of Man, at least for those of us with Irish roots (a few generations
+      back on both sides of my family).\n\nThank you for what you&#039;ve done so
+      far, and I look forward to more in the future.</comment>\n\t<comment id=\"47267889-12584715825-72157641126808204\"
+      author=\"37683898@N06\" author_is_deleted=\"0\" authorname=\"hectorthewonderdog\"
+      iconserver=\"2854\" iconfarm=\"3\" datecreate=\"1392663809\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641126808204\"
+      path_alias=\"hectorthewonderdog\" realname=\"Hector\">Will we still be able
+      to view the current images on your photostream ---- or will they be withdrawn?</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641123463135\" author=\"22919290@N08\" author_is_deleted=\"0\"
+      authorname=\"Eiretrains\" iconserver=\"3844\" iconfarm=\"4\" datecreate=\"1392664697\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641123463135\"
+      path_alias=\"flyingsnail\" realname=\"Ciar\xE1n Cooney\">I was directed here
+      by DannyM8, thanks!\nI haven&#039;t had a chance lately of commenting on the
+      NLI&#039;s wonderful photos. It&#039;s a pity to see Carol will no longer be
+      on Flickr and uploading photos, which for most of us since its inception has
+      become an important everyday ritual to view and comment on, I wish her the very
+      best in her new role and I hope she has seen all the kind words of support posted
+      these last couple of weeks. \n\nI was so intrigued by the phenomenon and success
+      of this photostream that it formed a very important aspect of my college dissertation
+      about online photo-archives, so I value it and the dynamic that users have created
+      from it greatly. There&#039;s evidence of many archival photostreams that have
+      become dormant and fallen by the wayside, and this is something which I hope
+      will never happen to the NLI&#039;s. Integrating anything posted on here into
+      the main catalogue will be time-consuming,  however I hope, like everyone else
+      here does, that this pause will be brief and that the value of work generated
+      thus far will not have been in vein.</comment>\n\t<comment id=\"47267889-12584715825-72157641127495694\"
+      author=\"80878055@N00\" author_is_deleted=\"0\" authorname=\"NIEye\" iconserver=\"4396\"
+      iconfarm=\"5\" datecreate=\"1392664765\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641127495694\"
+      path_alias=\"fairviewdesign\" realname=\"\">I agree whole-heartily with everyone
+      who considers this a bad decision. I contributed very little by way of comments
+      to the wonderful photos uploaded so regularly by Carol but always made time
+      to read and learn and of course be entrained by the banter. \n\nProjects like
+      this are usually driven by one or two enthusiastic people and the sad fact is
+      that once they leave the whole thing collapses. \n\nI would urge the NLI to
+      take a step back and realise what an important FREE resource you will be loosing
+      by this decision. Myrthle26 made the point that most other institutions undertake
+      projects like this almost begrudgingly, (PRONI is a case in point) but what
+      Carol and all the commenters have achieved over the last few years is truly
+      remarkable - It would be plain foolish to reject such a generous offer of help
+      from a willing community of hard working and well informed people.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641127250993\" author=\"11224990@N02\" author_is_deleted=\"0\"
+      authorname=\"ziffer?\" iconserver=\"7389\" iconfarm=\"8\" datecreate=\"1392665323\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641127250993\"
+      path_alias=\"pirategen\" realname=\"\">This is very sad as in my experience
+      that &amp;quot;breaks&amp;quot; often take longer than originally planned.  Thank
+      you to Danny for bringing this to my attention, so that I could at least join
+      in the chorus of those saying, please don&#039;t stop.  These pictures have
+      been fascinating and entertaining.  The contributions by the community in a
+      forum where the conversation can last for months adds so much context to fleeting
+      moments in time that might otherwise be lost.  Seeing these pictures and the
+      world of past generations is a treasure and its importance cannot be understated.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641130844833\" author=\"66151649@N02\" author_is_deleted=\"0\"
+      authorname=\"oaktree_brian_1976\" iconserver=\"6166\" iconfarm=\"7\" datecreate=\"1392670220\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641130844833\"
+      path_alias=\"\" realname=\"\">Would love to see this stream continued, it&#039;s
+      been a treasure-trove of information.</comment>\n\t<comment id=\"47267889-12584715825-72157641131783854\"
+      author=\"89231549@N00\" author_is_deleted=\"0\" authorname=\"Mikey Brick\" iconserver=\"39\"
+      iconfarm=\"1\" datecreate=\"1392670634\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641131783854\"
+      path_alias=\"mikeybrick\" realname=\"Mike Travis\">The NLI page is such a rare
+      example of the internet&#039;s capabilities being used well, and the heaps of
+      research and verification that have come from online volunteers should carry
+      on. The participants in the online discussions surrounding the photo archive
+      are a tremendous resource that would be shamefully allowed to slip away.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641128623545\" author=\"88162413@N06\" author_is_deleted=\"0\"
+      authorname=\"PaganTree\" iconserver=\"0\" iconfarm=\"0\" datecreate=\"1392671602\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641128623545\"
+      path_alias=\"\" realname=\"\">Great Photo! NLI flickr is a great page, bringing
+      the past into the present.</comment>\n\t<comment id=\"47267889-12584715825-72157641132995094\"
+      author=\"40911801@N00\" author_is_deleted=\"0\" authorname=\"achesonblog\" iconserver=\"4437\"
+      iconfarm=\"5\" datecreate=\"1392672339\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641132995094\"
+      path_alias=\"achesonblog\" realname=\"\">Disappointing move on the NLI&#039;s
+      part. Seems like it should require a very slight investment of time and resources
+      generating a large return of information and context.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641129279135\" author=\"52585175@N07\" author_is_deleted=\"0\"
+      authorname=\"Abaraphobia\" iconserver=\"7705\" iconfarm=\"8\" datecreate=\"1392672598\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641129279135\"
+      path_alias=\"abaraphobia\" realname=\"Mike\">In the dark days before Flickr,
+      photo albums &amp;amp; collections sat around in people&#039;s cupboards or
+      lofts, gathering dust, and perhaps people would occasionally dust them off to
+      have a quick browse; but now they can be scanned and uploaded for the entire
+      world to see, and a percentage of those photos will actually relate directly
+      to someone who chances upon them, or is actually conducting a search, and finds
+      the information that has been attached to those photos, or added to it by other
+      viewers.\nI feel it&#039;s therefore imperative that public bodies who hold
+      archives of historically important photographs should be compelled to make as
+      many of these images available to the public, as a matter of necessity; otherwise
+      the connections between these images, and people who are alive today, will never
+      be made, and all the information contained in them will be meaningless to future
+      generations.</comment>\n\t<comment id=\"47267889-12584715825-72157641133278793\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1392673637\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641133278793\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">I think I have
+      a solution - find a bright, enthusiastic member of library staff who understands
+      the content and the audience, and has a passion for sharing and engaging. Let
+      them - no, encourage them - to spend some of their time not pushing trolleys
+      around or re-shelving books but delving into the collections and sharing that
+      passion with an equally passionate and increasingly substantial audience.\n\nEnd
+      result? The member(s) of staff gets an extra incentive to turn up at work each
+      day and a sense of pride for what they are achieving; the library gets an incredible
+      return in the form of publicity and awareness, access to the collections (a
+      KPI for any public body), and enriched object information crowdsourced from
+      a diverse and knowledgeable audience. And all that for a tenth of the price
+      you might expect if you were paying commercial rates.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641134080054\" author=\"32162360@N00\" author_is_deleted=\"0\"
+      authorname=\"\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq\" iconserver=\"3722\"
+      iconfarm=\"4\" datecreate=\"1392673798\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641134080054\"
+      path_alias=\"beachcomberaustralia\" realname=\"\">&lt;blockquote&gt;\n&lt;b&gt;&lt;u&gt;The
+      Library-Towers-Powers-that-be Limerick&lt;/u&gt;\n\nThe NLI&#039;s &#039;pausing
+      their posting&#039;\nIs earning a well-deserved roasting.\nHeed Oscar&#039;s
+      advice -\nThink of Value, not Price -\nContinue your Flickr stream hosting.&lt;/b&gt;\n&lt;/blockquote&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641135652464\" author=\"50889628@N08\" author_is_deleted=\"0\"
+      authorname=\"plaisanter~\" iconserver=\"7547\" iconfarm=\"8\" datecreate=\"1392675900\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641135652464\"
+      path_alias=\"plaisanter\" realname=\"\">I read this with great dismay. I&#039;m
+      not sure what factors (besides an obvious one of time) are involved in this
+      decision by the NLI and can only echo what many articulate &amp;quot;Flickeroonies&amp;quot;
+      have said so far, and say in my own words: have you lost your minds?? Seriously,
+      this is a stellar resource that has generated a staggering amount of attention
+      and publicity for the Library, and you want to give it up? Yikes. \nPlease reconsider!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641135848874\" author=\"72163146@N08\" author_is_deleted=\"0\"
+      authorname=\"mcginley2012\" iconserver=\"5601\" iconfarm=\"6\" datecreate=\"1392676217\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641135848874\"
+      path_alias=\"\" realname=\"Anne McGinley\">[http://www.flickr.com/photos/beachcomberaustralia]
+      Bravo!</comment>\n\t<comment id=\"47267889-12584715825-72157641136754134\" author=\"60812213@N04\"
+      author_is_deleted=\"0\" authorname=\"abandoned railways\" iconserver=\"3752\"
+      iconfarm=\"4\" datecreate=\"1392677733\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641136754134\"
+      path_alias=\"abandonedrailsireland\" realname=\"Fred Dean Snr.\">&amp;quot;How
+      to resource the project&amp;quot;. Dire words that sound like political speak
+      for termination. This project is one of the most modern ways of sharing and
+      amassing historical information in Ireland. Information that WILL be lost as
+      time progresses.\nThis is a loss for all flickeroonies and the country.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641133558305\" author=\"40922313@N08\" author_is_deleted=\"0\"
+      authorname=\"BeautyOfThePast\" iconserver=\"1463\" iconfarm=\"2\" datecreate=\"1392678954\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641133558305\"
+      path_alias=\"titania1837\" realname=\"\">This is really sad. I always enjoyed
+      following your collection. I hope it&#039;s not because of the &#039;new flickr
+      experience&#039;. Please reconsider and think about other possible solutions.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641138148034\" author=\"20727502@N00\" author_is_deleted=\"0\"
+      authorname=\"guliolopez\" iconserver=\"8601\" iconfarm=\"9\" datecreate=\"1392680065\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641138148034\"
+      path_alias=\"\" realname=\"\">As has been noted, the decision to manage &amp;quot;digital&amp;quot;
+      and &amp;quot;social media&amp;quot; as purely a (monodirectional) promotional
+      tool seems a little short sighted. \n\nIt is a little disheartening that the
+      library would continue to invest in supporting the FB stream (in the relatively
+      value-less hunt for fatuous &amp;quot;likes&amp;quot;), and not invest a little
+      in this stream in parallel (which has demonstrably returned valuable content
+      to the catalogue AND those fatuous &amp;quot;likes&amp;quot;).\n\nThis is the
+      real-world, and budgetary constraints, copyright considerations and other aspects
+      which would influence any organisations decision to manage finite resources
+      are not to be ignored. In particular I would understand concerns about the reliability,
+      academic value and catalogue value of any reciprocated content. \n\nThat being
+      said, I question the decision to &amp;quot;outsource&amp;quot; the &amp;quot;digital&amp;quot;
+      role to an &amp;quot;agency&amp;quot;, and in doing so bundle this initiative
+      alongside FB and Twitter as something to be measured in terms of purely &amp;quot;marketing
+      ROI&amp;quot;. \n\nAnyway, I look forward to the break being relatively short.
+      \n\n(PS: Woof)</comment>\n\t<comment id=\"47267889-12584715825-72157641138798443\"
+      author=\"90124154@N00\" author_is_deleted=\"0\" authorname=\"Seuss.\" iconserver=\"409\"
+      iconfarm=\"1\" datecreate=\"1392682421\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641138798443\"
+      path_alias=\"\" realname=\"\">I&#039;m confused.  Do you NOT want to know more
+      about the photos in your collection? \n\nThe mix of regular, quality postings
+      and the (perhaps naive) perception that what the community uncovered was valued
+      has raised this photostream head and shoulders above the bulk of the Flickr
+      Commons participants. It&#039;s a resource that has been built up over time
+      - I&#039;d hate to see it drift away during a &amp;quot;pause.&amp;quot;\n\nBut
+      now that the stream is up and running and contributing value, surely it&#039;s
+      not so great a drag on resources?  It seems like it would make a good intern
+      project.</comment>\n\t<comment id=\"47267889-12584715825-72157641140985124\"
+      author=\"10719794@N05\" author_is_deleted=\"0\" authorname=\"D J McLaughlin\"
+      iconserver=\"8135\" iconfarm=\"9\" datecreate=\"1392685346\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641140985124\"
+      path_alias=\"mcwidi_2\" realname=\"Daniel McLaughlin\">Every day I looked forward
+      to viewing a NLI photo and following the contributers&#039; comments. I have
+      learnt so much about Ireland through this site. Please make this break short.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641150864024\" author=\"18885703@N00\" author_is_deleted=\"0\"
+      authorname=\"Dru Marland\" iconserver=\"7326\" iconfarm=\"8\" datecreate=\"1392704855\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641150864024\"
+      path_alias=\"belvedere\" realname=\"Dru\">yes! What they all said! -this is
+      such a learning place, and a rich source of information. \n\n...my landlady
+      died recently; not long before that sad event, we recorded an interview with
+      her about her life in this house during the war. (I live in Bristol, which was
+      badly blitzed). If we hadn&#039;t done, then all that story would have been
+      lost for ever. Carpe diem! \n\n(...by the way, that interview can be found here,
+      if you&#039;re interested) &lt;a href=&quot;http://www.thedowns150.org.uk/2012/01/the-bombing-of-bristol/&quot;
+      rel=&quot;nofollow&quot;&gt;www.thedowns150.org.uk/2012/01/the-bombing-of-bristol/&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641148797875\" author=\"60257225@N02\" author_is_deleted=\"0\"
+      authorname=\"StephenHill65\" iconserver=\"3824\" iconfarm=\"4\" datecreate=\"1392708198\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641148797875\"
+      path_alias=\"\" realname=\"\">Please keep this available - it is such a treasure
+      trove</comment>\n\t<comment id=\"47267889-12584715825-72157641149776045\" author=\"56105315@N07\"
+      author_is_deleted=\"0\" authorname=\"Nick Stewart2\" iconserver=\"6172\" iconfarm=\"7\"
+      datecreate=\"1392710401\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641149776045\"
+      path_alias=\"\" realname=\"Nick Stewart\">I hope the pause is just that.  &lt;b&gt;
+      &amp;quot;and identify how to resource the project from now on&amp;quot;&lt;/b&gt;
+      . You have a huge and appreciative resource out here in flickerland. Don&#039;t
+      let it go to waste.</comment>\n\t<comment id=\"47267889-12584715825-72157641149823565\"
+      author=\"98079324@N00\" author_is_deleted=\"0\" authorname=\"Lucianox\" iconserver=\"7917\"
+      iconfarm=\"8\" datecreate=\"1392710508\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641149823565\"
+      path_alias=\"diemotonetgorden\" realname=\"\">They are pausing their posting,
+      not taking it down or removing it, right?\nThanks.</comment>\n\t<comment id=\"47267889-12584715825-72157641152751943\"
+      author=\"55876399@N07\" author_is_deleted=\"0\" authorname=\"nannyjean35\" iconserver=\"7296\"
+      iconfarm=\"8\" datecreate=\"1392710648\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641152751943\"
+      path_alias=\"\" realname=\"\">it is wicked that people were left to live like
+      this, but it is still happening,  it seems that some people do not care, and
+      those that do cannot do anything to help</comment>\n\t<comment id=\"47267889-12584715825-72157641149991755\"
+      author=\"57437622@N04\" author_is_deleted=\"0\" authorname=\"waykwabu\" iconserver=\"3815\"
+      iconfarm=\"4\" datecreate=\"1392710882\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641149991755\"
+      path_alias=\"\" realname=\"Ian\">From Australia I can only add my voice and
+      vote to encourage not to &amp;quot;close up shop&amp;quot; - this would be indeed
+      a tragedy.  I have commented only at the odd times, but have always taken a
+      keen interest in the photographs, information, comments and at times a great
+      sense of humour that appeared on these pages !\n\nFrom Australia&#039;s earliest
+      European settlements - the penal colonies of His Majesty King George - Irish
+      men and women have contributed to the unique character of the Australian.  Not
+      only as convicts, who in the vast majority of cases stayed on as settlers when
+      their deportation sentence had been served,  but Irish free men and women settled
+      here, looking for a new life, away from the restrictions of the European &amp;quot;establishments&amp;quot;.
+      \  \nFrom immigrants fleeing the potato famine, adventurers seeking their fortunes
+      on the goldfields,  settlers looking for land to start up a lifetime of farming
+      \ to famous personalities such as the outspoken Archbishop Daniel Mannix  of
+      Melbourne who spoke long and loud against the conscription during World War
+      I, and his support during the Irish fight for independence in the early 1920&#039;s,
+      to the contributions, made by Irish settlers and their now &amp;quot;Australian&amp;quot;
+      descendants,  to the early Australian ballads\nwhich have survived to the current
+      time in the musical halls of fame - all these have contributed to the Aussie
+      &amp;quot;psyche&amp;quot;.\n\nThis site has contributed much, taught us much,
+      and enlightened much, our understanding of a large part of our ancestry and
+      consequently of who we are and why we are.\n\nFor this site to close or cease
+      activity, and the loss of the knowledge it has, and should continue to impart
+      -  would be an absolute catastrophe.</comment>\n\t<comment id=\"47267889-12584715825-72157641153910524\"
+      author=\"66311327@N05\" author_is_deleted=\"0\" authorname=\"B-59\" iconserver=\"5550\"
+      iconfarm=\"6\" datecreate=\"1392711575\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641153910524\"
+      path_alias=\"\" realname=\"\">Very sad to hear that you want to stop this project
+      - and I don&#039;t understand it. It was a good opportunity for you to learn
+      more about the photographs, and for the viewers to learn something about Ireland.
+      I think this was worth the (manageable) costs, and it is perhaps not so easy
+      to build up a comparable enthusiastic following, if you continue with the project
+      later.</comment>\n\t<comment id=\"47267889-12584715825-72157641151249125\" author=\"48569916@N03\"
+      author_is_deleted=\"0\" authorname=\"Tashunka Witko (alias CP)\" iconserver=\"0\"
+      iconfarm=\"0\" datecreate=\"1392713782\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641151249125\"
+      path_alias=\"cavallo_pazzo2010\" realname=\"\">interessante :)</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641151365775\" author=\"23085117@N00\" author_is_deleted=\"0\"
+      authorname=\"Spidra Webster\" iconserver=\"18\" iconfarm=\"1\" datecreate=\"1392714059\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641151365775\"
+      path_alias=\"spidra\" realname=\"Spidra Webster\">I really hope NLI will reconsider.
+      Your social media presence on Flickr and Twitter were the best of any institution
+      with which I am familiar. It raised the profile of your institution internationally.
+      It helped you crowdsource information that surely would have taken much more
+      staff time to research offline alone, and it humanized you because of the great
+      sense of humor that was evident throughout. You really can&#039;t put a price
+      on that.</comment>\n\t<comment id=\"47267889-12584715825-72157641156567024\"
+      author=\"31536722@N00\" author_is_deleted=\"0\" authorname=\"soilse\" iconserver=\"4104\"
+      iconfarm=\"5\" datecreate=\"1392717513\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641156567024\"
+      path_alias=\"an_solas\" realname=\"Se\xE1n \xD3 Domhnaill\">Another fantastic
+      upload from NLI. These images speak volumes about our history in a way that
+      words never could.\n\nThe decision to stop posting is a sad one indeed. The
+      Flickr site was a valued resource for people the world over, both for research
+      purposes but also for the sheer enjoyment it gave. The NLI staff involved have
+      been amazingly dedicated in looking after it. Public archives can still sometimes
+      be stuffy and forbidding places but this site has achieved a level of accessibility
+      and informality that many institutions would envy. The National Library and
+      the National Archives are in a sorry state at the moment due to budget cutbacks.
+      Staff morale seems to be at an all-time low. There was a great opportunity during
+      the &#039;boom&#039; years when we were awash with money to build dedicated
+      buildings for these institutions but nothing was done. We have hundreds of useless
+      hotels and shopping centres but our cultural treasures are falling apart. Politicians
+      seem to fear archives.\n\nPlease reconsider this decision.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641156026113\" author=\"83357281@N00\" author_is_deleted=\"0\"
+      authorname=\"Oretani Wildlife (Mike Grimes)\" iconserver=\"4261\" iconfarm=\"5\"
+      datecreate=\"1392718132\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641156026113\"
+      path_alias=\"mikeegee\" realname=\"Mike Grimes\">Please don&#039;t stop posting
+      to Flickr. You will be losing a wealth of help and we will lose a wealth of
+      photos that I always enjoy seeing. It seems to me like whoever has taken over
+      doesn&#039;t want to carry on the great work Carol did. Instead you should be
+      building on it. Reconsider please.</comment>\n\t<comment id=\"47267889-12584715825-72157641158019524\"
+      author=\"63429800@N06\" author_is_deleted=\"0\" authorname=\"Paddywhack56\"
+      iconserver=\"5330\" iconfarm=\"6\" datecreate=\"1392720626\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641158019524\"
+      path_alias=\"paddywhack56\" realname=\"\">Would like to add my voice to the
+      many appeals to the NLI to reconsider this decision. The regular postings are
+      of great interest to many people in Ireland and worldwide. Being able to present
+      Irish social history in all its aspects to a wide, interested, appreciative
+      and involved audience must more than justify the cost! Many thanks for all the
+      interest and pleasure your postings have given me. Please don&#039;t stop now.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641157427833\" author=\"12383598@N00\" author_is_deleted=\"0\"
+      authorname=\"mia!\" iconserver=\"23\" iconfarm=\"1\" datecreate=\"1392721486\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641157427833\"
+      path_alias=\"_mia\" realname=\"\">Given the large and appreciate audience, is
+      there any way a position could be crowdfunded?</comment>\n\t<comment id=\"47267889-12584715825-72157641156485865\"
+      author=\"77603809@N02\" author_is_deleted=\"0\" authorname=\"KenjiB_48\" iconserver=\"3758\"
+      iconfarm=\"4\" datecreate=\"1392725470\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641156485865\"
+      path_alias=\"\" realname=\"\">This has been a fascinating and valuable connection
+      to so much history and culture for me, and I hope I speak for many others who
+      may or not trace their roots in some way to Ireland. It would be a sorry day
+      when such resources are no longer available to those who would benefit the most,
+      be the benefits ever so intangible; a library is only as successful as its ability
+      to cultivate the minds of its patrons,</comment>\n\t<comment id=\"47267889-12584715825-72157641162153894\"
+      author=\"95908789@N06\" author_is_deleted=\"0\" authorname=\"lffderme\" iconserver=\"8833\"
+      iconfarm=\"9\" datecreate=\"1392729092\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641162153894\"
+      path_alias=\"\" realname=\"\">Non fermatevi</comment>\n\t<comment id=\"47267889-12584715825-72157641161823903\"
+      author=\"46650209@N07\" author_is_deleted=\"0\" authorname=\"Patrick_Glesca\"
+      iconserver=\"4280\" iconfarm=\"5\" datecreate=\"1392730279\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641161823903\"
+      path_alias=\"patrick_castelli\" realname=\"Patrick Castelli\">It&#039;s a pity
+      NLI has decided to suspend its activity on Flickr, as of these new means of
+      mass communication are fundamental for spreading knowledge and bringing people
+      together. In my opinion photography is one of mankind&#039;s biggest achievements,
+      as it gives real dimension to the passing of time. I do hope this decision will
+      be thought upon carefully.</comment>\n\t<comment id=\"47267889-12584715825-72157641159622575\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1392731120\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641159622575\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">[http://www.flickr.com/photos/_mia]
+      Fantastic idea. What would we be looking at - about \xA310k per year? Possibly
+      less.</comment>\n\t<comment id=\"47267889-12584715825-72157641164732163\" author=\"93644954@N00\"
+      author_is_deleted=\"0\" authorname=\"capwell\" iconserver=\"65535\" iconfarm=\"66\"
+      datecreate=\"1392733557\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641164732163\"
+      path_alias=\"capwell\" realname=\"louis capwell\">I find it hard to believe
+      that an organization who had the good sense to share these images on Flickr
+      in the first place (and look at the results! How many mysteries were solved
+      so quickly at so little cost to NLI?) now has the terrifically horrible sense
+      to stop what had been a most engaging, interesting program. This is incredibly
+      disappointing news.</comment>\n\t<comment id=\"47267889-12584715825-72157641175754354\"
+      author=\"35607158@N06\" author_is_deleted=\"0\" authorname=\"jamica1\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1392748188\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641175754354\"
+      path_alias=\"jamica1\" realname=\"\">Add my vote to those hoping to see more
+      of the NLI on the Commons.</comment>\n\t<comment id=\"47267889-12584715825-72157641174737925\"
+      author=\"32428096@N05\" author_is_deleted=\"0\" authorname=\"John_McK1966\"
+      iconserver=\"3768\" iconfarm=\"4\" datecreate=\"1392752853\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641174737925\"
+      path_alias=\"\" realname=\"\">THanks to DannyM8 for letting me know about this.
+      THe decision to put this project on seemingly indefinite hold is a disappointing
+      one. The popularity of this stream is immense and the contribution of Carol
+      can never be under-estimated, likewise the comments and really good information
+      supplied by many Flickr members in the comments sections. \n\n&amp;quot;How
+      to resource the project&amp;quot;? How much could be involved in adding the
+      trove of information to the uploaded pictures in the NLI database? I would assume
+      that in putting these pictures on Flickr (stitches in time and a wonderful insight
+      into the history of our country), the NLI team were hoping from the outset to
+      add to whatever (sketchy) information they already had. PLEASE KEEP THE PICTURES
+      COMING, it would be a shame to cut off a wonderful resource in it&#039;s prime.\nJohn.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641176268425\" author=\"54629463@N05\" author_is_deleted=\"0\"
+      authorname=\"Bobec 47\" iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1392755293\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641176268425\"
+      path_alias=\"\" realname=\"Bob\">Would it help if I begged ?   And the dog !\nNLI
+      ........... you are a man&#039;s best friend.</comment>\n\t<comment id=\"47267889-12584715825-72157641176372835\"
+      author=\"54968992@N03\" author_is_deleted=\"0\" authorname=\"ClickKen04\" iconserver=\"3800\"
+      iconfarm=\"4\" datecreate=\"1392755440\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641176372835\"
+      path_alias=\"photoken04\" realname=\"\">What about taking on someone on some
+      form of internship?\nThere are many methods of taking someone off the dole que
+      and giving them &amp;quot;Photographic Filing Experience&amp;quot;  surely to
+      God if the NLI were serious about this they would/could do something to keep
+      this site flourishing, but as I said in a previous posting, the decision is
+      made and nothing will  overturn it.\nThink a few emails to the Irish Historian
+      Dermot Ferriter might help!</comment>\n\t<comment id=\"47267889-12584715825-72157641182364854\"
+      author=\"99646216@N00\" author_is_deleted=\"0\" authorname=\"hockadilly\" iconserver=\"4413\"
+      iconfarm=\"5\" datecreate=\"1392758418\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641182364854\"
+      path_alias=\"hockadilly\" realname=\"\">What a crazy decision - a commercial
+      firm would kill to get this kind of publicity, positive feedback and direct
+      engagement with an international audience. You have an army of informed, interested,
+      enthusiastic researchers at your fingertips, FOR FREE, And you&#039;re just
+      going to throw that all away? This move betrays a stunning lack of imagination.
+      How about mobilising some of the local fans, get volunteers involved in scanning
+      and posting? Or as ClickKen suggests, an intern?</comment>\n\t<comment id=\"47267889-12584715825-72157641185168524\"
+      author=\"14277040@N03\" author_is_deleted=\"0\" authorname=\"mickyman13\" iconserver=\"8263\"
+      iconfarm=\"9\" datecreate=\"1392762910\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641185168524\"
+      path_alias=\"mickhuett\" realname=\"Mick Huett\">Thanks DannyM8 for letting
+      me know about this decision . A  misguided decision from above to cease a extremely
+      popular stream that a lot of Flickr  fans look forward to each day, and all
+      the free help you are throwing away in finding the unknown hiding in the photos.
+      Don&#039;t go back to hiding the photos away in a dusty old corner never to
+      see the light of day again these are public property and must be shared to everyone
+      by public display and what a better place then on Flickr taking up no room on
+      your walls! All the FREE publicity you are giving up for NLI.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641189046873\" author=\"83325251@N00\" author_is_deleted=\"0\"
+      authorname=\"Meg Cards\" iconserver=\"7347\" iconfarm=\"8\" datecreate=\"1392771811\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641189046873\"
+      path_alias=\"\" realname=\"Meg\">as an Australian descendant of  an educated
+      Irish land surveyor on one side of the family and an Irish convict shepherd
+      on the other side....I have looked at and read everything on this site and feel
+      I am so much closer to knowing where my family came from. I thank you sincerely
+      for sharing so much and beg you not to stop! There is so much more to learn....</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641192648243\" author=\"97609500@N00\" author_is_deleted=\"0\"
+      authorname=\"Ken&#039;s Aviation\" iconserver=\"2873\" iconfarm=\"3\" datecreate=\"1392778149\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641192648243\"
+      path_alias=\"kensaviation\" realname=\"Ken Shanaberger\">I&#039;m also disappointed
+      to hear of this photostream&#039;s possible demise.  I&#039;ve been visiting
+      this site to get in touch with my wife&#039;s side of our family, and am also
+      enjoying the photos and history immensely.  My wife&#039;s mom is a Clifford.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641224171643\" author=\"37107521@N00\" author_is_deleted=\"0\"
+      authorname=\"Foxglove\" iconserver=\"2809\" iconfarm=\"3\" datecreate=\"1392832909\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641224171643\"
+      path_alias=\"foxglove\" realname=\"\">stay open please</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641226445623\" author=\"22841865@N05\" author_is_deleted=\"0\"
+      authorname=\"Brian_Fornear\" iconserver=\"3278\" iconfarm=\"4\" datecreate=\"1392836107\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641226445623\"
+      path_alias=\"\" realname=\"Brian Fornear\">What is the purpose of a library
+      - any library - in the digital age? If the purpose of the library is to generate
+      interest in the locale and discussion across disparate groups of people from
+      around the globe, then the National Library of Ireland was, and is, a huge success.
+      One photograph posted on Flickr to the National Library of Ireland could, and
+      often did, generate hundreds of posts. And, I&#039;m sure, if there was a tracker
+      on the visitors, the knockon effect of google searches for more information
+      on, and about, any photo post would have been amazing. As I read the NLI post
+      it doesn&#039;t say the posting on Flickr will stop, just that they are researching
+      their digital media options, which is understandable. Hopefully, NLI will see
+      the value of the Flickr postings and how rewarding it is to those who cherish
+      all things Irish, and continue to allow us to look back and enjoy old Ireland.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641228130804\" author=\"94819917@N00\" author_is_deleted=\"0\"
+      authorname=\"Perfesser_Bear\" iconserver=\"3681\" iconfarm=\"4\" datecreate=\"1392836859\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641228130804\"
+      path_alias=\"perfesser_bear\" realname=\"Perfesser Bear\">&lt;b&gt;P.S.&lt;/b&gt;\n\nWhat&#039;s
+      all this then about a dog?  I see no dog here.  No dog at all.  Dog-tax?  License?
+      \ Nothing of the sort...\n&lt;i&gt;Respectfully,&lt;/i&gt;\n\nPhilip O&#039;Brien,\nConstable,
+      Connemara.</comment>\n\t<comment id=\"47267889-12584715825-72157641230389203\"
+      author=\"85197278@N00\" author_is_deleted=\"0\" authorname=\"Sunny Harry\" iconserver=\"4499\"
+      iconfarm=\"5\" datecreate=\"1392842155\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641230389203\"
+      path_alias=\"frankcawley\" realname=\"\">I guess if you want more people to
+      see the photos then you would publish them on Facebook.  I would use the annology
+      of someone advertising a car, should they put the add into the Sunday World
+      or Car Buyers Guide.  More people read/view the Sunday World, but people interested
+      in cars read CBG.</comment>\n\t<comment id=\"47267889-12584715825-72157641246574483\"
+      author=\"23085117@N00\" author_is_deleted=\"0\" authorname=\"Spidra Webster\"
+      iconserver=\"18\" iconfarm=\"1\" datecreate=\"1392872724\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641246574483\"
+      path_alias=\"spidra\" realname=\"Spidra Webster\">Facebook is a vastly inferior
+      tool for viewing photos, Sunny. Yes, a lot of people see them there. But you
+      cannot tag them, you cannot crowdsource notes. Most importantly, when you want
+      to search for it a year after it was posted, you can&#039;t find it. Flickr
+      was made for photos and it shows.</comment>\n\t<comment id=\"47267889-12584715825-72157641254050393\"
+      author=\"99002941@N08\" author_is_deleted=\"0\" authorname=\"Robinson_Luzo\"
+      iconserver=\"7295\" iconfarm=\"8\" datecreate=\"1392890300\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641254050393\"
+      path_alias=\"\" realname=\"Ben Fagan\">While I think others on this post have
+      expressed it much more eloquently than myself, I too would like to state my
+      hope that someone will be found to maintain this wonderful and vertitable treasure
+      trove of knowledge. It would be a shame if such a valuable way for the library
+      to interact with the public were to be lost, especially given the level of active
+      participation by fans in comparison to other streams on the Commons.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641252632675\" author=\"8468254@N02\" author_is_deleted=\"0\"
+      authorname=\"derangedlemur\" iconserver=\"232\" iconfarm=\"1\" datecreate=\"1392892971\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641252632675\"
+      path_alias=\"\" realname=\"\">So, now that I have time to offer you the benefit
+      my musings (/hurl abuse at you) on this matter:\n\nI think you need to ask yourselves
+      what the purpose of a national archive is. It cannot simply be to preserve historical
+      documents; They must also be available to the public. If it is &amp;quot;write
+      only&amp;quot;, to adopt a software term, it may as well not exist. If the aim
+      in straitened circumstances is to preserve documents until such time as resources
+      are available to make them public, you have to ask yourself, when will that
+      day be? Why would it be more likely to be tomorrow than today?\nI would argue
+      that in fact, it is more likely to be today than tomorrow. The goodwill towards
+      the NLI and publicity afforded it that has been generated by the activity on
+      the commons is probably unprecedented in the library&#039;s history. Not only
+      are thousands upon thousands more people worldwide aware of the archives&#039;
+      existence, but they are actively engaging with it. What better opportunity could
+      you want to press the case for increased staffing, funding and activity? Instead
+      of being seen as a black hole into which irrelevant old papers have disappeared,
+      members of the public see the NLI as a valuable resource, particularly in the
+      past year as The Gathering generated huge interest in genealogy and family history
+      among both irish residents and the diaspora. Is it now the oficial position
+      that with The Gathering over, we&#039;re finished with history?\nThe decision
+      to abandon the commons, is, in my view, premature and shortsighted, and likely
+      to consign the NLI back to the obscurity from which it only recently emerged.
+      I would strongly urge you to reconsider this.</comment>\n\t<comment id=\"47267889-12584715825-72157641259371644\"
+      author=\"11251537@N00\" author_is_deleted=\"0\" authorname=\"Maryade\" iconserver=\"56\"
+      iconfarm=\"1\" datecreate=\"1392899197\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641259371644\"
+      path_alias=\"maryade\" realname=\"\">Regarding the image itself (along with
+      the other Clynagh/Claidhnach image recently on Facebook) - is this from the
+      Congested Districts Boards file or is it separate? \n\nRegarding your decision,
+      I think the decision to reduce your presence here, while potentially maintaining
+      images on Facebook is not going to serve you in the long-run. With Facebook,
+      their terms appear to want them to share copyright on the image thus allowing
+      them to sell them onto other agencies, such as newspapers, without having to
+      get explicit permission from yourselves. This is in direct contravention to
+      your own copyright policies. \n\nAs for the images being available on the NLI
+      website - the search algorithm does not appear to be as sophisticated as it
+      could be. For example, there was a Longford-based image shared here which did
+      not appear on any search on your online catalogue. Plus there is no comment
+      function, which would require moderation granted. This site was brilliant for
+      discovering true hidden-gems as well as getting peerless information about site
+      and context.\n I can only hope that the funds are made available for the NLI
+      to reverse this decision.</comment>\n\t<comment id=\"47267889-12584715825-72157641263097993\"
+      author=\"77603809@N02\" author_is_deleted=\"0\" authorname=\"KenjiB_48\" iconserver=\"3758\"
+      iconfarm=\"4\" datecreate=\"1392907383\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641263097993\"
+      path_alias=\"\" realname=\"\">[http://www.flickr.com/photos/8468254@N02] Hear,
+      hear.</comment>\n\t<comment id=\"47267889-12584715825-72157641263414953\" author=\"8468254@N02\"
+      author_is_deleted=\"0\" authorname=\"derangedlemur\" iconserver=\"232\" iconfarm=\"1\"
+      datecreate=\"1392907923\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641263414953\"
+      path_alias=\"\" realname=\"\">[http://www.flickr.com/photos/77603809@N02] I
+      sound fierce pompous, don&#039;t I?</comment>\n\t<comment id=\"47267889-12584715825-72157641268089103\"
+      author=\"108932738@N08\" author_is_deleted=\"0\" authorname=\"m.mcevoy2@upcmail.ie\"
+      iconserver=\"5526\" iconfarm=\"6\" datecreate=\"1392914847\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641268089103\"
+      path_alias=\"\" realname=\"Michael McEvoy\">Ireland @ its worst</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641296779024\" author=\"43357047@N05\" author_is_deleted=\"0\"
+      authorname=\"fiddlersgreen\" iconserver=\"5255\" iconfarm=\"6\" datecreate=\"1392964988\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641296779024\"
+      path_alias=\"fiddlersgreenstudio\" realname=\"Jim Hatzell\">Wonderful photo.
+      I hope that you can resume your postings.......they are a valuable heritage
+      resource.</comment>\n\t<comment id=\"47267889-12584715825-72157641302051135\"
+      author=\"45618415@N05\" author_is_deleted=\"0\" authorname=\"Bernard Healy\"
+      iconserver=\"4199\" iconfarm=\"5\" datecreate=\"1392984777\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641302051135\"
+      path_alias=\"bernardhealy\" realname=\"Bernard Healy\">What a shame to hear
+      of the discontinuation of this project! I can only echo what previous contributors
+      have said and hope that some way of continuing this engagement with an eager
+      team of voluntary researchers can be found.</comment>\n\t<comment id=\"47267889-12584715825-72157641307441444\"
+      author=\"56225952@N06\" author_is_deleted=\"0\" authorname=\"richard39a\" iconserver=\"4131\"
+      iconfarm=\"5\" datecreate=\"1392988100\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641307441444\"
+      path_alias=\"\" realname=\"Richard Cowdell\">May I add my (English) voice to
+      the chorus of disapproval at your decision. Most of us in England were never
+      and still are not ever taught anything about Irish History in schools (if, nowadays,
+      they are taught any history at all!!). All I was taught was Parnell and Irish
+      Home Rule (and that only as an episode in Victorian history) and that was it.
+      This is why this site is so important, it actually encourages the viewer to
+      delve into Irish History (until I saw the photograph, I had never heard of the
+      Irish Hell Fire Clubs or that there were books on the subject). In addition
+      so many of the images are important to students and readers of your greatest
+      writer of the 20th century - James  Joyce (with W B Yeats a close second). I
+      have lost count of just how many of the images are relevant to his works. Yes
+      I know there are a number of &#039;illustrated&#039; editions but none of them
+      come anywhere near, in quality, the pictures already on the site and no doubt
+      there are many more as yet unseen. What this site does, better than any other,
+      give &#039;life&#039; to your history. Not only the images but the postings
+      add to the experience. Never have I read such erudite commentaries on  photographs
+      than those from those posting. The site is a credit to the NLI and the Irish
+      people. Any decision to close it down (which is I suspect your aim) is an insult
+      to your country. There is little, if any, appreciation of our history (good,
+      not so good and downright disgraceful)  in this benighted country (England)
+      at present. Please do not allow Ireland to fall into the same trap. History,
+      as taught in schools (at least when I was there) was dull, boring and uninteresting
+      - this site makes history interesting and alive. Please do not close it or terminate
+      postings.</comment>\n\t<comment id=\"47267889-12584715825-72157641375181205\"
+      author=\"30484128@N03\" author_is_deleted=\"0\" authorname=\"JFGryphon\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1393113120\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641375181205\"
+      path_alias=\"\" realname=\"Jim Griffin\">[http://www.flickr.com/photos/54629463@N05]
+      \nWell said, Bob\n---------------\nA wonderful series of photos over the years.\nWe
+      will miss new posts.</comment>\n\t<comment id=\"47267889-12584715825-72157641397209844\"
+      author=\"56911765@N04\" author_is_deleted=\"0\" authorname=\"Concorps\" iconserver=\"667\"
+      iconfarm=\"1\" datecreate=\"1393150976\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641397209844\"
+      path_alias=\"concorps\" realname=\"\">[http://www.flickr.com/photos/56225952@N06]
+      Couldn&#039;t agree more Richard.</comment>\n\t<comment id=\"47267889-12584715825-72157641403186404\"
+      author=\"54629463@N05\" author_is_deleted=\"0\" authorname=\"Bobec 47\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1393161420\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641403186404\"
+      path_alias=\"\" realname=\"Bob\">[http://www.flickr.com/photos/30484128@N03]
+      Jim, I only bumped into this site the other day via one of you friends.  It
+      is obvious that (as Kaye said?) the importance to folk like yourselves that
+      have Irish family history,  that this site is full of unique written information
+      and a glorious array of photographic evidence of past Irish times.\nOver here
+      the knee-jerk reactions in the name of austerity are so obvious to Brits over
+      the last 4 years. This is a classic example of short sightedness that could
+      be corrected with a relatively small amount of support.  As another commenter
+      said, there is so much unemployment In Ireland ........ surely one would benefit
+      the other.</comment>\n\t<comment id=\"47267889-12584715825-72157641403319303\"
+      author=\"30484128@N03\" author_is_deleted=\"0\" authorname=\"JFGryphon\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1393163767\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641403319303\"
+      path_alias=\"\" realname=\"Jim Griffin\">[http://www.flickr.com/photos/54629463@N05]
+      \nEloquently described, Bob,\n&amp;quot; a glorious array of photographic evidence
+      of past Irish times.&amp;quot;</comment>\n\t<comment id=\"47267889-12584715825-72157641417358733\"
+      author=\"33971679@N02\" author_is_deleted=\"0\" authorname=\"O hOisin\" iconserver=\"7361\"
+      iconfarm=\"8\" datecreate=\"1393182085\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641417358733\"
+      path_alias=\"paparo\" realname=\"Martin Hession\">Will miss you. It&#039;s been
+      nice while it&#039;s lasted. Hope you find a way of continuing with this. I
+      love the comments locating or dating mystery photos - a real pleasure. Perhaps
+      as another project you could ask for photo&#039;s. My brother has been scanning
+      a range of old family photos (from around 1900) nothing too special. Great grandma
+      with a big (dead) bird on her head and granddad possibly in blue shirt uniform.
+      Anyway all the best!</comment>\n\t<comment id=\"47267889-12584715825-72157641415539115\"
+      author=\"33971679@N02\" author_is_deleted=\"0\" authorname=\"O hOisin\" iconserver=\"7361\"
+      iconfarm=\"8\" datecreate=\"1393182279\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641415539115\"
+      path_alias=\"paparo\" realname=\"Martin Hession\">Somewhat pretentious but I
+      am reminded of this all the time when I look at your photos. &lt;a href=&quot;http://www.youtube.com/watch?v=rR2Be1YJaqc&amp;amp;sns=em&quot;
+      rel=&quot;nofollow&quot;&gt;www.youtube.com/watch?v=rR2Be1YJaqc&amp;amp;sns=em&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641417976393\" author=\"87584703@N04\" author_is_deleted=\"0\"
+      authorname=\"granny6033\" iconserver=\"7291\" iconfarm=\"8\" datecreate=\"1393182898\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641417976393\"
+      path_alias=\"\" realname=\"\">If this is the people I think it is, they eat
+      little rodents in the winter.</comment>\n\t<comment id=\"47267889-12584715825-72157641504549233\"
+      author=\"32625786@N04\" author_is_deleted=\"0\" authorname=\"Gerard Knight\"
+      iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1393328587\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641504549233\"
+      path_alias=\"\" realname=\"\">Thanks for all the great photos</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641529440693\" author=\"32162360@N00\" author_is_deleted=\"0\"
+      authorname=\"\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq\" iconserver=\"3722\"
+      iconfarm=\"4\" datecreate=\"1393364620\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641529440693\"
+      path_alias=\"beachcomberaustralia\" realname=\"\">[http://www.flickr.com/photos/nlireland/7141494779/]\n\n&amp;quot;Fancy
+      a Cuppa?&amp;quot; 282,562 views on 26/2/14.  \n\n[http://www.flickr.com/photos/47290943@N03]
+      How many other items in the Library are getting about 1,000 views a day?  Even
+      if Flickr&#039;s algorithms are offbeat,  that number of views is not to be
+      sniffed at.  \n\n[With apologies yet again for my dangling preposition]</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641548326135\" author=\"25919760@N04\" author_is_deleted=\"0\"
+      authorname=\"MSGS4\" iconserver=\"5321\" iconfarm=\"6\" datecreate=\"1393406656\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641548326135\"
+      path_alias=\"\" realname=\"Aidan Fleming\">It will be sad day when this stream
+      stops. Great to see such old shots brought to a medium where they are easily
+      accessible. I know it&#039;s a lot of work but so worthwhile.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641558582704\" author=\"33971679@N02\" author_is_deleted=\"0\"
+      authorname=\"O hOisin\" iconserver=\"7361\" iconfarm=\"8\" datecreate=\"1393420954\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641558582704\"
+      path_alias=\"paparo\" realname=\"Martin Hession\">Perhaps a letter to the papers,
+      old fashioned I know,  anyone interested in putting one together ?</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641560196874\" author=\"39191857@N05\" author_is_deleted=\"0\"
+      authorname=\"Swordscookie\" iconserver=\"3461\" iconfarm=\"4\" datecreate=\"1393423700\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641560196874\"
+      path_alias=\"swordscookie\" realname=\"\">[http://www.flickr.com/photos/beachcomberaustralia]
+      [http://www.flickr.com/photos/25919760@N04] [http://www.flickr.com/photos/paparo]
+      [http://www.flickr.com/photos/32625786@N04] [http://www.flickr.com/photos/30484128@N03]
+      [http://www.flickr.com/photos/54629463@N05] [http://www.flickr.com/photos/56225952@N06]
+      [http://www.flickr.com/photos/bernardhealy] I don&#039;t want to be premature
+      but there are a lot of people out there who enjoyed this stream and all is not
+      lost!  The NLI staff are working with some volunteers to try and provide a solution.
+      \ It may not have the wonderful charm that Carol brought to the stream but hopefully
+      it will provide similar photos and treasure hunting.</comment>\n\t<comment id=\"47267889-12584715825-72157641631749183\"
+      author=\"59302818@N00\" author_is_deleted=\"0\" authorname=\"corncrake68\" iconserver=\"2877\"
+      iconfarm=\"3\" datecreate=\"1393549362\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641631749183\"
+      path_alias=\"crexcrex\" realname=\"\">When I emigrated to England in the 50s,
+      I often related to my English friends how we sometimes spent all day in the
+      bog.  Much hilarity of course, as they thought I meant the toilet.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157641754646503\" author=\"64555638@N00\" author_is_deleted=\"1\"
+      authorname=\"heady school\" iconserver=\"0\" iconfarm=\"0\" datecreate=\"1393775750\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641754646503\"
+      path_alias=\"eyelightfilms\" realname=\"\">[http://www.flickr.com/photos/photoken04]Internship?\n
+      If I could do it remotely from my home, I&#039;d take it on.\nBit of a commute
+      for me to Kildare Street at the moment.</comment>\n\t<comment id=\"47267889-12584715825-72157641996441824\"
+      author=\"69709626@N00\" author_is_deleted=\"0\" authorname=\"staticgirl\" iconserver=\"5470\"
+      iconfarm=\"6\" datecreate=\"1394191357\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157641996441824\"
+      path_alias=\"staticgirl\" realname=\"\">I went to a records manager meeting
+      at the UK National Archives yesterday and time and time again we were reminded
+      that records should conform to the following principles: transparency, integrity,
+      protection, compliance, availability, retention, disposition and accountability.
+      This photo-stream obeyed those principles to an excellent degree and the public
+      benefited greatly as a result. The Welsh government is currently designing a
+      solution to archive their web presence (they&#039;re on flickr too) and are
+      using open-source tool. The NLI should talk to them, they might be able to advise
+      whether the tools might benefit in this case. Plus if your system only deals
+      with paper records you should upgrade the system because the near future is
+      digital. It&#039;ll save money... \n\nI&#039;m really sorry this photo-steam
+      is &#039;pausing&#039; (usually civil service speak for &#039;we haven&#039;t
+      got any money left and are cancelling it.) I shall miss it and the blw banter.
+      \ PS Great photo. Love the dog.</comment>\n\t<comment id=\"47267889-12584715825-72157642001764394\"
+      author=\"83325903@N00\" author_is_deleted=\"0\" authorname=\"RealitySoSubtle\"
+      iconserver=\"7417\" iconfarm=\"8\" datecreate=\"1394202091\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642001764394\"
+      path_alias=\"limerick37\" realname=\"\">Sad to hear about the cessation of image
+      posting. I have really enjoyed this stream over the past few years and urge
+      you to reconsider/find an alternative.</comment>\n\t<comment id=\"47267889-12584715825-72157642193352035\"
+      author=\"97483987@N04\" author_is_deleted=\"0\" authorname=\"Col Connor\" iconserver=\"3719\"
+      iconfarm=\"4\" datecreate=\"1394529180\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642193352035\"
+      path_alias=\"colconn\" realname=\"\">I want to thank you for posting these.
+      I was born in UK and we traveled a lot to wales. There is something deep inside
+      me that longs to live the old ways. I took went camping for 2 whole years, mostly
+      by myself . I loved roughing it. Felt like home. Thank you.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157642258642723\" author=\"65379774@N02\" author_is_deleted=\"0\"
+      authorname=\"John A. Coffey\" iconserver=\"4348\" iconfarm=\"5\" datecreate=\"1394645677\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642258642723\"
+      path_alias=\"\" realname=\"\">Have been away for a while, have just now become
+      aware of whats happening,what a shame.I think DannyMB has summed it up in the
+      first comment.</comment>\n\t<comment id=\"47267889-12584715825-72157642398623775\"
+      author=\"64555638@N00\" author_is_deleted=\"1\" authorname=\"heady school\"
+      iconserver=\"0\" iconfarm=\"0\" datecreate=\"1394918230\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642398623775\"
+      path_alias=\"eyelightfilms\" realname=\"\">Still no change in this.\nAwful shame.\nPathetic
+      really.</comment>\n\t<comment id=\"47267889-12584715825-72157642445992603\"
+      author=\"29492435@N02\" author_is_deleted=\"0\" authorname=\"Cuddly Nutter\"
+      iconserver=\"3715\" iconfarm=\"4\" datecreate=\"1394994049\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642445992603\"
+      path_alias=\"shanekillen\" realname=\"\">&amp;quot;Customer Charter\n\nOur Mission\n\nThe
+      National Library will collect, preserve, promote and make accessible the documentary
+      and intellectual record of the life of Ireland and contribute to the provision
+      of access to the larger universe of recorded knowledge.&amp;quot;\n\nBY\n\n&amp;quot;pausing
+      our posting of images on Flickr Commons&amp;quot;\n\nyou are restricting accessibility,
+      to at least the close to 3000 people following your photostream, in direct contradiction
+      of your mission statement outlined in the libraries customer charter. \n\nTry
+      closing a physical library with 3000 members and see what would happen, there
+      would undoubtedly be some form of legal challenge. Just because our library
+      is virtual, having no bricks and mortar, should not mean that it, and it&#039;s
+      members, should be valued less.\n\nso\n\nHands Off Our Library !!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157642485096525\" author=\"66151649@N02\" author_is_deleted=\"0\"
+      authorname=\"oaktree_brian_1976\" iconserver=\"6166\" iconfarm=\"7\" datecreate=\"1395060776\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642485096525\"
+      path_alias=\"\" realname=\"\">Happy St. Patrick&#039;s Day, I guess no one here
+      will post something official...</comment>\n\t<comment id=\"47267889-12584715825-72157642540603113\"
+      author=\"66941036@N05\" author_is_deleted=\"0\" authorname=\"bobgbennett\" iconserver=\"0\"
+      iconfarm=\"0\" datecreate=\"1395148574\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642540603113\"
+      path_alias=\"\" realname=\"\">Thank you for posting all these wonderful images.
+      \ Please come back soon.  There is nothing more &#039;inclusive&#039; than sharing
+      the images that you archive on the internet.  It is truly the most public of
+      services that you can carry out and I do hope that you are able to procure the
+      resources necessary to recommence.</comment>\n\t<comment id=\"47267889-12584715825-72157642683903123\"
+      author=\"20727502@N00\" author_is_deleted=\"0\" authorname=\"guliolopez\" iconserver=\"8601\"
+      iconfarm=\"9\" datecreate=\"1395402246\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642683903123\"
+      path_alias=\"\" realname=\"\">Sad news this morning that Shane MacThom\xE1is
+      passed away. Anyone familiar with history, literary or related circles in Dublin
+      will be familiar with &lt;a href=&quot;https://www.youtube.com/watch?v=5L7O7oU47n4&quot;
+      rel=&quot;nofollow&quot;&gt;his work&lt;/a&gt;. Older people will remember &lt;a
+      href=&quot;https://www.youtube.com/watch?v=saZljFuvIBI&quot; rel=&quot;nofollow&quot;&gt;his
+      Da&lt;/a&gt;. Sad day. RIP.</comment>\n\t<comment id=\"47267889-12584715825-72157642690480355\"
+      author=\"99646216@N00\" author_is_deleted=\"0\" authorname=\"hockadilly\" iconserver=\"4413\"
+      iconfarm=\"5\" datecreate=\"1395414947\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642690480355\"
+      path_alias=\"hockadilly\" realname=\"\">Thanks for that link - I very much enjoyed
+      Mr MacThom\xE1is&#039;s tour of the graveyard and will watch some of the other
+      films. His death is a sad loss indeed.</comment>\n\t<comment id=\"47267889-12584715825-72157642731475923\"
+      author=\"21435632@N04\" author_is_deleted=\"0\" authorname=\"Solas beag\" iconserver=\"2915\"
+      iconfarm=\"3\" datecreate=\"1395485634\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157642731475923\"
+      path_alias=\"austinohara\" realname=\"\">[http://www.flickr.com/photos/20727502@N00]
+      I only found this site today and realise what a great treasure we have lost
+      from father and son.</comment>\n\t<comment id=\"47267889-12584715825-72157643314271215\"
+      author=\"41623432@N05\" author_is_deleted=\"0\" authorname=\"indian59\" iconserver=\"0\"
+      iconfarm=\"0\" datecreate=\"1396455021\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157643314271215\"
+      path_alias=\"\" realname=\"\">The NLI-Commons collection, here on Flikr is one
+      of the best repositories of digitized photographs anywhere to be found.The interaction
+      of members-contributors, and the knowledge they impart , is an incalculable
+      asset to historians,and researchers of Life in Ireland,social and military history,genealogical
+      research etc&#039;.Please find a way to continue the work.In this decade of
+      commemorations,We should be highlighting our past not locking it down by closing
+      invaluable assets such as this.Thanks to all at the NLI team,and the many knowledgable
+      contributors in support,for all they do.this archive is a gem to visit,for all.&#039;&#039;The
+      past is a foreign country&#039;&#039; Qu.- L.P.Hartley...[everyone likes to
+      visit sometime]Indian/</comment>\n\t<comment id=\"47267889-12584715825-72157644259557962\"
+      author=\"77199267@N03\" author_is_deleted=\"0\" authorname=\"ccferrie\" iconserver=\"7180\"
+      iconfarm=\"8\" datecreate=\"1398338723\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644259557962\"
+      path_alias=\"\" realname=\"\">Something afoot at NLI today &lt;a href=&quot;https://twitter.com/NLIreland/status/459289030971383808&quot;
+      rel=&quot;nofollow&quot;&gt;twitter.com/NLIreland/status/459289030971383808&lt;/a&gt;
+      photo call for launch of newly digitised images</comment>\n\t<comment id=\"47267889-12584715825-72157644279280395\"
+      author=\"77199267@N03\" author_is_deleted=\"0\" authorname=\"ccferrie\" iconserver=\"7180\"
+      iconfarm=\"8\" datecreate=\"1398356814\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644279280395\"
+      path_alias=\"\" realname=\"\">Here&#039;s some more info &lt;a href=&quot;http://www.irishtimes.com/culture/heritage/national-library-expands-online-archive-with-10-000-images-1.1772721&quot;
+      rel=&quot;nofollow&quot;&gt;www.irishtimes.com/culture/heritage/national-library-expa...&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157644320892143\" author=\"99646216@N00\" author_is_deleted=\"0\"
+      authorname=\"hockadilly\" iconserver=\"4413\" iconfarm=\"5\" datecreate=\"1398357588\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644320892143\"
+      path_alias=\"hockadilly\" realname=\"\">The catalogue: &lt;a href=&quot;http://catalogue.nli.ie/&quot;
+      rel=&quot;nofollow&quot;&gt;catalogue.nli.ie/&lt;/a&gt;\n\nIncludes 76228 photos,
+      apparently!</comment>\n\t<comment id=\"47267889-12584715825-72157644285979722\"
+      author=\"30369211@N00\" author_is_deleted=\"0\" authorname=\"Niall McAuley\"
+      iconserver=\"3682\" iconfarm=\"4\" datecreate=\"1398422816\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644285979722\"
+      path_alias=\"gnmcauley\" realname=\"Niall McAuley\">[https://www.flickr.com/photos/hockadilly]
+      Yes, and if you search it for Unidentified, there are 239 needing work. I can
+      locate 20+ immediately. &lt;a href=&quot;http://catalogue.nli.ie/Record/vtls000512832&quot;
+      rel=&quot;nofollow&quot;&gt;This one&lt;/a&gt; is Flann O&#039;Brien and Anthony
+      Cronin on Bloomsday, 1954,  in Monkstown. But there is no way to tag it....</comment>\n\t<comment
+      id=\"47267889-12584715825-72157644301505421\" author=\"32162360@N00\" author_is_deleted=\"0\"
+      authorname=\"\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq\" iconserver=\"3722\"
+      iconfarm=\"4\" datecreate=\"1398464666\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644301505421\"
+      path_alias=\"beachcomberaustralia\" realname=\"\">All this knowledge and expertise
+      goes to waste as the  NLI &amp;quot;integrate the information generated over
+      the last few years into our catalogue, and identify how to resource the project
+      from now on.&amp;quot;  I bet there has been no integrating and no identifying.
+      \   \n\nEven if the NLI sort out their priorities,  Flickr-as-we-knew-it is
+      dying a slow painful death with its &#039;New Photo Experience&#039;*.  Comments,
+      notes, tags, and banter are nearly impossible to read in the new format.   (I
+      have resorted to the French old version as a temporary solution - &lt;i&gt;Merde!&lt;/i&gt;
+      )    \n\nWhat A Great Big Shame. \n\n* - &lt;i&gt;Experience is the name everyone
+      gives to their mistakes&lt;/i&gt; - Oscar Wilde,  .Lady Windermere&#039;s Fan,
+      1892, Act III</comment>\n\t<comment id=\"47267889-12584715825-72157644302465521\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1398468033\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644302465521\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">Oh the irony
+      of making a fuss about releasing a new set of images, but onto a platform that
+      makes the new Flickr look positively luxurious and state of the art (exemplified
+      by Niall using the comments here to post the location of one).\n\nAnd yet their
+      sitewide web template has a prominent header link to Commons but none directly
+      to their own collection, and you&#039;ve still got pages like this - &lt;a href=&quot;http://www.nli.ie/digital-photographs.aspx&quot;
+      rel=&quot;nofollow&quot;&gt;www.nli.ie/digital-photographs.aspx&lt;/a&gt; -
+      saying &amp;quot;Want to share your expertise with the National Library? If
+      you would like to help us find out more about our photographs, check out our
+      Flickr Commons Photostream.&amp;quot;</comment>\n\t<comment id=\"47267889-12584715825-72157644261022406\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1398468069\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644261022406\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">Compare that
+      with e.g. &lt;a href=&quot;http://digitaltmuseum.no/things/nedtappet-hjellevann-skien/TEM/TGM-SFF.00636&quot;
+      rel=&quot;nofollow&quot;&gt;digitaltmuseum.no/things/nedtappet-hjellevann-skien/TEM/T...&lt;/a&gt;
+      where you can comment and view/suggest locations on a map.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157644561594532\" author=\"20727502@N00\" author_is_deleted=\"0\"
+      authorname=\"guliolopez\" iconserver=\"8601\" iconfarm=\"9\" datecreate=\"1399539601\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644561594532\"
+      path_alias=\"\" realname=\"\">I sincerely hope someone from NLI is still looking
+      at this thread. It seems pretty clear that there is a community of people here
+      that would like to help expand/enhance the archive. It doesn&#039;t seem to
+      matter to the majority WHERE this is done (doesn&#039;t have to be Flickr -
+      could be a feature on the catalog itself), but it&#039;d be a serious shame
+      if this community was allowed to die or become (more) disenfranchised. Because
+      when NLI do pop the heads back up again, and say &amp;quot;ok - we&#039;re ready
+      for you now&amp;quot;, it&#039;ll be all the more complex (expensive) to rebuild
+      a community again. Do not lose the momentum lads (and a courtesy update would
+      be a nice idea too).</comment>\n\t<comment id=\"47267889-12584715825-72157644161821398\"
+      author=\"30484128@N03\" author_is_deleted=\"0\" authorname=\"JFGryphon\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1399549101\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644161821398\"
+      path_alias=\"\" realname=\"Jim Griffin\">[http://www.flickr.com/photos/beachcomberaustralia]
+      \nFrench language Flickr works fine.\nIt gives us a way around the new format
+      problems.</comment>\n\t<comment id=\"47267889-12584715825-72157644661682508\"
+      author=\"13877445@N06\" author_is_deleted=\"0\" authorname=\"murphman61\" iconserver=\"7281\"
+      iconfarm=\"8\" datecreate=\"1402243886\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644661682508\"
+      path_alias=\"\" realname=\"\">I so much miss coming to this photostream every
+      day.  Please come back when you can.</comment>\n\t<comment id=\"47267889-12584715825-72157644668765650\"
+      author=\"57437622@N04\" author_is_deleted=\"0\" authorname=\"waykwabu\" iconserver=\"3815\"
+      iconfarm=\"4\" datecreate=\"1402275814\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157644668765650\"
+      path_alias=\"\" realname=\"Ian\">Me too,  hurry up and come back !!!!!!!!!!!!!!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157645322210739\" author=\"57437622@N04\" author_is_deleted=\"0\"
+      authorname=\"waykwabu\" iconserver=\"3815\" iconfarm=\"4\" datecreate=\"1405568181\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157645322210739\"
+      path_alias=\"\" realname=\"Ian\">Is there no hope of this photostream re-activating
+      \ ???????\nPlease, pretty please !!!!\n\nOh, and I&#039;m on the new Flickr,
+      and it&#039;s fine, so please come back !!</comment>\n\t<comment id=\"47267889-12584715825-72157645406057289\"
+      author=\"38915126@N06\" author_is_deleted=\"0\" authorname=\"anthony1928 (Have
+      A Great Day)\" iconserver=\"2861\" iconfarm=\"3\" datecreate=\"1405942422\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157645406057289\"
+      path_alias=\"anthony1928\" realname=\"Anthony Mulholland\">Thank you for posting
+      all these wonderful images. Please come back soon. There is nothing more &#039;inclusive&#039;
+      than sharing the images that you archive on the internet. It is truly the most
+      public of services that you can carry out and I do hope that you are able to
+      procure the resources necessary to recommence.</comment>\n\t<comment id=\"47267889-12584715825-72157645834156071\"
+      author=\"66941036@N05\" author_is_deleted=\"0\" authorname=\"bobgbennett\" iconserver=\"0\"
+      iconfarm=\"0\" datecreate=\"1406038752\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157645834156071\"
+      path_alias=\"\" realname=\"\">The absence of this photostream is a great shame
+      for a museum archive and typical of authorities that know the cost of everything
+      and the value of nothing.  Shame on you.</comment>\n\t<comment id=\"47267889-12584715825-72157647313234490\"
+      author=\"60738603@N00\" author_is_deleted=\"0\" authorname=\"shaymurphy\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1410992922\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647313234490\"
+      path_alias=\"xshayx\" realname=\"Shay Murphy\">Come back!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157647720663312\" author=\"57437622@N04\" author_is_deleted=\"0\"
+      authorname=\"waykwabu\" iconserver=\"3815\" iconfarm=\"4\" datecreate=\"1411007036\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647720663312\"
+      path_alias=\"\" realname=\"Ian\">It&#039;s time, return please !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157647817159181\" author=\"66941036@N05\" author_is_deleted=\"0\"
+      authorname=\"bobgbennett\" iconserver=\"0\" iconfarm=\"0\" datecreate=\"1411238424\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647817159181\"
+      path_alias=\"\" realname=\"\">I  can&#039;t believe this wonderful resource
+      is still being denied by penny pinchers.</comment>\n\t<comment id=\"47267889-12584715825-72157647916455456\"
+      author=\"20727502@N00\" author_is_deleted=\"0\" authorname=\"guliolopez\" iconserver=\"8601\"
+      iconfarm=\"9\" datecreate=\"1411554865\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647916455456\"
+      path_alias=\"\" realname=\"\">Hopefully we&#039;ll have positive news on reactivating
+      this project soon. Watch this space.</comment>\n\t<comment id=\"47267889-12584715825-72157647581961920\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1411593875\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647581961920\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">[https://www.flickr.com/photos/20727502@N00]
+      do you have insider knowledge that lets you say that? I certainly hope so!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157647584079089\" author=\"13877445@N06\" author_is_deleted=\"0\"
+      authorname=\"murphman61\" iconserver=\"7281\" iconfarm=\"8\" datecreate=\"1411608907\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647584079089\"
+      path_alias=\"\" realname=\"\">I have noticed much more activity lately on their
+      Facebook page so I&#039;m at least a little more positive.</comment>\n\t<comment
+      id=\"47267889-12584715825-72157648151172665\" author=\"23085117@N00\" author_is_deleted=\"0\"
+      authorname=\"Spidra Webster\" iconserver=\"18\" iconfarm=\"1\" datecreate=\"1411935503\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157648151172665\"
+      path_alias=\"spidra\" realname=\"Spidra Webster\">&lt;a href=&quot;http://www.irishtimes.com/culture/culture-shock-death-by-a-thousand-cuts-the-terrible-way-we-treat-our-national-library-and-national-museum-1.1942929&quot;
+      rel=&quot;nofollow&quot;&gt;www.irishtimes.com/culture/culture-shock-death-by-a-thous...&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157647813172677\" author=\"13877445@N06\" author_is_deleted=\"0\"
+      authorname=\"murphman61\" iconserver=\"7281\" iconfarm=\"8\" datecreate=\"1412130058\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647813172677\"
+      path_alias=\"\" realname=\"\">[https://www.flickr.com/photos/spidra] Great link...thanks!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157648676098165\" author=\"107175094@N02\" author_is_deleted=\"0\"
+      authorname=\"postxwayk\" iconserver=\"0\" iconfarm=\"0\" datecreate=\"1413086944\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157648676098165\"
+      path_alias=\"\" realname=\"Ian\">What a terrible waste of a wonderful asset
+      if this account is never reactivated !!</comment>\n\t<comment id=\"47267889-12584715825-72157648744190681\"
+      author=\"30369211@N00\" author_is_deleted=\"0\" authorname=\"Niall McAuley\"
+      iconserver=\"3682\" iconfarm=\"4\" datecreate=\"1413281376\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157648744190681\"
+      path_alias=\"gnmcauley\" realname=\"Niall McAuley\">Lots of cool stuff to be
+      identified in the new Clonbrock megazoom collection! Like this view of Derry
+      from the top of Columb&#039;s Cathedral: &lt;a href=&quot;http://catalogue.nli.ie/Record/vtls000524209&quot;
+      rel=&quot;nofollow&quot;&gt;catalogue.nli.ie/Record/vtls000524209&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157649964835602\" author=\"54343064@N03\" author_is_deleted=\"0\"
+      authorname=\"Myrtille T.\" iconserver=\"2938\" iconfarm=\"3\" datecreate=\"1419768830\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157649964835602\"
+      path_alias=\"\" realname=\"Myrtille T.\">Very realistic et beautiful picture.
+      Photo splendide !</comment>\n\t<comment id=\"47267889-12584715825-72157649982519895\"
+      author=\"24469639@N00\" author_is_deleted=\"0\" authorname=\"whatsthatpicture\"
+      iconserver=\"3790\" iconfarm=\"4\" datecreate=\"1419777046\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157649982519895\"
+      path_alias=\"whatsthatpicture\" realname=\"Photos of the Past\">[https://www.flickr.com/photos/gnmcauley]
+      Are there any images available for those?</comment>\n\t<comment id=\"47267889-12584715825-72157649635007068\"
+      author=\"92033577@N00\" author_is_deleted=\"0\" authorname=\"Melinda Young Stuart\"
+      iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1420071311\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157649635007068\"
+      path_alias=\"melystu\" realname=\"\">Keep up the good work!!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157650172195711\" author=\"40108713@N04\" author_is_deleted=\"0\"
+      authorname=\"Northwestkathleen, animal lover!!\" iconserver=\"65535\" iconfarm=\"66\"
+      datecreate=\"1420685654\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157650172195711\"
+      path_alias=\"northwestkathleen\" realname=\"\">Oh I hope there is more to come
+      some day..........soon.....pleeeeeeeeeeease!!</comment>\n\t<comment id=\"47267889-12584715825-72157650172445092\"
+      author=\"99646216@N00\" author_is_deleted=\"0\" authorname=\"hockadilly\" iconserver=\"4413\"
+      iconfarm=\"5\" datecreate=\"1420711615\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157650172445092\"
+      path_alias=\"hockadilly\" realname=\"\">They&#039;re back! Flickr power!</comment>\n\t<comment
+      id=\"47267889-12584715825-72157650120314366\" author=\"39191857@N05\" author_is_deleted=\"0\"
+      authorname=\"Swordscookie\" iconserver=\"3461\" iconfarm=\"4\" datecreate=\"1420715370\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157650120314366\"
+      path_alias=\"swordscookie\" realname=\"\">[https://www.flickr.com/photos/hockadilly/]
+      Yes they&#039;re back and hopefully we will have as much fun researching the
+      shots as we had in the past!!!!</comment>\n\t<comment id=\"47267889-12584715825-72157647885293224\"
+      author=\"13073434@N03\" author_is_deleted=\"0\" authorname=\"robinparkes\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1420888352\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647885293224\"
+      path_alias=\"\" realname=\"Robin Parkes\">[https://www.flickr.com/photos/swordscookie]
+      I wonder when they will start posting photos.</comment>\n\t<comment id=\"47267889-12584715825-72157650210539271\"
+      author=\"11251537@N00\" author_is_deleted=\"0\" authorname=\"Maryade\" iconserver=\"56\"
+      iconfarm=\"1\" datecreate=\"1420889823\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157650210539271\"
+      path_alias=\"maryade\" realname=\"\">[https://www.flickr.com/photos/13073434@N03]
+      They have posted two new photos already Robin.</comment>\n\t<comment id=\"47267889-12584715825-72157647898203373\"
+      author=\"13073434@N03\" author_is_deleted=\"0\" authorname=\"robinparkes\" iconserver=\"65535\"
+      iconfarm=\"66\" datecreate=\"1420907017\" permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157647898203373\"
+      path_alias=\"\" realname=\"Robin Parkes\">[https://www.flickr.com/photos/maryade]
+      Found them now. I would normally have had a notification that a new photo had
+      been posted.</comment>\n\t<comment id=\"47267889-12584715825-72157651715230295\"
+      author=\"47290943@N03\" author_is_deleted=\"0\" authorname=\"National Library
+      of Ireland on The Commons\" iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1427973380\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157651715230295\"
+      path_alias=\"nlireland\" realname=\"\">Hello, this is for anyone who has not
+      heard that we are back and posting a new photo every weekday. Please do come
+      by and comment away as normal. \n\nYou might also be interested in our latest
+      online exhibition. \n\n&lt;b&gt;The 1916 Rising: Personalities and Perspectives.&lt;/b&gt;
+      This study resource draws almost exclusively upon the collections of the National
+      Library, including the Library\u2019s rich holdings of books, newspapers, photographs,
+      drawings, proclamations and, not least, manuscript material.  In all, over 500
+      images have been selected for study and analysis. &lt;b&gt;&lt;a href=&quot;http://www.nli.ie/1916/&quot;
+      rel=&quot;nofollow&quot;&gt;Visit the Exhibition here&lt;/a&gt;&lt;/b&gt;</comment>\n\t<comment
+      id=\"47267889-12584715825-72157720192074605\" author=\"142241716@N03\" author_is_deleted=\"0\"
+      authorname=\"Bo Dudas\" iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1659274153\"
+      permalink=\"https://www.flickr.com/photos/nlireland/12584715825/#comment72157720192074605\"
+      path_alias=\"\" realname=\"Bo Dudas\">I must compliment your museum portfolio.
+      it is of the highest integrity..  I look forward visiting your exhibition as
+      noted above.</comment>\n</comments>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 09 Apr 2024 09:59:28 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 000b6e373a5d3beff463a36c3e473e6a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - -WIKT8TljsMPAt3De1jKp5tP0WdIpIJ0BCJP85Ls7wk7xRkR3mvNhw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 09-May-2024 09:59:28 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 09-May-2024 09:59:28 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-66151180-1c9514d703e7c7ce6b67fedf;Root=1-66151180-235c786f5e512bd52120f6d9
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.16.171
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

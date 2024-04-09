@@ -614,3 +614,23 @@ def test_get_buddy_icon_url(
     api: FlickrPhotosApi, user_id: str, expected_url: str
 ) -> None:
     assert api.get_buddy_icon_url(user_id=user_id) == expected_url
+
+
+# These all the outliers in terms of number of comments.
+#
+# The expected value comes from the "count_comments" field on the
+# photos API response.  This API seems to return everything at once,
+# and doesn't do pagination, but let's make sure it actually does.
+@pytest.mark.parametrize(
+    ["photo_id", "count"],
+    [
+        ("12584715825", 154),
+        ("3334095096", 376),
+        ("2780177093", 501),
+        ("2960116125", 1329),
+    ],
+)
+def test_finds_all_comments(api: FlickrPhotosApi, photo_id: str, count: int) -> None:
+    comments = api.list_all_comments(photo_id=photo_id)
+
+    assert len(comments) == count
