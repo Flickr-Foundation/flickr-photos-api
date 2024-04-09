@@ -48,6 +48,20 @@ class Size(TypedDict):
     source: str
 
 
+class Comment(TypedDict):
+    """
+    A comment as received from the Flickr API.
+    """
+
+    id: str
+    photo_id: str
+    author_is_deleted: bool
+    author: User
+    text: str
+    permalink: str
+    date: datetime.datetime
+
+
 # Represents the safety level of a photo on Flickr.
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7

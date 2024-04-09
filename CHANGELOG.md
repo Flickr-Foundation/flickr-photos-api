@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.10.0 - 2024-04-09
+
+*   Add a new method `list_all_comments(photo_id: str) -> list[Comment]` which returns a list of all the comments on a photo.
+
 ## v1.9.2 - 2024-04-02
 
 *   Tweak the retrying on flaky API calls to (i) retry up to 5 times, up from 1 and (ii) use an exponential backoff to wait between retries.  Both of these should make it more likely that a flaky API call will eventually succeed.
@@ -14,7 +18,7 @@
 *   Return more information from the `lookup_user_by_id()` and `lookup_user_by_url()` methods.
 
     In particular, they now return a new type `UserInfo` which includes three new fields:
-    
+
     - `count_photos` (int)
     - `description` (str or None)
     - `has_pro_account` (bool)
