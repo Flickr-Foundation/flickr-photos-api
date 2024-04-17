@@ -634,3 +634,11 @@ def test_finds_all_comments(api: FlickrPhotosApi, photo_id: str, count: int) -> 
     comments = api.list_all_comments(photo_id=photo_id)
 
     assert len(comments) == count
+
+
+def test_if_no_realname_then_empty(api: FlickrPhotosApi) -> None:
+    # The first comment is one where the ``author_realname`` attribute
+    # is an empty string, which we should map to ``None``.
+    comments = api.list_all_comments(photo_id="53654427282")
+
+    assert comments[0]["author"]["realname"] is None

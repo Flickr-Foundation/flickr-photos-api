@@ -933,7 +933,7 @@ class FlickrPhotosApi(BaseApi):
             author: User = {
                 "id": author_id,
                 "username": comment_elem.attrib["authorname"],
-                "realname": comment_elem.attrib["realname"],
+                "realname": comment_elem.attrib["realname"] or None,
                 "path_alias": author_path_alias,
                 "photos_url": f"https://www.flickr.com/photos/{author_path_alias or author_id}/",
                 "profile_url": f"https://www.flickr.com/people/{author_path_alias or author_id}/",

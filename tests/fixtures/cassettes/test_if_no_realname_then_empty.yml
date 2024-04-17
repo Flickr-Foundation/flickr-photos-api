@@ -1,0 +1,106 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=53654427282
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<comments
+      photo_id=\"53654427282\">\n\t<comment id=\"47267889-53654427282-72157720350150370\"
+      author=\"32162360@N00\" author_is_deleted=\"0\" authorname=\"\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq\"
+      iconserver=\"3722\" iconfarm=\"4\" datecreate=\"1713255220\" permalink=\"https://www.flickr.com/photos/nlireland/53654427282/#comment72157720350150370\"
+      path_alias=\"beachcomberaustralia\" realname=\"\">&lt;i&gt;EST. 1728  There
+      are almost three hundred year\u2019s of stories buried in our walls. ... ...\n...
+      There is speculation about how the bar acquired it\u2019s current name \u2018The
+      Purty Kitchen\u2019. The local narrative is that an American visitor, who had
+      embarked at Kingstown port, walked up to the door of no. 4 and said to the proprietress,
+      \u201CSay Mamm, you sure have a mighty purty kitchen. ...\u201D &lt;/i&gt; \n\nFrom
+      - &lt;a href=&quot;https://www.purtykitchen.com/&quot; rel=&quot;noreferrer
+      nofollow&quot;&gt;www.purtykitchen.com/&lt;/a&gt;</comment>\n\t<comment id=\"47267889-53654427282-72157720350201071\"
+      author=\"47290943@N03\" author_is_deleted=\"0\" authorname=\"National Library
+      of Ireland on The Commons\" iconserver=\"65535\" iconfarm=\"66\" datecreate=\"1713256104\"
+      permalink=\"https://www.flickr.com/photos/nlireland/53654427282/#comment72157720350201071\"
+      path_alias=\"nlireland\" realname=\"\">[https://www.flickr.com/photos/beachcomberaustralia]
+      very good.</comment>\n\t<comment id=\"47267889-53654427282-72157720350207221\"
+      author=\"184711311@N04\" author_is_deleted=\"0\" authorname=\"suckindeesel\"
+      iconserver=\"0\" iconfarm=\"0\" datecreate=\"1713258016\" permalink=\"https://www.flickr.com/photos/nlireland/53654427282/#comment72157720350207221\"
+      path_alias=\"\" realname=\"Suck Diesel\">[https://flic.kr/p/4F1fb9]\nvia Dawn
+      Sparks\n\n[https://flic.kr/p/7psJK8]\nvia Slainte TV\n\nNote: The original and
+      not the imposter in Temple Bar</comment>\n\t<comment id=\"47267889-53654427282-72157720350080164\"
+      author=\"184711311@N04\" author_is_deleted=\"0\" authorname=\"suckindeesel\"
+      iconserver=\"0\" iconfarm=\"0\" datecreate=\"1713258281\" permalink=\"https://www.flickr.com/photos/nlireland/53654427282/#comment72157720350080164\"
+      path_alias=\"\" realname=\"Suck Diesel\">Welcome inside\n\n&lt;a href=&quot;https://maps.app.goo.gl/Wdj1B8HwNAkqksh26?g_st=ic&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;maps.app.goo.gl/Wdj1B8HwNAkqksh26?g_st=ic&lt;/a&gt;</comment>\n\t<comment
+      id=\"47267889-53654427282-72157720350167085\" author=\"32162360@N00\" author_is_deleted=\"0\"
+      authorname=\"\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq\" iconserver=\"3722\"
+      iconfarm=\"4\" datecreate=\"1713260287\" permalink=\"https://www.flickr.com/photos/nlireland/53654427282/#comment72157720350167085\"
+      path_alias=\"beachcomberaustralia\" realname=\"\">Via Trove, an 1894 description
+      - &lt;a href=&quot;https://trove.nla.gov.au/newspaper/article/115549483?searchTerm=&amp;quot;purty
+      kitchen&amp;quot;&quot; rel=&quot;noreferrer nofollow&quot;&gt;trove.nla.gov.au/newspaper/article/115549483?searchTerm=%...&lt;/a&gt;
+      \n\n&lt;i&gt;&amp;quot; ... On the side of this road, past Monkstown, and about
+      a mile from Dunleary, an excellent wayside inn was to be met, where thousands
+      of people resorted, some for refreshments on their way to the sea coast to enjoy
+      the sea breeze ; others went to the grounds to dance, pitch quits, play skittles,
+      and drink genuine Irish whisky or Alley&#039;s famed ale at this house, well
+      known as the &#039;Purty\nKitchen.&#039;   How the house received this name
+      I know not,  but I have no doubt it was in consequence of &lt;u&gt;the coppers
+      and pewter plates and dishes upon the dresser. These were kept more for ornament
+      than use, and made as bright as hands could polish them&lt;/u&gt;.  In fact
+      everything about the kitchen was in first-class order, and it was laughable
+      to hear some of the ladies and gentlemen from Thomas-street and the Liberties
+      of Dublin saying: &amp;quot;Oh, then, Jim, isn&#039;t it a purty kitchen? Look
+      at the beautiful coppers and pewters.&amp;quot; \nJim would likely reply after
+      this fashion: &amp;quot;Faith and it&#039;s myself would like to be sitting
+      forninst one of thim dishes with a pig&#039;s head lying on a palliasse of cabbage
+      upon it, and some good cup potatoes, and a quart of Guinness&#039;s stout to
+      wash my dinner down.&amp;quot; \n&amp;quot;Just like you, Jim, always thinking
+      of your stomach.&amp;quot; \nSo the fun would go on at the &#039;purty kitchen.&#039;
+      ... ...&amp;quot;&lt;/i&gt;</comment>\n</comments>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 17 Apr 2024 13:43:15 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cebcb0d17c62ea30e361587bfe114ca0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - K9pUxruip5yo0BNqba7javcr7DNX2U0sqoRW0PZGAEffigCdoJn6dA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 17-May-2024 13:43:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 17-May-2024 13:43:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-661fd1f3-37ba692500a92c84491e82c9;Root=1-661fd1f3-1e65c63336ee34941efb5934
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.26.41
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
