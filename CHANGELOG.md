@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.10.1 - 2024-04-17
+
+*   Fix a bug in `list_all_comments()` for comments where the commenter has no realname set in their profile – it now returns `None` for `authorname` instead of an empty string.
+
 ## v1.10.0 - 2024-04-09
 
 *   Add a new method `list_all_comments(photo_id: str) -> list[Comment]` which returns a list of all the comments on a photo.
