@@ -88,6 +88,7 @@ class SinglePhoto(TypedDict):
 class CollectionOfElements(TypedDict):
     page_count: int
     total_photos: int
+    root: ET.Element
     elements: list[ET.Element]
 
 

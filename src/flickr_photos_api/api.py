@@ -187,12 +187,7 @@ class BaseApi:
             params={**params, "page": str(page), "per_page": str(per_page)},
         )
 
-        if len(resp) == 1:
-            collection_elem = resp[0]
-        else:  # pragma: no cover
-            raise ValueError(
-                f"Found multiple elements in response: {ET.tostring(resp).decode('utf8')}"
-            )
+        collection_elem = resp[0]
 
         # The wrapper element includes a couple of attributes related
         # to pagination, e.g.
@@ -207,6 +202,7 @@ class BaseApi:
         return {
             "page_count": page_count,
             "total_photos": total_photos,
+            "root": resp,
             "elements": elements,
         }
 
@@ -723,30 +719,6 @@ class FlickrPhotosApi(BaseApi):
             "location": location,
         }
 
-    def _parse_collection_of_photos_response(
-        self,
-        elem: ET.Element,
-        collection_owner: User | None = None,
-    ) -> CollectionOfPhotos:
-        # The wrapper element includes a couple of attributes related
-        # to pagination, e.g.
-        #
-        #     <photoset pages="1" total="2" …>
-        #
-        page_count = int(elem.attrib["pages"])
-        total_photos = int(elem.attrib["total"])
-
-        photos = [
-            self._to_photo(photo_elem, collection_owner=collection_owner)
-            for photo_elem in elem.findall(".//photo")
-        ]
-
-        return {
-            "page_count": page_count,
-            "total_photos": total_photos,
-            "photos": photos,
-        }
-
     def get_photos_in_album(
         self, *, user_url: str, album_id: str, page: int = 1, per_page: int = 10
     ) -> PhotosInAlbum:
@@ -800,30 +772,26 @@ class FlickrPhotosApi(BaseApi):
         Get the photos in a gallery.
         """
         # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
-        resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.galleries.getPhotos",
             params={
                 "gallery_id": gallery_id,
                 "get_gallery_info": "1",
                 "extras": ",".join(self.extras + ["path_alias"]),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photos")
-        )
-
-        gallery_elem = find_required_elem(resp, path=".//gallery")
+        gallery_elem = find_required_elem(resp["root"], path=".//gallery")
 
         gallery_title = find_required_text(gallery_elem, path="title")
         gallery_owner_name = gallery_elem.attrib["username"]
 
         return {
-            "photos": parsed_resp["photos"],
-            "page_count": parsed_resp["page_count"],
-            "total_photos": parsed_resp["total_photos"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+            "page_count": resp["page_count"],
+            "total_photos": resp["total_photos"],
             "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }
 
@@ -836,19 +804,24 @@ class FlickrPhotosApi(BaseApi):
         user = self.lookup_user_by_url(url=user_url)
 
         # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
-        photos_resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.people.getPublicPhotos",
             params={
                 "user_id": user["id"],
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        return self._parse_collection_of_photos_response(
-            find_required_elem(photos_resp, path=".//photos"), collection_owner=user
-        )
+        return {
+            "total_photos": resp["total_photos"],
+            "page_count": resp["page_count"],
+            "photos": [
+                self._to_photo(photo_elem, collection_owner=user)
+                for photo_elem in resp["elements"]
+            ],
+        }
 
     def lookup_group_from_url(self, *, url: str) -> GroupInfo:
         """
@@ -878,24 +851,20 @@ class FlickrPhotosApi(BaseApi):
         group_info = self.lookup_group_from_url(url=group_url)
 
         # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
-        photos_resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.groups.pools.getPhotos",
             params={
                 "group_id": group_info["id"],
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
-        )
-
-        parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(photos_resp, path=".//photos")
+            page=page,
+            per_page=per_page,
         )
 
         return {
-            "photos": parsed_resp["photos"],
-            "page_count": parsed_resp["page_count"],
-            "total_photos": parsed_resp["total_photos"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+            "page_count": resp["page_count"],
+            "total_photos": resp["total_photos"],
             "group": group_info,
         }
 
@@ -905,7 +874,7 @@ class FlickrPhotosApi(BaseApi):
         """
         Get all the photos that use a given tag.
         """
-        resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.photos.search",
             params={
                 "tags": tag,
@@ -917,14 +886,16 @@ class FlickrPhotosApi(BaseApi):
                 #
                 "sort": "interestingness-desc",
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        return self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photos")
-        )
+        return {
+            "total_photos": resp["total_photos"],
+            "page_count": resp["page_count"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+        }
 
     def get_photos_from_flickr_url(self, url: str) -> PhotosFromUrl:
         """
