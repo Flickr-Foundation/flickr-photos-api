@@ -642,3 +642,19 @@ def test_if_no_realname_then_empty(api: FlickrPhotosApi) -> None:
     comments = api.list_all_comments(photo_id="53654427282")
 
     assert comments[0]["author"]["realname"] is None
+
+
+@pytest.mark.parametrize(
+    "params",
+    [
+        {"user_id": "39758725@N03"},
+        {"user_id": "39758725@N03", "extras": "geo"},
+        {"user_id": "39758725@N03", "extras": "geo,date_upload"},
+    ],
+)
+def test_gets_stream_of_photos(api: FlickrPhotosApi, params: dict[str, str]) -> None:
+    iterator = api._get_stream_of_photos(
+        method="flickr.people.getPublicPhotos", params=params
+    )
+
+    assert sum(1 for _ in iterator) == 870
