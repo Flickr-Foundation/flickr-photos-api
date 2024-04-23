@@ -1,4 +1,6 @@
+from collections.abc import Iterator
 import functools
+import itertools
 import xml.etree.ElementTree as ET
 
 from flickr_url_parser import ParseResult, parse_flickr_url
@@ -24,6 +26,7 @@ from .exceptions import (
     ResourceNotFound,
 )
 from .types import (
+    CollectionOfElements,
     CollectionOfPhotos,
     Comment,
     GroupInfo,
@@ -163,6 +166,93 @@ class BaseApi:
                 raise FlickrApiException(errors)
 
         return xml
+
+    def _get_page_of_photos(
+        self,
+        *,
+        method: str,
+        params: dict[str, str],
+        page: int = 1,
+        per_page: int = 1,
+    ) -> CollectionOfElements:
+        """
+        Get a single page of photos from the Flickr API.
+
+        This returns a list of the raw XML elements, so different callers
+        can apply their own processing, e.g. depending on which ``extras``
+        they decided to include.
+        """
+        resp = self.call(
+            method=method,
+            params={**params, "page": str(page), "per_page": str(per_page)},
+        )
+
+        collection_elem = resp[0]
+
+        # The wrapper element includes a couple of attributes related
+        # to pagination, e.g.
+        #
+        #     <photoset pages="1" total="2" …>
+        #
+        page_count = int(collection_elem.attrib["pages"])
+        total_photos = int(collection_elem.attrib["total"])
+
+        elements = collection_elem.findall(".//photo")
+
+        return {
+            "page_count": page_count,
+            "total_photos": total_photos,
+            "root": resp,
+            "elements": elements,
+        }
+
+    def _get_stream_of_photos(
+        self, *, method: str, params: dict[str, str]
+    ) -> Iterator[ET.Element]:
+        """
+        Get a continuous stream of photos from the Flickr API.
+
+        This returns an iterator of the raw XML elements, so different callers
+        can apply their own processing, e.g. depending on which ``extras``
+        they decided to include.
+        """
+        if "extras" not in params:
+            params["extras"] = "date_upload"
+        elif "date_upload" not in params["extras"].split(","):
+            params["extras"] += ",date_upload"
+
+        assert "per_page" not in params
+        assert "page" not in params
+
+        for page in itertools.count(start=1):
+            resp = self.call(
+                method=method,
+                params={
+                    "per_page": "500",
+                    "page": str(page),
+                    **params,
+                },
+            )
+
+            if len(resp) == 1:
+                collection_elem = resp[0]
+            else:  # pragma: no cover
+                raise ValueError(
+                    f"Found multiple elements in response: {ET.tostring(resp).decode('utf8')}"
+                )
+
+            photos_in_page = collection_elem.findall("photo")
+
+            yield from photos_in_page
+
+            if not photos_in_page:
+                break
+
+        # This branch will only be executed if the ``for`` loop exits
+        # without a ``break``.  This will never happen; this is just here
+        # to satisfy coverage.
+        else:  # pragma: no cover
+            assert False
 
 
 class FlickrPhotosApi(BaseApi):
@@ -561,97 +651,72 @@ class FlickrPhotosApi(BaseApi):
         "realname",
     ]
 
-    def _parse_collection_of_photos_response(
-        self,
-        elem: ET.Element,
-        collection_owner: User | None = None,
-    ) -> CollectionOfPhotos:
-        # The wrapper element includes a couple of attributes related
-        # to pagination, e.g.
+    def _to_photo(
+        self, photo_elem: ET.Element, collection_owner: User | None = None
+    ) -> SinglePhoto:
+        photo_id = photo_elem.attrib["id"]
+
+        title = photo_elem.attrib["title"] or None
+        description = find_optional_text(photo_elem, path="description")
+
+        tags = photo_elem.attrib["tags"].split()
+
+        owner: User
+        if collection_owner is None:
+            owner_name = photo_elem.attrib["owner"]
+            path_alias = photo_elem.attrib.get("pathalias") or None
+
+            owner = {
+                "id": photo_elem.attrib["owner"],
+                "username": photo_elem.attrib["ownername"],
+                "realname": photo_elem.attrib.get("realname") or None,
+                "path_alias": path_alias,
+                "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_name}/",
+                "profile_url": f"https://www.flickr.com/people/{path_alias or owner_name}/",
+            }
+        else:
+            owner = {
+                "id": collection_owner["id"],
+                "username": collection_owner["username"],
+                "realname": collection_owner["realname"],
+                "path_alias": collection_owner["path_alias"],
+                "photos_url": collection_owner["photos_url"],
+                "profile_url": collection_owner["profile_url"],
+            }
+
+        assert owner["photos_url"].endswith("/")
+        url = owner["photos_url"] + photo_id + "/"
+
+        # The lat/long/accuracy fields will always be populated, even
+        # if there's no geo-information on this photo -- they're just
+        # set to zeroes.
         #
-        #     <photoset pages="1" total="2" …>
-        #
-        page_count = int(elem.attrib["pages"])
-        total_photos = int(elem.attrib["total"])
-
-        photos: list[SinglePhoto] = []
-
-        for photo_elem in elem.findall(".//photo"):
-            photo_id = photo_elem.attrib["id"]
-
-            title = photo_elem.attrib["title"] or None
-            description = find_optional_text(photo_elem, path="description")
-
-            tags = photo_elem.attrib["tags"].split()
-
-            owner: User
-            if collection_owner is None:
-                owner_name = photo_elem.attrib["owner"]
-                path_alias = photo_elem.attrib.get("pathalias") or None
-
-                owner = {
-                    "id": photo_elem.attrib["owner"],
-                    "username": photo_elem.attrib["ownername"],
-                    "realname": photo_elem.attrib.get("realname") or None,
-                    "path_alias": path_alias,
-                    "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_name}/",
-                    "profile_url": f"https://www.flickr.com/people/{path_alias or owner_name}/",
-                }
-            else:
-                owner = {
-                    "id": collection_owner["id"],
-                    "username": collection_owner["username"],
-                    "realname": collection_owner["realname"],
-                    "path_alias": collection_owner["path_alias"],
-                    "photos_url": collection_owner["photos_url"],
-                    "profile_url": collection_owner["profile_url"],
-                }
-
-            assert owner["photos_url"].endswith("/")
-            url = owner["photos_url"] + photo_id + "/"
-
-            # The lat/long/accuracy fields will always be populated, even
-            # if there's no geo-information on this photo -- they're just
-            # set to zeroes.
-            #
-            # We have to use the presence of geo permissions on the
-            # <photo> element to determine if there's actually location
-            # information here, or if we're getting the defaults.
-            if photo_elem.attrib.get("geo_is_public") == "1":
-                location = parse_location(photo_elem)
-            else:
-                location = None
-
-            photos.append(
-                {
-                    "id": photo_id,
-                    "title": title,
-                    "description": description,
-                    "date_posted": parse_date_posted(photo_elem.attrib["dateupload"]),
-                    "date_taken": parse_date_taken(
-                        value=photo_elem.attrib["datetaken"],
-                        granularity=photo_elem.attrib["datetakengranularity"],
-                        unknown=photo_elem.attrib["datetakenunknown"] == "1",
-                    ),
-                    "license": self.lookup_license_by_id(
-                        id=photo_elem.attrib["license"]
-                    ),
-                    "sizes": parse_sizes(photo_elem),
-                    "original_format": photo_elem.attrib.get("originalformat"),
-                    "safety_level": parse_safety_level(
-                        photo_elem.attrib["safety_level"]
-                    ),
-                    "owner": owner,
-                    "url": url,
-                    "tags": tags,
-                    "location": location,
-                }
-            )
+        # We have to use the presence of geo permissions on the
+        # <photo> element to determine if there's actually location
+        # information here, or if we're getting the defaults.
+        if photo_elem.attrib.get("geo_is_public") == "1":
+            location = parse_location(photo_elem)
+        else:
+            location = None
 
         return {
-            "page_count": page_count,
-            "total_photos": total_photos,
-            "photos": photos,
+            "id": photo_id,
+            "title": title,
+            "description": description,
+            "date_posted": parse_date_posted(photo_elem.attrib["dateupload"]),
+            "date_taken": parse_date_taken(
+                value=photo_elem.attrib["datetaken"],
+                granularity=photo_elem.attrib["datetakengranularity"],
+                unknown=photo_elem.attrib["datetakenunknown"] == "1",
+            ),
+            "license": self.lookup_license_by_id(id=photo_elem.attrib["license"]),
+            "sizes": parse_sizes(photo_elem),
+            "original_format": photo_elem.attrib.get("originalformat"),
+            "safety_level": parse_safety_level(photo_elem.attrib["safety_level"]),
+            "owner": owner,
+            "url": url,
+            "tags": tags,
+            "location": location,
         }
 
     def get_photos_in_album(
@@ -672,19 +737,15 @@ class FlickrPhotosApi(BaseApi):
         }
 
         # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
-        resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.photosets.getPhotos",
             params={
                 "user_id": user["id"],
                 "photoset_id": album_id,
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
-        )
-
-        parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photoset"), collection_owner=user
+            page=page,
+            per_page=per_page,
         )
 
         # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
@@ -695,9 +756,12 @@ class FlickrPhotosApi(BaseApi):
         album_title = find_required_text(album_resp, path=".//title")
 
         return {
-            "photos": parsed_resp["photos"],
-            "page_count": parsed_resp["page_count"],
-            "total_photos": parsed_resp["total_photos"],
+            "photos": [
+                self._to_photo(photo_elem, collection_owner=user)
+                for photo_elem in resp["elements"]
+            ],
+            "page_count": resp["page_count"],
+            "total_photos": resp["total_photos"],
             "album": {"owner": user, "title": album_title},
         }
 
@@ -708,30 +772,26 @@ class FlickrPhotosApi(BaseApi):
         Get the photos in a gallery.
         """
         # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
-        resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.galleries.getPhotos",
             params={
                 "gallery_id": gallery_id,
                 "get_gallery_info": "1",
                 "extras": ",".join(self.extras + ["path_alias"]),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photos")
-        )
-
-        gallery_elem = find_required_elem(resp, path=".//gallery")
+        gallery_elem = find_required_elem(resp["root"], path=".//gallery")
 
         gallery_title = find_required_text(gallery_elem, path="title")
         gallery_owner_name = gallery_elem.attrib["username"]
 
         return {
-            "photos": parsed_resp["photos"],
-            "page_count": parsed_resp["page_count"],
-            "total_photos": parsed_resp["total_photos"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+            "page_count": resp["page_count"],
+            "total_photos": resp["total_photos"],
             "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }
 
@@ -744,19 +804,24 @@ class FlickrPhotosApi(BaseApi):
         user = self.lookup_user_by_url(url=user_url)
 
         # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
-        photos_resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.people.getPublicPhotos",
             params={
                 "user_id": user["id"],
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        return self._parse_collection_of_photos_response(
-            find_required_elem(photos_resp, path=".//photos"), collection_owner=user
-        )
+        return {
+            "total_photos": resp["total_photos"],
+            "page_count": resp["page_count"],
+            "photos": [
+                self._to_photo(photo_elem, collection_owner=user)
+                for photo_elem in resp["elements"]
+            ],
+        }
 
     def lookup_group_from_url(self, *, url: str) -> GroupInfo:
         """
@@ -786,24 +851,20 @@ class FlickrPhotosApi(BaseApi):
         group_info = self.lookup_group_from_url(url=group_url)
 
         # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
-        photos_resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.groups.pools.getPhotos",
             params={
                 "group_id": group_info["id"],
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
-        )
-
-        parsed_resp = self._parse_collection_of_photos_response(
-            find_required_elem(photos_resp, path=".//photos")
+            page=page,
+            per_page=per_page,
         )
 
         return {
-            "photos": parsed_resp["photos"],
-            "page_count": parsed_resp["page_count"],
-            "total_photos": parsed_resp["total_photos"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+            "page_count": resp["page_count"],
+            "total_photos": resp["total_photos"],
             "group": group_info,
         }
 
@@ -813,7 +874,7 @@ class FlickrPhotosApi(BaseApi):
         """
         Get all the photos that use a given tag.
         """
-        resp = self.call(
+        resp = self._get_page_of_photos(
             method="flickr.photos.search",
             params={
                 "tags": tag,
@@ -825,14 +886,16 @@ class FlickrPhotosApi(BaseApi):
                 #
                 "sort": "interestingness-desc",
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
             },
+            page=page,
+            per_page=per_page,
         )
 
-        return self._parse_collection_of_photos_response(
-            find_required_elem(resp, path=".//photos")
-        )
+        return {
+            "total_photos": resp["total_photos"],
+            "page_count": resp["page_count"],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
+        }
 
     def get_photos_from_flickr_url(self, url: str) -> PhotosFromUrl:
         """

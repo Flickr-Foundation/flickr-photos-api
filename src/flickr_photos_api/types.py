@@ -1,5 +1,6 @@
 import datetime
 from typing import Literal, TypedDict
+from xml.etree import ElementTree as ET
 
 
 class License(TypedDict):
@@ -82,6 +83,14 @@ class SinglePhoto(TypedDict):
     original_format: str | None
     tags: list[str]
     location: LocationInfo | None
+
+
+class CollectionOfElements(TypedDict):
+    # TODO: Should these be renamed to `count_X` to match the Flickr API?
+    page_count: int
+    total_photos: int
+    root: ET.Element
+    elements: list[ET.Element]
 
 
 class CollectionOfPhotos(TypedDict):
