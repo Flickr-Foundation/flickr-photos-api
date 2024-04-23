@@ -86,6 +86,7 @@ class SinglePhoto(TypedDict):
 
 
 class CollectionOfElements(TypedDict):
+    # TODO: Should these be renamed to `count_X` to match the Flickr API?
     page_count: int
     total_photos: int
     root: ET.Element
