@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.11.0 - 2024-04-23
+
+*   Refactor the internals to expose a couple of new methods for getting a single page or a continuous stream of photos.
+
+    This should eventually allow callers to be much more specific about what `extras` and fields they want to retrieve.
+
 ## v1.10.1 - 2024-04-17
 
 *   Fix a bug in `list_all_comments()` for comments where the commenter has no realname set in their profile – it now returns `None` for `authorname` instead of an empty string.
