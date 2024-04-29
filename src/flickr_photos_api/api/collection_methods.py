@@ -183,6 +183,7 @@ class CollectionMethods(LicenseMethods):
         owner_id = photoset_elem.attrib["owner"]
         owner_username = photoset_elem.attrib["ownername"]
 
+        # Albums are always non-empty, so we know we'll find something here
         photo_elem = find_required_elem(photoset_elem, path="photo")
         realname = photo_elem.attrib.get("realname")
         path_alias = photo_elem.attrib.get("pathalias")
@@ -235,3 +236,46 @@ class CollectionMethods(LicenseMethods):
             **self._create_collection(photos_elem),
             "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }
+
+    def get_photos_in_user_photostream(
+        self, *, user_id: str, page: int = 1, per_page: int = 10
+    ) -> CollectionOfPhotos2:
+        """
+        Get all the public photos by a user on Flickr.
+        """
+        resp = self.call(
+            method="flickr.people.getPublicPhotos",
+            params={
+                "user_id": user_id,
+                "extras": ",".join(self.extras),
+                "page": str(page),
+                "per_page": str(page),
+            },
+        )
+
+        first_photo = resp.find(".//photo")
+
+        # The user hasn't uploaded any photos
+        if first_photo is None:
+            return {
+                'count_pages': 1,
+                'count_photos': 0,
+                'photos': []
+            }
+
+        owner_id = first_photo.attrib["owner"]
+        owner_username = first_photo.attrib["ownername"]
+
+        realname = first_photo.attrib.get("realname")
+        path_alias = first_photo.attrib.get("pathalias")
+
+        owner: User = {
+            "id": owner_id,
+            "username": owner_username,
+            "realname": realname,
+            "path_alias": path_alias,
+            "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_id}/",
+            "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
+        }
+
+        return self._create_collection(resp.find("photos"), owner=owner)

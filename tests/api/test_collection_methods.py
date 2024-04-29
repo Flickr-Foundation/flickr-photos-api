@@ -1,5 +1,5 @@
 from flickr_photos_api import FlickrPhotosApi
-from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2
+from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, CollectionOfPhotos2
 from utils import get_fixture
 
 
@@ -137,3 +137,30 @@ def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
     assert photos == get_fixture(
         "gallery-72157677773252346.json", model=PhotosInGallery2
     )
+
+
+class TestGetPhotosInUserPhotostream:
+    def test_can_get_photos(self, api: FlickrPhotosApi) -> None:
+        photos = api.get_photos_in_user_photostream(user_id="34427469121@N01")
+
+        from nitrate.json import DatetimeEncoder
+        import json
+
+        with open("tests/fixtures/api_responses/user-george.json", "w") as of:
+            of.write(json.dumps(photos, indent=2, sort_keys=True, cls=DatetimeEncoder))
+
+        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos2)
+
+    def test_empty_result_if_no_public_photos(self, api: FlickrPhotosApi) -> None:
+        # This is a user who doesn't have any public photos.
+        #
+        # I found them by looking for users on the Flickr help forums who wanted
+        # to make all their photos private:
+        # https://www.flickr.com/help/forum/en-us/72157668446667394/
+        photos = api.get_photos_in_user_photostream(user_id="51635425@N00")
+
+        assert photos == {
+            'count_pages': 1,
+            'count_photos': 0,
+            'photos': []
+        }

@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=1&user_id=51635425%40N00
+  response:
+    content: '<?xml version="1.0" encoding="utf-8" ?>
+
+      <rsp stat="ok">
+
+      <photos page="1" pages="0" perpage="1" total="0" />
+
+      </rsp>
+
+      '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 29 Apr 2024 16:27:04 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 718d744faad6ff02c7a7ca517a01865a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - tZl6ZqIqVHxfG7DMJVNCBUjq3A4N85YAc4997viAX9vQvgin5e_I4A==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Wed, 29-May-2024 16:27:03 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 29-May-2024 16:27:03 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-662fca57-2af5571822825a0c3fc5f90a;Root=1-662fca57-6893654b3ab8668a35c7bd64
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.32.246
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
