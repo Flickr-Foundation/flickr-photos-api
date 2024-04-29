@@ -1,4 +1,4 @@
-from collections.abc import Generator
+from collections.abc import Iterator
 import os
 
 from nitrate.cassettes import cassette_name, vcr_cassette
@@ -14,7 +14,7 @@ def user_agent() -> str:
 
 
 @pytest.fixture(scope="function")
-def api(cassette_name: str, user_agent: str) -> Generator[FlickrPhotosApi, None, None]:
+def api(cassette_name: str, user_agent: str) -> Iterator[FlickrPhotosApi]:
     """
     Creates an instance of the FlickrPhotosApi class for use in tests.
 

@@ -5,6 +5,7 @@ Methods for getting information about a single photo in the Flickr API.
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
+from ..exceptions import ResourceNotFound
 from ..types import SinglePhotoInfo, SinglePhoto, Size, User
 from ..utils import (
     parse_date_posted,
@@ -249,3 +250,14 @@ class SinglePhotoMethods(LicenseMethods):
             "tags": info["tags"],
             "location": info["location"],
         }
+
+    def is_photo_deleted(self, *, photo_id: str) -> bool:
+        """
+        Check if a photo has been deleted from Flickr.
+        """
+        try:
+            self.call(method="flickr.photos.getInfo", params={"photo_id": photo_id})
+        except ResourceNotFound:
+            return True
+        else:
+            return False
