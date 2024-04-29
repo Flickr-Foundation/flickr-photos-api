@@ -11,6 +11,20 @@ It's designed for use at the [Flickr Foundation], and provides a subset of Flick
 
 [Flickr Foundation]: https://www.flickr.org/
 
+## Design
+
+**This library tries to balance efficiency and reusability.**
+
+*   We don't want to have to write a new Flickr API library for every project -- we want to be able to reuse as much code as possible.
+
+*   The Flickr API can return a lot of fields, which is controlled by the `extras` query parameter.
+
+    For example, when you look up a collection of photos, you could add `extras=license` to include information about the license of each photo; or you could add `extras=title,description` to include information about the title and license.
+    
+    We don't want to fetch more fields than are necessary -- that's a lot of extra data!
+
+We try to provide a set of methods that reuse the most code, but allow the flexibility for callers to decide which `extras` they want.
+
 ## Examples
 
 ```console

@@ -21,16 +21,16 @@ interactions:
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '113'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 27 Dec 2023 13:35:44 GMT
+      - Mon, 29 Apr 2024 14:05:44 GMT
+      Transfer-Encoding:
+      - chunked
       Via:
-      - 1.1 40b76fea3127a1d583fbc11b2e091fc2.cloudfront.net (CloudFront)
+      - 1.1 d67d31689e6e1651260ad9b2311bb686.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - GrTCQ724JCIXQo7brOs8UzYS7ey8I-TIdAORTP_HGPjI_YiR9LQorg==
+      - u2WC9OGFofXryUO77nHdmDG42wJ2BUAcxRP6WTf0iINklblnt0J1LQ==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -38,18 +38,20 @@ interactions:
       content-encoding:
       - gzip
       server:
-      - Apache/2.4.58 (Ubuntu)
+      - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 26-Jan-2024 13:35:43 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Wed, 29-May-2024 14:05:44 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Fri, 26-Jan-2024 13:35:43 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Wed, 29-May-2024 14:05:44 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
-      x-frame-options:
-      - SAMEORIGIN
+      x-flickr-api-request:
+      - Self=1-662fa938-67470fb7150cb3045b22a85b;Root=1-662fa938-73e40a6551b047fb2346de00
       x-robots-tag:
       - noindex
+      x-server:
+      - serverless-proxy-10.78.11.164
     http_version: HTTP/1.1
     status_code: 200
 version: 1

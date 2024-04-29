@@ -31,6 +31,7 @@ from .types import (
     Comment,
     GroupInfo,
     License,
+    ParsedElement,
     PhotosFromUrl,
     PhotosInAlbum,
     PhotosInGallery,
@@ -40,6 +41,7 @@ from .types import (
     Size,
     User,
     UserInfo,
+    user_info_to_user,
 )
 from .utils import (
     parse_date_posted,
@@ -168,6 +170,58 @@ class BaseApi:
 
         return xml
 
+    def _to_parsed_element(self, photo_elem: ET.Element) -> ParsedElement:
+        """
+        Given a <photo> element from a collection response, parse some
+        common fields that we expect we will always use.
+        """
+        owner: User | None
+        try:
+            owner_id = photo_elem.attrib["owner"]
+            path_alias = photo_elem.attrib["pathalias"] or None
+
+            owner = {
+                "id": owner_id,
+                "username": photo_elem.attrib["ownername"],
+                "realname": photo_elem.attrib.get("realname"),
+                "path_alias": path_alias,
+                "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_id}/",
+                "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
+            }
+        except KeyError:
+            owner = None
+
+        date_posted = parse_date_posted(photo_elem.attrib["dateupload"])
+        date_taken = parse_date_taken(
+            value=photo_elem.attrib["datetaken"],
+            granularity=photo_elem.attrib["datetakengranularity"],
+            unknown=photo_elem.attrib["datetakenunknown"] == "1",
+        )
+        license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
+        sizes = parse_sizes(photo_elem)
+
+        return {
+            "photo_elem": photo_elem,
+            "id": photo_elem.attrib["id"],
+            "owner": owner,
+            "date_posted": date_posted,
+            "date_taken": date_taken,
+            "license": license,
+            "sizes": sizes,
+        }
+
+    # We always include these extras in our API calls, because we always
+    # expect to use them.
+    required_extras = [
+        "license",
+        "date_upload",
+        "date_taken",
+        "owner_name",
+        "owner",
+        "path_alias",
+        "realname",
+    ]
+
     def _get_page_of_photos(
         self,
         *,
@@ -183,6 +237,12 @@ class BaseApi:
         can apply their own processing, e.g. depending on which ``extras``
         they decided to include.
         """
+        extras = params.get("extras", "").split(",")
+        for e in self.required_extras:
+            if e not in extras:
+                extras.append(e)
+        params["extras"] = ",".join(extras)
+
         resp = self.call(
             method=method,
             params={**params, "page": str(page), "per_page": str(per_page)},
@@ -198,7 +258,10 @@ class BaseApi:
         page_count = int(collection_elem.attrib["pages"])
         total_photos = int(collection_elem.attrib["total"])
 
-        elements = collection_elem.findall(".//photo")
+        elements = [
+            self._to_parsed_element(elem)
+            for elem in collection_elem.findall(".//photo")
+        ]
 
         return {
             "page_count": page_count,
@@ -209,7 +272,7 @@ class BaseApi:
 
     def _get_stream_of_photos(
         self, *, method: str, params: dict[str, str]
-    ) -> Iterator[ET.Element]:
+    ) -> Iterator[ParsedElement]:
         """
         Get a continuous stream of photos from the Flickr API.
 
@@ -217,10 +280,11 @@ class BaseApi:
         can apply their own processing, e.g. depending on which ``extras``
         they decided to include.
         """
-        if "extras" not in params:
-            params["extras"] = "date_upload"
-        elif "date_upload" not in params["extras"].split(","):
-            params["extras"] += ",date_upload"
+        extras = params.get("extras", "").split(",")
+        for e in self.required_extras:
+            if e not in extras:
+                extras.append(e)
+        params["extras"] = ",".join(extras)
 
         assert "per_page" not in params
         assert "page" not in params
@@ -244,7 +308,8 @@ class BaseApi:
 
             photos_in_page = collection_elem.findall("photo")
 
-            yield from photos_in_page
+            for photo_elem in photos_in_page:
+                yield self._to_parsed_element(photo_elem)
 
             if not photos_in_page:
                 break
@@ -255,8 +320,6 @@ class BaseApi:
         else:  # pragma: no cover
             assert False
 
-
-class FlickrPhotosApi(BaseApi):
     @functools.lru_cache()
     def get_licenses(self) -> dict[str, License]:
         """
@@ -326,6 +389,8 @@ class FlickrPhotosApi(BaseApi):
         except KeyError:
             raise LicenseNotFound(license_id=id)
 
+
+class FlickrPhotosApi(BaseApi):
     def lookup_user_by_id(self, *, user_id: str) -> UserInfo:
         """
         Given the link to a user's photos or profile, return their info.
@@ -694,40 +759,20 @@ class FlickrPhotosApi(BaseApi):
     ]
 
     def _to_photo(
-        self, photo_elem: ET.Element, collection_owner: User | None = None
+        self, parsed_elem: ParsedElement, *, collection_owner: User | None = None
     ) -> SinglePhoto:
-        photo_id = photo_elem.attrib["id"]
+        photo_elem = parsed_elem["photo_elem"]
 
         title = photo_elem.attrib["title"] or None
         description = find_optional_text(photo_elem, path="description")
 
         tags = photo_elem.attrib["tags"].split()
 
-        owner: User
-        if collection_owner is None:
-            owner_name = photo_elem.attrib["owner"]
-            path_alias = photo_elem.attrib.get("pathalias") or None
-
-            owner = {
-                "id": photo_elem.attrib["owner"],
-                "username": photo_elem.attrib["ownername"],
-                "realname": photo_elem.attrib.get("realname") or None,
-                "path_alias": path_alias,
-                "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_name}/",
-                "profile_url": f"https://www.flickr.com/people/{path_alias or owner_name}/",
-            }
-        else:
-            owner = {
-                "id": collection_owner["id"],
-                "username": collection_owner["username"],
-                "realname": collection_owner["realname"],
-                "path_alias": collection_owner["path_alias"],
-                "photos_url": collection_owner["photos_url"],
-                "profile_url": collection_owner["profile_url"],
-            }
+        owner = parsed_elem["owner"] or collection_owner
+        assert owner is not None
 
         assert owner["photos_url"].endswith("/")
-        url = owner["photos_url"] + photo_id + "/"
+        url = owner["photos_url"] + parsed_elem["id"] + "/"
 
         # The lat/long/accuracy fields will always be populated, even
         # if there's no geo-information on this photo -- they're just
@@ -742,17 +787,13 @@ class FlickrPhotosApi(BaseApi):
             location = None
 
         return {
-            "id": photo_id,
+            "id": parsed_elem["id"],
             "title": title,
             "description": description,
-            "date_posted": parse_date_posted(photo_elem.attrib["dateupload"]),
-            "date_taken": parse_date_taken(
-                value=photo_elem.attrib["datetaken"],
-                granularity=photo_elem.attrib["datetakengranularity"],
-                unknown=photo_elem.attrib["datetakenunknown"] == "1",
-            ),
-            "license": self.lookup_license_by_id(id=photo_elem.attrib["license"]),
-            "sizes": parse_sizes(photo_elem),
+            "date_posted": parsed_elem["date_posted"],
+            "date_taken": parsed_elem["date_taken"],
+            "license": parsed_elem["license"],
+            "sizes": parsed_elem["sizes"],
             "original_format": photo_elem.attrib.get("originalformat"),
             "safety_level": parse_safety_level(photo_elem.attrib["safety_level"]),
             "owner": owner,
@@ -768,21 +809,13 @@ class FlickrPhotosApi(BaseApi):
         Get the photos in an album.
         """
         user_info = self.lookup_user_by_url(url=user_url)
-
-        user: User = {
-            "id": user_info["id"],
-            "username": user_info["username"],
-            "realname": user_info["realname"],
-            "path_alias": user_info["path_alias"],
-            "photos_url": user_info["photos_url"],
-            "profile_url": user_info["profile_url"],
-        }
+        user = user_info_to_user(user_info)
 
         # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
         resp = self._get_page_of_photos(
             method="flickr.photosets.getPhotos",
             params={
-                "user_id": user["id"],
+                "user_id": user_info["id"],
                 "photoset_id": album_id,
                 "extras": ",".join(self.extras),
             },
@@ -793,7 +826,7 @@ class FlickrPhotosApi(BaseApi):
         # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
         album_resp = self.call(
             method="flickr.photosets.getInfo",
-            params={"user_id": user["id"], "photoset_id": album_id},
+            params={"user_id": user_info["id"], "photoset_id": album_id},
         )
         album_title = find_required_text(album_resp, path=".//title")
 
@@ -859,10 +892,7 @@ class FlickrPhotosApi(BaseApi):
         return {
             "total_photos": resp["total_photos"],
             "page_count": resp["page_count"],
-            "photos": [
-                self._to_photo(photo_elem, collection_owner=user)
-                for photo_elem in resp["elements"]
-            ],
+            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
         }
 
     def lookup_group_from_url(self, *, url: str) -> GroupInfo:

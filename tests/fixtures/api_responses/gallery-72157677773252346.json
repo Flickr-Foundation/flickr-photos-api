@@ -247,42 +247,42 @@
           "height": 75,
           "label": "Square",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924_s.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234_s.jpg",
           "width": 75
         },
         {
           "height": 150,
           "label": "Large Square",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924_q.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234_q.jpg",
           "width": 150
         },
         {
           "height": 100,
           "label": "Thumbnail",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924_t.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234_t.jpg",
           "width": 67
         },
         {
           "height": 240,
           "label": "Small",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924_m.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234_m.jpg",
           "width": 160
         },
         {
           "height": 500,
           "label": "Medium",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234.jpg",
           "width": 333
         },
         {
           "height": 1024,
           "label": "Large",
           "media": "photo",
-          "source": "https://live.staticflickr.com/65535/52370517025_0ff217b924_b.jpg",
+          "source": "https://live.staticflickr.com/65535/52370517025_2422334234_b.jpg",
           "width": 683
         }
       ],
@@ -993,5 +993,5 @@
       "url": "https://www.flickr.com/photos/falcogr/52412249876/"
     }
   ],
-  "total_photos": 140
+  "total_photos": 139
 }

@@ -14,6 +14,7 @@ from .types import (
     TakenGranularity,
     DateTaken,
     LocationInfo,
+    ParsedElement,
     Size,
     SafetyLevel,
     SinglePhoto,
@@ -29,7 +30,7 @@ from .types import (
 )
 
 
-__version__ = "1.13.0"
+__version__ = "1.14.0"
 
 
 __all__ = [
@@ -51,6 +52,7 @@ __all__ = [
     "SinglePhoto",
     "SinglePhotoInfo",
     "CollectionOfPhotos",
+    "ParsedElement",
     "PhotosFromUrl",
     "PhotosInAlbum",
     "PhotosInGallery",

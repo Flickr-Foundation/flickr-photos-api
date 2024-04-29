@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.14.0 - 2024-04-29
+
+*   More internal refactoring.
+
 ## v1.13.0 - 2024-04-29
 
 *   Add a new method `get_single_photo_sizes()` which wraps all the information returned by the `flickr.photos.getSizes` API.
