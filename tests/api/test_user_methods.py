@@ -3,7 +3,7 @@ import pytest
 from flickr_photos_api import FlickrPhotosApi
 
 
-def test_lookup_user_by_url(self, api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_url(api: FlickrPhotosApi) -> None:
     assert api.lookup_user_by_url(
         url="https://www.flickr.com/photos/199246608@N02"
     ) == {
@@ -19,7 +19,7 @@ def test_lookup_user_by_url(self, api: FlickrPhotosApi) -> None:
     }
 
 
-def test_lookup_user_by_url_doesnt_use_username(self, api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_url_doesnt_use_username(api: FlickrPhotosApi) -> None:
     # In this URL the last component is the _path alias_, not the
     # username, but I got that mixed up when I was new to the Flickr API.
     #
@@ -32,7 +32,7 @@ def test_lookup_user_by_url_doesnt_use_username(self, api: FlickrPhotosApi) -> N
     assert user_info["username"] == "The British Library"
 
 
-def test_lookup_user_by_id(self, api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_id(api: FlickrPhotosApi) -> None:
     assert api.lookup_user_by_id(user_id="199258389@N04") == {
         "id": "199258389@N04",
         "username": "alexwlchan",
@@ -54,7 +54,7 @@ def test_lookup_user_by_id(self, api: FlickrPhotosApi) -> None:
     ],
 )
 def test_lookup_user_gets_realname(
-    self, api: FlickrPhotosApi, user_id: str, realname: str | None
+    api: FlickrPhotosApi, user_id: str, realname: str | None
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 
@@ -73,7 +73,7 @@ def test_lookup_user_gets_realname(
     ],
 )
 def test_lookup_user_gets_description(
-    self, api: FlickrPhotosApi, user_id: str, description: str | None
+    api: FlickrPhotosApi, user_id: str, description: str | None
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 
@@ -85,7 +85,7 @@ def test_lookup_user_gets_description(
     [("199258389@N04", False), ("12403504@N02", True)],
 )
 def test_lookup_user_gets_has_pro_account(
-    self, api: FlickrPhotosApi, user_id: str, has_pro_account: bool
+    api: FlickrPhotosApi, user_id: str, has_pro_account: bool
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 

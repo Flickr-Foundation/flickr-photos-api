@@ -5,7 +5,7 @@ Methods for getting information about collections of photos in Flickr
 
 from xml.etree import ElementTree as ET
 
-from nitrate.xml import find_required_elem
+from nitrate.xml import find_optional_text, find_required_elem
 
 from .license_methods import LicenseMethods
 from ..types import (
@@ -57,8 +57,8 @@ class CollectionMethods(LicenseMethods):
 
         license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
 
-        title = photo_elem.attrib["title"]
-        description = photo_elem.attrib.get("description")
+        title = photo_elem.attrib["title"] or None
+        description = find_optional_text(photo_elem, path="description")
         tags = photo_elem.attrib["tags"].split()
 
         date_posted = parse_date_posted(photo_elem.attrib["dateupload"])
@@ -177,8 +177,6 @@ class CollectionMethods(LicenseMethods):
                 "per_page": str(per_page),
             },
         )
-
-        print(",".join(self.extras))
 
         photoset_elem = find_required_elem(resp, path="photoset")
         owner_id = photoset_elem.attrib["owner"]

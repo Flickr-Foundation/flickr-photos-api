@@ -13,46 +13,9 @@ from flickr_photos_api import (
 from utils import get_fixture
 
 
-class TestGetAlbum:
-    def test_can_get_album(self, api: FlickrPhotosApi) -> None:
-        album = api.get_photos_in_album(
-            user_url="https://www.flickr.com/photos/spike_yun/",
-            album_id="72157677773252346",
-        )
-
-        assert album == get_fixture("album-72157677773252346.json", model=PhotosInAlbum)
-
-    def test_empty_album_title_is_none(self, api: FlickrPhotosApi) -> None:
-        album = api.get_photos_in_album(
-            user_url="https://www.flickr.com/photos/spike_yun/",
-            album_id="72157677773252346",
-        )
-
-        assert album["photos"][0]["title"] == "Seoul"
-        assert album["photos"][7]["title"] is None
-
-    def test_empty_album_description_is_none(self, api: FlickrPhotosApi) -> None:
-        album_without_desc = api.get_photos_in_album(
-            user_url="https://www.flickr.com/photos/aljazeeraenglish/",
-            album_id="72157626164453131",
-        )
-
-        assert all(
-            photo["description"] is None for photo in album_without_desc["photos"]
-        )
-
-        album_with_desc = api.get_photos_in_album(
-            user_url="https://www.flickr.com/photos/zeeyolqpictures/",
-            album_id="72157631707062493",
-        )
-
-        assert all(
-            isinstance(photo["description"], str) for photo in album_with_desc["photos"]
-        )
-
-
 def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
     photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
+
 
     assert photos == get_fixture(
         "gallery-72157677773252346.json", model=PhotosInGallery

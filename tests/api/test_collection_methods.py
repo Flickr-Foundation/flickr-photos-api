@@ -1,4 +1,6 @@
 from flickr_photos_api import FlickrPhotosApi
+from flickr_photos_api.types import PhotosInAlbum2
+from utils import get_fixture
 
 
 class TestCollectionsPhotoResponse:
@@ -85,4 +87,45 @@ class TestCollectionsPhotoResponse:
         api.get_photos_in_album(
             user_id="91178292@N00",
             album_id="72157624715342071",
+        )
+
+    def test_gets_description_when_present(self, api: FlickrPhotosApi) -> None:
+        # This is a collection of screenshots from a Flickr Foundation album,
+        # which we know have descriptions populated
+        album_with_desc = api.get_photos_in_album(
+            user_id="197130754@N07",
+            album_id="72177720315673331",
+        )
+
+        assert all(
+            isinstance(photo["description"], str) for photo in album_with_desc["photos"]
+        )
+
+
+class TestGetAlbum:
+    def test_can_get_album(self, api: FlickrPhotosApi) -> None:
+        photos = api.get_photos_in_album(
+            user_id="132051449@N06",
+            album_id="72157677773252346",
+        )
+
+        assert photos == get_fixture("album-72157677773252346.json", model=PhotosInAlbum2)
+
+    def test_empty_album_title_is_none(self, api: FlickrPhotosApi) -> None:
+        album = api.get_photos_in_album(
+            user_id="132051449@N06",
+            album_id="72157677773252346",
+        )
+
+        assert album["photos"][0]["title"] == "Seoul"
+        assert album["photos"][7]["title"] is None
+
+    def test_empty_album_description_is_none(self, api: FlickrPhotosApi) -> None:
+        album_without_desc = api.get_photos_in_album(
+            user_id="32834977@N03",
+            album_id="72157626164453131",
+        )
+
+        assert all(
+            photo["description"] is None for photo in album_without_desc["photos"]
         )
