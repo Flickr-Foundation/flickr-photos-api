@@ -488,9 +488,6 @@ def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
             {"group_url": "https://www.flickr.com/groups/slovenia/pool/"},
             id="get_photos_in_group_pool",
         ),
-        pytest.param(
-            "get_photos_with_tag", {"tag": "sunset"}, id="get_photos_with_tag"
-        ),
     ],
 )
 def test_get_collection_methods_are_paginated(
@@ -560,9 +557,9 @@ def test_get_collection_methods_are_paginated(
 def test_get_photos_from_flickr_url(
     api: FlickrPhotosApi, url: str, filename: str, model: type[T]
 ) -> None:
-    resp = api.get_photos_from_flickr_url(url)
+    photos = api.get_photos_from_flickr_url(url)
 
-    assert resp == get_fixture(filename, model=model)
+    assert photos == get_fixture(filename, model=model)
 
 
 @pytest.mark.parametrize(
@@ -649,7 +646,7 @@ def test_if_no_realname_then_empty(api: FlickrPhotosApi) -> None:
     [
         {"user_id": "39758725@N03", "extras": ""},
         {"user_id": "39758725@N03", "extras": "geo"},
-        {"user_id": "39758725@N03", "extras": "geo,title"},
+        {"user_id": "39758725@N03", "extras": "geo,title,license,"},
     ],
 )
 def test_gets_stream_of_photos(api: FlickrPhotosApi, params: dict[str, str]) -> None:

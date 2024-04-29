@@ -809,6 +809,7 @@ class FlickrPhotosApi(BaseApi):
         Get the photos in an album.
         """
         user_info = self.lookup_user_by_url(url=user_url)
+        user = user_info_to_user(user_info)
 
         # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
         resp = self._get_page_of_photos(
@@ -831,12 +832,12 @@ class FlickrPhotosApi(BaseApi):
 
         return {
             "photos": [
-                self._to_photo(photo_elem, collection_owner=user_info_to_user(user_info))
+                self._to_photo(photo_elem, collection_owner=user)
                 for photo_elem in resp["elements"]
             ],
             "page_count": resp["page_count"],
             "total_photos": resp["total_photos"],
-            "album": {"owner": user_info, "title": album_title},
+            "album": {"owner": user, "title": album_title},
         }
 
     def get_photos_in_gallery(

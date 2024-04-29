@@ -1522,92 +1522,6 @@
     {
       "date_posted": {
         "type": "datetime.datetime",
-        "value": "2021-06-18T01:13:13+00:00"
-      },
-      "date_taken": {
-        "granularity": "second",
-        "value": {
-          "type": "datetime.datetime",
-          "value": "2021-06-17T13:43:35"
-        }
-      },
-      "description": "There is an Elk Park downtown Gaylord, Michigan, where elks roam free on about 100 acres. They come close to the fence where they have food and human company.",
-      "id": "51254850149",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "location": {
-        "accuracy": 16,
-        "latitude": 45.01686,
-        "longitude": -84.672064
-      },
-      "original_format": null,
-      "owner": {
-        "id": "155917354@N06",
-        "path_alias": "laurentfadyphotos",
-        "photos_url": "https://www.flickr.com/photos/laurentfadyphotos/",
-        "profile_url": "https://www.flickr.com/people/laurentfadyphotos/",
-        "realname": "Laurent Fady",
-        "username": "Petoskey Drones"
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 73,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 174,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 363,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297.jpg",
-          "width": 500
-        },
-        {
-          "height": 743,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51254850149_7ff88ac297_b.jpg",
-          "width": 1024
-        }
-      ],
-      "tags": [
-        "animal",
-        "elk",
-        "young"
-      ],
-      "title": "Young Elk.",
-      "url": "https://www.flickr.com/photos/laurentfadyphotos/51254850149/"
-    },
-    {
-      "date_posted": {
-        "type": "datetime.datetime",
         "value": "2021-07-13T11:58:26+00:00"
       },
       "date_taken": {
@@ -1804,7 +1718,7 @@
         "photos_url": "https://www.flickr.com/photos/jessicachau/",
         "profile_url": "https://www.flickr.com/people/jessicachau/",
         "realname": "Jessica  Chau",
-        "username": "jchau1731, thanks for 9 million views"
+        "username": "jchau1731, thanks for 11 million views"
       },
       "safety_level": "safe",
       "sizes": [
@@ -2009,7 +1923,7 @@
         "path_alias": "paolopittorino",
         "photos_url": "https://www.flickr.com/photos/paolopittorino/",
         "profile_url": "https://www.flickr.com/people/paolopittorino/",
-        "realname": null,
+        "realname": "",
         "username": "lajoliette2010 Paul Pittorino"
       },
       "safety_level": "safe",
@@ -2287,7 +2201,7 @@
         "path_alias": "teekay-72",
         "photos_url": "https://www.flickr.com/photos/teekay-72/",
         "profile_url": "https://www.flickr.com/people/teekay-72/",
-        "realname": null,
+        "realname": "",
         "username": "teekay72"
       },
       "safety_level": "safe",
@@ -2884,84 +2798,6 @@
       ],
       "title": "Leaving the waters",
       "url": "https://www.flickr.com/photos/thelmagatuzzo/51296723669/"
-    },
-    {
-      "date_posted": {
-        "type": "datetime.datetime",
-        "value": "2021-07-06T22:09:31+00:00"
-      },
-      "date_taken": {
-        "granularity": "second",
-        "value": {
-          "type": "datetime.datetime",
-          "value": "2021-07-06T12:05:54"
-        }
-      },
-      "description": "Pentax 6x7 105mm f2.4 lens",
-      "id": "51294962436",
-      "license": {
-        "id": "in-copyright",
-        "label": "All Rights Reserved",
-        "url": null
-      },
-      "location": null,
-      "original_format": null,
-      "owner": {
-        "id": "72309835@N02",
-        "path_alias": "f2guru",
-        "photos_url": "https://www.flickr.com/photos/f2guru/",
-        "profile_url": "https://www.flickr.com/people/f2guru/",
-        "realname": "Dave Weber \"Fenwoodian\"",
-        "username": "YouTube.com/@AffordablePhotography"
-      },
-      "safety_level": "safe",
-      "sizes": [
-        {
-          "height": 75,
-          "label": "Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc_s.jpg",
-          "width": 75
-        },
-        {
-          "height": 150,
-          "label": "Large Square",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc_q.jpg",
-          "width": 150
-        },
-        {
-          "height": 67,
-          "label": "Thumbnail",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc_t.jpg",
-          "width": 100
-        },
-        {
-          "height": 160,
-          "label": "Small",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc_m.jpg",
-          "width": 240
-        },
-        {
-          "height": 333,
-          "label": "Medium",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc.jpg",
-          "width": 500
-        },
-        {
-          "height": 683,
-          "label": "Large",
-          "media": "photo",
-          "source": "https://live.staticflickr.com/65535/51294962436_2f92b261dc_b.jpg",
-          "width": 1024
-        }
-      ],
-      "tags": [],
-      "title": "Backyard Dahlia",
-      "url": "https://www.flickr.com/photos/f2guru/51294962436/"
     },
     {
       "date_posted": {
@@ -4444,7 +4280,7 @@
         "path_alias": "yannha",
         "photos_url": "https://www.flickr.com/photos/yannha/",
         "profile_url": "https://www.flickr.com/people/yannha/",
-        "realname": null,
+        "realname": "",
         "username": "yannha"
       },
       "safety_level": "safe",
@@ -4802,7 +4638,7 @@
         "photos_url": "https://www.flickr.com/photos/chetkresiak/",
         "profile_url": "https://www.flickr.com/people/chetkresiak/",
         "realname": null,
-        "username": "Chet K. THANKS FOR 49 MILLION VIEWS"
+        "username": "Chet K. THANKS FOR 53 MILLION VIEWS"
       },
       "safety_level": "safe",
       "sizes": [
@@ -6140,7 +5976,7 @@
         "path_alias": "bombeador",
         "photos_url": "https://www.flickr.com/photos/bombeador/",
         "profile_url": "https://www.flickr.com/people/bombeador/",
-        "realname": null,
+        "realname": "",
         "username": "Eduardo Amorim"
       },
       "safety_level": "safe",
@@ -7506,7 +7342,7 @@
         "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/24931020@N02/",
         "profile_url": "https://www.flickr.com/people/24931020@N02/",
-        "realname": null,
+        "realname": "",
         "username": "Ozzy Delaney"
       },
       "safety_level": "safe",
@@ -8222,7 +8058,7 @@
         "photos_url": "https://www.flickr.com/photos/pungut/",
         "profile_url": "https://www.flickr.com/people/pungut/",
         "realname": null,
-        "username": "Tokki,an idiot w/cameras & birds. 5.5M views"
+        "username": "Tokki,an idiot w/cameras & birds. 5.8M views"
       },
       "safety_level": "safe",
       "sizes": [
@@ -9168,7 +9004,166 @@
       ],
       "title": "Northern Cardinal #5 - 2018-12-08",
       "url": "https://www.flickr.com/photos/dl_dietz/51234548695/"
+    },
+    {
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2017-01-31T00:40:54+00:00"
+      },
+      "date_taken": null,
+      "description": null,
+      "id": "32619122845",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "location": null,
+      "original_format": null,
+      "owner": {
+        "id": "35129543@N08",
+        "path_alias": "ted_holm",
+        "photos_url": "https://www.flickr.com/photos/ted_holm/",
+        "profile_url": "https://www.flickr.com/people/ted_holm/",
+        "realname": null,
+        "username": "Ted Holm Photography"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 56,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 135,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 281,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0.jpg",
+          "width": 500
+        },
+        {
+          "height": 576,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/505/32619122845_fb424fefa0_b.jpg",
+          "width": 1024
+        }
+      ],
+      "tags": [],
+      "title": "Hummingbird",
+      "url": "https://www.flickr.com/photos/ted_holm/32619122845/"
+    },
+    {
+      "date_posted": {
+        "type": "datetime.datetime",
+        "value": "2021-06-07T14:26:28+00:00"
+      },
+      "date_taken": {
+        "granularity": "second",
+        "value": {
+          "type": "datetime.datetime",
+          "value": "2021-06-06T16:21:22"
+        }
+      },
+      "description": "I got this shot of a Great Blue Heron yesterday afternoon as it fly close by me at California's San Elijo Lagoon.  I really liked how the late afternoon light caught its wings.",
+      "id": "51232117714",
+      "license": {
+        "id": "in-copyright",
+        "label": "All Rights Reserved",
+        "url": null
+      },
+      "location": null,
+      "original_format": null,
+      "owner": {
+        "id": "53755691@N00",
+        "path_alias": "npaoni",
+        "photos_url": "https://www.flickr.com/photos/npaoni/",
+        "profile_url": "https://www.flickr.com/people/npaoni/",
+        "realname": "Nicholas Paoni",
+        "username": "Nicholas Paoni"
+      },
+      "safety_level": "safe",
+      "sizes": [
+        {
+          "height": 75,
+          "label": "Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364_s.jpg",
+          "width": 75
+        },
+        {
+          "height": 150,
+          "label": "Large Square",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364_q.jpg",
+          "width": 150
+        },
+        {
+          "height": 63,
+          "label": "Thumbnail",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364_t.jpg",
+          "width": 100
+        },
+        {
+          "height": 150,
+          "label": "Small",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364_m.jpg",
+          "width": 240
+        },
+        {
+          "height": 313,
+          "label": "Medium",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364.jpg",
+          "width": 500
+        },
+        {
+          "height": 642,
+          "label": "Large",
+          "media": "photo",
+          "source": "https://live.staticflickr.com/65535/51232117714_d36077c364_b.jpg",
+          "width": 1024
+        }
+      ],
+      "tags": [
+        "birds",
+        "birdphotography",
+        "nature",
+        "animals",
+        "naturephotography",
+        "wildlife",
+        "wildlifephotography",
+        "birdinflight"
+      ],
+      "title": "Portrait of a Great Blue Heron",
+      "url": "https://www.flickr.com/photos/npaoni/51232117714/"
     }
   ],
-  "total_photos": 484
+  "total_photos": 481
 }
