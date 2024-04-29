@@ -814,7 +814,7 @@ class FlickrPhotosApi(BaseApi):
         self, *, user_url: str, album_id: str, page: int = 1, per_page: int = 10
     ) -> PhotosInAlbum:
         """
-        Get the photos in an album.
+        Get a page of photos from an album.
         """
         user_info = self.lookup_user_by_url(url=user_url)
         user = user_info_to_user(user_info)
@@ -831,12 +831,12 @@ class FlickrPhotosApi(BaseApi):
             per_page=per_page,
         )
 
-        # https://www.flickr.com/services/api/flickr.photosets.getInfo.html
-        album_resp = self.call(
-            method="flickr.photosets.getInfo",
-            params={"user_id": user_info["id"], "photoset_id": album_id},
-        )
-        album_title = find_required_text(album_resp, path=".//title")
+        # The wrapper element is of the form:
+        #
+        #   <photoset id="72157624715342071" […] title="Delhi Life">
+        #
+        photoset_elem = find_required_elem(resp["root"], path=".//photoset")
+        album_title = photoset_elem.attrib["title"]
 
         return {
             "photos": [

@@ -4,6 +4,7 @@
 
 *   The `lookup_user_by_url()` function is slightly faster when the URL contains a Flickr user ID rather than a path alias.
     The function behaves the same as before, but now it avoids an unnecessary lookup.
+*   The `get_photos_in_album()` function is slightly faster, because it skips an unnecessary lookup to get the album title.
 
 ## v1.14.0 - 2024-04-29
 
