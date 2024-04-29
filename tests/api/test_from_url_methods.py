@@ -35,6 +35,12 @@ T = typing.TypeVar("T")
 			id="album",
 		),
 		pytest.param(
+			"https://www.flickr.com/photos/115357548@N08/albums/72157640898611483",
+			"album-72157640898611483.json",
+			PhotosInAlbum2,
+			id="album_with_user_id",
+		),
+		pytest.param(
 			"https://www.flickr.com/photos/joshuatreenp/albums/72157640898611483/page2",
 			"album-72157640898611483-page2.json",
 			PhotosInAlbum2,
@@ -45,6 +51,12 @@ T = typing.TypeVar("T")
 			"user-spike_yun.json",
 			CollectionOfPhotos2,
 			id="user",
+		),
+		pytest.param(
+			"https://www.flickr.com/photos/132051449@N06/",
+			"user-spike_yun.json",
+			CollectionOfPhotos2,
+			id="user_with_id",
 		),
 		pytest.param(
 			"https://www.flickr.com/photos/meldaniel/galleries/72157716953066942/",

@@ -31,17 +31,6 @@ class UserInfo(User):
     count_photos: int
 
 
-def user_info_to_user(user_info: UserInfo) -> User:
-    return {
-        "id": user_info["id"],
-        "username": user_info["username"],
-        "photos_url": user_info["photos_url"],
-        "profile_url": user_info["profile_url"],
-        "path_alias": user_info["path_alias"],
-        "realname": user_info["realname"],
-    }
-
-
 # Represents the accuracy to which we know a date taken to be true.
 #
 # See https://www.flickr.com/services/api/misc.dates.html
