@@ -10,8 +10,10 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 from .license_methods import LicenseMethods
 from ..types import (
     CollectionOfPhotos2,
+    GroupInfo,
     PhotosInAlbum2,
     PhotosInGallery2,
+    PhotosInGroup2,
     SinglePhotoInfoWithSizes,
     User,
 )
@@ -279,3 +281,48 @@ class CollectionMethods(LicenseMethods):
         }
 
         return self._create_collection(resp.find("photos"), owner=owner)
+
+    def _lookup_group_from_url(self, *, url: str) -> GroupInfo:
+        """
+        Given the link to a group's photos or profile, return some info.
+        """
+        resp = self.call(method="flickr.urls.lookupGroup", params={"url": url})
+
+        # The lookupUser response is of the form:
+        #
+        #       <group id="34427469792@N01">
+        #         <groupname>FlickrCentral</groupname>
+        #       </group>
+        #
+        group_elem = find_required_elem(resp, path=".//group")
+
+        return {
+            "id": group_elem.attrib["id"],
+            "name": find_required_text(group_elem, path="groupname"),
+        }
+
+    def get_photos_in_group_pool(
+        self, *, group_url: str, page: int = 1, per_page: int = 10
+    ) -> PhotosInGroup2:
+        """
+        Get all the photos in a group pool.
+        """
+        group_info = self._lookup_group_from_url(url=group_url)
+
+        # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
+        resp = self.call(
+            method="flickr.groups.pools.getPhotos",
+            params={
+                "group_id": group_info["id"],
+                "extras": ",".join(self.extras),
+                "page": str(page),
+                "per_page": str(per_page),
+            },
+        )
+
+        photos_elem = find_required_elem(resp, path="photos")
+
+        return {
+            **self._create_collection(photos_elem),
+            "group": group_info,
+        }

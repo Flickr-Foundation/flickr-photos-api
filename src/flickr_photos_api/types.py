@@ -206,6 +206,10 @@ class PhotosInGroup(CollectionOfPhotos):
     group: GroupInfo
 
 
+class PhotosInGroup2(CollectionOfPhotos2):
+    group: GroupInfo
+
+
 PhotosFromUrl = (
     SinglePhoto | CollectionOfPhotos | PhotosInAlbum | PhotosInGallery | PhotosInGroup
 )

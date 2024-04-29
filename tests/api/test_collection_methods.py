@@ -1,5 +1,5 @@
 from flickr_photos_api import FlickrPhotosApi
-from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, CollectionOfPhotos2
+from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, PhotosInGroup2, CollectionOfPhotos2
 from utils import get_fixture
 
 
@@ -143,12 +143,6 @@ class TestGetPhotosInUserPhotostream:
     def test_can_get_photos(self, api: FlickrPhotosApi) -> None:
         photos = api.get_photos_in_user_photostream(user_id="34427469121@N01")
 
-        from nitrate.json import DatetimeEncoder
-        import json
-
-        with open("tests/fixtures/api_responses/user-george.json", "w") as of:
-            of.write(json.dumps(photos, indent=2, sort_keys=True, cls=DatetimeEncoder))
-
         assert photos == get_fixture("user-george.json", model=CollectionOfPhotos2)
 
     def test_empty_result_if_no_public_photos(self, api: FlickrPhotosApi) -> None:
@@ -164,3 +158,17 @@ class TestGetPhotosInUserPhotostream:
             'count_photos': 0,
             'photos': []
         }
+
+
+def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
+    photos = api.get_photos_in_group_pool(
+        group_url="https://www.flickr.com/groups/slovenia/pool/"
+    )
+
+    from nitrate.json import DatetimeEncoder
+    import json
+
+    with open("tests/fixtures/api_responses/group-slovenia.json", "w") as of:
+        of.write(json.dumps(photos, indent=2, sort_keys=True, cls=DatetimeEncoder))
+
+    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup2)

@@ -13,22 +13,6 @@ from flickr_photos_api import (
 from utils import get_fixture
 
 
-def test_get_public_photos_by_user(api: FlickrPhotosApi) -> None:
-    photos = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/george"
-    )
-
-    assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
-
-
-def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
-    photos = api.get_photos_in_group_pool(
-        group_url="https://www.flickr.com/groups/slovenia/pool/"
-    )
-
-    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup)
-
-
 def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
     photos = api.get_photos_with_tag(tag="sunset")
 
