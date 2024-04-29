@@ -10,6 +10,7 @@ from nitrate.xml import (
 )
 
 from .base import HttpxImplementation as NewBaseApi, HttpxImplementation
+from .collection_methods import CollectionMethods
 from .comment_methods import CommentMethods
 from .license_methods import LicenseMethods
 from .single_photo_methods import SinglePhotoMethods
@@ -20,12 +21,10 @@ from ..types import (
     GroupInfo,
     ParsedElement,
     PhotosFromUrl,
-    PhotosInAlbum,
     PhotosInGallery,
     PhotosInGroup,
     SinglePhoto,
     User,
-    user_info_to_user,
 )
 from ..utils import (
     parse_date_posted,
@@ -36,7 +35,9 @@ from ..utils import (
 )
 
 
-class FlickrApiMethods(CommentMethods, SinglePhotoMethods, LicenseMethods, UserMethods):
+class FlickrApiMethods(
+    CommentMethods, CollectionMethods, SinglePhotoMethods, LicenseMethods, UserMethods
+):
     pass
 
 
@@ -265,44 +266,6 @@ class FlickrPhotosApi(BaseApi):
             "url": url,
             "tags": tags,
             "location": location,
-        }
-
-    def get_photos_in_album(
-        self, *, user_url: str, album_id: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInAlbum:
-        """
-        Get a page of photos from an album.
-        """
-        user_info = self.lookup_user_by_url(url=user_url)
-        user = user_info_to_user(user_info)
-
-        # https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
-        resp = self._get_page_of_photos(
-            method="flickr.photosets.getPhotos",
-            params={
-                "user_id": user_info["id"],
-                "photoset_id": album_id,
-                "extras": ",".join(self.extras),
-            },
-            page=page,
-            per_page=per_page,
-        )
-
-        # The wrapper element is of the form:
-        #
-        #   <photoset id="72157624715342071" […] title="Delhi Life">
-        #
-        photoset_elem = find_required_elem(resp["root"], path=".//photoset")
-        album_title = photoset_elem.attrib["title"]
-
-        return {
-            "photos": [
-                self._to_photo(photo_elem, collection_owner=user)
-                for photo_elem in resp["elements"]
-            ],
-            "page_count": resp["page_count"],
-            "total_photos": resp["total_photos"],
-            "album": {"owner": user, "title": album_title},
         }
 
     def get_photos_in_gallery(
