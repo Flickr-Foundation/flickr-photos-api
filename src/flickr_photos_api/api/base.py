@@ -1,3 +1,4 @@
+import abc
 from xml.etree import ElementTree as ET
 
 import httpx
@@ -16,6 +17,22 @@ from ..exceptions import (
     InvalidXmlException,
     ResourceNotFound,
 )
+
+
+class FlickrApi(abc.ABC):
+    """
+    This is a basic model for Flickr API implementations: they have to provide
+    a ``call()`` method that takes a Flickr API method and parameters, and returns
+    the parsed XML.
+
+    We deliberately split out the interface and implementation here -- currently
+    we use httpx and tenacity, but this abstraction would allow us to swap out
+    the underlying HTTP framework easily if we wanted to.
+    """
+
+    @abc.abstractmethod
+    def call(self, *, method: str, params: dict[str, str] | None = None) -> ET.Element:
+        return NotImplemented
 
 
 def is_retryable(exc: BaseException) -> bool:
@@ -51,13 +68,10 @@ def is_retryable(exc: BaseException) -> bool:
     return False
 
 
-class BaseApi:
+class HttpxFlickrApi(FlickrApi):
     """
-    This is a thin wrapper for calling the Flickr API.
-
-    It doesn't do much interesting stuff; the goal is just to reduce boilerplate
-    in the rest of the codebase, e.g. have the XML parsing in one place rather
-    than repeated everywhere.
+    An implementation of the Flickr API that uses ``httpx`` to make HTTP calls,
+    and ``tenacity`` for retrying failed API calls.
     """
 
     def __init__(self, *, api_key: str, user_agent: str) -> None:

@@ -10,7 +10,7 @@ from nitrate.xml import (
     find_required_text,
 )
 
-from .base import BaseApi as NewBaseApi
+from .base import HttpxFlickrApi as NewBaseApi
 from ..exceptions import LicenseNotFound
 from ..types import (
     CollectionOfElements,
