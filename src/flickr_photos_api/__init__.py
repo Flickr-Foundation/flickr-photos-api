@@ -1,4 +1,4 @@
-from .api import FlickrPhotosApi
+from .api import FlickrApi
 from .exceptions import (
     FlickrApiException,
     InvalidApiKey,
@@ -34,7 +34,7 @@ __version__ = "1.14.1"
 
 
 __all__ = [
-    "FlickrPhotosApi",
+    "FlickrApi",
     "FlickrApiException",
     "ResourceNotFound",
     "InvalidApiKey",

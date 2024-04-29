@@ -1,6 +1,6 @@
 import pytest
 
-from flickr_photos_api import FlickrPhotosApi
+from flickr_photos_api import FlickrApi, FlickrApi as FlickrPhotosApi
 
 
 def test_lookup_user_by_url(api: FlickrPhotosApi) -> None:
@@ -90,3 +90,22 @@ def test_lookup_user_gets_has_pro_account(
     user_info = api.lookup_user_by_id(user_id=user_id)
 
     assert user_info["has_pro_account"] == has_pro_account
+
+
+@pytest.mark.parametrize(
+    ["user_id", "expected_url"],
+    [
+        pytest.param(
+            "199246608@N02",
+            "https://www.flickr.com/images/buddyicon.gif",
+            id="user_with_no_buddyicon",
+        ),
+        pytest.param(
+            "28660070@N07",
+            "https://farm6.staticflickr.com/5556/buddyicons/28660070@N07.jpg",
+            id="user_with_buddyicon",
+        ),
+    ],
+)
+def test_get_buddy_icon_url(api: FlickrApi, user_id: str, expected_url: str) -> None:
+    assert api.get_buddy_icon_url(user_id=user_id) == expected_url

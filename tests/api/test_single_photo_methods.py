@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from flickr_photos_api import FlickrPhotosApi, SinglePhoto
+from flickr_photos_api import FlickrApi as FlickrPhotosApi, SinglePhoto
 from utils import get_fixture
 
 

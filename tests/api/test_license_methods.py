@@ -1,6 +1,6 @@
 import pytest
 
-from flickr_photos_api import FlickrPhotosApi, LicenseNotFound
+from flickr_photos_api import FlickrApi as FlickrPhotosApi, LicenseNotFound
 
 
 def test_get_licenses(api: FlickrPhotosApi) -> None:

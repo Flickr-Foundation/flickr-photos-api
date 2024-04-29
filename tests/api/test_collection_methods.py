@@ -1,6 +1,6 @@
 import pytest
 
-from flickr_photos_api import FlickrPhotosApi
+from flickr_photos_api import FlickrApi as FlickrPhotosApi
 from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, PhotosInGroup2, CollectionOfPhotos2
 from utils import get_fixture
 

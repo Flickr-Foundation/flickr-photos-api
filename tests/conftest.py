@@ -5,7 +5,7 @@ from nitrate.cassettes import cassette_name, vcr_cassette
 import pytest
 import vcr
 
-from flickr_photos_api import FlickrPhotosApi
+from flickr_photos_api import FlickrApi
 
 
 @pytest.fixture
@@ -14,7 +14,7 @@ def user_agent() -> str:
 
 
 @pytest.fixture(scope="function")
-def api(cassette_name: str, user_agent: str) -> Iterator[FlickrPhotosApi]:
+def api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
     """
     Creates an instance of the FlickrPhotosApi class for use in tests.
 
@@ -26,7 +26,7 @@ def api(cassette_name: str, user_agent: str) -> Iterator[FlickrPhotosApi]:
         cassette_library_dir="tests/fixtures/cassettes",
         filter_query_parameters=["api_key"],
     ):
-        yield FlickrPhotosApi(
+        yield FlickrApi(
             api_key=os.environ.get("FLICKR_API_KEY", "<REDACTED>"),
             user_agent=user_agent,
         )

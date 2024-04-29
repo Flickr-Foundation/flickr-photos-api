@@ -139,9 +139,12 @@ class HttpxImplementation(FlickrApi):
             errors = find_required_elem(xml, path=".//err").attrib
 
             # Although I haven't found any explicit documentation of this,
-            # it seems like a pretty common convention that error code "1"
-            # means "not found".
-            if errors["code"] == "1":
+            # it seems like a pretty common convention that:
+            #
+            #   - error code "1" means "not found"
+            #   - error code "2" means "user not found"
+            #
+            if errors["code"] == "1" or errors["code"] == "2":
                 raise ResourceNotFound(method, params)
             elif errors["code"] == "100":
                 raise InvalidApiKey(message=errors["msg"])

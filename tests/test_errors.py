@@ -2,7 +2,7 @@ import httpx
 import pytest
 
 from flickr_photos_api import (
-    FlickrPhotosApi,
+    FlickrApi as FlickrPhotosApi,
     FlickrApiException,
     InvalidApiKey,
     InvalidXmlException,
@@ -31,7 +31,7 @@ from flickr_photos_api import (
         pytest.param(
             "get_photos_in_album",
             {
-                "user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist",
+                "user_id": "-1",
                 "album_id": "1234",
             },
             id="get_photos_in_album_with_missing_user",
@@ -39,7 +39,7 @@ from flickr_photos_api import (
         pytest.param(
             "get_photos_in_album",
             {
-                "user_url": "https://www.flickr.com/photos/britishlibrary/",
+                "user_id": "12403504@N02",
                 "album_id": "12345678901234567890",
             },
             id="get_photos_in_album_with_missing_album",
@@ -50,8 +50,8 @@ from flickr_photos_api import (
             id="get_photos_in_gallery",
         ),
         pytest.param(
-            "get_public_photos_by_user",
-            {"user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
+            "get_photos_in_user_photostream",
+            {"user_id": "-1"},
             id="get_public_photos_by_non_existent_user",
         ),
         pytest.param(
@@ -122,9 +122,7 @@ def test_a_timeout_is_retried(api: FlickrPhotosApi) -> None:
 
     api.client = FlakyClient(underlying=api.client)  # type: ignore
 
-    resp = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/navymedicine/"
-    )
+    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert len(resp["photos"]) == 10
 
@@ -133,9 +131,7 @@ def test_retries_5xx_error(api: FlickrPhotosApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add a 500 response as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/navymedicine/"
-    )
+    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert len(resp["photos"]) == 10
 
@@ -145,9 +141,7 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrPhotosApi) -> None:
     # the 500 response from the previous test so that there were more
     # than it would retry.
     with pytest.raises(httpx.HTTPStatusError) as err:
-        api.get_public_photos_by_user(
-            user_url="https://www.flickr.com/photos/navymedicine/"
-        )
+        api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert err.value.response.status_code == 500
 
@@ -156,9 +150,7 @@ def test_retries_invalid_xml_error(api: FlickrPhotosApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/navymedicine/"
-    )
+    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert len(resp["photos"]) == 10
 
@@ -168,18 +160,14 @@ def test_a_persistent_invalid_xml_error_is_raised(api: FlickrPhotosApi) -> None:
     # the invalid XML from the previous test so that there were more
     # than it would retry.
     with pytest.raises(InvalidXmlException):
-        api.get_public_photos_by_user(
-            user_url="https://www.flickr.com/photos/navymedicine/"
-        )
+        api.get_photos_in_user_photostream(user_id="61270229@N05")
 
 
 def test_retries_error_code_201(api: FlickrPhotosApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_public_photos_by_user(
-        user_url="https://www.flickr.com/photos/navymedicine/"
-    )
+    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert len(resp["photos"]) == 10
 
@@ -189,9 +177,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrPhotosApi) -> None:
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
     with pytest.raises(FlickrApiException) as exc:
-        api.get_public_photos_by_user(
-            user_url="https://www.flickr.com/photos/navymedicine/"
-        )
+        api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert exc.value.args[0] == {
         "code": "201",

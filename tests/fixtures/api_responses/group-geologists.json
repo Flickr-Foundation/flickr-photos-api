@@ -1,11 +1,14 @@
 {
+  "count_pages": 146,
+  "count_photos": 14523,
   "group": {
     "id": "66832458@N00",
     "name": "Geology"
   },
-  "page_count": 146,
   "photos": [
     {
+      "count_comments": 0,
+      "count_views": 66,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-28T16:24:29+00:00"
@@ -18,6 +21,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53683774287",
       "license": {
         "id": "in-copyright",
@@ -34,7 +38,10 @@
         "realname": "Wayne Chadwick",
         "username": "Wayne~Chadwick"
       },
+      "photo_page_url": "https://www.flickr.com/photos/nwchadwik/53683774287/",
       "safety_level": "safe",
+      "secret": "734fd18077",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -87,10 +94,11 @@
         }
       ],
       "tags": [],
-      "title": "Red Hill - Painted Hills NM",
-      "url": "https://www.flickr.com/photos/nwchadwik/53683774287/"
+      "title": "Red Hill - Painted Hills NM"
     },
     {
+      "count_comments": 3,
+      "count_views": 454,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-27T03:12:17+00:00"
@@ -103,6 +111,7 @@
         }
       },
       "description": "While Big Horn Slot Canyon walls were not very tall, perhaps averaging about 40 feet, the canyon was frequently so narrow we had to twist, turn and lean one way or another to travel forward.  Occasionally there were obstructions to crawl over.  ",
+      "farm": "66",
       "id": "53681747515",
       "license": {
         "id": "in-copyright",
@@ -119,7 +128,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53681747515/",
       "safety_level": "safe",
+      "secret": "b59a2487cd",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -172,10 +184,11 @@
         "erosion",
         "utah"
       ],
-      "title": "Big Horn Slot Canyon",
-      "url": "https://www.flickr.com/photos/kportin/53681747515/"
+      "title": "Big Horn Slot Canyon"
     },
     {
+      "count_comments": 4,
+      "count_views": 470,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-26T13:58:40+00:00"
@@ -188,6 +201,7 @@
         }
       },
       "description": "Cedar Wash Arch is a large hole in the sandstone in the wall of the wash.  \n\nColor My World Daily - Blue\nHappy Saturated Saturday!",
+      "farm": "66",
       "id": "53680351329",
       "license": {
         "id": "in-copyright",
@@ -204,7 +218,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53680351329/",
       "safety_level": "safe",
+      "secret": "31f916e29c",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -260,10 +277,11 @@
         "blue",
         "hss"
       ],
-      "title": "Cedar Wash Arch",
-      "url": "https://www.flickr.com/photos/kportin/53680351329/"
+      "title": "Cedar Wash Arch"
     },
     {
+      "count_comments": 0,
+      "count_views": 0,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-25T16:53:06+00:00"
@@ -276,6 +294,7 @@
         }
       },
       "description": "Roter Ostseequarzporphyr, Glacial erratic boulder, red quartzbearing rhyolithe . Baltic Coast, Schleswig Holstein. ",
+      "farm": "66",
       "id": "53678191281",
       "license": {
         "id": "cc-by-sa-2.0",
@@ -292,7 +311,10 @@
         "realname": null,
         "username": "Gunnar Ries zwo"
       },
+      "photo_page_url": "https://www.flickr.com/photos/gunnarries/53678191281/",
       "safety_level": "safe",
+      "secret": "1399826e9a",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -345,10 +367,11 @@
         }
       ],
       "tags": [],
-      "title": "Roter Ostseequarzporphyr",
-      "url": "https://www.flickr.com/photos/gunnarries/53678191281/"
+      "title": "Roter Ostseequarzporphyr"
     },
     {
+      "count_comments": 1,
+      "count_views": 33,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-25T16:53:05+00:00"
@@ -361,6 +384,7 @@
         }
       },
       "description": "Roter Ostseequarzporphyr, Glacial erratic boulder, red quartzbearing rhyolithe . Baltic Coast, Schleswig Holstein. ",
+      "farm": "66",
       "id": "53678410883",
       "license": {
         "id": "cc-by-sa-2.0",
@@ -377,7 +401,10 @@
         "realname": null,
         "username": "Gunnar Ries zwo"
       },
+      "photo_page_url": "https://www.flickr.com/photos/gunnarries/53678410883/",
       "safety_level": "safe",
+      "secret": "a187880899",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -430,10 +457,11 @@
         }
       ],
       "tags": [],
-      "title": "Roter Ostseequarzporphyr",
-      "url": "https://www.flickr.com/photos/gunnarries/53678410883/"
+      "title": "Roter Ostseequarzporphyr"
     },
     {
+      "count_comments": 0,
+      "count_views": 124,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-23T15:52:02+00:00"
@@ -446,6 +474,7 @@
         }
       },
       "description": "Most rocks had a yellowish lichen growth - probably due to fairly wet spring.",
+      "farm": "66",
       "id": "53673877648",
       "license": {
         "id": "in-copyright",
@@ -462,7 +491,10 @@
         "realname": "Wayne Chadwick",
         "username": "Wayne~Chadwick"
       },
+      "photo_page_url": "https://www.flickr.com/photos/nwchadwik/53673877648/",
       "safety_level": "safe",
+      "secret": "b9c6912231",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -515,10 +547,11 @@
         }
       ],
       "tags": [],
-      "title": "Chiricahuas panorama",
-      "url": "https://www.flickr.com/photos/nwchadwik/53673877648/"
+      "title": "Chiricahuas panorama"
     },
     {
+      "count_comments": 11,
+      "count_views": 597,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-23T14:15:45+00:00"
@@ -531,6 +564,7 @@
         }
       },
       "description": "We scrambled up to the top of the ridge above the Cosmic Ashtray.  From this perspective, the formation looks more like its other nickname: Cosmic Navel.  If you zoom in, you can see the person on top of the cone in the middle, people on the left rim and more people approaching. There is a route to climb down into the bowl for those who are young and agile enough to climb out again.  \n\nColor My World Daily - Orange \n\n",
+      "farm": "66",
       "id": "53673391791",
       "license": {
         "id": "in-copyright",
@@ -547,7 +581,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53673391791/",
       "safety_level": "safe",
+      "secret": "076a880b97",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -602,10 +639,11 @@
         "orange",
         "cosmicnavel"
       ],
-      "title": "Looking Down at the Cosmic Ashtray",
-      "url": "https://www.flickr.com/photos/kportin/53673391791/"
+      "title": "Looking Down at the Cosmic Ashtray"
     },
     {
+      "count_comments": 10,
+      "count_views": 544,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-22T15:52:16+00:00"
@@ -618,6 +656,7 @@
         }
       },
       "description": "We visited the Cosmic Ashtray, an   enormous sandstone bowl filled with coral sand and a big cone of brain rock.  ",
+      "farm": "66",
       "id": "53671359986",
       "license": {
         "id": "in-copyright",
@@ -634,7 +673,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53671359986/",
       "safety_level": "safe",
+      "secret": "b7222de594",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -689,10 +731,11 @@
         "grandstaircaseescalantenationalmonument",
         "hiking"
       ],
-      "title": "Cosmic Ashtray",
-      "url": "https://www.flickr.com/photos/kportin/53671359986/"
+      "title": "Cosmic Ashtray"
     },
     {
+      "count_comments": 0,
+      "count_views": 71,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-22T08:21:06+00:00"
@@ -705,6 +748,7 @@
         }
       },
       "description": "1 : Bioturbations (possiblement Planolites) ;\n2 : Niveaux argileux ;\n3 : Laminations entrecrois\u00e9es gr\u00e9seuses ;\n4 : Laminations parall\u00e8les gr\u00e9seuses ;\nA-B-C-D : S\u00e9quences successives de d\u00e9p\u00f4ts gr\u00e9seux \u00e0 silto-argileux. \nLe sommet de chaque s\u00e9quence est marqu\u00e9 par des bioturbations, montrant le d\u00e9veloppement de la vie sous-marine avant que n'arrive un nouvel apport de s\u00e9diments. \nDans chaque s\u00e9quence la granulom\u00e9trie d\u00e9croit progressivement vers le haut (de sableuse \u00e0 silteuse, voire argileuse).\n\nLieu : Baie Maa, Nouvelle-Cal\u00e9donie.",
+      "farm": "66",
       "id": "53670950590",
       "license": {
         "id": "in-copyright",
@@ -725,7 +769,10 @@
         "realname": "Lilian Alizert",
         "username": "Lilian Alizert"
       },
+      "photo_page_url": "https://www.flickr.com/photos/lilian_alizert/53670950590/",
       "safety_level": "safe",
+      "secret": "e0f737c4bf",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -771,10 +818,11 @@
         }
       ],
       "tags": [],
-      "title": "Bioturbations - S\u00e9quences de Bouma",
-      "url": "https://www.flickr.com/photos/lilian_alizert/53670950590/"
+      "title": "Bioturbations - S\u00e9quences de Bouma"
     },
     {
+      "count_comments": 0,
+      "count_views": 86,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-22T02:23:56+00:00"
@@ -787,6 +835,7 @@
         }
       },
       "description": "Figures de charge (ou figures d'\u00e9chappement) observ\u00e9es dans des gr\u00e8s et argilo-siltites. \nL'argile plastique s'\u00e9chappe vers le haut par pression des couches sableuses sus-jacentes. \nCes ph\u00e9nom\u00e8nes peuvent se produire (entre autres) lors de s\u00e9ismes ou par surcharge / remaniement s\u00e9dimentaire.\n\nLoad casts (load structures) in sandstones.\n\nLieu : Baie Maa, Nouvelle-Cal\u00e9donie.",
+      "farm": "66",
       "id": "53669978206",
       "license": {
         "id": "in-copyright",
@@ -807,7 +856,10 @@
         "realname": "Lilian Alizert",
         "username": "Lilian Alizert"
       },
+      "photo_page_url": "https://www.flickr.com/photos/lilian_alizert/53669978206/",
       "safety_level": "safe",
+      "secret": "9cb7b5e289",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -853,10 +905,11 @@
         }
       ],
       "tags": [],
-      "title": "Figures d'\u00e9chappement / Load casts",
-      "url": "https://www.flickr.com/photos/lilian_alizert/53669978206/"
+      "title": "Figures d'\u00e9chappement / Load casts"
     },
     {
+      "count_comments": 5,
+      "count_views": 534,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-21T12:19:04+00:00"
@@ -869,6 +922,7 @@
         }
       },
       "description": "We waded through the shallow water of the Willis Creek Slot Canyon. Hard to believe this little creek carved this beautiful canyon.  The walls reach as much as 300 feet in some places.  ",
+      "farm": "66",
       "id": "53667381977",
       "license": {
         "id": "in-copyright",
@@ -885,7 +939,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53667381977/",
       "safety_level": "safe",
+      "secret": "36a7f92498",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -940,10 +997,11 @@
         "wilbur",
         "skutumpahroad"
       ],
-      "title": "Willis Creek Slot Canyon",
-      "url": "https://www.flickr.com/photos/kportin/53667381977/"
+      "title": "Willis Creek Slot Canyon"
     },
     {
+      "count_comments": 0,
+      "count_views": 75,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-19T15:17:14+00:00"
@@ -956,6 +1014,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53664374531",
       "license": {
         "id": "in-copyright",
@@ -972,7 +1031,10 @@
         "realname": "Wayne Chadwick",
         "username": "Wayne~Chadwick"
       },
+      "photo_page_url": "https://www.flickr.com/photos/nwchadwik/53664374531/",
       "safety_level": "safe",
+      "secret": "e92b9a053d",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1025,10 +1087,11 @@
         }
       ],
       "tags": [],
-      "title": "Tilted beds in Death Valley NP",
-      "url": "https://www.flickr.com/photos/nwchadwik/53664374531/"
+      "title": "Tilted beds in Death Valley NP"
     },
     {
+      "count_comments": 5,
+      "count_views": 633,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-18T01:37:15+00:00"
@@ -1041,6 +1104,7 @@
         }
       },
       "description": "After hiking to Skylight Arch, we stopped at Stud Horse Point.  The origin of the name is unknown.  But there were a number interesting hoodoos there.  You can't really tell from the photo but Wilbur is standing near the edge of a 75 foot cliff.  There is a deep chasm between us and the mesa.",
+      "farm": "66",
       "id": "53661757840",
       "license": {
         "id": "in-copyright",
@@ -1057,7 +1121,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53661757840/",
       "safety_level": "safe",
+      "secret": "8449e40574",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1110,10 +1177,11 @@
         "utah",
         "erosion"
       ],
-      "title": "Shooting a Hoodoo",
-      "url": "https://www.flickr.com/photos/kportin/53661757840/"
+      "title": "Shooting a Hoodoo"
     },
     {
+      "count_comments": 5,
+      "count_views": 577,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-17T01:50:38+00:00"
@@ -1126,6 +1194,7 @@
         }
       },
       "description": "The arch is a hole in the top layer of sandstone on a finger of mesa outstretched toward Lake Powell.  Navajo Mountain is in the distance.  If you zoom in you can see the RVs parked along the lake and the boats at the marina.  ",
+      "farm": "66",
       "id": "53659709320",
       "license": {
         "id": "in-copyright",
@@ -1142,7 +1211,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53659709320/",
       "safety_level": "safe",
+      "secret": "33b5756165",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1197,10 +1269,11 @@
         "geology",
         "glencanyonnationalrecreationarea"
       ],
-      "title": "Skylight Arch",
-      "url": "https://www.flickr.com/photos/kportin/53659709320/"
+      "title": "Skylight Arch"
     },
     {
+      "count_comments": 0,
+      "count_views": 220,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-12-30T14:42:57+00:00"
@@ -1213,6 +1286,7 @@
         }
       },
       "description": "Devils Postpile National Monuent. Hexagonal basalt pillars.",
+      "farm": "66",
       "id": "51788271210",
       "license": {
         "id": "in-copyright",
@@ -1223,13 +1297,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51788271210/",
       "safety_level": "safe",
+      "secret": "3c6a8e8ca9",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1287,10 +1364,11 @@
         "devils",
         "postpile"
       ],
-      "title": "P7277500 Devil's Postpile 1",
-      "url": "https://www.flickr.com/photos/186413921@N04/51788271210/"
+      "title": "P7277500 Devil's Postpile 1"
     },
     {
+      "count_comments": 20,
+      "count_views": 7199,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-15T05:19:54+00:00"
@@ -1303,6 +1381,7 @@
         }
       },
       "description": "Geological art from Arizona. Six-frame drone panorama of eroded cliffs along the edge of a remote mesa, photographed in late twilight before sunrise. The patterns and colors are real. Saturation and contrast was increased to bring out detail in the dim light.",
+      "farm": "66",
       "id": "53653935782",
       "license": {
         "id": "in-copyright",
@@ -1319,7 +1398,10 @@
         "realname": "Dave Coppedge",
         "username": "Chief Bwana"
       },
+      "photo_page_url": "https://www.flickr.com/photos/psa104/53653935782/",
       "safety_level": "safe",
+      "secret": "64c16887a2",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1390,10 +1472,11 @@
         "6000views",
         "7000views"
       ],
-      "title": "Serrated Impressions",
-      "url": "https://www.flickr.com/photos/psa104/53653935782/"
+      "title": "Serrated Impressions"
     },
     {
+      "count_comments": 1,
+      "count_views": 986,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-06T12:28:44+00:00"
@@ -1406,6 +1489,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53512777734",
       "license": {
         "id": "in-copyright",
@@ -1426,7 +1510,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53512777734/",
       "safety_level": "safe",
+      "secret": "a256710381",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1479,10 +1566,11 @@
         }
       ],
       "tags": [],
-      "title": "Uckermark",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53512777734/"
+      "title": "Uckermark"
     },
     {
+      "count_comments": 0,
+      "count_views": 39,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-25T16:54:30+00:00"
@@ -1495,6 +1583,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53611008915",
       "license": {
         "id": "cc-by-2.0",
@@ -1515,7 +1604,10 @@
         "realname": "Ben Salter",
         "username": "Capt' Gorgeous"
       },
+      "photo_page_url": "https://www.flickr.com/photos/ben_salter/53611008915/",
       "safety_level": "safe",
+      "secret": "e6b1b4dabb",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1572,10 +1664,11 @@
         "beach",
         "cliffs"
       ],
-      "title": "Rockfall",
-      "url": "https://www.flickr.com/photos/ben_salter/53611008915/"
+      "title": "Rockfall"
     },
     {
+      "count_comments": 0,
+      "count_views": 38,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-25T16:54:30+00:00"
@@ -1588,6 +1681,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53609680252",
       "license": {
         "id": "cc-by-2.0",
@@ -1608,7 +1702,10 @@
         "realname": "Ben Salter",
         "username": "Capt' Gorgeous"
       },
+      "photo_page_url": "https://www.flickr.com/photos/ben_salter/53609680252/",
       "safety_level": "safe",
+      "secret": "ffd2406bc9",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1667,10 +1764,11 @@
         "marl",
         "rock"
       ],
-      "title": "Marl",
-      "url": "https://www.flickr.com/photos/ben_salter/53609680252/"
+      "title": "Marl"
     },
     {
+      "count_comments": 8,
+      "count_views": 747,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-09T14:47:35+00:00"
@@ -1683,6 +1781,7 @@
         }
       },
       "description": "The trail down into the canyon to beneath Sipapu Bridge in Natural Bridges National Monument is very steep.  There are several stairways cut into the rocks, railings crossing the steepest slickrock and a couple ladders to descend.  There is a railing visible to the left of Wilbur and another near the bottom center. My images shot in the canyon make it appear the trees are as tall as the bridge.  Not even close as can be seen in this panorama.  Sipapu Bridge is 220 feet high with a span of 268 feet.  The thickness of the bridge is 53 feet.\n\nHappy Tree-mendous Tuesday!",
+      "farm": "66",
       "id": "53642532891",
       "license": {
         "id": "in-copyright",
@@ -1699,7 +1798,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53642532891/",
       "safety_level": "safe",
+      "secret": "12a5d0613f",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1753,10 +1855,11 @@
         "sandstone",
         "erosion"
       ],
-      "title": "Descent to Sipapu Bridge",
-      "url": "https://www.flickr.com/photos/kportin/53642532891/"
+      "title": "Descent to Sipapu Bridge"
     },
     {
+      "count_comments": 1,
+      "count_views": 257,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-08T23:48:39+00:00"
@@ -1769,6 +1872,7 @@
         }
       },
       "description": "<i>Facing northeastward and upstream.</i>\n\nThis view of the Neuse River at pretty high water on a sultry summer afternoon captures, for me at least, the very essence of the lush Atlantic Coastal Plain and its unambitious streams. The verdant bottomland-forest community, the limpid sediment-laden water, the hazy sky\u2014just what one would expect in this corner of the world.\n\nBut, as usual, appearances are deceiving. Here the Neuse has managed to cut down and expose, on the southwestern bank, a cliff approximately 80 ft (24 m) high. The reason the cliff isn't visible here is that I'm standing on top of it. \n\nMost of the exposure reveals a portion of the remarkable Late Cretaceous Black Creek Formation, a layer-cake of strata of unconsolidated sands and clays. These document transgressions of the Atlantic Ocean over the Coastal Plain, a consequence of rising global sea level. And above the Black Creek are Tertiary beds capped by Quaternary sands and gravels. \n\nAs far as the botany goes, I think I'll just stand back here and enjoy it in aggregate. And what a wonderful panorama of rampant photosynthesis it truly is. One day not far removed, this place will be under saltwater again. It's best to enjoy the terrestrial phase while one still can. \n\n<b>The other photos and descriptions of this series can be found in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720309413739\">my <i>Botany of the Carolinas Coastal Plain</i> album</a>.</b>\n\n \n",
+      "farm": "66",
       "id": "53640362127",
       "license": {
         "id": "in-copyright",
@@ -1783,13 +1887,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53640362127/",
       "safety_level": "safe",
+      "secret": "7d625097c0",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1854,10 +1961,11 @@
         "northcarolina",
         "neuseriver"
       ],
-      "title": "Botany of the Carolinas Coastal Plain, Part 18: Up a Not-So-Lazy River, Cliffs of the Neuse State Park, North Carolina, USA",
-      "url": "https://www.flickr.com/photos/196253572@N05/53640362127/"
+      "title": "Botany of the Carolinas Coastal Plain, Part 18: Up a Not-So-Lazy River, Cliffs of the Neuse State Park, North Carolina, USA"
     },
     {
+      "count_comments": 9,
+      "count_views": 894,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-08T15:53:06+00:00"
@@ -1870,6 +1978,7 @@
         }
       },
       "description": "A long tall fin of sandstone has eroded above Buckskin Gulch in the Vermillion Cliffs.  There are many fins in the area but this one is the tallest we found.  Carved by wind and rain, it is over six feet tall and an inch or two thick.  Some of the fins have fallen but this one curves slightly so perhaps that is why it stays upright. It has a smiling face and appears justifiably pleased with itself! ",
+      "farm": "66",
       "id": "53640414818",
       "license": {
         "id": "in-copyright",
@@ -1886,7 +1995,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53640414818/",
       "safety_level": "safe",
+      "secret": "57bd746b15",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -1943,10 +2055,11 @@
         "edmaierssecret",
         "smiling"
       ],
-      "title": "Tall Rock Fin",
-      "url": "https://www.flickr.com/photos/kportin/53640414818/"
+      "title": "Tall Rock Fin"
     },
     {
+      "count_comments": 4,
+      "count_views": 515,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-06T05:15:35+00:00"
@@ -1959,6 +2072,7 @@
         }
       },
       "description": "The trail to the Citadel led to a scramble down to the next level on the canyon wall.  The land bridge and the Citadel can be seen in the distance.  The ruins are on the other side of the formation.\n\nThis was only the first of several scrambles involved in the hike to the Citadel.  A misstep could lead to a tumble to an untimely demise on the canyon floor.  Luckily, there were no missteps! ",
+      "farm": "66",
       "id": "53634859233",
       "license": {
         "id": "in-copyright",
@@ -1975,7 +2089,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53634859233/",
       "safety_level": "safe",
+      "secret": "77f2580888",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2033,10 +2150,11 @@
         "hiking",
         "cairn"
       ],
-      "title": "Trail Descent",
-      "url": "https://www.flickr.com/photos/kportin/53634859233/"
+      "title": "Trail Descent"
     },
     {
+      "count_comments": 0,
+      "count_views": 72,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-04T20:29:29+00:00"
@@ -2049,6 +2167,7 @@
         }
       },
       "description": "Mardetschlag M\u00e4rz 2024",
+      "farm": "66",
       "id": "53631237402",
       "license": {
         "id": "in-copyright",
@@ -2069,7 +2188,10 @@
         "realname": null,
         "username": "ChPfl\u00fcgl"
       },
+      "photo_page_url": "https://www.flickr.com/photos/pfluegl/53631237402/",
       "safety_level": "safe",
+      "secret": "74e22f6294",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2145,10 +2267,11 @@
         "chpfluegl",
         "christian"
       ],
-      "title": "IMG_3369",
-      "url": "https://www.flickr.com/photos/pfluegl/53631237402/"
+      "title": "IMG_3369"
     },
     {
+      "count_comments": 0,
+      "count_views": 66,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-04T20:29:27+00:00"
@@ -2161,6 +2284,7 @@
         }
       },
       "description": "Mardetschlag M\u00e4rz 2024",
+      "farm": "66",
       "id": "53632338168",
       "license": {
         "id": "in-copyright",
@@ -2181,7 +2305,10 @@
         "realname": null,
         "username": "ChPfl\u00fcgl"
       },
+      "photo_page_url": "https://www.flickr.com/photos/pfluegl/53632338168/",
       "safety_level": "safe",
+      "secret": "5528a1f6bc",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2257,10 +2384,11 @@
         "chpfluegl",
         "christian"
       ],
-      "title": "IMG_3351",
-      "url": "https://www.flickr.com/photos/pfluegl/53632338168/"
+      "title": "IMG_3351"
     },
     {
+      "count_comments": 1,
+      "count_views": 182,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-01T19:04:35+00:00"
@@ -2273,6 +2401,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53624837402",
       "license": {
         "id": "in-copyright",
@@ -2287,13 +2416,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "131922519@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/131922519@N05/",
         "profile_url": "https://www.flickr.com/people/131922519@N05/",
         "realname": "Piero Mammino",
         "username": "piero.mammino"
       },
+      "photo_page_url": "https://www.flickr.com/photos/131922519@N05/53624837402/",
       "safety_level": "safe",
+      "secret": "1172a8a49c",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2355,10 +2487,11 @@
         "vulcano",
         "volcano"
       ],
-      "title": "Etna lava tunnel",
-      "url": "https://www.flickr.com/photos/131922519@N05/53624837402/"
+      "title": "Etna lava tunnel"
     },
     {
+      "count_comments": 4,
+      "count_views": 630,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-04-01T02:05:57+00:00"
@@ -2371,6 +2504,7 @@
         }
       },
       "description": "Somehow I got two photos of Wilbur exploring the rock formations in the An-she-sle-pah area that unexpectedly made a panorama.  The area is full of interesting rock formations created by infrequent torrential rainfall and strong incessant winds.  It's a fun place to wander.  ",
+      "farm": "66",
       "id": "53624043166",
       "license": {
         "id": "in-copyright",
@@ -2387,7 +2521,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53624043166/",
       "safety_level": "safe",
+      "secret": "bb2cefa64f",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2442,10 +2579,11 @@
         "erosion",
         "sandstone"
       ],
-      "title": "Seeing Double",
-      "url": "https://www.flickr.com/photos/kportin/53624043166/"
+      "title": "Seeing Double"
     },
     {
+      "count_comments": 0,
+      "count_views": 217,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-11T22:53:27+00:00"
@@ -2458,6 +2596,7 @@
         }
       },
       "description": "Moving soil on Munt la Schera, in the Swiss National Park.",
+      "farm": "66",
       "id": "51815252441",
       "license": {
         "id": "in-copyright",
@@ -2468,13 +2607,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51815252441/",
       "safety_level": "safe",
+      "secret": "18c4b8793f",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2534,16 +2676,18 @@
         "alps",
         "engadin"
       ],
-      "title": "DSC01255 Solifluction",
-      "url": "https://www.flickr.com/photos/186413921@N04/51815252441/"
+      "title": "DSC01255 Solifluction"
     },
     {
+      "count_comments": 1,
+      "count_views": 84,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-30T18:44:46+00:00"
       },
       "date_taken": null,
       "description": null,
+      "farm": "66",
       "id": "53620136872",
       "license": {
         "id": "in-copyright",
@@ -2554,13 +2698,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/126778763@N04/",
         "profile_url": "https://www.flickr.com/people/126778763@N04/",
         "realname": "Pbabygeol",
         "username": "pbabygeol"
       },
+      "photo_page_url": "https://www.flickr.com/photos/126778763@N04/53620136872/",
       "safety_level": "safe",
+      "secret": "17d3683457",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2613,10 +2760,11 @@
         }
       ],
       "tags": [],
-      "title": "IMG_20240330_134039819",
-      "url": "https://www.flickr.com/photos/126778763@N04/53620136872/"
+      "title": "IMG_20240330_134039819"
     },
     {
+      "count_comments": 9,
+      "count_views": 982,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-30T14:12:03+00:00"
@@ -2629,6 +2777,7 @@
         }
       },
       "description": "The name of this amazing sandstone formation in the An-she-sle-pah area is Alien Throne.  It is difficult to find as the roads are rough, muddy and confusing and there is no established trail, but well worth the effort to find it.  The area is dry and sandy.  Infrequent torrential rainfall along with incessant wind sculpts fabulous sandstone formations.   \n\nHappy Saturated Saturday! ",
+      "farm": "66",
       "id": "53620923540",
       "license": {
         "id": "in-copyright",
@@ -2645,7 +2794,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53620923540/",
       "safety_level": "safe",
+      "secret": "ec123df5e5",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2700,10 +2852,11 @@
         "hss",
         "ansheslepah"
       ],
-      "title": "Alien Throne",
-      "url": "https://www.flickr.com/photos/kportin/53620923540/"
+      "title": "Alien Throne"
     },
     {
+      "count_comments": 6,
+      "count_views": 906,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-30T00:03:08+00:00"
@@ -2716,6 +2869,7 @@
         }
       },
       "description": "A large rock formation in the An-shi-sle-pah area north of Chaco Canyon. It reminds me of a camel.   ",
+      "farm": "66",
       "id": "53619711908",
       "license": {
         "id": "in-copyright",
@@ -2732,7 +2886,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53619711908/",
       "safety_level": "safe",
+      "secret": "5f53266f27",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2787,10 +2944,11 @@
         "badlands",
         "sandstone"
       ],
-      "title": "Rock Formation",
-      "url": "https://www.flickr.com/photos/kportin/53619711908/"
+      "title": "Rock Formation"
     },
     {
+      "count_comments": 7,
+      "count_views": 638,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-29T15:28:18+00:00"
@@ -2803,6 +2961,7 @@
         }
       },
       "description": "Over 50,000 thousand years ago a meteor approximately 150 feet wide and weighing several hundred thousand tons slammed into the earth near Flagstaff, Arizona.  The result of the impact was the creation of a crater which measures 550 feet deep and almost a mile wide.\n\nMeteor Crater is privately owned and is not cheap to visit.  The Museum provides an interesting history of crater geology.  One theory was that the meteor was buried deep in the earth.  The competing theory was that it exploded upon impact.  After digging down a few thousand feet, no meteor was found.  So the explosion theory won.    \n\nHappy Fence Friday!",
+      "farm": "66",
       "id": "53618875524",
       "license": {
         "id": "in-copyright",
@@ -2819,7 +2978,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53618875524/",
       "safety_level": "safe",
+      "secret": "3d042ed0bd",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2872,10 +3034,11 @@
         "arizona",
         "panorama"
       ],
-      "title": "Meteor Crater",
-      "url": "https://www.flickr.com/photos/kportin/53618875524/"
+      "title": "Meteor Crater"
     },
     {
+      "count_comments": 0,
+      "count_views": 248,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-28T23:39:16+00:00"
@@ -2888,6 +3051,7 @@
         }
       },
       "description": "<i>Facing southward, toward the northern-elevation facade.</i>\n\nA cobblestone house this fine deserves another admiring look from the sidewalk. This time the perspective is full frontal.\n\nThis photo should be of intense and persistent interest to astronomers because it includes, at upper center, actual visible beams of photons emitted some time before by a G-type Main Sequence star. Not many photographers have the skill to include these elusive shafts of light in their images, probably because they're too well trained or have ten times the photo equipment I do.\n\nRegarding the source star, many of you stargazers are no doubt thinking I'm referring to Tau Ceti or Alpha Centauri, but you're wrong there. The beams were a-streamin' from Old Sol. This fusion-powered gasbag hosts a planetary system inhabited, in one place, by vicious little bipeds with very limited staying power in the evolutionary record. Steer clear of them, if you value your money, your sanity, or your life.\n\nBut having placed this endearing bit of architecture in its cosmic setting, let me reiterate that its cobbles most likely were collected from Pleistocene Henry Formation outwash available nearby. \n\nThe basement, plinth, or foundation\u2014whichever you wish to call it\u2014is made of rock ashlar blocks. Given the Herrick House's completion year, these are almost certainly Ordovician-period Platteville-Galena Dolostone. It was quarried from an early date in Rockford and other Rock River Valley communities.  \n\nA close-up will follow.\n\n<b>To peruse the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720310008578\"><i>Geology of Fieldstone &amp; Cobblestone Buildings</i> album</a>.</b>  \n\n\n  \n\n",
+      "farm": "66",
       "id": "53616603482",
       "license": {
         "id": "in-copyright",
@@ -2902,13 +3066,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53616603482/",
       "safety_level": "safe",
+      "secret": "682cea9f2f",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -2976,10 +3143,11 @@
         "cobblestonearchitecture",
         "cobblestonehouse"
       ],
-      "title": "Geology of Fieldstone & Cobblestone Buildings, Part 20: Another Overall View of the Herrick House, Rockford, Illinois, USA (1847)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53616603482/"
+      "title": "Geology of Fieldstone & Cobblestone Buildings, Part 20: Another Overall View of the Herrick House, Rockford, Illinois, USA (1847)"
     },
     {
+      "count_comments": 8,
+      "count_views": 710,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-27T05:18:52+00:00"
@@ -2992,6 +3160,7 @@
         }
       },
       "description": "Shiprock rises 1,582 feet from the desert plain.  Its peak is 7,177 feet above sea level.  In Navajo its name is Winged Rock.  In Navajo legend it is the great bird that brought the Navajo people from the north to their present lands.  Its English name derives from the resemblance to a 19th century clipper ship.  \n\nShiprock is a volcanic plug created when magma hardens within a vent of a volcano.  Surrounding material eroded away revealing the plug.  Shiprock also has wall like dikes that radiate 5 miles south from the central formation.  Shorter dikes travel north and west.  \n\nShiprock has been a climbing attraction although it has been illegal to climb it since 1970.  The idea of climbing the peak is repugnant to most Navajo given its central role in legend and religious ceremonies.  ",
+      "farm": "66",
       "id": "53614100983",
       "license": {
         "id": "in-copyright",
@@ -3008,7 +3177,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53614100983/",
       "safety_level": "safe",
+      "secret": "3b8ea63735",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3064,10 +3236,11 @@
         "clouds",
         "spiritual"
       ],
-      "title": "Shiprock",
-      "url": "https://www.flickr.com/photos/kportin/53614100983/"
+      "title": "Shiprock"
     },
     {
+      "count_comments": 6,
+      "count_views": 214,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-14T18:00:02+00:00"
@@ -3080,6 +3253,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53587884288",
       "license": {
         "id": "in-copyright",
@@ -3094,13 +3268,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/126778763@N04/",
         "profile_url": "https://www.flickr.com/people/126778763@N04/",
         "realname": "Pbabygeol",
         "username": "pbabygeol"
       },
+      "photo_page_url": "https://www.flickr.com/photos/126778763@N04/53587884288/",
       "safety_level": "safe",
+      "secret": "14b5fc2956",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3153,10 +3330,11 @@
         }
       ],
       "tags": [],
-      "title": "Cambrian unconformity",
-      "url": "https://www.flickr.com/photos/126778763@N04/53587884288/"
+      "title": "Cambrian unconformity"
     },
     {
+      "count_comments": 2,
+      "count_views": 350,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-25T16:10:23+00:00"
@@ -3169,6 +3347,7 @@
         }
       },
       "description": "Detail of crossbeds interrupted by a horizontal bounding surface, continuing above the next set of crossbeds. Navajo sandstone in Cathedral Valley, Paria Plateau, Arizona. 3-frame panorama.\n\nAbrupt bounding surfaces are ubiquitous in the Navajo sandstone on the Paria Plateau, especially at Coyote Buttes. Some buttes have two dozen bounding surfaces or more.",
+      "farm": "66",
       "id": "53609612772",
       "license": {
         "id": "in-copyright",
@@ -3185,7 +3364,10 @@
         "realname": "Dave Coppedge",
         "username": "Chief Bwana"
       },
+      "photo_page_url": "https://www.flickr.com/photos/psa104/53609612772/",
       "safety_level": "safe",
+      "secret": "aa38207118",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3251,10 +3433,11 @@
         "psa104",
         "chiefbwana"
       ],
-      "title": "Bounding surfaces",
-      "url": "https://www.flickr.com/photos/psa104/53609612772/"
+      "title": "Bounding surfaces"
     },
     {
+      "count_comments": 0,
+      "count_views": 271,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-24T00:15:54+00:00"
@@ -3267,6 +3450,7 @@
         }
       },
       "description": "<i>Facing northeastward at the western (facade) and southern elevations.</i> \n\nBehold a classic example of a <i>false-front building</i>. All that gleaming white terra-cotta, which makes this former fish market look so classy <a href=\"https://www.flickr.com/photos/196253572@N05/53427881415/in/dateposted-public/\">from directly ahead</a>, turns out to be only facade-deep. \n\nBut this seemingly deceitful technique of putting the fancy stuff up forward and using less costly materials on the sides and back is nothing new. Some of the world's most opulent palaces and mansions are false-fronters, too, and it's such a time-honored practice that I wouldn't be surprised if it dates back to the very origins of human architecture.\n\nIn this case, of course, it would have helped if this building had neighboring structures that would make its common-brick sidewalls less obvious to passersby. But concerning that brick, note its light-yellow tint. It could be an example of Milwaukee's famous Cream City Brick, but there were few producers of it left by the mid-1920s, and by the end of that decade all were gone. Chicago Common Brick, used throughout the region,  had outcompeted it. \n\nThere were, however, bricks of the same color manufactured in both Kenosha and Racine, just up the coast. But the Racine yards were rapidly running out of clay and going out of business by the 1910s. As far as Kenosha Brick went, there had been at least three brickyards making it from the late nineteenth to the early twentieth centuries, but whether any of them survived into the 1920s, I don't know.\n\nRegardless, clays found in brickyards all the way from Milwaukee to Lake County, Illinois shared the same quirk of geochemistry\u2014an unusually high amount of calcium and magnesium\u2014that gave them their pale color. Nowadays, as the Ansorge Fish Market demonstrates, it's very difficult to tell where cream brick on buildings of southeastern-Wisconsin towns definitively came from, if there are no records to provide provenance.   \n\n<b>To see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670488\"><i>Terra-Cottalogy</i> album</a>. </b>",
+      "farm": "66",
       "id": "53606849133",
       "license": {
         "id": "in-copyright",
@@ -3281,13 +3465,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53606849133/",
       "safety_level": "safe",
+      "secret": "0d495a8a97",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3351,10 +3538,11 @@
         "terracotta",
         "creambrick"
       ],
-      "title": "The Geology of Terra-Cotta, Part 15: Putting One's Best Face Forward, the Ansorge Fish Market Building, Kenosha, Wisconsin, USA (ca. 1922)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53606849133/"
+      "title": "The Geology of Terra-Cotta, Part 15: Putting One's Best Face Forward, the Ansorge Fish Market Building, Kenosha, Wisconsin, USA (ca. 1922)"
     },
     {
+      "count_comments": 3,
+      "count_views": 444,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-23T15:40:50+00:00"
@@ -3367,6 +3555,7 @@
         }
       },
       "description": "This image shows detail of one of the dendritic &quot;trees&quot; in the Fractal Forest in a straight-down view. It was the first time I witnessed the phenomenon while water remained in part of the lake. \n\nFlow starts gradually at the &quot;leaves&quot; (right) at the tips that are barely deeper than the surface itself. These flow into channels that converge and grow till the &quot;trunks&quot; plant themselves in the water. \n\nNot counting a few old tire tracks, the perpendicular lines on the shore near the trunks seem to indicate some kind of slumping of clay layers on the gradually dipping slope. \n\nI think this location could be a natural laboratory for the study of flow patterns. See my Dendrites album for many more photos taken at different angles and light conditions. \n\nNote that in this panorama, some offset channels at top and bottom are artifacts of the panorama stitching software.",
+      "farm": "66",
       "id": "53604872112",
       "license": {
         "id": "in-copyright",
@@ -3383,7 +3572,10 @@
         "realname": "Dave Coppedge",
         "username": "Chief Bwana"
       },
+      "photo_page_url": "https://www.flickr.com/photos/psa104/53604872112/",
       "safety_level": "safe",
+      "secret": "97c11314cb",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3447,10 +3639,11 @@
         "psa104",
         "chiefbwana"
       ],
-      "title": "Tree-t for geophysicists",
-      "url": "https://www.flickr.com/photos/psa104/53604872112/"
+      "title": "Tree-t for geophysicists"
     },
     {
+      "count_comments": 0,
+      "count_views": 347,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-22T23:51:17+00:00"
@@ -3463,6 +3656,7 @@
         }
       },
       "description": "<i>As promised, here we are, actually Inside one of the canyon's rock shelters excavated by natural undermining and stoping (see <a href=\"https://www.flickr.com/photos/196253572@N05/53422274292/in/dateposted-public/\">Part 9 of this series</a> for an explanation of the mechanics of that).</i> \n\nIf you take a good look at the ceiling of the Pennsylvanian-subperiod (Upper Carboniferous) Pounds Sandstone Member, you'll see some significant cracking. And there are also some fairly tabular chunks of rocks that might not need a lot of encouragement to come tumbling down. \n\nIn fact, standing inside a rock shelter can give one that creepy, sword-of-Damocles feeling. And of course there are those big, tilted slump blocks on the ground nearby. When they came down, there must have been quite a thump. \n\nStill, if you're at Bell Smith in the early spring when sunlit water droplets are spilling like a string of diamonds over a ledge nearby, you're overtaken\u2014to crib from Keats\u2014with a sense of silence and slow time. \n\n<b>For more on this beautiful and geologically fascinating locale, get a copy of my <a href=\"https://www.flickr.com/photos/196253572@N05/52288266656/in/album-72177720301296710/\"><i>Geology Underfoot in Illinois</i></a>. \n\nAnd to see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302393036\"><i>Natural History: Illinois</i> album</a>.</b>",
+      "farm": "66",
       "id": "53605094300",
       "license": {
         "id": "in-copyright",
@@ -3477,13 +3671,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53605094300/",
       "safety_level": "safe",
+      "secret": "1a62497f58",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3549,10 +3746,11 @@
         "sandstone",
         "rockshelter"
       ],
-      "title": "The Bounty of Bell Smith Springs, Part 10: Room with a View, Shawnee National Forest, Illinois, USA",
-      "url": "https://www.flickr.com/photos/196253572@N05/53605094300/"
+      "title": "The Bounty of Bell Smith Springs, Part 10: Room with a View, Shawnee National Forest, Illinois, USA"
     },
     {
+      "count_comments": 6,
+      "count_views": 681,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-22T15:14:59+00:00"
@@ -3565,6 +3763,7 @@
         }
       },
       "description": "A paved trail heads down off Blue Mesa into the badlands in the Petrified Forest National Park.  ",
+      "farm": "66",
       "id": "53602814977",
       "license": {
         "id": "in-copyright",
@@ -3581,7 +3780,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53602814977/",
       "safety_level": "safe",
+      "secret": "870ebb958a",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3633,10 +3835,11 @@
         "badlands",
         "erosion"
       ],
-      "title": "Badlands",
-      "url": "https://www.flickr.com/photos/kportin/53602814977/"
+      "title": "Badlands"
     },
     {
+      "count_comments": 8,
+      "count_views": 608,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-19T05:48:30+00:00"
@@ -3649,6 +3852,7 @@
         }
       },
       "description": "Watson Lake is surrounded by eroded mounds of granite.  ",
+      "farm": "66",
       "id": "53596021692",
       "license": {
         "id": "in-copyright",
@@ -3665,7 +3869,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53596021692/",
       "safety_level": "safe",
+      "secret": "f0b99fd4a2",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3716,10 +3923,11 @@
         "erosion",
         "sunset"
       ],
-      "title": "Watson Lake",
-      "url": "https://www.flickr.com/photos/kportin/53596021692/"
+      "title": "Watson Lake"
     },
     {
+      "count_comments": 0,
+      "count_views": 356,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-15T23:56:46+00:00"
@@ -3732,6 +3940,7 @@
         }
       },
       "description": "<i>Trying to get a grasp on this memorial's two fine granitoids. Both, I believe, are feldspar-challenged, but in opposite ways.</i>\n\nIn <a href=\"https://www.flickr.com/photos/196253572@N05/53314994733/in/dateposted-public/\">Part 12 of this set</a> I described the geologic origins and petrology of the red, Paleoproterozoic Montello Granite shown here. But at this range we can really examine its mineralogical components. \n\nThe two dominant ingredients are the alkali feldspar orthoclase, here in its ruddiest, brick-red form, and very clear and glassy quartz. Accounting for as much as 40 percent of the rock, it's the mineral that makes the Montello so cussedly hard and enduring.  \n\nOf course, there are also traces of darker compounds\u2014hornblende, magnetite, hematite, and chlorite. In the Montello, Wisconsin quarry where this stone comes from there were a number of places where there were large veins of solid hematite and quartz that had to be worked around.  \n\nHowever, there's also something missing here. &quot;Normal&quot; granites have, in addition to alkali feldspars, plagioclase feldspars. The Montello has none of the latter. That pegs it as an <i>alkali-feldspar granite</i>, which is a type that most usually forms in &quot;extensional tectonic settings&quot;\u2014in other words, in portions of continental crust subject to tension (or being pulled apart) rather than compression. \n\nAnd now that we're this close, I'd be willing to bet that the salt-and-pepper stone under the Montello is the Devonian-period Barre Granodiorite (the &quot;Barre Granite&quot; of architects and monument makers). In terms of its grain size and biotite flecking, it's a dead ringer for it. And besides, the Barre is America's champion monumental stone. It's everywhere else, so why not here?\n\nIf my assignment is correct, the lower rock you see here is notable not for having a dearth of plagioclase, but for having a preponderance of it, in the form of white oligoclase or albite. There is some alkali feldspar present, but not much. Much more in evidence are the  black biotite mica and the quartz, which is this case is gray rather than transparently clear.\n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302395101\"><i>Architectural Geology: Southwestern Wisconsin</i> album</a>.</b>\n\n",
+      "farm": "66",
       "id": "53589253442",
       "license": {
         "id": "in-copyright",
@@ -3746,13 +3955,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53589253442/",
       "safety_level": "safe",
+      "secret": "0fca74634e",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3818,10 +4030,11 @@
         "barregranodiorite",
         "soldiersandsailorscivilwarmonument"
       ],
-      "title": "Architectural Geology of Southwestern Wisconsin, Part 15: Zooming in on the Soldiers' and Sailors' Civil War Monument, Monroe, Wisconsin, USA (1913)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53589253442/"
+      "title": "Architectural Geology of Southwestern Wisconsin, Part 15: Zooming in on the Soldiers' and Sailors' Civil War Monument, Monroe, Wisconsin, USA (1913)"
     },
     {
+      "count_comments": 5,
+      "count_views": 504,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-13T15:23:35+00:00"
@@ -3834,6 +4047,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53585346136",
       "license": {
         "id": "in-copyright",
@@ -3844,13 +4058,16 @@
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
         "username": "Nikon2\u201312"
       },
+      "photo_page_url": "https://www.flickr.com/photos/148096168@N02/53585346136/",
       "safety_level": "safe",
+      "secret": "3b05388f5b",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -3904,10 +4121,11 @@
         "landscape",
         "colorado"
       ],
-      "title": "Garden of the Gods at Sunrise.",
-      "url": "https://www.flickr.com/photos/148096168@N02/53585346136/"
+      "title": "Garden of the Gods at Sunrise."
     },
     {
+      "count_comments": 27,
+      "count_views": 2528,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-09T06:33:35+00:00"
@@ -3920,6 +4138,7 @@
         }
       },
       "description": "PANCAKE ROCKS &amp; BLOWHOLES\nRising from the sea at Dolomite Point, the Pancake Rocks are part of a heavily eroded limestone area where the sea bursts through underwater channels and escapes via vertical blowholes.\n\nThese rocks, dating back some 30 million years, formed as layers on the sea bed which eventually rose under seismic action. Since then water, wind and salt spray have been constantly eroding the softer layers leaving a \u2018pancake\u2019 stack of harder limestone.",
+      "farm": "66",
       "id": "53575282612",
       "license": {
         "id": "pdm",
@@ -3940,7 +4159,10 @@
         "realname": "Bernard Spragg. NZ",
         "username": "Bernard Spragg"
       },
+      "photo_page_url": "https://www.flickr.com/photos/volvob12b/53575282612/",
       "safety_level": "safe",
+      "secret": "9cc9d32806",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4003,10 +4225,11 @@
         "publicdomaindedicationcc0",
         "scenery"
       ],
-      "title": "PAPAROA NATIONAL PARK. Punakaiki .",
-      "url": "https://www.flickr.com/photos/volvob12b/53575282612/"
+      "title": "PAPAROA NATIONAL PARK. Punakaiki ."
     },
     {
+      "count_comments": 4,
+      "count_views": 976,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-28T04:54:50+00:00"
@@ -4019,6 +4242,7 @@
         }
       },
       "description": "Some of the sights and landforms of the amazing white Sands National Park.",
+      "farm": "66",
       "id": "53556877536",
       "license": {
         "id": "in-copyright",
@@ -4029,13 +4253,16 @@
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
         "username": "Nikon2\u201312"
       },
+      "photo_page_url": "https://www.flickr.com/photos/148096168@N02/53556877536/",
       "safety_level": "safe",
+      "secret": "72d30bbf8c",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4095,10 +4322,11 @@
         "desert",
         "southwest"
       ],
-      "title": "White Sands Dunes and Ripples.",
-      "url": "https://www.flickr.com/photos/148096168@N02/53556877536/"
+      "title": "White Sands Dunes and Ripples."
     },
     {
+      "count_comments": 8,
+      "count_views": 846,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-08T03:20:16+00:00"
@@ -4111,6 +4339,7 @@
         }
       },
       "description": "A huge rock formation known as the Fang in Joshua Tree National Park in front of a sun lit rocky wall.     ",
+      "farm": "66",
       "id": "53573376092",
       "license": {
         "id": "in-copyright",
@@ -4127,7 +4356,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53573376092/",
       "safety_level": "safe",
+      "secret": "3b340d0f70",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4179,10 +4411,11 @@
         "trees",
         "pareidolia"
       ],
-      "title": "The Fang",
-      "url": "https://www.flickr.com/photos/kportin/53573376092/"
+      "title": "The Fang"
     },
     {
+      "count_comments": 12,
+      "count_views": 841,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-07T02:14:14+00:00"
@@ -4195,6 +4428,7 @@
         }
       },
       "description": "This rock formation appeared to be dismayed.  Perhaps it was because some cretin left an empty water  bottle in one of its eye holes.  Even after we removed the bottle and prepared to take the bottle out of the back country, the rock's disposition did not appear to improve!  ",
+      "farm": "66",
       "id": "53572828025",
       "license": {
         "id": "in-copyright",
@@ -4211,7 +4445,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53572828025/",
       "safety_level": "safe",
+      "secret": "f42f7f9efb",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4267,10 +4504,11 @@
         "cmwd",
         "yellow"
       ],
-      "title": "Dismay",
-      "url": "https://www.flickr.com/photos/kportin/53572828025/"
+      "title": "Dismay"
     },
     {
+      "count_comments": 0,
+      "count_views": 335,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-05T21:06:28+00:00"
@@ -4283,6 +4521,7 @@
         }
       },
       "description": "While its official publication date is still April 15, 2024, I'm delighted to report that <b><i>Milwaukee in Stone and Clay: A Guide to the Cream City's Architectural Geology</i></b> is now &quot;in the warehouse.&quot; In other words, it's been printed and delivered to the publisher. And it's now being sent to customers who've pre-ordered it, and to bookstores and other outlets. \n\nHere's the publisher's link:\n\n<a href=\"https://www.cornellpress.cornell.edu/book/9781501774645/milwaukee-in-stone-and-clay/#bookTabs=1\" rel=\"noreferrer nofollow\">www.cornellpress.cornell.edu/book/9781501774645/milwaukee...</a>\n\n<i>To my friends on Flickr:</i> if you'd like to get a 30% discount on the book from the publisher, Cornell University Press, just drop me a line by Flickr mail, and I'll send you an author's gift card that gives you a QR code that will enable the discount. <i>Note: I can only do this for a short time, because I don't want to discourage people from buying the book from the talk hosts cited below!</i>\n\nAlso, just today (Tuesday, March 5, 2024) my interview about the book aired on WUWM, Milwaukee Public Radio. <a href=\"https://www.wuwm.com/2024-03-05/highlighting-and-celebrating-the-building-blocks-of-milwaukee\" rel=\"noreferrer nofollow\">Here's the podcast link</a>.\n\nFinally, I will be doing a virtual talk for Milwaukee's Boswell Book Company in association with Historic Milwaukee, Inc., on May 10, 2024 at 2:00 pm Central Daylight Time. Use <a href=\"https://us02web.zoom.us/webinar/register/WN_VVLiRnPXTdqYwv6XNmymTg#/registration\" rel=\"noreferrer nofollow\">this link</a> to register for this free event!",
+      "farm": "66",
       "id": "53570279194",
       "license": {
         "id": "in-copyright",
@@ -4297,13 +4536,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53570279194/",
       "safety_level": "safe",
+      "secret": "ebeba6f601",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4370,10 +4612,11 @@
         "raymondwiggers",
         "geologyguidebook"
       ],
-      "title": "Celebrating the Cream City's Urban Geology: Milwaukee in Stone and Clay (2024)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53570279194/"
+      "title": "Celebrating the Cream City's Urban Geology: Milwaukee in Stone and Clay (2024)"
     },
     {
+      "count_comments": 0,
+      "count_views": 28,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-05T20:08:45+00:00"
@@ -4386,6 +4629,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53570045373",
       "license": {
         "id": "cc-by-sa-2.0",
@@ -4402,7 +4646,10 @@
         "realname": null,
         "username": "Gunnar Ries zwo"
       },
+      "photo_page_url": "https://www.flickr.com/photos/gunnarries/53570045373/",
       "safety_level": "safe",
+      "secret": "26b11c45f9",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4455,10 +4702,11 @@
         }
       ],
       "tags": [],
-      "title": "N\u00f6rdlingen",
-      "url": "https://www.flickr.com/photos/gunnarries/53570045373/"
+      "title": "N\u00f6rdlingen"
     },
     {
+      "count_comments": 0,
+      "count_views": 156,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-05T20:08:40+00:00"
@@ -4471,6 +4719,7 @@
         }
       },
       "description": "Suevit -An impact rock formed by the impact of an asteroid in the N\u00f6rdlinger Ries. Used as a building stone in St George's Church, N\u00f6rdlingen\n",
+      "farm": "66",
       "id": "53570171684",
       "license": {
         "id": "cc-by-sa-2.0",
@@ -4487,7 +4736,10 @@
         "realname": null,
         "username": "Gunnar Ries zwo"
       },
+      "photo_page_url": "https://www.flickr.com/photos/gunnarries/53570171684/",
       "safety_level": "safe",
+      "secret": "2566f9598c",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4540,10 +4792,11 @@
         }
       ],
       "tags": [],
-      "title": "Suevit",
-      "url": "https://www.flickr.com/photos/gunnarries/53570171684/"
+      "title": "Suevit"
     },
     {
+      "count_comments": 3,
+      "count_views": 572,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-05T04:57:16+00:00"
@@ -4556,6 +4809,7 @@
         }
       },
       "description": "Enormous toppled but left a passage.  ",
+      "farm": "66",
       "id": "53567712612",
       "license": {
         "id": "in-copyright",
@@ -4572,7 +4826,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53567712612/",
       "safety_level": "safe",
+      "secret": "3229893fcd",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4624,10 +4881,11 @@
         "granite",
         "erosion"
       ],
-      "title": "Passageway",
-      "url": "https://www.flickr.com/photos/kportin/53567712612/"
+      "title": "Passageway"
     },
     {
+      "count_comments": 2,
+      "count_views": 315,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-04T01:25:40+00:00"
@@ -4640,6 +4898,7 @@
         }
       },
       "description": "<i>Taken just south of the Temple of Athena. We're looking southward.</i>\n\nIt's always good, after staring at human works too long and closely, to step back and regain a truer sense of scale. This shot offers a half-century-old view of the Paestum archaeological site and the broad alluvial plain laid down by the Sele River since the Pleistocene. The Second Temple of Hera stands in the middle ground. It eclipses the First, behind it. In the distance, the mountains of the Cilentan coast rise in a classic Mediterranean salt haze. \n\nThe scene reminds me of all those summer days I spent in the lush and verdant landscape of the Italian countryside. At certain moments the breeze stilled and there was a sort of hushed and ancient majesty hanging in the air. I have rarely found it elsewhere. \n\nAnd speaking of the haze, let's praise its source. The Mediterranean, that incomparable body of water, is approximately as long as the continent-spanning United States is wide. Unlike most &quot;seas,&quot; which sit atop continental shelves or carbonate platforms, the Med is underlain by ocean crust, and is the largest remaining remnant of the great Tethys Ocean of the Mesozoic and early Cenozoic eras. \n\nThe Med's characteristically opalescent sky tones are the result of a high concentration of salt crystals suspended in the lower atmosphere. This in turn is due to the sea's high salinity, caused by its often-sunny climate and its paucity of outlets to the world ocean.   \n\n<b>The other photos and descriptions of this series are ready for your inspection in my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303982812\"><i>Architectural Geology: Italy</i> album</a>.</b>    \n\n   \n\n ",
+      "farm": "66",
       "id": "53566464664",
       "license": {
         "id": "in-copyright",
@@ -4654,13 +4913,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53566464664/",
       "safety_level": "safe",
+      "secret": "20ecc46595",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4724,10 +4986,11 @@
         "stone",
         "stonework"
       ],
-      "title": "Architectural Geology of Paestum, Part 4: Taking the Long View, Magna Graecia, Campania, Italy",
-      "url": "https://www.flickr.com/photos/196253572@N05/53566464664/"
+      "title": "Architectural Geology of Paestum, Part 4: Taking the Long View, Magna Graecia, Campania, Italy"
     },
     {
+      "count_comments": 0,
+      "count_views": 189,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-31T20:56:34+00:00"
@@ -4740,6 +5003,7 @@
         }
       },
       "description": "Folded rocks on Kullen's south coast. M\u00f6lle in the background.",
+      "farm": "66",
       "id": "51853833787",
       "license": {
         "id": "in-copyright",
@@ -4750,13 +5014,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51853833787/",
       "safety_level": "safe",
+      "secret": "dc0657fd22",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4809,10 +5076,11 @@
         }
       ],
       "tags": [],
-      "title": "DSC01287 Bergsveckning",
-      "url": "https://www.flickr.com/photos/186413921@N04/51853833787/"
+      "title": "DSC01287 Bergsveckning"
     },
     {
+      "count_comments": 10,
+      "count_views": 854,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-03-01T05:06:08+00:00"
@@ -4825,6 +5093,7 @@
         }
       },
       "description": "At the end of a huge granite wall, a formation that appears to be a face is present in Joshua Tree National Park.  Other rocks in the area are trying to achieve the same appearance but they don't quite succeed.  One has a nostril and others have eyes or mouths.  Face Rock reigns supreme.  ",
+      "farm": "66",
       "id": "53560610756",
       "license": {
         "id": "in-copyright",
@@ -4841,7 +5110,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53560610756/",
       "safety_level": "safe",
+      "secret": "736f1587de",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4895,10 +5167,11 @@
         "rockformations",
         "erosion"
       ],
-      "title": "Face Rock",
-      "url": "https://www.flickr.com/photos/kportin/53560610756/"
+      "title": "Face Rock"
     },
     {
+      "count_comments": 6,
+      "count_views": 815,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-28T04:56:35+00:00"
@@ -4911,6 +5184,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53556029787",
       "license": {
         "id": "in-copyright",
@@ -4921,13 +5195,16 @@
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
         "username": "Nikon2\u201312"
       },
+      "photo_page_url": "https://www.flickr.com/photos/148096168@N02/53556029787/",
       "safety_level": "safe",
+      "secret": "d005210d23",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -4986,10 +5263,11 @@
         "sunset",
         "dunes"
       ],
-      "title": "White Sands Dusk Panorama",
-      "url": "https://www.flickr.com/photos/148096168@N02/53556029787/"
+      "title": "White Sands Dusk Panorama"
     },
     {
+      "count_comments": 3,
+      "count_views": 163,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-27T04:34:08+00:00"
@@ -5002,6 +5280,7 @@
         }
       },
       "description": "Both of these weigh 7 grams.\nLocality of original &quot;Apache Tear&quot; (obsidian), Superior, Arizona\n\nFor a closer look at the expanded obsidian surface see:\n<a href=\"https://www.flickr.com/photos/usageology/53555209799/in/photostream/\">www.flickr.com/photos/usageology/53555209799/in/photostream/</a>",
+      "farm": "66",
       "id": "53555318040",
       "license": {
         "id": "in-copyright",
@@ -5018,7 +5297,10 @@
         "realname": "Stan Celestian",
         "username": "Stan Celestian"
       },
+      "photo_page_url": "https://www.flickr.com/photos/usageology/53555318040/",
       "safety_level": "safe",
+      "secret": "8bd925f69a",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5075,10 +5357,11 @@
         "obsidian",
         "volcanicglass"
       ],
-      "title": "Expanded \"Apache Tear\" and Normal \"Apache Tear\"",
-      "url": "https://www.flickr.com/photos/usageology/53555318040/"
+      "title": "Expanded \"Apache Tear\" and Normal \"Apache Tear\""
     },
     {
+      "count_comments": 0,
+      "count_views": 143,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-12-28T20:39:32+00:00"
@@ -5091,6 +5374,7 @@
         }
       },
       "description": "North Fork of the Toutle River finds new channels on mudflow, Mt St Helens National Volcanic Monument.",
+      "farm": "66",
       "id": "51782415857",
       "license": {
         "id": "in-copyright",
@@ -5101,13 +5385,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51782415857/",
       "safety_level": "safe",
+      "secret": "284df9a8de",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5165,10 +5452,11 @@
         "st",
         "helens"
       ],
-      "title": "DSC01002 A new valley floor",
-      "url": "https://www.flickr.com/photos/186413921@N04/51782415857/"
+      "title": "DSC01002 A new valley floor"
     },
     {
+      "count_comments": 0,
+      "count_views": 258,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-12-28T20:39:42+00:00"
@@ -5181,6 +5469,7 @@
         }
       },
       "description": "The new lava dome growing in the crater of Mt St Helens post 1980, seen from the rim.",
+      "farm": "66",
       "id": "51783487978",
       "license": {
         "id": "in-copyright",
@@ -5191,13 +5480,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51783487978/",
       "safety_level": "safe",
+      "secret": "4b13f51a01",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5255,10 +5547,11 @@
         "st",
         "helens"
       ],
-      "title": "PICT0061 Lava dome",
-      "url": "https://www.flickr.com/photos/186413921@N04/51783487978/"
+      "title": "PICT0061 Lava dome"
     },
     {
+      "count_comments": 2,
+      "count_views": 381,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-26T01:17:58+00:00"
@@ -5271,6 +5564,7 @@
         }
       },
       "description": "<i>If you're wondering what the tiny white dots in this image are, magnify the photo and you'll see they're that kind of little white Italian Christmas lights that in the US are usually strung over trees in  shopping-center parking lots. \n\nBecause they're Italian, they're supposed to be all high-toned and classy, and not at all as common and tacky as colored lights or illuminated plastic Frosty the Snowman figures. Personally, I'd like to see two Frosties here, standing in the windows of the CITY HALL inset. Now that would be a winter light show to write home about, eh? Ya, you betcha.</i>\n\nOur last look at this arrestingly red edifice zooms in a bit and shows that the locally quarried Jacobsville Sandstone certainly makes a decent carving medium. \n\nThere are various brands of Upper Michigan's Jacobsville and Wisconsin's Bayfield Group sandstones that come under the general architectural heading of Lake Superior Brownstone. Some, like the &quot;Portage Red&quot; variety of the Jacobsville, are a cheerful brick-red, very similar in tint to the Marquette Brick shown here.\n\nBut most, like the rock on display here, are a morose maroon that appealed in some very deep and chthonic way to the designers of the Richardsonian Romanesque and other nineteenth-century styles that eschewed the Greco-Roman ideal in favor of more Medieval-derived designs.  And I must admit it really appeals to me, too. \n\nIncidentally, take a good look at the ashlar blocks that form the pilasters on the sides. I think they're supposed to be rusticated, sort of. At any rate, they show some of the pale, reduction-zone banding and mottling found on lower-grade Jacobsville. \n\nBut Holy Wah! That Super-Dooper Yooper Marquette Brick really knocks your socks off, eh? \n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720306314298\"><i>The Brownstone Chronicles</i> album</a>. </b>",
+      "farm": "66",
       "id": "53552740479",
       "license": {
         "id": "in-copyright",
@@ -5285,13 +5579,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53552740479/",
       "safety_level": "safe",
+      "secret": "2e73c99b9f",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5360,10 +5657,11 @@
         "lakesuperiorbrownstone",
         "jacobsvillesandstone"
       ],
-      "title": "The Brownstone Chronicles, Part 24: Close-Up of the Central Fa\u00e7ade, Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53552740479/"
+      "title": "The Brownstone Chronicles, Part 24: Close-Up of the Central Fa\u00e7ade, Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)"
     },
     {
+      "count_comments": 3,
+      "count_views": 660,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-26T01:20:11+00:00"
@@ -5376,6 +5674,7 @@
         }
       },
       "description": "Bright red sandstone abounds in Valley of Fire Nevada State Park.  \n\nHappy Sun Ray Sunday!",
+      "farm": "66",
       "id": "53552592818",
       "license": {
         "id": "in-copyright",
@@ -5392,7 +5691,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53552592818/",
       "safety_level": "safe",
+      "secret": "1be9be9a0a",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5446,10 +5748,11 @@
         "nevada",
         "hfs"
       ],
-      "title": "Valley of Fire",
-      "url": "https://www.flickr.com/photos/kportin/53552592818/"
+      "title": "Valley of Fire"
     },
     {
+      "count_comments": 5,
+      "count_views": 502,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-25T20:26:29+00:00"
@@ -5462,6 +5765,7 @@
         }
       },
       "description": "Bei Quedlinburg (Harzvorland)\n\n<a href=\"https://en.wikipedia.org/wiki/Teufelsmauer\" rel=\"noreferrer nofollow\">en.wikipedia.org/wiki/Teufelsmauer</a>\n\n<a href=\"https://de.wikipedia.org/wiki/Teufelsmauer_(Harz)\" rel=\"noreferrer nofollow\">de.wikipedia.org/wiki/Teufelsmauer_(Harz)</a>",
+      "farm": "66",
       "id": "53552305260",
       "license": {
         "id": "in-copyright",
@@ -5482,7 +5786,10 @@
         "realname": null,
         "username": "Claude@Munich"
       },
+      "photo_page_url": "https://www.flickr.com/photos/c-s-n/53552305260/",
       "safety_level": "safe",
+      "secret": "9cc9fd5b00",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5553,10 +5860,11 @@
         "geologie",
         "nationalegeotope"
       ],
-      "title": "Teufelsmauer (Lange Wand - K\u00f6nigstein)",
-      "url": "https://www.flickr.com/photos/c-s-n/53552305260/"
+      "title": "Teufelsmauer (Lange Wand - K\u00f6nigstein)"
     },
     {
+      "count_comments": 5,
+      "count_views": 752,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-24T19:26:15+00:00"
@@ -5569,6 +5877,7 @@
         }
       },
       "description": "This lovely arch in Valley of Fire is relatively small, although it is large enough for a person to stand inside it if climbing up to it weren't strictly prohibited.  \n\nIt was formed through erosion in the bright red Aztec sandstone that is found throughout the park.  \n\nHappy Saturated Saturday!",
+      "farm": "66",
       "id": "53548620807",
       "license": {
         "id": "in-copyright",
@@ -5585,7 +5894,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53548620807/",
       "safety_level": "safe",
+      "secret": "f5dde442ea",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5639,10 +5951,11 @@
         "geology",
         "clouds"
       ],
-      "title": "Arch Rock",
-      "url": "https://www.flickr.com/photos/kportin/53548620807/"
+      "title": "Arch Rock"
     },
     {
+      "count_comments": 8,
+      "count_views": 999,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-23T15:42:51+00:00"
@@ -5655,6 +5968,7 @@
         }
       },
       "description": "A panorama of rock formations in the valley is a kaleidoscope of colors and shapes.   ",
+      "farm": "66",
       "id": "53546376267",
       "license": {
         "id": "in-copyright",
@@ -5671,7 +5985,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53546376267/",
       "safety_level": "safe",
+      "secret": "1fc270b1c2",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5722,10 +6039,11 @@
         "rockformations",
         "redrock"
       ],
-      "title": "Valley of Fire",
-      "url": "https://www.flickr.com/photos/kportin/53546376267/"
+      "title": "Valley of Fire"
     },
     {
+      "count_comments": 0,
+      "count_views": 304,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-23T08:28:04+00:00"
@@ -5738,6 +6056,7 @@
         }
       },
       "description": "My friend, S\u00e6var, held his birthday party in the highlands of Iceland, in Kj\u00f6lur. We went on hiking in Hveradalir, Kerlingarfj\u00f6ll, and as he walked faster than I and my friends he was already on the other side waving when we were taking pictures and slowly hiking in his footsteps.\n\nHveradalir geothermal Area is located in the Highlands, by Kjolur Highland Road, in Iceland. One of the largest geothermal areas in all of Iceland, Hveradalir offers hot springs you can view up close and others that can be admired from a safe distance. The site is surrounded by the rhyolite mountains of the Kerlingarfjoll range, making for some spectacular and colorful surroundings and excellent hiking opportunities. Situated by the volcanic mountain ridge of Kerlingarfjoll, Hveradalir draws its name from the many hot springs in the area. From smaller, bubbling mud pools to larger springs of steaming water, the site offers visitors a glimpse into the stunning complexities of Iceland's geology. \n\nOne of Hveradalir's main attractions is the many striking natural formations created by the geothermal energy coursing beneath the surface. The hot waters flowing through the ground have interacted with the minerals, causing chemical changes that often result in unique patterns and colors appearing in the rocks above.  Read more here: <a href=\"https://guidetoiceland.is/travel-iceland/drive/hveradalir\" rel=\"noreferrer nofollow\">guidetoiceland.is/travel-iceland/drive/hveradalir</a> ",
+      "farm": "66",
       "id": "53547124975",
       "license": {
         "id": "in-copyright",
@@ -5758,7 +6077,10 @@
         "realname": "Sigfus Sigmundsson",
         "username": "sigfus.sigmundsson"
       },
+      "photo_page_url": "https://www.flickr.com/photos/sigfus/53547124975/",
       "safety_level": "safe",
+      "secret": "c5129fc137",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5822,10 +6144,11 @@
         "nature",
         "hotspring"
       ],
-      "title": "Boiling",
-      "url": "https://www.flickr.com/photos/sigfus/53547124975/"
+      "title": "Boiling"
     },
     {
+      "count_comments": 15,
+      "count_views": 903,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-22T18:59:51+00:00"
@@ -5838,6 +6161,7 @@
         }
       },
       "description": "The Valley of Fire Nevada State Park has spectacular rock formations. Photoshop Generative Fill did a good job with creating a rusty truck which blends with the terrain.  \n\nHappy Truck Thursday!  ",
+      "farm": "66",
       "id": "53545981244",
       "license": {
         "id": "in-copyright",
@@ -5854,7 +6178,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53545981244/",
       "safety_level": "safe",
+      "secret": "100c387fb8",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5907,10 +6234,11 @@
         "clouds",
         "generativefill"
       ],
-      "title": "Valley of Fire",
-      "url": "https://www.flickr.com/photos/kportin/53545981244/"
+      "title": "Valley of Fire"
     },
     {
+      "count_comments": 0,
+      "count_views": 56,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-03T16:55:25+00:00"
@@ -5923,6 +6251,7 @@
         }
       },
       "description": "Pines and heather make a living in a crack in the old metamorphosed sediments of Trestickla National Park.",
+      "farm": "66",
       "id": "51796841661",
       "license": {
         "id": "in-copyright",
@@ -5933,13 +6262,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51796841661/",
       "safety_level": "safe",
+      "secret": "ee8e89a10b",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -5992,10 +6324,11 @@
         }
       ],
       "tags": [],
-      "title": "DSC01546 Spricktr\u00e4dg\u00e5rd",
-      "url": "https://www.flickr.com/photos/186413921@N04/51796841661/"
+      "title": "DSC01546 Spricktr\u00e4dg\u00e5rd"
     },
     {
+      "count_comments": 0,
+      "count_views": 130,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-22T13:24:19+00:00"
@@ -6008,6 +6341,7 @@
         }
       },
       "description": "Castle Rock in Wisconsin. This formation is made of Sandstone. It is the result of a shallow sea that covered the area between 300 and 150 million years ago. The formation we see today is the result of erosion.",
+      "farm": "66",
       "id": "53545079706",
       "license": {
         "id": "in-copyright",
@@ -6018,13 +6352,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "197300142@N02",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/197300142@N02/",
         "profile_url": "https://www.flickr.com/people/197300142@N02/",
         "realname": "Jamieson  Leto",
         "username": "navyou37"
       },
+      "photo_page_url": "https://www.flickr.com/photos/197300142@N02/53545079706/",
       "safety_level": "safe",
+      "secret": "3896b39d69",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6077,10 +6414,11 @@
         }
       ],
       "tags": [],
-      "title": "Castle Rock",
-      "url": "https://www.flickr.com/photos/197300142@N02/53545079706/"
+      "title": "Castle Rock"
     },
     {
+      "count_comments": 0,
+      "count_views": 145,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-12-30T14:18:30+00:00"
@@ -6093,6 +6431,7 @@
         }
       },
       "description": "Interesting rocks along the Angeles Crest Highway. Sediments crossed by fault cracks filled with other material.",
+      "farm": "66",
       "id": "51787374671",
       "license": {
         "id": "in-copyright",
@@ -6103,13 +6442,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51787374671/",
       "safety_level": "safe",
+      "secret": "dc167d6ea6",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6162,10 +6504,11 @@
         }
       ],
       "tags": [],
-      "title": "P4086930 Complex geology",
-      "url": "https://www.flickr.com/photos/186413921@N04/51787374671/"
+      "title": "P4086930 Complex geology"
     },
     {
+      "count_comments": 6,
+      "count_views": 901,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-21T03:53:15+00:00"
@@ -6178,6 +6521,7 @@
         }
       },
       "description": "Lots of people waited at Zabriskie  Viewpoint for sunset.  The people on the left were on the lower level, there were many more on the upper level, and a scattering on the Red Wall on the right.  ",
+      "farm": "66",
       "id": "53542674219",
       "license": {
         "id": "in-copyright",
@@ -6194,7 +6538,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53542674219/",
       "safety_level": "safe",
+      "secret": "5d8e797ae6",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6249,10 +6596,11 @@
         "badlands",
         "erosion"
       ],
-      "title": "Waiting for Sunset",
-      "url": "https://www.flickr.com/photos/kportin/53542674219/"
+      "title": "Waiting for Sunset"
     },
     {
+      "count_comments": 6,
+      "count_views": 799,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-20T15:13:35+00:00"
@@ -6265,6 +6613,7 @@
         }
       },
       "description": "A throng of people waited at Zabriskie Point to see if the sun would peak through the clouds and give us a sunset.  A lone figure high on the Red Cathedral, also watched.",
+      "farm": "66",
       "id": "53541328738",
       "license": {
         "id": "in-copyright",
@@ -6281,7 +6630,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53541328738/",
       "safety_level": "safe",
+      "secret": "7450a76da1",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6336,10 +6688,11 @@
         "deathvalleynationalpark",
         "htt"
       ],
-      "title": "Watching",
-      "url": "https://www.flickr.com/photos/kportin/53541328738/"
+      "title": "Watching"
     },
     {
+      "count_comments": 10,
+      "count_views": 808,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-19T16:57:52+00:00"
@@ -6352,6 +6705,7 @@
         }
       },
       "description": "About 2,000 years ago, water intruded on magma and the resulting explosion of steam caused this 800 feet deep crater and several other nearby smaller craters.  One of them is on the far right.  ",
+      "farm": "66",
       "id": "53539664575",
       "license": {
         "id": "in-copyright",
@@ -6368,7 +6722,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53539664575/",
       "safety_level": "safe",
+      "secret": "3a3009c355",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6417,10 +6774,11 @@
         "ubehebecraters",
         "deathvalleynationalpark"
       ],
-      "title": "Ubehebe Craters",
-      "url": "https://www.flickr.com/photos/kportin/53539664575/"
+      "title": "Ubehebe Craters"
     },
     {
+      "count_comments": 0,
+      "count_views": 396,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-05T16:00:29+00:00"
@@ -6433,6 +6791,7 @@
         }
       },
       "description": "Famous pass in the Dolomites. Here igneous and sedimentary rocks meet, giving a great variety of flora, both lime lovers and those that prefer acidic soils.",
+      "farm": "66",
       "id": "51801634223",
       "license": {
         "id": "in-copyright",
@@ -6443,13 +6802,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51801634223/",
       "safety_level": "safe",
+      "secret": "323132b016",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6506,10 +6868,11 @@
         "pass",
         "dolomits"
       ],
-      "title": "P7125693 Passo di Rolle",
-      "url": "https://www.flickr.com/photos/186413921@N04/51801634223/"
+      "title": "P7125693 Passo di Rolle"
     },
     {
+      "count_comments": 1,
+      "count_views": 500,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-03-04T22:24:55+00:00"
@@ -6522,6 +6885,7 @@
         }
       },
       "description": "Looking north from the final ascent to Sawtooth Pass. The dark metamorphic rocks of the ridge leading to Empire Mountain stand out from the light colored granite surroundings. Mt Silliman and other peaks above the Giant Forest in the distance.",
+      "farm": "66",
       "id": "52726048986",
       "license": {
         "id": "in-copyright",
@@ -6532,13 +6896,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/52726048986/",
       "safety_level": "safe",
+      "secret": "aa50a5c8a7",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6591,10 +6958,11 @@
         }
       ],
       "tags": [],
-      "title": "PICT0979 Sawtooth Pass",
-      "url": "https://www.flickr.com/photos/186413921@N04/52726048986/"
+      "title": "PICT0979 Sawtooth Pass"
     },
     {
+      "count_comments": 1,
+      "count_views": 832,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-12-09T09:02:47+00:00"
@@ -6607,6 +6975,7 @@
         }
       },
       "description": "default",
+      "farm": "66",
       "id": "53385957615",
       "license": {
         "id": "in-copyright",
@@ -6627,7 +6996,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53385957615/",
       "safety_level": "safe",
+      "secret": "a3f55b433b",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6680,10 +7052,11 @@
         }
       ],
       "tags": [],
-      "title": "Hammerthal - Bad Freienwalde",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53385957615/"
+      "title": "Hammerthal - Bad Freienwalde"
     },
     {
+      "count_comments": 10,
+      "count_views": 1075,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-12-09T15:00:58+00:00"
@@ -6696,6 +7069,7 @@
         }
       },
       "description": "default",
+      "farm": "66",
       "id": "53385056872",
       "license": {
         "id": "in-copyright",
@@ -6716,7 +7090,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53385056872/",
       "safety_level": "safe",
+      "secret": "af269e9ba0",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6769,10 +7146,11 @@
         }
       ],
       "tags": [],
-      "title": "Bad Freienwalde - Hammerthal",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53385056872/"
+      "title": "Bad Freienwalde - Hammerthal"
     },
     {
+      "count_comments": 0,
+      "count_views": 208,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-03T16:19:08+00:00"
@@ -6785,6 +7163,7 @@
         }
       },
       "description": "Interesting landforms on a gravel plateau in V\u00e5l\u00e5dalen Nature reserve, J\u00e4mtland. Gravel deposits left by decaying ice age glacier.",
+      "farm": "66",
       "id": "51797152849",
       "license": {
         "id": "in-copyright",
@@ -6795,13 +7174,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51797152849/",
       "safety_level": "safe",
+      "secret": "07dbae2386",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6858,10 +7240,11 @@
         "v\u00e5l\u00e5dalen",
         "j\u00e4mtland"
       ],
-      "title": "df - 00324 Gr\u00f6ndalen 1",
-      "url": "https://www.flickr.com/photos/186413921@N04/51797152849/"
+      "title": "df - 00324 Gr\u00f6ndalen 1"
     },
     {
+      "count_comments": 0,
+      "count_views": 132,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-03T15:34:15+00:00"
@@ -6874,6 +7257,7 @@
         }
       },
       "description": "    Pretty boulder on Helagsfj\u00e4llet.",
+      "farm": "66",
       "id": "51796857443",
       "license": {
         "id": "in-copyright",
@@ -6884,13 +7268,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51796857443/",
       "safety_level": "safe",
+      "secret": "52a94b917a",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -6945,10 +7332,11 @@
       "tags": [
         "boulder"
       ],
-      "title": "DSC01205 Snygg sten",
-      "url": "https://www.flickr.com/photos/186413921@N04/51796857443/"
+      "title": "DSC01205 Snygg sten"
     },
     {
+      "count_comments": 0,
+      "count_views": 79,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-04T21:48:34+00:00"
@@ -6961,6 +7349,7 @@
         }
       },
       "description": "Limestone rock face with snow. Ges\u00e4use National Park, Austria.",
+      "farm": "66",
       "id": "51800552160",
       "license": {
         "id": "in-copyright",
@@ -6971,13 +7360,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51800552160/",
       "safety_level": "safe",
+      "secret": "a977feb729",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7035,10 +7427,11 @@
         "bergwand",
         "ges\u00e4use"
       ],
-      "title": "DSC01332 Kalk und Schnee",
-      "url": "https://www.flickr.com/photos/186413921@N04/51800552160/"
+      "title": "DSC01332 Kalk und Schnee"
     },
     {
+      "count_comments": 2,
+      "count_views": 212,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-31T19:40:40+00:00"
@@ -7051,6 +7444,7 @@
         }
       },
       "description": "Cuenca Pisco, Peru",
+      "farm": "66",
       "id": "53501057854",
       "license": {
         "id": "in-copyright",
@@ -7061,13 +7455,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/126778763@N04/",
         "profile_url": "https://www.flickr.com/people/126778763@N04/",
         "realname": "Pbabygeol",
         "username": "pbabygeol"
       },
+      "photo_page_url": "https://www.flickr.com/photos/126778763@N04/53501057854/",
       "safety_level": "safe",
+      "secret": "151e9e7590",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7125,10 +7522,11 @@
         "field",
         "trip"
       ],
-      "title": "Escuela de campo en la tormenta",
-      "url": "https://www.flickr.com/photos/126778763@N04/53501057854/"
+      "title": "Escuela de campo en la tormenta"
     },
     {
+      "count_comments": 9,
+      "count_views": 748,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-11T05:22:36+00:00"
@@ -7141,6 +7539,7 @@
         }
       },
       "description": "Wilbur made his way across a lunar landscape covered by the Trona Pinnacles.  Several other visitors are on the shoulder of a pinnacle.  The pinnacles were formed when this area was covered by Searles Lake thousands of years ago.  ",
+      "farm": "66",
       "id": "53521757976",
       "license": {
         "id": "in-copyright",
@@ -7157,7 +7556,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53521757976/",
       "safety_level": "safe",
+      "secret": "f658581ba0",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7207,10 +7609,11 @@
         "california",
         "wilbur"
       ],
-      "title": "Trona Pinnacles",
-      "url": "https://www.flickr.com/photos/kportin/53521757976/"
+      "title": "Trona Pinnacles"
     },
     {
+      "count_comments": 2,
+      "count_views": 800,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-10T17:09:11+00:00"
@@ -7223,6 +7626,7 @@
         }
       },
       "description": "This rock formation appears to be howling with dismay!  Perhaps because it can't reach the snack in front of it's mouth.  \n\nThis formation is located in Red Rock State Park in California.  ",
+      "farm": "66",
       "id": "53520676366",
       "license": {
         "id": "in-copyright",
@@ -7239,7 +7643,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53520676366/",
       "safety_level": "safe",
+      "secret": "10202681ae",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7292,10 +7699,11 @@
         "erosion",
         "california"
       ],
-      "title": "Dismay",
-      "url": "https://www.flickr.com/photos/kportin/53520676366/"
+      "title": "Dismay"
     },
     {
+      "count_comments": 0,
+      "count_views": 163,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-10T09:28:12+00:00"
@@ -7308,6 +7716,7 @@
         }
       },
       "description": "Utah, US",
+      "farm": "66",
       "id": "53520407974",
       "license": {
         "id": "cc-by-2.0",
@@ -7324,7 +7733,10 @@
         "realname": null,
         "username": "incidencematrix"
       },
+      "photo_page_url": "https://www.flickr.com/photos/incidencematrix/53520407974/",
       "safety_level": "safe",
+      "secret": "89f1072377",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7384,10 +7796,11 @@
         "desert",
         "landscape"
       ],
-      "title": "Layers",
-      "url": "https://www.flickr.com/photos/incidencematrix/53520407974/"
+      "title": "Layers"
     },
     {
+      "count_comments": 0,
+      "count_views": 262,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-10T08:59:32+00:00"
@@ -7400,6 +7813,7 @@
         }
       },
       "description": "An impressive rock formation in the Apennines, south of Modena.",
+      "farm": "66",
       "id": "53520488200",
       "license": {
         "id": "in-copyright",
@@ -7420,7 +7834,10 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
+      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53520488200/",
       "safety_level": "safe",
+      "secret": "0b06755cb5",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7476,10 +7893,11 @@
         "hiking",
         "landscape"
       ],
-      "title": "Rocca Malatina",
-      "url": "https://www.flickr.com/photos/vid_pogacnik/53520488200/"
+      "title": "Rocca Malatina"
     },
     {
+      "count_comments": 2,
+      "count_views": 338,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-10-24T20:35:40+00:00"
@@ -7492,6 +7910,7 @@
         }
       },
       "description": "Old Faithful erupting. Yellowstone NP.",
+      "farm": "66",
       "id": "51626693244",
       "license": {
         "id": "in-copyright",
@@ -7502,13 +7921,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51626693244/",
       "safety_level": "safe",
+      "secret": "3d1f619487",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7561,10 +7983,11 @@
         }
       ],
       "tags": [],
-      "title": "DSC00834 Eruption",
-      "url": "https://www.flickr.com/photos/186413921@N04/51626693244/"
+      "title": "DSC00834 Eruption"
     },
     {
+      "count_comments": 0,
+      "count_views": 163,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-09T07:52:48+00:00"
@@ -7577,6 +8000,7 @@
         }
       },
       "description": "Salse di Nirano is a special natural reserve. Small volcanoes there are the product of mainly gasous (methan) and partly liquid (oil) hydrocarbons deposits. As they ascend to soil surface, they wash out clay materials: the ejected mud is then responsible for the Salse's typical cone shape. (<a href=\"http://www.fiorano.it\" rel=\"noreferrer nofollow\">www.fiorano.it</a>)",
+      "farm": "66",
       "id": "53518403559",
       "license": {
         "id": "in-copyright",
@@ -7597,7 +8021,10 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
+      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53518403559/",
       "safety_level": "safe",
+      "secret": "d853fa1c46",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7651,10 +8078,11 @@
         "volcano",
         "landscape"
       ],
-      "title": "A volcano in the Nirano natural park",
-      "url": "https://www.flickr.com/photos/vid_pogacnik/53518403559/"
+      "title": "A volcano in the Nirano natural park"
     },
     {
+      "count_comments": 0,
+      "count_views": 145,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-07T10:38:58+00:00"
@@ -7667,6 +8095,7 @@
         }
       },
       "description": "Utah, US",
+      "farm": "66",
       "id": "53514818945",
       "license": {
         "id": "cc-by-2.0",
@@ -7683,7 +8112,10 @@
         "realname": null,
         "username": "incidencematrix"
       },
+      "photo_page_url": "https://www.flickr.com/photos/incidencematrix/53514818945/",
       "safety_level": "safe",
+      "secret": "b8138d7d3d",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7742,10 +8174,11 @@
         "d5500",
         "desert"
       ],
-      "title": "Rain in the Distance",
-      "url": "https://www.flickr.com/photos/incidencematrix/53514818945/"
+      "title": "Rain in the Distance"
     },
     {
+      "count_comments": 8,
+      "count_views": 1006,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-12-02T08:51:48+00:00"
@@ -7758,6 +8191,7 @@
         }
       },
       "description": "                               ",
+      "farm": "66",
       "id": "53369165017",
       "license": {
         "id": "in-copyright",
@@ -7778,7 +8212,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53369165017/",
       "safety_level": "safe",
+      "secret": "d665d33080",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7831,10 +8268,11 @@
         }
       ],
       "tags": [],
-      "title": "Georgian Military Road",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53369165017/"
+      "title": "Georgian Military Road"
     },
     {
+      "count_comments": 2,
+      "count_views": 487,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-07T00:35:49+00:00"
@@ -7847,6 +8285,7 @@
         }
       },
       "description": "<i>The late-afternoon shadows have gobbled up the canyon floor and part of the sheer Mexican cliff across the Rio Grande. But the most important geology is still well illumined.</i>\n\n<a href=\"https://www.flickr.com/photos/196253572@N05/53405910972/in/dateposted-public/\">Boquillas Canyon</a>, that great river-gouged passage through the Sierra del Carmen, exposes a massive vertical section of the Lower Cretaceous Santa Elena Limestone. What it and the other rock units of this spectacularly beautiful mountain range have been through since they were laid down is mindboggling. \n\nDeposited as layers of lime mud in the ocean-filled breach between the recently parted North and South America, they were later\u2014in the Upper Cretaceous and Lower Tertiary\u2014 scrunched into a giant, steplike monocline. This was one local episode of far-ranging crustal compression associated with the Laramide Orogeny.\n\nThen, in the Upper Tertiary and continuing to about 2 Ma ago, these formations were subjected to the opposite type of tectonics as part of the Rio Grande Rift / Basin-and-Range stage. Like the Laramide mountain-building event before it, the Basin-and-Range activity affected a huge portion of western North America. But this time the crust was pulled apart rather than compressed.. \n\nHere in Big Bend, about 500 mi (800 km) from the Gulf of California and the San Andreas transform fault, you'll find some of the easternmost evidence of both great tectonic phases. To wit: the big diagonal scar so nicely delineated by the low-angle light. It marks a slippage between the rock units on the left side (the <i>headwall</i>, sliding downward along the incline) and those on the right (the <i>footwall</i>, with relative upward motion). \n\nThis arrangement indicates that the giant gash is a <i>normal fault</i>, the type characteristic of crustal stretching. So it's a later, Basin-and-Range feature rather than an earlier Laramide structure.\n\nFaults like this are rarely so beautifully exposed as classic textbook examples. But then this is Big Bend, where nature has worked overtime to create an endless collection of outrageously visible wonders. Any person devoted to any aspect of natural history could spend ten lifetimes in this magical place and still want an eleventh. \n\n<b>To see the other photos and descriptions in this set and my other Big Bend series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/52619713656/in/album-72177720302655904/\">my <i>Natural History: Big Bend Region &amp; All of Trans-Pecos Texas</i> album</a>.</b>\n\n \n  \n \n\n",
+      "farm": "66",
       "id": "53513854113",
       "license": {
         "id": "in-copyright",
@@ -7861,13 +8300,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53513854113/",
       "safety_level": "safe",
+      "secret": "17dc827b16",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -7937,10 +8379,11 @@
         "fault",
         "basinandrangeprovince"
       ],
-      "title": "From Persimmon Gap to Boquillas Canyon, Part 13: Oh, What a Beautiful Faulting; Big Bend National Park, Texas, USA",
-      "url": "https://www.flickr.com/photos/196253572@N05/53513854113/"
+      "title": "From Persimmon Gap to Boquillas Canyon, Part 13: Oh, What a Beautiful Faulting; Big Bend National Park, Texas, USA"
     },
     {
+      "count_comments": 0,
+      "count_views": 214,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-04T23:50:07+00:00"
@@ -7953,6 +8396,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "53509479503",
       "license": {
         "id": "in-copyright",
@@ -7969,7 +8413,10 @@
         "realname": "Chuck Sutherland",
         "username": "Chuck Sutherland"
       },
+      "photo_page_url": "https://www.flickr.com/photos/chucksutherland/53509479503/",
       "safety_level": "safe",
+      "secret": "3f8526f333",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8027,10 +8474,11 @@
         "tennessee",
         "tn"
       ],
-      "title": "Athawominee, Bledsoe County, Tennessee",
-      "url": "https://www.flickr.com/photos/chucksutherland/53509479503/"
+      "title": "Athawominee, Bledsoe County, Tennessee"
     },
     {
+      "count_comments": 0,
+      "count_views": 107,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2021-12-27T23:25:02+00:00"
@@ -8043,6 +8491,7 @@
         }
       },
       "description": null,
+      "farm": "66",
       "id": "51779638227",
       "license": {
         "id": "in-copyright",
@@ -8053,13 +8502,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51779638227/",
       "safety_level": "safe",
+      "secret": "83738bae03",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8116,10 +8568,11 @@
         "lake",
         "tufa"
       ],
-      "title": "NP - 00808 Mono tufa 2",
-      "url": "https://www.flickr.com/photos/186413921@N04/51779638227/"
+      "title": "NP - 00808 Mono tufa 2"
     },
     {
+      "count_comments": 10,
+      "count_views": 985,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-04T21:06:57+00:00"
@@ -8132,6 +8585,7 @@
         }
       },
       "description": "Fracturing and weathering of rock in Joshua Tree National Park.  \n\nHappy Slider Sunday!\nColor My World Daily - Sunday\nHappy Sun Ray Sunday!",
+      "farm": "66",
       "id": "53508084697",
       "license": {
         "id": "in-copyright",
@@ -8148,7 +8602,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53508084697/",
       "safety_level": "safe",
+      "secret": "c767bbc1af",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8204,10 +8661,11 @@
         "fractured",
         "joshuatreenationalpark"
       ],
-      "title": "Geologic Processes",
-      "url": "https://www.flickr.com/photos/kportin/53508084697/"
+      "title": "Geologic Processes"
     },
     {
+      "count_comments": 0,
+      "count_views": 411,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-02-04T00:47:07+00:00"
@@ -8220,6 +8678,7 @@
         }
       },
       "description": "<i>Facing southwestward from the southern boundary of this renowned archaeological site's Roman settlement. The whitewashed town in the middle ground is Duqqat al-Jadida (Nouvelle Dougga).</i>\n\nThis shot offers a different perspective on the landscape  surrounding Dougga. Check out <a href=\"https://www.flickr.com/photos/196253572@N05/52325766030/in/album-72177720302394406/\">Part 1 of this series</a>, taken instead from the Roman theater situated to the northeast of this vantagepoint. \n\nThe geology at close hand consists of the Mausoleum of Ateban and the ruins of the considerably younger Imperial Roman town (mostly 2nd century AD). Apparently both are made of the very locally quarried, nummulitic carbonate rock known as the El Garia Limestone. It dates, as the Mediterranean Basin's nummulite-bearing formations generally do, to the Eocene epoch.   \n\nThe Tunisian steppe beyond is part of what geologists call the Diapir Zone. In this portion of the North African crust, large masses of buoyant, low-density evaporite deposits of Triassic age are rising through younger host rock, and in various places have deformed it in interesting ways.  \n\nOf course, this is not readily evident as one gazes across this particular scene. What is obvious, though, are the many groves of <i>Olea europaea</i>\u2014Olive trees\u2014including the one surrounding Ateban's tomb, also known as the Libyco-Punic Mausoleum. \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303982872\"><i>Architectural Geology: Tunisia</i> album</a>.</b>  \n\n",
+      "farm": "66",
       "id": "53507406134",
       "license": {
         "id": "in-copyright",
@@ -8234,13 +8693,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53507406134/",
       "safety_level": "safe",
+      "secret": "d2f56e4665",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8312,10 +8774,11 @@
         "oleaeuropaea",
         "olivetrees"
       ],
-      "title": "Architectural Geology of Dougga, Tunisia, Part 5: Another View of the Mausoleum of Ateban (2nd century BC) and the Diapir Zone",
-      "url": "https://www.flickr.com/photos/196253572@N05/53507406134/"
+      "title": "Architectural Geology of Dougga, Tunisia, Part 5: Another View of the Mausoleum of Ateban (2nd century BC) and the Diapir Zone"
     },
     {
+      "count_comments": 1,
+      "count_views": 323,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-26T18:32:56+00:00"
@@ -8328,6 +8791,7 @@
         }
       },
       "description": "Volcanic breccia eroded by the waves, on a beach in southern Gran Canaria.     ",
+      "farm": "66",
       "id": "53489013716",
       "license": {
         "id": "in-copyright",
@@ -8338,13 +8802,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/53489013716/",
       "safety_level": "safe",
+      "secret": "c8cc15cdfc",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8397,10 +8864,11 @@
         }
       ],
       "tags": [],
-      "title": "P1211434 Wave art",
-      "url": "https://www.flickr.com/photos/186413921@N04/53489013716/"
+      "title": "P1211434 Wave art"
     },
     {
+      "count_comments": 12,
+      "count_views": 1511,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-11-26T17:12:22+00:00"
@@ -8413,6 +8881,7 @@
         }
       },
       "description": "                               ",
+      "farm": "66",
       "id": "53357364156",
       "license": {
         "id": "in-copyright",
@@ -8433,7 +8902,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53357364156/",
       "safety_level": "safe",
+      "secret": "28b15a0910",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8486,10 +8958,11 @@
         }
       ],
       "tags": [],
-      "title": "Mount Kazbek - Georgia",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53357364156/"
+      "title": "Mount Kazbek - Georgia"
     },
     {
+      "count_comments": 0,
+      "count_views": 66,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2022-01-03T20:55:50+00:00"
@@ -8502,6 +8975,7 @@
         }
       },
       "description": "Karst detail",
+      "farm": "66",
       "id": "51798090470",
       "license": {
         "id": "in-copyright",
@@ -8512,13 +8986,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/186413921@N04/",
         "profile_url": "https://www.flickr.com/people/186413921@N04/",
         "realname": "Thomas Schultze",
         "username": "thomas.schultze"
       },
+      "photo_page_url": "https://www.flickr.com/photos/186413921@N04/51798090470/",
       "safety_level": "safe",
+      "secret": "0f9e43c0d4",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8574,10 +9051,11 @@
         "burren",
         "karst"
       ],
-      "title": "DSC01134 Burren",
-      "url": "https://www.flickr.com/photos/186413921@N04/51798090470/"
+      "title": "DSC01134 Burren"
     },
     {
+      "count_comments": 4,
+      "count_views": 220,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-31T19:33:14+00:00"
@@ -8590,6 +9068,7 @@
         }
       },
       "description": "Cuenca Pico, Peru",
+      "farm": "66",
       "id": "53499855987",
       "license": {
         "id": "in-copyright",
@@ -8604,13 +9083,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/126778763@N04/",
         "profile_url": "https://www.flickr.com/people/126778763@N04/",
         "realname": "Pbabygeol",
         "username": "pbabygeol"
       },
+      "photo_page_url": "https://www.flickr.com/photos/126778763@N04/53499855987/",
       "safety_level": "safe",
+      "secret": "f681692eee",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8667,10 +9149,11 @@
         "pisco",
         "peru"
       ],
-      "title": "Escuela de campo",
-      "url": "https://www.flickr.com/photos/126778763@N04/53499855987/"
+      "title": "Escuela de campo"
     },
     {
+      "count_comments": 6,
+      "count_views": 879,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-27T03:42:52+00:00"
@@ -8683,6 +9166,7 @@
         }
       },
       "description": "Interesting rock formations appear along Spencer Road east of Escalante.  ",
+      "farm": "66",
       "id": "53488917567",
       "license": {
         "id": "in-copyright",
@@ -8699,7 +9183,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53488917567/",
       "safety_level": "safe",
+      "secret": "af5b326ace",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8750,10 +9237,11 @@
         "clouds",
         "grandstaircaseescalantenationalmonument"
       ],
-      "title": "Rock Formations",
-      "url": "https://www.flickr.com/photos/kportin/53488917567/"
+      "title": "Rock Formations"
     },
     {
+      "count_comments": 7,
+      "count_views": 806,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-26T07:03:06+00:00"
@@ -8766,6 +9254,7 @@
         }
       },
       "description": "Metate Arch in the Devil's Garden looks so different from each side.  \n\nHappy Flare Friday!",
+      "farm": "66",
       "id": "53488449105",
       "license": {
         "id": "in-copyright",
@@ -8782,7 +9271,10 @@
         "realname": "Karen  Portin",
         "username": "KPortin"
       },
+      "photo_page_url": "https://www.flickr.com/photos/kportin/53488449105/",
       "safety_level": "safe",
+      "secret": "aa34cd2730",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8838,10 +9330,11 @@
         "utah",
         "grandstaircaseescalantenationalmonument"
       ],
-      "title": "Metate Arch and Sun",
-      "url": "https://www.flickr.com/photos/kportin/53488449105/"
+      "title": "Metate Arch and Sun"
     },
     {
+      "count_comments": 0,
+      "count_views": 382,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2024-01-25T23:13:54+00:00"
@@ -8854,6 +9347,7 @@
         }
       },
       "description": "<i>Facing eastward and looking at the western elevation and central dome.</i>\n\nSometimes beautiful old things come in new packages\u2014the opposite, I suppose, of the timeworn adage about new wine in old bottles. In this case, it's overtly obvious what's newer and what's older by quite a few centuries.\n\nNot surprisingly, given my geological slant, I'm more interested  in the dome and the rocky core of the building beneath it. \n\nIf Athens had four thousand Middle Byzantine churches, all built to the standard plan, I'd still want one more. I just like the style that much, and I like how the locally derived building materials play a key role in defining it.\n\nAnd those standard materials, all on display here behind the incongruously smooth-surfaced exonarthex, are:\n\n- the terra-cotta roofing tiles, no doubt made of Attica's legendary potters' clay;\n\n-bricks in a surprising variety of dimensions;\n\n- and Pliocene <i>poros</i> marly limestone, from Piraeus or Megara, with its pitted and puckered appearance. \n\nOnce again the bricks are used to create the superb window-arch ornament, and in addition they serve as the spacers between the ashlar blocks to produce that signature effect of Athenian medieval architecture\u2014cloisonn\u00e9 masonry.   \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303792872\"><i>Byzantine and Late Roman Worlds</i> album</a>.</b>",
+      "farm": "66",
       "id": "53487887970",
       "license": {
         "id": "in-copyright",
@@ -8868,13 +9362,16 @@
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
-        "path_alias": null,
+        "path_alias": "",
         "photos_url": "https://www.flickr.com/photos/196253572@N05/",
         "profile_url": "https://www.flickr.com/people/196253572@N05/",
         "realname": "Raymond Wiggers",
         "username": "rwgabbro1"
       },
+      "photo_page_url": "https://www.flickr.com/photos/196253572@N05/53487887970/",
       "safety_level": "safe",
+      "secret": "c0d42fc647",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -8946,10 +9443,11 @@
         "cloisonnemasonry",
         "byzantinearchitecture"
       ],
-      "title": "Architectural Geology of Byzantine Athens, Part 11: St. Catherine Church (late 11th to early 12th century AD; rebuilt in 1927)",
-      "url": "https://www.flickr.com/photos/196253572@N05/53487887970/"
+      "title": "Architectural Geology of Byzantine Athens, Part 11: St. Catherine Church (late 11th to early 12th century AD; rebuilt in 1927)"
     },
     {
+      "count_comments": 2,
+      "count_views": 795,
       "date_posted": {
         "type": "datetime.datetime",
         "value": "2023-11-20T18:03:33+00:00"
@@ -8962,6 +9460,7 @@
         }
       },
       "description": "                               ",
+      "farm": "66",
       "id": "53344884541",
       "license": {
         "id": "in-copyright",
@@ -8982,7 +9481,10 @@
         "realname": null,
         "username": "michael_jeddah"
       },
+      "photo_page_url": "https://www.flickr.com/photos/michael_from_berlin/53344884541/",
       "safety_level": "safe",
+      "secret": "0a516703b8",
+      "server": "65535",
       "sizes": [
         {
           "height": 75,
@@ -9035,9 +9537,7 @@
         }
       ],
       "tags": [],
-      "title": "Uckermark",
-      "url": "https://www.flickr.com/photos/michael_from_berlin/53344884541/"
+      "title": "Uckermark"
     }
-  ],
-  "total_photos": 14523
+  ]
 }
