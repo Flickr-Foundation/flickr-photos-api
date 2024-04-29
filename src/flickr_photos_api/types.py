@@ -155,6 +155,16 @@ class CollectionOfElements(TypedDict):
     elements: list[ParsedElement]
 
 
+class SinglePhotoInfoWithSizes(SinglePhotoInfo):
+    sizes: list[Size]
+
+
+class CollectionOfPhotos2(typing.TypedDict):
+    count_pages: int
+    count_photos: int
+    photos: list[SinglePhotoInfoWithSizes]
+
+
 class CollectionOfPhotos(TypedDict):
     page_count: int
     total_photos: int
@@ -167,6 +177,10 @@ class AlbumInfo(TypedDict):
 
 
 class PhotosInAlbum(CollectionOfPhotos):
+    album: AlbumInfo
+
+
+class PhotosInAlbum2(CollectionOfPhotos2):
     album: AlbumInfo
 
 
