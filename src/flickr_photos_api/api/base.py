@@ -68,7 +68,7 @@ def is_retryable(exc: BaseException) -> bool:
     return False
 
 
-class HttpxFlickrApi(FlickrApi):
+class HttpxImplementation(FlickrApi):
     """
     An implementation of the Flickr API that uses ``httpx`` to make HTTP calls,
     and ``tenacity`` for retrying failed API calls.
