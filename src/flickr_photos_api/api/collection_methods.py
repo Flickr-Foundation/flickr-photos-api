@@ -36,7 +36,7 @@ class CollectionMethods(LicenseMethods):
         server = photo_elem.attrib["server"]
         farm = photo_elem.attrib["farm"]
 
-        original_format = photo_elem.attrib["originalformat"]
+        original_format = photo_elem.attrib.get("originalformat")
 
         if owner is None:
             owner_id = photo_elem.attrib["owner"]
@@ -58,7 +58,7 @@ class CollectionMethods(LicenseMethods):
         license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
 
         title = photo_elem.attrib["title"]
-        description = photo_elem.attrib["description"]
+        description = photo_elem.attrib.get("description")
         tags = photo_elem.attrib["tags"].split()
 
         date_posted = parse_date_posted(photo_elem.attrib["dateupload"])
@@ -133,6 +133,9 @@ class CollectionMethods(LicenseMethods):
         "description",
         "safety_level",
         "realname",
+        "path_alias",
+        "count_comments",
+        "count_views",
     ]
 
     def _create_collection(
@@ -175,13 +178,15 @@ class CollectionMethods(LicenseMethods):
             },
         )
 
+        print(",".join(self.extras))
+
         photoset_elem = find_required_elem(resp, path="photoset")
         owner_id = photoset_elem.attrib["owner"]
         owner_username = photoset_elem.attrib["ownername"]
 
         photo_elem = find_required_elem(photoset_elem, path="photo")
-        realname = photo_elem.attrib["realname"]
-        path_alias = photo_elem.attrib["pathalias"]
+        realname = photo_elem.attrib.get("realname")
+        path_alias = photo_elem.attrib.get("pathalias")
 
         owner: User = {
             "id": owner_id,
@@ -199,7 +204,7 @@ class CollectionMethods(LicenseMethods):
         album_title = photoset_elem.attrib["title"]
 
         return {
-            **self._create_collection(photoset_elem),
+            **self._create_collection(photoset_elem, owner=owner),
             "album": {
                 "owner": owner,
                 "title": album_title,

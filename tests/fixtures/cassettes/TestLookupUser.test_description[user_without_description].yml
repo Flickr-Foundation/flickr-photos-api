@@ -16,27 +16,21 @@ interactions:
     method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=46143783%40N04
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
-      id=\"46143783@N04\" nsid=\"46143783@N04\" ispro=\"1\" is_deleted=\"0\" iconserver=\"3804\"
-      iconfarm=\"4\" path_alias=\"\" has_stats=\"0\" pro_badge=\"standard\" expire=\"0\"
-      has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>Barra1man
-      (Busy in the Garden)</username>\n\t<realname>Barra1man (Busy in the Garden)</realname>\n\t<mbox_sha1sum>883bd71722f22dfb348ffae0fd0e1e1a918bc3e7</mbox_sha1sum>\n\t<location
-      />\n\t<timezone label=\"Pacific Time (US &amp; Canada); Tijuana\" offset=\"-08:00\"
-      timezone_id=\"PST8PDT\" timezone=\"5\" />\n\t<description />\n\t<photosurl>https://www.flickr.com/photos/46143783@N04/</photosurl>\n\t<profileurl>https://www.flickr.com/people/46143783@N04/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/46143783@N04/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2010-01-02
-      14:23:09</firstdatetaken>\n\t\t<firstdate>1262470989</firstdate>\n\t\t<count>1440</count>\n\t</photos>\n</person>\n</rsp>\n"
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+      code=\"100\" msg=\"Invalid API Key (Key has invalid format)\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 26 Mar 2024 10:57:02 GMT
+      - Mon, 29 Apr 2024 15:48:39 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      - 1.1 1cc3fb840bf0d635b4ec2fb2c19ca094.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - _gZiufiEd3B63htY8UHNlnKfntT8P4j5rhgavspdzXuTIm-apj5jgg==
+      - -wecg9U0t0O8t6MIt4jMMwQtz6i5UN46w34rlfuaHvC3g4ICLYadOQ==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -45,14 +39,19 @@ interactions:
       - gzip
       server:
       - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:48:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:48:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-6602a9fe-696d8dd8619d40fc2d961541;Root=1-6602a9fe-3772286a572c9ca805dd8243
+      - Self=1-662fc157-4f0b4f18206ec5ae5d8719f9;Root=1-662fc157-46942fe864a2440858f1f0e0
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.39.10
+      - serverless-proxy-10.78.44.190
     http_version: HTTP/1.1
     status_code: 200
 version: 1

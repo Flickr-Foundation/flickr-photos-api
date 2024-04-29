@@ -16,25 +16,21 @@ interactions:
     method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=199258389%40N04
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
-      id=\"199258389@N04\" nsid=\"199258389@N04\" ispro=\"0\" is_deleted=\"0\" iconserver=\"65535\"
-      iconfarm=\"66\" path_alias=\"alexwlchan\" has_stats=\"0\" has_adfree=\"0\" has_free_standard_shipping=\"0\"
-      has_free_educational_resources=\"0\">\n\t<username>alexwlchan</username>\n\t<realname>Alex
-      Chan</realname>\n\t<location />\n\t<description>Tech lead at the Flickr Foundation.</description>\n\t<photosurl>https://www.flickr.com/photos/alexwlchan/</photosurl>\n\t<profileurl>https://www.flickr.com/people/alexwlchan/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/alexwlchan/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2024-02-07
-      06:26:16</firstdatetaken>\n\t\t<firstdate>1707315985</firstdate>\n\t\t<count>1</count>\n\t</photos>\n</person>\n</rsp>\n"
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+      code=\"100\" msg=\"Invalid API Key (Key has invalid format)\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 26 Mar 2024 10:57:02 GMT
+      - Mon, 29 Apr 2024 15:48:39 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 56d50c15e83a778a8a2df6031ec29098.cloudfront.net (CloudFront)
+      - 1.1 063bfb014e66ef670fc62ff044660cf2.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - SNDEDxa70YqfzqgbvGyD0OwI4nEdoF6OXYrOBr9WNfWbIVzwTPKZQg==
+      - _Gl6VJ7NAWwLDa_8Irg_F7uI7IwpQ3MuKiRjaveo6sYYYCocNY6n1w==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -43,14 +39,19 @@ interactions:
       - gzip
       server:
       - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:48:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:48:39 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-6602a9fe-19c66a6c4e619c4f3e64650e;Root=1-6602a9fe-2e1beb9b091390864ba55a3e
+      - Self=1-662fc157-11b9ae63297c7f76101e4fa5;Root=1-662fc157-678bb4232271e5756d6ca87a
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.16.65
+      - serverless-proxy-10.78.13.106
     http_version: HTTP/1.1
     status_code: 200
 version: 1

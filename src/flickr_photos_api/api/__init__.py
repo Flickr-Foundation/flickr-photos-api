@@ -201,28 +201,28 @@ class FlickrPhotosApi(BaseApi):
     # There are a bunch of similar flickr.XXX.getPhotos methods;
     # these are some constants and utility methods to help when
     # calling them.
-    extras = [
-        "license",
-        "date_upload",
-        "date_taken",
-        "media",
-        "original_format",
-        "owner_name",
-        "url_sq",
-        "url_t",
-        "url_s",
-        "url_m",
-        "url_o",
-        "tags",
-        "geo",
-        # These parameters aren't documented, but they're quite
-        # useful for our purposes!
-        "url_q",  # Large Square
-        "url_l",  # Large
-        "description",
-        "safety_level",
-        "realname",
-    ]
+    # extras = [
+    #     "license",
+    #     "date_upload",
+    #     "date_taken",
+    #     "media",
+    #     "original_format",
+    #     "owner_name",
+    #     "url_sq",
+    #     "url_t",
+    #     "url_s",
+    #     "url_m",
+    #     "url_o",
+    #     "tags",
+    #     "geo",
+    #     # These parameters aren't documented, but they're quite
+    #     # useful for our purposes!
+    #     "url_q",  # Large Square
+    #     "url_l",  # Large
+    #     "description",
+    #     "safety_level",
+    #     "realname",
+    # ]
 
     def _to_photo(
         self, parsed_elem: ParsedElement, *, collection_owner: User | None = None
