@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.14.1 - 2024-04-29
+
+*   The `lookup_user_by_url()` function is slightly faster when the URL contains a Flickr user ID rather than a path alias.
+    The function behaves the same as before, but now it avoids an unnecessary lookup.
+
 ## v1.14.0 - 2024-04-29
 
 *   More internal refactoring.

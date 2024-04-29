@@ -486,14 +486,22 @@ class FlickrPhotosApi(BaseApi):
         See https://www.flickr.com/services/api/flickr.people.getInfo.htm
 
         """
-        # The lookupUser response is of the form:
-        #
-        #       <user id="12403504@N02">
-        #       	<username>The British Library</username>
-        #       </user>
-        #
-        lookup_resp = self.call(method="flickr.urls.lookupUser", params={"url": url})
-        user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
+        parsed_url = parse_flickr_url(url)
+        assert parsed_url["type"] == "user"
+
+        if parsed_url["user_id"] is not None:
+            user_id = parsed_url["user_id"]
+        else:
+            # The lookupUser response is of the form:
+            #
+            #       <user id="12403504@N02">
+            #       	<username>The British Library</username>
+            #       </user>
+            #
+            lookup_resp = self.call(
+                method="flickr.urls.lookupUser", params={"url": url}
+            )
+            user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         return self.lookup_user_by_id(user_id=user_id)
 
