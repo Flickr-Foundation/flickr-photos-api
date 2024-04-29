@@ -31,6 +31,15 @@ class UserInfo(User):
     count_photos: int
 
 
+def user_info_to_user(user_info: UserInfo) -> User:
+    return {'id': user_info['id'],
+'username': user_info['username'],
+'photos_url': user_info['photos_url'],
+'profile_url': user_info['profile_url'],
+'path_alias': user_info['path_alias'],
+'realname': user_info['realname'],}
+
+
 # Represents the accuracy to which we know a date taken to be true.
 #
 # See https://www.flickr.com/services/api/misc.dates.html
@@ -118,12 +127,30 @@ class SinglePhoto(TypedDict):
     location: LocationInfo | None
 
 
+class ParsedElement(typing.TypedDict):
+    """
+    A parsed <photo> element in a collection response.
+
+    This includes both the raw <photo> element as an ``ET.Element``
+    and some parsed fields that we expect we will always use.
+    """
+
+    photo_elem: ET.Element
+
+    id: str
+    owner: User | None
+    date_posted: datetime.datetime
+    date_taken: DateTaken | None
+    license: License
+    sizes: list[Size]
+
+
 class CollectionOfElements(TypedDict):
     # TODO: Should these be renamed to `count_X` to match the Flickr API?
     page_count: int
     total_photos: int
     root: ET.Element
-    elements: list[ET.Element]
+    elements: list[ParsedElement]
 
 
 class CollectionOfPhotos(TypedDict):

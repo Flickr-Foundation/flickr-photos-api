@@ -647,9 +647,9 @@ def test_if_no_realname_then_empty(api: FlickrPhotosApi) -> None:
 @pytest.mark.parametrize(
     "params",
     [
-        {"user_id": "39758725@N03"},
+        {"user_id": "39758725@N03", "extras": ""},
         {"user_id": "39758725@N03", "extras": "geo"},
-        {"user_id": "39758725@N03", "extras": "geo,date_upload"},
+        {"user_id": "39758725@N03", "extras": "geo,title"},
     ],
 )
 def test_gets_stream_of_photos(api: FlickrPhotosApi, params: dict[str, str]) -> None:
