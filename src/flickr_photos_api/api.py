@@ -568,12 +568,12 @@ class FlickrPhotosApi(BaseApi):
             "photo_page_url": photo_page_url,
         }
 
-    def get_single_photo(self, *, photo_id: str) -> SinglePhoto:
+    def get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
         """
-        Look up the information for a single photo.
-        """
-        info = self.get_single_photo_info(photo_id=photo_id)
+        Look up the sizes for a single photo.
 
+        This uses the flickr.photos.getSizes API.
+        """
         sizes_resp = self.call(
             method="flickr.photos.getSizes", params={"photo_id": photo_id}
         )
@@ -641,6 +641,15 @@ class FlickrPhotosApi(BaseApi):
                 )
             else:  # pragma: no cover
                 raise ValueError(f"Unrecognised media type: {s.attrib['media']}")
+
+        return sizes
+
+    def get_single_photo(self, *, photo_id: str) -> SinglePhoto:
+        """
+        Look up the information for a single photo.
+        """
+        info = self.get_single_photo_info(photo_id=photo_id)
+        sizes = self.get_single_photo_sizes(photo_id=photo_id)
 
         return {
             "id": photo_id,
