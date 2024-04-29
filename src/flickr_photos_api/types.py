@@ -1,22 +1,21 @@
 import datetime
 import typing
 from typing import Literal, TypedDict
-from xml.etree import ElementTree as ET
 
 
-class License(TypedDict):
+class License(typing.TypedDict):
     id: str
     label: str
     url: str | None
 
 
-class LocationInfo(TypedDict):
+class LocationInfo(typing.TypedDict):
     latitude: float
     longitude: float
     accuracy: int
 
 
-class User(TypedDict):
+class User(typing.TypedDict):
     id: str
     username: str
     realname: str | None
@@ -34,15 +33,15 @@ class UserInfo(User):
 # Represents the accuracy to which we know a date taken to be true.
 #
 # See https://www.flickr.com/services/api/misc.dates.html
-TakenGranularity = Literal["second", "month", "year", "circa"]
+TakenGranularity = typing.Literal["second", "month", "year", "circa"]
 
 
-class DateTaken(TypedDict):
+class DateTaken(typing.TypedDict):
     value: datetime.datetime
     granularity: TakenGranularity
 
 
-class Size(TypedDict):
+class Size(typing.TypedDict):
     label: str
     width: int | None
     height: int | None
@@ -50,7 +49,7 @@ class Size(TypedDict):
     source: str
 
 
-class Comment(TypedDict):
+class Comment(typing.TypedDict):
     """
     A comment as received from the Flickr API.
     """
@@ -67,7 +66,7 @@ class Comment(TypedDict):
 # Represents the safety level of a photo on Flickr.
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
-SafetyLevel = Literal["safe", "moderate", "restricted"]
+SafetyLevel = typing.Literal["safe", "moderate", "restricted"]
 
 
 class SinglePhotoInfo(typing.TypedDict):
@@ -118,49 +117,17 @@ class SinglePhoto(TypedDict):
     location: LocationInfo | None
 
 
-class ParsedElement(typing.TypedDict):
-    """
-    A parsed <photo> element in a collection response.
-
-    This includes both the raw <photo> element as an ``ET.Element``
-    and some parsed fields that we expect we will always use.
-    """
-
-    photo_elem: ET.Element
-
-    id: str
-    owner: User | None
-    date_posted: datetime.datetime
-    date_taken: DateTaken | None
-    license: License
-    sizes: list[Size]
-
-
-class CollectionOfElements(TypedDict):
-    # TODO: Should these be renamed to `count_X` to match the Flickr API?
-    page_count: int
-    total_photos: int
-    root: ET.Element
-    elements: list[ParsedElement]
-
-
 class SinglePhotoInfoWithSizes(SinglePhotoInfo):
     sizes: list[Size]
 
 
-class CollectionOfPhotos2(typing.TypedDict):
+class CollectionOfPhotos(typing.TypedDict):
     count_pages: int
     count_photos: int
     photos: list[SinglePhotoInfoWithSizes]
 
 
-class CollectionOfPhotos(TypedDict):
-    page_count: int
-    total_photos: int
-    photos: list[SinglePhoto]
-
-
-class AlbumInfo(TypedDict):
+class AlbumInfo(typing.TypedDict):
     owner: User
     title: str
 
@@ -169,11 +136,7 @@ class PhotosInAlbum(CollectionOfPhotos):
     album: AlbumInfo
 
 
-class PhotosInAlbum2(CollectionOfPhotos2):
-    album: AlbumInfo
-
-
-class GalleryInfo(TypedDict):
+class GalleryInfo(typing.TypedDict):
     owner_name: str
     title: str
 
@@ -182,20 +145,12 @@ class PhotosInGallery(CollectionOfPhotos):
     gallery: GalleryInfo
 
 
-class PhotosInGallery2(CollectionOfPhotos2):
-    gallery: GalleryInfo
-
-
-class GroupInfo(TypedDict):
+class GroupInfo(typing.TypedDict):
     id: str
     name: str
 
 
 class PhotosInGroup(CollectionOfPhotos):
-    group: GroupInfo
-
-
-class PhotosInGroup2(CollectionOfPhotos2):
     group: GroupInfo
 
 

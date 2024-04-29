@@ -1,7 +1,12 @@
 import pytest
 
-from flickr_photos_api import FlickrApi as FlickrPhotosApi
-from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, PhotosInGroup2, CollectionOfPhotos2
+from flickr_photos_api import FlickrApi
+from flickr_photos_api.types import (
+    PhotosInAlbum,
+    PhotosInGallery,
+    PhotosInGroup,
+    CollectionOfPhotos,
+)
 from utils import get_fixture
 
 
@@ -14,7 +19,7 @@ class TestCollectionsPhotoResponse:
     how it affects the final response.
     """
 
-    def test_sets_owner_and_url_on_collection(self, api: FlickrPhotosApi) -> None:
+    def test_sets_owner_and_url_on_collection(self, api: FlickrApi) -> None:
         resp = api.get_photos_in_album(
             user_id="115357548@N08",
             album_id="72157640898611483",
@@ -35,7 +40,7 @@ class TestCollectionsPhotoResponse:
         )
 
     def test_sets_date_unknown_on_date_taken_in_collection(
-        self, api: FlickrPhotosApi
+        self, api: FlickrApi
     ) -> None:
         resp = api.get_photos_in_album(
             user_id="31575009@N05",
@@ -44,7 +49,7 @@ class TestCollectionsPhotoResponse:
 
         assert resp["photos"][0]["date_taken"] is None
 
-    def test_only_gets_publicly_available_sizes(self, api: FlickrPhotosApi) -> None:
+    def test_only_gets_publicly_available_sizes(self, api: FlickrApi) -> None:
         # This user doesn't allow downloading of their original photos,
         # so when we try to look up an album of their photos in the API,
         # we shouldn't get an Original size.
@@ -57,9 +62,7 @@ class TestCollectionsPhotoResponse:
             size for size in resp["photos"][0]["sizes"] if size["label"] == "Original"
         )
 
-    def test_sets_originalformat_to_none_if_no_downloads(
-        self, api: FlickrPhotosApi
-    ) -> None:
+    def test_sets_originalformat_to_none_if_no_downloads(self, api: FlickrApi) -> None:
         # This user doesn't allow downloading of their original photos,
         # so when we try to look up an album of their photos in the API,
         # we shouldn't get an Original size.
@@ -70,7 +73,7 @@ class TestCollectionsPhotoResponse:
 
         assert all(photo["original_format"] is None for photo in resp["photos"])
 
-    def test_discards_location_if_accuracy_zero(self, api: FlickrPhotosApi) -> None:
+    def test_discards_location_if_accuracy_zero(self, api: FlickrApi) -> None:
         # This retrieves an album which a photo that has location accuracy 0,
         # so we want to make sure we discard the location info.
         resp = api.get_photos_in_album(
@@ -85,13 +88,13 @@ class TestCollectionsPhotoResponse:
 
         assert photo_from_album["location"] is None
 
-    def test_can_get_collection_with_videos(self, api: FlickrPhotosApi) -> None:
+    def test_can_get_collection_with_videos(self, api: FlickrApi) -> None:
         api.get_photos_in_album(
             user_id="91178292@N00",
             album_id="72157624715342071",
         )
 
-    def test_gets_description_when_present(self, api: FlickrPhotosApi) -> None:
+    def test_gets_description_when_present(self, api: FlickrApi) -> None:
         # This is a collection of screenshots from a Flickr Foundation album,
         # which we know have descriptions populated
         album_with_desc = api.get_photos_in_album(
@@ -132,7 +135,7 @@ class TestCollectionsPhotoResponse:
         ],
     )
     def test_methods_are_paginated(
-        self, api: FlickrPhotosApi, method: str, kwargs: dict[str, str]
+        self, api: FlickrApi, method: str, kwargs: dict[str, str]
     ) -> None:
         api_method = getattr(api, method)
 
@@ -145,22 +148,24 @@ class TestCollectionsPhotoResponse:
             per_page=1,
         )
 
-        print(len(all_resp['photos']))
-        print(len(individual_resp['photos']))
+        print(len(all_resp["photos"]))
+        print(len(individual_resp["photos"]))
 
         assert individual_resp["photos"][0] == all_resp["photos"][4]
 
 
 class TestGetAlbum:
-    def test_can_get_album(self, api: FlickrPhotosApi) -> None:
+    def test_can_get_album(self, api: FlickrApi) -> None:
         photos = api.get_photos_in_album(
             user_id="132051449@N06",
             album_id="72157677773252346",
         )
 
-        assert photos == get_fixture("album-72157677773252346.json", model=PhotosInAlbum2)
+        assert photos == get_fixture(
+            "album-72157677773252346.json", model=PhotosInAlbum
+        )
 
-    def test_empty_album_title_is_none(self, api: FlickrPhotosApi) -> None:
+    def test_empty_album_title_is_none(self, api: FlickrApi) -> None:
         album = api.get_photos_in_album(
             user_id="132051449@N06",
             album_id="72157677773252346",
@@ -169,7 +174,7 @@ class TestGetAlbum:
         assert album["photos"][0]["title"] == "Seoul"
         assert album["photos"][7]["title"] is None
 
-    def test_empty_album_description_is_none(self, api: FlickrPhotosApi) -> None:
+    def test_empty_album_description_is_none(self, api: FlickrApi) -> None:
         album_without_desc = api.get_photos_in_album(
             user_id="32834977@N03",
             album_id="72157626164453131",
@@ -180,21 +185,21 @@ class TestGetAlbum:
         )
 
 
-def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
+def test_get_gallery_from_id(api: FlickrApi) -> None:
     photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
 
     assert photos == get_fixture(
-        "gallery-72157677773252346.json", model=PhotosInGallery2
+        "gallery-72157677773252346.json", model=PhotosInGallery
     )
 
 
 class TestGetPhotosInUserPhotostream:
-    def test_can_get_photos(self, api: FlickrPhotosApi) -> None:
+    def test_can_get_photos(self, api: FlickrApi) -> None:
         photos = api.get_photos_in_user_photostream(user_id="34427469121@N01")
 
-        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos2)
+        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
 
-    def test_empty_result_if_no_public_photos(self, api: FlickrPhotosApi) -> None:
+    def test_empty_result_if_no_public_photos(self, api: FlickrApi) -> None:
         # This is a user who doesn't have any public photos.
         #
         # I found them by looking for users on the Flickr help forums who wanted
@@ -202,22 +207,18 @@ class TestGetPhotosInUserPhotostream:
         # https://www.flickr.com/help/forum/en-us/72157668446667394/
         photos = api.get_photos_in_user_photostream(user_id="51635425@N00")
 
-        assert photos == {
-            'count_pages': 1,
-            'count_photos': 0,
-            'photos': []
-        }
+        assert photos == {"count_pages": 1, "count_photos": 0, "photos": []}
 
 
-def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
+def test_get_photos_in_group_pool(api: FlickrApi) -> None:
     photos = api.get_photos_in_group_pool(
         group_url="https://www.flickr.com/groups/slovenia/pool/"
     )
 
-    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup2)
+    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup)
 
 
-def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
+def test_get_photos_with_tag(api: FlickrApi) -> None:
     photos = api.get_photos_with_tag(tag="sunset")
 
-    assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos2)
+    assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos)

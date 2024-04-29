@@ -9,11 +9,11 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .license_methods import LicenseMethods
 from ..types import (
-    CollectionOfPhotos2,
+    CollectionOfPhotos,
     GroupInfo,
-    PhotosInAlbum2,
-    PhotosInGallery2,
-    PhotosInGroup2,
+    PhotosInAlbum,
+    PhotosInGallery,
+    PhotosInGroup,
     SinglePhotoInfoWithSizes,
     User,
 )
@@ -143,7 +143,7 @@ class CollectionMethods(LicenseMethods):
 
     def _create_collection(
         self, collection_elem: ET.Element, owner: User | None = None
-    ) -> CollectionOfPhotos2:
+    ) -> CollectionOfPhotos:
         photos = [
             self._from_collection_photo(photo_elem, owner=owner)
             for photo_elem in collection_elem.findall("photo")
@@ -165,7 +165,7 @@ class CollectionMethods(LicenseMethods):
 
     def get_photos_in_album(
         self, *, user_id: str, album_id: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInAlbum2:
+    ) -> PhotosInAlbum:
         """
         Get a page of photos from an album.
         """
@@ -211,7 +211,7 @@ class CollectionMethods(LicenseMethods):
 
     def get_photos_in_gallery(
         self, *, gallery_id: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInGallery2:
+    ) -> PhotosInGallery:
         """
         Get the photos in a gallery.
         """
@@ -241,7 +241,7 @@ class CollectionMethods(LicenseMethods):
 
     def get_photos_in_user_photostream(
         self, *, user_id: str, page: int = 1, per_page: int = 10
-    ) -> CollectionOfPhotos2:
+    ) -> CollectionOfPhotos:
         """
         Get all the public photos by a user on Flickr.
         """
@@ -259,11 +259,7 @@ class CollectionMethods(LicenseMethods):
 
         # The user hasn't uploaded any photos
         if first_photo is None:
-            return {
-                'count_pages': 1,
-                'count_photos': 0,
-                'photos': []
-            }
+            return {"count_pages": 1, "count_photos": 0, "photos": []}
 
         owner_id = first_photo.attrib["owner"]
         owner_username = first_photo.attrib["ownername"]
@@ -280,7 +276,9 @@ class CollectionMethods(LicenseMethods):
             "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
         }
 
-        return self._create_collection(resp.find("photos"), owner=owner)
+        photos_elem = find_required_elem(resp, path="photos")
+
+        return self._create_collection(photos_elem, owner=owner)
 
     def _lookup_group_from_url(self, *, url: str) -> GroupInfo:
         """
@@ -303,7 +301,7 @@ class CollectionMethods(LicenseMethods):
 
     def get_photos_in_group_pool(
         self, *, group_url: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInGroup2:
+    ) -> PhotosInGroup:
         """
         Get all the photos in a group pool.
         """
@@ -329,7 +327,7 @@ class CollectionMethods(LicenseMethods):
 
     def get_photos_with_tag(
         self, *, tag: str, page: int = 1, per_page: int = 10
-    ) -> CollectionOfPhotos2:
+    ) -> CollectionOfPhotos:
         """
         Get all the photos that use a given tag.
         """
