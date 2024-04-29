@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.12.0 - 2024-04-29
+
+*   Add a new method `get_single_photo_info()` which wraps all the information returned by the `flickr.photos.getInfo` API.
+
 ## v1.11.0 - 2024-04-23
 
 *   Refactor the internals to expose a couple of new methods for getting a single page or a continuous stream of photos.
