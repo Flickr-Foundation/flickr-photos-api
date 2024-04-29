@@ -1,4 +1,5 @@
 import datetime
+import typing
 from typing import Literal, TypedDict
 from xml.etree import ElementTree as ET
 
@@ -67,6 +68,38 @@ class Comment(TypedDict):
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
 SafetyLevel = Literal["safe", "moderate", "restricted"]
+
+
+class SinglePhotoInfo(typing.TypedDict):
+    """
+    Represents a response from the flickr.photos.getInfo API.
+    """
+
+    id: str
+
+    secret: str
+    server: str
+    farm: str
+    original_format: str | None
+
+    owner: User
+
+    safety_level: SafetyLevel
+
+    license: License
+
+    title: str | None
+    description: str | None
+    tags: list[str]
+
+    date_posted: datetime.datetime
+    date_taken: DateTaken | None
+    location: LocationInfo | None
+
+    count_comments: int
+    count_views: int
+
+    photo_page_url: str
 
 
 class SinglePhoto(TypedDict):

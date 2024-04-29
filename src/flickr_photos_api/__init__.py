@@ -25,10 +25,11 @@ from .types import (
     AlbumInfo,
     GalleryInfo,
     GroupInfo,
+    SinglePhotoInfo,
 )
 
 
-__version__ = "1.11.0"
+__version__ = "1.12.0"
 
 
 __all__ = [
@@ -48,6 +49,7 @@ __all__ = [
     "Size",
     "SafetyLevel",
     "SinglePhoto",
+    "SinglePhotoInfo",
     "CollectionOfPhotos",
     "PhotosFromUrl",
     "PhotosInAlbum",

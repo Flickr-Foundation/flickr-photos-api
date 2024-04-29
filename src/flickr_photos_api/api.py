@@ -36,6 +36,7 @@ from .types import (
     PhotosInGallery,
     PhotosInGroup,
     SinglePhoto,
+    SinglePhotoInfo,
     Size,
     User,
     UserInfo,
@@ -431,15 +432,14 @@ class FlickrPhotosApi(BaseApi):
 
         return self.lookup_user_by_id(user_id=user_id)
 
-    def get_single_photo(self, *, photo_id: str) -> SinglePhoto:
+    def get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
         """
         Look up the information for a single photo.
+
+        This uses the flickr.photos.getInfo API.
         """
         info_resp = self.call(
             method="flickr.photos.getInfo", params={"photo_id": photo_id}
-        )
-        sizes_resp = self.call(
-            method="flickr.photos.getSizes", params={"photo_id": photo_id}
         )
 
         # The getInfo response is a blob of XML of the form:
@@ -472,6 +472,10 @@ class FlickrPhotosApi(BaseApi):
         #
         photo_elem = find_required_elem(info_resp, path=".//photo")
 
+        safety_level = parse_safety_level(photo_elem.attrib["safety_level"])
+
+        license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
+
         title = find_optional_text(photo_elem, path="title")
         description = find_optional_text(photo_elem, path="description")
 
@@ -502,9 +506,8 @@ class FlickrPhotosApi(BaseApi):
             photo_elem, path='.//urls/url[@type="photopage"]'
         )
 
-        license = self.lookup_license_by_id(id=photo_elem.attrib["license"])
-
-        safety_level = parse_safety_level(photo_elem.attrib["safety_level"])
+        count_comments = int(find_required_text(photo_elem, path="comments"))
+        count_views = int(photo_elem.attrib["views"])
 
         # The originalformat parameter will only be returned if the user
         # allows downloads of the photo.
@@ -516,6 +519,64 @@ class FlickrPhotosApi(BaseApi):
         # See https://www.flickr.com/help/forum/32218/
         # See https://www.flickrhelp.com/hc/en-us/articles/4404079715220-Download-permissions
         original_format = photo_elem.get("originalformat")
+
+        # We have two options with tags: we can use the 'raw' version
+        # entered by the user, or we can use the normalised version in
+        # the tag text.
+        #
+        # e.g. "bay of bengal" vs "bayofbengal"
+        #
+        # We prefer the normalised version because it makes it possible
+        # to compare tags across photos, and we only get the normalised
+        # versions from the collection endpoints.
+        tags_elem = find_required_elem(photo_elem, path="tags")
+
+        tags = []
+        for t in tags_elem.findall("tag"):
+            assert t.text is not None
+            tags.append(t.text)
+
+        # Get location information about the photo.
+        #
+        # The <location> tag is only present in photos which have
+        # location data; if the user hasn't made location available to
+        # public users, it'll be missing.
+        location_elem = photo_elem.find(path="location")
+
+        if location_elem is not None:
+            location = parse_location(location_elem)
+        else:
+            location = None
+
+        return {
+            "id": photo_id,
+            "secret": photo_elem.attrib["secret"],
+            "server": photo_elem.attrib["server"],
+            "farm": photo_elem.attrib["farm"],
+            "original_format": original_format,
+            "owner": owner,
+            "safety_level": safety_level,
+            "license": license,
+            "title": title,
+            "description": description,
+            "tags": tags,
+            "date_posted": date_posted,
+            "date_taken": date_taken,
+            "location": location,
+            "count_comments": count_comments,
+            "count_views": count_views,
+            "photo_page_url": photo_page_url,
+        }
+
+    def get_single_photo(self, *, photo_id: str) -> SinglePhoto:
+        """
+        Look up the information for a single photo.
+        """
+        info = self.get_single_photo_info(photo_id=photo_id)
+
+        sizes_resp = self.call(
+            method="flickr.photos.getSizes", params={"photo_id": photo_id}
+        )
 
         # The getSizes response is a blob of XML of the form:
         #
@@ -581,48 +642,20 @@ class FlickrPhotosApi(BaseApi):
             else:  # pragma: no cover
                 raise ValueError(f"Unrecognised media type: {s.attrib['media']}")
 
-        # We have two options with tags: we can use the 'raw' version
-        # entered by the user, or we can use the normalised version in
-        # the tag text.
-        #
-        # e.g. "bay of bengal" vs "bayofbengal"
-        #
-        # We prefer the normalised version because it makes it possible
-        # to compare tags across photos, and we only get the normalised
-        # versions from the collection endpoints.
-        tags_elem = find_required_elem(photo_elem, path="tags")
-
-        tags = []
-        for t in tags_elem.findall("tag"):
-            assert t.text is not None
-            tags.append(t.text)
-
-        # Get location information about the photo.
-        #
-        # The <location> tag is only present in photos which have
-        # location data; if the user hasn't made location available to
-        # public users, it'll be missing.
-        location_elem = photo_elem.find(path="location")
-
-        if location_elem is not None:
-            location = parse_location(location_elem)
-        else:
-            location = None
-
         return {
             "id": photo_id,
-            "title": title,
-            "description": description,
-            "owner": owner,
-            "date_posted": date_posted,
-            "date_taken": date_taken,
-            "safety_level": safety_level,
-            "license": license,
-            "url": photo_page_url,
+            "title": info["title"],
+            "description": info["description"],
+            "owner": info["owner"],
+            "date_posted": info["date_posted"],
+            "date_taken": info["date_taken"],
+            "safety_level": info["safety_level"],
+            "license": info["license"],
+            "url": info["photo_page_url"],
             "sizes": sizes,
-            "original_format": original_format,
-            "tags": tags,
-            "location": location,
+            "original_format": info["original_format"],
+            "tags": info["tags"],
+            "location": info["location"],
         }
 
     # There are a bunch of similar flickr.XXX.getPhotos methods;
