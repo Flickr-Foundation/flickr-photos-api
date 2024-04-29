@@ -1,3 +1,5 @@
+import pytest
+
 from flickr_photos_api import FlickrPhotosApi
 from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2, PhotosInGroup2, CollectionOfPhotos2
 from utils import get_fixture
@@ -101,6 +103,53 @@ class TestCollectionsPhotoResponse:
             isinstance(photo["description"], str) for photo in album_with_desc["photos"]
         )
 
+    @pytest.mark.parametrize(
+        ["method", "kwargs"],
+        [
+            pytest.param(
+                "get_photos_in_album",
+                {
+                    "user_id": "132051449@N06",
+                    "album_id": "72157677773252346",
+                },
+                id="get_photos_in_album",
+            ),
+            pytest.param(
+                "get_photos_in_gallery",
+                {"gallery_id": "72157720932863274"},
+                id="get_photos_in_gallery",
+            ),
+            pytest.param(
+                "get_photos_in_user_photostream",
+                {"user_id": "34427469121@N01"},
+                id="get_photos_in_user_photostream",
+            ),
+            pytest.param(
+                "get_photos_in_group_pool",
+                {"group_url": "https://www.flickr.com/groups/slovenia/pool/"},
+                id="get_photos_in_group_pool",
+            ),
+        ],
+    )
+    def test_methods_are_paginated(
+        self, api: FlickrPhotosApi, method: str, kwargs: dict[str, str]
+    ) -> None:
+        api_method = getattr(api, method)
+
+        all_resp = api_method(**kwargs, page=1)
+
+        # Getting the 5th page with a page size of 1 means getting the 5th image
+        individual_resp = api_method(
+            **kwargs,
+            page=5,
+            per_page=1,
+        )
+
+        print(len(all_resp['photos']))
+        print(len(individual_resp['photos']))
+
+        assert individual_resp["photos"][0] == all_resp["photos"][4]
+
 
 class TestGetAlbum:
     def test_can_get_album(self, api: FlickrPhotosApi) -> None:
@@ -170,11 +219,5 @@ def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
 
 def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
     photos = api.get_photos_with_tag(tag="sunset")
-
-    from nitrate.json import DatetimeEncoder
-    import json
-
-    with open("tests/fixtures/api_responses/tag-sunset.json", "w") as of:
-        of.write(json.dumps(photos, indent=2, sort_keys=True, cls=DatetimeEncoder))
 
     assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos2)

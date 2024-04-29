@@ -13,51 +13,6 @@ from flickr_photos_api import (
 from utils import get_fixture
 
 
-@pytest.mark.parametrize(
-    ["method", "kwargs"],
-    [
-        pytest.param(
-            "get_photos_in_album",
-            {
-                "user_url": "https://www.flickr.com/photos/spike_yun/",
-                "album_id": "72157677773252346",
-            },
-            id="get_photos_in_album",
-        ),
-        pytest.param(
-            "get_photos_in_gallery",
-            {"gallery_id": "72157720932863274"},
-            id="get_photos_in_gallery",
-        ),
-        pytest.param(
-            "get_public_photos_by_user",
-            {"user_url": "https://www.flickr.com/photos/george/"},
-            id="get_public_photos_by_user",
-        ),
-        pytest.param(
-            "get_photos_in_group_pool",
-            {"group_url": "https://www.flickr.com/groups/slovenia/pool/"},
-            id="get_photos_in_group_pool",
-        ),
-    ],
-)
-def test_get_collection_methods_are_paginated(
-    api: FlickrPhotosApi, method: str, kwargs: dict[str, str]
-) -> None:
-    api_method = getattr(api, method)
-
-    all_resp = api_method(**kwargs, page=1)
-
-    # Getting the 5th page with a page size of 1 means getting the 5th image
-    individual_resp = api_method(
-        **kwargs,
-        page=5,
-        per_page=1,
-    )
-
-    assert individual_resp["photos"][0] == all_resp["photos"][4]
-
-
 T = typing.TypeVar("T")
 
 

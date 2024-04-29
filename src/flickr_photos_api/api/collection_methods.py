@@ -251,7 +251,7 @@ class CollectionMethods(LicenseMethods):
                 "user_id": user_id,
                 "extras": ",".join(self.extras),
                 "page": str(page),
-                "per_page": str(page),
+                "per_page": str(per_page),
             },
         )
 
