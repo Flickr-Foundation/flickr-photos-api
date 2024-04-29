@@ -1,5 +1,5 @@
 from flickr_photos_api import FlickrPhotosApi
-from flickr_photos_api.types import PhotosInAlbum2
+from flickr_photos_api.types import PhotosInAlbum2, PhotosInGallery2
 from utils import get_fixture
 
 
@@ -129,3 +129,11 @@ class TestGetAlbum:
         assert all(
             photo["description"] is None for photo in album_without_desc["photos"]
         )
+
+
+def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
+    photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
+
+    assert photos == get_fixture(
+        "gallery-72157677773252346.json", model=PhotosInGallery2
+    )

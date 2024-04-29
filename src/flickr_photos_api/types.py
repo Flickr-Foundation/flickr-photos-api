@@ -193,6 +193,10 @@ class PhotosInGallery(CollectionOfPhotos):
     gallery: GalleryInfo
 
 
+class PhotosInGallery2(CollectionOfPhotos2):
+    gallery: GalleryInfo
+
+
 class GroupInfo(TypedDict):
     id: str
     name: str

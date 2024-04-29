@@ -268,36 +268,6 @@ class FlickrPhotosApi(BaseApi):
             "location": location,
         }
 
-    def get_photos_in_gallery(
-        self, *, gallery_id: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInGallery:
-        """
-        Get the photos in a gallery.
-        """
-        # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
-        resp = self._get_page_of_photos(
-            method="flickr.galleries.getPhotos",
-            params={
-                "gallery_id": gallery_id,
-                "get_gallery_info": "1",
-                "extras": ",".join(self.extras + ["path_alias"]),
-            },
-            page=page,
-            per_page=per_page,
-        )
-
-        gallery_elem = find_required_elem(resp["root"], path=".//gallery")
-
-        gallery_title = find_required_text(gallery_elem, path="title")
-        gallery_owner_name = gallery_elem.attrib["username"]
-
-        return {
-            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
-            "page_count": resp["page_count"],
-            "total_photos": resp["total_photos"],
-            "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
-        }
-
     def get_public_photos_by_user(
         self, user_url: str, page: int = 1, per_page: int = 10
     ) -> CollectionOfPhotos:

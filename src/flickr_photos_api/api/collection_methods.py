@@ -5,12 +5,13 @@ Methods for getting information about collections of photos in Flickr
 
 from xml.etree import ElementTree as ET
 
-from nitrate.xml import find_optional_text, find_required_elem
+from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
 from ..types import (
     CollectionOfPhotos2,
     PhotosInAlbum2,
+    PhotosInGallery2,
     SinglePhotoInfoWithSizes,
     User,
 )
@@ -141,16 +142,16 @@ class CollectionMethods(LicenseMethods):
     def _create_collection(
         self, collection_elem: ET.Element, owner: User | None = None
     ) -> CollectionOfPhotos2:
-        # The wrapper element includes a couple of attributes related
-        # to pagination, e.g.
-        #
-        #     <photoset pages="1" total="2" …>
-        #
         photos = [
             self._from_collection_photo(photo_elem, owner=owner)
             for photo_elem in collection_elem.findall("photo")
         ]
 
+        # The wrapper element includes a couple of attributes related
+        # to pagination, e.g.
+        #
+        #     <photoset pages="1" total="2" …>
+        #
         count_pages = int(collection_elem.attrib["pages"])
         count_photos = int(collection_elem.attrib["total"])
 
@@ -195,10 +196,6 @@ class CollectionMethods(LicenseMethods):
             "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
         }
 
-        # The wrapper element is of the form:
-        #
-        #   <photoset id="72157624715342071" […] title="Delhi Life">
-        #
         album_title = photoset_elem.attrib["title"]
 
         return {
@@ -207,4 +204,34 @@ class CollectionMethods(LicenseMethods):
                 "owner": owner,
                 "title": album_title,
             },
+        }
+
+    def get_photos_in_gallery(
+        self, *, gallery_id: str, page: int = 1, per_page: int = 10
+    ) -> PhotosInGallery2:
+        """
+        Get the photos in a gallery.
+        """
+        # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
+        resp = self.call(
+            method="flickr.galleries.getPhotos",
+            params={
+                "gallery_id": gallery_id,
+                "get_gallery_info": "1",
+                "extras": ",".join(self.extras),
+                "page": str(page),
+                "per_page": str(per_page),
+            },
+        )
+
+        gallery_elem = find_required_elem(resp, path="gallery")
+
+        gallery_title = find_required_text(gallery_elem, path="title")
+        gallery_owner_name = gallery_elem.attrib["username"]
+
+        photos_elem = find_required_elem(resp, path="photos")
+
+        return {
+            **self._create_collection(photos_elem),
+            "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }

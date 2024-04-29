@@ -13,15 +13,6 @@ from flickr_photos_api import (
 from utils import get_fixture
 
 
-def test_get_gallery_from_id(api: FlickrPhotosApi) -> None:
-    photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
-
-
-    assert photos == get_fixture(
-        "gallery-72157677773252346.json", model=PhotosInGallery
-    )
-
-
 def test_get_public_photos_by_user(api: FlickrPhotosApi) -> None:
     photos = api.get_public_photos_by_user(
         user_url="https://www.flickr.com/photos/george"
