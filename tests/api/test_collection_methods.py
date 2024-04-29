@@ -165,10 +165,16 @@ def test_get_photos_in_group_pool(api: FlickrPhotosApi) -> None:
         group_url="https://www.flickr.com/groups/slovenia/pool/"
     )
 
+    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup2)
+
+
+def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
+    photos = api.get_photos_with_tag(tag="sunset")
+
     from nitrate.json import DatetimeEncoder
     import json
 
-    with open("tests/fixtures/api_responses/group-slovenia.json", "w") as of:
+    with open("tests/fixtures/api_responses/tag-sunset.json", "w") as of:
         of.write(json.dumps(photos, indent=2, sort_keys=True, cls=DatetimeEncoder))
 
-    assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup2)
+    assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos2)

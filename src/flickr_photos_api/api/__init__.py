@@ -268,35 +268,6 @@ class FlickrPhotosApi(BaseApi):
             "location": location,
         }
 
-    def get_photos_with_tag(
-        self, tag: str, page: int = 1, per_page: int = 10
-    ) -> CollectionOfPhotos:
-        """
-        Get all the photos that use a given tag.
-        """
-        resp = self._get_page_of_photos(
-            method="flickr.photos.search",
-            params={
-                "tags": tag,
-                # This is so we get the same photos as you see on the "tag" page
-                # under "All Photos Tagged XYZ" -- if you click the URL to the
-                # full search results, you end up on a page like:
-                #
-                #     https://flickr.com/search/?sort=interestingness-desc&…
-                #
-                "sort": "interestingness-desc",
-                "extras": ",".join(self.extras),
-            },
-            page=page,
-            per_page=per_page,
-        )
-
-        return {
-            "total_photos": resp["total_photos"],
-            "page_count": resp["page_count"],
-            "photos": [self._to_photo(photo_elem) for photo_elem in resp["elements"]],
-        }
-
     def get_photos_from_flickr_url(self, url: str) -> PhotosFromUrl:
         """
         Given a URL on Flickr.com, return the photos at that URL

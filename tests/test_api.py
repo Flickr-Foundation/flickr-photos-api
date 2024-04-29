@@ -13,12 +13,6 @@ from flickr_photos_api import (
 from utils import get_fixture
 
 
-def test_get_photos_with_tag(api: FlickrPhotosApi) -> None:
-    photos = api.get_photos_with_tag(tag="sunset")
-
-    assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos)
-
-
 @pytest.mark.parametrize(
     ["method", "kwargs"],
     [
