@@ -5,6 +5,8 @@ from .exceptions import (
     InvalidXmlException,
     ResourceNotFound,
     LicenseNotFound,
+    UnrecognisedFlickrApiException,
+    UserDeleted,
 )
 from .types import (
     Comment,
@@ -29,7 +31,7 @@ from .types import (
 )
 
 
-__version__ = "2.0.0"
+__version__ = "2.0.1"
 
 
 __all__ = [
@@ -58,5 +60,7 @@ __all__ = [
     "AlbumInfo",
     "GalleryInfo",
     "GroupInfo",
+    "UnrecognisedFlickrApiException",
+    "UserDeleted",
     "__version__",
 ]

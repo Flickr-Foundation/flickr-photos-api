@@ -1,6 +1,40 @@
+from xml.etree import ElementTree as ET
+
 import pytest
 
-from flickr_photos_api import FlickrApi, FlickrApi as FlickrPhotosApi
+from flickr_photos_api import (
+    FlickrApi,
+    FlickrApi as FlickrPhotosApi,
+    UnrecognisedFlickrApiException,
+    UserDeleted,
+)
+from flickr_photos_api.api.user_methods import UserMethods
+
+
+class TestLookupUserById:
+    def test_lookup_deleted_user(self, api: FlickrApi) -> None:
+        with pytest.raises(UserDeleted):
+            api.lookup_user_by_id(user_id="51979177@N02")
+
+    def test_lookup_user_with_unexpected_error(self) -> None:
+        class BrokenApi(UserMethods):
+            def call(
+                self, *, method: str, params: dict[str, str] | None = None
+            ) -> ET.Element:
+                raise UnrecognisedFlickrApiException(
+                    {"code": "6", "msg": "Mysterious error"}
+                )
+
+        api = BrokenApi()
+
+        with pytest.raises(UnrecognisedFlickrApiException):
+            api.lookup_user_by_id(user_id="-1")
+
+
+class TestLookupUserByUrl:
+    def test_lookup_deleted_user(self, api: FlickrApi) -> None:
+        with pytest.raises(UserDeleted):
+            api.lookup_user_by_url(url="https://www.flickr.com/photos/51979177@N02/")
 
 
 def test_lookup_user_by_url(api: FlickrPhotosApi) -> None:

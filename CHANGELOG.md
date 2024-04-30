@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v2.0.1 - 2024-04-30
+
+This slightly refines the list of available exceptions:
+
+-   The `lookup_user_by_id()` and `lookup_user_by_url()` methods can now throw a new `UserDeleted` exception if you try to look up a Flickr user who's deleted their account.
+-   An error with an unrecognised code will now throw `UnrecognisedFlickrApiException` instead of `FlickrApiException`.
+    This should make it easier to distinguish and handle unrecognised errors.
+
 ## v2.0.0 - 2024-04-30
 
 This is a fairly major internal refactor to make the library easier to work on.

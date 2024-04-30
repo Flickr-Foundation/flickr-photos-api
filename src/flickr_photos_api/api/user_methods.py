@@ -8,6 +8,7 @@ from flickr_url_parser import parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .base import FlickrApi
+from ..exceptions import UnrecognisedFlickrApiException, UserDeleted
 from ..types import UserInfo
 
 
@@ -46,9 +47,15 @@ class UserMethods(FlickrApi):
         #       …
         #     </person>
         #
-        info_resp = self.call(
-            method="flickr.people.getInfo", params={"user_id": user_id}
-        )
+        try:
+            info_resp = self.call(
+                method="flickr.people.getInfo", params={"user_id": user_id}
+            )
+        except UnrecognisedFlickrApiException as exc:
+            if exc.args[0]["code"] == "5":
+                raise UserDeleted(user_id)
+            else:
+                raise
 
         person_elem = find_required_elem(info_resp, path="person")
 

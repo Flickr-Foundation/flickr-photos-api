@@ -12,10 +12,10 @@ from tenacity import (
 )
 
 from ..exceptions import (
-    FlickrApiException,
     InvalidApiKey,
     InvalidXmlException,
     ResourceNotFound,
+    UnrecognisedFlickrApiException,
 )
 
 
@@ -59,7 +59,7 @@ def is_retryable(exc: BaseException) -> bool:
     #
     # but this indicates a flaky connection rather than a genuine failure.
     if (
-        isinstance(exc, FlickrApiException)
+        isinstance(exc, UnrecognisedFlickrApiException)
         and isinstance(exc.args[0], dict)
         and exc.args[0].get("code") == "201"
     ):
@@ -145,10 +145,12 @@ class HttpxImplementation(FlickrApi):
             #   - error code "2" means "user not found"
             #
             if errors["code"] == "1" or errors["code"] == "2":
-                raise ResourceNotFound(method, params)
+                raise ResourceNotFound(
+                    f"Unable to find resource at {method} with properties {params}"
+                )
             elif errors["code"] == "100":
                 raise InvalidApiKey(message=errors["msg"])
             else:
-                raise FlickrApiException(errors)
+                raise UnrecognisedFlickrApiException(errors)
 
         return xml
