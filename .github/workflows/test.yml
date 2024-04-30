@@ -17,14 +17,18 @@ jobs:
         python-version: ["3.12"]
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
+        cache: pip
+
     - name: Install dependencies
       run: |
         pip install -r dev_requirements.txt
         pip install -e .
+
     - name: Run linting
       run: |
         black --check .
