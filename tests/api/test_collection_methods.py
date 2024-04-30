@@ -150,6 +150,12 @@ class TestCollectionsPhotoResponse:
 
         assert individual_resp["photos"][0] == all_resp["photos"][4]
 
+    def test_user_without_pathalias_is_none(self, api: FlickrApi) -> None:
+        gallery = api.get_photos_in_gallery(gallery_id="72157722258598968")
+
+        assert gallery["photos"][0]["id"] == "53651808642"
+        assert gallery["photos"][0]["owner"]["path_alias"] is None
+
 
 class TestGetAlbum:
     def test_can_get_album(self, api: FlickrApi) -> None:
@@ -180,6 +186,13 @@ class TestGetAlbum:
         assert all(
             photo["description"] is None for photo in album_without_desc["photos"]
         )
+
+    def test_user_without_pathalias_is_none(self, api: FlickrApi) -> None:
+        photos = api.get_photos_in_album(
+            user_id="121626365@N06", album_id="72177720316555672"
+        )
+
+        assert photos["album"]["owner"]["path_alias"] is None
 
 
 def test_get_gallery_from_id(api: FlickrApi) -> None:

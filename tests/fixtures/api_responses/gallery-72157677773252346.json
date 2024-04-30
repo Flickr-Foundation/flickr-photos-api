@@ -346,7 +346,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "144999844@N06",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/144999844@N06/",
         "profile_url": "https://www.flickr.com/people/144999844@N06/",
         "realname": "Vanille",
@@ -458,7 +458,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "59238173@N07",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/59238173@N07/",
         "profile_url": "https://www.flickr.com/people/59238173@N07/",
         "realname": "Jochen Hertweck",
@@ -680,7 +680,7 @@
       "original_format": null,
       "owner": {
         "id": "38382651@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/38382651@N04/",
         "profile_url": "https://www.flickr.com/people/38382651@N04/",
         "realname": null,
@@ -767,7 +767,7 @@
       "original_format": null,
       "owner": {
         "id": "38382651@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/38382651@N04/",
         "profile_url": "https://www.flickr.com/people/38382651@N04/",
         "realname": null,

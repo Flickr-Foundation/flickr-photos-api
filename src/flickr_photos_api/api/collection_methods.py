@@ -46,7 +46,7 @@ class CollectionMethods(LicenseMethods):
             owner = create_user(
                 id=photo_elem.attrib["owner"],
                 username=photo_elem.attrib["ownername"],
-                realname=photo_elem.attrib["realname"],
+                realname=photo_elem.attrib.get("realname"),
                 path_alias=photo_elem.attrib["pathalias"],
             )
 
@@ -185,7 +185,7 @@ class CollectionMethods(LicenseMethods):
         owner = create_user(
             id=photoset_elem.attrib["owner"],
             username=photoset_elem.attrib["ownername"],
-            realname=photo_elem.attrib["realname"],
+            realname=photo_elem.attrib.get("realname"),
             path_alias=photo_elem.attrib["pathalias"],
         )
 

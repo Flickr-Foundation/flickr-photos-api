@@ -1342,7 +1342,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "162684392@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/162684392@N05/",
         "profile_url": "https://www.flickr.com/people/162684392@N05/",
         "realname": "Bernhard Niedermeier",
@@ -2015,7 +2015,7 @@
       "original_format": null,
       "owner": {
         "id": "121626365@N06",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/121626365@N06/",
         "profile_url": "https://www.flickr.com/people/121626365@N06/",
         "realname": "Justin Martin",
@@ -2209,7 +2209,7 @@
       "original_format": null,
       "owner": {
         "id": "95388056@N02",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/95388056@N02/",
         "profile_url": "https://www.flickr.com/people/95388056@N02/",
         "realname": "",
@@ -2307,7 +2307,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "162684392@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/162684392@N05/",
         "profile_url": "https://www.flickr.com/people/162684392@N05/",
         "realname": "Bernhard Niedermeier",
@@ -2560,7 +2560,7 @@
       "original_format": null,
       "owner": {
         "id": "78590035@N06",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/78590035@N06/",
         "profile_url": "https://www.flickr.com/people/78590035@N06/",
         "realname": null,
@@ -3113,7 +3113,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "140249051@N03",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/140249051@N03/",
         "profile_url": "https://www.flickr.com/people/140249051@N03/",
         "realname": "Russ Parman",
@@ -3226,7 +3226,7 @@
       "original_format": null,
       "owner": {
         "id": "95388056@N02",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/95388056@N02/",
         "profile_url": "https://www.flickr.com/people/95388056@N02/",
         "realname": "",
@@ -3745,7 +3745,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "192130606@N07",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/192130606@N07/",
         "profile_url": "https://www.flickr.com/people/192130606@N07/",
         "realname": "Pol Put",
@@ -4209,7 +4209,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -4964,7 +4964,7 @@
       "original_format": null,
       "owner": {
         "id": "23967510@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/23967510@N05/",
         "profile_url": "https://www.flickr.com/people/23967510@N05/",
         "realname": null,
@@ -5553,7 +5553,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -5853,7 +5853,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -6168,7 +6168,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -6264,7 +6264,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "140249051@N03",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/140249051@N03/",
         "profile_url": "https://www.flickr.com/people/140249051@N03/",
         "realname": "Russ Parman",
@@ -6485,7 +6485,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -6581,7 +6581,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -7257,7 +7257,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "162684392@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/162684392@N05/",
         "profile_url": "https://www.flickr.com/people/162684392@N05/",
         "realname": "Bernhard Niedermeier",
@@ -7504,7 +7504,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -8786,7 +8786,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "187587141@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/187587141@N04/",
         "profile_url": "https://www.flickr.com/people/187587141@N04/",
         "realname": "P-B Foto",
@@ -8927,7 +8927,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "162684392@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/162684392@N05/",
         "profile_url": "https://www.flickr.com/people/162684392@N05/",
         "realname": "Bernhard Niedermeier",
@@ -9183,7 +9183,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -9500,7 +9500,7 @@
       "original_format": null,
       "owner": {
         "id": "149762673@N02",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/149762673@N02/",
         "profile_url": "https://www.flickr.com/people/149762673@N02/",
         "realname": "Slavka K",
@@ -9694,7 +9694,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
@@ -10000,7 +10000,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "162684392@N05",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/162684392@N05/",
         "profile_url": "https://www.flickr.com/people/162684392@N05/",
         "realname": "Bernhard Niedermeier",
@@ -10343,7 +10343,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "187587141@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/187587141@N04/",
         "profile_url": "https://www.flickr.com/people/187587141@N04/",
         "realname": "P-B Foto",
@@ -10484,7 +10484,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "150922460@N03",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/150922460@N03/",
         "profile_url": "https://www.flickr.com/people/150922460@N03/",
         "realname": "Kenneth Dagenais",
@@ -10586,7 +10586,7 @@
       "original_format": "jpg",
       "owner": {
         "id": "99230652@N04",
-        "path_alias": "",
+        "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/99230652@N04/",
         "profile_url": "https://www.flickr.com/people/99230652@N04/",
         "realname": "Giuliano Da Zanche",
