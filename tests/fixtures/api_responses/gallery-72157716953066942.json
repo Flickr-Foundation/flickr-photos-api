@@ -2027,7 +2027,7 @@
         "path_alias": "paolopittorino",
         "photos_url": "https://www.flickr.com/photos/paolopittorino/",
         "profile_url": "https://www.flickr.com/people/paolopittorino/",
-        "realname": "",
+        "realname": null,
         "username": "lajoliette2010 Paul Pittorino"
       },
       "photo_page_url": "https://www.flickr.com/photos/paolopittorino/51304664048/",
@@ -2320,7 +2320,7 @@
         "path_alias": "teekay-72",
         "photos_url": "https://www.flickr.com/photos/teekay-72/",
         "profile_url": "https://www.flickr.com/people/teekay-72/",
-        "realname": "",
+        "realname": null,
         "username": "teekay72"
       },
       "photo_page_url": "https://www.flickr.com/photos/teekay-72/51303546737/",
@@ -4519,7 +4519,7 @@
         "path_alias": "yannha",
         "photos_url": "https://www.flickr.com/photos/yannha/",
         "profile_url": "https://www.flickr.com/people/yannha/",
-        "realname": "",
+        "realname": null,
         "username": "yannha"
       },
       "photo_page_url": "https://www.flickr.com/photos/yannha/51256664702/",
@@ -6305,7 +6305,7 @@
         "path_alias": "bombeador",
         "photos_url": "https://www.flickr.com/photos/bombeador/",
         "profile_url": "https://www.flickr.com/people/bombeador/",
-        "realname": "",
+        "realname": null,
         "username": "Eduardo Amorim"
       },
       "photo_page_url": "https://www.flickr.com/photos/bombeador/51233267279/",
@@ -7741,7 +7741,7 @@
         "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/24931020@N02/",
         "profile_url": "https://www.flickr.com/people/24931020@N02/",
-        "realname": "",
+        "realname": null,
         "username": "Ozzy Delaney"
       },
       "photo_page_url": "https://www.flickr.com/photos/24931020@N02/51234701512/",

@@ -1,0 +1,338 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&gallery_id=72157722112740042&get_gallery_info=1&method=flickr.galleries.getPhotos&page=1&per_page=10
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+      page=\"1\" pages=\"3\" perpage=\"10\" total=\"23\">\n\t<photo id=\"53683422277\"
+      owner=\"46709051@N03\" secret=\"1a26cb53b3\" server=\"65535\" farm=\"66\" title=\"17-52
+      Agnes: Freddie sandwich\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"0\"
+      safety_level=\"0\" dateupload=\"1714311875\" datetaken=\"2024-04-27 15:00:03\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Dave (www.DogversationsBook.com)\"
+      count_views=\"128\" count_comments=\"14\" tags=\"52weeksfordogs 52weeksforagnes
+      dog goldenretiever goldenretriever puppy goldenretrieverpuppy snuggle rescuedog
+      rescue brittanyspaniel brittany\" latitude=\"0\" longitude=\"0\" accuracy=\"0\"
+      context=\"0\" media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3_t.jpg\"
+      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3_m.jpg\"
+      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3.jpg\"
+      height_m=\"333\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53683422277_1a26cb53b3_b.jpg\"
+      height_l=\"681\" width_l=\"1024\" pathalias=\"\" is_primary=\"0\" has_comment=\"0\">\n\t\t<description>This
+      has been our first full week with Sir Fredrick the Magnificent. And it has been
+      great.  He is quite the charmer and cuddler.  Plus he&#039;s doing well on the
+      (almost) sleeping through the night thing.  Plus he still makes those little
+      puppy grunting sounds when he&#039;s tired. Us humans are in love.\n\nEva and
+      Agnes are transitioning from ignoring to accepting.  Or at least they will let
+      him on the same dog bed with them.  </description>\n\t</photo>\n\t<photo id=\"53680296288\"
+      owner=\"48996974@N08\" secret=\"e0b445a87c\" server=\"65535\" farm=\"66\" title=\"Trusting
+      his cape, the 5th little gosling takes his leap of faith\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1714140405\" datetaken=\"2024-04-23
+      12:50:23\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"\u265EJenny\u265E\"
+      count_views=\"862\" count_comments=\"70\" tags=\"canadagoslingjumpingoffroof\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c_t.jpg\"
+      height_t=\"63\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c_m.jpg\"
+      height_s=\"151\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c.jpg\"
+      height_m=\"315\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53680296288_e0b445a87c_b.jpg\"
+      height_l=\"645\" width_l=\"1024\" pathalias=\"bereal4ever\" is_primary=\"0\"
+      has_comment=\"0\">\n\t\t<description>So here we see the 5th little gosling making
+      his jump off the roof of my barn to join his 4 siblings and his parents.\n\nAll
+      5 little ones made it down without any adverse results and they all left and
+      went about their merry way.\n\nThanks for following this little wondrous journey
+      with me here my good flickr friends.\n\nI am, again, posting a link to a song
+      James Page referred me to that is so perfect for my shots of all these little
+      ones taking the leap of faith and beginning their new lives here on earth.\n\n&lt;a
+      href=&quot;https://www.youtube.com/watch?v=T6bZ37nexSY&quot; rel=&quot;noreferrer
+      nofollow&quot;&gt;www.youtube.com/watch?v=T6bZ37nexSY&lt;/a&gt;\n\nI love the
+      words, &amp;quot;Spread your arms and hold your breath and always trust your
+      cape&amp;quot;. Take a listen to the song if you didn&#039;t see the link yesterday.
+      \ It&#039;s worth the listen.\n\nLet&#039;s hope they have long and healthy
+      lives and go on to have their own sets of little Canada goslings to bring into
+      this world, crazy as it is.\n\nAnd as a side note, I don&#039;t know how anyone
+      could view these photos in this series and not gain an even deeper love and
+      appreciation for what we have in our natural world and environment. These tiny
+      little goslings, jumping off the roof like this just amazes me. That their drive
+      for survival is so strong as to allow them to do this after having hatched just
+      24 hours earlier.  How marvelous is that!</description>\n\t</photo>\n\t<photo
+      id=\"53574681171\" owner=\"76782619@N04\" secret=\"9fdf4280ca\" server=\"65535\"
+      farm=\"66\" title=\"Wallowing Bison\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+      license=\"0\" safety_level=\"0\" dateupload=\"1709896916\" datetaken=\"2023-08-06
+      10:40:16\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"tomblandford\"
+      count_views=\"1485\" count_comments=\"36\" tags=\"bisonbull wallowing bisonbison
+      usnationalmammal windcavenationalpark bisonrut matingseason nature conservation\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca_t.jpg\"
+      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca_m.jpg\"
+      height_s=\"161\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca.jpg\"
+      height_m=\"336\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53574681171_9fdf4280ca_b.jpg\"
+      height_l=\"689\" width_l=\"1024\" pathalias=\"tomblandford\" is_primary=\"0\"
+      has_comment=\"0\">\n\t\t<description>Next in my ungulate series is this bison
+      bull wallowing in some red mud during the bison rut in Wind Cave National Park.
+      \n\nBison roll in the dirt to deter biting flies and help shed fur. Male bison
+      also wallow during mating season to leave behind their scent and display their
+      strength.\n\n\n</description>\n\t</photo>\n\t<photo id=\"53503606906\" owner=\"187521052@N04\"
+      secret=\"607be6fff6\" server=\"65535\" farm=\"66\" title=\"Someone&#039;s pride
+      and joy\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"0\" safety_level=\"0\"
+      dateupload=\"1706847366\" datetaken=\"2024-02-01 15:15:58\" datetakengranularity=\"0\"
+      datetakenunknown=\"0\" ownername=\"anna.f.castellano\" realname=\"Anna Castellano\"
+      count_views=\"840\" count_comments=\"19\" tags=\"\" originalsecret=\"d24b1271b7\"
+      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53503606906_607be6fff6_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53503606906_607be6fff6_t.jpg\"
+      height_t=\"92\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53503606906_607be6fff6_m.jpg\"
+      height_s=\"220\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53503606906_607be6fff6.jpg\"
+      height_m=\"459\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53503606906_d24b1271b7_o.jpg\"
+      height_o=\"2858\" width_o=\"3115\" url_q=\"https://live.staticflickr.com/65535/53503606906_607be6fff6_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53503606906_607be6fff6_b.jpg\"
+      height_l=\"940\" width_l=\"1024\" pathalias=\"\" is_primary=\"0\" has_comment=\"0\">\n\t\t<description>I
+      went looking for pink-eared ducks at the UQ campus at Gatton. There were hundreds
+      of them on the dam there last spring. Most of them have left and the dominant
+      bird there at the moment is the cattle egret. There are hundreds nesting in
+      the trees around the water. They obviously believe in safety in numbers. This
+      youngster was ventilating in the heat and waiting patiently for its next meal.</description>\n\t</photo>\n\t<photo
+      id=\"5017280243\" owner=\"61804295@N00\" secret=\"8d0d0c7e8f\" server=\"4151\"
+      farm=\"5\" title=\"How I became a real dish!\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1285253203\" datetaken=\"1976-01-03
+      12:15:04\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"spelio\"
+      count_views=\"5031\" count_comments=\"19\" tags=\"old family c41 prints albums
+      check dates portrait kids things favs favourites favorites sixwordstory 78views240512
+      fave cute unexplored\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f_t.jpg\"
+      height_t=\"73\" width_t=\"100\" url_s=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f_m.jpg\"
+      height_s=\"174\" width_s=\"240\" url_m=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f.jpg\"
+      height_m=\"363\" width_m=\"500\" url_q=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/4151/5017280243_8d0d0c7e8f_b.jpg\"
+      height_l=\"744\" width_l=\"1024\" pathalias=\"spelio\" is_primary=\"0\" has_comment=\"0\">\n\t\t<description>Jillian
+      laughing in the kitchen sink for a bathe in the summer.\n\nCopy of a Kodachrome
+      C41 print.\n\nP7270059 </description>\n\t</photo>\n\t<photo id=\"53484443635\"
+      owner=\"57862012@N06\" secret=\"14d4b0ce89\" server=\"65535\" farm=\"66\" title=\"Happy
+      Frida Sunlight\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"0\"
+      safety_level=\"0\" dateupload=\"1706086238\" datetaken=\"2024-01-19 13:28:49\"
+      datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Wieselblitz\"
+      realname=\"Elke Vogelsang\" count_views=\"973\" count_comments=\"1\" tags=\"dog
+      dogs dogphotographer dogphotography dogportrait doginthestudio dogsonality pet
+      pets petphotographer petphotography petportrait portrait portraitpet portraitdog
+      studio studioportrait studiodogportrait studiodog stockimagesofpets licensedogimages
+      licensepetimages licensepetphotos licensedogphotos licensingdog\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89_t.jpg\"
+      height_t=\"100\" width_t=\"80\" url_s=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89_m.jpg\"
+      height_s=\"240\" width_s=\"192\" url_m=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89.jpg\"
+      height_m=\"500\" width_m=\"399\" url_q=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53484443635_14d4b0ce89_b.jpg\"
+      height_l=\"1024\" width_l=\"818\" pathalias=\"elkevogelsang\" is_primary=\"0\"
+      has_comment=\"0\">\n\t\t<description>All images available for licensing via
+      me. I offer commercial and editorial pet photography on a commissioned basis.
+      And with a pet picture database with thousands of hand-picked images of dogs,
+      cats, as well as horses, I might already have what you are looking for. All
+      pictures here can be licensed. \nFor licensing and commission requests:  info{at}elkevogelsang.com
+      -\n&lt;a href=&quot;https://www.facebook.com/elke.vogelsang/&quot; rel=&quot;noreferrer
+      nofollow&quot;&gt;FACEBOOK&lt;/a&gt; | &lt;a href=&quot;https://www.instagram.com/wieselblitz/&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;INSTAGRAM&lt;/a&gt; | &lt;a href=&quot;https://www.elkevogelsang.com&quot;
+      rel=&quot;noreferrer nofollow&quot;&gt;WEBSITE&lt;/a&gt;\n\xA9 Elke Vogelsang
+      \n\n20240119_Frida_HappyFridaSunlight\n\n\nstudio pet photography\nstudio dog
+      photography\nlicensing dog images\nlicensing dog photos \nlicensing dog photo\nlicensing
+      pet photos\nlicensing pet photos\nstock images of pets\nstock images of dogs\ncommercial
+      dog photographer\ncommercial pet photographer\ncommercial dog photography\ncommercial
+      pet photography\ncommercial dog photograph\ncommercial pet photograph\nstudio
+      dog photograph\nstudio dog photographs\nstudio pet photograph\nstudio pet photographs\nlicense
+      images of dogs\nlicense images of pets\ncommercial license\ncommercial licenses\ncommercial
+      licenses for dog photos\ncommercial licenses for pet photos\ncommercial licenses
+      for pet photo\npet image archive\ndog image archive\nstock photos of dogs\nstock
+      photos of pets\nbuy dog photos\nbuy pet photos\nbuy cat photos\nbuy dog images\nbuy
+      pet images\nbuy cat images\n</description>\n\t</photo>\n\t<photo id=\"53443386496\"
+      owner=\"99682002@N06\" secret=\"1211749476\" server=\"65535\" farm=\"66\" title=\"Are
+      you sure this is where you dropped your contact lens?\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1704432088\" datetaken=\"2023-12-02
+      09:22:14\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Bollihoper\"
+      realname=\"MARTIN FOSTER\" count_views=\"820\" count_comments=\"39\" tags=\"outdoor
+      countryside nature goose lake derwentwater keswick lakedistrict ice winter water
+      colour light leicaq3\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53443386496_1211749476_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53443386496_1211749476_t.jpg\"
+      height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53443386496_1211749476_m.jpg\"
+      height_s=\"149\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53443386496_1211749476.jpg\"
+      height_m=\"310\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53443386496_1211749476_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53443386496_1211749476_b.jpg\"
+      height_l=\"635\" width_l=\"1024\" pathalias=\"shanemax\" is_primary=\"0\" has_comment=\"0\">\n\t\t<description
+      />\n\t</photo>\n\t<photo id=\"53443378261\" owner=\"138360222@N07\" secret=\"2886c477cc\"
+      server=\"65535\" farm=\"66\" title=\"The Butt-ernut\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1704432131\" datetaken=\"2024-01-04
+      20:22:02\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"John
+      Bowno\" realname=\"John Bowno\" count_views=\"7130\" count_comments=\"70\" tags=\"squash
+      gourd vegan boudoir lingerie sexy butternut culcurbitac\xE9\" latitude=\"0\"
+      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+      url_sq=\"https://live.staticflickr.com/65535/53443378261_2886c477cc_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53443378261_2886c477cc_t.jpg\"
+      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53443378261_2886c477cc_m.jpg\"
+      height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53443378261_2886c477cc.jpg\"
+      height_m=\"375\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53443378261_2886c477cc_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53443378261_2886c477cc_b.jpg\"
+      height_l=\"768\" width_l=\"1024\" pathalias=\"john_bowno\" is_primary=\"0\"
+      has_comment=\"0\">\n\t\t<description>Thanks to my model, which is the model
+      you can literally eat without running into legal problems afterwards.</description>\n\t</photo>\n\t<photo
+      id=\"53431035223\" owner=\"130772303@N03\" secret=\"d4975e2f4d\" server=\"65535\"
+      farm=\"66\" title=\"Bare-throated Tiger Heron\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1703946959\" datetaken=\"2023-12-19
+      14:48:45\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"Jesse_in_CT\"
+      realname=\"Jesse Gordon\" count_views=\"1151\" count_comments=\"3\" tags=\"belize
+      nikon nikonz8\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d_t.jpg\"
+      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d_m.jpg\"
+      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d.jpg\"
+      height_m=\"333\" width_m=\"500\" url_q=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53431035223_d4975e2f4d_b.jpg\"
+      height_l=\"683\" width_l=\"1024\" pathalias=\"jesse_r_gordon\" is_primary=\"0\"
+      has_comment=\"0\">\n\t\t<description>Cayo, Belize</description>\n\t</photo>\n\t<photo
+      id=\"53428956695\" owner=\"8352571@N04\" secret=\"15d79081fc\" server=\"65535\"
+      farm=\"66\" title=\"Strike Four (Green Heron)\" ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" license=\"0\" safety_level=\"0\" dateupload=\"1703856568\" datetaken=\"2014-03-14
+      08:41:28\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"gseloff\"
+      realname=\"Gary Seloff\" count_views=\"984\" count_comments=\"8\" tags=\"greenheron
+      bird feeding water reflection splash gulfmenhaden baitfish nature wildlife horsepenbayou
+      pasadena texas kayak gseloff\" originalsecret=\"89db46f54f\" originalformat=\"jpg\"
+      latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+      media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53428956695_15d79081fc_s.jpg\"
+      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53428956695_15d79081fc_t.jpg\"
+      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53428956695_15d79081fc_m.jpg\"
+      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53428956695_15d79081fc.jpg\"
+      height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53428956695_89db46f54f_o.jpg\"
+      height_o=\"1600\" width_o=\"2400\" url_q=\"https://live.staticflickr.com/65535/53428956695_15d79081fc_q.jpg\"
+      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53428956695_15d79081fc_b.jpg\"
+      height_l=\"683\" width_l=\"1024\" pathalias=\"gseloff\" is_primary=\"0\" has_comment=\"0\">\n\t\t<description>More
+      action from the feeding Green Heron on Horsepen Bayou. With an almost limitless
+      number of gulf menhaden to choose from, the only question was whether the bird&#039;s
+      stomach had a limit. My guess, not.</description>\n\t</photo>\n</photos>\n<gallery
+      id=\"134127918-72157722112740042\" gallery_id=\"72157722112740042\" url=\"https://www.flickr.com/photos/jan-timmons/galleries/72157722112740042\"
+      owner=\"134160057@N04\" username=\"Jan.Timmons\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"52295519814\" date_create=\"1695318305\" date_update=\"1714353467\"
+      count_photos=\"23\" count_videos=\"0\" count_total=\"23\" count_views=\"31\"
+      count_comments=\"3\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"faa5be591f\">\n\t<title>Thanks for the grins ;-))</title>\n\t<description
+      />\n</gallery>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 30 Apr 2024 10:30:26 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - tllKCJ--j0ZsOwjGsLP6XuhusBjGaH5e_uBxvf6L6JttBxL5mw9uNw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 30-May-2024 10:30:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 30-May-2024 10:30:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6630c842-38eea8f32fa21d245722b583;Root=1-6630c842-31450ecb5da26fca4eee06bf
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.10.17
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+      id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+      License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+      id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+      />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+      url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license id=\"2\"
+      name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+      />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+      url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license id=\"5\"
+      name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+      />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+      />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+      />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+      />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+      />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 30 Apr 2024 10:30:26 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - KmCiIYm3YKqIrrsQkQsGE7cd3LMqDC-jdS-RGdYj_yRExQr5LowiBw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 30-May-2024 10:30:26 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6630c842-48c800b906ce884977fa29e0;Root=1-6630c842-73ca1ce943d467686ec21d27
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.37.32
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

@@ -271,7 +271,7 @@
         "path_alias": "icemanphotos",
         "photos_url": "https://www.flickr.com/photos/icemanphotos/",
         "profile_url": "https://www.flickr.com/people/icemanphotos/",
-        "realname": "",
+        "realname": null,
         "username": "icemanphotos"
       },
       "photo_page_url": "https://www.flickr.com/photos/icemanphotos/53570031160/",
@@ -2212,7 +2212,7 @@
         "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/95388056@N02/",
         "profile_url": "https://www.flickr.com/people/95388056@N02/",
-        "realname": "",
+        "realname": null,
         "username": "SkyeWeasel"
       },
       "photo_page_url": "https://www.flickr.com/photos/95388056@N02/53038212565/",
@@ -3229,7 +3229,7 @@
         "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/95388056@N02/",
         "profile_url": "https://www.flickr.com/people/95388056@N02/",
-        "realname": "",
+        "realname": null,
         "username": "SkyeWeasel"
       },
       "photo_page_url": "https://www.flickr.com/photos/95388056@N02/52982829466/",

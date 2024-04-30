@@ -156,6 +156,12 @@ class TestCollectionsPhotoResponse:
         assert gallery["photos"][0]["id"] == "53651808642"
         assert gallery["photos"][0]["owner"]["path_alias"] is None
 
+    def test_user_without_realname_is_none(self, api: FlickrApi) -> None:
+        gallery = api.get_photos_in_gallery(gallery_id="72157722112740042")
+
+        assert gallery["photos"][0]["id"] == "53683422277"
+        assert gallery["photos"][0]["owner"]["realname"] is None
+
 
 class TestGetAlbum:
     def test_can_get_album(self, api: FlickrApi) -> None:
@@ -193,6 +199,15 @@ class TestGetAlbum:
         )
 
         assert photos["album"]["owner"]["path_alias"] is None
+        assert photos["photos"][0]["owner"]["path_alias"] is None
+
+    def test_user_without_realname_is_none(self, api: FlickrApi) -> None:
+        photos = api.get_photos_in_album(
+            user_id="115357548@N08", album_id="72177720303084733"
+        )
+
+        assert photos["album"]["owner"]["realname"] is None
+        assert photos["photos"][0]["owner"]["realname"] is None
 
 
 def test_get_gallery_from_id(api: FlickrApi) -> None:
