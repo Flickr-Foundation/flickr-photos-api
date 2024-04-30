@@ -31,25 +31,25 @@ class SinglePhotoMethods(LicenseMethods):
         #       <?xml version="1.0" encoding="utf-8" ?>
         #       <rsp stat="ok">
         #       <photo license="8" …>
-        #       	<owner
+        #           <owner
         #               nsid="30884892@N08
         #               username="U.S. Coast Guard"
         #               realname="Coast Guard" …
         #           >
-        #       		…
-        #       	</owner>
-        #       	<title>Puppy Kisses</title>
+        #               …
+        #           </owner>
+        #           <title>Puppy Kisses</title>
         #           <description>Seaman Nina Bowen shows …</description>
-        #       	<dates
+        #           <dates
         #               posted="1490376472"
         #               taken="2017-02-17 00:00:00"
         #               …
         #           />
-        #       	<urls>
-        #       		<url type="photopage">https://www.flickr.com/photos/coast_guard/32812033543/</url>
-        #       	</urls>
+        #           <urls>
+        #               <url type="photopage">https://www.flickr.com/photos/coast_guard/32812033543/</url>
+        #           </urls>
         #           <tags>
-        #    		  <tag raw="indian ocean" …>indianocean</tag>
+        #           <tag raw="indian ocean" …>indianocean</tag>
         #           …
         #       </photo>
         #       </rsp>
