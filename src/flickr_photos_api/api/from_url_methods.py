@@ -34,7 +34,7 @@ class FromUrlMethods(CollectionMethods, SinglePhotoMethods, UserMethods):
             user_id = parsed_user_url["user_id"]
 
             if user_id is None:
-                user = self.lookup_user_by_url(url=parsed_user_url["user_url"])
+                user = self.get_user(user_url=parsed_user_url["user_url"])
                 user_id = user["id"]
 
             assert user_id is not None
@@ -49,7 +49,7 @@ class FromUrlMethods(CollectionMethods, SinglePhotoMethods, UserMethods):
             user_id = parsed_url["user_id"]
 
             if user_id is None:
-                user = self.lookup_user_by_url(url=parsed_url["user_url"])
+                user = self.get_user(user_url=parsed_url["user_url"])
                 user_id = user["id"]
 
             assert user_id is not None

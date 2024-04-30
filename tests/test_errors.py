@@ -14,14 +14,14 @@ from flickr_photos_api import (
     ["method", "params"],
     [
         pytest.param(
-            "lookup_user_by_url",
-            {"url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
-            id="lookup_user_by_url",
+            "get_user",
+            {"user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
+            id="get_user_by_url",
         ),
         pytest.param(
-            "lookup_user_by_id",
+            "get_user",
             {"user_id": "1234567@N00"},
-            id="lookup_user_by_id",
+            id="get_user_by_id",
         ),
         pytest.param(
             "get_single_photo",
@@ -74,7 +74,7 @@ def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
     api = FlickrApi(api_key="doesnotexist", user_agent=user_agent)
 
     with pytest.raises(FlickrApiException):
-        api.lookup_user_by_url(url="https://www.flickr.com/photos/flickr/")
+        api.get_user(user_url="https://www.flickr.com/photos/flickr/")
 
 
 def test_empty_api_key_is_error(user_agent: str) -> None:

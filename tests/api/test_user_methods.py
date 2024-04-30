@@ -10,12 +10,101 @@ from flickr_photos_api import (
 from flickr_photos_api.api.user_methods import UserMethods
 
 
-class TestLookupUserById:
-    def test_lookup_deleted_user(self, api: FlickrApi) -> None:
-        with pytest.raises(UserDeleted):
-            api.lookup_user_by_id(user_id="51979177@N02")
+class TestGetUser:
+    def test_get_user_by_id(self, api: FlickrApi) -> None:
+        user = api.get_user(user_id="199258389@N04")
 
-    def test_lookup_user_with_unexpected_error(self) -> None:
+        assert user == {
+            "id": "199258389@N04",
+            "username": "alexwlchan",
+            "realname": "Alex Chan",
+            "path_alias": "alexwlchan",
+            "photos_url": "https://www.flickr.com/photos/alexwlchan/",
+            "profile_url": "https://www.flickr.com/people/alexwlchan/",
+            "description": "Tech lead at the Flickr Foundation.",
+            "has_pro_account": False,
+            "count_photos": 1,
+        }
+
+    def test_get_user_by_url(self, api: FlickrApi) -> None:
+        user = api.get_user(user_url="https://www.flickr.com/photos/199246608@N02")
+
+        assert user == {
+            "id": "199246608@N02",
+            "username": "cefarrjf87",
+            "realname": "Alex Chan",
+            "description": None,
+            "has_pro_account": False,
+            "path_alias": None,
+            "photos_url": "https://www.flickr.com/photos/199246608@N02/",
+            "profile_url": "https://www.flickr.com/people/199246608@N02/",
+            "count_photos": 38,
+        }
+
+    def test_uses_url_not_username(self, api: FlickrApi) -> None:
+        # In this URL the last component is the _path alias_, not the
+        # username, but I got that mixed up when I was new to the Flickr API.
+        #
+        # Make sure this library does the right thing!
+        user_info = api.get_user(
+            user_url="https://www.flickr.com/photos/britishlibrary/"
+        )
+
+        assert user_info["id"] == "12403504@N02"
+        assert user_info["username"] == "The British Library"
+
+    @pytest.mark.parametrize(
+        ["user_id", "realname"],
+        [
+            ("199258389@N04", "Alex Chan"),
+            ("35591378@N03", None),
+        ],
+    )
+    def test_gets_realname(
+        self, api: FlickrApi, user_id: str, realname: str | None
+    ) -> None:
+        user = api.get_user(user_id=user_id)
+
+        assert user["realname"] == realname
+
+    @pytest.mark.parametrize(
+        ["user_id", "description"],
+        [
+            pytest.param(
+                "199258389@N04",
+                "Tech lead at the Flickr Foundation.",
+                id="user_with_description",
+            ),
+            pytest.param("46143783@N04", None, id="user_without_description"),
+        ],
+    )
+    def test_gets_description(
+        self, api: FlickrApi, user_id: str, description: str | None
+    ) -> None:
+        user = api.get_user(user_id=user_id)
+
+        assert user["description"] == description
+
+    @pytest.mark.parametrize(
+        ["user_id", "has_pro_account"],
+        [("199258389@N04", False), ("12403504@N02", True)],
+    )
+    def test_gets_pro_account_status(
+        self, api: FlickrApi, user_id: str, has_pro_account: bool
+    ) -> None:
+        user = api.get_user(user_id=user_id)
+
+        assert user["has_pro_account"] == has_pro_account
+
+    def test_get_deleted_user_id(self, api: FlickrApi) -> None:
+        with pytest.raises(UserDeleted):
+            api.get_user(user_id="51979177@N02")
+
+    def test_get_deleted_user_url(self, api: FlickrApi) -> None:
+        with pytest.raises(UserDeleted):
+            api.get_user(user_url="https://www.flickr.com/photos/51979177@N02/")
+
+    def test_get_user_with_unexpected_error(self) -> None:
         class BrokenApi(UserMethods):
             def call(
                 self, *, method: str, params: dict[str, str] | None = None
@@ -27,102 +116,7 @@ class TestLookupUserById:
         api = BrokenApi()
 
         with pytest.raises(UnrecognisedFlickrApiException):
-            api.lookup_user_by_id(user_id="-1")
-
-
-class TestLookupUserByUrl:
-    def test_lookup_deleted_user(self, api: FlickrApi) -> None:
-        with pytest.raises(UserDeleted):
-            api.lookup_user_by_url(url="https://www.flickr.com/photos/51979177@N02/")
-
-
-def test_lookup_user_by_url(api: FlickrApi) -> None:
-    assert api.lookup_user_by_url(
-        url="https://www.flickr.com/photos/199246608@N02"
-    ) == {
-        "id": "199246608@N02",
-        "username": "cefarrjf87",
-        "realname": "Alex Chan",
-        "description": None,
-        "has_pro_account": False,
-        "path_alias": None,
-        "photos_url": "https://www.flickr.com/photos/199246608@N02/",
-        "profile_url": "https://www.flickr.com/people/199246608@N02/",
-        "count_photos": 38,
-    }
-
-
-def test_lookup_user_by_url_doesnt_use_username(api: FlickrApi) -> None:
-    # In this URL the last component is the _path alias_, not the
-    # username, but I got that mixed up when I was new to the Flickr API.
-    #
-    # Make sure this library does the right thing!
-    user_info = api.lookup_user_by_url(
-        url="https://www.flickr.com/photos/britishlibrary/"
-    )
-
-    assert user_info["id"] == "12403504@N02"
-    assert user_info["username"] == "The British Library"
-
-
-def test_lookup_user_by_id(api: FlickrApi) -> None:
-    assert api.lookup_user_by_id(user_id="199258389@N04") == {
-        "id": "199258389@N04",
-        "username": "alexwlchan",
-        "realname": "Alex Chan",
-        "path_alias": "alexwlchan",
-        "photos_url": "https://www.flickr.com/photos/alexwlchan/",
-        "profile_url": "https://www.flickr.com/people/alexwlchan/",
-        "description": "Tech lead at the Flickr Foundation.",
-        "has_pro_account": False,
-        "count_photos": 1,
-    }
-
-
-@pytest.mark.parametrize(
-    ["user_id", "realname"],
-    [
-        ("199258389@N04", "Alex Chan"),
-        ("35591378@N03", None),
-    ],
-)
-def test_lookup_user_gets_realname(
-    api: FlickrApi, user_id: str, realname: str | None
-) -> None:
-    user_info = api.lookup_user_by_id(user_id=user_id)
-
-    assert user_info["realname"] == realname
-
-
-@pytest.mark.parametrize(
-    ["user_id", "description"],
-    [
-        pytest.param(
-            "199258389@N04",
-            "Tech lead at the Flickr Foundation.",
-            id="user_with_description",
-        ),
-        pytest.param("46143783@N04", None, id="user_without_description"),
-    ],
-)
-def test_lookup_user_gets_description(
-    api: FlickrApi, user_id: str, description: str | None
-) -> None:
-    user_info = api.lookup_user_by_id(user_id=user_id)
-
-    assert user_info["description"] == description
-
-
-@pytest.mark.parametrize(
-    ["user_id", "has_pro_account"],
-    [("199258389@N04", False), ("12403504@N02", True)],
-)
-def test_lookup_user_gets_has_pro_account(
-    api: FlickrApi, user_id: str, has_pro_account: bool
-) -> None:
-    user_info = api.lookup_user_by_id(user_id=user_id)
-
-    assert user_info["has_pro_account"] == has_pro_account
+            api.get_user(user_id="-1")
 
 
 @pytest.mark.parametrize(
