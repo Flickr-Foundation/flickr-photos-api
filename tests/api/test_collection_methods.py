@@ -148,9 +148,6 @@ class TestCollectionsPhotoResponse:
             per_page=1,
         )
 
-        print(len(all_resp["photos"]))
-        print(len(individual_resp["photos"]))
-
         assert individual_resp["photos"][0] == all_resp["photos"][4]
 
 
