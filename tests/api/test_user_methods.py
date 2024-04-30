@@ -4,7 +4,6 @@ import pytest
 
 from flickr_photos_api import (
     FlickrApi,
-    FlickrApi as FlickrPhotosApi,
     UnrecognisedFlickrApiException,
     UserDeleted,
 )
@@ -37,7 +36,7 @@ class TestLookupUserByUrl:
             api.lookup_user_by_url(url="https://www.flickr.com/photos/51979177@N02/")
 
 
-def test_lookup_user_by_url(api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_url(api: FlickrApi) -> None:
     assert api.lookup_user_by_url(
         url="https://www.flickr.com/photos/199246608@N02"
     ) == {
@@ -53,7 +52,7 @@ def test_lookup_user_by_url(api: FlickrPhotosApi) -> None:
     }
 
 
-def test_lookup_user_by_url_doesnt_use_username(api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_url_doesnt_use_username(api: FlickrApi) -> None:
     # In this URL the last component is the _path alias_, not the
     # username, but I got that mixed up when I was new to the Flickr API.
     #
@@ -66,7 +65,7 @@ def test_lookup_user_by_url_doesnt_use_username(api: FlickrPhotosApi) -> None:
     assert user_info["username"] == "The British Library"
 
 
-def test_lookup_user_by_id(api: FlickrPhotosApi) -> None:
+def test_lookup_user_by_id(api: FlickrApi) -> None:
     assert api.lookup_user_by_id(user_id="199258389@N04") == {
         "id": "199258389@N04",
         "username": "alexwlchan",
@@ -88,7 +87,7 @@ def test_lookup_user_by_id(api: FlickrPhotosApi) -> None:
     ],
 )
 def test_lookup_user_gets_realname(
-    api: FlickrPhotosApi, user_id: str, realname: str | None
+    api: FlickrApi, user_id: str, realname: str | None
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 
@@ -107,7 +106,7 @@ def test_lookup_user_gets_realname(
     ],
 )
 def test_lookup_user_gets_description(
-    api: FlickrPhotosApi, user_id: str, description: str | None
+    api: FlickrApi, user_id: str, description: str | None
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 
@@ -119,7 +118,7 @@ def test_lookup_user_gets_description(
     [("199258389@N04", False), ("12403504@N02", True)],
 )
 def test_lookup_user_gets_has_pro_account(
-    api: FlickrPhotosApi, user_id: str, has_pro_account: bool
+    api: FlickrApi, user_id: str, has_pro_account: bool
 ) -> None:
     user_info = api.lookup_user_by_id(user_id=user_id)
 
