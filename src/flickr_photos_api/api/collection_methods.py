@@ -112,9 +112,6 @@ class CollectionMethods(LicenseMethods):
             "sizes": sizes,
         }
 
-    # There are a bunch of similar flickr.XXX.getPhotos methods;
-    # these are some constants and utility methods to help when
-    # calling them.
     extras = [
         "license",
         "date_upload",
