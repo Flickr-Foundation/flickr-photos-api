@@ -8,6 +8,7 @@ from xml.etree import ElementTree as ET
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
+from .user_methods import UserMethods
 from ..types import (
     CollectionOfPhotos,
     GroupInfo,
@@ -27,7 +28,7 @@ from ..utils import (
 )
 
 
-class CollectionMethods(LicenseMethods):
+class CollectionMethods(LicenseMethods, UserMethods):
     def _from_collection_photo(
         self, photo_elem: ET.Element, owner: User | None
     ) -> SinglePhotoInfoWithSizes:
@@ -161,7 +162,36 @@ class CollectionMethods(LicenseMethods):
         }
 
     def get_photos_in_album(
-        self, *, user_id: str, album_id: str, page: int = 1, per_page: int = 10
+        self,
+        album_id: str,
+        user_id: str | None = None,
+        user_url: str | None = None,
+        page: int = 1,
+        per_page: int = 10,
+    ) -> PhotosInAlbum:
+        """
+        Get a page of photos from an album.
+
+        You need to pass a numeric album ID and one of the ``user_id`` or ``user_url``.
+
+        For example, if the album URL is
+
+            https://www.flickr.com/photos/158685238@N03/albums/72177720313849533/
+
+        then you need to pass one of:
+
+            {"album_id": "72177720313849533", "user_id": "158685238@N03"}
+            {"album_id": "72177720313849533", "user_url": "https://www.flickr.com/photos/158685238@N03/"}
+
+        """
+        user_id = self._ensure_user_id(user_id=user_id, user_url=user_url)
+
+        return self._get_photos_in_album(
+            user_id=user_id, album_id=album_id, page=page, per_page=per_page
+        )
+
+    def _get_photos_in_album(
+        self, *, user_id: str, album_id: str, page: int, per_page: int
     ) -> PhotosInAlbum:
         """
         Get a page of photos from an album.
@@ -230,11 +260,36 @@ class CollectionMethods(LicenseMethods):
         }
 
     def get_photos_in_user_photostream(
-        self, *, user_id: str, page: int = 1, per_page: int = 10
+        self,
+        user_id: str | None = None,
+        user_url: str | None = None,
+        page: int = 1,
+        per_page: int = 10,
     ) -> CollectionOfPhotos:
         """
-        Get a page of photos in a user's photostream.
+        Get a page of photos from a user's photostream.
+
+        You need to pass either the ``user_id`` or ``user_url``.
+
+        For example, if the person's URL is
+
+            https://www.flickr.com/photos/158685238@N03/
+
+        then you need to pass one of:
+
+            {"user_id": "158685238@N03"}
+            {"user_url": "https://www.flickr.com/photos/158685238@N03/"}
+
         """
+        user_id = self._ensure_user_id(user_id=user_id, user_url=user_url)
+
+        return self._get_photos_in_user_photostream(
+            user_id=user_id, page=page, per_page=per_page
+        )
+
+    def _get_photos_in_user_photostream(
+        self, *, user_id: str, page: int, per_page: int
+    ) -> CollectionOfPhotos:
         resp = self.call(
             method="flickr.people.getPublicPhotos",
             params={

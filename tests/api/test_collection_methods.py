@@ -164,9 +164,19 @@ class TestCollectionsPhotoResponse:
 
 
 class TestGetAlbum:
-    def test_can_get_album(self, api: FlickrApi) -> None:
+    def test_get_album_by_user_id(self, api: FlickrApi) -> None:
         photos = api.get_photos_in_album(
             user_id="132051449@N06",
+            album_id="72157677773252346",
+        )
+
+        assert photos == get_fixture(
+            "album-72157677773252346.json", model=PhotosInAlbum
+        )
+
+    def test_get_album_by_user_url(self, api: FlickrApi) -> None:
+        photos = api.get_photos_in_album(
+            user_url="https://www.flickr.com/photos/132051449@N06",
             album_id="72157677773252346",
         )
 
@@ -219,8 +229,15 @@ def test_get_gallery_from_id(api: FlickrApi) -> None:
 
 
 class TestGetPhotosInUserPhotostream:
-    def test_can_get_photos(self, api: FlickrApi) -> None:
+    def test_get_photos_by_user_id(self, api: FlickrApi) -> None:
         photos = api.get_photos_in_user_photostream(user_id="34427469121@N01")
+
+        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
+
+    def test_get_photos_by_user_url(self, api: FlickrApi) -> None:
+        photos = api.get_photos_in_user_photostream(
+            user_url="https://www.flickr.com/photos/34427469121@N01"
+        )
 
         assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
 

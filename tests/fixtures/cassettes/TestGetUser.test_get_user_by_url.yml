@@ -14,56 +14,6 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2F199246608%40N02
-  response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<user
-      id=\"199246608@N02\">\n\t<username>cefarrjf87</username>\n</user>\n</rsp>\n"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 26 Mar 2024 10:49:59 GMT
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - MFG1o3j1LzZuiKl3uIK-EzQW9335ld9mNcCn-0hA8PTOZDONfxCYeg==
-      X-Amz-Cf-Pop:
-      - LHR5-P1
-      X-Cache:
-      - Miss from cloudfront
-      content-encoding:
-      - gzip
-      server:
-      - openresty
-      vary:
-      - Accept-Encoding
-      x-flickr-api-request:
-      - Self=1-6602a857-1ac2f7ef32cfd1ee0feb16fa;Root=1-6602a857-71eb41546f3512cc5cdc91aa
-      x-robots-tag:
-      - noindex
-      x-server:
-      - serverless-proxy-10.78.12.122
-    http_version: HTTP/1.1
-    status_code: 200
-- request:
-    body: ''
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      host:
-      - api.flickr.com
-      user-agent:
-      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
-        hello@flickr.org)
-    method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=199246608%40N02
   response:
     content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
@@ -78,13 +28,13 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 26 Mar 2024 10:49:59 GMT
+      - Tue, 30 Apr 2024 14:16:05 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
+      - 1.1 54b736c8a06d70ac689481ee738cbc60.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - YApOs-Q4Irhh8nuUBiFW-2iXx9Y4svKjmJJPLFnoyo4SICncYCFflw==
+      - fo4H879cxE7KbOuXoGJyZwai39DxN5kJI3dehx2h7C8HSMif264HPw==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -93,14 +43,19 @@ interactions:
       - gzip
       server:
       - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 30-May-2024 14:16:05 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 30-May-2024 14:16:05 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-6602a857-4a1195df3fbdead222f50790;Root=1-6602a857-0ac0b09720d6589164b90ccd
+      - Self=1-6630fd25-4faf590a36589edd46b97999;Root=1-6630fd25-750078354fdc02553ba9081a
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.10.17
+      - serverless-proxy-10.78.37.32
     http_version: HTTP/1.1
     status_code: 200
 version: 1

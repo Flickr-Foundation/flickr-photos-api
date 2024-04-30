@@ -4,7 +4,7 @@ Methods for getting information about users from the Flickr API.
 
 import functools
 
-from flickr_url_parser import parse_flickr_url
+from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .base import FlickrApi
@@ -13,7 +13,87 @@ from ..types import UserInfo
 
 
 class UserMethods(FlickrApi):
-    def lookup_user_by_id(self, *, user_id: str) -> UserInfo:
+    def _ensure_user_id(
+        self, *, user_id: str | None = None, user_url: str | None = None
+    ) -> str:
+        """
+        This is a bit of syntactic sugar to help functions take user ID
+        in two forms:
+
+        -   As a ``user_id`` parameter, with a user's NSID
+        -   As a ``user_url`` parameter, with a link to a user's profile picture
+
+        This function will resolve the two parameters down to a single
+        unambiguous ID which can be passed to the Flickr API.
+        """
+        # Check we got exactly one of `user_id` and `user_url`
+        if user_id is None and user_url is None:
+            raise TypeError("You must pass one of `user_id` or `user_url`!")
+
+        if user_id is not None and user_url is not None:
+            raise TypeError("You can only pass one of `user_id` and `user_url`!")
+
+        # If we got a `user_id`, we're done
+        if user_id is not None:
+            return user_id
+
+        assert user_url is not None
+
+        # Try to parse the user URL as a Flickr URL.  What we're looking
+        # to see is whether the URL contains the NSID already, e.g.
+        # https://www.flickr.com/photos/51979177@N02
+        #
+        # If it does, we're done.  If not, we can pass the whole URL to
+        # Flickr to see what the NSID is.
+        try:
+            parsed_user_url = parse_flickr_url(user_url)
+
+            if parsed_user_url["type"] != "user":
+                raise ValueError(
+                    "user_url was not the URL for a Flickr user: {user_url!r}"
+                )
+        except (NotAFlickrUrl, UnrecognisedUrl):
+            raise ValueError("user_url was not the URL for a Flickr user: {user_url!r}")
+
+        assert parsed_user_url["type"] == "user"
+
+        if parsed_user_url["user_id"]:
+            return parsed_user_url["user_id"]
+        else:
+            return self._lookup_user_id_for_user_url(user_url=user_url)
+
+    def get_user(
+        self, *, user_id: str | None = None, user_url: str | None = None
+    ) -> UserInfo:
+        """
+        Given the ID of a user or a link to their profile, return their info.
+
+            >>> api.get_user(user_id="12403504@N02")
+            {
+                "id": "12403504@N02",
+                "username": "The British Library",
+                "realname": "British Library",
+                "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                "profile_url": "https://www.flickr.com/people/britishlibrary/",
+                "pathalias": "britishlibrary",
+                "description": "The British Library’s collections…",
+                "has_pro_account": True,
+                "count_photos": 1234,
+            }
+
+            >>> api.get_user(user_url="https://www.flickr.com/people/britishlibrary/")
+            {
+                "id": "12403504@N02",
+                ...
+            }
+
+        See https://www.flickr.com/services/api/flickr.people.getInfo.htm
+        """
+        user_id = self._ensure_user_id(user_id=user_id, user_url=user_url)
+
+        return self._get_user(user_id=user_id)
+
+    def _get_user(self, *, user_id: str) -> UserInfo:
         """
         Given the link to a user's photos or profile, return their info.
 
@@ -93,45 +173,30 @@ class UserMethods(FlickrApi):
             "count_photos": count_photos,
         }
 
-    def lookup_user_by_url(self, *, url: str) -> UserInfo:
+    def _lookup_user_id_for_user_url(self, *, user_url: str) -> str:
         """
-        Given the link to a user's photos or profile, return their info.
+        Given the URL to a user's profile page, return their user ID.
 
-                >>> api.lookup_user_by_url(user_url="https://www.flickr.com/photos/britishlibrary/")
-                {
-                    "id": "12403504@N02",
-                    "username": "The British Library",
-                    "realname": "British Library",
-                    "photos_url": "https://www.flickr.com/photos/britishlibrary/",
-                    "profile_url": "https://www.flickr.com/people/britishlibrary/",
-                    "pathalias": "britishlibrary",
-                    "description": "The British Library’s collections…",
-                    "has_pro_account": True,
-                    "count_photos": 1234,
-                }
+            >>> api._lookup_user_id_for_user_url(
+            ...     user_url="https://www.flickr.com/photos/britishlibrary/")
+            "12403504@N02"
 
         See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
-        See https://www.flickr.com/services/api/flickr.people.getInfo.htm
 
+        This method is only meant for internal use.
         """
-        parsed_url = parse_flickr_url(url)
-        assert parsed_url["type"] == "user"
+        # The lookupUser response is of the form:
+        #
+        #       <user id="12403504@N02">
+        #       	<username>The British Library</username>
+        #       </user>
+        #
+        lookup_resp = self.call(
+            method="flickr.urls.lookupUser", params={"url": user_url}
+        )
+        user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
-        if parsed_url["user_id"] is not None:
-            user_id = parsed_url["user_id"]
-        else:
-            # The lookupUser response is of the form:
-            #
-            #       <user id="12403504@N02">
-            #       	<username>The British Library</username>
-            #       </user>
-            #
-            lookup_resp = self.call(
-                method="flickr.urls.lookupUser", params={"url": url}
-            )
-            user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
-
-        return self.lookup_user_by_id(user_id=user_id)
+        return user_id
 
     # We cache these because they're unlikely to change that often, and showing
     # a stale user icon occasionally isn't a big deal.

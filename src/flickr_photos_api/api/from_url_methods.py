@@ -28,34 +28,15 @@ class FromUrlMethods(CollectionMethods, SinglePhotoMethods, UserMethods):
         if parsed_url["type"] == "single_photo":
             return self.get_single_photo(photo_id=parsed_url["photo_id"])
         elif parsed_url["type"] == "album":
-            parsed_user_url = parse_flickr_url(parsed_url["user_url"])
-            assert parsed_user_url["type"] == "user"
-
-            user_id = parsed_user_url["user_id"]
-
-            if user_id is None:
-                user = self.lookup_user_by_url(url=parsed_user_url["user_url"])
-                user_id = user["id"]
-
-            assert user_id is not None
-
             return self.get_photos_in_album(
-                user_id=user_id,
+                user_url=parsed_url["user_url"],
                 album_id=parsed_url["album_id"],
                 page=parsed_url["page"],
                 per_page=100,
             )
         elif parsed_url["type"] == "user":
-            user_id = parsed_url["user_id"]
-
-            if user_id is None:
-                user = self.lookup_user_by_url(url=parsed_url["user_url"])
-                user_id = user["id"]
-
-            assert user_id is not None
-
             return self.get_photos_in_user_photostream(
-                user_id=user_id, page=parsed_url["page"], per_page=100
+                user_url=parsed_url["user_url"], page=parsed_url["page"], per_page=100
             )
         elif parsed_url["type"] == "gallery":
             return self.get_photos_in_gallery(
