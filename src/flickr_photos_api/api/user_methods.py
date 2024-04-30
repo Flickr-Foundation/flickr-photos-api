@@ -18,15 +18,15 @@ class UserMethods(FlickrApi):
 
             >>> api.lookup_user_by_id(user_id="12403504@N02")
             {
-                    "id": "12403504@N02",
-                    "username": "The British Library",
-                    "realname": "British Library",
-                    "photos_url": "https://www.flickr.com/photos/britishlibrary/",
-                    "profile_url": "https://www.flickr.com/people/britishlibrary/",
-                    "pathalias": "britishlibrary",
-                    "description": "The British Library’s collections…",
-                    "has_pro_account": True,
-                    "count_photos": 1234,
+                "id": "12403504@N02",
+                "username": "The British Library",
+                "realname": "British Library",
+                "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                "profile_url": "https://www.flickr.com/people/britishlibrary/",
+                "pathalias": "britishlibrary",
+                "description": "The British Library’s collections…",
+                "has_pro_account": True,
+                "count_photos": 1234,
             }
 
         See https://www.flickr.com/services/api/flickr.people.getInfo.htm
@@ -35,7 +35,7 @@ class UserMethods(FlickrApi):
         # The getInfo response is of the form:
         #
         #     <person id="12403504@N02" path_alias="britishlibrary" …>
-        #   	<username>The British Library</username>
+        #       <username>The British Library</username>
         #       <realname>British Library</realname>
         #       <description>The British Library’s collections…</description>
         #       <photosurl>flickr.com/photos/britishlibrary/</photosurl>
@@ -92,15 +92,15 @@ class UserMethods(FlickrApi):
 
                 >>> api.lookup_user_by_url(user_url="https://www.flickr.com/photos/britishlibrary/")
                 {
-                        "id": "12403504@N02",
-                        "username": "The British Library",
-                        "realname": "British Library",
-                        "photos_url": "https://www.flickr.com/photos/britishlibrary/",
-                        "profile_url": "https://www.flickr.com/people/britishlibrary/",
-                        "pathalias": "britishlibrary",
-                        "description": "The British Library’s collections…",
-                        "has_pro_account": True,
-                        "count_photos": 1234,
+                    "id": "12403504@N02",
+                    "username": "The British Library",
+                    "realname": "British Library",
+                    "photos_url": "https://www.flickr.com/photos/britishlibrary/",
+                    "profile_url": "https://www.flickr.com/people/britishlibrary/",
+                    "pathalias": "britishlibrary",
+                    "description": "The British Library’s collections…",
+                    "has_pro_account": True,
+                    "count_photos": 1234,
                 }
 
         See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
