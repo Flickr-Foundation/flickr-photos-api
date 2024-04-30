@@ -9,6 +9,14 @@ class FlickrApiException(Exception):
     pass
 
 
+class UnrecognisedFlickrApiException(FlickrApiException):
+    """
+    Thrown when we get an unrecognised error from the Flickr API.
+    """
+
+    pass
+
+
 class InvalidXmlException(FlickrApiException):
     """
     Thrown when we get invalid XML from the Flickr API.
@@ -46,10 +54,16 @@ class ResourceNotFound(FlickrApiException):
     Thrown when you try to look up a resource that doesn't exist.
     """
 
-    def __init__(self, method: str, params: dict[str, str] | None):
-        super().__init__(
-            f"Unable to find resource at {method} with properties {params}"
-        )
+    pass
+
+
+class UserDeleted(ResourceNotFound):
+    """
+    Thrown when you try to look up a user who's deleted their account.
+    """
+
+    def __init__(self, user_id: str):
+        super().__init__(f"User is deleted: {user_id!r}")
 
 
 class LicenseNotFound(FlickrApiException):
