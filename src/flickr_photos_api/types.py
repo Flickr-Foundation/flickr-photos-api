@@ -144,9 +144,13 @@ class SinglePhotoInfoWithSizes(SinglePhotoInfo):
 
 
 class CollectionOfPhotos(typing.TypedDict):
+    photos: list[SinglePhotoInfoWithSizes]
+
+    # Note: there are no parameters named like this in the Flickr API;
+    # these names were chosen to match parameters that do exist like
+    # `count_views` or `count_comments`.
     count_pages: int
     count_photos: int
-    photos: list[SinglePhotoInfoWithSizes]
 
 
 class AlbumInfo(typing.TypedDict):
