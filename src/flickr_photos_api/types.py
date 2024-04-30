@@ -1,22 +1,20 @@
 import datetime
 import typing
-from typing import Literal, TypedDict
-from xml.etree import ElementTree as ET
 
 
-class License(TypedDict):
+class License(typing.TypedDict):
     id: str
     label: str
     url: str | None
 
 
-class LocationInfo(TypedDict):
+class LocationInfo(typing.TypedDict):
     latitude: float
     longitude: float
     accuracy: int
 
 
-class User(TypedDict):
+class User(typing.TypedDict):
     id: str
     username: str
     realname: str | None
@@ -25,43 +23,55 @@ class User(TypedDict):
     profile_url: str
 
 
+def create_user(
+    id: str, username: str, realname: str | None, path_alias: str | None
+) -> User:
+    """
+    Given some core attributes, construct a ``User`` object.
+
+    This function is only intended for internal user.
+    """
+    # The Flickr API is a bit inconsistent about how some undefined attributes
+    # are returned, e.g. ``realname`` can sometimes be null, sometimes an
+    # empty string.
+    #
+    # In our type system, we want all of these empty values to map to ``None``.
+    return {
+        "id": id,
+        "username": username,
+        "realname": realname or None,
+        "path_alias": path_alias or None,
+        "photos_url": f"https://www.flickr.com/photos/{path_alias or id}/",
+        "profile_url": f"https://www.flickr.com/people/{path_alias or id}/",
+    }
+
+
 class UserInfo(User):
     description: str | None
     has_pro_account: bool
     count_photos: int
 
 
-def user_info_to_user(user_info: UserInfo) -> User:
-    return {
-        "id": user_info["id"],
-        "username": user_info["username"],
-        "photos_url": user_info["photos_url"],
-        "profile_url": user_info["profile_url"],
-        "path_alias": user_info["path_alias"],
-        "realname": user_info["realname"],
-    }
-
-
 # Represents the accuracy to which we know a date taken to be true.
 #
 # See https://www.flickr.com/services/api/misc.dates.html
-TakenGranularity = Literal["second", "month", "year", "circa"]
+TakenGranularity = typing.Literal["second", "month", "year", "circa"]
 
 
-class DateTaken(TypedDict):
+class DateTaken(typing.TypedDict):
     value: datetime.datetime
     granularity: TakenGranularity
 
 
-class Size(TypedDict):
+class Size(typing.TypedDict):
     label: str
     width: int | None
     height: int | None
-    media: Literal["photo", "video"]
+    media: typing.Literal["photo", "video"]
     source: str
 
 
-class Comment(TypedDict):
+class Comment(typing.TypedDict):
     """
     A comment as received from the Flickr API.
     """
@@ -78,7 +88,7 @@ class Comment(TypedDict):
 # Represents the safety level of a photo on Flickr.
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
-SafetyLevel = Literal["safe", "moderate", "restricted"]
+SafetyLevel = typing.Literal["safe", "moderate", "restricted"]
 
 
 class SinglePhotoInfo(typing.TypedDict):
@@ -113,7 +123,7 @@ class SinglePhotoInfo(typing.TypedDict):
     photo_page_url: str
 
 
-class SinglePhoto(TypedDict):
+class SinglePhoto(typing.TypedDict):
     id: str
     title: str | None
     description: str | None
@@ -129,39 +139,21 @@ class SinglePhoto(TypedDict):
     location: LocationInfo | None
 
 
-class ParsedElement(typing.TypedDict):
-    """
-    A parsed <photo> element in a collection response.
-
-    This includes both the raw <photo> element as an ``ET.Element``
-    and some parsed fields that we expect we will always use.
-    """
-
-    photo_elem: ET.Element
-
-    id: str
-    owner: User | None
-    date_posted: datetime.datetime
-    date_taken: DateTaken | None
-    license: License
+class SinglePhotoInfoWithSizes(SinglePhotoInfo):
     sizes: list[Size]
 
 
-class CollectionOfElements(TypedDict):
-    # TODO: Should these be renamed to `count_X` to match the Flickr API?
-    page_count: int
-    total_photos: int
-    root: ET.Element
-    elements: list[ParsedElement]
+class CollectionOfPhotos(typing.TypedDict):
+    photos: list[SinglePhotoInfoWithSizes]
+
+    # Note: there are no parameters named like this in the Flickr API;
+    # these names were chosen to match parameters that do exist like
+    # `count_views` or `count_comments`.
+    count_pages: int
+    count_photos: int
 
 
-class CollectionOfPhotos(TypedDict):
-    page_count: int
-    total_photos: int
-    photos: list[SinglePhoto]
-
-
-class AlbumInfo(TypedDict):
+class AlbumInfo(typing.TypedDict):
     owner: User
     title: str
 
@@ -170,7 +162,7 @@ class PhotosInAlbum(CollectionOfPhotos):
     album: AlbumInfo
 
 
-class GalleryInfo(TypedDict):
+class GalleryInfo(typing.TypedDict):
     owner_name: str
     title: str
 
@@ -179,7 +171,7 @@ class PhotosInGallery(CollectionOfPhotos):
     gallery: GalleryInfo
 
 
-class GroupInfo(TypedDict):
+class GroupInfo(typing.TypedDict):
     id: str
     name: str
 

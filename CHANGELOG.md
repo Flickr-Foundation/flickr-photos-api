@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.0.0 - 2024-04-30
+
+This is a fairly major internal refactor to make the library easier to work on.
+The `FlickrPhotosApi` class has been renamed to `FlickrApi` and split up to make it easier to extend with new methods in future.
+
+I've also removed some of the worst over-abstraction, trading code simplicity for slightly less efficiency.
+
 ## v1.14.1 - 2024-04-29
 
 *   The `lookup_user_by_url()` function is slightly faster when the URL contains a Flickr user ID rather than a path alias.

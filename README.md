@@ -1,35 +1,52 @@
 # flickr-photos-api
 
-This is a library for getting information about photos from the Flickr API.
+This is a library for using the Flickr API at the [Flickr Foundation].
 
-It's not a general-purpose Flickr API library.
-It's designed for use at the [Flickr Foundation], and provides a subset of Flickr API methods with the following goals:
+It's *not* a general-purpose Flickr API library.
+It provides a subset of Flickr API methods with the following goals:
 
+*   Provide reusable code that can be called across all our projects.
 *   Abstract away some of the details of the Flickr API -- for example, licenses are returned as complete dictionaries, rather than as the numeric license IDs returned by Flickr API methods.
-
 *   Apply types to all results, so the Flickr API can be used safely in a typed context.
 
 [Flickr Foundation]: https://www.flickr.org/
 
 ## Design
 
-**This library tries to balance efficiency and reusability.**
+Using the Flickr API is fairly simple: you make an HTTP GET to `https://api.flickr.com/services/rest/?api_key={api_key}` and pass one or more URL query parameters.
+One of those query parameters must be `method`, then you add other parameters depending on the API method.
 
-*   We don't want to have to write a new Flickr API library for every project -- we want to be able to reuse as much code as possible.
+There's an abstract class that represents this interface:
 
-*   The Flickr API can return a lot of fields, which is controlled by the `extras` query parameter.
+```python
+import abc
+from xml.etree import ElementTree as ET
 
-    For example, when you look up a collection of photos, you could add `extras=license` to include information about the license of each photo; or you could add `extras=title,description` to include information about the title and license.
-    
-    We don't want to fetch more fields than are necessary -- that's a lot of extra data!
 
-We try to provide a set of methods that reuse the most code, but allow the flexibility for callers to decide which `extras` they want.
+class FlickrApi(abc.ABC):
+    @abc.abstractmethod
+    def call(self, method: str, params: dict[str, str] | None = None) -> ET.Element:
+        return NotImplemented
+```
+
+The idea is that you can extend this class with "method" classes that wrap specific API methods, and make HTTP GET calls through this `call()` method:
+
+```python
+class GetSinglePhotoMethods(FlickrApi):
+    def get_single_photo(self, photo_id: str) -> ET.Element:
+        return self.call(method="flickr.photos.getInfo", params={"photo_id": photo_id})
+```
+
+This separates the code for making HTTP requests and separating the responses.
+
+The library includes a single implementation of `FlickrApi` for making HTTP requests, using `httpx`, but you could swap it out if you wanted to use e.g. `requests` or `urllib3`.
+This httpx implementation is the default implementation.
 
 ## Examples
 
 ```console
->>> from flickr_photos_api import FlickrPhotosApi
->>> api = FlickrPhotosApi(api_key="…", user_agent="…")
+>>> from flickr_photos_api import FlickrApi
+>>> api = FlickrApi(api_key="…", user_agent="…")
 
 >>> photo = api.get_single_photo(photo_id="14898030836")
 
@@ -51,31 +68,17 @@ We try to provide a set of methods that reuse the most code, but allow the flexi
     $ pip install flickr-photos-api
     ```
 
-2.  Construct an instance of `FlickrPhotosApi`.
+2.  Construct an instance of `FlickrApi`.
     You need to pass a user-agent that identifies you, and a [Flickr API key][key].
 
     ```python
-    from flickr_photos_api import FlickrPhotosApi
+    from flickr_photos_api import FlickrApi
 
-    api = FlickrPhotosApi(api_key="…", user_agent="…")
+    api = FlickrApi(api_key="…", user_agent="…")
     ```
 
-3.  Call methods on FlickrPhotosApi.
-    The methods meant for public use are:
-
-    ```python
-    def get_single_photo(photo_id: str) -> SinglePhoto: ...
-
-    def get_photos_in_album(user_url: str, album_id: str) -> PhotosInAlbum: ...
-
-    def get_photos_in_gallery(gallery_id: str) -> PhotosInGallery: ...
-
-    def get_public_photos_by_user(user_url: str) -> CollectionOfPhotos: ...
-
-    def get_photos_in_group_pool(group_url: str) -> PhotosInGroup: ...
-
-    def get_photos_with_tag(tag: str) -> CollectionOfPhotos: ...
-    ```
+3.  Call methods on FlickrApi.
+    There's no complete list of methods right now; look at the files `X_methods.py` in the `api` directory.
 
     Methods that return collections of photos also support `page` and `per_page` parameters to control pagination.
 

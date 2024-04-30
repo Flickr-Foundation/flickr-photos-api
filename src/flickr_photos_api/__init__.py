@@ -1,4 +1,4 @@
-from .api import FlickrPhotosApi
+from .api import FlickrApi
 from .exceptions import (
     FlickrApiException,
     InvalidApiKey,
@@ -14,7 +14,6 @@ from .types import (
     TakenGranularity,
     DateTaken,
     LocationInfo,
-    ParsedElement,
     Size,
     SafetyLevel,
     SinglePhoto,
@@ -30,11 +29,11 @@ from .types import (
 )
 
 
-__version__ = "1.14.1"
+__version__ = "2.0.0"
 
 
 __all__ = [
-    "FlickrPhotosApi",
+    "FlickrApi",
     "FlickrApiException",
     "ResourceNotFound",
     "InvalidApiKey",
@@ -52,7 +51,6 @@ __all__ = [
     "SinglePhoto",
     "SinglePhotoInfo",
     "CollectionOfPhotos",
-    "ParsedElement",
     "PhotosFromUrl",
     "PhotosInAlbum",
     "PhotosInGallery",

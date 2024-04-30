@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=53509656752
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+      id=\"53509656752\" secret=\"594008e8e3\" server=\"65535\" farm=\"66\" dateuploaded=\"1707143670\"
+      isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"75c674d756\"
+      originalformat=\"jpg\" views=\"430\" media=\"photo\">\n\t<owner nsid=\"126364681@N08\"
+      username=\"Congregation of Sisters of St. Joseph in Canada\" realname=\"Congregation
+      of Sisters of St. Joseph in Canada\" location=\"Canada\" iconserver=\"65535\"
+      iconfarm=\"66\" path_alias=\"csj_canada_archives\">\n\t\t<gift gift_eligible=\"\"
+      new_flow=\"1\" />\n\t</owner>\n\t<title>f13-s013-07-081-house-providence-marian-villa</title>\n\t<description>13
+      women of advanced age are seated in upholstered chairs around the perimeter
+      of a large common room with hardwood floors at House of Providence, London,
+      Ontario. The women are doing hand sewing, reading, or resting.  An unnamed Sister,
+      dressed in traditional habit, stands near a closed door in conversation with
+      one of the women.</description>\n\t<visibility ispublic=\"1\" isfriend=\"0\"
+      isfamily=\"0\" />\n\t<dates posted=\"1707143670\" taken=\"1923-01-01 00:00:00\"
+      takengranularity=\"8\" takenunknown=\"0\" lastupdate=\"1708349145\" />\n\t<editability
+      cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability cancomment=\"1\"
+      canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\" canprint=\"0\"
+      canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people haspeople=\"0\"
+      />\n\t<tags>\n\t\t<tag id=\"126271868-53509656752-451\" author=\"126364681@N08\"
+      authorname=\"Congregation of Sisters of St. Joseph in Canada\" raw=\"Canada\"
+      machine_tag=\"\">canada</tag>\n\t\t<tag id=\"126271868-53509656752-635581\"
+      author=\"126364681@N08\" authorname=\"Congregation of Sisters of St. Joseph
+      in Canada\" raw=\"London (Ont.)\" machine_tag=\"0\">londonont</tag>\n\t\t<tag
+      id=\"126271868-53509656752-4329706\" author=\"126364681@N08\" authorname=\"Congregation
+      of Sisters of St. Joseph in Canada\" raw=\"Medical care\" machine_tag=\"0\">medicalcare</tag>\n\t\t<tag
+      id=\"126271868-53509656752-5008\" author=\"126364681@N08\" authorname=\"Congregation
+      of Sisters of St. Joseph in Canada\" raw=\"Sister\" machine_tag=\"0\">sister</tag>\n\t\t<tag
+      id=\"126271868-53509656752-7826493\" author=\"126364681@N08\" authorname=\"Congregation
+      of Sisters of St. Joseph in Canada\" raw=\"Sisters of St. Joseph\" machine_tag=\"0\">sistersofstjoseph</tag>\n\t\t<tag
+      id=\"126271868-53509656752-2997\" author=\"126364681@N08\" authorname=\"Congregation
+      of Sisters of St. Joseph in Canada\" raw=\"Women\" machine_tag=\"0\">women</tag>\n\t</tags>\n\t<location
+      latitude=\"42.998825\" longitude=\"-81.256198\" accuracy=\"15\" context=\"0\">\n\t\t<locality>Broughdale</locality>\n\t\t<neighbourhood
+      />\n\t\t<region>Ontario</region>\n\t\t<country>Canada</country>\n\t</location>\n\t<geoperms
+      ispublic=\"1\" iscontact=\"0\" isfriend=\"0\" isfamily=\"0\" />\n\t<urls>\n\t\t<url
+      type=\"photopage\">https://www.flickr.com/photos/csj_canada_archives/53509656752/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 29 Apr 2024 15:52:20 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 813272f434255b631960acc4a58151c6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - fZ4YIhXUbr6de0S-_4VOTjXxFngKBCwx7D25BTFj4EXaP59ynmS_VQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:52:19 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 29-May-2024 15:52:19 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-662fc233-5ec135280af504b95686c774;Root=1-662fc233-12c18da320835a4d059fe59e
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.27.207
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
