@@ -6,7 +6,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .license_methods import LicenseMethods
 from ..exceptions import ResourceNotFound
-from ..types import SinglePhotoInfo, SinglePhoto, Size, User
+from ..types import SinglePhotoInfo, SinglePhoto, Size, create_user
 from ..utils import (
     parse_date_posted,
     parse_date_taken,
@@ -64,17 +64,12 @@ class SinglePhotoMethods(LicenseMethods):
         description = find_optional_text(photo_elem, path="description")
 
         owner_elem = find_required_elem(photo_elem, path="owner")
-        user_id = owner_elem.attrib["nsid"]
-        path_alias = owner_elem.attrib["path_alias"] or None
-
-        owner: User = {
-            "id": user_id,
-            "username": owner_elem.attrib["username"],
-            "realname": owner_elem.attrib["realname"] or None,
-            "path_alias": path_alias,
-            "photos_url": f"https://www.flickr.com/photos/{path_alias or user_id}/",
-            "profile_url": f"https://www.flickr.com/people/{path_alias or user_id}/",
-        }
+        owner = create_user(
+            id=owner_elem.attrib["nsid"],
+            username=owner_elem.attrib["username"],
+            realname=owner_elem.attrib["realname"],
+            path_alias=owner_elem.attrib["path_alias"],
+        )
 
         dates = find_required_elem(photo_elem, path="dates").attrib
 

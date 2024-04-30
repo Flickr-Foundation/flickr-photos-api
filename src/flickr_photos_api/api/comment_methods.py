@@ -3,7 +3,7 @@ Methods for getting information about comments from the Flickr API.
 """
 
 from .base import FlickrApi
-from ..types import Comment, User
+from ..types import Comment, create_user
 from ..utils import parse_date_posted
 
 
@@ -34,24 +34,20 @@ class CommentMethods(FlickrApi):
         #     </comment>
         #
         for comment_elem in resp.findall(".//comment"):
-            author_id = comment_elem.attrib["author"]
-            author_path_alias = comment_elem.attrib["path_alias"] or None
+            author = create_user(
+                id=comment_elem.attrib["author"],
+                username=comment_elem.attrib["authorname"],
+                realname=comment_elem.attrib["realname"],
+                path_alias=comment_elem.attrib["path_alias"],
+            )
 
-            author: User = {
-                "id": author_id,
-                "username": comment_elem.attrib["authorname"],
-                "realname": comment_elem.attrib["realname"] or None,
-                "path_alias": author_path_alias,
-                "photos_url": f"https://www.flickr.com/photos/{author_path_alias or author_id}/",
-                "profile_url": f"https://www.flickr.com/people/{author_path_alias or author_id}/",
-            }
+            author_is_deleted = comment_elem.attrib["author_is_deleted"] == "1"
 
             result.append(
                 {
                     "id": comment_elem.attrib["id"],
                     "photo_id": photo_id,
-                    "author_is_deleted": comment_elem.attrib["author_is_deleted"]
-                    == "1",
+                    "author_is_deleted": author_is_deleted,
                     "author": author,
                     "text": comment_elem.text or "",
                     "permalink": comment_elem.attrib["permalink"],

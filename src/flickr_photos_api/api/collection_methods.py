@@ -16,6 +16,7 @@ from ..types import (
     PhotosInGroup,
     SinglePhotoInfoWithSizes,
     User,
+    create_user,
 )
 from ..utils import (
     parse_date_posted,
@@ -42,17 +43,12 @@ class CollectionMethods(LicenseMethods):
         original_format = photo_elem.attrib.get("originalformat")
 
         if owner is None:
-            owner_id = photo_elem.attrib["owner"]
-            path_alias = photo_elem.attrib["pathalias"]
-
-            owner = {
-                "id": owner_id,
-                "username": photo_elem.attrib["ownername"],
-                "realname": photo_elem.attrib.get("realname"),
-                "path_alias": path_alias,
-                "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_id}/",
-                "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
-            }
+            owner = create_user(
+                id=photo_elem.attrib["owner"],
+                username=photo_elem.attrib["ownername"],
+                realname=photo_elem.attrib["realname"],
+                path_alias=photo_elem.attrib["pathalias"],
+            )
 
         assert owner is not None
 
@@ -182,23 +178,16 @@ class CollectionMethods(LicenseMethods):
             },
         )
 
-        photoset_elem = find_required_elem(resp, path="photoset")
-        owner_id = photoset_elem.attrib["owner"]
-        owner_username = photoset_elem.attrib["ownername"]
-
         # Albums are always non-empty, so we know we'll find something here
+        photoset_elem = find_required_elem(resp, path="photoset")
         photo_elem = find_required_elem(photoset_elem, path="photo")
-        realname = photo_elem.attrib.get("realname")
-        path_alias = photo_elem.attrib.get("pathalias")
 
-        owner: User = {
-            "id": owner_id,
-            "username": owner_username,
-            "realname": realname,
-            "path_alias": path_alias,
-            "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_id}/",
-            "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
-        }
+        owner = create_user(
+            id=photoset_elem.attrib["owner"],
+            username=photoset_elem.attrib["ownername"],
+            realname=photo_elem.attrib["realname"],
+            path_alias=photo_elem.attrib["pathalias"],
+        )
 
         album_title = photoset_elem.attrib["title"]
 
@@ -262,20 +251,12 @@ class CollectionMethods(LicenseMethods):
         if first_photo is None:
             return {"count_pages": 1, "count_photos": 0, "photos": []}
 
-        owner_id = first_photo.attrib["owner"]
-        owner_username = first_photo.attrib["ownername"]
-
-        realname = first_photo.attrib.get("realname")
-        path_alias = first_photo.attrib.get("pathalias")
-
-        owner: User = {
-            "id": owner_id,
-            "username": owner_username,
-            "realname": realname,
-            "path_alias": path_alias,
-            "photos_url": f"https://www.flickr.com/photos/{path_alias or owner_id}/",
-            "profile_url": f"https://www.flickr.com/people/{path_alias or owner_id}/",
-        }
+        owner = create_user(
+            id=first_photo.attrib["owner"],
+            username=first_photo.attrib["ownername"],
+            realname=first_photo.attrib["realname"],
+            path_alias=first_photo.attrib["pathalias"],
+        )
 
         photos_elem = find_required_elem(resp, path="photos")
 
