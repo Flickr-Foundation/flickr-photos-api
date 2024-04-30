@@ -34,14 +34,8 @@ jobs:
         # E501 = line too long; anything up to 100-ish is fine in my book
         # (the "ish" is intentional; see https://www.youtube.com/watch?v=wf-BqAjZb8M)
         #
-        # W503 = line break before binary operator; this is something added
-        # by black and I don't have a strong opinion on, so I'm going to trust
-        # black and have flake8 ignore it.
-        #
-        # E231 = an issue on Python 3.12 because we're running an old version
-        # of pycodestyle.  We can drop it when we can run pycodestyle 2.11.0
-        # or later.  See https://github.com/PyCQA/flake8/issues/1845
-        flake8 --ignore=E501,W503,E231
+        # E203/W503/W504 = this is where black and flake8 conflict, see https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated
+        flake8 --ignore=E501,E203,W503 --extend-select=W504
     - name: Check types
       run: mypy src tests
     - name: Run tests
