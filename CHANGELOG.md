@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v2.1.0 - 2024-04-30
+
+This changes the way you specify a user.  The following methods now take a `user_id` or `user_url` parameter:
+
+-   `get_user()` (replacing `lookup_user_by_id()` and `lookup_user_by_url()`)
+-   `get_photos_in_album()`
+-   `get_photos_in_user_photostream()`
+
+This makes things a bit simpler for callers, which can specify a user in either form.
+
 ## v2.0.1 - 2024-04-30
 
 This slightly refines the list of available exceptions:
