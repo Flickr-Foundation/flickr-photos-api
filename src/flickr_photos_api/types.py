@@ -1,6 +1,5 @@
 import datetime
 import typing
-from typing import Literal, TypedDict
 
 
 class License(typing.TypedDict):
@@ -68,7 +67,7 @@ class Size(typing.TypedDict):
     label: str
     width: int | None
     height: int | None
-    media: Literal["photo", "video"]
+    media: typing.Literal["photo", "video"]
     source: str
 
 
@@ -124,7 +123,7 @@ class SinglePhotoInfo(typing.TypedDict):
     photo_page_url: str
 
 
-class SinglePhoto(TypedDict):
+class SinglePhoto(typing.TypedDict):
     id: str
     title: str | None
     description: str | None
