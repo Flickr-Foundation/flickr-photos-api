@@ -119,6 +119,32 @@ class TestGetUser:
             api.get_user(user_id="-1")
 
 
+class TestEnsureUserId:
+    def test_passing_neither_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(
+            TypeError, match="You must pass one of `user_id` or `user_url`!"
+        ):
+            api.get_user()
+
+    def test_passing_both_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(
+            TypeError, match="You can only pass one of `user_id` and `user_url`!"
+        ):
+            api.get_user(user_id="123", user_url="https://www.flickr.com/photos/123")
+
+    def test_passing_a_non_user_url_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(
+            ValueError, match="user_url was not the URL for a Flickr user"
+        ):
+            api.get_user(user_url="https://www.flickr.com")
+
+    def test_passing_a_non_flickr_url_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(
+            ValueError, match="user_url was not the URL for a Flickr user"
+        ):
+            api.get_user(user_url="https://www.example.com")
+
+
 @pytest.mark.parametrize(
     ["user_id", "expected_url"],
     [

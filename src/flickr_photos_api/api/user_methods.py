@@ -4,7 +4,7 @@ Methods for getting information about users from the Flickr API.
 
 import functools
 
-from flickr_url_parser import parse_flickr_url
+from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .base import FlickrApi
@@ -26,20 +26,33 @@ class UserMethods(FlickrApi):
         This function will resolve the two parameters down to a single
         unambiguous ID which can be passed to the Flickr API.
         """
+        # Check we got exactly one of `user_id` and `user_url`
         if user_id is None and user_url is None:
-            raise TypeError("You must supply one of `user_id` or `user_url`!")
+            raise TypeError("You must pass one of `user_id` or `user_url`!")
 
         if user_id is not None and user_url is not None:
-            raise TypeError("You can only supply one of `user_id` and `user_url`!")
+            raise TypeError("You can only pass one of `user_id` and `user_url`!")
 
+        # If we got a `user_id`, we're done
         if user_id is not None:
             return user_id
 
         assert user_url is not None
 
-        parsed_user_url = parse_flickr_url(user_url)
+        # Try to parse the user URL as a Flickr URL.  What we're looking
+        # to see is whether the URL contains the NSID already, e.g.
+        # https://www.flickr.com/photos/51979177@N02
+        #
+        # If it does, we're done.  If not, we can pass the whole URL to
+        # Flickr to see what the NSID is.
+        try:
+            parsed_user_url = parse_flickr_url(user_url)
 
-        if parsed_user_url["type"] != "user":
+            if parsed_user_url["type"] != "user":
+                raise ValueError(
+                    "user_url was not the URL for a Flickr user: {user_url!r}"
+                )
+        except (NotAFlickrUrl, UnrecognisedUrl):
             raise ValueError("user_url was not the URL for a Flickr user: {user_url!r}")
 
         assert parsed_user_url["type"] == "user"
