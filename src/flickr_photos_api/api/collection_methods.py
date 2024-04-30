@@ -141,6 +141,10 @@ class CollectionMethods(LicenseMethods):
     def _create_collection(
         self, collection_elem: ET.Element, owner: User | None = None
     ) -> CollectionOfPhotos:
+        """
+        This gets pagination information and extracts individual <photo>
+        elements from a collection response.
+        """
         photos = [
             self._from_collection_photo(photo_elem, owner=owner)
             for photo_elem in collection_elem.findall("photo")
