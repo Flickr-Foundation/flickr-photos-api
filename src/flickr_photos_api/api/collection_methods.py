@@ -203,7 +203,7 @@ class CollectionMethods(LicenseMethods):
         self, *, gallery_id: str, page: int = 1, per_page: int = 10
     ) -> PhotosInGallery:
         """
-        Get the photos in a gallery.
+        Get a page of photos in a gallery.
         """
         # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
         resp = self.call(
@@ -233,7 +233,7 @@ class CollectionMethods(LicenseMethods):
         self, *, user_id: str, page: int = 1, per_page: int = 10
     ) -> CollectionOfPhotos:
         """
-        Get all the public photos by a user on Flickr.
+        Get a page of photos in a user's photostream.
         """
         resp = self.call(
             method="flickr.people.getPublicPhotos",
@@ -285,7 +285,7 @@ class CollectionMethods(LicenseMethods):
         self, *, group_url: str, page: int = 1, per_page: int = 10
     ) -> PhotosInGroup:
         """
-        Get all the photos in a group pool.
+        Get a page of photos in a group pool.
         """
         group_info = self._lookup_group_from_url(url=group_url)
 
@@ -311,7 +311,11 @@ class CollectionMethods(LicenseMethods):
         self, *, tag: str, page: int = 1, per_page: int = 10
     ) -> CollectionOfPhotos:
         """
-        Get all the photos that use a given tag.
+        Get a page of photos in a tag.
+
+        Note that tag pagination and ordering results can be inconsistent,
+        especially for large tags -- it's tricky to do an "exhaustive" search
+        of a Flickr tag.
         """
         resp = self.call(
             method="flickr.photos.search",
