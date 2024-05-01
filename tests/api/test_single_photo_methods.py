@@ -151,6 +151,43 @@ class TestGetPhotoContexts:
             "count_comments": 0,
         }
 
+    def test_gets_gallery_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="53563844904")
+
+        assert len(contexts["galleries"]) == 11
+
+        assert contexts["galleries"][0] == {
+            "id": "72157721626742458",
+            "url": "https://www.flickr.com/photos/72804335@N03/galleries/72157721626742458",
+            "owner": {
+                "id": "72804335@N03",
+                "username": "Josep M.Toset",
+                "realname": None,
+                "path_alias": None,
+                "photos_url": "https://www.flickr.com/photos/72804335@N03/",
+                "profile_url": "https://www.flickr.com/people/72804335@N03/",
+            },
+            "title": "paisatges",
+            "description": None,
+            "date_created": datetime.datetime.fromtimestamp(
+                1680980061, tz=datetime.timezone.utc
+            ),
+            "date_updated": datetime.datetime.fromtimestamp(
+                1714564015, tz=datetime.timezone.utc
+            ),
+            "count_photos": 166,
+            "count_videos": 0,
+            "count_views": 152,
+            "count_comments": 4,
+        }
+
+        # Check that the ``description`` is populated when present
+        assert contexts["galleries"][3]["title"] == "Ciudades y lugares asombrosos"
+        assert contexts["galleries"][3]["description"] == (
+            "galeria de aquellas, ciudades, pueblos, bosques, montañas,"
+            "y lugares que me gustaria visitar, explorar y disfrutar"
+        )
+
     def test_gets_group_info(self, api: FlickrApi) -> None:
         contexts = api.get_photo_contexts(photo_id="51011950927")
 

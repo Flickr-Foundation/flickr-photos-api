@@ -62,4 +62,67 @@ interactions:
       - serverless-proxy-10.78.16.171
     http_version: HTTP/1.1
     status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.galleries.getListForPhoto&per_page=500&photo_id=51800056877
+  response:
+    content: '<?xml version="1.0" encoding="utf-8" ?>
+
+      <rsp stat="ok">
+
+      <galleries total="0" page="1" pages="0" per_page="500" photo_id="51800056877"
+      />
+
+      </rsp>
+
+      '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 01 May 2024 13:28:47 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 da0472696f37c3fd9136c0c43a0dc866.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MVLN7uCagyGyDan_ijXagthglgW4HZgmmfX7-mBV9b5LD9E_Gtn9xw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 31-May-2024 13:28:47 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6632438f-54b2137a3f80dddc045afd2d;Root=1-6632438f-542e078767a016d6284fb47c
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.13.106
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

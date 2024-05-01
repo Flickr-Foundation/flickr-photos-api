@@ -1,6 +1,8 @@
 import datetime
 import typing
 
+from .users import User
+
 
 class AlbumContext(typing.TypedDict):
     id: str
@@ -16,10 +18,10 @@ class AlbumContext(typing.TypedDict):
 class GalleryContext(typing.TypedDict):
     id: str
     url: str
-    owner_id: str
+    owner: User
 
     title: str
-    description: str
+    description: str | None
 
     date_created: datetime.datetime
     date_updated: datetime.datetime
@@ -40,7 +42,7 @@ class GroupContext(typing.TypedDict):
     count_members: int
 
 
-class PhotoContext:
+class PhotoContext(typing.TypedDict):
     albums: list[AlbumContext]
     galleries: list[GalleryContext]
     groups: list[GroupContext]

@@ -8,6 +8,7 @@ from .license_methods import LicenseMethods
 from ..exceptions import ResourceNotFound
 from ..types import (
     AlbumContext,
+    GalleryContext,
     GroupContext,
     PhotoContext,
     SinglePhotoInfo,
@@ -297,7 +298,6 @@ class SinglePhotoMethods(LicenseMethods):
 
         # Within the response, the groups are in XML with the following structure:
         #
-        #
         #     <
         #       pool
         #       title="A Picture, A Story, A Pearl"
@@ -317,10 +317,90 @@ class SinglePhotoMethods(LicenseMethods):
             for pool_elem in contexts_resp.findall(".//pool")
         ]
 
-        result: PhotoContext = {
+        # See https://www.flickr.com/services/api/flickr.galleries.getListForPhoto.html
+        galleries_resp = self.call(
+            method="flickr.galleries.getListForPhoto",
+            params={"photo_id": photo_id, "per_page": "500"},
+        )
+
+        # Within the response, the galleries are in XML with the following structure:
+        #
+        #
+        #     <galleries page="1" pages="1" […]>
+        #       <gallery
+        #         gallery_id="72157721626742458"
+        #         url="https://www.flickr.com/photos/72804335@N03/galleries/72157721626742458"
+        #         owner="72804335@N03"
+        #         username="Josep M.Toset"
+        #         date_create="1680980061"
+        #         date_update="1714564015"
+        #         count_photos="166"
+        #         count_videos="0"
+        #         count_views="152"
+        #         count_comments="4" […]
+        #       >
+        #         <title>paisatges</title>
+        #         <description/>
+        #       </gallery>
+        #
+        galleries_elem = find_required_elem(galleries_resp, path="galleries")
+
+        # TODO: Add supporting for paginating through the list of galleries.
+        #
+        # I'm not sure there are any photos where this is actually necessary,
+        # so for now just throw and we can return to this if we actually see
+        # a photo where this is necessary.
+        if int(galleries_elem.attrib["pages"]) > 1:  # pragma: no cover
+            raise ValueError("Fetching more than one page of galleries is unsupported!")
+
+        galleries: list[GalleryContext] = []
+
+        for gallery_elem in galleries_elem.findall("gallery"):
+            gallery_url = gallery_elem.attrib["url"]
+
+            owner_id = gallery_elem.attrib["owner"]
+
+            path_alias = (
+                gallery_url.split("/")[4]
+                if gallery_url.split("/")[4] != owner_id
+                else None
+            )
+
+            owner = create_user(
+                id=owner_id,
+                username=gallery_elem.attrib["username"],
+                path_alias=path_alias,
+                # This doesn't seem to be returned in the <gallery>
+                # element even when the user has one set, so we just
+                # have to accept we can't set one here.
+                realname=None,
+            )
+
+            description_elem = find_required_elem(gallery_elem, path="description")
+            description = description_elem.text
+
+            galleries.append(
+                {
+                    "id": gallery_elem.attrib["gallery_id"],
+                    "url": gallery_elem.attrib["url"],
+                    "owner": owner,
+                    "title": find_required_text(gallery_elem, path="title"),
+                    "description": description,
+                    "date_created": parse_date_posted(
+                        gallery_elem.attrib["date_create"]
+                    ),
+                    "date_updated": parse_date_posted(
+                        gallery_elem.attrib["date_update"]
+                    ),
+                    "count_photos": int(gallery_elem.attrib["count_photos"]),
+                    "count_videos": int(gallery_elem.attrib["count_videos"]),
+                    "count_views": int(gallery_elem.attrib["count_views"]),
+                    "count_comments": int(gallery_elem.attrib["count_comments"]),
+                }
+            )
+
+        return {
             "albums": albums,
-            "galleries": [],
+            "galleries": galleries,
             "groups": groups,
         }
-
-        return result
