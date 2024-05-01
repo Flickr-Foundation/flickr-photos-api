@@ -204,3 +204,15 @@ def test_an_unrecognised_error_is_generic_exception(api: FlickrApi) -> None:
         api.call(method="flickr.test.null")
 
     assert exc.value.args[0]["code"] == "99"
+
+
+def test_error_code_1_is_unrecognised_if_not_found(api: FlickrApi) -> None:
+    """
+    This is a regression test for an old mistake, where we were mapping
+    error code ``1`` a bit too broadly, and this call was throwing a
+    ``ResourceNotFound`` exception, which is wrong.
+    """
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
+        api.call(method="flickr.galleries.getListForPhoto")
+
+    assert exc.value.args[0] == {"code": "1", "msg": "Required parameter missing"}
