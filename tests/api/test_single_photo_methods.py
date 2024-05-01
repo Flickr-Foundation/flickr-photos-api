@@ -137,6 +137,11 @@ class TestGetSinglePhoto:
 
 
 class TestGetPhotoContexts:
+    def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="53645428203")
+
+        assert contexts == {"albums": [], "galleries": [], "groups": []}
+
     def test_gets_album_info(self, api: FlickrApi) -> None:
         contexts = api.get_photo_contexts(photo_id="51800056877")
 
