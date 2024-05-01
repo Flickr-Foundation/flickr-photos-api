@@ -134,3 +134,74 @@ class TestGetSinglePhoto:
         self, api: FlickrApi, photo_id: str, is_deleted: bool
     ) -> None:
         assert api.is_photo_deleted(photo_id=photo_id) == is_deleted
+
+
+class TestGetPhotoContexts:
+    def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="53645428203")
+
+        assert contexts == {"albums": [], "galleries": [], "groups": []}
+
+    def test_gets_album_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="51800056877")
+
+        assert len(contexts["albums"]) == 3
+
+        assert contexts["albums"][0] == {
+            "id": "72157718247390872",
+            "title": "Con trâu trên đất Việt",
+            "count_photos": 168,
+            "count_videos": 0,
+            "count_views": 1868,
+            "count_comments": 0,
+        }
+
+    def test_gets_gallery_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="53563844904")
+
+        assert len(contexts["galleries"]) == 11
+
+        assert contexts["galleries"][0] == {
+            "id": "72157721626742458",
+            "url": "https://www.flickr.com/photos/72804335@N03/galleries/72157721626742458",
+            "owner": {
+                "id": "72804335@N03",
+                "username": "Josep M.Toset",
+                "realname": None,
+                "path_alias": None,
+                "photos_url": "https://www.flickr.com/photos/72804335@N03/",
+                "profile_url": "https://www.flickr.com/people/72804335@N03/",
+            },
+            "title": "paisatges",
+            "description": None,
+            "date_created": datetime.datetime.fromtimestamp(
+                1680980061, tz=datetime.timezone.utc
+            ),
+            "date_updated": datetime.datetime.fromtimestamp(
+                1714564015, tz=datetime.timezone.utc
+            ),
+            "count_photos": 166,
+            "count_videos": 0,
+            "count_views": 152,
+            "count_comments": 4,
+        }
+
+        # Check that the ``description`` is populated when present
+        assert contexts["galleries"][3]["title"] == "Ciudades y lugares asombrosos"
+        assert contexts["galleries"][3]["description"] == (
+            "galeria de aquellas, ciudades, pueblos, bosques, montañas,"
+            "y lugares que me gustaria visitar, explorar y disfrutar"
+        )
+
+    def test_gets_group_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="51011950927")
+
+        assert len(contexts["groups"]) == 70
+
+        assert contexts["groups"][0] == {
+            "id": "78249294@N00",
+            "title": "Beautiful Scenery & Landscapes",
+            "url": "https://www.flickr.com/groups/scenery/pool/",
+            "count_items": 668576,
+            "count_members": 43105,
+        }

@@ -1,0 +1,255 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getAllContexts&photo_id=53563844904
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<set
+      title=\"Explored ,and more views\" id=\"72157691336706490\" primary=\"38277778044\"
+      secret=\"8513e74097\" server=\"4646\" farm=\"5\" view_count=\"382\" comment_count=\"0\"
+      count_photo=\"138\" count_video=\"0\" />\n<set title=\"Summer in Iceland\" id=\"72157644910143860\"
+      primary=\"51305971597\" secret=\"3b7c2b2a42\" server=\"65535\" farm=\"66\" view_count=\"502\"
+      comment_count=\"0\" count_photo=\"72\" count_video=\"0\" />\n<pool title=\"&quot;Los
+      mejores momentos de tu d\xEDa&quot;\" url=\"/groups/los_mejores_momentos_de_tu_dia/pool/\"
+      id=\"663100@N21\" iconserver=\"65535\" iconfarm=\"66\" members=\"7551\" pool_count=\"511234\"
+      />\n<pool title=\"Official National Geographic Group\" url=\"/groups/ngmanimallovers/pool/\"
+      id=\"650323@N24\" iconserver=\"3047\" iconfarm=\"4\" members=\"39565\" pool_count=\"2953338\"
+      />\n<pool title=\"Monta\xF1as&amp;Mar / Mountains&amp;Sea. GRACIAS A TOD@S\"
+      url=\"/groups/847329@N20/pool/\" id=\"847329@N20\" iconserver=\"65535\" iconfarm=\"66\"
+      members=\"3563\" pool_count=\"92374\" />\n<pool title=\"!Art and Photography
+      (seriously18+) INVITE ONLY\" url=\"/groups/art_and_photography/pool/\" id=\"926189@N24\"
+      iconserver=\"7891\" iconfarm=\"8\" members=\"17716\" pool_count=\"686467\" />\n<pool
+      title=\"Gold Collection ~ Invited photos (post 1, comment 2)\" url=\"/groups/the_gold_collection/pool/\"
+      id=\"1014333@N25\" iconserver=\"812\" iconfarm=\"1\" members=\"2197\" pool_count=\"29172\"
+      />\n<pool title=\"Magic Landscapes (Invite Only) Thanks P1/C2.\" url=\"/groups/magic_landscape/pool/\"
+      id=\"1139293@N21\" iconserver=\"7805\" iconfarm=\"8\" members=\"1860\" pool_count=\"57457\"
+      />\n<pool title=\"Lenguaje de las nubes\u2605Aurora\u2605Clouds language.\"
+      url=\"/groups/lenguaje_de_las_nubeslanguage_of_the_clouds/pool/\" id=\"1262455@N23\"
+      iconserver=\"65535\" iconfarm=\"66\" members=\"3150\" pool_count=\"92596\" />\n<pool
+      title=\"LA VIE EN ROSE ( Admin Invite Only )\" url=\"/groups/1410602@N22/pool/\"
+      id=\"1410602@N22\" iconserver=\"4043\" iconfarm=\"5\" members=\"3576\" pool_count=\"94842\"
+      />\n<pool title=\"International Amateurs Photos (Invite Only)\" url=\"/groups/nternational_amateurs_photos/pool/\"
+      id=\"1436648@N22\" iconserver=\"4016\" iconfarm=\"5\" members=\"3348\" pool_count=\"145382\"
+      />\n<pool title=\"CELEBRATING NATURE\" url=\"/groups/1446172@N22/pool/\" id=\"1446172@N22\"
+      iconserver=\"1523\" iconfarm=\"2\" members=\"1042\" pool_count=\"23848\" />\n<pool
+      title=\"The Art of  Quality\" url=\"/groups/alemdag/pool/\" id=\"1425971@N23\"
+      iconserver=\"7735\" iconfarm=\"8\" members=\"1790\" pool_count=\"9447\" />\n<pool
+      title=\"Photo Infos\" url=\"/groups/photoinfos/pool/\" id=\"1438219@N23\" iconserver=\"4038\"
+      iconfarm=\"5\" members=\"7219\" pool_count=\"311760\" />\n<pool title=\"Best
+      Friends Photographer - INVITATION ONLY -\" url=\"/groups/best_friends_photographer/pool/\"
+      id=\"1817695@N21\" iconserver=\"1678\" iconfarm=\"2\" members=\"2307\" pool_count=\"148889\"
+      />\n<pool title=\"in explore\" url=\"/groups/inexplore/pool/\" id=\"2389839@N23\"
+      iconserver=\"3744\" iconfarm=\"4\" members=\"102996\" pool_count=\"1783707\"
+      />\n<pool title=\"Illuminations in Black and White\" url=\"/groups/2524870@N20/pool/\"
+      id=\"2524870@N20\" iconserver=\"3709\" iconfarm=\"4\" members=\"1973\" pool_count=\"29500\"
+      />\n<pool title=\"!! * Finest Photoart * !! Admin Invite Only\" url=\"/groups/3216842@N21/pool/\"
+      id=\"3216842@N21\" iconserver=\"65535\" iconfarm=\"66\" members=\"2772\" pool_count=\"32527\"
+      />\n<pool title=\"\u2606The Power of Now / Die Kraft der Gegenwart \u2606\"
+      url=\"/groups/wwwmah_navacom/pool/\" id=\"4520020@N20\" iconserver=\"65535\"
+      iconfarm=\"66\" members=\"642\" pool_count=\"16672\" />\n<pool title=\"*The
+      Moody Moodpepper* ( Admin invite only)\" url=\"/groups/moodpepper/pool/\" id=\"14607726@N25\"
+      iconserver=\"65535\" iconfarm=\"66\" members=\"4320\" pool_count=\"106838\"
+      />\n<pool title=\"Composition World Champions\" url=\"/groups/composition_world_champions/pool/\"
+      id=\"14621829@N24\" iconserver=\"65535\" iconfarm=\"66\" members=\"479\" pool_count=\"13977\"
+      />\n<pool title=\"001-193, the others\" url=\"/groups/14650712@N20/pool/\" id=\"14650712@N20\"
+      iconserver=\"65535\" iconfarm=\"66\" members=\"111\" pool_count=\"1085\" />\n<pool
+      title=\"ADMIN TALK INTERNATIONAL - Invitation Only.\" url=\"/groups/admin_talk__international/pool/\"
+      id=\"14701369@N23\" iconserver=\"65535\" iconfarm=\"66\" members=\"683\" pool_count=\"29089\"
+      />\n<pool title=\"Excellent Stuff (invite only)\" url=\"/groups/14745477@N21/pool/\"
+      id=\"14745477@N21\" iconserver=\"65535\" iconfarm=\"66\" members=\"1045\" pool_count=\"13526\"
+      />\n<pool title=\"visions through the lens (invite only)\" url=\"/groups/14751396@N23/pool/\"
+      id=\"14751396@N23\" iconserver=\"65535\" iconfarm=\"66\" members=\"315\" pool_count=\"3091\"
+      />\n<pool title=\"A Picture, A Story, A Pearl\" url=\"/groups/14776652@N22/pool/\"
+      id=\"14776652@N22\" iconserver=\"65535\" iconfarm=\"66\" members=\"3444\" pool_count=\"59875\"
+      />\n<pool title=\"Best Of Selection [invite only]\" url=\"/groups/14758307@N25/pool/\"
+      id=\"14758307@N25\" iconserver=\"65535\" iconfarm=\"66\" members=\"95\" pool_count=\"917\"
+      />\n<pool title=\"phenomenAgraphy\" url=\"/groups/phenomenagraphy/pool/\" id=\"14841346@N22\"
+      iconserver=\"65535\" iconfarm=\"66\" members=\"1004\" pool_count=\"74322\" />\n<pool
+      title=\"....one likes to take a longer look\" url=\"/groups/14845314@N22/pool/\"
+      id=\"14845314@N22\" iconserver=\"65535\" iconfarm=\"66\" members=\"548\" pool_count=\"5015\"
+      />\n<pool title=\"WONDERS OF PHOTOGRAPHY IN GENERAL.MARAVILLAS DE LA FOTOGRAFIA
+      EN\" url=\"/groups/14876488@N22/pool/\" id=\"14876488@N22\" iconserver=\"65535\"
+      iconfarm=\"66\" members=\"7959\" pool_count=\"478842\" />\n<pool title=\"Immagini
+      : stimolo, sogno, illuminazione\" url=\"/groups/14828409@N20/pool/\" id=\"14828409@N20\"
+      iconserver=\"65535\" iconfarm=\"66\" members=\"209\" pool_count=\"11012\" />\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 01 May 2024 13:15:26 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 97083199d9a34b826701781a1e43ba1e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Cq7g0DZZS7e2hhWG5CqiZb8AwjDvv9r6w-y8cO8aEkDW_phuu8KFSA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 31-May-2024 13:15:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 31-May-2024 13:15:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6632406d-78b9b7d5588da32348782beb;Root=1-6632406d-6ce00fa86fc9bc3938d1f727
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.37.32
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.galleries.getListForPhoto&per_page=500&photo_id=53563844904
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<galleries
+      total=\"11\" page=\"1\" pages=\"1\" per_page=\"500\" photo_id=\"53563844904\">\n\t<gallery
+      id=\"72781281-72157721626742458\" gallery_id=\"72157721626742458\" url=\"https://www.flickr.com/photos/72804335@N03/galleries/72157721626742458\"
+      owner=\"72804335@N03\" username=\"Josep M.Toset\" iconserver=\"7155\" iconfarm=\"8\"
+      primary_photo_id=\"53236689988\" date_create=\"1680980061\" date_update=\"1714564015\"
+      count_photos=\"166\" count_videos=\"0\" count_total=\"166\" count_views=\"152\"
+      count_comments=\"4\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"a2264657a3\">\n\t\t<title>paisatges</title>\n\t\t<description
+      />\n\t</gallery>\n\t<gallery id=\"199733292-72157722360250193\" gallery_id=\"72157722360250193\"
+      url=\"https://www.flickr.com/photos/lizzycatbeam/galleries/72157722360250193\"
+      owner=\"199778614@N06\" username=\"Sunbeam on the Moon\" iconserver=\"65535\"
+      iconfarm=\"66\" primary_photo_id=\"28411246902\" date_create=\"1703363011\"
+      date_update=\"1714510556\" count_photos=\"114\" count_videos=\"0\" count_total=\"114\"
+      count_views=\"37\" count_comments=\"7\" sort_group=\"\" primary_photo_server=\"8648\"
+      primary_photo_farm=\"9\" primary_photo_secret=\"979bed8e1b\">\n\t\t<title>Do
+      you believe in Magic?</title>\n\t\t<description />\n\t</gallery>\n\t<gallery
+      id=\"152551672-72157722508229558\" gallery_id=\"72157722508229558\" url=\"https://www.flickr.com/photos/andrzej_kocot/galleries/72157722508229558\"
+      owner=\"152644485@N08\" username=\"Andrzej Kocot\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"53491575457\" date_create=\"1706519920\" date_update=\"1713011276\"
+      count_photos=\"497\" count_videos=\"0\" count_total=\"497\" count_views=\"464\"
+      count_comments=\"19\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"6f7cf04033\">\n\t\t<title>Composition World Champions
+      #033</title>\n\t\t<description />\n\t</gallery>\n\t<gallery id=\"192497638-72157721277359906\"
+      gallery_id=\"72157721277359906\" url=\"https://www.flickr.com/photos/192520692@N03/galleries/72157721277359906\"
+      owner=\"192520692@N03\" username=\"\xC1ngel errante\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"52506635443\" date_create=\"1669316976\" date_update=\"1714373847\"
+      count_photos=\"500\" count_videos=\"0\" count_total=\"500\" count_views=\"109\"
+      count_comments=\"6\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"665a16bea2\">\n\t\t<title>Ciudades y lugares asombrosos</title>\n\t\t<description>galeria
+      de aquellas, ciudades, pueblos, bosques, monta\xF1as,y lugares que me gustaria
+      visitar, explorar y disfrutar</description>\n\t</gallery>\n\t<gallery id=\"151529342-72157709680836872\"
+      gallery_id=\"72157709680836872\" url=\"https://www.flickr.com/photos/ardan_dojan/galleries/72157709680836872\"
+      owner=\"151561481@N04\" username=\"Ardan.\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"51165621251\" date_create=\"1563284489\" date_update=\"1714460988\"
+      count_photos=\"245\" count_videos=\"0\" count_total=\"245\" count_views=\"459\"
+      count_comments=\"59\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"c20f9680b5\">\n\t\t<title>Blue Nature</title>\n\t\t<description>Images
+      of blue nature that interest or inspire</description>\n\t</gallery>\n\t<gallery
+      id=\"50022832-72157720212323600\" gallery_id=\"72157720212323600\" url=\"https://www.flickr.com/photos/antonioprincipato/galleries/72157720212323600\"
+      owner=\"50043180@N02\" username=\"antonioprincipato\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"51712823193\" date_create=\"1637402531\" date_update=\"1713087110\"
+      count_photos=\"265\" count_videos=\"0\" count_total=\"265\" count_views=\"232\"
+      count_comments=\"24\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"2d4a3c1919\">\n\t\t<title>inspiration</title>\n\t\t<description
+      />\n\t</gallery>\n\t<gallery id=\"165225834-72157722603224596\" gallery_id=\"72157722603224596\"
+      url=\"https://www.flickr.com/photos/165231174@N05/galleries/72157722603224596\"
+      owner=\"165231174@N05\" username=\"Tom Luck\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"53560102436\" date_create=\"1709496449\" date_update=\"1714159508\"
+      count_photos=\"500\" count_videos=\"0\" count_total=\"500\" count_views=\"54\"
+      count_comments=\"4\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"098e222dfc\">\n\t\t<title>The Best of Nature and Landscape
+      11</title>\n\t\t<description />\n\t</gallery>\n\t<gallery id=\"73988211-72157722583101703\"
+      gallery_id=\"72157722583101703\" url=\"https://www.flickr.com/photos/lajaus/galleries/72157722583101703\"
+      owner=\"74011265@N03\" username=\"Jaime Lacasa\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"53546653811\" date_create=\"1708946739\" date_update=\"1710412169\"
+      count_photos=\"65\" count_videos=\"0\" count_total=\"65\" count_views=\"7\"
+      count_comments=\"2\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"28ffcfd0f1\">\n\t\t<title>landscape</title>\n\t\t<description
+      />\n\t</gallery>\n\t<gallery id=\"73988211-72157722610256992\" gallery_id=\"72157722610256992\"
+      url=\"https://www.flickr.com/photos/lajaus/galleries/72157722610256992\" owner=\"74011265@N03\"
+      username=\"Jaime Lacasa\" iconserver=\"65535\" iconfarm=\"66\" primary_photo_id=\"53561127025\"
+      date_create=\"1709494218\" date_update=\"1713042183\" count_photos=\"66\" count_videos=\"0\"
+      count_total=\"66\" count_views=\"11\" count_comments=\"4\" sort_group=\"\" primary_photo_server=\"65535\"
+      primary_photo_farm=\"66\" primary_photo_secret=\"6c939ac9d6\">\n\t\t<title>Minimalism</title>\n\t\t<description
+      />\n\t</gallery>\n\t<gallery id=\"200083133-72157722621221710\" gallery_id=\"72157722621221710\"
+      url=\"https://www.flickr.com/photos/200106187@N03/galleries/72157722621221710\"
+      owner=\"200106187@N03\" username=\"rz.eskandary\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"53534769613\" date_create=\"1708355443\" date_update=\"1714402881\"
+      count_photos=\"171\" count_videos=\"0\" count_total=\"171\" count_views=\"56\"
+      count_comments=\"3\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"1cedc18532\">\n\t\t<title>Visual Insp</title>\n\t\t<description
+      />\n\t</gallery>\n\t<gallery id=\"199783289-72157722409954714\" gallery_id=\"72157722409954714\"
+      url=\"https://www.flickr.com/photos/199876102@N08/galleries/72157722409954714\"
+      owner=\"199876102@N08\" username=\"DSHealy1954\" iconserver=\"65535\" iconfarm=\"66\"
+      primary_photo_id=\"53563844904\" date_create=\"1704430469\" date_update=\"1714145190\"
+      count_photos=\"18\" count_videos=\"0\" count_total=\"18\" count_views=\"4\"
+      count_comments=\"1\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+      primary_photo_secret=\"a8c7e9ab60\">\n\t\t<title>Rocky shores and brooding seas</title>\n\t\t<description
+      />\n\t</gallery>\n</galleries>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 01 May 2024 13:28:47 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 081e5088637a101207bef39b8d7f3d4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 3ztx7S2pu5FSmCf0jspHERpK8eD31Je0KHzuWIPC_02dfVFRlUwXGQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 31-May-2024 13:28:47 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-6632438f-2ac32f5623b7a3fa2f7090ba;Root=1-6632438f-67f8e53f2b8446b654eebcaf
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.16.171
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
