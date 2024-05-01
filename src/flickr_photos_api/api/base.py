@@ -14,7 +14,6 @@ from tenacity import (
 from ..exceptions import (
     InvalidApiKey,
     InvalidXmlException,
-    ResourceNotFound,
     UnrecognisedFlickrApiException,
 )
 
@@ -31,7 +30,25 @@ class FlickrApi(abc.ABC):
     """
 
     @abc.abstractmethod
-    def call(self, *, method: str, params: dict[str, str] | None = None) -> ET.Element:
+    def call(
+        self,
+        *,
+        method: str,
+        params: dict[str, str] | None = None,
+        exceptions: dict[str, Exception] | None = None,
+    ) -> ET.Element:
+        """
+        Call the Flickr API and return the XML of the result.
+
+        :param method: The name of the Flickr API method, for example
+            ``flickr.photos.getInfo``
+
+        :param params: Any arguments to pass to the Flickr API method,
+            for example ``{"photo_id": "1234"}``
+
+        :param exceptions: A map from Flickr API error code to exceptions that should
+            be thrown.
+        """
         return NotImplemented
 
 
@@ -86,9 +103,17 @@ class HttpxImplementation(FlickrApi):
             headers={"User-Agent": user_agent},
         )
 
-    def call(self, *, method: str, params: dict[str, str] | None = None) -> ET.Element:
+    def call(
+        self,
+        *,
+        method: str,
+        params: dict[str, str] | None = None,
+        exceptions: dict[str, Exception] | None = None,
+    ) -> ET.Element:
         try:
-            return self._call_api(method=method, params=params)
+            return self._call_api(
+                method=method, params=params, exceptions=exceptions or {}
+            )
         except RetryError as retry_err:
             retry_err.reraise()
 
@@ -97,7 +122,13 @@ class HttpxImplementation(FlickrApi):
         stop=stop_after_attempt(5),
         wait=wait_random_exponential(),
     )
-    def _call_api(self, *, method: str, params: dict[str, str] | None) -> ET.Element:
+    def _call_api(
+        self,
+        *,
+        method: str,
+        params: dict[str, str] | None,
+        exceptions: dict[str, Exception],
+    ) -> ET.Element:
         if params is not None:
             get_params = {"method": method, **params}
         else:
@@ -138,19 +169,12 @@ class HttpxImplementation(FlickrApi):
         if xml.attrib["stat"] == "fail":
             errors = find_required_elem(xml, path=".//err").attrib
 
-            # Although I haven't found any explicit documentation of this,
-            # it seems like a pretty common convention that:
-            #
-            #   - error code "1" means "not found"
-            #   - error code "2" means "user not found"
-            #
-            if errors["code"] == "1" or errors["code"] == "2":
-                raise ResourceNotFound(
-                    f"Unable to find resource at {method} with properties {params}"
-                )
-            elif errors["code"] == "100":
+            if errors["code"] == "100":
                 raise InvalidApiKey(message=errors["msg"])
-            else:
+
+            try:
+                raise exceptions[errors["code"]]
+            except KeyError:
                 raise UnrecognisedFlickrApiException(errors)
 
         return xml

@@ -8,7 +8,7 @@ from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .base import FlickrApi
-from ..exceptions import UnrecognisedFlickrApiException, UserDeleted
+from ..exceptions import ResourceNotFound, UserDeleted
 from ..types import UserInfo
 
 
@@ -127,15 +127,14 @@ class UserMethods(FlickrApi):
         #       …
         #     </person>
         #
-        try:
-            info_resp = self.call(
-                method="flickr.people.getInfo", params={"user_id": user_id}
-            )
-        except UnrecognisedFlickrApiException as exc:
-            if exc.args[0]["code"] == "5":
-                raise UserDeleted(user_id)
-            else:
-                raise
+        info_resp = self.call(
+            method="flickr.people.getInfo",
+            params={"user_id": user_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find user with ID: {user_id!r}"),
+                "5": UserDeleted(user_id),
+            },
+        )
 
         person_elem = find_required_elem(info_resp, path="person")
 
@@ -181,8 +180,6 @@ class UserMethods(FlickrApi):
             ...     user_url="https://www.flickr.com/photos/britishlibrary/")
             "12403504@N02"
 
-        See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
-
         This method is only meant for internal use.
         """
         # The lookupUser response is of the form:
@@ -191,8 +188,13 @@ class UserMethods(FlickrApi):
         #       	<username>The British Library</username>
         #       </user>
         #
+        # See https://www.flickr.com/services/api/flickr.urls.lookupUser.htm
         lookup_resp = self.call(
-            method="flickr.urls.lookupUser", params={"url": user_url}
+            method="flickr.urls.lookupUser",
+            params={"url": user_url},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find user with URL: {user_url!r}")
+            },
         )
         user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 

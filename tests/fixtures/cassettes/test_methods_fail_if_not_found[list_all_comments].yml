@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=12345678901234567890
+  response:
+    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+      code=\"100\" msg=\"Invalid API Key (Key has invalid format)\" />\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 01 May 2024 12:29:57 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 9e4ef84d8626e7ec2ca2411a9eeb43c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - omx5jW-rIlukq_ql8JlXKKCmEAcsV8ziHViP-VWPrKTepF_XZIhYKA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 31-May-2024 12:29:57 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 31-May-2024 12:29:57 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-663235c5-307c43ca09e5fd655e415652;Root=1-663235c5-0d5d8988794e94127384e457
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.13.106
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

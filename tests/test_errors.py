@@ -7,7 +7,33 @@ from flickr_photos_api import (
     InvalidApiKey,
     InvalidXmlException,
     ResourceNotFound,
+    UnrecognisedFlickrApiException,
 )
+
+
+@pytest.mark.parametrize(
+    "method",
+    [
+        "get_single_photo",
+        "list_all_comments",
+    ],
+)
+@pytest.mark.parametrize(
+    "photo_id",
+    [
+        "12345678901234567890",
+        "DefinitelyDoesNotExist",
+    ],
+)
+def test_look_up_single_photo_fails_if_not_found(
+    api: FlickrApi, method: str, photo_id: str
+) -> None:
+    api_method = getattr(api, method)
+
+    with pytest.raises(
+        ResourceNotFound, match=f"Could not find photo with ID: {photo_id!r}"
+    ):
+        api_method(photo_id=photo_id)
 
 
 @pytest.mark.parametrize(
@@ -24,17 +50,20 @@ from flickr_photos_api import (
             id="get_user_by_id",
         ),
         pytest.param(
-            "get_single_photo",
-            {"photo_id": "12345678901234567890"},
-            id="get_single_photo",
-        ),
-        pytest.param(
             "get_photos_in_album",
             {
                 "user_id": "-1",
                 "album_id": "1234",
             },
             id="get_photos_in_album_with_missing_user",
+        ),
+        pytest.param(
+            "get_photos_in_album",
+            {
+                "user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist",
+                "album_id": "1234",
+            },
+            id="get_photos_in_album_with_missing_user_url",
         ),
         pytest.param(
             "get_photos_in_album",
@@ -176,7 +205,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    with pytest.raises(FlickrApiException) as exc:
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
         api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert exc.value.args[0] == {
@@ -186,7 +215,19 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
 
 
 def test_an_unrecognised_error_is_generic_exception(api: FlickrApi) -> None:
-    with pytest.raises(FlickrApiException) as exc:
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
         api.call(method="flickr.test.null")
 
     assert exc.value.args[0]["code"] == "99"
+
+
+def test_error_code_1_is_unrecognised_if_not_found(api: FlickrApi) -> None:
+    """
+    This is a regression test for an old mistake, where we were mapping
+    error code ``1`` a bit too broadly, and this call was throwing a
+    ``ResourceNotFound`` exception, which is wrong.
+    """
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
+        api.call(method="flickr.galleries.getListForPhoto")
+
+    assert exc.value.args[0] == {"code": "1", "msg": "Required parameter missing"}
