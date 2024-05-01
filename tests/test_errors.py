@@ -12,6 +12,31 @@ from flickr_photos_api import (
 
 
 @pytest.mark.parametrize(
+    "method",
+    [
+        "get_single_photo",
+        "list_all_comments",
+    ],
+)
+@pytest.mark.parametrize(
+    "photo_id",
+    [
+        "12345678901234567890",
+        "DefinitelyDoesNotExist",
+    ],
+)
+def test_look_up_single_photo_fails_if_not_found(
+    api: FlickrApi, method: str, photo_id: str
+) -> None:
+    api_method = getattr(api, method)
+
+    with pytest.raises(
+        ResourceNotFound, match=f"Could not find photo with ID: {photo_id!r}"
+    ):
+        api_method(photo_id=photo_id)
+
+
+@pytest.mark.parametrize(
     ["method", "params"],
     [
         pytest.param(
@@ -23,16 +48,6 @@ from flickr_photos_api import (
             "get_user",
             {"user_id": "1234567@N00"},
             id="get_user_by_id",
-        ),
-        pytest.param(
-            "get_single_photo",
-            {"photo_id": "12345678901234567890"},
-            id="get_single_photo",
-        ),
-        pytest.param(
-            "get_single_photo",
-            {"photo_id": "DefinitelyDoesNotExist"},
-            id="get_single_photo_with_non_numeric_id",
         ),
         pytest.param(
             "get_photos_in_album",

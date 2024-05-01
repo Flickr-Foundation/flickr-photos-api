@@ -3,6 +3,7 @@ Methods for getting information about comments from the Flickr API.
 """
 
 from .base import FlickrApi
+from ..exceptions import ResourceNotFound
 from ..types import Comment, create_user
 from ..utils import parse_date_posted
 
@@ -15,7 +16,11 @@ class CommentMethods(FlickrApi):
         See https://www.flickr.com/services/api/flickr.photos.comments.getList.htm
         """
         resp = self.call(
-            method="flickr.photos.comments.getList", params={"photo_id": photo_id}
+            method="flickr.photos.comments.getList",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+            },
         )
 
         result: list[Comment] = []
