@@ -251,6 +251,22 @@ class TestGetPhotosInUserPhotostream:
 
         assert photos == {"count_pages": 1, "count_photos": 0, "photos": []}
 
+    def test_no_realname_is_none(self, api: FlickrApi) -> None:
+        # This is the Commons Test account, which doesn't have
+        # a 'realname' set
+        result = api.get_photos_in_user_photostream(user_id="200049760@N08")
+
+        owner = result["photos"][0]["owner"]
+        assert owner["realname"] is None
+
+    def test_no_path_alias_is_none(self, api: FlickrApi) -> None:
+        # This is the Commons Test account, which doesn't have
+        # a 'path_alias' set
+        result = api.get_photos_in_user_photostream(user_id="200049760@N08")
+
+        owner = result["photos"][0]["owner"]
+        assert owner["path_alias"] is None
+
 
 def test_get_photos_in_group_pool(api: FlickrApi) -> None:
     photos = api.get_photos_in_group_pool(

@@ -309,7 +309,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
         owner = create_user(
             id=first_photo.attrib["owner"],
             username=first_photo.attrib["ownername"],
-            realname=first_photo.attrib["realname"],
+            realname=first_photo.attrib.get("realname"),
             path_alias=first_photo.attrib["pathalias"],
         )
 
