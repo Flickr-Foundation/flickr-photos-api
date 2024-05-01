@@ -150,3 +150,16 @@ class TestGetPhotoContexts:
             "count_views": 1868,
             "count_comments": 0,
         }
+
+    def test_gets_group_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="51011950927")
+
+        assert len(contexts["groups"]) == 70
+
+        assert contexts["groups"][0] == {
+            "id": "78249294@N00",
+            "title": "Beautiful Scenery & Landscapes",
+            "url": "https://www.flickr.com/groups/scenery/pool/",
+            "count_items": 668576,
+            "count_members": 43105,
+        }

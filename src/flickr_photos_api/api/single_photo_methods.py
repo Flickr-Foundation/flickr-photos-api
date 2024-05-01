@@ -8,6 +8,7 @@ from .license_methods import LicenseMethods
 from ..exceptions import ResourceNotFound
 from ..types import (
     AlbumContext,
+    GroupContext,
     PhotoContext,
     SinglePhotoInfo,
     SinglePhoto,
@@ -280,7 +281,7 @@ class SinglePhotoMethods(LicenseMethods):
         #       view_count="2312"
         #       comment_count="0"
         #       count_photo="269"
-        #       count_video="0" […]/>
+        #       count_video="0" […] />
         #
         albums: list[AlbumContext] = [
             {
@@ -294,10 +295,32 @@ class SinglePhotoMethods(LicenseMethods):
             for set_elem in contexts_resp.findall(".//set")
         ]
 
+        # Within the response, the groups are in XML with the following structure:
+        #
+        #
+        #     <
+        #       pool
+        #       title="A Picture, A Story, A Pearl"
+        #       url="/groups/14776652@N22/pool/"
+        #       id="14776652@N22"
+        #       members="3444"
+        #       pool_count="59875" […] />
+        #
+        groups: list[GroupContext] = [
+            {
+                "id": pool_elem.attrib["id"],
+                "title": pool_elem.attrib["title"],
+                "url": "https://www.flickr.com" + pool_elem.attrib["url"],
+                "count_items": int(pool_elem.attrib["pool_count"]),
+                "count_members": int(pool_elem.attrib["members"]),
+            }
+            for pool_elem in contexts_resp.findall(".//pool")
+        ]
+
         result: PhotoContext = {
             "albums": albums,
             "galleries": [],
-            "groups": [],
+            "groups": groups,
         }
 
         return result

@@ -33,8 +33,8 @@ class GalleryContext(typing.TypedDict):
 
 class GroupContext(typing.TypedDict):
     id: str
-    url: str
     title: str
+    url: str
 
     count_items: int
     count_members: int
