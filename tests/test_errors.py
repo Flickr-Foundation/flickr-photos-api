@@ -7,6 +7,7 @@ from flickr_photos_api import (
     InvalidApiKey,
     InvalidXmlException,
     ResourceNotFound,
+    UnrecognisedFlickrApiException,
 )
 
 
@@ -176,7 +177,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    with pytest.raises(FlickrApiException) as exc:
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
         api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert exc.value.args[0] == {
@@ -186,7 +187,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
 
 
 def test_an_unrecognised_error_is_generic_exception(api: FlickrApi) -> None:
-    with pytest.raises(FlickrApiException) as exc:
+    with pytest.raises(UnrecognisedFlickrApiException) as exc:
         api.call(method="flickr.test.null")
 
     assert exc.value.args[0]["code"] == "99"
