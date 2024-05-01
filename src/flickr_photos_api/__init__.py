@@ -10,6 +10,7 @@ from .exceptions import (
 )
 from .types import (
     Comment,
+    CommonsInstitution,
     License,
     User,
     UserInfo,
@@ -31,7 +32,7 @@ from .types import (
 )
 
 
-__version__ = "2.1.2"
+__version__ = "2.2.0"
 
 
 __all__ = [
@@ -47,6 +48,7 @@ __all__ = [
     "UserInfo",
     "TakenGranularity",
     "Comment",
+    "CommonsInstitution",
     "DateTaken",
     "Size",
     "SafetyLevel",

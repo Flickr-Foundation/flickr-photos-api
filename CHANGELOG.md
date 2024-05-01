@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.2.0 - 2024-05-01
+
+This adds a new method `list_commons_institutions()` which returns a list of all the institutions in [the Flickr Commons](https://commons.flickr.org).
+
 ## v2.1.2 - 2024-05-01
 
 Get rid of the `SinglePhotoWithSizes` type and roll back to the `SinglePhoto` type, which maintains better back-compatibility.
