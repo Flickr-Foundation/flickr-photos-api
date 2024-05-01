@@ -6,7 +6,14 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .license_methods import LicenseMethods
 from ..exceptions import ResourceNotFound
-from ..types import SinglePhotoInfo, SinglePhoto, Size, create_user
+from ..types import (
+    AlbumContext,
+    PhotoContext,
+    SinglePhotoInfo,
+    SinglePhoto,
+    Size,
+    create_user,
+)
 from ..utils import (
     parse_date_posted,
     parse_date_taken,
@@ -248,3 +255,49 @@ class SinglePhotoMethods(LicenseMethods):
             return True
         else:
             return False
+
+    def get_photo_contexts(self, *, photo_id: str) -> PhotoContext:
+        """
+        Find the contexts where this photo appears on Flickr.
+
+        This includes albums, galleries, and groups.
+        """
+        # See https://www.flickr.com/services/api/flickr.photos.getAllContexts.html
+        contexts_resp = self.call(
+            method="flickr.photos.getAllContexts",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+            },
+        )
+
+        # Within the response, the albums are in XML with the following structure:
+        #
+        #     <
+        #       set
+        #       title="Landscape / Nature"
+        #       id="72157650910758151"
+        #       view_count="2312"
+        #       comment_count="0"
+        #       count_photo="269"
+        #       count_video="0" […]/>
+        #
+        albums: list[AlbumContext] = [
+            {
+                "id": set_elem.attrib["id"],
+                "title": set_elem.attrib["title"],
+                "count_photos": int(set_elem.attrib["count_photo"]),
+                "count_videos": int(set_elem.attrib["count_video"]),
+                "count_views": int(set_elem.attrib["view_count"]),
+                "count_comments": int(set_elem.attrib["comment_count"]),
+            }
+            for set_elem in contexts_resp.findall(".//set")
+        ]
+
+        result: PhotoContext = {
+            "albums": albums,
+            "galleries": [],
+            "groups": [],
+        }
+
+        return result

@@ -134,3 +134,19 @@ class TestGetSinglePhoto:
         self, api: FlickrApi, photo_id: str, is_deleted: bool
     ) -> None:
         assert api.is_photo_deleted(photo_id=photo_id) == is_deleted
+
+
+class TestGetPhotoContexts:
+    def test_gets_album_info(self, api: FlickrApi) -> None:
+        contexts = api.get_photo_contexts(photo_id="51800056877")
+
+        assert len(contexts["albums"]) == 3
+
+        assert contexts["albums"][0] == {
+            "id": "72157718247390872",
+            "title": "Con trâu trên đất Việt",
+            "count_photos": 168,
+            "count_videos": 0,
+            "count_views": 1868,
+            "count_comments": 0,
+        }
