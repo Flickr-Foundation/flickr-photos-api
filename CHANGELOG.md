@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.3.0 - 2024-05-01
+
+*   Add a new method `get_photo_contexts(photo_id)` which returns information about all the contexts where this photo appears -- albums, galleries, and groups.
+*   Improve the way error codes from the Flickr API are handled. If you're calling the library, this means you'll get more human-readable error messages. If you're working on the library, you have more flexibility in how error codes are mapped to Python exceptions.
+*   Fix a bug where getting photos from the photostream of a user who didn't have a `realname` set would throw a `KeyError`.
+
 ## v2.2.0 - 2024-05-01
 
 This adds a new method `list_commons_institutions()` which returns a list of all the institutions in [the Flickr Commons](https://commons.flickr.org).
