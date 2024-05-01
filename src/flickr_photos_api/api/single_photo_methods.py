@@ -16,7 +16,7 @@ from ..utils import (
 
 
 class SinglePhotoMethods(LicenseMethods):
-    def get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
+    def _get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
         """
         Look up the information for a single photo.
 
@@ -81,9 +81,7 @@ class SinglePhotoMethods(LicenseMethods):
             unknown=dates["takenunknown"] == "1",
         )
 
-        photo_page_url = find_required_text(
-            photo_elem, path='.//urls/url[@type="photopage"]'
-        )
+        url = find_required_text(photo_elem, path='.//urls/url[@type="photopage"]')
 
         count_comments = int(find_required_text(photo_elem, path="comments"))
         count_views = int(photo_elem.attrib["views"])
@@ -144,10 +142,10 @@ class SinglePhotoMethods(LicenseMethods):
             "location": location,
             "count_comments": count_comments,
             "count_views": count_views,
-            "photo_page_url": photo_page_url,
+            "url": url,
         }
 
-    def get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
+    def _get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
         """
         Look up the sizes for a single photo.
 
@@ -227,24 +225,10 @@ class SinglePhotoMethods(LicenseMethods):
         """
         Look up the information for a single photo.
         """
-        info = self.get_single_photo_info(photo_id=photo_id)
-        sizes = self.get_single_photo_sizes(photo_id=photo_id)
+        info = self._get_single_photo_info(photo_id=photo_id)
+        sizes = self._get_single_photo_sizes(photo_id=photo_id)
 
-        return {
-            "id": photo_id,
-            "title": info["title"],
-            "description": info["description"],
-            "owner": info["owner"],
-            "date_posted": info["date_posted"],
-            "date_taken": info["date_taken"],
-            "safety_level": info["safety_level"],
-            "license": info["license"],
-            "url": info["photo_page_url"],
-            "sizes": sizes,
-            "original_format": info["original_format"],
-            "tags": info["tags"],
-            "location": info["location"],
-        }
+        return {**info, "sizes": sizes}
 
     def is_photo_deleted(self, *, photo_id: str) -> bool:
         """

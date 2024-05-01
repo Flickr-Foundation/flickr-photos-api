@@ -35,7 +35,7 @@ class TestCollectionsPhotoResponse:
         }
 
         assert (
-            resp["photos"][0]["photo_page_url"]
+            resp["photos"][0]["url"]
             == "https://www.flickr.com/photos/joshuatreenp/49021434741/"
         )
 

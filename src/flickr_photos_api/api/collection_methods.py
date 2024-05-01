@@ -15,7 +15,7 @@ from ..types import (
     PhotosInAlbum,
     PhotosInGallery,
     PhotosInGroup,
-    SinglePhotoInfoWithSizes,
+    SinglePhoto,
     User,
     create_user,
 )
@@ -31,7 +31,7 @@ from ..utils import (
 class CollectionMethods(LicenseMethods, UserMethods):
     def _from_collection_photo(
         self, photo_elem: ET.Element, owner: User | None
-    ) -> SinglePhotoInfoWithSizes:
+    ) -> SinglePhoto:
         """
         Given a <photo> element from a collection response, extract all the photo info.
         """
@@ -84,7 +84,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
         count_views = int(photo_elem.attrib["count_views"])
 
         assert owner["photos_url"].endswith("/")
-        photo_page_url = owner["photos_url"] + photo_id + "/"
+        url = owner["photos_url"] + photo_id + "/"
 
         sizes = parse_sizes(photo_elem)
 
@@ -105,7 +105,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
             "location": location,
             "count_comments": count_comments,
             "count_views": count_views,
-            "photo_page_url": photo_page_url,
+            "url": url,
             "sizes": sizes,
         }
 

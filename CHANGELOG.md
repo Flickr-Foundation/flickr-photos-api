@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.1.2 - 2024-05-01
+
+Get rid of the `SinglePhotoWithSizes` type and roll back to the `SinglePhoto` type, which maintains better back-compatibility.
+
 ## v2.1.1 - 2024-04-30
 
 Export the `SinglePhotoInfoWithSizes` type.
