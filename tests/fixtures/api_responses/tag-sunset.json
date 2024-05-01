@@ -38,7 +38,7 @@
         "realname": null,
         "username": "Christina's World : off & on"
       },
-      "photo_page_url": "https://www.flickr.com/photos/chrissie_bee/51540860321/",
+      "url": "https://www.flickr.com/photos/chrissie_bee/51540860321/",
       "safety_level": "safe",
       "secret": "09897ecb2b",
       "server": "65535",
@@ -200,7 +200,7 @@
         "realname": "Edoardo Angelucci",
         "username": "Edoardo Angelucci"
       },
-      "photo_page_url": "https://www.flickr.com/photos/edoardo_84/24995918722/",
+      "url": "https://www.flickr.com/photos/edoardo_84/24995918722/",
       "safety_level": "safe",
       "secret": "92f1c7c0c4",
       "server": "1720",
@@ -301,7 +301,7 @@
         "realname": "Rona Keller",
         "username": "the girl who made it on her own"
       },
-      "photo_page_url": "https://www.flickr.com/photos/ronaaa/9203233698/",
+      "url": "https://www.flickr.com/photos/ronaaa/9203233698/",
       "safety_level": "safe",
       "secret": "bb83dce2c2",
       "server": "2846",
@@ -405,7 +405,7 @@
         "realname": null,
         "username": "\u5a1c \u5a1c\u2602Nana"
       },
-      "photo_page_url": "https://www.flickr.com/photos/nana0313/8607219778/",
+      "url": "https://www.flickr.com/photos/nana0313/8607219778/",
       "safety_level": "safe",
       "secret": "d995940ac4",
       "server": "8402",
@@ -516,7 +516,7 @@
         "realname": "Sharleen Chao",
         "username": "Sharleen Chao"
       },
-      "photo_page_url": "https://www.flickr.com/photos/sharleenchao/7561090328/",
+      "url": "https://www.flickr.com/photos/sharleenchao/7561090328/",
       "safety_level": "safe",
       "secret": "bf7c510dba",
       "server": "8163",
@@ -637,7 +637,7 @@
         "realname": "David Shield",
         "username": "David Shield Photography"
       },
-      "photo_page_url": "https://www.flickr.com/photos/davidshield/6881195045/",
+      "url": "https://www.flickr.com/photos/davidshield/6881195045/",
       "safety_level": "safe",
       "secret": "b99950ebc8",
       "server": "7206",
@@ -750,7 +750,7 @@
         "realname": "Eric Rousset",
         "username": "Eric Rousset"
       },
-      "photo_page_url": "https://www.flickr.com/photos/pi-production/6835228609/",
+      "url": "https://www.flickr.com/photos/pi-production/6835228609/",
       "safety_level": "safe",
       "secret": "9a4b96154e",
       "server": "7159",
@@ -859,7 +859,7 @@
         "realname": "Nicholas  Scarpinato",
         "username": "Nicholas Scarpinato"
       },
-      "photo_page_url": "https://www.flickr.com/photos/nicholasscarpinato/6603237623/",
+      "url": "https://www.flickr.com/photos/nicholasscarpinato/6603237623/",
       "safety_level": "safe",
       "secret": "3ef3143856",
       "server": "7165",
@@ -1010,7 +1010,7 @@
         "realname": "Angus  Clyne",
         "username": "angus clyne"
       },
-      "photo_page_url": "https://www.flickr.com/photos/29609591@N08/6005696471/",
+      "url": "https://www.flickr.com/photos/29609591@N08/6005696471/",
       "safety_level": "safe",
       "secret": "a049c0657a",
       "server": "6147",
@@ -1122,7 +1122,7 @@
         "realname": "David Gn",
         "username": "David Gn Photography"
       },
-      "photo_page_url": "https://www.flickr.com/photos/davidgn/5894111739/",
+      "url": "https://www.flickr.com/photos/davidgn/5894111739/",
       "safety_level": "safe",
       "secret": "929b64ee9c",
       "server": "6040",

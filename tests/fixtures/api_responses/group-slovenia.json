@@ -42,7 +42,7 @@
         "realname": "URKO FOTO",
         "username": "Urko Photography"
       },
-      "photo_page_url": "https://www.flickr.com/photos/127849392@N04/53686676075/",
+      "url": "https://www.flickr.com/photos/127849392@N04/53686676075/",
       "safety_level": "safe",
       "secret": "e141202fb7",
       "server": "65535",
@@ -200,7 +200,7 @@
         "realname": null,
         "username": "SheffieldRambler"
       },
-      "photo_page_url": "https://www.flickr.com/photos/sheffield-rambler/53684201769/",
+      "url": "https://www.flickr.com/photos/sheffield-rambler/53684201769/",
       "safety_level": "safe",
       "secret": "191742cf36",
       "server": "65535",
@@ -287,7 +287,7 @@
         "realname": "Luka Esenko",
         "username": "lukaesenko"
       },
-      "photo_page_url": "https://www.flickr.com/photos/lukaesenko/53680803201/",
+      "url": "https://www.flickr.com/photos/lukaesenko/53680803201/",
       "safety_level": "safe",
       "secret": "058236d50d",
       "server": "65535",
@@ -381,7 +381,7 @@
         "realname": "ugur can",
         "username": "u c c r o w"
       },
-      "photo_page_url": "https://www.flickr.com/photos/uccrow/53674572912/",
+      "url": "https://www.flickr.com/photos/uccrow/53674572912/",
       "safety_level": "safe",
       "secret": "b6c8346470",
       "server": "65535",
@@ -485,7 +485,7 @@
         "realname": "Joe Bloggs",
         "username": "Mr Joseph Bloggs"
       },
-      "photo_page_url": "https://www.flickr.com/photos/joe_bloggs_railway_photos/53679127193/",
+      "url": "https://www.flickr.com/photos/joe_bloggs_railway_photos/53679127193/",
       "safety_level": "safe",
       "secret": "1261d02fd3",
       "server": "65535",
@@ -589,7 +589,7 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
-      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53677192486/",
+      "url": "https://www.flickr.com/photos/vid_pogacnik/53677192486/",
       "safety_level": "safe",
       "secret": "c125063d5f",
       "server": "65535",
@@ -686,7 +686,7 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
-      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53677548504/",
+      "url": "https://www.flickr.com/photos/vid_pogacnik/53677548504/",
       "safety_level": "safe",
       "secret": "3ed3be8ec0",
       "server": "65535",
@@ -783,7 +783,7 @@
         "realname": "Joe Bloggs",
         "username": "Mr Joseph Bloggs"
       },
-      "photo_page_url": "https://www.flickr.com/photos/joe_bloggs_railway_photos/53676795696/",
+      "url": "https://www.flickr.com/photos/joe_bloggs_railway_photos/53676795696/",
       "safety_level": "safe",
       "secret": "9877a79690",
       "server": "65535",
@@ -895,7 +895,7 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
-      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53675313713/",
+      "url": "https://www.flickr.com/photos/vid_pogacnik/53675313713/",
       "safety_level": "safe",
       "secret": "b6c1f82598",
       "server": "65535",
@@ -994,7 +994,7 @@
         "realname": "Vid Pogacnik",
         "username": "Vid Pogacnik"
       },
-      "photo_page_url": "https://www.flickr.com/photos/vid_pogacnik/53675446294/",
+      "url": "https://www.flickr.com/photos/vid_pogacnik/53675446294/",
       "safety_level": "safe",
       "secret": "dd16f1ba39",
       "server": "65535",

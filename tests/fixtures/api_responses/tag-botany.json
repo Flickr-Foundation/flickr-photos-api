@@ -38,7 +38,7 @@
         "realname": "Ben Senior",
         "username": "Ben_Senior"
       },
-      "photo_page_url": "https://www.flickr.com/photos/photosbybensenior/53669978526/",
+      "url": "https://www.flickr.com/photos/photosbybensenior/53669978526/",
       "safety_level": "safe",
       "secret": "5f6c3888bb",
       "server": "65535",
@@ -168,7 +168,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53659876377/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53659876377/",
       "safety_level": "safe",
       "secret": "095b183989",
       "server": "65535",
@@ -274,7 +274,7 @@
         "realname": null,
         "username": "icemanphotos"
       },
-      "photo_page_url": "https://www.flickr.com/photos/icemanphotos/53570031160/",
+      "url": "https://www.flickr.com/photos/icemanphotos/53570031160/",
       "safety_level": "safe",
       "secret": "aa43614eab",
       "server": "65535",
@@ -408,7 +408,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53507576180/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53507576180/",
       "safety_level": "safe",
       "secret": "7e40b3a030",
       "server": "65535",
@@ -512,7 +512,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53220674475/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53220674475/",
       "safety_level": "safe",
       "secret": "ac94e217bc",
       "server": "65535",
@@ -615,7 +615,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53192352778/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53192352778/",
       "safety_level": "safe",
       "secret": "2f66da15d4",
       "server": "65535",
@@ -714,7 +714,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/53085621278/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/53085621278/",
       "safety_level": "safe",
       "secret": "8c116017a4",
       "server": "65535",
@@ -817,7 +817,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53084807761/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53084807761/",
       "safety_level": "safe",
       "secret": "70123bfc17",
       "server": "65535",
@@ -924,7 +924,7 @@
         "realname": "Paul Paradis",
         "username": "Paul_Paradis"
       },
-      "photo_page_url": "https://www.flickr.com/photos/paradispaul/53084020901/",
+      "url": "https://www.flickr.com/photos/paradispaul/53084020901/",
       "safety_level": "safe",
       "secret": "e142044d05",
       "server": "65535",
@@ -1039,7 +1039,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/53076217676/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/53076217676/",
       "safety_level": "safe",
       "secret": "961dbcc394",
       "server": "65535",
@@ -1143,7 +1143,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/53076214816/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/53076214816/",
       "safety_level": "safe",
       "secret": "b7ba48ff0d",
       "server": "65535",
@@ -1246,7 +1246,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53072862002/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53072862002/",
       "safety_level": "safe",
       "secret": "9691243e15",
       "server": "65535",
@@ -1348,7 +1348,7 @@
         "realname": "Bernhard Niedermeier",
         "username": "NiBe60"
       },
-      "photo_page_url": "https://www.flickr.com/photos/162684392@N05/53070634124/",
+      "url": "https://www.flickr.com/photos/162684392@N05/53070634124/",
       "safety_level": "safe",
       "secret": "2c6af80ec3",
       "server": "65535",
@@ -1497,7 +1497,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53068919716/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53068919716/",
       "safety_level": "safe",
       "secret": "38a9a9d46f",
       "server": "65535",
@@ -1596,7 +1596,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/53067131719/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/53067131719/",
       "safety_level": "safe",
       "secret": "826aecc9ce",
       "server": "65535",
@@ -1699,7 +1699,7 @@
         "realname": null,
         "username": "jazzmoon12"
       },
-      "photo_page_url": "https://www.flickr.com/photos/jazzmoon12/53062006861/",
+      "url": "https://www.flickr.com/photos/jazzmoon12/53062006861/",
       "safety_level": "safe",
       "secret": "8602e28f0a",
       "server": "65535",
@@ -1810,7 +1810,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53059100807/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53059100807/",
       "safety_level": "safe",
       "secret": "ee28a75919",
       "server": "65535",
@@ -1913,7 +1913,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53058153535/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53058153535/",
       "safety_level": "safe",
       "secret": "d91a219385",
       "server": "65535",
@@ -2021,7 +2021,7 @@
         "realname": "Justin Martin",
         "username": "SpinalTapIn"
       },
-      "photo_page_url": "https://www.flickr.com/photos/121626365@N06/53056098016/",
+      "url": "https://www.flickr.com/photos/121626365@N06/53056098016/",
       "safety_level": "safe",
       "secret": "175223ba33",
       "server": "65535",
@@ -2113,7 +2113,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53046094944/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53046094944/",
       "safety_level": "safe",
       "secret": "cf23a92fed",
       "server": "65535",
@@ -2215,7 +2215,7 @@
         "realname": null,
         "username": "SkyeWeasel"
       },
-      "photo_page_url": "https://www.flickr.com/photos/95388056@N02/53038212565/",
+      "url": "https://www.flickr.com/photos/95388056@N02/53038212565/",
       "safety_level": "safe",
       "secret": "5cc8063769",
       "server": "65535",
@@ -2313,7 +2313,7 @@
         "realname": "Bernhard Niedermeier",
         "username": "NiBe60"
       },
-      "photo_page_url": "https://www.flickr.com/photos/162684392@N05/53026271952/",
+      "url": "https://www.flickr.com/photos/162684392@N05/53026271952/",
       "safety_level": "safe",
       "secret": "e768d2a439",
       "server": "65535",
@@ -2453,7 +2453,7 @@
         "realname": "Thad Zajdowicz",
         "username": "Thad Zajdowicz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/thadz/53022895912/",
+      "url": "https://www.flickr.com/photos/thadz/53022895912/",
       "safety_level": "safe",
       "secret": "ddfc0c4987",
       "server": "65535",
@@ -2566,7 +2566,7 @@
         "realname": null,
         "username": "Simon W. Photography"
       },
-      "photo_page_url": "https://www.flickr.com/photos/78590035@N06/53020649705/",
+      "url": "https://www.flickr.com/photos/78590035@N06/53020649705/",
       "safety_level": "safe",
       "secret": "123a195502",
       "server": "65535",
@@ -2695,7 +2695,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/53014111311/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/53014111311/",
       "safety_level": "safe",
       "secret": "2e6a92e457",
       "server": "65535",
@@ -2800,7 +2800,7 @@
         "realname": "Paul Paradis",
         "username": "Paul_Paradis"
       },
-      "photo_page_url": "https://www.flickr.com/photos/paradispaul/53008022829/",
+      "url": "https://www.flickr.com/photos/paradispaul/53008022829/",
       "safety_level": "safe",
       "secret": "2be08103e9",
       "server": "65535",
@@ -2913,7 +2913,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/53006757580/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/53006757580/",
       "safety_level": "safe",
       "secret": "1d92d40377",
       "server": "65535",
@@ -3014,7 +3014,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/52994960973/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/52994960973/",
       "safety_level": "safe",
       "secret": "d1cb632332",
       "server": "65535",
@@ -3119,7 +3119,7 @@
         "realname": "Russ Parman",
         "username": "parmrussrap"
       },
-      "photo_page_url": "https://www.flickr.com/photos/140249051@N03/52993721495/",
+      "url": "https://www.flickr.com/photos/140249051@N03/52993721495/",
       "safety_level": "safe",
       "secret": "ff81a1fac4",
       "server": "65535",
@@ -3232,7 +3232,7 @@
         "realname": null,
         "username": "SkyeWeasel"
       },
-      "photo_page_url": "https://www.flickr.com/photos/95388056@N02/52982829466/",
+      "url": "https://www.flickr.com/photos/95388056@N02/52982829466/",
       "safety_level": "safe",
       "secret": "990e60b5d4",
       "server": "65535",
@@ -3330,7 +3330,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52977625128/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52977625128/",
       "safety_level": "safe",
       "secret": "16b340971c",
       "server": "65535",
@@ -3434,7 +3434,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52973056133/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52973056133/",
       "safety_level": "safe",
       "secret": "5f5c1898a7",
       "server": "65535",
@@ -3540,7 +3540,7 @@
         "realname": "Paul Paradis",
         "username": "Paul_Paradis"
       },
-      "photo_page_url": "https://www.flickr.com/photos/paradispaul/52972568928/",
+      "url": "https://www.flickr.com/photos/paradispaul/52972568928/",
       "safety_level": "safe",
       "secret": "1cb68d9fea",
       "server": "65535",
@@ -3652,7 +3652,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52970599233/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52970599233/",
       "safety_level": "safe",
       "secret": "2abc4cc881",
       "server": "65535",
@@ -3751,7 +3751,7 @@
         "realname": "Pol Put",
         "username": "-Phantogram-"
       },
-      "photo_page_url": "https://www.flickr.com/photos/192130606@N07/52966714241/",
+      "url": "https://www.flickr.com/photos/192130606@N07/52966714241/",
       "safety_level": "safe",
       "secret": "c08e4f9381",
       "server": "65535",
@@ -3867,7 +3867,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52964647941/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52964647941/",
       "safety_level": "safe",
       "secret": "842ee5a1c9",
       "server": "65535",
@@ -3966,7 +3966,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52961345508/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52961345508/",
       "safety_level": "safe",
       "secret": "c541a94133",
       "server": "65535",
@@ -4072,7 +4072,7 @@
         "realname": "Ben The Man",
         "username": "B\u212en"
       },
-      "photo_page_url": "https://www.flickr.com/photos/visbeek/52958356841/",
+      "url": "https://www.flickr.com/photos/visbeek/52958356841/",
       "safety_level": "safe",
       "secret": "353bbf4bed",
       "server": "65535",
@@ -4215,7 +4215,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52957753005/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52957753005/",
       "safety_level": "safe",
       "secret": "35af69545d",
       "server": "65535",
@@ -4317,7 +4317,7 @@
         "realname": "Ben The Man",
         "username": "B\u212en"
       },
-      "photo_page_url": "https://www.flickr.com/photos/visbeek/52956487778/",
+      "url": "https://www.flickr.com/photos/visbeek/52956487778/",
       "safety_level": "safe",
       "secret": "e32dacb6c0",
       "server": "65535",
@@ -4461,7 +4461,7 @@
         "realname": "Ben The Man",
         "username": "B\u212en"
       },
-      "photo_page_url": "https://www.flickr.com/photos/visbeek/52952908537/",
+      "url": "https://www.flickr.com/photos/visbeek/52952908537/",
       "safety_level": "safe",
       "secret": "868980257e",
       "server": "65535",
@@ -4601,7 +4601,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52950805039/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52950805039/",
       "safety_level": "safe",
       "secret": "64a802f14a",
       "server": "65535",
@@ -4704,7 +4704,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52945257707/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52945257707/",
       "safety_level": "safe",
       "secret": "1d7ff5fc3f",
       "server": "65535",
@@ -4807,7 +4807,7 @@
         "realname": null,
         "username": "CrimeanArtist"
       },
-      "photo_page_url": "https://www.flickr.com/photos/simferopol/52943351150/",
+      "url": "https://www.flickr.com/photos/simferopol/52943351150/",
       "safety_level": "safe",
       "secret": "83ca4d0324",
       "server": "65535",
@@ -4970,7 +4970,7 @@
         "realname": null,
         "username": "eowina"
       },
-      "photo_page_url": "https://www.flickr.com/photos/23967510@N05/52942548981/",
+      "url": "https://www.flickr.com/photos/23967510@N05/52942548981/",
       "safety_level": "safe",
       "secret": "5a6f111cc6",
       "server": "65535",
@@ -5059,7 +5059,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52941081054/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52941081054/",
       "safety_level": "safe",
       "secret": "6d109e18c6",
       "server": "65535",
@@ -5158,7 +5158,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52937856112/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52937856112/",
       "safety_level": "safe",
       "secret": "a766336750",
       "server": "65535",
@@ -5257,7 +5257,7 @@
         "realname": "D'Arcy Guerin Gue",
         "username": "D'ArcyG"
       },
-      "photo_page_url": "https://www.flickr.com/photos/darcyg/52930376167/",
+      "url": "https://www.flickr.com/photos/darcyg/52930376167/",
       "safety_level": "safe",
       "secret": "bd41edd108",
       "server": "65535",
@@ -5359,7 +5359,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/52928607144/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/52928607144/",
       "safety_level": "safe",
       "secret": "27c7ea8211",
       "server": "65535",
@@ -5460,7 +5460,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52927534187/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52927534187/",
       "safety_level": "safe",
       "secret": "6e78582926",
       "server": "65535",
@@ -5559,7 +5559,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52928077721/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52928077721/",
       "safety_level": "safe",
       "secret": "48b7f0480f",
       "server": "65535",
@@ -5655,7 +5655,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52926130228/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52926130228/",
       "safety_level": "safe",
       "secret": "e7aafc7076",
       "server": "65535",
@@ -5758,7 +5758,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52920555936/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52920555936/",
       "safety_level": "safe",
       "secret": "193eda61a7",
       "server": "65535",
@@ -5859,7 +5859,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52916289402/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52916289402/",
       "safety_level": "safe",
       "secret": "e296171e77",
       "server": "65535",
@@ -5955,7 +5955,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52914365662/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52914365662/",
       "safety_level": "safe",
       "secret": "a98fe4b0cc",
       "server": "65535",
@@ -6059,7 +6059,7 @@
         "realname": "Gary Paakkonen",
         "username": "Paakkonen Photo"
       },
-      "photo_page_url": "https://www.flickr.com/photos/paakkonenphotos/52913143802/",
+      "url": "https://www.flickr.com/photos/paakkonenphotos/52913143802/",
       "safety_level": "safe",
       "secret": "82578e46f1",
       "server": "65535",
@@ -6174,7 +6174,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52911135721/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52911135721/",
       "safety_level": "safe",
       "secret": "c810e2dcf1",
       "server": "65535",
@@ -6270,7 +6270,7 @@
         "realname": "Russ Parman",
         "username": "parmrussrap"
       },
-      "photo_page_url": "https://www.flickr.com/photos/140249051@N03/52909348916/",
+      "url": "https://www.flickr.com/photos/140249051@N03/52909348916/",
       "safety_level": "safe",
       "secret": "8d8283a451",
       "server": "65535",
@@ -6387,7 +6387,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52903613285/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52903613285/",
       "safety_level": "safe",
       "secret": "6b317849ff",
       "server": "65535",
@@ -6491,7 +6491,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52900644395/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52900644395/",
       "safety_level": "safe",
       "secret": "65901c1d0c",
       "server": "65535",
@@ -6587,7 +6587,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52892170564/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52892170564/",
       "safety_level": "safe",
       "secret": "41241aec5a",
       "server": "65535",
@@ -6687,7 +6687,7 @@
         "realname": "Elias Rovielo",
         "username": "Heading to Patagonia. See you back in May."
       },
-      "photo_page_url": "https://www.flickr.com/photos/eliasroviello/52889840387/",
+      "url": "https://www.flickr.com/photos/eliasroviello/52889840387/",
       "safety_level": "safe",
       "secret": "74a648c0d9",
       "server": "65535",
@@ -6849,7 +6849,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52887790178/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52887790178/",
       "safety_level": "safe",
       "secret": "23b33120c9",
       "server": "65535",
@@ -6953,7 +6953,7 @@
         "realname": "Randy Mendelsohn",
         "username": "ranmen44"
       },
-      "photo_page_url": "https://www.flickr.com/photos/randymendelsohn/52885287364/",
+      "url": "https://www.flickr.com/photos/randymendelsohn/52885287364/",
       "safety_level": "safe",
       "secret": "fbbf2bbcac",
       "server": "65535",
@@ -7058,7 +7058,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52884764134/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52884764134/",
       "safety_level": "safe",
       "secret": "2559118082",
       "server": "65535",
@@ -7160,7 +7160,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52878540734/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52878540734/",
       "safety_level": "safe",
       "secret": "c7bd7db708",
       "server": "65535",
@@ -7263,7 +7263,7 @@
         "realname": "Bernhard Niedermeier",
         "username": "NiBe60"
       },
-      "photo_page_url": "https://www.flickr.com/photos/162684392@N05/52874317006/",
+      "url": "https://www.flickr.com/photos/162684392@N05/52874317006/",
       "safety_level": "safe",
       "secret": "e3d2b9e0cd",
       "server": "65535",
@@ -7406,7 +7406,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52872503787/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52872503787/",
       "safety_level": "safe",
       "secret": "faf27e6a5b",
       "server": "65535",
@@ -7510,7 +7510,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52871291202/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52871291202/",
       "safety_level": "safe",
       "secret": "c47bd50da1",
       "server": "65535",
@@ -7607,7 +7607,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52868538490/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52868538490/",
       "safety_level": "safe",
       "secret": "f4cfc2d051",
       "server": "65535",
@@ -7711,7 +7711,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52864867772/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52864867772/",
       "safety_level": "safe",
       "secret": "aa6dc9c7f1",
       "server": "65535",
@@ -7819,7 +7819,7 @@
         "realname": "Steve Rich",
         "username": "Steve\uf8ffRich"
       },
-      "photo_page_url": "https://www.flickr.com/photos/steverich_photography/52859494486/",
+      "url": "https://www.flickr.com/photos/steverich_photography/52859494486/",
       "safety_level": "safe",
       "secret": "cce4f36d5c",
       "server": "65535",
@@ -7949,7 +7949,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52856754235/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52856754235/",
       "safety_level": "safe",
       "secret": "55d6be4b42",
       "server": "65535",
@@ -8056,7 +8056,7 @@
         "realname": "Maurizio Della Siega",
         "username": "mauri11755"
       },
-      "photo_page_url": "https://www.flickr.com/photos/mauri11755/52855966466/",
+      "url": "https://www.flickr.com/photos/mauri11755/52855966466/",
       "safety_level": "safe",
       "secret": "6717ddeacc",
       "server": "65535",
@@ -8173,7 +8173,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52851489816/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52851489816/",
       "safety_level": "safe",
       "secret": "847084e5ed",
       "server": "65535",
@@ -8278,7 +8278,7 @@
         "realname": "Paul Paradis",
         "username": "Paul_Paradis"
       },
-      "photo_page_url": "https://www.flickr.com/photos/paradispaul/52848947134/",
+      "url": "https://www.flickr.com/photos/paradispaul/52848947134/",
       "safety_level": "safe",
       "secret": "caf825e51f",
       "server": "65535",
@@ -8392,7 +8392,7 @@
         "realname": "Frank Fullard",
         "username": "Frank Fullard"
       },
-      "photo_page_url": "https://www.flickr.com/photos/frankfullard/52846051487/",
+      "url": "https://www.flickr.com/photos/frankfullard/52846051487/",
       "safety_level": "safe",
       "secret": "2ea695dd3c",
       "server": "65535",
@@ -8490,7 +8490,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52843681024/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52843681024/",
       "safety_level": "safe",
       "secret": "712813cfe9",
       "server": "65535",
@@ -8593,7 +8593,7 @@
         "realname": "Frank Fullard",
         "username": "Frank Fullard"
       },
-      "photo_page_url": "https://www.flickr.com/photos/frankfullard/52842493888/",
+      "url": "https://www.flickr.com/photos/frankfullard/52842493888/",
       "safety_level": "safe",
       "secret": "0857409211",
       "server": "65535",
@@ -8688,7 +8688,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52839905282/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52839905282/",
       "safety_level": "safe",
       "secret": "47579af1e8",
       "server": "65535",
@@ -8792,7 +8792,7 @@
         "realname": "P-B Foto",
         "username": "P-B Foto"
       },
-      "photo_page_url": "https://www.flickr.com/photos/187587141@N04/52837314721/",
+      "url": "https://www.flickr.com/photos/187587141@N04/52837314721/",
       "safety_level": "safe",
       "secret": "175e28bb2d",
       "server": "65535",
@@ -8933,7 +8933,7 @@
         "realname": "Bernhard Niedermeier",
         "username": "NiBe60"
       },
-      "photo_page_url": "https://www.flickr.com/photos/162684392@N05/52834656014/",
+      "url": "https://www.flickr.com/photos/162684392@N05/52834656014/",
       "safety_level": "safe",
       "secret": "eca41efff8",
       "server": "65535",
@@ -9086,7 +9086,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52832336597/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52832336597/",
       "safety_level": "safe",
       "secret": "22f8574813",
       "server": "65535",
@@ -9189,7 +9189,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52830751943/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52830751943/",
       "safety_level": "safe",
       "secret": "edf023c91c",
       "server": "65535",
@@ -9281,7 +9281,7 @@
         "realname": "Cathy Labudak",
         "username": "clabudak"
       },
-      "photo_page_url": "https://www.flickr.com/photos/clabudak/52828917567/",
+      "url": "https://www.flickr.com/photos/clabudak/52828917567/",
       "safety_level": "safe",
       "secret": "bd0b08deff",
       "server": "65535",
@@ -9410,7 +9410,7 @@
         "realname": null,
         "username": "victor.chen@fIickr"
       },
-      "photo_page_url": "https://www.flickr.com/photos/vicch7/52828625873/",
+      "url": "https://www.flickr.com/photos/vicch7/52828625873/",
       "safety_level": "safe",
       "secret": "a954931d9d",
       "server": "65535",
@@ -9506,7 +9506,7 @@
         "realname": "Slavka K",
         "username": "Sl\u00e1vka K"
       },
-      "photo_page_url": "https://www.flickr.com/photos/149762673@N02/52826664066/",
+      "url": "https://www.flickr.com/photos/149762673@N02/52826664066/",
       "safety_level": "safe",
       "secret": "98c94bf5ec",
       "server": "65535",
@@ -9601,7 +9601,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52826023830/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52826023830/",
       "safety_level": "safe",
       "secret": "e097d19351",
       "server": "65535",
@@ -9700,7 +9700,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52825289971/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52825289971/",
       "safety_level": "safe",
       "secret": "89aa8c02a0",
       "server": "65535",
@@ -9798,7 +9798,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52819836204/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52819836204/",
       "safety_level": "safe",
       "secret": "c499983840",
       "server": "65535",
@@ -9901,7 +9901,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52815329086/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52815329086/",
       "safety_level": "safe",
       "secret": "78e71a3aa6",
       "server": "65535",
@@ -10006,7 +10006,7 @@
         "realname": "Bernhard Niedermeier",
         "username": "NiBe60"
       },
-      "photo_page_url": "https://www.flickr.com/photos/162684392@N05/52814679015/",
+      "url": "https://www.flickr.com/photos/162684392@N05/52814679015/",
       "safety_level": "safe",
       "secret": "c4126f3b9e",
       "server": "65535",
@@ -10147,7 +10147,7 @@
         "realname": null,
         "username": "Pictoscribe -"
       },
-      "photo_page_url": "https://www.flickr.com/photos/pictoscribe/52813852900/",
+      "url": "https://www.flickr.com/photos/pictoscribe/52813852900/",
       "safety_level": "safe",
       "secret": "337e1925ff",
       "server": "65535",
@@ -10244,7 +10244,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52813005044/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52813005044/",
       "safety_level": "safe",
       "secret": "4c0846f7c4",
       "server": "65535",
@@ -10349,7 +10349,7 @@
         "realname": "P-B Foto",
         "username": "P-B Foto"
       },
-      "photo_page_url": "https://www.flickr.com/photos/187587141@N04/52812765975/",
+      "url": "https://www.flickr.com/photos/187587141@N04/52812765975/",
       "safety_level": "safe",
       "secret": "a65cc0ab04",
       "server": "65535",
@@ -10490,7 +10490,7 @@
         "realname": "Kenneth Dagenais",
         "username": "Kens images"
       },
-      "photo_page_url": "https://www.flickr.com/photos/150922460@N03/52810838934/",
+      "url": "https://www.flickr.com/photos/150922460@N03/52810838934/",
       "safety_level": "safe",
       "secret": "91b2f422d3",
       "server": "65535",
@@ -10592,7 +10592,7 @@
         "realname": "Giuliano Da Zanche",
         "username": "ab.130722jvkz"
       },
-      "photo_page_url": "https://www.flickr.com/photos/99230652@N04/52810405039/",
+      "url": "https://www.flickr.com/photos/99230652@N04/52810405039/",
       "safety_level": "safe",
       "secret": "7d5b404834",
       "server": "65535",
@@ -10689,7 +10689,7 @@
         "realname": "Andrea D'Angiolo",
         "username": "Andrea D'Angiolo"
       },
-      "photo_page_url": "https://www.flickr.com/photos/darea62/52810310744/",
+      "url": "https://www.flickr.com/photos/darea62/52810310744/",
       "safety_level": "safe",
       "secret": "a9e9a07b86",
       "server": "65535",
@@ -10796,7 +10796,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52807550497/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52807550497/",
       "safety_level": "safe",
       "secret": "3b47683880",
       "server": "65535",
@@ -10900,7 +10900,7 @@
         "realname": "Bob Rumer.",
         "username": "rumerbob"
       },
-      "photo_page_url": "https://www.flickr.com/photos/bob_rumer_photography/52907799364/",
+      "url": "https://www.flickr.com/photos/bob_rumer_photography/52907799364/",
       "safety_level": "safe",
       "secret": "e568333ddb",
       "server": "65535",

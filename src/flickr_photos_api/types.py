@@ -120,31 +120,15 @@ class SinglePhotoInfo(typing.TypedDict):
     count_comments: int
     count_views: int
 
-    photo_page_url: str
-
-
-class SinglePhoto(typing.TypedDict):
-    id: str
-    title: str | None
-    description: str | None
-    owner: User
-    date_posted: datetime.datetime
-    date_taken: DateTaken | None
-    safety_level: SafetyLevel
-    license: License
     url: str
-    sizes: list[Size]
-    original_format: str | None
-    tags: list[str]
-    location: LocationInfo | None
 
 
-class SinglePhotoInfoWithSizes(SinglePhotoInfo):
+class SinglePhoto(SinglePhotoInfo):
     sizes: list[Size]
 
 
 class CollectionOfPhotos(typing.TypedDict):
-    photos: list[SinglePhotoInfoWithSizes]
+    photos: list[SinglePhoto]
 
     # Note: there are no parameters named like this in the Flickr API;
     # these names were chosen to match parameters that do exist like
