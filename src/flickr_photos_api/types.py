@@ -167,3 +167,15 @@ class PhotosInGroup(CollectionOfPhotos):
 PhotosFromUrl = (
     SinglePhoto | CollectionOfPhotos | PhotosInAlbum | PhotosInGallery | PhotosInGroup
 )
+
+
+class CommonsInstitution(typing.TypedDict):
+    """
+    Represents an institution in the Flickr Commons programme.
+    """
+
+    user_id: str
+    date_launch: datetime.datetime
+    name: str
+    site_url: str
+    license_url: str
