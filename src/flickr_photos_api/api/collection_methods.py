@@ -9,6 +9,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .license_methods import LicenseMethods
 from .user_methods import UserMethods
+from ..exceptions import ResourceNotFound
 from ..types import (
     CollectionOfPhotos,
     GroupInfo,
@@ -206,6 +207,10 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "page": str(page),
                 "per_page": str(per_page),
             },
+            exceptions={
+                "1": ResourceNotFound(f"Could not find album with ID: {album_id!r}"),
+                "2": ResourceNotFound(f"Could not find user with ID: {user_id!r}"),
+            },
         )
 
         # Albums are always non-empty, so we know we'll find something here
@@ -244,6 +249,9 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "extras": ",".join(self.extras),
                 "page": str(page),
                 "per_page": str(per_page),
+            },
+            exceptions={
+                "1": ResourceNotFound(f"Could not find gallery with ID: {gallery_id!r}")
             },
         )
 
@@ -290,6 +298,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
     def _get_photos_in_user_photostream(
         self, *, user_id: str, page: int, per_page: int
     ) -> CollectionOfPhotos:
+        # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
         resp = self.call(
             method="flickr.people.getPublicPhotos",
             params={
@@ -297,6 +306,9 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "extras": ",".join(self.extras),
                 "page": str(page),
                 "per_page": str(per_page),
+            },
+            exceptions={
+                "1": ResourceNotFound(f"Could not find user with ID: {user_id!r}")
             },
         )
 
@@ -321,7 +333,14 @@ class CollectionMethods(LicenseMethods, UserMethods):
         """
         Given the link to a group's photos or profile, return some info.
         """
-        resp = self.call(method="flickr.urls.lookupGroup", params={"url": url})
+        # See https://www.flickr.com/services/api/flickr.urls.lookupGroup.html
+        resp = self.call(
+            method="flickr.urls.lookupGroup",
+            params={"url": url},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find group with URL: {url!r}")
+            },
+        )
 
         # The lookupUser response is of the form:
         #

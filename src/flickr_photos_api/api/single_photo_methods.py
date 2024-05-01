@@ -23,7 +23,11 @@ class SinglePhotoMethods(LicenseMethods):
         This uses the flickr.photos.getInfo API.
         """
         info_resp = self.call(
-            method="flickr.photos.getInfo", params={"photo_id": photo_id}
+            method="flickr.photos.getInfo",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+            },
         )
 
         # The getInfo response is a blob of XML of the form:
@@ -235,7 +239,11 @@ class SinglePhotoMethods(LicenseMethods):
         Check if a photo has been deleted from Flickr.
         """
         try:
-            self.call(method="flickr.photos.getInfo", params={"photo_id": photo_id})
+            self.call(
+                method="flickr.photos.getInfo",
+                params={"photo_id": photo_id},
+                exceptions={"1": ResourceNotFound()},
+            )
         except ResourceNotFound:
             return True
         else:

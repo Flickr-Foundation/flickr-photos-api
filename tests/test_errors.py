@@ -30,12 +30,25 @@ from flickr_photos_api import (
             id="get_single_photo",
         ),
         pytest.param(
+            "get_single_photo",
+            {"photo_id": "DefinitelyDoesNotExist"},
+            id="get_single_photo_with_non_numeric_id",
+        ),
+        pytest.param(
             "get_photos_in_album",
             {
                 "user_id": "-1",
                 "album_id": "1234",
             },
             id="get_photos_in_album_with_missing_user",
+        ),
+        pytest.param(
+            "get_photos_in_album",
+            {
+                "user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist",
+                "album_id": "1234",
+            },
+            id="get_photos_in_album_with_missing_user_url",
         ),
         pytest.param(
             "get_photos_in_album",

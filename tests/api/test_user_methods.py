@@ -107,7 +107,11 @@ class TestGetUser:
     def test_get_user_with_unexpected_error(self) -> None:
         class BrokenApi(UserMethods):
             def call(
-                self, *, method: str, params: dict[str, str] | None = None
+                self,
+                *,
+                method: str,
+                params: dict[str, str] | None = None,
+                exceptions: dict[str, Exception] | None = None,
             ) -> ET.Element:
                 raise UnrecognisedFlickrApiException(
                     {"code": "6", "msg": "Mysterious error"}
