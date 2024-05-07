@@ -85,7 +85,7 @@ packaging==23.2
     #   pytest
 pathspec==0.12.1
     # via black
-pip-tools==7.3.0
+pip-tools==7.4.1
     # via -r dev_requirements.in
 pkginfo==1.9.6
     # via twine
@@ -108,7 +108,9 @@ pygments==2.17.2
     #   readme-renderer
     #   rich
 pyproject-hooks==1.0.0
-    # via build
+    # via
+    #   build
+    #   pip-tools
 pytest==7.4.3
     # via
     #   -r dev_requirements.in
