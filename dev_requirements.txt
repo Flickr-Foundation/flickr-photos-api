@@ -70,7 +70,7 @@ multidict==6.0.4
     # via
     #   aiohttp
     #   yarl
-mypy==1.7.1
+mypy==1.10.0
     # via -r dev_requirements.in
 mypy-extensions==1.0.0
     # via
