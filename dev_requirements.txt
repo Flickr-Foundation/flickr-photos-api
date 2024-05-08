@@ -85,9 +85,9 @@ pycodestyle==2.11.1
     # via flake8
 pycparser==2.22
     # via cffi
-pydantic==2.5.3
+pydantic==2.7.1
     # via -r dev_requirements.in
-pydantic-core==2.14.6
+pydantic-core==2.18.2
     # via pydantic
 pyflakes==3.1.0
     # via flake8
