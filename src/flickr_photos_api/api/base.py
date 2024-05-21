@@ -175,6 +175,9 @@ class HttpxImplementation(FlickrApi):
             try:
                 raise exceptions[errors["code"]]
             except KeyError:
-                raise UnrecognisedFlickrApiException(errors)
+                # Note: the `from None` means we don't include the KeyError in
+                # the traceback -- this is to avoid exposing internal details
+                # of the library to external callers.
+                raise UnrecognisedFlickrApiException(errors) from None
 
         return xml
