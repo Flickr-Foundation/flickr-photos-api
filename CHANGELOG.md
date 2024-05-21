@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.3.1 - 2024-05-21
+
+*   Remove irrelevant information from the traceback shown when the library throws a `UnrecognisedFlickrApiException`.
+    [#64](https://github.com/Flickr-Foundation/flickr-photos-api/issues/64)
+
 ## v2.3.0 - 2024-05-01
 
 *   Add a new method `get_photo_contexts(photo_id)` which returns information about all the contexts where this photo appears -- albums, galleries, and groups.
