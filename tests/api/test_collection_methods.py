@@ -1,6 +1,6 @@
 import pytest
 
-from flickr_photos_api import FlickrApi
+from flickr_photos_api import FlickrApi, ResourceNotFound
 from flickr_photos_api.types import (
     PhotosInAlbum,
     PhotosInGallery,
@@ -266,6 +266,12 @@ class TestGetPhotosInUserPhotostream:
 
         owner = result["photos"][0]["owner"]
         assert owner["path_alias"] is None
+
+    def test_handles_deleted_user(self, api: FlickrApi) -> None:
+        # This is the user ID of the Upper Midwest Jewish Archives, who deleted
+        # their Flickr account in May 2024.
+        with pytest.raises(ResourceNotFound):
+            api.get_photos_in_user_photostream(user_id="48143042@N05")
 
 
 def test_get_photos_in_group_pool(api: FlickrApi) -> None:
