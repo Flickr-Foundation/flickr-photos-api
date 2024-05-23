@@ -67,6 +67,14 @@ def is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, InvalidXmlException):
         return True
 
+    # This is a particular class of slightly flaky error that's difficult
+    # to reproduce -- relying on matching the text of the error is a bit
+    # fragile, but that's all we get from httpx.
+    if isinstance(exc, (httpx.ReadError, httpx.ConnectError)) and exc.args == (
+        "[Errno 54] Connection reset by peer",
+    ):
+        return True
+
     # Sometimes we get an error from the Flickr API like:
     #
     #     <err

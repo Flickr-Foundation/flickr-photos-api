@@ -134,27 +134,53 @@ def test_invalid_api_key_is_error(user_agent: str) -> None:
     api.client.close()
 
 
+class FlakyClient:
+    """
+    This is a version of the Flickr API client that will throw the
+    given exception on the first request, then fall back to the
+    working client.
+    """
+
+    def __init__(self, underlying: httpx.Client, exc: Exception):
+        self.underlying = underlying
+        self.exception = exc
+        self.get_request_count = 0
+
+    def get(self, url: str, params: dict[str, str], timeout: int) -> httpx.Response:
+        self.get_request_count += 1
+
+        if self.get_request_count == 1:
+            raise self.exception
+        else:
+            return self.underlying.get(url=url, params=params, timeout=timeout)
+
+
 def test_a_timeout_is_retried(api: FlickrApi) -> None:
-    # This client throws a timeout error on the first GET request,
-    # and then makes regular HTTP requests after that.
-    class FlakyClient:
-        def __init__(self, underlying: httpx.Client):
-            self.underlying = underlying
-            self.get_request_count = 0
-
-        def get(self, url: str, params: dict[str, str], timeout: int) -> httpx.Response:
-            self.get_request_count += 1
-
-            if self.get_request_count == 1:
-                raise httpx.ReadTimeout("The read operation timed out")
-            else:
-                return self.underlying.get(url=url, params=params, timeout=timeout)
-
-    api.client = FlakyClient(underlying=api.client)  # type: ignore
+    api.client = FlakyClient(
+        underlying=api.client, exc=httpx.ReadTimeout("The read operation timed out")
+    )  # type: ignore
 
     resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
     assert len(resp["photos"]) == 10
+
+
+def test_a_reset_connection_is_retried(api: FlickrApi) -> None:
+    api.client = FlakyClient(
+        underlying=api.client,
+        exc=httpx.ConnectError("[Errno 54] Connection reset by peer"),
+    )  # type: ignore
+
+    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
+
+    assert len(resp["photos"]) == 10
+
+
+def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
+    api.client = FlakyClient(underlying=api.client, exc=httpx.ConnectError(message="BOOM!"))  # type: ignore
+
+    with pytest.raises(httpx.ConnectError):
+        api.get_photos_in_user_photostream(user_id="61270229@N05")
 
 
 def test_retries_5xx_error(api: FlickrApi) -> None:

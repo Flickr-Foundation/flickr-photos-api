@@ -1,0 +1,203 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=61270229%40N05
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1c2XLbSLJ9Hn1FhW6Ew44gKCwEF7nVc2lKHsujxZeUux8VRaBAwgIBNhaxOU/z
+        D/M0vzdfMiersJAGLVmUqFbHdYQXAiQqa0OerJOn6qe//j4L2K2IEz8Kj/aNpr7PROhErh9Ojvaz
+        1NO6++yvP+/9FCdzlqQ8PdqPbvZxPZ9GaZSwOZ8IPLYvPyRH+2a7Sxcizr9AcWmU8kB+o7fx5F/U
+        o8x3j/Ztq2N1O2291zP3WbQIRXy03zbMjm6avf+90O19lggnFjDqGbYteh3T4nQvRoXxS9u28BOP
+        xzNctGHJTwPU5vh8eHX66n90q/c2YWdpk11F3BUxQ0F+LBLmxdGMXfBbHrARivIdwcyWbhtt7UK7
+        OO7aumboOlrhJ/NsHPiObJ+feLEvQlQaTcIFn/nBUl7gFyJMYLeDqnFPpMvrQNwKNBlfujwV2TxA
+        BVBKx2i39G7PyO+n/Eagz03dbGm6rRltZpiHhoE/6jn5/STmYRbw2E+VtfKLLLwJ0WXypuy6kM9Q
+        CbRreS5c3/FDsY8m86C6z6ovnCgL0+tbXywwaBYMqhtONJuJMMU9Gjg+wQeUGvsOT0IUzFzhUVun
+        KDadYsRDZ8m+RH6YjnkiEh7yMI1CP2JUtWWUxegkP+XxEh1TfpeK33nCstBPhUszSiRoQOxP/JAH
+        xXCPO6Ln6R2DY3yL77wontH8+zKfoNM5Bjtz0WAagSicVFfccbKYO6q7nCiEPTyFzzN0Cz/al9Mv
+        v7qmCmRoJTrKXe6zLA6uk9+O9qdpOk8ODw4C/1Y06Te+42Gcb+ImeuhATryDlcl7XU3P66QpKzgV
+        /mSaysI6aMTCd9NpeUVmUKdHWEnXrKCsDsZQGcEF5m/elkcZma03Rc7gsimYuK3cCl6/7ZuyZgMl
+        WTbeI9USXNlFS6KH26gm0XW0ZgVlGbJgZQaXZtljjxv839bsoCzYKcwUVzT4cA7b99j1eM0KyurQ
+        G6wagysDDoUcMt7QwOeY3PTq0uSXPgEe+C8/uSJxYn+ewun//PHy9OKKveuPTtiof8H6F1eXF6eX
+        2vvL4RVunLMPl59HuMX+889/sdfnfMmMdoOR03ojb31ujprkTZfS1Z75PHe3DeVtVpzsIIrnCYoY
+        Dd6wBVwAX/DYFS5Lp4IdK8eCZ+Dp8MZHWVI6Z5SDUsZLNpi5cZMNRYjn/IS94+FNXl6Duf6tTxjG
+        nKkvvMZKgaoSQ7zgaH6SsKuY+yHgjZ2GCTmRVLDXEjLeVE99kA6O9ZWHe338oY8v3Symx6YllJCr
+        ZI6IxSwKl7gfuIynsjnvozhlIz5jH9AQuET2tyjw2CDIxgUaNVjkUVXCZBnc8tDnDTaMZuqDCAM/
+        gXdkfihLk72Lzx+zYIme11uMh67sQvLXfkLtxq95iCcTfxKyW4wCPXgaagSWhHCf4ghuUcgq4zNg
+        ZUZFnvPYmaJMw2zith/FgGsJsNRS2Sv/+ee/YYc6lUXAdbjCKExQeQ+lxo0CWyUmowqJtOuKOY9T
+        aQtQ4eJXw9NBf3jCLqsSLmUJsiWxmKBQDFIgJvjXD28FRmbCMREaOVB/iJI5kCTA5TwQSYOd4mLZ
+        ZKqOAGSGeRf7WgHoUTxBX/5D1pbiFs9D7TCF5Gztx7OlLBj/kv2+H9OIoTbzOPIwR2RtEpR+FjkA
+        KJehkI8Ec5hzmKQj9HQ/R7rXH9+N+m9qA46pJCuGfkJsxcYRZhNiD9+lPiGbYRRq5Q0JoRKfaKoS
+        FqmpmhZTFegcA2CpfxciCOj/1aqWj+ImjSyq/rp6L1W8hca/y+KYnv6EiInGTsVAxWs6FImQs+Ez
+        oHm1jQdDEQi0233z08Gq40AodyDL/kZQ170vqHNM1zZsz2t5zxTUoUJ/VFBn/gjqdC5sa9y2u70/
+        QVDXNa+r6bmzoG7dyo6CunUjuwrq1qzsKKiDjWoS7TCoW++xXQV161Z+BHU/grofQd2PoK6MP19c
+        UNfrdo2eDT7wTqauy43e2LU9CniehamzdhfU6YhUSsLta6au1Tk0wew8L1OHCPZlMXU9XR/but02
+        XnhQl0/e62p67iKo22ClFtS1S35rS6Zug5F6UNcueSdi5bdg6upWakGdhVfvUUxdYaOaRPcHdSYx
+        asShPYCp29BjOwjqNlipBXXtbtlnfw6mriH5fUWeEPPl8gy8Nj4QiZEQTQUiAfTL3J9L/mcaxeB/
+        /r8xZTnvVbGY95OOklfLicc/Ob+WhZReW6VxN/CnP1i452bhWrre03stSqHdlVp1DGfc7nmmAwS/
+        L2C76J8PP7NjviROexolacISB2nR1AeZi4AVGVbwxgsfbKeLXKsDBhekpRNHIDORhQDbWJGcOdvI
+        ZPLVNJB8fT/q6e3dJl/bhFkbQjrTYHr30LIODcS3zxrSmXeFdJlKu+adBr5YMbRI6caZq0YhnMUO
+        aiw/R1PkXu/OrHJjbHWMXtdBiugFZ1aLuXtdzc4dxGubrNRJuDJ9u128tslIPV7rPjJe22ClFq9V
+        iejtMquljWoS1eO1ltnF1Cozq3bHwAR/WLy2qceePl7bZKVOwrXhD7bNrA74HCnRX5FKBDweIxmb
+        Jnh5T09Pv5l6GSCfR4FV7mEpvYdL8qllwg0pnlukkZCCmwuZxkRSj8dIhCLHgzQNkJiyc2XesNDB
+        1PwumXFJpxLNZaIOf6HaiX3kt/LwjZcOPc9q/gqVxhQ5sBjZLDJTJVCRSVRVbrBL8kGUJjYN5DqR
+        DIQNFD+OIwocUcuJoKdXcYOqkgpnGsr0VwUcUqiTo4fMg54PX/HZ/C39PV6tMJqOhLCTAWWoLO4i
+        o4psXukvke9NfeQCkVdkTpw5PszgGSqz1i95PrXsRKnj+Mp0Pi5Is23IsiGpi5zxCLm7G97c23sV
+        pG85m8bCO3r1Wxalb4vE/2KxaLoYymSKrHAo0oMQYpyDFjnn3oH08Jpy65oEWq0CWi0HWo2AViv7
+        S1NdpUmgxW9kDEpJRgkayjj6JMjrESJSR3IyxliEkRcFQbRQv3k1Sd9uXblms0ktPuBUygPyhVYL
+        oq97IhVT73LTE4Y1vj9SqQZmlMUTQSl4AZEUzS9Bqh5M3xuxDCNk/4sXKJ/lpo3o5aJ/dUnJccyb
+        GakSVDw/iEL0GDQBQkUtho2o5aTf1o3dRi2mBc5gExFlM711qOv488xRC2LFb/JQq3ITivry+AWr
+        SFzhtaNbiRoU6CvkmMCDqZ4uXkfotoqeRjobnsmFXgEvCTxHgFd8g2RMdG2jpbs2yYdecGADvaOc
+        6tfVZN5BYLPJSp2Iwvv2SMlYrSn1wKYSQG1JRNU7rBbYUIjxKCKqsFFNonpgY9kVcwfJmN0hdvhh
+        gc2mYXn6wGaTlToRRZTgtoFN/3x0dTI87p8jkKneyVwdZhfqMEiuYtZ3Z03EBlBOsV9I20SY+03f
+        DI3VN50ziTxJP8NMk/WDwCc1DLAeWpYUPgQXSnn1Xd4b2jTSseU1bVLNigACJJaUWxVSWUnTCA/i
+        U6x14bxmESIsKIsQ1/wOxgteC1ohCFwdPudjUrtSxfA7jwMkoLgCWijBj5el0F9VGip4vQTCYfQM
+        ZNT0g2m0oBYg/lora+FDsSPCqYxoJCxBuQfijaKbOaRYSkIFKZ1HgYoKCHP90GYVkFLRfSSZk8PZ
+        WZOdOxdZkC4foO5pQ7DdIj97F6+ge72u5zkuyYDu5RXEgjkBwjSHupUcPJtPl1RBBGrw+XwOCbFS
+        skG/DZUaQTMkUg3olPyASAYA/Jn4IjKAjERmi/iEdx1rt2LujtVb1fWspIgsBiW3bR3qz80nwN5d
+        yMyDHGIx9wCrDmLpIO+3cOY4q+qzYgSKAVjD9ULZraTgmLIr5eBdmTo8jjCgfI2OYBMfCnEEskmC
+        MavLvjt2W3TNsdd2XziGqxfgupriO8HwupU6OVGutbcjJ6xu3cgGhVC5CN4Ww2tW6uREiUfbkRNl
+        S6pJtIGcsLolm0MY3qO05UMxvN5ju8DwupU6OWGj9ttiuCIn/i6g9KUV/QJLd+US8H9GWAcwpc0n
+        EL8WRIM/HsPN0qKzoTbRBMKjFT2TvEBDCsCHmbuEVlb65lK0K5XfYDKYieIGAcc6fRDhdyM+hy31
+        oIKlM469G2zoi7EIlDhX3cdDuD9KiUxAyTnYFzXL+Y5fcxDEiraSe1MZQzFV4Kz0wAPZToIMBSOo
+        DCnTpbZ3AEdWIEkeJlgqoIFAuhDSnqsWzGbgWiEQloro0VwQr4CMGG1aimDVkQ39CAE4uvjXKHKT
+        bdgAs2URM6ApeNRyeNQK56zl3rkQeicaraXQ/VqikFHL3fsTrf/vq86W63+a7e171/8OtMLtboe2
+        N/zBEcXORCeIKL6xPUxFFJ1DfTWD8Rzbw15yRFGPIXpcWJ7TMzovXJAigbcNHqCc1DuLIdat1GII
+        u5QkPCaGWDdSjyHMUvbymBhizcrXMYTZLsH9MTEEbFSTaEMMYXSx17RMcHS6PbRsmxhivcd2FUOs
+        W6nFEHbrEYKU9Q0kOayuIqhK+rN5BGSlZRvHso7S4BEiDFrLbwfc3CP4pgAlliGJhiBCrnyLvVgN
+        9gPctyH3dwPuvZ7dsTqUb76LLsAetI6h23yM+ViAO5BQ7e6m3chqczftldaxW1pvm2zQ/4SNixS7
+        svc8FnJn1Dk2/GJj8q40odivvlkTaurgkw4t45B4kWcVENCe3G+u+B3wRiDavTxjtbpOr0On5bZM
+        z+Q2bX7/mkKfzTGAj9h1TTnLx+26tgzL6shd1/mEAoVeTJmng847rdShs0SCB0HnnUbq0EmnHOQb
+        yB+i5bzLSg066diGLSj0uo1qEm3QcuqVzIE2YffM79Vy3tljTwadd1qpQ2enHP2Haznv8F2M7el2
+        09Txx2zt/UIvDqkvP4k0XTK1bTZeWUmvLjDZ3v2QzPZgoA8iWzpKWr472N85xs5eXABTZR6uxg6w
+        BCwAmGxFDNSFCQTl99t+fXE+GJy9wXpesg/Kd0uGG3lpP/wt8xNwibkIAjWTP6cqqt/3wy8cyQRw
+        AyCKwQFwCCfJv5Hx0sMV+7HxPZb3cvf1J36L1T8JpL5vyW8a+ZJ/b++YuuWKTuI4XBkUefcT0vLC
+        XblNCzTL3Bvgy0kULw8/cecGXZwP4enxIUhDS9f3fjkdnl4cStmbvkZT7733A6QEZuLw+PL42jB0
+        CwcTdFp7ZzgHJJ3KRK8FjNmT25LRnsNB//wTOzv5ePL54gS5mEGDfR7tfXfWvddDqsi4D5jHbdPV
+        vbFtOd+x6j4fng3YSYj0Loh6tWV6hZUZZfM57YxH9oIImqWMCfuOJGXAkZyGbqSh06SYsH85lEn2
+        lkF99MtZ1+5oBi52heztbm+TNLCFzP4flWRHJPFtKn8WB0iWzDwkTMDoS3llecgD+4JsFI5CAJfl
+        0SQF13UDLn6Bw3O+PmlFeDixp+c6bezBfslp83yuXlez8ekwvzrPZYOVJ9cDInyRr91qU55eD7jB
+        ypPrAUsb1SSqY36nXZLUBPk67Zl64Gp5Q4c9GeTfOfZPKweULDcoYd8Fgv4t9oHk6RRkNmRtZ4NC
+        p3cs5hlg/hhnReAgj+NcRC0P+5j7DqWQkSkGxLHFFFhBXvMiihccJ1mMMzhWkNtEYL+Xbz3EeOq1
+        b7CP5BAaLIFlEgkqoBfQ1KBcaV/muU/WUtqF6uk9PDK4c5yDcnL+/o3017eKSL+iEvKIZCupW8tq
+        HUDAHIDXVpihyaMwtCKdLWItUZgBHRsAAxI3Mqz5hBRzhRQaj+InIrfvq8525LacvibRkXetf223
+        17Gsrut+x2EYcsSeFmYtw6xgFhc7hFmUXdOyWZph/lEweye/LWF2BUgVsq7g7pRiTLxRkFPiNdyw
+        qG63x13Tc7rgJF48wJq962oe7gxg163sCGDXjewKYNes7AhgYcMqJ9EGXZo87qvko1tYNGyHsOs9
+        tiuEXbfytAi7hqQjyOOxvBjgYDAcg4a1nxLF/18GxRhh4zlPcb2ALhjXhI0ZDqfCIWKk3yJheHSr
+        TsvCcxC53ELwheWp0sp/hb3NvAyGQ6MiNg/4krZCkk4L5wbSgU5RjtTSbQfRBEli35EKfnWeltox
+        BXRlRguHe6XrIC6x+we8FmdN5YdOJTiE9ACnkv68919MNJ6ExFQAAA==
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 23 May 2024 09:21:03 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 f9b4eb435f0b621adc8e78b8d2ac6e70.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - NHWFlkKKEfKXQPJczdumLjNqq4sL_Po-VcyP5jYUz3C-Fjh1tAzSVQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 09:21:03 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 09:21:03 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-664f0a7f-4f888ef57ad875041e09f811;Root=1-664f0a7f-2c131b045e9fda01781aad6a
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.29.143
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
+        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
+        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
+        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
+        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
+        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
+        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
+        Gq1B5xszAPMM4wQAAA==
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 23 May 2024 09:21:03 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 f9b4eb435f0b621adc8e78b8d2ac6e70.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 0iQ8odqt87AGfo0UazNfahfFMvV76eQtpZFv5VHt2QU-MzZAUsbHgg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 09:21:03 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-664f0a7f-2a93702a4f449231637ce2dc;Root=1-664f0a7f-669bb5846f76603d2ccca612
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.29.143
+    status:
+      code: 200
+      message: OK
+version: 1
