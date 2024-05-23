@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.3.2 - 2024-05-23
+
+*   Retry "connection reset by peer" errors from the Flickr API.
+
 ## v2.3.1 - 2024-05-21
 
 *   Remove irrelevant information from the traceback shown when the library throws a `UnrecognisedFlickrApiException`.
