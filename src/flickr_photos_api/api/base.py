@@ -67,11 +67,16 @@ def is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, InvalidXmlException):
         return True
 
-    # This is a particular class of slightly flaky error that's difficult
+    # These are a particular set of slightly flaky errors that are hard
     # to reproduce -- relying on matching the text of the error is a bit
     # fragile, but that's all we get from httpx.
     if isinstance(exc, (httpx.ReadError, httpx.ConnectError)) and exc.args == (
         "[Errno 54] Connection reset by peer",
+    ):
+        return True
+
+    if isinstance(exc, httpx.RemoteProtocolError) and exc.args == (
+        "Server disconnected without sending a response.",
     ):
         return True
 

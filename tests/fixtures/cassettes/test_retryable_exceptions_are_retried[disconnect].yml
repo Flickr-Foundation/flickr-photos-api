@@ -1,0 +1,218 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=61270229%40N05
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 23 May 2024 14:44:09 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - mMffuRYFQfDDjcIZtK6huUDvQ3iIteTa8Tw4XswrnQWDJ2sBVqbAfg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 14:44:08 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 14:44:08 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-664f5638-0b43acea4d2cc6603cc47529;Root=1-664f5638-73a1c5043d5b92a05f39aa6c
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.31.120
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
+        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
+        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
+        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
+        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
+        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
+        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
+        Gq1B5xszAPMM4wQAAA==
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 23 May 2024 14:44:09 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - agA5rhteTfatLOs7nouQNwpa6AquYCw3rjT35PycxEgiWe6mcEgjZQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-encoding:
+      - gzip
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 22-Jun-2024 14:44:09 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Self=1-664f5639-74a95b2f61b2b70f7f82b825;Root=1-664f5639-06ac0d371d7c789a7a837551
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.31.120
+    status:
+      code: 200
+      message: OK
+version: 1

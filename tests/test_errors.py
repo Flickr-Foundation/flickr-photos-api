@@ -162,6 +162,12 @@ class FlakyClient:
         pytest.param(
             httpx.ConnectError("[Errno 54] Connection reset by peer"), id="conn_reset"
         ),
+        pytest.param(
+            httpx.RemoteProtocolError(
+                "Server disconnected without sending a response."
+            ),
+            id="disconnect",
+        ),
     ],
 )
 def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> None:
