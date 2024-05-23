@@ -155,21 +155,17 @@ class FlakyClient:
             return self.underlying.get(url=url, params=params, timeout=timeout)
 
 
-def test_a_timeout_is_retried(api: FlickrApi) -> None:
-    api.client = FlakyClient(
-        underlying=api.client, exc=httpx.ReadTimeout("The read operation timed out")
-    )  # type: ignore
-
-    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
-
-    assert len(resp["photos"]) == 10
-
-
-def test_a_reset_connection_is_retried(api: FlickrApi) -> None:
-    api.client = FlakyClient(
-        underlying=api.client,
-        exc=httpx.ConnectError("[Errno 54] Connection reset by peer"),
-    )  # type: ignore
+@pytest.mark.parametrize(
+    "exc",
+    [
+        pytest.param(httpx.ReadTimeout("The read operation timed out"), id="timeout"),
+        pytest.param(
+            httpx.ConnectError("[Errno 54] Connection reset by peer"), id="conn_reset"
+        ),
+    ],
+)
+def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> None:
+    api.client = FlakyClient(underlying=api.client, exc=exc)  # type: ignore
 
     resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
 
