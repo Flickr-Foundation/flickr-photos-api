@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.3.3 - 2024-05-23
+
+*   Retry "Server disconnected without sending a response" errors from the Flickr API.
+
 ## v2.3.2 - 2024-05-23
 
 *   Retry "connection reset by peer" errors from the Flickr API.
