@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.3.4 - 2024-05-24
+
+*   Retry every error that returns a 5xx status code, not just 500.
+
+    For example, a `502 Bad Gateway` error will now be retried where previously it would fail immediately.
+
 ## v2.3.3 - 2024-05-23
 
 *   Retry "Server disconnected without sending a response" errors from the Flickr API.

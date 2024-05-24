@@ -58,7 +58,7 @@ def is_retryable(exc: BaseException) -> bool:
     or transient errors that might return a different result),or
     False otherwise.
     """
-    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code == 500:
+    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code >= 500:
         return True
 
     if isinstance(exc, httpx.ReadTimeout):
