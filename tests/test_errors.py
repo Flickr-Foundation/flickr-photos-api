@@ -179,7 +179,9 @@ def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> Non
 
 
 def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
-    api.client = FlakyClient(underlying=api.client, exc=httpx.ConnectError(message="BOOM!"))  # type: ignore
+    api.client = FlakyClient(
+        underlying=api.client, exc=httpx.ConnectError(message="BOOM!")
+    )  # type: ignore
 
     with pytest.raises(httpx.ConnectError):
         api.get_photos_in_user_photostream(user_id="61270229@N05")
