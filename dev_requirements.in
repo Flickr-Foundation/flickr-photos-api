@@ -3,7 +3,6 @@ build
 coverage
 flake8
 mypy
-pip-tools
 pydantic
 pytest
 pytest-cov
