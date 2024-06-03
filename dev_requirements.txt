@@ -13,9 +13,7 @@ charset-normalizer==3.3.2
 click==8.1.7
     # via black
 coverage==7.5.3
-    # via
-    #   -r dev_requirements.in
-    #   pytest-cov
+    # via pytest-cov
 docutils==0.21.2
     # via readme-renderer
 flake8==7.0.0
@@ -84,9 +82,7 @@ pygments==2.18.0
 pyproject-hooks==1.1.0
     # via build
 pytest==8.2.1
-    # via
-    #   -r dev_requirements.in
-    #   pytest-cov
+    # via pytest-cov
 pytest-cov==5.0.0
     # via -r dev_requirements.in
 pyyaml==6.0.1
