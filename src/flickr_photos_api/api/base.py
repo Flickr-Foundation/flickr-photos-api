@@ -19,7 +19,7 @@ from ..exceptions import (
 )
 
 
-HttpMethod = typing.Literal["GET"]
+HttpMethod = typing.Literal["GET", "POST"]
 
 
 class FlickrApi(abc.ABC):
@@ -109,17 +109,23 @@ class HttpxImplementation(FlickrApi):
     and ``tenacity`` for retrying failed API calls.
     """
 
-    def __init__(self, *, api_key: str, user_agent: str) -> None:
+    def __init__(self, *, client: httpx.Client) -> None:
+        self.client = client
+
+    @classmethod
+    def with_api_key(cls, *, api_key: str, user_agent: str) -> typing.Self:
         if not api_key:
             raise ValueError(
                 "Cannot create a client with an empty string as the API key"
             )
 
-        self.client = httpx.Client(
+        client = httpx.Client(
             base_url="https://api.flickr.com/services/rest/",
             params={"api_key": api_key},
             headers={"User-Agent": user_agent},
         )
+
+        return cls(client=client)
 
     def call(
         self,
