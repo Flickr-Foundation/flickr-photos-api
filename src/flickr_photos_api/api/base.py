@@ -1,4 +1,5 @@
 import abc
+import typing
 from xml.etree import ElementTree as ET
 
 import httpx
@@ -18,6 +19,9 @@ from ..exceptions import (
 )
 
 
+HttpMethod = typing.Literal["GET", "POST"]
+
+
 class FlickrApi(abc.ABC):
     """
     This is a basic model for Flickr API implementations: they have to provide
@@ -33,6 +37,7 @@ class FlickrApi(abc.ABC):
     def call(
         self,
         *,
+        http_method: HttpMethod = "GET",
         method: str,
         params: dict[str, str] | None = None,
         exceptions: dict[str, Exception] | None = None,
@@ -104,28 +109,38 @@ class HttpxImplementation(FlickrApi):
     and ``tenacity`` for retrying failed API calls.
     """
 
-    def __init__(self, *, api_key: str, user_agent: str) -> None:
+    def __init__(self, *, client: httpx.Client) -> None:
+        client.base_url = httpx.URL("https://api.flickr.com/services/rest/")
+        self.client = client
+
+    @classmethod
+    def with_api_key(cls, *, api_key: str, user_agent: str) -> typing.Self:
         if not api_key:
             raise ValueError(
                 "Cannot create a client with an empty string as the API key"
             )
 
-        self.client = httpx.Client(
-            base_url="https://api.flickr.com/services/rest/",
+        client = httpx.Client(
             params={"api_key": api_key},
             headers={"User-Agent": user_agent},
         )
 
+        return cls(client=client)
+
     def call(
         self,
         *,
+        http_method: HttpMethod = "GET",
         method: str,
         params: dict[str, str] | None = None,
         exceptions: dict[str, Exception] | None = None,
     ) -> ET.Element:
         try:
             return self._call_api(
-                method=method, params=params, exceptions=exceptions or {}
+                http_method=http_method,
+                method=method,
+                params=params,
+                exceptions=exceptions or {},
             )
         except RetryError as retry_err:
             retry_err.reraise()
@@ -138,16 +153,19 @@ class HttpxImplementation(FlickrApi):
     def _call_api(
         self,
         *,
+        http_method: HttpMethod,
         method: str,
         params: dict[str, str] | None,
         exceptions: dict[str, Exception],
     ) -> ET.Element:
         if params is not None:
-            get_params = {"method": method, **params}
+            req_params = {"method": method, **params}
         else:
-            get_params = {"method": method}
+            req_params = {"method": method}
 
-        resp = self.client.get(url="", params=get_params, timeout=15)
+        resp = self.client.request(
+            method=http_method, url="", params=req_params, timeout=15
+        )
         resp.raise_for_status()
 
         # Note: the xml.etree.ElementTree is not secure against maliciously

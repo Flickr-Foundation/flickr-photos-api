@@ -69,3 +69,8 @@ class UserDeleted(ResourceNotFound):
 class LicenseNotFound(FlickrApiException):
     def __init__(self, license_id: str):
         super().__init__(f"Unable to find license with ID {license_id}")
+
+
+class InsufficientPermissionsToComment(FlickrApiException):
+    def __init__(self, *, photo_id: str) -> None:
+        super().__init__(f"Insufficient permissions to comment on photo {photo_id}")

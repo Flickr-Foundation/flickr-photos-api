@@ -30,6 +30,9 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+oauth=["authlib"]
+
 [project.urls]
 "Homepage" = "https://github.com/Flickr-Foundation/flickr-photos-api"
 "Changelog" = "https://github.com/Flickr-Foundation/flickr-photos-api/blob/main/CHANGELOG.md"

@@ -1,3 +1,6 @@
+-e file:.
+-e file:.[oauth]
+
 build
 mypy
 pydantic

@@ -1,3 +1,4 @@
+import typing
 from xml.etree import ElementTree as ET
 
 import pytest
@@ -109,6 +110,7 @@ class TestGetUser:
             def call(
                 self,
                 *,
+                http_method: typing.Any = None,
                 method: str,
                 params: dict[str, str] | None = None,
                 exceptions: dict[str, Exception] | None = None,

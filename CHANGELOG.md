@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## v2.4.0 - 2024-06-13
+
+*   The constructor on `FlickrApi` has changed.
+
+    Previously:
+
+    ```
+    from flickr_photos_api import FlickrApi
+
+    FlickrApi(api_key: str, user_agent: str)
+    ```
+
+    Now:
+
+    ```
+    from flickr_photos_api import FlickrApi
+
+    FlickrApi(client: httpx.Client)
+    FlickrApi.with_api_key(api_key: str, user_agent: str)
+    ```
+
+    This is to make the underlying HTTP client a bit more flexible.
+
+*   There's a new method on `FlickrApi`: `post_comment(photo_id: str, comment_text: str)`.
+
+    This allows you to post comments on Flickr photos, if you pass an HTTPX client that has OAuth 1.0a set up with Flickr.
+    See the tests for an example of how this works.
+
 ## v2.3.4 - 2024-05-24
 
 *   Retry every error that returns a 5xx status code, not just 500.

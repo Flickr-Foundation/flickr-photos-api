@@ -1,3 +1,5 @@
+import typing
+
 import httpx
 import pytest
 
@@ -101,7 +103,7 @@ def test_methods_fail_if_not_found(
 
 
 def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
-    api = FlickrApi(api_key="doesnotexist", user_agent=user_agent)
+    api = FlickrApi.with_api_key(api_key="doesnotexist", user_agent=user_agent)
 
     with pytest.raises(FlickrApiException):
         api.get_user(user_url="https://www.flickr.com/photos/flickr/")
@@ -111,11 +113,11 @@ def test_empty_api_key_is_error(user_agent: str) -> None:
     with pytest.raises(
         ValueError, match="Cannot create a client with an empty string as the API key"
     ):
-        FlickrApi(api_key="", user_agent=user_agent)
+        FlickrApi.with_api_key(api_key="", user_agent=user_agent)
 
 
 def test_invalid_api_key_is_error(user_agent: str) -> None:
-    api = FlickrApi(api_key="<bad key>", user_agent=user_agent)
+    api = FlickrApi.with_api_key(api_key="<bad key>", user_agent=user_agent)
 
     with pytest.raises(InvalidApiKey) as err:
         api.get_single_photo(photo_id="52578982111")
@@ -144,15 +146,24 @@ class FlakyClient:
     def __init__(self, underlying: httpx.Client, exc: Exception):
         self.underlying = underlying
         self.exception = exc
-        self.get_request_count = 0
+        self.request_count = 0
 
-    def get(self, url: str, params: dict[str, str], timeout: int) -> httpx.Response:
-        self.get_request_count += 1
+    def request(
+        self,
+        *,
+        method: typing.Literal["GET"] = "GET",
+        url: str,
+        params: dict[str, str],
+        timeout: int,
+    ) -> httpx.Response:
+        self.request_count += 1
 
-        if self.get_request_count == 1:
+        if self.request_count == 1:
             raise self.exception
         else:
-            return self.underlying.get(url=url, params=params, timeout=timeout)
+            return self.underlying.request(
+                method=method, url=url, params=params, timeout=timeout
+            )
 
 
 @pytest.mark.parametrize(
