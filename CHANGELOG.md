@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.4.1 - 2024-06-13
+
+*   Fix a bug in the new `post_comment()` method.
+
+    If you try to post a comment on a photo that doesn't exist, you now get a `ResourceNotFound` exception rather than an `UnrecognisedFlickrApiException`.
+
 ## v2.4.0 - 2024-06-13
 
 *   The constructor on `FlickrApi` has changed.
