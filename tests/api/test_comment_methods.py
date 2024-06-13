@@ -95,8 +95,12 @@ class TestPostComment:
         )
 
         client = OAuth1Client(
-            client_id=get_optional_password("flickr_photos_api", "api_key", default="123"),
-            client_secret=get_optional_password("flickr_photos_api", "api_secret", default="456"),
+            client_id=get_optional_password(
+                "flickr_photos_api", "api_key", default="123"
+            ),
+            client_secret=get_optional_password(
+                "flickr_photos_api", "api_secret", default="456"
+            ),
             signature_type="QUERY",
             token=stored_token.get("oauth_token"),
             token_secret=None,
@@ -124,7 +128,10 @@ class TestPostComment:
                     comment_text="This is a comment that uses bogus OAuth 1.0a credentials",
                 )
 
-    def test_can_successfully_post_a_comment(self, flickr_comments_api: FlickrApi,) -> None:
+    def test_can_successfully_post_a_comment(
+        self,
+        flickr_comments_api: FlickrApi,
+    ) -> None:
         comment_id = flickr_comments_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
