@@ -79,7 +79,10 @@ class CommentMethods(FlickrApi):
             http_method="POST",
             method="flickr.photos.comments.addComment",
             params={"photo_id": photo_id, "comment_text": comment_text},
-            exceptions={"99": InsufficientPermissionsToComment(photo_id=photo_id)},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+                "99": InsufficientPermissionsToComment(photo_id=photo_id),
+            },
         )
 
         return find_required_elem(xml, path=".//comment").attrib["id"]

@@ -6,7 +6,11 @@ import httpx
 import pytest
 import vcr
 
-from flickr_photos_api import FlickrApi, InsufficientPermissionsToComment
+from flickr_photos_api import (
+    FlickrApi,
+    InsufficientPermissionsToComment,
+    ResourceNotFound,
+)
 from utils import get_optional_password
 
 
@@ -145,3 +149,9 @@ class TestPostComment:
         )
 
         assert comment_id == comment_id2
+
+    def test_throws_if_photo_doesnt_exist(self, flickr_comments_api: FlickrApi) -> None:
+        with pytest.raises(ResourceNotFound):
+            flickr_comments_api.post_comment(
+                photo_id="-1", comment_text="This is a comment on a non-existent photo"
+            )
