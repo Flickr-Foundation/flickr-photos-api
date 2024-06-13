@@ -110,6 +110,7 @@ class HttpxImplementation(FlickrApi):
     """
 
     def __init__(self, *, client: httpx.Client) -> None:
+        client.base_url = "https://api.flickr.com/services/rest/"
         self.client = client
 
     @classmethod
@@ -120,7 +121,6 @@ class HttpxImplementation(FlickrApi):
             )
 
         client = httpx.Client(
-            base_url="https://api.flickr.com/services/rest/",
             params={"api_key": api_key},
             headers={"User-Agent": user_agent},
         )

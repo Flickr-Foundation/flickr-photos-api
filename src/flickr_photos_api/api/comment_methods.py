@@ -3,9 +3,11 @@ Methods for getting information about comments from the Flickr API.
 """
 
 from .base import FlickrApi
-from ..exceptions import ResourceNotFound
+from ..exceptions import ResourceNotFound, InsufficientPermissionsToComment
 from ..types import Comment, create_user
 from ..utils import parse_date_posted
+
+from nitrate.xml import find_required_elem
 
 
 class CommentMethods(FlickrApi):
@@ -61,3 +63,23 @@ class CommentMethods(FlickrApi):
             )
 
         return result
+
+    def post_comment(self, *, photo_id: str, comment_text: str) -> str:
+        """
+        Post a comment to Flickr.
+
+        Returns the ID of the newly created comment.
+
+        Note that Flickr comments are idempotent, so we don't need to worry
+        too much about double-posting in this method.  If somebody posts
+        the same comment twice, Flickr silently discards the second and
+        returns the ID of the original comment.
+        """
+        xml = self.call(
+            http_method="POST",
+            method="flickr.photos.comments.addComment",
+            params={"photo_id": photo_id, "comment_text": comment_text},
+            exceptions={"99": InsufficientPermissionsToComment(photo_id=photo_id)},
+        )
+
+        return find_required_elem(xml, path=".//comment").attrib["id"]

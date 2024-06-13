@@ -1,6 +1,7 @@
 from .api import FlickrApi
 from .exceptions import (
     FlickrApiException,
+    InsufficientPermissionsToComment,
     InvalidApiKey,
     InvalidXmlException,
     ResourceNotFound,
@@ -69,6 +70,7 @@ __all__ = [
     "GalleryInfo",
     "GroupContext",
     "GroupInfo",
+    "InsufficientPermissionsToComment",
     "PhotoContext",
     "UnrecognisedFlickrApiException",
     "UserDeleted",
