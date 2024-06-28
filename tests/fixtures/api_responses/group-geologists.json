@@ -29,6 +29,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -93,7 +95,9 @@
           "width": 5662
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Red Hill - Painted Hills NM"
     },
     {
@@ -119,6 +123,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -209,6 +215,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -302,6 +310,8 @@
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "44949218@N02",
@@ -366,7 +376,9 @@
           "width": 1984
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Roter Ostseequarzporphyr"
     },
     {
@@ -392,6 +404,8 @@
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "44949218@N02",
@@ -456,7 +470,9 @@
           "width": 1984
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Roter Ostseequarzporphyr"
     },
     {
@@ -482,6 +498,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -546,7 +564,9 @@
           "width": 11567
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Chiricahuas panorama"
     },
     {
@@ -572,6 +592,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -664,6 +686,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -747,7 +771,7 @@
           "value": "2024-04-20T11:46:49"
         }
       },
-      "description": "1 : Bioturbations (possiblement Planolites) ;\n2 : Niveaux argileux ;\n3 : Laminations entrecrois\u00e9es gr\u00e9seuses ;\n4 : Laminations parall\u00e8les gr\u00e9seuses ;\nA-B-C-D : S\u00e9quences successives de d\u00e9p\u00f4ts gr\u00e9seux \u00e0 silto-argileux. \nLe sommet de chaque s\u00e9quence est marqu\u00e9 par des bioturbations, montrant le d\u00e9veloppement de la vie sous-marine avant que n'arrive un nouvel apport de s\u00e9diments. \nDans chaque s\u00e9quence la granulom\u00e9trie d\u00e9croit progressivement vers le haut (de sableuse \u00e0 silteuse, voire argileuse).\n\nLieu : Baie Maa, Nouvelle-Cal\u00e9donie.",
+      "description": "1 : Bioturbations (possiblement Planolites) ;\n2 : Niveaux argileux ;\n3 : Laminations entrecroisées gréseuses ;\n4 : Laminations parallèles gréseuses ;\nA-B-C-D : Séquences successives de dépôts gréseux à silto-argileux. \nLe sommet de chaque séquence est marqué par des bioturbations, montrant le développement de la vie sous-marine avant que n'arrive un nouvel apport de sédiments. \nDans chaque séquence la granulométrie décroit progressivement vers le haut (de sableuse à silteuse, voire argileuse).\n\nLieu : Baie Maa, Nouvelle-Calédonie.",
       "farm": "66",
       "id": "53670950590",
       "license": {
@@ -759,6 +783,8 @@
         "accuracy": 16,
         "latitude": -22.213589,
         "longitude": 166.356589
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -817,8 +843,10 @@
           "width": 1024
         }
       ],
-      "tags": [],
-      "title": "Bioturbations - S\u00e9quences de Bouma"
+      "tags": [
+
+      ],
+      "title": "Bioturbations - Séquences de Bouma"
     },
     {
       "count_comments": 0,
@@ -834,7 +862,7 @@
           "value": "2024-04-20T13:56:34"
         }
       },
-      "description": "Figures de charge (ou figures d'\u00e9chappement) observ\u00e9es dans des gr\u00e8s et argilo-siltites. \nL'argile plastique s'\u00e9chappe vers le haut par pression des couches sableuses sus-jacentes. \nCes ph\u00e9nom\u00e8nes peuvent se produire (entre autres) lors de s\u00e9ismes ou par surcharge / remaniement s\u00e9dimentaire.\n\nLoad casts (load structures) in sandstones.\n\nLieu : Baie Maa, Nouvelle-Cal\u00e9donie.",
+      "description": "Figures de charge (ou figures d'échappement) observées dans des grès et argilo-siltites. \nL'argile plastique s'échappe vers le haut par pression des couches sableuses sus-jacentes. \nCes phénomènes peuvent se produire (entre autres) lors de séismes ou par surcharge / remaniement sédimentaire.\n\nLoad casts (load structures) in sandstones.\n\nLieu : Baie Maa, Nouvelle-Calédonie.",
       "farm": "66",
       "id": "53669978206",
       "license": {
@@ -846,6 +874,8 @@
         "accuracy": 16,
         "latitude": -22.213589,
         "longitude": 166.356589
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -904,8 +934,10 @@
           "width": 1024
         }
       ],
-      "tags": [],
-      "title": "Figures d'\u00e9chappement / Load casts"
+      "tags": [
+
+      ],
+      "title": "Figures d'échappement / Load casts"
     },
     {
       "count_comments": 5,
@@ -930,6 +962,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -1022,6 +1056,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "9746040@N08",
@@ -1086,7 +1122,9 @@
           "width": 6240
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Tilted beds in Death Valley NP"
     },
     {
@@ -1112,6 +1150,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -1202,6 +1242,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -1294,6 +1336,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -1389,6 +1433,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "39398829@N02",
@@ -1501,6 +1547,8 @@
         "latitude": 53.141399,
         "longitude": 13.991945
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "15029120@N00",
@@ -1565,7 +1613,9 @@
           "width": 2954
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Uckermark"
     },
     {
@@ -1594,6 +1644,8 @@
         "accuracy": 16,
         "latitude": 51.439236,
         "longitude": -3.165403
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -1693,6 +1745,8 @@
         "latitude": 51.438438,
         "longitude": -3.166003
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "45767493@N00",
@@ -1789,6 +1843,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -1871,7 +1927,7 @@
           "value": "2003-07-29T09:38:57"
         }
       },
-      "description": "<i>Facing northeastward and upstream.</i>\n\nThis view of the Neuse River at pretty high water on a sultry summer afternoon captures, for me at least, the very essence of the lush Atlantic Coastal Plain and its unambitious streams. The verdant bottomland-forest community, the limpid sediment-laden water, the hazy sky\u2014just what one would expect in this corner of the world.\n\nBut, as usual, appearances are deceiving. Here the Neuse has managed to cut down and expose, on the southwestern bank, a cliff approximately 80 ft (24 m) high. The reason the cliff isn't visible here is that I'm standing on top of it. \n\nMost of the exposure reveals a portion of the remarkable Late Cretaceous Black Creek Formation, a layer-cake of strata of unconsolidated sands and clays. These document transgressions of the Atlantic Ocean over the Coastal Plain, a consequence of rising global sea level. And above the Black Creek are Tertiary beds capped by Quaternary sands and gravels. \n\nAs far as the botany goes, I think I'll just stand back here and enjoy it in aggregate. And what a wonderful panorama of rampant photosynthesis it truly is. One day not far removed, this place will be under saltwater again. It's best to enjoy the terrestrial phase while one still can. \n\n<b>The other photos and descriptions of this series can be found in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720309413739\">my <i>Botany of the Carolinas Coastal Plain</i> album</a>.</b>\n\n \n",
+      "description": "<i>Facing northeastward and upstream.</i>\n\nThis view of the Neuse River at pretty high water on a sultry summer afternoon captures, for me at least, the very essence of the lush Atlantic Coastal Plain and its unambitious streams. The verdant bottomland-forest community, the limpid sediment-laden water, the hazy sky—just what one would expect in this corner of the world.\n\nBut, as usual, appearances are deceiving. Here the Neuse has managed to cut down and expose, on the southwestern bank, a cliff approximately 80 ft (24 m) high. The reason the cliff isn't visible here is that I'm standing on top of it. \n\nMost of the exposure reveals a portion of the remarkable Late Cretaceous Black Creek Formation, a layer-cake of strata of unconsolidated sands and clays. These document transgressions of the Atlantic Ocean over the Coastal Plain, a consequence of rising global sea level. And above the Black Creek are Tertiary beds capped by Quaternary sands and gravels. \n\nAs far as the botany goes, I think I'll just stand back here and enjoy it in aggregate. And what a wonderful panorama of rampant photosynthesis it truly is. One day not far removed, this place will be under saltwater again. It's best to enjoy the terrestrial phase while one still can. \n\n<b>The other photos and descriptions of this series can be found in <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720309413739\">my <i>Botany of the Carolinas Coastal Plain</i> album</a>.</b>\n\n \n",
       "farm": "66",
       "id": "53640362127",
       "license": {
@@ -1883,6 +1939,8 @@
         "accuracy": 16,
         "latitude": 35.240247,
         "longitude": -77.883993
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -1986,6 +2044,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -2080,6 +2140,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -2166,7 +2228,7 @@
           "value": "2024-03-29T16:10:21"
         }
       },
-      "description": "Mardetschlag M\u00e4rz 2024",
+      "description": "Mardetschlag März 2024",
       "farm": "66",
       "id": "53631237402",
       "license": {
@@ -2179,6 +2241,8 @@
         "latitude": 48.611696,
         "longitude": 14.54195
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "18478048@N00",
@@ -2186,7 +2250,7 @@
         "photos_url": "https://www.flickr.com/photos/pfluegl/",
         "profile_url": "https://www.flickr.com/people/pfluegl/",
         "realname": null,
-        "username": "ChPfl\u00fcgl"
+        "username": "ChPflügl"
       },
       "url": "https://www.flickr.com/photos/pfluegl/53631237402/",
       "safety_level": "safe",
@@ -2248,10 +2312,10 @@
         "leopoldschlag",
         "maerz",
         "spring",
-        "fr\u00fchling",
-        "ober\u00f6sterreich",
+        "frühling",
+        "oberösterreich",
         "upperaustria",
-        "\u00f6sterreich",
+        "österreich",
         "austria",
         "europe",
         "europa",
@@ -2263,7 +2327,7 @@
         "60d",
         "sigma",
         "18300",
-        "chpfl\u00fcgl",
+        "chpflügl",
         "chpfluegl",
         "christian"
       ],
@@ -2283,7 +2347,7 @@
           "value": "2024-03-29T16:03:09"
         }
       },
-      "description": "Mardetschlag M\u00e4rz 2024",
+      "description": "Mardetschlag März 2024",
       "farm": "66",
       "id": "53632338168",
       "license": {
@@ -2296,6 +2360,8 @@
         "latitude": 48.611696,
         "longitude": 14.54195
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "18478048@N00",
@@ -2303,7 +2369,7 @@
         "photos_url": "https://www.flickr.com/photos/pfluegl/",
         "profile_url": "https://www.flickr.com/people/pfluegl/",
         "realname": null,
-        "username": "ChPfl\u00fcgl"
+        "username": "ChPflügl"
       },
       "url": "https://www.flickr.com/photos/pfluegl/53632338168/",
       "safety_level": "safe",
@@ -2365,10 +2431,10 @@
         "leopoldschlag",
         "maerz",
         "spring",
-        "fr\u00fchling",
-        "ober\u00f6sterreich",
+        "frühling",
+        "oberösterreich",
         "upperaustria",
-        "\u00f6sterreich",
+        "österreich",
         "austria",
         "europe",
         "europa",
@@ -2380,7 +2446,7 @@
         "60d",
         "sigma",
         "18300",
-        "chpfl\u00fcgl",
+        "chpflügl",
         "chpfluegl",
         "christian"
       ],
@@ -2412,6 +2478,8 @@
         "accuracy": 16,
         "latitude": 37.587425,
         "longitude": 14.976305
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -2512,6 +2580,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -2604,6 +2674,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -2695,6 +2767,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
@@ -2759,7 +2833,9 @@
           "width": 3208
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "IMG_20240330_134039819"
     },
     {
@@ -2785,6 +2861,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -2877,6 +2955,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -2969,6 +3049,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -3050,7 +3132,7 @@
           "value": "2019-05-14T12:55:17"
         }
       },
-      "description": "<i>Facing southward, toward the northern-elevation facade.</i>\n\nA cobblestone house this fine deserves another admiring look from the sidewalk. This time the perspective is full frontal.\n\nThis photo should be of intense and persistent interest to astronomers because it includes, at upper center, actual visible beams of photons emitted some time before by a G-type Main Sequence star. Not many photographers have the skill to include these elusive shafts of light in their images, probably because they're too well trained or have ten times the photo equipment I do.\n\nRegarding the source star, many of you stargazers are no doubt thinking I'm referring to Tau Ceti or Alpha Centauri, but you're wrong there. The beams were a-streamin' from Old Sol. This fusion-powered gasbag hosts a planetary system inhabited, in one place, by vicious little bipeds with very limited staying power in the evolutionary record. Steer clear of them, if you value your money, your sanity, or your life.\n\nBut having placed this endearing bit of architecture in its cosmic setting, let me reiterate that its cobbles most likely were collected from Pleistocene Henry Formation outwash available nearby. \n\nThe basement, plinth, or foundation\u2014whichever you wish to call it\u2014is made of rock ashlar blocks. Given the Herrick House's completion year, these are almost certainly Ordovician-period Platteville-Galena Dolostone. It was quarried from an early date in Rockford and other Rock River Valley communities.  \n\nA close-up will follow.\n\n<b>To peruse the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720310008578\"><i>Geology of Fieldstone &amp; Cobblestone Buildings</i> album</a>.</b>  \n\n\n  \n\n",
+      "description": "<i>Facing southward, toward the northern-elevation facade.</i>\n\nA cobblestone house this fine deserves another admiring look from the sidewalk. This time the perspective is full frontal.\n\nThis photo should be of intense and persistent interest to astronomers because it includes, at upper center, actual visible beams of photons emitted some time before by a G-type Main Sequence star. Not many photographers have the skill to include these elusive shafts of light in their images, probably because they're too well trained or have ten times the photo equipment I do.\n\nRegarding the source star, many of you stargazers are no doubt thinking I'm referring to Tau Ceti or Alpha Centauri, but you're wrong there. The beams were a-streamin' from Old Sol. This fusion-powered gasbag hosts a planetary system inhabited, in one place, by vicious little bipeds with very limited staying power in the evolutionary record. Steer clear of them, if you value your money, your sanity, or your life.\n\nBut having placed this endearing bit of architecture in its cosmic setting, let me reiterate that its cobbles most likely were collected from Pleistocene Henry Formation outwash available nearby. \n\nThe basement, plinth, or foundation—whichever you wish to call it—is made of rock ashlar blocks. Given the Herrick House's completion year, these are almost certainly Ordovician-period Platteville-Galena Dolostone. It was quarried from an early date in Rockford and other Rock River Valley communities.  \n\nA close-up will follow.\n\n<b>To peruse the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720310008578\"><i>Geology of Fieldstone &amp; Cobblestone Buildings</i> album</a>.</b>  \n\n\n  \n\n",
       "farm": "66",
       "id": "53616603482",
       "license": {
@@ -3062,6 +3144,8 @@
         "accuracy": 16,
         "latitude": 42.252436,
         "longitude": -89.062258
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -3168,6 +3252,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -3265,6 +3351,8 @@
         "latitude": 28.066275,
         "longitude": 35.916308
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
@@ -3329,7 +3417,9 @@
           "width": 4032
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Cambrian unconformity"
     },
     {
@@ -3355,6 +3445,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "39398829@N02",
@@ -3449,7 +3541,7 @@
           "value": "2021-12-13T13:21:54"
         }
       },
-      "description": "<i>Facing northeastward at the western (facade) and southern elevations.</i> \n\nBehold a classic example of a <i>false-front building</i>. All that gleaming white terra-cotta, which makes this former fish market look so classy <a href=\"https://www.flickr.com/photos/196253572@N05/53427881415/in/dateposted-public/\">from directly ahead</a>, turns out to be only facade-deep. \n\nBut this seemingly deceitful technique of putting the fancy stuff up forward and using less costly materials on the sides and back is nothing new. Some of the world's most opulent palaces and mansions are false-fronters, too, and it's such a time-honored practice that I wouldn't be surprised if it dates back to the very origins of human architecture.\n\nIn this case, of course, it would have helped if this building had neighboring structures that would make its common-brick sidewalls less obvious to passersby. But concerning that brick, note its light-yellow tint. It could be an example of Milwaukee's famous Cream City Brick, but there were few producers of it left by the mid-1920s, and by the end of that decade all were gone. Chicago Common Brick, used throughout the region,  had outcompeted it. \n\nThere were, however, bricks of the same color manufactured in both Kenosha and Racine, just up the coast. But the Racine yards were rapidly running out of clay and going out of business by the 1910s. As far as Kenosha Brick went, there had been at least three brickyards making it from the late nineteenth to the early twentieth centuries, but whether any of them survived into the 1920s, I don't know.\n\nRegardless, clays found in brickyards all the way from Milwaukee to Lake County, Illinois shared the same quirk of geochemistry\u2014an unusually high amount of calcium and magnesium\u2014that gave them their pale color. Nowadays, as the Ansorge Fish Market demonstrates, it's very difficult to tell where cream brick on buildings of southeastern-Wisconsin towns definitively came from, if there are no records to provide provenance.   \n\n<b>To see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670488\"><i>Terra-Cottalogy</i> album</a>. </b>",
+      "description": "<i>Facing northeastward at the western (facade) and southern elevations.</i> \n\nBehold a classic example of a <i>false-front building</i>. All that gleaming white terra-cotta, which makes this former fish market look so classy <a href=\"https://www.flickr.com/photos/196253572@N05/53427881415/in/dateposted-public/\">from directly ahead</a>, turns out to be only facade-deep. \n\nBut this seemingly deceitful technique of putting the fancy stuff up forward and using less costly materials on the sides and back is nothing new. Some of the world's most opulent palaces and mansions are false-fronters, too, and it's such a time-honored practice that I wouldn't be surprised if it dates back to the very origins of human architecture.\n\nIn this case, of course, it would have helped if this building had neighboring structures that would make its common-brick sidewalls less obvious to passersby. But concerning that brick, note its light-yellow tint. It could be an example of Milwaukee's famous Cream City Brick, but there were few producers of it left by the mid-1920s, and by the end of that decade all were gone. Chicago Common Brick, used throughout the region,  had outcompeted it. \n\nThere were, however, bricks of the same color manufactured in both Kenosha and Racine, just up the coast. But the Racine yards were rapidly running out of clay and going out of business by the 1910s. As far as Kenosha Brick went, there had been at least three brickyards making it from the late nineteenth to the early twentieth centuries, but whether any of them survived into the 1920s, I don't know.\n\nRegardless, clays found in brickyards all the way from Milwaukee to Lake County, Illinois shared the same quirk of geochemistry—an unusually high amount of calcium and magnesium—that gave them their pale color. Nowadays, as the Ansorge Fish Market demonstrates, it's very difficult to tell where cream brick on buildings of southeastern-Wisconsin towns definitively came from, if there are no records to provide provenance.   \n\n<b>To see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302670488\"><i>Terra-Cottalogy</i> album</a>. </b>",
       "farm": "66",
       "id": "53606849133",
       "license": {
@@ -3461,6 +3553,8 @@
         "accuracy": 16,
         "latitude": 42.588441,
         "longitude": -87.819065
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -3563,6 +3657,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "39398829@N02",
@@ -3655,7 +3751,7 @@
           "value": "1997-04-01T00:00:00"
         }
       },
-      "description": "<i>As promised, here we are, actually Inside one of the canyon's rock shelters excavated by natural undermining and stoping (see <a href=\"https://www.flickr.com/photos/196253572@N05/53422274292/in/dateposted-public/\">Part 9 of this series</a> for an explanation of the mechanics of that).</i> \n\nIf you take a good look at the ceiling of the Pennsylvanian-subperiod (Upper Carboniferous) Pounds Sandstone Member, you'll see some significant cracking. And there are also some fairly tabular chunks of rocks that might not need a lot of encouragement to come tumbling down. \n\nIn fact, standing inside a rock shelter can give one that creepy, sword-of-Damocles feeling. And of course there are those big, tilted slump blocks on the ground nearby. When they came down, there must have been quite a thump. \n\nStill, if you're at Bell Smith in the early spring when sunlit water droplets are spilling like a string of diamonds over a ledge nearby, you're overtaken\u2014to crib from Keats\u2014with a sense of silence and slow time. \n\n<b>For more on this beautiful and geologically fascinating locale, get a copy of my <a href=\"https://www.flickr.com/photos/196253572@N05/52288266656/in/album-72177720301296710/\"><i>Geology Underfoot in Illinois</i></a>. \n\nAnd to see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302393036\"><i>Natural History: Illinois</i> album</a>.</b>",
+      "description": "<i>As promised, here we are, actually Inside one of the canyon's rock shelters excavated by natural undermining and stoping (see <a href=\"https://www.flickr.com/photos/196253572@N05/53422274292/in/dateposted-public/\">Part 9 of this series</a> for an explanation of the mechanics of that).</i> \n\nIf you take a good look at the ceiling of the Pennsylvanian-subperiod (Upper Carboniferous) Pounds Sandstone Member, you'll see some significant cracking. And there are also some fairly tabular chunks of rocks that might not need a lot of encouragement to come tumbling down. \n\nIn fact, standing inside a rock shelter can give one that creepy, sword-of-Damocles feeling. And of course there are those big, tilted slump blocks on the ground nearby. When they came down, there must have been quite a thump. \n\nStill, if you're at Bell Smith in the early spring when sunlit water droplets are spilling like a string of diamonds over a ledge nearby, you're overtaken—to crib from Keats—with a sense of silence and slow time. \n\n<b>For more on this beautiful and geologically fascinating locale, get a copy of my <a href=\"https://www.flickr.com/photos/196253572@N05/52288266656/in/album-72177720301296710/\"><i>Geology Underfoot in Illinois</i></a>. \n\nAnd to see the other photos and descriptions of this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302393036\"><i>Natural History: Illinois</i> album</a>.</b>",
       "farm": "66",
       "id": "53605094300",
       "license": {
@@ -3667,6 +3763,8 @@
         "accuracy": 16,
         "latitude": 37.517992,
         "longitude": -88.656784
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -3771,6 +3869,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -3860,6 +3960,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -3939,7 +4041,7 @@
           "value": "2019-05-31T12:35:50"
         }
       },
-      "description": "<i>Trying to get a grasp on this memorial's two fine granitoids. Both, I believe, are feldspar-challenged, but in opposite ways.</i>\n\nIn <a href=\"https://www.flickr.com/photos/196253572@N05/53314994733/in/dateposted-public/\">Part 12 of this set</a> I described the geologic origins and petrology of the red, Paleoproterozoic Montello Granite shown here. But at this range we can really examine its mineralogical components. \n\nThe two dominant ingredients are the alkali feldspar orthoclase, here in its ruddiest, brick-red form, and very clear and glassy quartz. Accounting for as much as 40 percent of the rock, it's the mineral that makes the Montello so cussedly hard and enduring.  \n\nOf course, there are also traces of darker compounds\u2014hornblende, magnetite, hematite, and chlorite. In the Montello, Wisconsin quarry where this stone comes from there were a number of places where there were large veins of solid hematite and quartz that had to be worked around.  \n\nHowever, there's also something missing here. &quot;Normal&quot; granites have, in addition to alkali feldspars, plagioclase feldspars. The Montello has none of the latter. That pegs it as an <i>alkali-feldspar granite</i>, which is a type that most usually forms in &quot;extensional tectonic settings&quot;\u2014in other words, in portions of continental crust subject to tension (or being pulled apart) rather than compression. \n\nAnd now that we're this close, I'd be willing to bet that the salt-and-pepper stone under the Montello is the Devonian-period Barre Granodiorite (the &quot;Barre Granite&quot; of architects and monument makers). In terms of its grain size and biotite flecking, it's a dead ringer for it. And besides, the Barre is America's champion monumental stone. It's everywhere else, so why not here?\n\nIf my assignment is correct, the lower rock you see here is notable not for having a dearth of plagioclase, but for having a preponderance of it, in the form of white oligoclase or albite. There is some alkali feldspar present, but not much. Much more in evidence are the  black biotite mica and the quartz, which is this case is gray rather than transparently clear.\n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302395101\"><i>Architectural Geology: Southwestern Wisconsin</i> album</a>.</b>\n\n",
+      "description": "<i>Trying to get a grasp on this memorial's two fine granitoids. Both, I believe, are feldspar-challenged, but in opposite ways.</i>\n\nIn <a href=\"https://www.flickr.com/photos/196253572@N05/53314994733/in/dateposted-public/\">Part 12 of this set</a> I described the geologic origins and petrology of the red, Paleoproterozoic Montello Granite shown here. But at this range we can really examine its mineralogical components. \n\nThe two dominant ingredients are the alkali feldspar orthoclase, here in its ruddiest, brick-red form, and very clear and glassy quartz. Accounting for as much as 40 percent of the rock, it's the mineral that makes the Montello so cussedly hard and enduring.  \n\nOf course, there are also traces of darker compounds—hornblende, magnetite, hematite, and chlorite. In the Montello, Wisconsin quarry where this stone comes from there were a number of places where there were large veins of solid hematite and quartz that had to be worked around.  \n\nHowever, there's also something missing here. &quot;Normal&quot; granites have, in addition to alkali feldspars, plagioclase feldspars. The Montello has none of the latter. That pegs it as an <i>alkali-feldspar granite</i>, which is a type that most usually forms in &quot;extensional tectonic settings&quot;—in other words, in portions of continental crust subject to tension (or being pulled apart) rather than compression. \n\nAnd now that we're this close, I'd be willing to bet that the salt-and-pepper stone under the Montello is the Devonian-period Barre Granodiorite (the &quot;Barre Granite&quot; of architects and monument makers). In terms of its grain size and biotite flecking, it's a dead ringer for it. And besides, the Barre is America's champion monumental stone. It's everywhere else, so why not here?\n\nIf my assignment is correct, the lower rock you see here is notable not for having a dearth of plagioclase, but for having a preponderance of it, in the form of white oligoclase or albite. There is some alkali feldspar present, but not much. Much more in evidence are the  black biotite mica and the quartz, which is this case is gray rather than transparently clear.\n\n<b>To see the other photos and descriptions of this series, visit \n<a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720302395101\"><i>Architectural Geology: Southwestern Wisconsin</i> album</a>.</b>\n\n",
       "farm": "66",
       "id": "53589253442",
       "license": {
@@ -3951,6 +4053,8 @@
         "accuracy": 16,
         "latitude": 42.601954,
         "longitude": -89.63962
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -4055,6 +4159,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
@@ -4062,7 +4168,7 @@
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
-        "username": "Nikon2\u201312"
+        "username": "Nikon2–12"
       },
       "url": "https://www.flickr.com/photos/148096168@N02/53585346136/",
       "safety_level": "safe",
@@ -4137,7 +4243,7 @@
           "value": "2022-04-02T11:38:36"
         }
       },
-      "description": "PANCAKE ROCKS &amp; BLOWHOLES\nRising from the sea at Dolomite Point, the Pancake Rocks are part of a heavily eroded limestone area where the sea bursts through underwater channels and escapes via vertical blowholes.\n\nThese rocks, dating back some 30 million years, formed as layers on the sea bed which eventually rose under seismic action. Since then water, wind and salt spray have been constantly eroding the softer layers leaving a \u2018pancake\u2019 stack of harder limestone.",
+      "description": "PANCAKE ROCKS &amp; BLOWHOLES\nRising from the sea at Dolomite Point, the Pancake Rocks are part of a heavily eroded limestone area where the sea bursts through underwater channels and escapes via vertical blowholes.\n\nThese rocks, dating back some 30 million years, formed as layers on the sea bed which eventually rose under seismic action. Since then water, wind and salt spray have been constantly eroding the softer layers leaving a ‘pancake’ stack of harder limestone.",
       "farm": "66",
       "id": "53575282612",
       "license": {
@@ -4149,6 +4255,8 @@
         "accuracy": 14,
         "latitude": -42.114037,
         "longitude": 171.326494
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -4250,6 +4358,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
@@ -4257,7 +4367,7 @@
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
-        "username": "Nikon2\u201312"
+        "username": "Nikon2–12"
       },
       "url": "https://www.flickr.com/photos/148096168@N02/53556877536/",
       "safety_level": "safe",
@@ -4347,6 +4457,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -4436,6 +4548,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -4532,6 +4646,8 @@
         "accuracy": 13,
         "latitude": 43.043826,
         "longitude": -87.904718
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -4637,6 +4753,8 @@
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "44949218@N02",
@@ -4701,8 +4819,10 @@
           "width": 2736
         }
       ],
-      "tags": [],
-      "title": "N\u00f6rdlingen"
+      "tags": [
+
+      ],
+      "title": "Nördlingen"
     },
     {
       "count_comments": 0,
@@ -4718,7 +4838,7 @@
           "value": "2020-01-29T18:31:33"
         }
       },
-      "description": "Suevit -An impact rock formed by the impact of an asteroid in the N\u00f6rdlinger Ries. Used as a building stone in St George's Church, N\u00f6rdlingen\n",
+      "description": "Suevit -An impact rock formed by the impact of an asteroid in the Nördlinger Ries. Used as a building stone in St George's Church, Nördlingen\n",
       "farm": "66",
       "id": "53570171684",
       "license": {
@@ -4727,6 +4847,8 @@
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "44949218@N02",
@@ -4791,7 +4913,9 @@
           "width": 2736
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Suevit"
     },
     {
@@ -4817,6 +4941,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -4910,6 +5036,8 @@
         "latitude": 40.424281,
         "longitude": 15.005444
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -5002,7 +5130,7 @@
           "value": "1991-10-01T00:00:00"
         }
       },
-      "description": "Folded rocks on Kullen's south coast. M\u00f6lle in the background.",
+      "description": "Folded rocks on Kullen's south coast. Mölle in the background.",
       "farm": "66",
       "id": "51853833787",
       "license": {
@@ -5011,6 +5139,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -5075,7 +5205,9 @@
           "width": 1280
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "DSC01287 Bergsveckning"
     },
     {
@@ -5101,6 +5233,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -5192,6 +5326,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "148096168@N02",
@@ -5199,7 +5335,7 @@
         "photos_url": "https://www.flickr.com/photos/148096168@N02/",
         "profile_url": "https://www.flickr.com/people/148096168@N02/",
         "realname": "JR Nikon810",
-        "username": "Nikon2\u201312"
+        "username": "Nikon2–12"
       },
       "url": "https://www.flickr.com/photos/148096168@N02/53556029787/",
       "safety_level": "safe",
@@ -5288,6 +5424,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "56837663@N03",
@@ -5382,6 +5520,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -5477,6 +5617,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -5576,6 +5718,8 @@
         "latitude": 46.543988,
         "longitude": -87.396274
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "196253572@N05",
@@ -5657,7 +5801,7 @@
         "lakesuperiorbrownstone",
         "jacobsvillesandstone"
       ],
-      "title": "The Brownstone Chronicles, Part 24: Close-Up of the Central Fa\u00e7ade, Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)"
+      "title": "The Brownstone Chronicles, Part 24: Close-Up of the Central Façade, Old City Hall, Marquette, Upper Peninsula of Michigan, USA (1894)"
     },
     {
       "count_comments": 3,
@@ -5682,6 +5826,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -5777,6 +5923,8 @@
         "latitude": 51.758298,
         "longitude": 11.081112
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "26021670@N00",
@@ -5853,14 +6001,14 @@
         "harzvorland",
         "harzklippen",
         "teufelsmauer",
-        "k\u00f6nigstein",
+        "königstein",
         "langewand",
         "felsformation",
         "felsen",
         "geologie",
         "nationalegeotope"
       ],
-      "title": "Teufelsmauer (Lange Wand - K\u00f6nigstein)"
+      "title": "Teufelsmauer (Lange Wand - Königstein)"
     },
     {
       "count_comments": 5,
@@ -5885,6 +6033,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -5976,6 +6126,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6055,7 +6207,7 @@
           "value": "2023-07-08T13:06:10"
         }
       },
-      "description": "My friend, S\u00e6var, held his birthday party in the highlands of Iceland, in Kj\u00f6lur. We went on hiking in Hveradalir, Kerlingarfj\u00f6ll, and as he walked faster than I and my friends he was already on the other side waving when we were taking pictures and slowly hiking in his footsteps.\n\nHveradalir geothermal Area is located in the Highlands, by Kjolur Highland Road, in Iceland. One of the largest geothermal areas in all of Iceland, Hveradalir offers hot springs you can view up close and others that can be admired from a safe distance. The site is surrounded by the rhyolite mountains of the Kerlingarfjoll range, making for some spectacular and colorful surroundings and excellent hiking opportunities. Situated by the volcanic mountain ridge of Kerlingarfjoll, Hveradalir draws its name from the many hot springs in the area. From smaller, bubbling mud pools to larger springs of steaming water, the site offers visitors a glimpse into the stunning complexities of Iceland's geology. \n\nOne of Hveradalir's main attractions is the many striking natural formations created by the geothermal energy coursing beneath the surface. The hot waters flowing through the ground have interacted with the minerals, causing chemical changes that often result in unique patterns and colors appearing in the rocks above.  Read more here: <a href=\"https://guidetoiceland.is/travel-iceland/drive/hveradalir\" rel=\"noreferrer nofollow\">guidetoiceland.is/travel-iceland/drive/hveradalir</a> ",
+      "description": "My friend, Sævar, held his birthday party in the highlands of Iceland, in Kjölur. We went on hiking in Hveradalir, Kerlingarfjöll, and as he walked faster than I and my friends he was already on the other side waving when we were taking pictures and slowly hiking in his footsteps.\n\nHveradalir geothermal Area is located in the Highlands, by Kjolur Highland Road, in Iceland. One of the largest geothermal areas in all of Iceland, Hveradalir offers hot springs you can view up close and others that can be admired from a safe distance. The site is surrounded by the rhyolite mountains of the Kerlingarfjoll range, making for some spectacular and colorful surroundings and excellent hiking opportunities. Situated by the volcanic mountain ridge of Kerlingarfjoll, Hveradalir draws its name from the many hot springs in the area. From smaller, bubbling mud pools to larger springs of steaming water, the site offers visitors a glimpse into the stunning complexities of Iceland's geology. \n\nOne of Hveradalir's main attractions is the many striking natural formations created by the geothermal energy coursing beneath the surface. The hot waters flowing through the ground have interacted with the minerals, causing chemical changes that often result in unique patterns and colors appearing in the rocks above.  Read more here: <a href=\"https://guidetoiceland.is/travel-iceland/drive/hveradalir\" rel=\"noreferrer nofollow\">guidetoiceland.is/travel-iceland/drive/hveradalir</a> ",
       "farm": "66",
       "id": "53547124975",
       "license": {
@@ -6067,6 +6219,8 @@
         "accuracy": 15,
         "latitude": 64.646535,
         "longitude": -19.284617
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -6135,8 +6289,8 @@
       "tags": [
         "iceland",
         "hveradalir",
-        "kerlingarfj\u00f6ll",
-        "kj\u00f6lur",
+        "kerlingarfjöll",
+        "kjölur",
         "boiling",
         "geothermal",
         "hiking",
@@ -6169,6 +6323,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6259,6 +6415,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -6323,8 +6481,10 @@
           "width": 1280
         }
       ],
-      "tags": [],
-      "title": "DSC01546 Spricktr\u00e4dg\u00e5rd"
+      "tags": [
+
+      ],
+      "title": "DSC01546 Sprickträdgård"
     },
     {
       "count_comments": 0,
@@ -6349,6 +6509,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "197300142@N02",
@@ -6413,7 +6575,9 @@
           "width": 5568
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Castle Rock"
     },
     {
@@ -6439,6 +6603,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -6503,7 +6669,9 @@
           "width": 1280
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "P4086930 Complex geology"
     },
     {
@@ -6529,6 +6697,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6621,6 +6791,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6713,6 +6885,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -6799,6 +6973,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -6893,6 +7069,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -6957,7 +7135,9 @@
           "width": 1280
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "PICT0979 Sawtooth Pass"
     },
     {
@@ -6986,6 +7166,8 @@
         "accuracy": 15,
         "latitude": 52.777618,
         "longitude": 13.999156
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -7051,7 +7233,9 @@
           "width": 5472
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Hammerthal - Bad Freienwalde"
     },
     {
@@ -7080,6 +7264,8 @@
         "accuracy": 16,
         "latitude": 52.778119,
         "longitude": 13.999768
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -7145,7 +7331,9 @@
           "width": 5472
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Bad Freienwalde - Hammerthal"
     },
     {
@@ -7162,7 +7350,7 @@
           "value": "1992-09-01T00:00:00"
         }
       },
-      "description": "Interesting landforms on a gravel plateau in V\u00e5l\u00e5dalen Nature reserve, J\u00e4mtland. Gravel deposits left by decaying ice age glacier.",
+      "description": "Interesting landforms on a gravel plateau in Vålådalen Nature reserve, Jämtland. Gravel deposits left by decaying ice age glacier.",
       "farm": "66",
       "id": "51797152849",
       "license": {
@@ -7171,6 +7359,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -7236,11 +7426,11 @@
         }
       ],
       "tags": [
-        "gr\u00f6ndalen",
-        "v\u00e5l\u00e5dalen",
-        "j\u00e4mtland"
+        "gröndalen",
+        "vålådalen",
+        "jämtland"
       ],
-      "title": "df - 00324 Gr\u00f6ndalen 1"
+      "title": "df - 00324 Gröndalen 1"
     },
     {
       "count_comments": 0,
@@ -7256,7 +7446,7 @@
           "value": "1988-08-01T00:00:00"
         }
       },
-      "description": "    Pretty boulder on Helagsfj\u00e4llet.",
+      "description": "    Pretty boulder on Helagsfjället.",
       "farm": "66",
       "id": "51796857443",
       "license": {
@@ -7265,6 +7455,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -7348,7 +7540,7 @@
           "value": "2004-03-01T00:00:00"
         }
       },
-      "description": "Limestone rock face with snow. Ges\u00e4use National Park, Austria.",
+      "description": "Limestone rock face with snow. Gesäuse National Park, Austria.",
       "farm": "66",
       "id": "51800552160",
       "license": {
@@ -7357,6 +7549,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -7425,7 +7619,7 @@
         "schnee",
         "kalk",
         "bergwand",
-        "ges\u00e4use"
+        "gesäuse"
       ],
       "title": "DSC01332 Kalk und Schnee"
     },
@@ -7452,6 +7646,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
@@ -7547,6 +7743,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -7634,6 +7832,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -7724,6 +7924,8 @@
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -7825,6 +8027,8 @@
         "latitude": 44.397731,
         "longitude": 10.943841
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "37075433@N00",
@@ -7918,6 +8122,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -7982,7 +8188,9 @@
           "width": 1280
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "DSC00834 Eruption"
     },
     {
@@ -8011,6 +8219,8 @@
         "accuracy": 15,
         "latitude": 44.514026,
         "longitude": 10.824582
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -8103,6 +8313,8 @@
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "114641806@N08",
@@ -8203,6 +8415,8 @@
         "latitude": 42.531895,
         "longitude": 44.471025
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "15029120@N00",
@@ -8267,7 +8481,9 @@
           "width": 5042
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Georgian Military Road"
     },
     {
@@ -8284,7 +8500,7 @@
           "value": "2002-03-11T03:27:26"
         }
       },
-      "description": "<i>The late-afternoon shadows have gobbled up the canyon floor and part of the sheer Mexican cliff across the Rio Grande. But the most important geology is still well illumined.</i>\n\n<a href=\"https://www.flickr.com/photos/196253572@N05/53405910972/in/dateposted-public/\">Boquillas Canyon</a>, that great river-gouged passage through the Sierra del Carmen, exposes a massive vertical section of the Lower Cretaceous Santa Elena Limestone. What it and the other rock units of this spectacularly beautiful mountain range have been through since they were laid down is mindboggling. \n\nDeposited as layers of lime mud in the ocean-filled breach between the recently parted North and South America, they were later\u2014in the Upper Cretaceous and Lower Tertiary\u2014 scrunched into a giant, steplike monocline. This was one local episode of far-ranging crustal compression associated with the Laramide Orogeny.\n\nThen, in the Upper Tertiary and continuing to about 2 Ma ago, these formations were subjected to the opposite type of tectonics as part of the Rio Grande Rift / Basin-and-Range stage. Like the Laramide mountain-building event before it, the Basin-and-Range activity affected a huge portion of western North America. But this time the crust was pulled apart rather than compressed.. \n\nHere in Big Bend, about 500 mi (800 km) from the Gulf of California and the San Andreas transform fault, you'll find some of the easternmost evidence of both great tectonic phases. To wit: the big diagonal scar so nicely delineated by the low-angle light. It marks a slippage between the rock units on the left side (the <i>headwall</i>, sliding downward along the incline) and those on the right (the <i>footwall</i>, with relative upward motion). \n\nThis arrangement indicates that the giant gash is a <i>normal fault</i>, the type characteristic of crustal stretching. So it's a later, Basin-and-Range feature rather than an earlier Laramide structure.\n\nFaults like this are rarely so beautifully exposed as classic textbook examples. But then this is Big Bend, where nature has worked overtime to create an endless collection of outrageously visible wonders. Any person devoted to any aspect of natural history could spend ten lifetimes in this magical place and still want an eleventh. \n\n<b>To see the other photos and descriptions in this set and my other Big Bend series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/52619713656/in/album-72177720302655904/\">my <i>Natural History: Big Bend Region &amp; All of Trans-Pecos Texas</i> album</a>.</b>\n\n \n  \n \n\n",
+      "description": "<i>The late-afternoon shadows have gobbled up the canyon floor and part of the sheer Mexican cliff across the Rio Grande. But the most important geology is still well illumined.</i>\n\n<a href=\"https://www.flickr.com/photos/196253572@N05/53405910972/in/dateposted-public/\">Boquillas Canyon</a>, that great river-gouged passage through the Sierra del Carmen, exposes a massive vertical section of the Lower Cretaceous Santa Elena Limestone. What it and the other rock units of this spectacularly beautiful mountain range have been through since they were laid down is mindboggling. \n\nDeposited as layers of lime mud in the ocean-filled breach between the recently parted North and South America, they were later—in the Upper Cretaceous and Lower Tertiary— scrunched into a giant, steplike monocline. This was one local episode of far-ranging crustal compression associated with the Laramide Orogeny.\n\nThen, in the Upper Tertiary and continuing to about 2 Ma ago, these formations were subjected to the opposite type of tectonics as part of the Rio Grande Rift / Basin-and-Range stage. Like the Laramide mountain-building event before it, the Basin-and-Range activity affected a huge portion of western North America. But this time the crust was pulled apart rather than compressed.. \n\nHere in Big Bend, about 500 mi (800 km) from the Gulf of California and the San Andreas transform fault, you'll find some of the easternmost evidence of both great tectonic phases. To wit: the big diagonal scar so nicely delineated by the low-angle light. It marks a slippage between the rock units on the left side (the <i>headwall</i>, sliding downward along the incline) and those on the right (the <i>footwall</i>, with relative upward motion). \n\nThis arrangement indicates that the giant gash is a <i>normal fault</i>, the type characteristic of crustal stretching. So it's a later, Basin-and-Range feature rather than an earlier Laramide structure.\n\nFaults like this are rarely so beautifully exposed as classic textbook examples. But then this is Big Bend, where nature has worked overtime to create an endless collection of outrageously visible wonders. Any person devoted to any aspect of natural history could spend ten lifetimes in this magical place and still want an eleventh. \n\n<b>To see the other photos and descriptions in this set and my other Big Bend series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/52619713656/in/album-72177720302655904/\">my <i>Natural History: Big Bend Region &amp; All of Trans-Pecos Texas</i> album</a>.</b>\n\n \n  \n \n\n",
       "farm": "66",
       "id": "53513854113",
       "license": {
@@ -8296,6 +8512,8 @@
         "accuracy": 13,
         "latitude": 29.207166,
         "longitude": -102.91254
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -8404,6 +8622,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "9563286@N03",
@@ -8499,6 +8719,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -8593,6 +8815,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -8677,7 +8901,7 @@
           "value": "1977-10-28T05:11:28"
         }
       },
-      "description": "<i>Facing southwestward from the southern boundary of this renowned archaeological site's Roman settlement. The whitewashed town in the middle ground is Duqqat al-Jadida (Nouvelle Dougga).</i>\n\nThis shot offers a different perspective on the landscape  surrounding Dougga. Check out <a href=\"https://www.flickr.com/photos/196253572@N05/52325766030/in/album-72177720302394406/\">Part 1 of this series</a>, taken instead from the Roman theater situated to the northeast of this vantagepoint. \n\nThe geology at close hand consists of the Mausoleum of Ateban and the ruins of the considerably younger Imperial Roman town (mostly 2nd century AD). Apparently both are made of the very locally quarried, nummulitic carbonate rock known as the El Garia Limestone. It dates, as the Mediterranean Basin's nummulite-bearing formations generally do, to the Eocene epoch.   \n\nThe Tunisian steppe beyond is part of what geologists call the Diapir Zone. In this portion of the North African crust, large masses of buoyant, low-density evaporite deposits of Triassic age are rising through younger host rock, and in various places have deformed it in interesting ways.  \n\nOf course, this is not readily evident as one gazes across this particular scene. What is obvious, though, are the many groves of <i>Olea europaea</i>\u2014Olive trees\u2014including the one surrounding Ateban's tomb, also known as the Libyco-Punic Mausoleum. \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303982872\"><i>Architectural Geology: Tunisia</i> album</a>.</b>  \n\n",
+      "description": "<i>Facing southwestward from the southern boundary of this renowned archaeological site's Roman settlement. The whitewashed town in the middle ground is Duqqat al-Jadida (Nouvelle Dougga).</i>\n\nThis shot offers a different perspective on the landscape  surrounding Dougga. Check out <a href=\"https://www.flickr.com/photos/196253572@N05/52325766030/in/album-72177720302394406/\">Part 1 of this series</a>, taken instead from the Roman theater situated to the northeast of this vantagepoint. \n\nThe geology at close hand consists of the Mausoleum of Ateban and the ruins of the considerably younger Imperial Roman town (mostly 2nd century AD). Apparently both are made of the very locally quarried, nummulitic carbonate rock known as the El Garia Limestone. It dates, as the Mediterranean Basin's nummulite-bearing formations generally do, to the Eocene epoch.   \n\nThe Tunisian steppe beyond is part of what geologists call the Diapir Zone. In this portion of the North African crust, large masses of buoyant, low-density evaporite deposits of Triassic age are rising through younger host rock, and in various places have deformed it in interesting ways.  \n\nOf course, this is not readily evident as one gazes across this particular scene. What is obvious, though, are the many groves of <i>Olea europaea</i>—Olive trees—including the one surrounding Ateban's tomb, also known as the Libyco-Punic Mausoleum. \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303982872\"><i>Architectural Geology: Tunisia</i> album</a>.</b>  \n\n",
       "farm": "66",
       "id": "53507406134",
       "license": {
@@ -8689,6 +8913,8 @@
         "accuracy": 16,
         "latitude": 36.421752,
         "longitude": 9.219501
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -8799,6 +9025,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -8863,7 +9091,9 @@
           "width": 1280
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "P1211434 Wave art"
     },
     {
@@ -8892,6 +9122,8 @@
         "accuracy": 10,
         "latitude": 42.696769,
         "longitude": 44.518524
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -8957,7 +9189,9 @@
           "width": 6000
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Mount Kazbek - Georgia"
     },
     {
@@ -8983,6 +9217,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "186413921@N04",
@@ -9080,6 +9316,8 @@
         "latitude": -13.639723,
         "longitude": -76.173334
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "126778763@N04",
@@ -9174,6 +9412,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -9262,6 +9502,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "34457823@N04",
@@ -9346,7 +9588,7 @@
           "value": "1978-02-23T00:02:57"
         }
       },
-      "description": "<i>Facing eastward and looking at the western elevation and central dome.</i>\n\nSometimes beautiful old things come in new packages\u2014the opposite, I suppose, of the timeworn adage about new wine in old bottles. In this case, it's overtly obvious what's newer and what's older by quite a few centuries.\n\nNot surprisingly, given my geological slant, I'm more interested  in the dome and the rocky core of the building beneath it. \n\nIf Athens had four thousand Middle Byzantine churches, all built to the standard plan, I'd still want one more. I just like the style that much, and I like how the locally derived building materials play a key role in defining it.\n\nAnd those standard materials, all on display here behind the incongruously smooth-surfaced exonarthex, are:\n\n- the terra-cotta roofing tiles, no doubt made of Attica's legendary potters' clay;\n\n-bricks in a surprising variety of dimensions;\n\n- and Pliocene <i>poros</i> marly limestone, from Piraeus or Megara, with its pitted and puckered appearance. \n\nOnce again the bricks are used to create the superb window-arch ornament, and in addition they serve as the spacers between the ashlar blocks to produce that signature effect of Athenian medieval architecture\u2014cloisonn\u00e9 masonry.   \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303792872\"><i>Byzantine and Late Roman Worlds</i> album</a>.</b>",
+      "description": "<i>Facing eastward and looking at the western elevation and central dome.</i>\n\nSometimes beautiful old things come in new packages—the opposite, I suppose, of the timeworn adage about new wine in old bottles. In this case, it's overtly obvious what's newer and what's older by quite a few centuries.\n\nNot surprisingly, given my geological slant, I'm more interested  in the dome and the rocky core of the building beneath it. \n\nIf Athens had four thousand Middle Byzantine churches, all built to the standard plan, I'd still want one more. I just like the style that much, and I like how the locally derived building materials play a key role in defining it.\n\nAnd those standard materials, all on display here behind the incongruously smooth-surfaced exonarthex, are:\n\n- the terra-cotta roofing tiles, no doubt made of Attica's legendary potters' clay;\n\n-bricks in a surprising variety of dimensions;\n\n- and Pliocene <i>poros</i> marly limestone, from Piraeus or Megara, with its pitted and puckered appearance. \n\nOnce again the bricks are used to create the superb window-arch ornament, and in addition they serve as the spacers between the ashlar blocks to produce that signature effect of Athenian medieval architecture—cloisonné masonry.   \n\n<b>To see the other photos and descriptions in this series, visit my <a href=\"https://www.flickr.com/photos/196253572@N05/albums/72177720303792872\"><i>Byzantine and Late Roman Worlds</i> album</a>.</b>",
       "farm": "66",
       "id": "53487887970",
       "license": {
@@ -9358,6 +9600,8 @@
         "accuracy": 16,
         "latitude": 37.971118,
         "longitude": 23.730852
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -9472,6 +9716,8 @@
         "latitude": 53.22948,
         "longitude": 13.496747
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "15029120@N00",
@@ -9536,7 +9782,9 @@
           "width": 5187
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Uckermark"
     }
   ]

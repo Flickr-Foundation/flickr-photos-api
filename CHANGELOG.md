@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.5.0 - 2024-06-28
+
+*   Add support for machine tags
+
+    Machine tags will now be parsed in the list of tags, and presented as a structured object in the `machine_tags` field.
+    This does not change the existing `tags` field, just provide a convenient way to query machine tags.
+
 ## v2.4.1 - 2024-06-13
 
 *   Fix a bug in the new `post_comment()` method.

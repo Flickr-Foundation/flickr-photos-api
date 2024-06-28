@@ -8,7 +8,7 @@
       "realname": "Jeong Vin Yoon",
       "username": "Jeong Vin, Yoon"
     },
-    "title": "\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \uc81c\uc791\uc6a9"
+    "title": "포트폴리오 제작용"
   },
   "count_pages": 9,
   "count_photos": 84,
@@ -36,6 +36,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -104,7 +106,7 @@
         "seoul",
         "streetphotography",
         "travel",
-        "\ud55c\uc625\ub9c8\uc744"
+        "한옥마을"
       ],
       "title": "Seoul"
     },
@@ -125,6 +127,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -218,6 +222,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -282,7 +288,9 @@
           "width": 3264
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Jiri Mountain"
     },
     {
@@ -302,6 +310,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -370,7 +380,7 @@
         "nikon",
         "streetphotography",
         "seoul",
-        "\uba85\ub3d9",
+        "명동",
         "streettogs",
         "vscocam"
       ],
@@ -393,6 +403,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -462,7 +474,7 @@
         "streetphotography",
         "korea",
         "seoul",
-        "\uba85\ub3d9",
+        "명동",
         "streettogs",
         "vscocam"
       ],
@@ -485,6 +497,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -576,6 +590,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -668,6 +684,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -759,6 +777,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",
@@ -852,6 +872,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "132051449@N06",

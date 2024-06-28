@@ -162,6 +162,16 @@ class TestCollectionsPhotoResponse:
         assert gallery["photos"][0]["id"] == "53683422277"
         assert gallery["photos"][0]["owner"]["realname"] is None
 
+    def test_gets_machine_tags(self, api: FlickrApi) -> None:
+        gallery = api.get_photos_in_gallery(gallery_id="72157722373536528")
+
+        photo = gallery["photos"][0]
+        assert photo["id"] == "51282506464"
+        assert photo["machine_tags"] == {
+            "bhl": {"page": ["33665621"]},
+            "dc": {"identifier": ["httpsbiodiversitylibraryorgpage33665621"]},
+        }
+
 
 class TestGetAlbum:
     def test_get_album_by_user_id(self, api: FlickrApi) -> None:

@@ -135,6 +135,18 @@ class TestGetSinglePhoto:
     ) -> None:
         assert api.is_photo_deleted(photo_id=photo_id) == is_deleted
 
+    def test_gets_machine_tags(self, api: FlickrApi) -> None:
+        photo = api.get_single_photo(photo_id="51281775881")
+
+        assert photo["machine_tags"] == {
+            "bhl": {"page": ["33665645"]},
+            "dc": {"identifier": ["httpsbiodiversitylibraryorgpage33665645"]},
+            "taxonomy": {
+                "binomial": ["elephasmaximus", "elephasindicus", "elephasafricanus"],
+                "genus": ["loxodonta"],
+            },
+        }
+
 
 class TestGetPhotoContexts:
     def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:

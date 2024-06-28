@@ -33,6 +33,8 @@
         "latitude": 20.647242,
         "longitude": 58.875732
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "78978556@N06",
@@ -143,6 +145,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "34869895@N06",
@@ -246,6 +250,8 @@
         "latitude": 37.850272,
         "longitude": -119.660264
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "9846013@N04",
@@ -334,7 +340,7 @@
           "value": "2022-09-27T19:59:28"
         }
       },
-      "description": "C\u00f4te vend\u00e9enne .... France \nLa lagune au 1er plan , la plage et l' oc\u00e9an ! \ud83d\ude0d",
+      "description": "Côte vendéenne .... France \nLa lagune au 1er plan , la plage et l' océan ! 😍",
       "farm": "66",
       "id": "52393258045",
       "license": {
@@ -343,6 +349,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "144999844@N06",
@@ -408,22 +416,22 @@
         }
       ],
       "tags": [
-        "ext\u00e9rieur",
+        "extérieur",
         "nature",
         "paysage",
         "coucherdesoleil",
         "sunset",
         "plage",
         "mer",
-        "oc\u00e9an",
+        "océan",
         "eau",
         "silhouette",
         "couleurs",
         "ciel",
         "personnes",
         "ombre",
-        "lumi\u00e8re",
-        "vend\u00e9e",
+        "lumière",
+        "vendée",
         "lagune"
       ],
       "title": "Contemplation !"
@@ -454,6 +462,8 @@
         "accuracy": 11,
         "latitude": 49.175643,
         "longitude": -123.621597
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -531,7 +541,7 @@
         "ship",
         "coast",
         "coastline",
-        "k\u00fcste",
+        "küste",
         "mountain",
         "mountains",
         "sun",
@@ -544,19 +554,19 @@
         "ocaso",
         "sonnenuntergang",
         "coucherdesoleil",
-        "p\u00f4rdosol",
+        "pôrdosol",
         "tramonto",
-        "\u0437\u0430\u043a\u0430\u0442",
+        "закат",
         "zonsondergang",
-        "zach\u00f3ds\u0142o\u0144ca",
-        "solnedg\u00e5ng",
+        "zachódsłońca",
+        "solnedgång",
         "solnedgang",
         "auringonlasku",
         "apus",
-        "\u0437\u0430\u043b\u0435\u0437",
+        "залез",
         "matahariterbenam",
-        "m\u1eb7ttr",
-        "\uce90\ub098\ub2e4"
+        "mặttr",
+        "캐나다"
       ],
       "title": "Sunset seen from onboard a ferry bound for Vancouver Island, Canada"
     },
@@ -583,6 +593,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "49910084@N03",
@@ -677,6 +689,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "38382651@N04",
@@ -734,7 +748,9 @@
           "width": 581
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Sunsetting Reflections on the Pacific!"
     },
     {
@@ -763,6 +779,8 @@
         "accuracy": 15,
         "latitude": 36.087089,
         "longitude": -114.931159
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -821,7 +839,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Sunset, Palms, and Hills!"
     },
     {
@@ -847,13 +867,15 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "194968553@N08",
         "path_alias": "juvenalia_de_oliveira",
         "photos_url": "https://www.flickr.com/photos/juvenalia_de_oliveira/",
         "profile_url": "https://www.flickr.com/people/juvenalia_de_oliveira/",
-        "realname": "Juven\u00e1lia  de Oliveira",
+        "realname": "Juvenália  de Oliveira",
         "username": "mjuvenalia"
       },
       "url": "https://www.flickr.com/photos/juvenalia_de_oliveira/52412509807/",
@@ -904,7 +926,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "The beauty of sunrise..."
     },
     {
@@ -933,6 +957,8 @@
         "accuracy": 11,
         "latitude": 42.825724,
         "longitude": 10.313072
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
