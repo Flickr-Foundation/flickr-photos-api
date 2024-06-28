@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.5.1 - 2024-06-28
+
+*   Export the new `MachineTags` type as a top-level type.
+    It can be imported as `from flickr_photos_api import MachineTags`.
+
 ## v2.5.0 - 2024-06-28
 
 *   Add support for machine tags
