@@ -139,12 +139,14 @@ class TestGetSinglePhoto:
         photo = api.get_single_photo(photo_id="51281775881")
 
         assert photo["machine_tags"] == {
-            "bhl": {"page": ["33665645"]},
-            "dc": {"identifier": ["httpsbiodiversitylibraryorgpage33665645"]},
-            "taxonomy": {
-                "binomial": ["elephasmaximus", "elephasindicus", "elephasafricanus"],
-                "genus": ["loxodonta"],
-            },
+            "bhl:page": ["33665645"],
+            "dc:identifier": ["httpsbiodiversitylibraryorgpage33665645"],
+            "taxonomy:binomial": [
+                "elephasmaximus",
+                "elephasindicus",
+                "elephasafricanus",
+            ],
+            "taxonomy:genus": ["loxodonta"],
         }
 
 

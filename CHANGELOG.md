@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v2.5.2 - 2024-06-28
+
+*   Flatten the definition of `MachineTags`, to simplify queries for a namespace/predicate pair.
+
+## v2.5.1 - 2024-06-28
+
+*   Export the new `MachineTags` type as a top-level type.
+    It can be imported as `from flickr_photos_api import MachineTags`.
+
 ## v2.5.0 - 2024-06-28
 
 *   Add support for machine tags

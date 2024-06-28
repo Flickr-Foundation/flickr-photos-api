@@ -12,6 +12,7 @@ from .exceptions import (
 from .types import (
     Comment,
     CommonsInstitution,
+    MachineTags,
     License,
     User,
     UserInfo,
@@ -37,7 +38,7 @@ from .types import (
 )
 
 
-__version__ = "2.5.0"
+__version__ = "2.5.2"
 
 
 __all__ = [
@@ -49,6 +50,7 @@ __all__ = [
     "LicenseNotFound",
     "License",
     "LocationInfo",
+    "MachineTags",
     "User",
     "UserInfo",
     "TakenGranularity",

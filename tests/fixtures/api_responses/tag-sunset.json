@@ -194,10 +194,12 @@
         "longitude": 8.374693
       },
       "machine_tags": {
-        "geo": {
-          "lat": ["45788389"],
-          "lon": ["8374811"]
-        }
+        "geo:lat": [
+          "45788389"
+        ],
+        "geo:lon": [
+          "8374811"
+        ]
       },
       "original_format": null,
       "owner": {
