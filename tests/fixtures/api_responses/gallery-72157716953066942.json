@@ -33,6 +33,8 @@
         "latitude": -24.984126,
         "longitude": 31.629123
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "96657002@N06",
@@ -152,6 +154,8 @@
         "latitude": 34.981706,
         "longitude": 135.748529
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "31676563@N05",
@@ -218,15 +222,15 @@
         "japan",
         "japon",
         "nature",
-        "\u30df\u30b7\u30b7\u30c3\u30d4\u30a2\u30ab\u30df\u30df\u30ac\u30e1",
-        "\u30ab\u30e1",
-        "\u91ce\u751f\u52d5\u7269",
-        "\u81ea\u7136",
-        "\u6771\u5bfa",
-        "\u4eac\u90fd",
-        "\u65e5\u672c",
-        "\u5916\u6765\u7a2e",
-        "\u6c60",
+        "ミシシッピアカミミガメ",
+        "カメ",
+        "野生動物",
+        "自然",
+        "東寺",
+        "京都",
+        "日本",
+        "外来種",
+        "池",
         "wildlife",
         "reptile"
       ],
@@ -255,6 +259,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "29830183@N07",
@@ -352,6 +358,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "35510223@N07",
@@ -444,6 +452,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "140898573@N03",
@@ -501,7 +511,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Chevaux et poulains dans le marais."
     },
     {
@@ -527,6 +539,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "56201138@N03",
@@ -628,6 +642,8 @@
         "url": "https://creativecommons.org/licenses/by-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "8141721@N04",
@@ -721,7 +737,7 @@
           "value": "2019-08-15T17:45:49"
         }
       },
-      "description": "Gar\u00e7a-Moura - Wild - at Pantanal - MT - Brasil. The largest of the herons in Brazil, with a wingspan of 1.80 m.\n\nHappy Wednesday! HBW!\n\nThanks a lot for your visits, comments, faves, invites, etc. Very much appreciated! \n\n\u00a9 All my images are protected under international authors copyright laws and may not be downloaded, reproduced, copied, transmitted or manipulated without my written explicit permission. All rights reserved. Please contact me at thelma.gatuzzo@gmail.com if you intend to buy or use any of my images.\n\nVisit my instagram if you like: @thelmag and@thelma_and_cats\n\n\n",
+      "description": "Garça-Moura - Wild - at Pantanal - MT - Brasil. The largest of the herons in Brazil, with a wingspan of 1.80 m.\n\nHappy Wednesday! HBW!\n\nThanks a lot for your visits, comments, faves, invites, etc. Very much appreciated! \n\n© All my images are protected under international authors copyright laws and may not be downloaded, reproduced, copied, transmitted or manipulated without my written explicit permission. All rights reserved. Please contact me at thelma.gatuzzo@gmail.com if you intend to buy or use any of my images.\n\nVisit my instagram if you like: @thelmag and@thelma_and_cats\n\n\n",
       "farm": "66",
       "id": "51815059727",
       "license": {
@@ -730,14 +746,16 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "20127130@N02",
         "path_alias": "thelmagatuzzo",
         "photos_url": "https://www.flickr.com/photos/thelmagatuzzo/",
         "profile_url": "https://www.flickr.com/people/thelmagatuzzo/",
-        "realname": "Thelma G\u00e1tuzz\u00f4",
-        "username": "Thelma G\u00e1tuzz\u00f4"
+        "realname": "Thelma Gátuzzô",
+        "username": "Thelma Gátuzzô"
       },
       "url": "https://www.flickr.com/photos/thelmagatuzzo/51815059727/",
       "safety_level": "safe",
@@ -789,22 +807,22 @@
       ],
       "tags": [
         "avesbrasileiras",
-        "p\u00e1ssaros",
+        "pássaros",
         "aves",
-        "\u201cfotografiadenatureza\u201d",
+        "“fotografiadenatureza”",
         "vogel",
         "nature",
         "birdwatching",
         "brasileiros",
         "birds",
         "mt",
-        "observa\u00e7\u00e3odeaves",
+        "observaçãodeaves",
         "oiseau",
         "birdphotography",
         "bird",
         "natureza",
-        "thelmagatuzzophotography\u00a9",
-        "thelmagatuzzo\u00a9",
+        "thelmagatuzzophotography©",
+        "thelmagatuzzo©",
         "wild",
         "wildlife",
         "flora",
@@ -816,7 +834,7 @@
         "matogrosso",
         "fauna",
         "2019",
-        "paj\u00e1ro",
+        "pajáro",
         "birdsofbrazil",
         "coth5"
       ],
@@ -845,6 +863,8 @@
         "url": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "94075184@N00",
@@ -956,7 +976,7 @@
           "value": "2021-10-30T16:12:23"
         }
       },
-      "description": "Volunteers from &quot;Hoo&quot; Haven showing some of the rescued birds at Anderson Japanese Garden in Rockford.\n\n\u201cHoo\u201d Haven is dedicated to rehabilitating and releasing, sick, injured and orphaned, North American Wildlife. And to educating individuals to the importance of the conservation of Mother Earth, to maintain the land, clean and beautiful for all.",
+      "description": "Volunteers from &quot;Hoo&quot; Haven showing some of the rescued birds at Anderson Japanese Garden in Rockford.\n\n“Hoo” Haven is dedicated to rehabilitating and releasing, sick, injured and orphaned, North American Wildlife. And to educating individuals to the importance of the conservation of Mother Earth, to maintain the land, clean and beautiful for all.",
       "farm": "66",
       "id": "51654251181",
       "license": {
@@ -965,6 +985,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "42505247@N08",
@@ -1046,7 +1068,7 @@
           "value": "2021-08-04T10:25:03"
         }
       },
-      "description": "Iris setosa grows in Siberia, Alaska and also in northern and alpine regions in Japan. At Tsugaike, Nagano, Japan.\n\n\u767d\u99ac\u306e\u6802\u6c60\u3067\u898b\u305f\u30d2\u30aa\u30a6\u30ae\u30a2\u30e4\u30e1\u3067\u3059\u3002",
+      "description": "Iris setosa grows in Siberia, Alaska and also in northern and alpine regions in Japan. At Tsugaike, Nagano, Japan.\n\n白馬の栂池で見たヒオウギアヤメです。",
       "farm": "66",
       "id": "51376589362",
       "license": {
@@ -1055,6 +1077,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "147061930@N04",
@@ -1129,7 +1153,7 @@
         "nagano",
         "nikon",
         "d850",
-        "\u30d2\u30aa\u30a6\u30ae\u30a2\u30e4\u30e1"
+        "ヒオウギアヤメ"
       ],
       "title": "Iris setosa  (arctic iris): a wild iris in Japan"
     },
@@ -1156,6 +1180,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "188558354@N02",
@@ -1213,7 +1239,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Red water lily"
     },
     {
@@ -1239,6 +1267,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "39263310@N08",
@@ -1296,7 +1326,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "NIK_2043"
     },
     {
@@ -1322,6 +1354,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "67995121@N03",
@@ -1412,6 +1446,8 @@
         "accuracy": 12,
         "latitude": 59.413382,
         "longitude": 17.996601
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -1512,6 +1548,8 @@
         "latitude": 53.75048,
         "longitude": -1.420004
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "75992994@N05",
@@ -1596,7 +1634,7 @@
         "natural",
         "riveraire",
         "airecaldernavigation",
-        "rpsbstaidan\u2019s"
+        "rpsbstaidan’s"
       ],
       "title": "Black Necked Grebe, still has a young one to feed"
     },
@@ -1623,6 +1661,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "48996974@N08",
@@ -1630,7 +1670,7 @@
         "photos_url": "https://www.flickr.com/photos/bereal4ever/",
         "profile_url": "https://www.flickr.com/people/bereal4ever/",
         "realname": null,
-        "username": "\u265eJenny\u265e"
+        "username": "♞Jenny♞"
       },
       "url": "https://www.flickr.com/photos/bereal4ever/51307893097/",
       "safety_level": "safe",
@@ -1680,7 +1720,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Jackpot!!"
     },
     {
@@ -1709,6 +1751,8 @@
         "accuracy": 16,
         "latitude": 61.50908,
         "longitude": 8.786552
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -1805,6 +1849,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "184030969@N06",
@@ -1919,6 +1965,8 @@
         "url": "https://creativecommons.org/licenses/by-nc/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "png",
       "owner": {
         "id": "57915000@N02",
@@ -2021,6 +2069,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "54441702@N06",
@@ -2078,8 +2128,10 @@
           "width": 1024
         }
       ],
-      "tags": [],
-      "title": "\u00c9cureuils Marseillais"
+      "tags": [
+
+      ],
+      "title": "Écureuils Marseillais"
     },
     {
       "count_comments": 1,
@@ -2107,6 +2159,8 @@
         "accuracy": 14,
         "latitude": 43.861174,
         "longitude": 10.353026
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -2205,6 +2259,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "36119280@N04",
@@ -2301,7 +2357,7 @@
           "value": "2014-08-14T11:36:57"
         }
       },
-      "description": "<a href=\"https://en.wikipedia.org/wiki/Chattering_lory\" rel=\"noreferrer nofollow\">en.wikipedia.org/wiki/Chattering_lory</a>\n\n\u00a9 Copyright 2014, All rights reserved. Do not copy or otherwise reuse my photos. copy or otherwise reuse my photos.",
+      "description": "<a href=\"https://en.wikipedia.org/wiki/Chattering_lory\" rel=\"noreferrer nofollow\">en.wikipedia.org/wiki/Chattering_lory</a>\n\n© Copyright 2014, All rights reserved. Do not copy or otherwise reuse my photos. copy or otherwise reuse my photos.",
       "farm": "66",
       "id": "51303546737",
       "license": {
@@ -2313,6 +2369,8 @@
         "accuracy": 16,
         "latitude": 3.143752,
         "longitude": 101.688766
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -2401,6 +2459,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "145779313@N02",
@@ -2458,7 +2518,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "TANZANIA"
     },
     {
@@ -2484,6 +2546,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "141178496@N06",
@@ -2541,8 +2605,10 @@
           "width": 1024
         }
       ],
-      "tags": [],
-      "title": "Rosa L\u00f6ffler ........"
+      "tags": [
+
+      ],
+      "title": "Rosa Löffler ........"
     },
     {
       "count_comments": 52,
@@ -2567,6 +2633,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "141178496@N06",
@@ -2624,7 +2692,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Kuhreiher"
     },
     {
@@ -2641,7 +2711,7 @@
           "value": "2021-07-07T17:47:11"
         }
       },
-      "description": "<a href=\"https://www.facebook.com/agreatcapture\" rel=\"noreferrer nofollow\">Facebook</a> \u2666 <a href=\"https://twitter.com/AGreatCapture\" rel=\"noreferrer nofollow\">Twitter</a> \u2666 <a href=\"https://www.pinterest.com/acapture0786/\" rel=\"noreferrer nofollow\">Pinterest</a> \u2666 <a href=\"https://instagram.com/agreatcapture/\" rel=\"noreferrer nofollow\">Instagram</a> \u2666 <a href=\"https://500px.com/agreatcapture/\" rel=\"noreferrer nofollow\">500px</a> \u2666 <a href=\"http://www.agreatcapture.com/\" rel=\"noreferrer nofollow\">Website</a>",
+      "description": "<a href=\"https://www.facebook.com/agreatcapture\" rel=\"noreferrer nofollow\">Facebook</a> ♦ <a href=\"https://twitter.com/AGreatCapture\" rel=\"noreferrer nofollow\">Twitter</a> ♦ <a href=\"https://www.pinterest.com/acapture0786/\" rel=\"noreferrer nofollow\">Pinterest</a> ♦ <a href=\"https://instagram.com/agreatcapture/\" rel=\"noreferrer nofollow\">Instagram</a> ♦ <a href=\"https://500px.com/agreatcapture/\" rel=\"noreferrer nofollow\">500px</a> ♦ <a href=\"http://www.agreatcapture.com/\" rel=\"noreferrer nofollow\">Website</a>",
       "farm": "66",
       "id": "51298827239",
       "license": {
@@ -2650,6 +2720,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "79752057@N00",
@@ -2723,7 +2795,7 @@
         "canadian",
         "northamerica",
         "summertime",
-        "\u00e9t\u00e9",
+        "été",
         "2021",
         "on",
         "agc",
@@ -2756,7 +2828,7 @@
           "value": "2021-06-17T10:20:17"
         }
       },
-      "description": "Around this time many flowers are <b>blooming in our garden</b> - \nmost of them roses. Here under the apple tree a poisonous foxglove.\n- - -\nUm diese Zeit bl\u00fchen viele Blumen im Garten, die meisten von ihnen sind Rosen.\nHier unter dem Apfelbaum w\u00e4chst ein giftiger Fingerhut.",
+      "description": "Around this time many flowers are <b>blooming in our garden</b> - \nmost of them roses. Here under the apple tree a poisonous foxglove.\n- - -\nUm diese Zeit blühen viele Blumen im Garten, die meisten von ihnen sind Rosen.\nHier unter dem Apfelbaum wächst ein giftiger Fingerhut.",
       "farm": "66",
       "id": "51296586078",
       "license": {
@@ -2768,6 +2840,8 @@
         "accuracy": 13,
         "latitude": 52.471645,
         "longitude": 13.264124
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -2826,7 +2900,9 @@
           "width": 768
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Fingerhut im Garten"
     },
     {
@@ -2843,7 +2919,7 @@
           "value": "2019-08-12T08:56:54"
         }
       },
-      "description": "Jaguar - wild - after an early swim at Cuiab\u00e1 River.\n\nFacts: The jaguar (Panthera onca) is a big cat, a feline in the Panthera genus, and is the only extant Panthera species native to the Americas. The jaguar is the third-largest feline species after the tiger and the lion, and the largest in the Americas. The jaguar is a threatened species and its numbers are declining. Threats include loss and fragmentation of habitat. Press L.\n\nHappy Wednesday!\n\nThanks a lot for your visits, comments, faves, invites, etc. Very much appreciated! If you want, check my instagram: @thelmag\n\n\u00a9 All my images are protected under international authors copyright laws and may not be downloaded, reproduced, copied, transmitted or manipulated without my written explicit permission. All rights reserved. Please contact me at thelma.gatuzzo@gmail.com if you intend to buy or use any of my images.\n\nVisit my instagram if you like: @thelmag",
+      "description": "Jaguar - wild - after an early swim at Cuiabá River.\n\nFacts: The jaguar (Panthera onca) is a big cat, a feline in the Panthera genus, and is the only extant Panthera species native to the Americas. The jaguar is the third-largest feline species after the tiger and the lion, and the largest in the Americas. The jaguar is a threatened species and its numbers are declining. Threats include loss and fragmentation of habitat. Press L.\n\nHappy Wednesday!\n\nThanks a lot for your visits, comments, faves, invites, etc. Very much appreciated! If you want, check my instagram: @thelmag\n\n© All my images are protected under international authors copyright laws and may not be downloaded, reproduced, copied, transmitted or manipulated without my written explicit permission. All rights reserved. Please contact me at thelma.gatuzzo@gmail.com if you intend to buy or use any of my images.\n\nVisit my instagram if you like: @thelmag",
       "farm": "66",
       "id": "51296723669",
       "license": {
@@ -2852,14 +2928,16 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "20127130@N02",
         "path_alias": "thelmagatuzzo",
         "photos_url": "https://www.flickr.com/photos/thelmagatuzzo/",
         "profile_url": "https://www.flickr.com/people/thelmagatuzzo/",
-        "realname": "Thelma G\u00e1tuzz\u00f4",
-        "username": "Thelma G\u00e1tuzz\u00f4"
+        "realname": "Thelma Gátuzzô",
+        "username": "Thelma Gátuzzô"
       },
       "url": "https://www.flickr.com/photos/thelmagatuzzo/51296723669/",
       "safety_level": "safe",
@@ -2911,7 +2989,7 @@
       ],
       "tags": [
         "americadosul",
-        "f\u00e9lido",
+        "félido",
         "yaguar",
         "southamerica",
         "animal",
@@ -2924,11 +3002,11 @@
         "bigcat",
         "fauna",
         "matogrosso",
-        "on\u00e7a",
+        "onça",
         "pantheraonca",
         "mamal",
         "animalia",
-        "thelmagatuzzo\u00a9",
+        "thelmagatuzzo©",
         "cat",
         "jaguar",
         "mammalia",
@@ -2973,6 +3051,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "188057475@N02",
@@ -3077,6 +3157,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "101037832@N08",
@@ -3134,7 +3216,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Budgerigar"
     },
     {
@@ -3160,6 +3244,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "129156126@N08",
@@ -3217,7 +3303,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "White Tailed Eagle"
     },
     {
@@ -3243,6 +3331,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "158365943@N06",
@@ -3300,7 +3390,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "5784"
     },
     {
@@ -3326,6 +3418,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "158365943@N06",
@@ -3383,8 +3477,10 @@
           "width": 1024
         }
       ],
-      "tags": [],
-      "title": "\u00e9l\u00e9phant et bebe bw-8244"
+      "tags": [
+
+      ],
+      "title": "éléphant et bebe bw-8244"
     },
     {
       "count_comments": 2,
@@ -3409,6 +3505,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "150188230@N03",
@@ -3511,6 +3609,8 @@
         "url": "https://creativecommons.org/licenses/by-nc-sa/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "101289507@N04",
@@ -3604,6 +3704,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "139710384@N02",
@@ -3668,7 +3770,9 @@
           "width": 2452
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Pretty in blue"
     },
     {
@@ -3685,7 +3789,7 @@
           "value": "2011-05-19T12:32:09"
         }
       },
-      "description": "The Zebra lives in close-knit groups called families or harems, led by a single male. There can be up to 17 members in each family. Everybody in the family relies on each other to look out for danger and help those who are in trouble. They stay close to each other even when they migrate in herds of 10,000 or more. They slow their pace for weak or young members and never leave them. They can live to be 28 years old\n\nUnlike Gr\u00e9vy's and Mountain Zebras, Grant's Zebra are not endangered. However, recent civil wars and political conflicts in the African countries near their habitats have caused regional extinction. Zebra are also killed for their coats or to eliminate competition with domestic livestock.\n\nThere may be some 300,000 Grant\u2019s Zebra left in the wild, on the Serengeti-Mara Plains alone there are an estimated 150,000 Plains Zebras. During the rainy season in the Serengeti, aggregate herds of up to 10,000 individuals may form, part of one of the last great wildlife spectacles in the world.\n",
+      "description": "The Zebra lives in close-knit groups called families or harems, led by a single male. There can be up to 17 members in each family. Everybody in the family relies on each other to look out for danger and help those who are in trouble. They stay close to each other even when they migrate in herds of 10,000 or more. They slow their pace for weak or young members and never leave them. They can live to be 28 years old\n\nUnlike Grévy's and Mountain Zebras, Grant's Zebra are not endangered. However, recent civil wars and political conflicts in the African countries near their habitats have caused regional extinction. Zebra are also killed for their coats or to eliminate competition with domestic livestock.\n\nThere may be some 300,000 Grant’s Zebra left in the wild, on the Serengeti-Mara Plains alone there are an estimated 150,000 Plains Zebras. During the rainy season in the Serengeti, aggregate herds of up to 10,000 individuals may form, part of one of the last great wildlife spectacles in the world.\n",
       "farm": "66",
       "id": "51289983536",
       "license": {
@@ -3697,6 +3801,8 @@
         "accuracy": 7,
         "latitude": -2.921097,
         "longitude": 35.848388
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -3790,6 +3896,8 @@
         "accuracy": 12,
         "latitude": 43.779522,
         "longitude": -110.559883
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -3887,6 +3995,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "21340539@N05",
@@ -3944,7 +4054,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Amherst, Massachusetts, USA"
     },
     {
@@ -3970,6 +4082,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "28867468@N08",
@@ -4055,6 +4169,8 @@
         "latitude": -33.842777,
         "longitude": 151.241322
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "14143447@N06",
@@ -4135,7 +4251,7 @@
           "value": "2013-10-25T05:46:49"
         }
       },
-      "description": "<b>DO NOT use my pictures without my written permission, these images are under copyright. Contact me if you want to buy or use them. CarloAlessioCozzolino\u00a9 All rights reserved</b>",
+      "description": "<b>DO NOT use my pictures without my written permission, these images are under copyright. Contact me if you want to buy or use them. CarloAlessioCozzolino© All rights reserved</b>",
       "farm": "8",
       "id": "11751131745",
       "license": {
@@ -4147,6 +4263,8 @@
         "accuracy": 16,
         "latitude": -35.996184,
         "longitude": 137.323576
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -4224,7 +4342,7 @@
         "value": "2021-06-27T16:42:54+00:00"
       },
       "date_taken": null,
-      "description": "Diving in Galapagos is spectacular because you can swim with sea lions and sharks #galapagos #ecuador\ud83c\uddea\ud83c\udde8 #darwin #pacificocean #scubagram #diving #scubadiving #underwaterphotography #oceanlovers #deepdownyouwantthebest #uwphotography #diverlife #scubadiverslife #scubamag #TravelAwesome #worldtraveler #wanderlust\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#travelaroundtheworld #globetrotter #travelphotography #wegdromer #wonderful_places @columbustravel #breathtaking #neverstopexploring #aroundtheworld #sceniclocations #bucketlist #epic #earthpics #earthporn #wonderful_places",
+      "description": "Diving in Galapagos is spectacular because you can swim with sea lions and sharks #galapagos #ecuador🇪🇨 #darwin #pacificocean #scubagram #diving #scubadiving #underwaterphotography #oceanlovers #deepdownyouwantthebest #uwphotography #diverlife #scubadiverslife #scubamag #TravelAwesome #worldtraveler #wanderlust\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#travelaroundtheworld #globetrotter #travelphotography #wegdromer #wonderful_places @columbustravel #breathtaking #neverstopexploring #aroundtheworld #sceniclocations #bucketlist #epic #earthpics #earthporn #wonderful_places",
       "farm": "66",
       "id": "51275360345",
       "license": {
@@ -4233,6 +4351,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "44970085@N07",
@@ -4290,7 +4410,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Diving in Galapagos"
     },
     {
@@ -4316,6 +4438,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "66396529@N00",
@@ -4373,7 +4497,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "..."
     },
     {
@@ -4399,13 +4525,15 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "165824254@N04",
         "path_alias": null,
         "photos_url": "https://www.flickr.com/photos/165824254@N04/",
         "profile_url": "https://www.flickr.com/people/165824254@N04/",
-        "realname": "Anna S\u0142upianek",
+        "realname": "Anna Słupianek",
         "username": "Solista*"
       },
       "url": "https://www.flickr.com/photos/165824254@N04/51273048905/",
@@ -4513,6 +4641,8 @@
         "latitude": 55.687988,
         "longitude": 12.564153
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "24414775@N05",
@@ -4605,6 +4735,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "36480177@N05",
@@ -4696,6 +4828,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "187582573@N06",
@@ -4762,7 +4896,7 @@
         "time",
         "shake",
         "zoo",
-        "sch\u00f6nbrunn",
+        "schönbrunn",
         "wien",
         "tiergarten",
         "animal",
@@ -4805,6 +4939,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "35355794@N04",
@@ -4865,7 +5001,7 @@
       "tags": [
         "ngc"
       ],
-      "title": "Gavi\u00e3o Caracara"
+      "title": "Gavião Caracara"
     },
     {
       "count_comments": 0,
@@ -4890,6 +5026,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "95918865@N05",
@@ -4947,7 +5085,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Toucan bird"
     },
     {
@@ -4973,6 +5113,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "86881049@N00",
@@ -5058,6 +5200,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "39489005@N05",
@@ -5168,6 +5312,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "187458160@N06",
@@ -5265,7 +5411,7 @@
           "value": "2021-06-20T15:31:16"
         }
       },
-      "description": "Parc du Puy du Fou au Epesses en Vend\u00e9e ",
+      "description": "Parc du Puy du Fou au Epesses en Vendée ",
       "farm": "66",
       "id": "51265237357",
       "license": {
@@ -5274,6 +5420,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "14116140@N00",
@@ -5341,8 +5489,8 @@
       "tags": [
         "puydufou",
         "parcdupuydufou",
-        "\u00e9pesse",
-        "vend\u00e9e",
+        "épesse",
+        "vendée",
         "france",
         "juin2021",
         "2021",
@@ -5394,6 +5542,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "125569843@N07",
@@ -5489,6 +5639,8 @@
         "url": "https://creativecommons.org/licenses/by-nc/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "51035555243@N01",
@@ -5596,6 +5748,8 @@
         "latitude": 51.440094,
         "longitude": -2.010864
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "38307297@N08",
@@ -5693,6 +5847,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "94062339@N06",
@@ -5700,7 +5856,7 @@
         "photos_url": "https://www.flickr.com/photos/94062339@N06/",
         "profile_url": "https://www.flickr.com/people/94062339@N06/",
         "realname": "Alves Cunha",
-        "username": "botanop\u00e9"
+        "username": "botanopé"
       },
       "url": "https://www.flickr.com/photos/94062339@N06/51256040745/",
       "safety_level": "safe",
@@ -5757,7 +5913,9 @@
           "width": 4320
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "bhy (450)"
     },
     {
@@ -5774,7 +5932,7 @@
           "value": "2021-05-31T16:23:58"
         }
       },
-      "description": "\u2665 Thank you very much for your visits, faves, and kind comments \u2665",
+      "description": "♥ Thank you very much for your visits, faves, and kind comments ♥",
       "farm": "66",
       "id": "51255216693",
       "license": {
@@ -5783,6 +5941,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "97236284@N04",
@@ -5874,7 +6034,7 @@
           "value": "2021-05-28T16:44:29"
         }
       },
-      "description": "Northern Gannet / Basst\u00f6lpel / Morus bassanus\nGannet colony on the island of Helgoland\n\nMy Helgoland-album is here: <a href=\"https://www.flickr.com/photos/189838078@N05/albums/72157719401491897\">www.flickr.com/photos/189838078@N05/albums/72157719401491897</a>\n\nA report of my last Helgoland-Tour you can find here (in german): <a href=\"https://www.kbratke-naturfotografie.com/2021/06/11/endlich-raus-urlaub-auf-helgoland/\" rel=\"noreferrer nofollow\">www.kbratke-naturfotografie.com/2021/06/11/endlich-raus-u...</a>",
+      "description": "Northern Gannet / Basstölpel / Morus bassanus\nGannet colony on the island of Helgoland\n\nMy Helgoland-album is here: <a href=\"https://www.flickr.com/photos/189838078@N05/albums/72157719401491897\">www.flickr.com/photos/189838078@N05/albums/72157719401491897</a>\n\nA report of my last Helgoland-Tour you can find here (in german): <a href=\"https://www.kbratke-naturfotografie.com/2021/06/11/endlich-raus-urlaub-auf-helgoland/\" rel=\"noreferrer nofollow\">www.kbratke-naturfotografie.com/2021/06/11/endlich-raus-u...</a>",
       "farm": "66",
       "id": "51241737672",
       "license": {
@@ -5883,6 +6043,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "189838078@N05",
@@ -5957,10 +6119,10 @@
         "seabird",
         "vogel",
         "bird",
-        "basst\u00f6lpel",
+        "basstölpel",
         "northerngannet",
         "morusbassanus",
-        "t\u00f6lpel",
+        "tölpel",
         "gannet",
         "deutschland",
         "germany",
@@ -6003,6 +6165,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "161909462@N07",
@@ -6108,6 +6272,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "106269596@N05",
@@ -6188,7 +6354,7 @@
           "value": "2021-06-08T08:58:56"
         }
       },
-      "description": "Bubulcus ibis, Escaroupim, Salvaterra de Magos, Santar\u00e9m, Portugal",
+      "description": "Bubulcus ibis, Escaroupim, Salvaterra de Magos, Santarém, Portugal",
       "farm": "66",
       "id": "51253937884",
       "license": {
@@ -6197,6 +6363,8 @@
         "url": "https://creativecommons.org/licenses/by/2.0/"
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "181980422@N05",
@@ -6262,15 +6430,15 @@
         }
       ],
       "tags": [
-        "gar\u00e7a",
-        "gar\u00e7aboieira",
+        "garça",
+        "garçaboieira",
         "carraceiro",
         "cattleegret",
         "bubulcusibis",
         "nikond850",
         "tamron150600mmg2"
       ],
-      "title": "Carraceiro, em fase de reprodu\u00e7\u00e3o Cattle Egret, on bridal  plumage"
+      "title": "Carraceiro, em fase de reprodução Cattle Egret, on bridal  plumage"
     },
     {
       "count_comments": 396,
@@ -6298,6 +6466,8 @@
         "accuracy": 12,
         "latitude": -31.332964,
         "longitude": -54.163284
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -6367,9 +6537,9 @@
         "pampa",
         "campanha",
         "fronteira",
-        "bag\u00e9",
+        "bagé",
         "riograndedosul",
-        "br\u00e9sil",
+        "brésil",
         "cavalos",
         "caballos",
         "horses",
@@ -6398,28 +6568,28 @@
         "gregge",
         "herde",
         "brasil",
-        "sudam\u00e9rica",
-        "s\u00fcdamerika",
-        "suram\u00e9rica",
-        "am\u00e9ricadosul",
+        "sudamérica",
+        "südamerika",
+        "suramérica",
+        "américadosul",
         "southamerica",
-        "am\u00e9riquedusud",
+        "amériquedusud",
         "americameridionale",
-        "am\u00e9ricadelsur",
+        "américadelsur",
         "americadelsud",
         "cavalo",
-        "\u99ac",
-        "\u062d\u0635\u0627\u0646",
-        "\u9a6c",
-        "\u043b\u043e\u0448\u0430\u0434\u044c",
-        "\u0998\u09cb\u09a1\u09bc\u09be",
-        "\ub9d0",
-        "\u05e1\u05d5\u05e1",
-        "\u0e21\u0e49\u0e32",
-        "h\u00e4st",
+        "馬",
+        "حصان",
+        "马",
+        "лошадь",
+        "ঘোড়া",
+        "말",
+        "סוס",
+        "ม้า",
+        "häst",
         "hest",
         "hevonen",
-        "\u03ac\u03bb\u03bf\u03b3\u03bf",
+        "άλογο",
         "brazil",
         "eduardoamorim"
       ],
@@ -6448,6 +6618,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "155376904@N07",
@@ -6505,7 +6677,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Caught"
     },
     {
@@ -6534,6 +6708,8 @@
         "accuracy": 6,
         "latitude": -51.604371,
         "longitude": -60.501708
+      },
+      "machine_tags": {
       },
       "original_format": "jpg",
       "owner": {
@@ -6644,6 +6820,8 @@
         "latitude": 79.687184,
         "longitude": 13.447265
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "184033345@N08",
@@ -6745,6 +6923,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "44591020@N00",
@@ -6803,9 +6983,9 @@
         }
       ],
       "tags": [
-        "t\u00fcrkischermohn",
+        "türkischermohn",
         "orientalpoppy",
-        "mohnbl\u00fcte",
+        "mohnblüte",
         "mohn",
         "poppy",
         "poppies",
@@ -6846,6 +7026,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "23447268@N07",
@@ -6959,6 +7141,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "39652177@N04",
@@ -7051,6 +7235,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "100927503@N06",
@@ -7134,7 +7320,7 @@
           "value": "2018-03-15T14:41:31"
         }
       },
-      "description": "\u00a1\u00a1Huy que verg\u00fcenza!!",
+      "description": "¡¡Huy que vergüenza!!",
       "farm": "66",
       "id": "51207007389",
       "license": {
@@ -7143,6 +7329,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "131994394@N02",
@@ -7207,7 +7395,9 @@
           "width": 1281
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "_DSC3457 - 2"
     },
     {
@@ -7233,6 +7423,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "147630395@N03",
@@ -7326,6 +7518,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "12090378@N05",
@@ -7421,6 +7615,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "12369485@N05",
@@ -7511,6 +7707,8 @@
         "latitude": 53.750169,
         "longitude": -1.408814
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "75992994@N05",
@@ -7595,7 +7793,7 @@
         "natural",
         "riveraire",
         "airecaldernavigation",
-        "rpsbstaidan\u2019s",
+        "rpsbstaidan’s",
         "commontern"
       ],
       "title": "Common Terns, delivering food"
@@ -7614,7 +7812,7 @@
           "value": "2021-06-06T16:15:22"
         }
       },
-      "description": "Located : Kabutoyama, Kumihama town, Kyotango city, Kyoto pref.\n\n\u4eac\u90fd\u5e9c\u4eac\u4e39\u5f8c\u5e02\u4e45\u7f8e\u6d5c\u753a\u7532\u5c71",
+      "description": "Located : Kabutoyama, Kumihama town, Kyotango city, Kyoto pref.\n\n京都府京丹後市久美浜町甲山",
       "farm": "66",
       "id": "51237942311",
       "license": {
@@ -7626,6 +7824,8 @@
         "accuracy": 16,
         "latitude": 35.607399,
         "longitude": 134.920595
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -7694,21 +7894,21 @@
         "kyoto",
         "kyotango",
         "kumihama",
-        "\u91ce\u751f\u52d5\u7269",
-        "\u54fa\u4e73\u985e",
-        "\u4eac\u90fd",
-        "\u81ea\u7136",
-        "\u68ee",
-        "\u4eac\u4e39\u5f8c\u5e02",
-        "\u4e39\u5f8c\u534a\u5cf6",
-        "\u65e5\u672c",
+        "野生動物",
+        "哺乳類",
+        "京都",
+        "自然",
+        "森",
+        "京丹後市",
+        "丹後半島",
+        "日本",
         "japan",
         "japon",
-        "\u72d0",
-        "\u30ad\u30c4\u30cd",
-        "\u4e45\u7f8e\u6d5c",
+        "狐",
+        "キツネ",
+        "久美浜",
         "redfox",
-        "\u30a2\u30ab\u30ae\u30c4\u30cd"
+        "アカギツネ"
       ],
       "title": "Red fox"
     },
@@ -7735,6 +7935,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "24931020@N02",
@@ -7792,7 +7994,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Flight of the Peacock"
     },
     {
@@ -7818,6 +8022,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "44591020@N00",
@@ -7879,11 +8085,11 @@
         "cwwwwernerkrauseeu",
         "2021",
         "schwan",
-        "schw\u00e4ne",
+        "schwäne",
         "swan",
         "swans",
         "vogel",
-        "v\u00f6gel",
+        "vögel",
         "bird",
         "birds",
         "animals",
@@ -7921,6 +8127,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "43231495@N06",
@@ -7985,7 +8193,9 @@
           "width": 1064
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Steller's jay"
     },
     {
@@ -8011,6 +8221,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "10419670@N07",
@@ -8100,6 +8312,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "89701859@N02",
@@ -8189,6 +8403,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "76597624@N03",
@@ -8288,6 +8504,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "33479291@N02",
@@ -8387,7 +8605,7 @@
           "value": "2017-06-06T11:30:31"
         }
       },
-      "description": ".\n\n<b><a href=\"https://www.flickr.com/groups/challenge_on_flickr/\">Challenge on flickr</a>. CoF149 - FAUNA &amp; SHARP </b>\n\n\u00a9annedhuart",
+      "description": ".\n\n<b><a href=\"https://www.flickr.com/groups/challenge_on_flickr/\">Challenge on flickr</a>. CoF149 - FAUNA &amp; SHARP </b>\n\n©annedhuart",
       "farm": "66",
       "id": "50006226281",
       "license": {
@@ -8396,6 +8614,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "12984605@N05",
@@ -8403,7 +8623,7 @@
         "photos_url": "https://www.flickr.com/photos/anne-minerve/",
         "profile_url": "https://www.flickr.com/people/anne-minerve/",
         "realname": null,
-        "username": "Anne*\u00b0"
+        "username": "Anne*°"
       },
       "url": "https://www.flickr.com/photos/anne-minerve/50006226281/",
       "safety_level": "safe",
@@ -8454,7 +8674,7 @@
         }
       ],
       "tags": [
-        "\u00a9annedhuart",
+        "©annedhuart",
         "alpesdehauteprovence",
         "cof149",
         "fauna",
@@ -8490,6 +8710,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "21155756@N07",
@@ -8570,6 +8792,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "84237742@N00",
@@ -8684,7 +8908,7 @@
         "topnotch",
         "d500",
         "nikon",
-        "\u51a0\u7d05\u881f\u5634\u96c0"
+        "冠紅蠟嘴雀"
       ],
       "title": "- CARDENAL CRESTADO (Paroaria coronata- Red crested Cardina )  - toma  en Reserva COSTANERA SUR .RECS. Buenos Aires Argentina."
     },
@@ -8702,7 +8926,7 @@
           "value": "2010-09-13T20:18:19"
         }
       },
-      "description": "Serengeti National Park\nTanzania\nEast Africa\n\nWildebeest can be seen behind the zebra, and in the far distance you can see impalas.  \n\nThe plains zebra (Equus quagga), also known as the common zebra, or locally as the &quot;quagga&quot; is the most common and geographically widespread species of zebra. It ranges from the south of Ethiopia through East Africa to as far south as Botswana and eastern South Africa. The plains zebra remains common in game reserves, but is threatened by human activities such as hunting for its meat and hide, as well as competition with livestock and encroachment by farming on much of its habitat.\n\nThe plains zebra is a highly social species, forming harems with a single stallion, several mares and their recent offspring; there are also bachelor groups. Groups may come together to form herds. The animals keep watch for predators rather than attempting to hide; they bark or snort when they see a predator, and the harem stallion attacks predators to defend his harem. The species population is stable and not endangered, though some populations such as in Tanzania have declined sharply. \u2013 Wikipedia",
+      "description": "Serengeti National Park\nTanzania\nEast Africa\n\nWildebeest can be seen behind the zebra, and in the far distance you can see impalas.  \n\nThe plains zebra (Equus quagga), also known as the common zebra, or locally as the &quot;quagga&quot; is the most common and geographically widespread species of zebra. It ranges from the south of Ethiopia through East Africa to as far south as Botswana and eastern South Africa. The plains zebra remains common in game reserves, but is threatened by human activities such as hunting for its meat and hide, as well as competition with livestock and encroachment by farming on much of its habitat.\n\nThe plains zebra is a highly social species, forming harems with a single stallion, several mares and their recent offspring; there are also bachelor groups. Groups may come together to form herds. The animals keep watch for predators rather than attempting to hide; they bark or snort when they see a predator, and the harem stallion attacks predators to defend his harem. The species population is stable and not endangered, though some populations such as in Tanzania have declined sharply. – Wikipedia",
       "farm": "66",
       "id": "51232691317",
       "license": {
@@ -8714,6 +8938,8 @@
         "accuracy": 11,
         "latitude": -1.516622,
         "longitude": 35.209121
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -8773,7 +8999,7 @@
         }
       ],
       "tags": [
-        "\u2022kenya2010",
+        "•kenya2010",
         "masaimaragamereserve",
         "eastafrica",
         "plainszebra",
@@ -8820,6 +9046,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "33982546@N05",
@@ -8907,7 +9135,7 @@
           "value": "2019-06-29T12:07:16"
         }
       },
-      "description": "Saguinus imperator\nRio Amonia - Acre - Br\u00e9sil\n\nPhoto de Serge Guiraud\ndroits r\u00e9serv\u00e9s\nsguiraud@club-internet.fr",
+      "description": "Saguinus imperator\nRio Amonia - Acre - Brésil\n\nPhoto de Serge Guiraud\ndroits réservés\nsguiraud@club-internet.fr",
       "farm": "66",
       "id": "48534979896",
       "license": {
@@ -8916,6 +9144,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "154558491@N02",
@@ -8977,14 +9207,14 @@
         "singe",
         "empereursaguinus",
         "imperatorsingesprimatessinges",
-        "damazoniemonkeysamazonieamazoneamazonamazoniaam\u00e9rique",
+        "damazoniemonkeysamazonieamazoneamazonamazoniaamérique",
         "du",
         "sudserge",
         "guiraudjabiru",
         "prodsaguinus",
         "midas",
         "petits",
-        "br\u00e9sil",
+        "brésil",
         "brasil",
         "brazil"
       ],
@@ -9004,7 +9234,7 @@
           "value": "2019-07-13T15:32:11"
         }
       },
-      "description": "Tatous \u00e0 6 bandes\nEuphractus sexcinctus\nTatous juv\u00e9niles sortant de leur terrier\nPantanal - Mato Grosso\nBr\u00e9sil\n\nPhoto de Serge Guiraud\ncontact sguiraud@club-internet.fr",
+      "description": "Tatous à 6 bandes\nEuphractus sexcinctus\nTatous juvéniles sortant de leur terrier\nPantanal - Mato Grosso\nBrésil\n\nPhoto de Serge Guiraud\ncontact sguiraud@club-internet.fr",
       "farm": "66",
       "id": "49072245181",
       "license": {
@@ -9013,6 +9243,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "154558491@N02",
@@ -9072,7 +9304,7 @@
       ],
       "tags": [
         "tatou",
-        "\u00e0",
+        "à",
         "6",
         "bandes",
         "euphractus",
@@ -9082,10 +9314,10 @@
         "pantanal",
         "mato",
         "grosso",
-        "br\u00e9sil",
+        "brésil",
         "brasil",
         "brazil",
-        "mammif\u00e8resam\u00e9rique",
+        "mammifèresamérique",
         "du",
         "sud",
         "faune",
@@ -9109,7 +9341,7 @@
           "value": "2019-11-01T16:50:36"
         }
       },
-      "description": "Hippopotame commun\nLa particularit\u00e9 de ces hippopotames est de leur adaptation aux eaux de mer. \nR\u00e9serve Orango\nArchipel des Bijagos - Guin\u00e9e-Bissau\n\nphoto de Serge Guiraud\ncontact : sguiraud@club-internet.fr",
+      "description": "Hippopotame commun\nLa particularité de ces hippopotames est de leur adaptation aux eaux de mer. \nRéserve Orango\nArchipel des Bijagos - Guinée-Bissau\n\nphoto de Serge Guiraud\ncontact : sguiraud@club-internet.fr",
       "farm": "66",
       "id": "49083469013",
       "license": {
@@ -9118,6 +9350,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "154558491@N02",
@@ -9182,8 +9416,8 @@
         "afrique",
         "archipel",
         "des",
-        "guin\u00e9ebissau",
-        "mammif\u00e8res",
+        "guinéebissau",
+        "mammifères",
         "big",
         "five"
       ],
@@ -9212,6 +9446,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "130397654@N08",
@@ -9298,6 +9534,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "169771858@N03",
@@ -9408,6 +9646,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "169771858@N03",
@@ -9508,6 +9748,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "35129543@N08",
@@ -9565,7 +9807,9 @@
           "width": 1024
         }
       ],
-      "tags": [],
+      "tags": [
+
+      ],
       "title": "Hummingbird"
     },
     {
@@ -9591,6 +9835,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "53755691@N00",

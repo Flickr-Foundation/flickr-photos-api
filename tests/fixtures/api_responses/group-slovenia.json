@@ -20,7 +20,7 @@
           "value": "2020-05-03T13:43:27"
         }
       },
-      "description": "Velika Vrem\u0161\u010dica, Slovenija\n\nCanon EOS 760D\nTAMRON 16-300mm F/3,5-6,3\nf/11\n1/400\n16 mm\nISO 100",
+      "description": "Velika Vremščica, Slovenija\n\nCanon EOS 760D\nTAMRON 16-300mm F/3,5-6,3\nf/11\n1/400\n16 mm\nISO 100",
       "farm": "66",
       "id": "53686676075",
       "license": {
@@ -32,6 +32,8 @@
         "accuracy": 15,
         "latitude": 45.688327,
         "longitude": 14.061503
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -191,6 +193,8 @@
         "latitude": 46.3609,
         "longitude": 14.105868
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "136762711@N05",
@@ -278,6 +282,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "191347741@N02",
@@ -342,8 +348,10 @@
           "width": 1600
         }
       ],
-      "tags": [],
-      "title": "Sveti Toma\u017e"
+      "tags": [
+
+      ],
+      "title": "Sveti Tomaž"
     },
     {
       "count_comments": 7,
@@ -371,6 +379,8 @@
         "accuracy": 16,
         "latitude": 46.365261,
         "longitude": 14.106767
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -476,6 +486,8 @@
         "latitude": 46.014369,
         "longitude": 14.415225
       },
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "60591747@N06",
@@ -540,7 +552,7 @@
         "033",
         "363033",
         "sz",
-        "s\u017e",
+        "sž",
         "railway",
         "railroad",
         "bahn",
@@ -551,7 +563,7 @@
         "freight",
         "cargo"
       ],
-      "title": "363 033, Brezovica \ud83c\uddf8\ud83c\uddee, 9 Sept 2021"
+      "title": "363 033, Brezovica 🇸🇮, 9 Sept 2021"
     },
     {
       "count_comments": 0,
@@ -567,7 +579,7 @@
           "value": "2024-04-21T13:01:50"
         }
       },
-      "description": "It's the centre of dispersed hamlet on Gra\u0161ka gora.",
+      "description": "It's the centre of dispersed hamlet on Graška gora.",
       "farm": "66",
       "id": "53677192486",
       "license": {
@@ -579,6 +591,8 @@
         "accuracy": 16,
         "latitude": 46.436983,
         "longitude": 15.11736
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -642,8 +656,8 @@
         "carinthia",
         "slovenia",
         "slovenija",
-        "koro\u0161ka",
-        "gra\u0161kagora",
+        "koroška",
+        "graškagora",
         "church",
         "outside",
         "biking"
@@ -676,6 +690,8 @@
         "accuracy": 16,
         "latitude": 46.436954,
         "longitude": 15.116963
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -738,14 +754,14 @@
         "carinthia",
         "slovenia",
         "slovenija",
-        "koro\u0161ka",
-        "gra\u0161kagora",
+        "koroška",
+        "graškagora",
         "church",
         "outside",
         "outdoors",
         "biking"
       ],
-      "title": "Gra\u0161ka gora"
+      "title": "Graška gora"
     },
     {
       "count_comments": 0,
@@ -761,7 +777,7 @@
           "value": "2021-09-07T13:16:11"
         }
       },
-      "description": "1216 922 passes the  La\u0161ko brewery whilst hauling an Adria Transport container train from Graz to Koper 7 Sept 2021.\n\n193 822 is also in the consist",
+      "description": "1216 922 passes the  Laško brewery whilst hauling an Adria Transport container train from Graz to Koper 7 Sept 2021.\n\n193 822 is also in the consist",
       "farm": "66",
       "id": "53676795696",
       "license": {
@@ -773,6 +789,8 @@
         "accuracy": 16,
         "latitude": 46.151002,
         "longitude": 15.235652
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -834,7 +852,7 @@
       "tags": [
         "slovenia",
         "lasko",
-        "la\u0161ko",
+        "laško",
         "graz",
         "kope",
         "adria",
@@ -857,7 +875,7 @@
         "freight",
         "cargo"
       ],
-      "title": "1216 922, La\u0161ko \ud83c\uddf8\ud83c\uddee, 7 Sept 2021"
+      "title": "1216 922, Laško 🇸🇮, 7 Sept 2021"
     },
     {
       "count_comments": 33,
@@ -873,7 +891,7 @@
           "value": "2024-04-21T12:35:13"
         }
       },
-      "description": "These are Karawanks mountains foothills, a hilly range between the valleys of Paka (Velenje town) and Mislinja (Slovenj Gradec town). It's an ideal area for biking, but quite some ups and downs. In the middle there's Ur\u0161lja gora mountain.",
+      "description": "These are Karawanks mountains foothills, a hilly range between the valleys of Paka (Velenje town) and Mislinja (Slovenj Gradec town). It's an ideal area for biking, but quite some ups and downs. In the middle there's Uršlja gora mountain.",
       "farm": "66",
       "id": "53675313713",
       "license": {
@@ -885,6 +903,8 @@
         "accuracy": 16,
         "latitude": 46.416595,
         "longitude": 15.123068
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -951,12 +971,12 @@
         "slovenia",
         "biking",
         "slovenija",
-        "koro\u0161ka",
-        "gra\u0161kagora",
+        "koroška",
+        "graškagora",
         "road",
         "carinthia"
       ],
-      "title": "Gra\u0161ka gora landscape"
+      "title": "Graška gora landscape"
     },
     {
       "count_comments": 0,
@@ -972,7 +992,7 @@
           "value": "2024-04-21T12:22:10"
         }
       },
-      "description": "From the town of Velenje we've made a quite steep ascent on this nice ridge. The continuation is promising to be a pure joy. Ur\u0161lja gora (mountain) is staying high all the day.",
+      "description": "From the town of Velenje we've made a quite steep ascent on this nice ridge. The continuation is promising to be a pure joy. Uršlja gora (mountain) is staying high all the day.",
       "farm": "66",
       "id": "53675446294",
       "license": {
@@ -984,6 +1004,8 @@
         "accuracy": 16,
         "latitude": 46.407889,
         "longitude": 15.139847
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -1052,10 +1074,10 @@
         "slovenia",
         "biking",
         "slovenija",
-        "koro\u0161ka",
-        "gra\u0161kagora"
+        "koroška",
+        "graškagora"
       ],
-      "title": "Biking along the ridge of Gra\u0161ka gora"
+      "title": "Biking along the ridge of Graška gora"
     }
   ]
 }

@@ -2,6 +2,7 @@ import datetime
 import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
+from .machine_tags import get_machine_tags, MachineTags
 from .users import User, UserInfo, create_user
 
 
@@ -9,10 +10,12 @@ __all__ = [
     "AlbumContext",
     "GalleryContext",
     "GroupContext",
+    "MachineTags",
     "PhotoContext",
     "User",
     "UserInfo",
     "create_user",
+    "get_machine_tags",
 ]
 
 
@@ -88,6 +91,7 @@ class SinglePhotoInfo(typing.TypedDict):
     title: str | None
     description: str | None
     tags: list[str]
+    machine_tags: MachineTags
 
     date_posted: datetime.datetime
     date_taken: DateTaken | None

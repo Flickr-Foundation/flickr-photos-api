@@ -19,6 +19,7 @@ from ..types import (
     SinglePhoto,
     User,
     create_user,
+    get_machine_tags,
 )
 from ..utils import (
     parse_date_posted,
@@ -101,6 +102,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
             "title": title,
             "description": description,
             "tags": tags,
+            "machine_tags": get_machine_tags(tags),
             "date_posted": date_posted,
             "date_taken": date_taken,
             "location": location,

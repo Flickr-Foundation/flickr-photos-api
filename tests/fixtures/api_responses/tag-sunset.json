@@ -16,7 +16,7 @@
           "value": "2021-10-01T18:19:43"
         }
       },
-      "description": "\u201cCome, gentle night; come, loving, black-browed night;\nGive me my Romeo; and, when I shall die,\nTake him and cut him out in little stars,\nAnd he will make the face of heaven so fine\nThat all the world will be in love with night...\u201d \n\u2015 William Shakespeare, Romeo and Juliet",
+      "description": "“Come, gentle night; come, loving, black-browed night;\nGive me my Romeo; and, when I shall die,\nTake him and cut him out in little stars,\nAnd he will make the face of heaven so fine\nThat all the world will be in love with night...” \n― William Shakespeare, Romeo and Juliet",
       "farm": "66",
       "id": "51540860321",
       "license": {
@@ -28,6 +28,8 @@
         "accuracy": 13,
         "latitude": 32.960981,
         "longitude": -117.269022
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -178,7 +180,7 @@
           "value": "2015-11-21T12:10:44"
         }
       },
-      "description": "freedom - samyang 14mm f2.8 @ f10\n\nOne of the most spectacular sacred places of Lake Orta is surely the Sanctuary of Our Lady of the Rock (Madonna del Sasso) built near the hamlet of the same name on a huge granite rock-face overhanging the lake below. From here, there is an unsurpassed view dominating Lake Orta and the mountains on the eastern shore of the lake, including Mount Mottarone.\n\nThis sacred complex, built in the early 1700s, on the site of a previous late medieval chapel dedicated to Our Lady of Sorrows, is made up of the church, the bell-tower and the Priest\u2019s House. The church, shaped like a Greek cross with circular apse is topped by a huge frescoed dome which projects an inlaid star onto the floor. The interior also houses a large pictorial cycle by Lorenzo Peracino, a painter and sculptor from Valsesia, who left evidence of his great talent in numerous churches in the Cusio and Ossola area.\n\nA special thanks to my sweet girlfriend for this shot!\n\nPress &quot; L &quot; for a larger view\n\nmy website: <a href=\"http://www.edoardoangelucci.com\" rel=\"nofollow\">www.edoardoangelucci.com</a>\nmy instagram: <a href=\"http://www.instagram.com/ea_photography84/\" rel=\"nofollow\">www.instagram.com/ea_photography84/</a>\n\n* Thank you very much for all your comments visits and favs, I really appreciate them !\n \n** Please no html code or images in the comments, thank you!\n\nExplore 18/02/2016 #6\n",
+      "description": "freedom - samyang 14mm f2.8 @ f10\n\nOne of the most spectacular sacred places of Lake Orta is surely the Sanctuary of Our Lady of the Rock (Madonna del Sasso) built near the hamlet of the same name on a huge granite rock-face overhanging the lake below. From here, there is an unsurpassed view dominating Lake Orta and the mountains on the eastern shore of the lake, including Mount Mottarone.\n\nThis sacred complex, built in the early 1700s, on the site of a previous late medieval chapel dedicated to Our Lady of Sorrows, is made up of the church, the bell-tower and the Priest’s House. The church, shaped like a Greek cross with circular apse is topped by a huge frescoed dome which projects an inlaid star onto the floor. The interior also houses a large pictorial cycle by Lorenzo Peracino, a painter and sculptor from Valsesia, who left evidence of his great talent in numerous churches in the Cusio and Ossola area.\n\nA special thanks to my sweet girlfriend for this shot!\n\nPress &quot; L &quot; for a larger view\n\nmy website: <a href=\"http://www.edoardoangelucci.com\" rel=\"nofollow\">www.edoardoangelucci.com</a>\nmy instagram: <a href=\"http://www.instagram.com/ea_photography84/\" rel=\"nofollow\">www.instagram.com/ea_photography84/</a>\n\n* Thank you very much for all your comments visits and favs, I really appreciate them !\n \n** Please no html code or images in the comments, thank you!\n\nExplore 18/02/2016 #6\n",
       "farm": "2",
       "id": "24995918722",
       "license": {
@@ -190,6 +192,12 @@
         "accuracy": 16,
         "latitude": 45.788369,
         "longitude": 8.374693
+      },
+      "machine_tags": {
+        "geo": {
+          "lat": ["45788389"],
+          "lon": ["8374811"]
+        }
       },
       "original_format": null,
       "owner": {
@@ -292,6 +300,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "25276331@N02",
@@ -387,7 +397,7 @@
           "value": "2013-03-07T17:01:42"
         }
       },
-      "description": "<b>Please - Lightbox\u3000\uff1a\uff09\n.\n.\n\u256d\u2605 \u7a7f\u68ad\u5728\u5149\u5f71\u4e4b\u9593\u2605\u256e</b>",
+      "description": "<b>Please - Lightbox　：）\n.\n.\n╭★ 穿梭在光影之間★╮</b>",
       "farm": "9",
       "id": "8607219778",
       "license": {
@@ -396,6 +406,8 @@
         "url": null
       },
       "location": null,
+      "machine_tags": {
+      },
       "original_format": null,
       "owner": {
         "id": "43080783@N02",
@@ -403,7 +415,7 @@
         "photos_url": "https://www.flickr.com/photos/nana0313/",
         "profile_url": "https://www.flickr.com/people/nana0313/",
         "realname": null,
-        "username": "\u5a1c \u5a1c\u2602Nana"
+        "username": "娜 娜☂Nana"
       },
       "url": "https://www.flickr.com/photos/nana0313/8607219778/",
       "safety_level": "safe",
@@ -467,18 +479,18 @@
         "nikon",
         "colorful",
         "taiwan",
-        "\u53f0\u7063",
-        "\u65e5\u843d",
+        "台灣",
+        "日落",
         "lightandshadow",
-        "\u5149\u5f71",
-        "\u9ec3\u660f",
-        "\u53f0\u7063taiwan",
+        "光影",
+        "黃昏",
+        "台灣taiwan",
         "i",
-        "\u6211\u611b\u53f0\u7063",
+        "我愛台灣",
         "d7000",
         "rememberthatmomentlevel1"
       ],
-      "title": "\u256d\u2605 Light and shadow  \u2605\u256e"
+      "title": "╭★ Light and shadow  ★╮"
     },
     {
       "count_comments": 42,
@@ -494,7 +506,7 @@
           "value": "2012-07-12T19:19:31"
         }
       },
-      "description": "I tried to shoot his bridge from different angle and in different season.  This time was summer time and at high tide too.  Please see the other shot from winter time and close-up as following.\n\u6628\u5929\u7684\u5915\u967d\u9084\u662f\u5f31\u5f31\u7684\uff0c\u518d\u6b21\u53bb\u91cd\u967d\u5927\u6a4b\uff0c\u5f9e\u8fea\u5316\u62bd\u6c34\u7ad9\u62cd\uff0c\u6f32\u6f6e\u8b93\u524d\u666f\u90fd\u662f\u6c34\uff0c\u5012\u5f71\u5230\u662f\u76f8\u7576\u7f8e~\n\n~\u8fea\u5316\u62bd\u6c34\u7ad9\u524d, \u5ef6\u5e73\u6cb3\u6ff1\u516c\u5712, \u53f0\u5317\nYenping Riverside Park, Taipei, Taiwan\n- ISO 100, F16, 180 sec, 32mm\n- Canon 5D Mark III with EF 16-35mm f/2.8 L Lens\n- Sunset @ 6.47pm(295\u00ba) / Shot @ 7.19pm\n- Visibility 15 km @ 5.45pm\n- Tide 0.83m @ 7.00pm / High Tide 0.89m @ 5.00pm\n\nIf you are interesting in my works, <b><a href=\"http://www.gettyimages.com/Search/Search.aspx?assettype=image&amp;family=creative&amp;artist=%c2%a9+copyright+2011+Sharleen+Chao\" rel=\"nofollow\">welcome to visit my Getty Images page</a></b>.",
+      "description": "I tried to shoot his bridge from different angle and in different season.  This time was summer time and at high tide too.  Please see the other shot from winter time and close-up as following.\n昨天的夕陽還是弱弱的，再次去重陽大橋，從迪化抽水站拍，漲潮讓前景都是水，倒影到是相當美~\n\n~迪化抽水站前, 延平河濱公園, 台北\nYenping Riverside Park, Taipei, Taiwan\n- ISO 100, F16, 180 sec, 32mm\n- Canon 5D Mark III with EF 16-35mm f/2.8 L Lens\n- Sunset @ 6.47pm(295º) / Shot @ 7.19pm\n- Visibility 15 km @ 5.45pm\n- Tide 0.83m @ 7.00pm / High Tide 0.89m @ 5.00pm\n\nIf you are interesting in my works, <b><a href=\"http://www.gettyimages.com/Search/Search.aspx?assettype=image&amp;family=creative&amp;artist=%c2%a9+copyright+2011+Sharleen+Chao\" rel=\"nofollow\">welcome to visit my Getty Images page</a></b>.",
       "farm": "9",
       "id": "7561090328",
       "license": {
@@ -506,6 +518,8 @@
         "accuracy": 16,
         "latitude": 25.076056,
         "longitude": 121.524345
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -579,27 +593,27 @@
         "taiwan",
         "nightscene",
         "bluehour",
-        "\u53f0\u7063",
-        "\u53f0\u5317",
-        "\u591c\u666f",
-        "\u65e5\u843d",
+        "台灣",
+        "台北",
+        "夜景",
+        "日落",
         "afterglow",
         "partlycloudy",
         "ledlights",
-        "\u91cd\u967d\u6a4b",
+        "重陽橋",
         "1635mm",
-        "\u65b0\u5e97\u6eaa",
-        "\u5012\u5f71",
-        "\u5149\u96d5",
+        "新店溪",
+        "倒影",
+        "光雕",
         "bridgeatnight",
-        "\u971e\u5149",
-        "\u5ef6\u5e73\u6cb3\u6ff1\u516c\u5712",
+        "霞光",
+        "延平河濱公園",
         "canoneos5dmarkiii",
-        "\u9ec3\u91d1\u96d9\u5b50\u57ce",
-        "\u5317\u5e02\u806f\u5916\u6a4b\u6881",
-        "\u6de1\u6c34\u6cb3\u7cfb\u5149\u96d5\u6a4b\u6a11\u8a08\u756b"
+        "黃金雙子城",
+        "北市聯外橋梁",
+        "淡水河系光雕橋樑計畫"
       ],
-      "title": "Bridge at Blue Hour \u91cd\u967d\u5927\u6a4b\u6f32\u6f6e\u6642\u5206"
+      "title": "Bridge at Blue Hour 重陽大橋漲潮時分"
     },
     {
       "count_comments": 253,
@@ -627,6 +641,8 @@
         "accuracy": 16,
         "latitude": 37.717249,
         "longitude": -119.661809
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -728,7 +744,7 @@
           "value": "2012-01-01T00:00:00"
         }
       },
-      "description": "<b>Best View On <a href=\"http://www.ericrousset.com/Other/Monaco/10380226_mZz5kH#!i=1702229108&amp;k=gtB55fw&amp;lb=1&amp;s=A\" rel=\"nofollow\">Black and Large</a></b>\n\n<b>Please check my <a href=\"http://www.flickr.com/photos/pi-production/popular-views/\">interestingness page</a></b> <b> according to Flickr  :: <a href=\"http://www.flickr.com/photos/pi-production/sets/72157607767524459/detail/\">Monaco Set</a> :: <a href=\"http://www.flickr.com/photos/pi-production/sets/72157605446380664/detail/\">Seascape Set</a></b><b>\n\n<b>Follow me on <a href=\"https://plus.google.com/108177381721794114207\" rel=\"nofollow\">Google+ ::</a> <a href=\"https://twitter.com/#!/Eric_Rousset\" rel=\"nofollow\">Twitter</a></b>\n\n<i><b>Please don't use this image on websites, blogs or other media without my explicit permission. Copyright \u00a9 2007-2012 <a href=\"http://www.ericrousset.com/\" rel=\"nofollow\">Eric Rousset</a> . All rights reserved.</b></i></b>",
+      "description": "<b>Best View On <a href=\"http://www.ericrousset.com/Other/Monaco/10380226_mZz5kH#!i=1702229108&amp;k=gtB55fw&amp;lb=1&amp;s=A\" rel=\"nofollow\">Black and Large</a></b>\n\n<b>Please check my <a href=\"http://www.flickr.com/photos/pi-production/popular-views/\">interestingness page</a></b> <b> according to Flickr  :: <a href=\"http://www.flickr.com/photos/pi-production/sets/72157607767524459/detail/\">Monaco Set</a> :: <a href=\"http://www.flickr.com/photos/pi-production/sets/72157605446380664/detail/\">Seascape Set</a></b><b>\n\n<b>Follow me on <a href=\"https://plus.google.com/108177381721794114207\" rel=\"nofollow\">Google+ ::</a> <a href=\"https://twitter.com/#!/Eric_Rousset\" rel=\"nofollow\">Twitter</a></b>\n\n<i><b>Please don't use this image on websites, blogs or other media without my explicit permission. Copyright © 2007-2012 <a href=\"http://www.ericrousset.com/\" rel=\"nofollow\">Eric Rousset</a> . All rights reserved.</b></i></b>",
       "farm": "8",
       "id": "6835228609",
       "license": {
@@ -740,6 +756,8 @@
         "accuracy": 16,
         "latitude": 43.744514,
         "longitude": 7.432803
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -805,7 +823,7 @@
         "rocks",
         "europe",
         "monaco",
-        "c\u00f4tedazur",
+        "côtedazur",
         "reef",
         "paysage",
         "canonef1740mmf4lusm",
@@ -813,7 +831,7 @@
         "2012",
         "waterscape",
         "frenchriviera",
-        "provencealpesc\u00f4tedazur",
+        "provencealpescôtedazur",
         "leefilter",
         "larvotto",
         "canoneos5dmarkii",
@@ -849,6 +867,8 @@
         "accuracy": 13,
         "latitude": 40.73143,
         "longitude": -73.996582
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
@@ -1001,6 +1021,8 @@
         "latitude": 56.751075,
         "longitude": -6.171741
       },
+      "machine_tags": {
+      },
       "original_format": "jpg",
       "owner": {
         "id": "29609591@N08",
@@ -1112,6 +1134,8 @@
         "accuracy": 16,
         "latitude": 1.290044,
         "longitude": 103.846238
+      },
+      "machine_tags": {
       },
       "original_format": null,
       "owner": {
