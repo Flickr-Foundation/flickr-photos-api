@@ -15,7 +15,7 @@ from flickr_photos_api.types import get_machine_tags, MachineTags
                 "Physical sciences",
                 "bhl:page=33665645",
             ],
-            {"bhl": {"page": ["33665645"]}},
+            {"bhl:page": ["33665645"]},
         ),
         (
             [
@@ -28,11 +28,9 @@ from flickr_photos_api.types import get_machine_tags, MachineTags
                 "taxonomy:binomial=Elephas indicus",
             ],
             {
-                "bhl": {"page": ["33665645"]},
-                "taxonomy": {
-                    "genus": ["Loxodonta"],
-                    "binomial": ["Elephas maximus", "Elephas indicus"],
-                },
+                "bhl:page": ["33665645"],
+                "taxonomy:genus": ["Loxodonta"],
+                "taxonomy:binomial": ["Elephas maximus", "Elephas indicus"],
             },
         ),
     ],

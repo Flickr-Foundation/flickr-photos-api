@@ -168,8 +168,8 @@ class TestCollectionsPhotoResponse:
         photo = gallery["photos"][0]
         assert photo["id"] == "51282506464"
         assert photo["machine_tags"] == {
-            "bhl": {"page": ["33665621"]},
-            "dc": {"identifier": ["httpsbiodiversitylibraryorgpage33665621"]},
+            "bhl:page": ["33665621"],
+            "dc:identifier": ["httpsbiodiversitylibraryorgpage33665621"],
         }
 
 

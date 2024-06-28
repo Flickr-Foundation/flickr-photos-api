@@ -26,7 +26,7 @@ MACHINE_TAG_RE = re.compile(
 )
 
 
-MachineTags: typing.TypeAlias = dict[str, dict[str, list[str]]]
+MachineTags: typing.TypeAlias = dict[str, list[str]]
 
 
 def get_machine_tags(tags: list[str]) -> MachineTags:
@@ -38,7 +38,7 @@ def get_machine_tags(tags: list[str]) -> MachineTags:
     not match Flickr perfectly, but is meant to make it easier for
     callers to work with machine tags.
     """
-    result: MachineTags = collections.defaultdict(lambda: collections.defaultdict(list))
+    result: MachineTags = collections.defaultdict(list)
 
     for t in tags:
         if m := MACHINE_TAG_RE.match(t):
@@ -46,6 +46,6 @@ def get_machine_tags(tags: list[str]) -> MachineTags:
             predicate = m.group("predicate")
             value = m.group("value")
 
-            result[namespace][predicate].append(value)
+            result[f"{namespace}:{predicate}"].append(value)
 
-    return {k: dict(v) for k, v in result.items()}
+    return dict(result)
