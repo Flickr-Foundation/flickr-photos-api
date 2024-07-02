@@ -4,6 +4,7 @@ from .exceptions import (
     InsufficientPermissionsToComment,
     InvalidApiKey,
     InvalidXmlException,
+    PhotoIsPrivate,
     ResourceNotFound,
     LicenseNotFound,
     UnrecognisedFlickrApiException,
@@ -38,7 +39,7 @@ from .types import (
 )
 
 
-__version__ = "2.5.2"
+__version__ = "2.6.0"
 
 
 __all__ = [
@@ -74,6 +75,7 @@ __all__ = [
     "GroupInfo",
     "InsufficientPermissionsToComment",
     "PhotoContext",
+    "PhotoIsPrivate",
     "UnrecognisedFlickrApiException",
     "UserDeleted",
     "__version__",

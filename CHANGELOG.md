@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.6.0 - 2024-07-02
+
+*   Add a custom exception for private photos
+
+    If you try to look up a private photo with `get_single_photo()`, it throws a new `PhotoIsPrivate` exception rather than a `UnrecognisedFlickrApiException`.
+
 ## v2.5.2 - 2024-06-28
 
 *   Flatten the definition of `MachineTags`, to simplify queries for a namespace/predicate pair.
