@@ -5,7 +5,7 @@ Methods for getting information about a single photo in the Flickr API.
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
-from ..exceptions import ResourceNotFound
+from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..types import (
     AlbumContext,
     GalleryContext,
@@ -36,7 +36,8 @@ class SinglePhotoMethods(LicenseMethods):
             method="flickr.photos.getInfo",
             params={"photo_id": photo_id},
             exceptions={
-                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+                "2": PhotoIsPrivate(photo_id),
             },
         )
 
@@ -253,10 +254,12 @@ class SinglePhotoMethods(LicenseMethods):
             self.call(
                 method="flickr.photos.getInfo",
                 params={"photo_id": photo_id},
-                exceptions={"1": ResourceNotFound()},
+                exceptions={"1": ResourceNotFound(), "2": PhotoIsPrivate(photo_id)},
             )
         except ResourceNotFound:
             return True
+        except PhotoIsPrivate:
+            return False
         else:
             return False
 

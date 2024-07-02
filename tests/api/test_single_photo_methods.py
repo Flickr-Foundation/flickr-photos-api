@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 
-from flickr_photos_api import FlickrApi, SinglePhoto
+from flickr_photos_api import FlickrApi, PhotoIsPrivate, ResourceNotFound, SinglePhoto
 from utils import get_fixture
 
 
@@ -219,3 +219,22 @@ class TestGetPhotoContexts:
             "count_items": 668576,
             "count_members": 43105,
         }
+
+
+class TestPrivatePhotos:
+    # Private photos are difficult to find (intentionally!).
+    #
+    # I found a link to this private photo from a Wikimedia Commons file,
+    # where it's listed as the source image.  This is the WMC file:
+    # https://commons.wikimedia.org/wiki/File:Capital_Pride_Festival_2017_(35366357641).jpg
+
+    def test_get_private_photo_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(PhotoIsPrivate):
+            api.get_single_photo(photo_id="35366357641")
+
+    def test_private_photo_is_not_deleted(self, api: FlickrApi) -> None:
+        assert not api.is_photo_deleted(photo_id="35366357641")
+
+    def test_get_private_photo_contexts_is_error(self, api: FlickrApi) -> None:
+        with pytest.raises(ResourceNotFound):
+            api.get_photo_contexts(photo_id="35366357641")
