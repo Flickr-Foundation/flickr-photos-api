@@ -149,6 +149,11 @@ class TestGetSinglePhoto:
             "taxonomy:genus": ["loxodonta"],
         }
 
+    def test_a_photo_with_an_empty_tag(self, api: FlickrApi) -> None:
+        photo = api.get_single_photo(photo_id="52483149404")
+
+        assert "" in photo["tags"]
+
 
 class TestGetPhotoContexts:
     def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:

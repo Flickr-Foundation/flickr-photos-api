@@ -121,12 +121,14 @@ class SinglePhotoMethods(LicenseMethods):
         # We prefer the normalised version because it makes it possible
         # to compare tags across photos, and we only get the normalised
         # versions from the collection endpoints.
+        #
+        # Note: it's rare, but some Flickr photos do have empty text for
+        # the tag value.  See the tests for an example.
         tags_elem = find_required_elem(photo_elem, path="tags")
 
         tags = []
         for t in tags_elem.findall("tag"):
-            assert t.text is not None
-            tags.append(t.text)
+            tags.append(t.text or "")
 
         # Get location information about the photo.
         #
