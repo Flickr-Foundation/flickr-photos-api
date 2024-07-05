@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.6.1 - 2024-07-05
+
+*   Don't throw an `AssertionError` when looking up photos with a tag which is the empty string.
+
 ## v2.6.0 - 2024-07-02
 
 *   Add a custom exception for private photos
