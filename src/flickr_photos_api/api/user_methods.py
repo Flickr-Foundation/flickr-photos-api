@@ -160,6 +160,15 @@ class UserMethods(FlickrApi):
         else:
             realname = realname_elem.text
 
+        # This is a fudge for a Flickr Commons member -- they removed the
+        # 'S' so it would look good with the big 'S' in their buddy icon,
+        # which doesn't work outside the Flickr.com website.
+        #
+        # This name needed fixing on 23 July 2024; if they ever change
+        # the name on the actual account, we can remove this fudge.
+        if user_id == "62173425@N02" and realname == "tockholm Transport Museum":
+            realname = "Stockholm Transport Museum"
+
         return {
             "id": user_id,
             "username": username,
