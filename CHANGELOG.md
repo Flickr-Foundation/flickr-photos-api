@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.6.2 - 2024-07-23
+
+*   Fix the name of the Stockholm Transport Museum when looked up using this library.
+
 ## v2.6.1 - 2024-07-05
 
 *   Don't throw an `AssertionError` when looking up photos with a tag which is the empty string.

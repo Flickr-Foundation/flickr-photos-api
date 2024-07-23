@@ -154,6 +154,11 @@ class TestGetSinglePhoto:
 
         assert "" in photo["tags"]
 
+    def test_fixes_stockholm_transport_museum_name(self, api: FlickrApi) -> None:
+        photo = api.get_single_photo(photo_id="29826215532")
+
+        assert photo["owner"]["realname"] == "Stockholm Transport Museum"
+
 
 class TestGetPhotoContexts:
     def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:

@@ -18,6 +18,15 @@ def create_user(
 
     This function is only intended for internal user.
     """
+    # This is a fudge for a Flickr Commons member -- they removed the
+    # 'S' so it would look good with the big 'S' in their buddy icon,
+    # which doesn't work outside the Flickr.com website.
+    #
+    # This name needed fixing on 23 July 2024; if they ever change
+    # the name on the actual account, we can remove this fudge.
+    if id == "62173425@N02" and realname == "tockholm Transport Museum":
+        realname = "Stockholm Transport Museum"
+
     # The Flickr API is a bit inconsistent about how some undefined attributes
     # are returned, e.g. ``realname`` can sometimes be null, sometimes an
     # empty string.
