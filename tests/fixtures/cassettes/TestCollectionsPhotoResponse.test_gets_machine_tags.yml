@@ -17,31 +17,58 @@ interactions:
     uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&gallery_id=72157722373536528&get_gallery_info=1&method=flickr.galleries.getPhotos&page=1&per_page=10
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"1\" perpage=\"10\" total=\"2\">\n\t<photo id=\"51282506464\"
+        owner=\"61021753@N02\" secret=\"05f8159346\" server=\"65535\" farm=\"66\"
+        title=\"n200_w1150\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"10\"
+        safety_level=\"0\" dateupload=\"1625093052\" datetaken=\"2021-06-30 18:44:12\"
+        datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"BioDivLibrary\"
+        realname=\"Biodiversity Heritage Library\" count_views=\"298491\" count_comments=\"0\"
+        tags=\"naturalhistory periodicals physicalsciences harvarduniversitymuseumofcomparativezoologyernstmayrlibrary
+        bhl:page=33665621 dc:identifier=httpsbiodiversitylibraryorgpage33665621 taurus
+        bull cow cattle bison bos\" originalsecret=\"325898c8dc\" originalformat=\"jpg\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/51282506464_05f8159346_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/51282506464_05f8159346_t.jpg\"
+        height_t=\"100\" width_t=\"64\" url_s=\"https://live.staticflickr.com/65535/51282506464_05f8159346_m.jpg\"
+        height_s=\"240\" width_s=\"153\" url_m=\"https://live.staticflickr.com/65535/51282506464_05f8159346.jpg\"
+        height_m=\"500\" width_m=\"320\" url_o=\"https://live.staticflickr.com/65535/51282506464_325898c8dc_o.jpg\"
+        height_o=\"1982\" width_o=\"1267\" url_q=\"https://live.staticflickr.com/65535/51282506464_05f8159346_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/51282506464_05f8159346_b.jpg\"
+        height_l=\"1024\" width_l=\"655\" pathalias=\"biodivlibrary\" is_primary=\"0\"
+        has_comment=\"0\">\n\t\t<description>Edinburgh journal of natural history
+        and of the physical sciences.\nEdinburgh [etc.] :Published for the proprietor
+        [etc.],1835-1840.\n&lt;a href=&quot;https://biodiversitylibrary.org/page/33665621&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;biodiversitylibrary.org/page/33665621&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"51281775881\" owner=\"61021753@N02\" secret=\"378d4661d8\" server=\"65535\"
+        farm=\"66\" title=\"n224_w1150\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"10\" safety_level=\"0\" dateupload=\"1625093119\" datetaken=\"2021-06-30
+        18:45:19\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"BioDivLibrary\"
+        realname=\"Biodiversity Heritage Library\" count_views=\"514099\" count_comments=\"4\"
+        tags=\"naturalhistory periodicals physicalsciences harvarduniversitymuseumofcomparativezoologyernstmayrlibrary
+        bhl:page=33665645 dc:identifier=httpsbiodiversitylibraryorgpage33665645 elephant
+        mammal taxonomy:genus=loxodonta taxonomy:binomial=elephasmaximus taxonomy:binomial=elephasindicus
+        taxonomy:binomial=elephasafricanus\" originalsecret=\"ce67a48eb8\" originalformat=\"jpg\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_t.jpg\"
+        height_t=\"100\" width_t=\"64\" url_s=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_m.jpg\"
+        height_s=\"240\" width_s=\"153\" url_m=\"https://live.staticflickr.com/65535/51281775881_378d4661d8.jpg\"
+        height_m=\"500\" width_m=\"320\" url_o=\"https://live.staticflickr.com/65535/51281775881_ce67a48eb8_o.jpg\"
+        height_o=\"1982\" width_o=\"1267\" url_q=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_b.jpg\"
+        height_l=\"1024\" width_l=\"655\" pathalias=\"biodivlibrary\" is_primary=\"1\"
+        has_comment=\"0\">\n\t\t<description>Edinburgh journal of natural history
+        and of the physical sciences.\nEdinburgh [etc.] :Published for the proprietor
+        [etc.],1835-1840.\n&lt;a href=&quot;https://biodiversitylibrary.org/page/33665645&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;biodiversitylibrary.org/page/33665645&lt;/a&gt;</description>\n\t</photo>\n</photos>\n<gallery
+        id=\"29178242-72157722373536528\" gallery_id=\"72157722373536528\" url=\"https://www.flickr.com/photos/29201296@N03/galleries/72157722373536528\"
+        owner=\"29201296@N03\" username=\"belushus\" iconserver=\"0\" iconfarm=\"0\"
+        primary_photo_id=\"51281775881\" date_create=\"1703675297\" date_update=\"1703675323\"
+        count_photos=\"2\" count_videos=\"0\" count_total=\"2\" count_views=\"5\"
+        count_comments=\"0\" sort_group=\"\" primary_photo_server=\"65535\" primary_photo_farm=\"66\"
+        primary_photo_secret=\"378d4661d8\">\n\t<title>Biodiversity Mammals</title>\n\t<description>Four
+        Legged creatures</description>\n</gallery>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -99,15 +126,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

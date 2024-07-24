@@ -17,19 +17,19 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=29826215532
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA4VUwY6bMBA9736F5XuWQEICK8hW6rm9bO+RA4a4MbZlm6T5n/ZL9sf6bEizqrrq
-        Bc14xvPemxlTvfwYJDlz64RWNU2flpRw1ehWqL6mo+8WBSUvu8fKOkOcZ76m+kThm6P2moi2pllZ
-        ZJsszfNVRonjjeVIajZ5uy7ydot6jlsA1LTItijWMTvUtKSkZZ6PRmrWclRJ19t1UaZ5saVEuI6d
-        tRWe1xT3pWi4crARcqzj/rqX/MxlDFoNUpE7HNzphWLyxiJtVi1r2Hqzucc6bYcg47vpKTkLfnFg
-        s92g9sBbwWoalUHiQ6UviluiXFAJhdvVOss/fV1C5ghNig3g9Op1czpqOZBvlilntPXkC8LjQD7r
-        YdDKgSNncsr+MBkqdTMLQQMa3Ju7tklLNCucTJ0DUcP8cc+kYKDubiX9DX6I6PtmRoeQh6oXnSfh
-        s+cSLTpIcKFE8cu+k/qC7lOSBMVJlBwsL7zku2yZbhd5uSjKKplOEGq5a6wwoeu7V/P2y57ffvYu
-        wHJfJe+jSD4LJw5CCn/FWM14wDAjHGZsBVfoLOYWBj4IeY1OJBKWwxGjnf97OTw7cUwbzDaLZblY
-        ZiRdPq+L5xWKxliPRoySYX2mevFwVCcFbRFaMudHExDg5lmO9SjLfAbGDng2E24YXsIwcIV1QSG4
-        rG0H7rEkN56Too8uAexfl0bHeh4iLSiFBxBpwT9IjVc3QRkr7rjuyGxgO5OcWbldViV/bHRN6dC1
-        2EDDtZGcHJmbrDtlz/o5Z7TSxfWAQfzVICkuvwE9ujt6b9xzklwul6cOIk/2CVhJzHDJ//Yuefdb
-        SKoECHG/JshqqhIM/Fd2j78BDoJorIYEAAA=
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"29826215532\" secret=\"c65d485d70\" server=\"8278\" farm=\"9\" dateuploaded=\"1474891587\"
+        isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"1c3daca466\"
+        originalformat=\"jpg\" views=\"9767\" media=\"photo\">\n\t<owner nsid=\"62173425@N02\"
+        username=\"Stockholm Transport Museum Commons\" realname=\"tockholm Transport
+        Museum\" location=\"\" iconserver=\"6199\" iconfarm=\"7\" path_alias=\"stockholmtransportmuseum_commons\">\n\t\t<gift
+        gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>2017-59-89</title>\n\t<description>Sp\xE5rv\xE4gsmuseet</description>\n\t<visibility
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1474891587\"
+        taken=\"2016-09-02 10:48:31\" takengranularity=\"0\" takenunknown=\"1\" lastupdate=\"1525466995\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"0\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>2</comments>\n\t<notes />\n\t<people
+        haspeople=\"0\" />\n\t<tags />\n\t<urls>\n\t\t<url type=\"photopage\">https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/</url>\n\t</urls>\n</photo>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -87,15 +87,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -151,16 +157,39 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=29826215532
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA7XWy27jIBQA0PX0KxD7mvhtj+L2BzqaRWcfEUxtJjwcwPUoXz/YbRKrqhRLDjuu
-        4IKOLxi2z/8EB+9UG6ZkBcNgAwGVRNVMNhXs7dtjAcHz08NWmw4Yi20F1QG62LATNYBguefKjXRp
-        rt1pJt2Ij6BWg+QK125Wl/BjygAc7ymv4Ouxx5pCMLDathXMUwhayprWJY9to3pNaAVbazvzEyHO
-        3mkwrs7IG2fkoAOiBCqivEBRWURZFKZpHO1IltZJkdb5ZmeCv10DQa/dYudZhmEIZuldq6wyyFhF
-        Dq3iwmosTae0Fb2hvdi5JYSSZr4CmtTIHBEEgtYMV3CaBQL0VfiCdUPBF2eYuk9zhk7BeunRp3QB
-        9E/bi73EjF+qGW7myjFYr7Q+lfZ2OV8F5ldhFJfXOkbJXYTCp9AsFII4cpjPUxmHM+XUsb6O0qdS
-        LlUm46Y8K8uZcupYrxx8Kofbyl/u39SLCzGZE9O7EH0CxVIgyMaj91nHLHY31fnfOnWsr+PJJ/O0
-        mFnMtmtezphTx3om8ckkt5nTXXkpZFnms0tycx/i3ieR3yb+1qxhEl+vkPspQxLXmOAky3bKp1J9
-        p9x+PIncgxC5F+LTw38wRGMQUAoAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_s.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_q.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/q/\"
+        media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"100\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_t.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/t/\"
+        media=\"photo\" />\n\t<size label=\"Small\" width=\"239\" height=\"240\" source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_m.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/s/\"
+        media=\"photo\" />\n\t<size label=\"Small 320\" width=\"319\" height=\"320\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_n.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/n/\"
+        media=\"photo\" />\n\t<size label=\"Small 400\" width=\"399\" height=\"400\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_w.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/w/\"
+        media=\"photo\" />\n\t<size label=\"Medium\" width=\"499\" height=\"500\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70.jpg\" url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/m/\"
+        media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"638\" height=\"640\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_z.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/z/\"
+        media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"798\" height=\"800\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_c.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/c/\"
+        media=\"photo\" />\n\t<size label=\"Large\" width=\"997\" height=\"1000\"
+        source=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_b.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/l/\"
+        media=\"photo\" />\n\t<size label=\"Original\" width=\"997\" height=\"1000\"
+        source=\"https://live.staticflickr.com/8278/29826215532_1c3daca466_o.jpg\"
+        url=\"https://www.flickr.com/photos/stockholmtransportmuseum_commons/29826215532/sizes/o/\"
+        media=\"photo\" />\n</sizes>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

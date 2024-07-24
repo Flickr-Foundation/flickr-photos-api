@@ -200,8 +200,6 @@ interactions:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
-      content-encoding:
-      - gzip
       server:
       - openresty
       set-cookie:
@@ -270,8 +268,6 @@ interactions:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
-      content-encoding:
-      - gzip
       server:
       - openresty
       set-cookie:

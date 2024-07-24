@@ -17,27 +17,54 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=52483149404
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA62Xz4/jNBTHz7N/hZUznfxOnVHaRWLFYREsh+HAqXITp/U2iaPYaSkndipxRtoD
-        J7Qs7IrznuCA4I8JzN/Bs9PuFNIpWcJlxn624897/b6Xl+jhF3mG1rQSjBcTw760DESLmCesWEyM
-        WqYjbKCH0wdRJUokJJETg68MmJdLLjliycTwHQ+7thd6lmcgQeOKwqYwSeyxkzg2HBe0ggsmRuD7
-        rm+glFQ5TAIDJUTSusw4SSg8xw6CMbYs37YNxERK1rxikk4MIMpYTAsBY3UDSanczjK6pplerDhg
-        aXqYwJkFK0h24IjnSYDdNMbzu7WUV7ly5Gm5MNCa0Y2YGK4PoDlNGJkY2jXw8SLim4JWqBDKTde2
-        nBAH/vufWIBeg1MFyQHpEYtX6HrJcyLQY74sBC+AiZLszHLG4z3yNV9t+XvoMSkJHGMxBzfbaPk+
-        Bm+VZR8wA5VELmckYwSAFd9FtGCpROrPjGbg+DwDIAhfQTezNOMbNVH7LqLD8iypK321QOZ/XYlM
-        daOKj6kDpEaSyYxOPytWHH0MsalzpD2LzHYBdiRUxBUr1d3T5tnXzc3z5tnzZvei2b1udr82N780
-        Nz80u+/R9ZOPPn8Smcfb4fSaCTZnGZNb0EZZz0ER2lMQSsVoAb8P/PhKNTnLtnqi3IuUwgQquZD/
-        VJgkKwqScSzHGVl4ZAXI9q8s78pyDKTXFhUp6oyABtvnaWNdrArwuRUlEbIu1Q1H2h3vLwYlSbIH
-        jgkkVJ7TAjQH52BKkiSnEqR24Gw9uu8Q+HnqUC3IgqqVBJBUFumIwHyecUje9qqyYnf3iiWpWoXo
-        6OypxNSKzLdjsBdcRU1vKSkvM4qWRLSjO2RJFkJrEAa6DrhWiD3fc0dHBWFkWy4kFqnlkoOm/55D
-        rfVcFhFQ8NM2NXISL1lBZ3CbYphqM8iLLP4dwrGwOwxCKjF3IbS5J0QYWBgCPyQUK1WXOpFQ1p4M
-        vus4Tui7UFiGcNx++7qLAcaeFLZl2743HhiM2zcvbr97c4JD23ui+K7rWWMrHBiQDkVbXM+nBg5c
-        jO0Q0nTIb/GIwdviAyhSut5+mpEvSTcmidoUwyYt2FJt6hkg7GHsAOcwyGb3VXPzqtl9oyv9z80O
-        yv+PXcyT23qCekrXAbQX/0swz4SwJ0+rLHtoqp15U56I3/2v1Xej9gbmg+oD2jZAq7JLCu9RnusN
-        71JCAx+PvYGV/G1Az4SvZ7AC13VseOEPUdwB5+X9OC974tjjEDuqrR7C8+ern/747fcuTGvvSeJb
-        UN6HcSgFnZZNTwbbC1T/PCQWJedll0FZ+zL4oT2wvIslk10GZe3JgEMo4MPi8CGNqehCpMp8oND/
-        VT8Y1VXW9oUwQHJbQsuoP6hKaFaN6VLKUlyZ5mazuUyh5V1Vl9B5mnqHMI/7Q/OojTQjE56mvzja
-        x0ftCTWAD9Ppg78AFoKQPccOAAA=
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"52483149404\" secret=\"9dd172d218\" server=\"65535\" farm=\"66\" dateuploaded=\"1667800511\"
+        isfavorite=\"0\" license=\"4\" safety_level=\"0\" rotation=\"0\" originalsecret=\"cbd683fc8b\"
+        originalformat=\"jpg\" views=\"358\" media=\"photo\">\n\t<owner nsid=\"31029865@N06\"
+        username=\"Dick Thomas Johnson\" realname=\"Dick Thomas Johnson\" location=\"Tokyo,
+        Japan\" iconserver=\"5584\" iconfarm=\"6\" path_alias=\"\">\n\t\t<gift gift_eligible=\"1\"
+        new_flow=\"1\">\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations
+        />\n\t\t</gift>\n\t</owner>\n\t<title>Unko Museum Tokyo</title>\n\t<description>\u3046\u3093\u3053\u30DF\u30E5\u30FC\u30B8\u30A2\u30E0
+        TOKYO</description>\n\t<visibility ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        />\n\t<dates posted=\"1667800511\" taken=\"2022-08-06 15:04:02\" takengranularity=\"0\"
+        takenunknown=\"0\" lastupdate=\"1667800517\" />\n\t<editability cancomment=\"0\"
+        canaddmeta=\"0\" />\n\t<publiceditability cancomment=\"1\" canaddmeta=\"0\"
+        />\n\t<usage candownload=\"1\" canblog=\"0\" canprint=\"0\" canshare=\"1\"
+        />\n\t<comments>0</comments>\n\t<notes />\n\t<people haspeople=\"0\" />\n\t<tags>\n\t\t<tag
+        id=\"30984543-52483149404-1038\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"japan\" machine_tag=\"0\">japan</tag>\n\t\t<tag id=\"30984543-52483149404-2083\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"tokyo\" machine_tag=\"0\">tokyo</tag>\n\t\t<tag
+        id=\"30984543-52483149404-96081\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"koto\" machine_tag=\"0\">koto</tag>\n\t\t<tag id=\"30984543-52483149404-532229534\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"\u65E5\"
+        machine_tag=\"0\">\u65E5</tag>\n\t\t<tag id=\"30984543-52483149404-10115471\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"\u6C5F\u6771\"
+        machine_tag=\"0\">\u6C5F\u6771</tag>\n\t\t<tag id=\"30984543-52483149404-533407094\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"\" machine_tag=\"0\"
+        />\n\t\t<tag id=\"30984543-52483149404-86388190\" author=\"31029865@N06\"
+        authorname=\"Dick Thomas Johnson\" raw=\"DiverCityTokyoPlaza\" machine_tag=\"0\">divercitytokyoplaza</tag>\n\t\t<tag
+        id=\"30984543-52483149404-84882388\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"\u30C0\u30A4\u30D0\u30FC\u30B7\u30C6\u30A3\" machine_tag=\"0\">\u30C0\u30A4\u30D0\u30FC\u30B7\u30C6\u30A3</tag>\n\t\t<tag
+        id=\"30984543-52483149404-4295365\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"DiverCity\" machine_tag=\"0\">divercity</tag>\n\t\t<tag
+        id=\"30984543-52483149404-533407134\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"\u3046\u3093\u3053\u30DF\u30E5\u30FC\u30B8\u30A2\u30E0\"
+        machine_tag=\"0\">\u3046\u3093\u3053\u30DF\u30E5\u30FC\u30B8\u30A2\u30E0</tag>\n\t\t<tag
+        id=\"30984543-52483149404-533407144\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"UnkoMuseumTokyo\" machine_tag=\"0\">unkomuseumtokyo</tag>\n\t\t<tag
+        id=\"30984543-52483149404-658743\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"\u3046\u3093\u3053\" machine_tag=\"0\">\u3046\u3093\u3053</tag>\n\t\t<tag
+        id=\"30984543-52483149404-633217\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"\u3046\u3093\u3061\" machine_tag=\"0\">\u3046\u3093\u3061</tag>\n\t\t<tag
+        id=\"30984543-52483149404-1798266\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"\u5927\u4FBF\" machine_tag=\"0\">\u5927\u4FBF</tag>\n\t\t<tag
+        id=\"30984543-52483149404-50547\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"Unko\" machine_tag=\"0\">unko</tag>\n\t\t<tag id=\"30984543-52483149404-14684\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"poop\" machine_tag=\"0\">poop</tag>\n\t\t<tag
+        id=\"30984543-52483149404-15910\" author=\"31029865@N06\" authorname=\"Dick
+        Thomas Johnson\" raw=\"shit\" machine_tag=\"0\">shit</tag>\n\t\t<tag id=\"30984543-52483149404-89882\"
+        author=\"31029865@N06\" authorname=\"Dick Thomas Johnson\" raw=\"Feces\" machine_tag=\"0\">feces</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/31029865@N06/52483149404/</url>\n\t</urls>\n</photo>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -95,15 +122,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -159,19 +192,43 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=52483149404
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA63XS3ObMBAA4HPzKzS6x6An0AlJ730d0kNvDEjCqObhAA6d/PrK+AGT6YyJvTft
-        DBL+vGK1enj6W5Xo1bSdbeoYk5WPkalVo229jvGuz+9DjJ4e7x7abou6Pu1j3Gywizv7Zjqk0jor
-        G/ekm+bG29bW7olDoJuhLptUu1XdhE/jDFSmmSlj/PyyS1uD0WB1X8Q4EBgVxq4LN3k/7ppdq0yM
-        i77fdp89r7SvZrV/u1V5adWmXamm8qQQTHiC8pARHnGfJ5HWJKCakjDpVn+2a4x2rXvbaZlhGFaz
-        +dui6ZvOY8SnUSjFlx++nK/mjUSve/Ewqoy2aYzHGRh57znf0nZt0DsUEe5/OKnGAID1AsVaoPpV
-        7KqsTm15zhPxZyQZgIh6KFF/OU/PVVpOGsrnCZIwCaqgON1CDmLU/fLjhzSOT3uOEgaSoRqKVC8l
-        8f0+O5LG8ZkEtOkGKNJwmfTd1Y5ddfaIuYcxkBRBaaqlGiT3384xQ+P4lCFOYcrCG5TpbbEpnO26
-        cXwyCZgsJQrKpC6bxiNpVrgpnzwyBNl1SQblKRd6EJGzHB2C8wnr31IbREBJzjMdyKSAUhVLVdTn
-        rss6fk2H4Kxi8oZ+yJiQKaG1CpMNlGpzWfX7/tAQsa/TweQHdFbGR+O17ZCULPdJmIciYWAs9gEX
-        n1zcj+TMFTByvYvyLM38yEiRcDAX/4BLTC5B5p0E47e0EkbzIKIqcy4B5hIfcMnJ5UrG/LAao2v3
-        oUtUFrHQcJVIMJdc4PrZ2rWt06mThVSpTLvzIVdhljRQNaP5X814OFyw3F3Sc5fLx7t/hNQLaIsO
-        AAA=
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_s.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/sq/\" media=\"photo\"
+        />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_q.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/q/\" media=\"photo\"
+        />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"67\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_t.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/t/\" media=\"photo\"
+        />\n\t<size label=\"Small\" width=\"240\" height=\"160\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_m.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/s/\" media=\"photo\"
+        />\n\t<size label=\"Small 320\" width=\"320\" height=\"213\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_n.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/n/\" media=\"photo\"
+        />\n\t<size label=\"Small 400\" width=\"400\" height=\"267\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_w.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/w/\" media=\"photo\"
+        />\n\t<size label=\"Medium\" width=\"500\" height=\"333\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/m/\" media=\"photo\"
+        />\n\t<size label=\"Medium 640\" width=\"640\" height=\"427\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_z.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/z/\" media=\"photo\"
+        />\n\t<size label=\"Medium 800\" width=\"800\" height=\"533\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_c.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/c/\" media=\"photo\"
+        />\n\t<size label=\"Large\" width=\"1024\" height=\"683\" source=\"https://live.staticflickr.com/65535/52483149404_9dd172d218_b.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/l/\" media=\"photo\"
+        />\n\t<size label=\"Large 1600\" width=\"1600\" height=\"1067\" source=\"https://live.staticflickr.com/65535/52483149404_5721f4bd76_h.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/h/\" media=\"photo\"
+        />\n\t<size label=\"Large 2048\" width=\"2048\" height=\"1365\" source=\"https://live.staticflickr.com/65535/52483149404_ee83c5ddc8_k.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 3K\" width=\"3072\" height=\"2048\" source=\"https://live.staticflickr.com/65535/52483149404_663f018f85_3k.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/3k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 4K\" width=\"4096\" height=\"2731\" source=\"https://live.staticflickr.com/65535/52483149404_24bab09e65_4k.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/4k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 5K\" width=\"5120\" height=\"3413\" source=\"https://live.staticflickr.com/65535/52483149404_ed4792cb65_5k.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/5k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 6K\" width=\"6000\" height=\"4000\" source=\"https://live.staticflickr.com/65535/52483149404_e65b938e4c_6k.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/6k/\" media=\"photo\"
+        />\n\t<size label=\"Original\" width=\"6000\" height=\"4000\" source=\"https://live.staticflickr.com/65535/52483149404_cbd683fc8b_o.jpg\"
+        url=\"https://www.flickr.com/photos/31029865@N06/52483149404/sizes/o/\" media=\"photo\"
+        />\n</sizes>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

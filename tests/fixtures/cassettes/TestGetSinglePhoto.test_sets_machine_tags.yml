@@ -17,34 +17,56 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=51281775881
   response:
     body:
-      string: !!binary |
-        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
-        EAAA
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"51281775881\" secret=\"378d4661d8\" server=\"65535\" farm=\"66\" dateuploaded=\"1625093119\"
+        isfavorite=\"0\" license=\"10\" safety_level=\"0\" rotation=\"0\" originalsecret=\"ce67a48eb8\"
+        originalformat=\"jpg\" views=\"514099\" media=\"photo\">\n\t<owner nsid=\"61021753@N02\"
+        username=\"BioDivLibrary\" realname=\"Biodiversity Heritage Library\" location=\"\"
+        iconserver=\"5468\" iconfarm=\"6\" path_alias=\"biodivlibrary\">\n\t\t<gift
+        gift_eligible=\"1\" new_flow=\"1\">\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations
+        />\n\t\t\t<eligible_durations />\n\t\t</gift>\n\t</owner>\n\t<title>n224_w1150</title>\n\t<description>Edinburgh
+        journal of natural history and of the physical sciences.\nEdinburgh [etc.]
+        :Published for the proprietor [etc.],1835-1840.\n&lt;a href=&quot;https://biodiversitylibrary.org/page/33665645&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;biodiversitylibrary.org/page/33665645&lt;/a&gt;</description>\n\t<visibility
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1625093119\"
+        taken=\"2021-06-30 18:45:19\" takengranularity=\"0\" takenunknown=\"1\" lastupdate=\"1694441672\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>4</comments>\n\t<notes>\n\t\t<note
+        id=\"72157721248472381\" photo_id=\"51281775881\" author=\"199029531@N07\"
+        authorname=\"tidy amount\" authorrealname=\"Tidy Amount\" authorispro=\"0\"
+        authorisdeleted=\"1\" x=\"0\" y=\"18\" w=\"315\" h=\"237\">taxonomy:binomial=&amp;quot;Elephas
+        indicus&amp;quot;\ntaxonomy:binomial=&amp;quot;Elephas maximus indicus&amp;quot;\ntaxonomy:common=&amp;quot;Indian
+        Elephant&amp;quot;</note>\n\t\t<note id=\"72157721248474098\" photo_id=\"51281775881\"
+        author=\"199029531@N07\" authorname=\"tidy amount\" authorrealname=\"Tidy
+        Amount\" authorispro=\"0\" authorisdeleted=\"1\" x=\"0\" y=\"261\" w=\"320\"
+        h=\"228\">taxonomy:binomial=&amp;quot;Elephas africanus&amp;quot;\ntaxonomy:binomial=&amp;quot;Loxodonta
+        africana&amp;quot;\ntaxonomy:common=&amp;quot;African Bush Elephant&amp;quot;</note>\n\t</notes>\n\t<people
+        haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"61001405-51281775881-10931\" author=\"61021753@N02\"
+        authorname=\"BioDivLibrary\" raw=\"Natural history\" machine_tag=\"0\">naturalhistory</tag>\n\t\t<tag
+        id=\"61001405-51281775881-75907\" author=\"61021753@N02\" authorname=\"BioDivLibrary\"
+        raw=\"Periodicals\" machine_tag=\"0\">periodicals</tag>\n\t\t<tag id=\"61001405-51281775881-459976\"
+        author=\"61021753@N02\" authorname=\"BioDivLibrary\" raw=\"Physical sciences\"
+        machine_tag=\"0\">physicalsciences</tag>\n\t\t<tag id=\"61001405-51281775881-241410624\"
+        author=\"61021753@N02\" authorname=\"BioDivLibrary\" raw=\"Harvard University,
+        Museum of Comparative Zoology, Ernst Mayr Library\" machine_tag=\"0\">harvarduniversitymuseumofcomparativezoologyernstmayrlibrary</tag>\n\t\t<tag
+        id=\"61001405-51281775881-521377694\" author=\"61021753@N02\" authorname=\"BioDivLibrary\"
+        raw=\"bhl:page=33665645\" machine_tag=\"1\">bhl:page=33665645</tag>\n\t\t<tag
+        id=\"61001405-51281775881-521377699\" author=\"61021753@N02\" authorname=\"BioDivLibrary\"
+        raw=\"dc:identifier=https://biodiversitylibrary.org/page/33665645\" machine_tag=\"1\">dc:identifier=httpsbiodiversitylibraryorgpage33665645</tag>\n\t\t<tag
+        id=\"61001405-51281775881-462\" author=\"187216163@N07\" authorname=\"lovesmesomepitbulls\"
+        raw=\"Elephant\" machine_tag=\"0\">elephant</tag>\n\t\t<tag id=\"61001405-51281775881-1823\"
+        author=\"187216163@N07\" authorname=\"lovesmesomepitbulls\" raw=\"Mammal\"
+        machine_tag=\"0\">mammal</tag>\n\t\t<tag id=\"61001405-51281775881-32649653\"
+        author=\"195063778@N03\" authorname=\"g.anderson7790\" raw=\"taxonomy:genus=Loxodonta\"
+        machine_tag=\"1\">taxonomy:genus=loxodonta</tag>\n\t\t<tag id=\"61001405-51281775881-11136235\"
+        author=\"195063778@N03\" authorname=\"g.anderson7790\" raw=\"taxonomy:binomial=Elephas
+        maximus\" machine_tag=\"1\">taxonomy:binomial=elephasmaximus</tag>\n\t\t<tag
+        id=\"61001405-51281775881-89154462\" author=\"195063778@N03\" authorname=\"g.anderson7790\"
+        raw=\"taxonomy:binomial=Elephas indicus\" machine_tag=\"1\">taxonomy:binomial=elephasindicus</tag>\n\t\t<tag
+        id=\"61001405-51281775881-89154564\" author=\"195063778@N03\" authorname=\"g.anderson7790\"
+        raw=\"taxonomy:binomial=Elephas africanus\" machine_tag=\"1\">taxonomy:binomial=elephasafricanus</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/biodivlibrary/51281775881/</url>\n\t</urls>\n</photo>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -102,15 +124,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -166,17 +194,36 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=51281775881
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA63WQZObIBQA4HP3VzDcG8UIkk7c/QPt9LC9ZxBZpUFJQGObX19iktXZ6UycnXeT
-        eT7MlwcPti9/GoNOynlt2xyTVYyRaqUtdVvluO/evnKMXp6fts4fkO9El2O7x2Hs9Vl5JEVbGBve
-        DGnh+eB0G964Dko7tMaKMswaEr6MGciIQpkcvx574RRGgy67OscZxahWuqpD8uXZ295JleO66w7+
-        WxQZfVKry9e1fDNa7t1K2iZilK5pREnCSZZRzslunfEyZYyUfOdXvw8VRr0LX7tPMwzDapZ/qG1n
-        fVTooD0ZXTjh/s6ni0Zj5I8RRo0qtcjxmIJR9NHzXbhKoQ8qQsMfcWeNAwDXEcy1gPWr7puiFdq8
-        V4qlM1IMQ+rASN3jSr02wkwcQteTJ0lhPA2Yxy/0oHUSfvptMyXxbDeNAYBl14KZ2qWm9LK87ibK
-        pjqNAQDTAGYaHpt+hAbSN++gsS733kBhQGCcZikHscuWudUojTcTaQwA1OgMhjovRvHZwqOETKgx
-        AICSYCj5GDUeTVP/prPmQOIktHMAUAEGMgtBiLBZlQJk1sevoc+yJJGsYCndZLsajFUvZSVxGi5c
-        tx1FEpbNjtsNTz7PKgWjhPEiWe/2YKz9Y9ZPpyvditmRC4iSimUi5argOwuGsv9Dba+XwXDxjcJN
-        +PnpHwAijAw4CwAA
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_s.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_q.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/q/\" media=\"photo\"
+        />\n\t<size label=\"Thumbnail\" width=\"64\" height=\"100\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_t.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/t/\" media=\"photo\"
+        />\n\t<size label=\"Small\" width=\"153\" height=\"240\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_m.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/s/\" media=\"photo\"
+        />\n\t<size label=\"Small 320\" width=\"205\" height=\"320\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_n.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/n/\" media=\"photo\"
+        />\n\t<size label=\"Small 400\" width=\"256\" height=\"400\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_w.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/w/\" media=\"photo\"
+        />\n\t<size label=\"Medium\" width=\"320\" height=\"500\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/m/\" media=\"photo\"
+        />\n\t<size label=\"Medium 640\" width=\"409\" height=\"640\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_z.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/z/\" media=\"photo\"
+        />\n\t<size label=\"Medium 800\" width=\"511\" height=\"800\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_c.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/c/\" media=\"photo\"
+        />\n\t<size label=\"Large\" width=\"655\" height=\"1024\" source=\"https://live.staticflickr.com/65535/51281775881_378d4661d8_b.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/l/\" media=\"photo\"
+        />\n\t<size label=\"Large 1600\" width=\"1023\" height=\"1600\" source=\"https://live.staticflickr.com/65535/51281775881_c1c6b64597_h.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/h/\" media=\"photo\"
+        />\n\t<size label=\"Large 2048\" width=\"1267\" height=\"1982\" source=\"https://live.staticflickr.com/65535/51281775881_da65168b23_k.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/k/\" media=\"photo\"
+        />\n\t<size label=\"Original\" width=\"1267\" height=\"1982\" source=\"https://live.staticflickr.com/65535/51281775881_ce67a48eb8_o.jpg\"
+        url=\"https://www.flickr.com/photos/biodivlibrary/51281775881/sizes/o/\" media=\"photo\"
+        />\n</sizes>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
