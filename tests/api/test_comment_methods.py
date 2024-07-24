@@ -63,6 +63,7 @@ def flickr_comments_api(cassette_name: str, user_agent: str) -> Iterator[FlickrA
             "oauth_verifier",
             "oauth_version",
         ],
+        decode_compressed_response=True,
     ):
         stored_token = json.loads(
             get_optional_password("flickr_photos_api", "oauth_token", default="{}")
@@ -125,6 +126,7 @@ class TestPostComment:
                 "oauth_verifier",
                 "oauth_version",
             ],
+            decode_compressed_response=True,
         ):
             with pytest.raises(httpx.HTTPStatusError):
                 api.post_comment(
