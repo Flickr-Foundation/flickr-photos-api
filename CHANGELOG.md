@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.7.0 - 2024-07-24
+
+*   Add support for raw tags.
+
+    When you look up a single photo with `get_single_photo()`, it now returns the raw tag values and other tag information in the `raw_tags` field.
+
 ## v2.6.2 - 2024-07-23
 
 *   Fix the name of the Stockholm Transport Museum when looked up using this library.

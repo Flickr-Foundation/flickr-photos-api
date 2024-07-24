@@ -14,6 +14,7 @@ from ..types import (
     SinglePhotoInfo,
     SinglePhoto,
     Size,
+    Tag,
     create_user,
     get_machine_tags,
 )
@@ -112,23 +113,43 @@ class SinglePhotoMethods(LicenseMethods):
         # See https://www.flickrhelp.com/hc/en-us/articles/4404079715220-Download-permissions
         original_format = photo_elem.get("originalformat")
 
-        # We have two options with tags: we can use the 'raw' version
-        # entered by the user, or we can use the normalised version in
-        # the tag text.
+        # When you look up tags on a single photo, you get a structured
+        # block of data, e.g.:
         #
-        # e.g. "bay of bengal" vs "bayofbengal"
+        #     <tags>
+        #       <tag
+        #         id="32695993-21609597615-765"
+        #         author="126912357@N06"
+        #         authorname="valuable basket"
+        #         raw="Church"
+        #         machine_tag="0">church</tag>
+        #       ...
+        #     </tags>
         #
-        # We prefer the normalised version because it makes it possible
-        # to compare tags across photos, and we only get the normalised
-        # versions from the collection endpoints.
+        # We write the normalized value into the "tags" field, because
+        # this matches the values we get from the collection endpoints.
+        #
+        # However, in some context it's useful to have the raw value as
+        # entered by the user, so we store this in the ``raw_tags`` list.
         #
         # Note: it's rare, but some Flickr photos do have empty text for
         # the tag value.  See the tests for an example.
         tags_elem = find_required_elem(photo_elem, path="tags")
 
         tags = []
+        raw_tags: list[Tag] = []
+
         for t in tags_elem.findall("tag"):
             tags.append(t.text or "")
+            raw_tags.append(
+                {
+                    "author_id": t.attrib["author"],
+                    "author_name": t.attrib["authorname"],
+                    "raw_value": t.attrib["raw"],
+                    "normalized_value": t.text or "",
+                    "is_machine_tag": t.attrib["machine_tag"] == "1",
+                }
+            )
 
         # Get location information about the photo.
         #
@@ -154,6 +175,7 @@ class SinglePhotoMethods(LicenseMethods):
             "title": title,
             "description": description,
             "tags": tags,
+            "raw_tags": raw_tags,
             "machine_tags": get_machine_tags(tags),
             "date_posted": date_posted,
             "date_taken": date_taken,
