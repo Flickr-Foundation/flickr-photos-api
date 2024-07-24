@@ -36,10 +36,11 @@ from .types import (
     GroupInfo,
     PhotoContext,
     SinglePhotoInfo,
+    Tag,
 )
 
 
-__version__ = "2.6.2"
+__version__ = "2.7.0"
 
 
 __all__ = [
@@ -76,6 +77,7 @@ __all__ = [
     "InsufficientPermissionsToComment",
     "PhotoContext",
     "PhotoIsPrivate",
+    "Tag",
     "UnrecognisedFlickrApiException",
     "UserDeleted",
     "__version__",

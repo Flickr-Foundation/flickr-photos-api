@@ -159,6 +159,35 @@ class TestGetSinglePhoto:
 
         assert photo["owner"]["realname"] == "Stockholm Transport Museum"
 
+    def test_gets_raw_tag_information(self, api: FlickrApi) -> None:
+        photo = api.get_single_photo(photo_id="21609597615")
+
+        assert photo["tags"] == ["church", "wesleyanchurch", "geo:locality=ngaruawahia"]
+
+        assert photo["raw_tags"] == [
+            {
+                "author_id": "126912357@N06",
+                "author_name": "valuable basket",
+                "raw_value": "Church",
+                "normalized_value": "church",
+                "is_machine_tag": False,
+            },
+            {
+                "author_id": "126912357@N06",
+                "author_name": "valuable basket",
+                "raw_value": "Wesleyan Church",
+                "normalized_value": "wesleyanchurch",
+                "is_machine_tag": False,
+            },
+            {
+                "author_id": "126912357@N06",
+                "author_name": "valuable basket",
+                "raw_value": "geo:locality=Ngaruawahia",
+                "normalized_value": "geo:locality=ngaruawahia",
+                "is_machine_tag": True,
+            },
+        ]
+
 
 class TestGetPhotoContexts:
     def test_gets_empty_lists_if_no_contexts(self, api: FlickrApi) -> None:

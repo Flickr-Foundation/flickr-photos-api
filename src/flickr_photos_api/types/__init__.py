@@ -64,6 +64,16 @@ class Comment(typing.TypedDict):
     date: datetime.datetime
 
 
+class Tag(typing.TypedDict):
+    raw_value: str
+    normalized_value: str
+
+    author_id: str
+    author_name: str
+
+    is_machine_tag: bool
+
+
 # Represents the safety level of a photo on Flickr.
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
@@ -92,6 +102,7 @@ class SinglePhotoInfo(typing.TypedDict):
     description: str | None
     tags: list[str]
     machine_tags: MachineTags
+    raw_tags: typing.NotRequired[list[Tag]]
 
     date_posted: datetime.datetime
     date_taken: DateTaken | None

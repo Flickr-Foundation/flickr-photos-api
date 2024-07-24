@@ -23,6 +23,99 @@
   "location": null,
   "machine_tags": {
   },
+  "raw_tags": [
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "mascot",
+      "normalized_value": "mascot",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Chief Bert",
+      "normalized_value": "chiefbert",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "German Shepherd",
+      "normalized_value": "germanshepherd",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Station Elizabeth City",
+      "normalized_value": "stationelizabethcity",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Week in the Life 2017",
+      "normalized_value": "weekinthelife2017",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Nina Bowen",
+      "normalized_value": "ninabowen",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "D5",
+      "normalized_value": "d5",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Mid-Atlantic",
+      "normalized_value": "midatlantic",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "North Carolina",
+      "normalized_value": "northcarolina",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "Elizabeth City",
+      "normalized_value": "elizabethcity",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "explosive detection dog",
+      "normalized_value": "explosivedetectiondog",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "United States",
+      "normalized_value": "unitedstates",
+      "is_machine_tag": false
+    },
+    {
+      "author_id": "30884892@N08",
+      "author_name": "U.S. Coast Guard",
+      "raw_value": "US",
+      "normalized_value": "us",
+      "is_machine_tag": false
+    }
+  ],
   "original_format": "jpg",
   "owner": {
     "id": "30884892@N08",
