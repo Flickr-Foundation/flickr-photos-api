@@ -17,88 +17,254 @@ interactions:
     uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=61270229%40N05
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"2681\" perpage=\"10\" total=\"26806\">\n\t<photo id=\"53738760992\"
+        owner=\"61270229@N05\" secret=\"f155e9723a\" server=\"65535\" farm=\"66\"
+        title=\"DMRTI&#039;s Lt. Toader retires from Naval Service 240516-N-ND850-1001\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716408910\" datetaken=\"2024-05-16 12:11:11\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"31\" count_comments=\"0\" tags=\"americasnavy defensehealthagency
+        jointbasesanantonio knowyourmilitary sanantonio texas unitedstates\" originalsecret=\"b7e9f071a5\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53738760992_f155e9723a_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53738760992_f155e9723a_t.jpg\"
+        height_t=\"71\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53738760992_f155e9723a_m.jpg\"
+        height_s=\"171\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53738760992_f155e9723a.jpg\"
+        height_m=\"357\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53738760992_b7e9f071a5_o.jpg\"
+        height_o=\"1500\" width_o=\"2100\" url_q=\"https://live.staticflickr.com/65535/53738760992_f155e9723a_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53738760992_f155e9723a_b.jpg\"
+        height_l=\"731\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>JOINT
+        BASE SAN ANTONIO-FORT SAM HOUSTON \u2013 (May 16, 2024) \u2013 U.S. Navy Lt.
+        Lia Toader, Medical Service Corps (MSC) was awarded the Defense Meritorious
+        Service Medal by Cmdr. Renardis Banks (MSC), division chief, Defense Medical
+        Readiness Training Institute (DMRTI), Defense Health Agency (DHA), during
+        her retirement ceremony held at the Fort Sam Houston Golf Club. Toader, of
+        Transylvania, Romania, enlisted in the Navy in July 2004 and was commissioned
+        an ensign via the In-service Procurement Program in March 2012. Prior to serving
+        DMRTI\u2019s chief operations officer, Toader served as the department head,
+        TRICARE Operations Office and regional legal investigator, Naval Hospital
+        Naples, Italy.  DMRTI is a Tri-Service organization staffed by U.S. Army,
+        Navy, and Air Force professionals.  Located on Joint Base San Antonio (JBSA)
+        Fort Sam Houston, DMRTI offers both resident and non-resident joint medical
+        readiness training courses as well as professional medical programs. (U.S.
+        Navy photo by Burrell Parmer, Naval Medical Research Unit San Antonio/Released)</description>\n\t</photo>\n\t<photo
+        id=\"53738760982\" owner=\"61270229@N05\" secret=\"c2d515ff4f\" server=\"65535\"
+        farm=\"66\" title=\"DMRTI&#039;s Lt. Toader retires from Naval Service 240516-N-ND850-1002\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716408910\" datetaken=\"2024-05-16 12:11:21\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"31\" count_comments=\"0\" tags=\"americasnavy defensehealthagency
+        jointbasesanantonio knowyourmilitary sanantonio texas unitedstates\" originalsecret=\"0ae53b6589\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f_t.jpg\"
+        height_t=\"71\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f_m.jpg\"
+        height_s=\"171\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f.jpg\"
+        height_m=\"357\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53738760982_0ae53b6589_o.jpg\"
+        height_o=\"1500\" width_o=\"2100\" url_q=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53738760982_c2d515ff4f_b.jpg\"
+        height_l=\"731\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>JOINT
+        BASE SAN ANTONIO-FORT SAM HOUSTON \u2013 (May 16, 2024) \u2013 U.S. Navy Lt.
+        Lia Toader, Medical Service Corps (MSC) was awarded the Defense Meritorious
+        Service Medal by Cmdr. Renardis Banks (MSC), division chief, Defense Medical
+        Readiness Training Institute (DMRTI), Defense Health Agency (DHA), during
+        her retirement ceremony held at the Fort Sam Houston Golf Club. Toader, of
+        Transylvania, Romania, enlisted in the Navy in July 2004 and was commissioned
+        an ensign via the In-service Procurement Program in March 2012. Prior to serving
+        DMRTI\u2019s chief operations officer, Toader served as the department head,
+        TRICARE Operations Office and regional legal investigator, Naval Hospital
+        Naples, Italy.  DMRTI is a Tri-Service organization staffed by U.S. Army,
+        Navy, and Air Force professionals.  Located on Joint Base San Antonio (JBSA)
+        Fort Sam Houston, DMRTI offers both resident and non-resident joint medical
+        readiness training courses as well as professional medical programs. (U.S.
+        Navy photo by Burrell Parmer, Naval Medical Research Unit San Antonio/Released)</description>\n\t</photo>\n\t<photo
+        id=\"53739881958\" owner=\"61270229@N05\" secret=\"8a19bd5f21\" server=\"65535\"
+        farm=\"66\" title=\"DMRTI&#039;s Lt. Toader retires from Naval Service 240516-N-ND850-1003\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716408909\" datetaken=\"2024-05-16 12:47:25\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"32\" count_comments=\"0\" tags=\"americasnavy defensehealthagency
+        jointbasesanantonio knowyourmilitary sanantonio texas unitedstates\" originalsecret=\"900b505619\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21_t.jpg\"
+        height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21_m.jpg\"
+        height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21.jpg\"
+        height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53739881958_900b505619_o.jpg\"
+        height_o=\"1500\" width_o=\"2250\" url_q=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53739881958_8a19bd5f21_b.jpg\"
+        height_l=\"683\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>JOINT
+        BASE SAN ANTONIO-FORT SAM HOUSTON \u2013 (May 16, 2024) \u2013 U.S. Navy Lt.
+        Lia Toader, Medical Service Corps (MSC), joined by her daughter and sister,
+        is piped ashore during her retirement ceremony held at the Fort Sam Houston
+        Golf Club. Toader, of Transylvania, Romania, enlisted in the Navy in July
+        2004 and was commissioned an ensign via the In-service Procurement Program
+        in March 2012. Prior to serving as the Defense Medical Readiness Training
+        Institute\u2019s (DMRTI) chief operations officer, Toader served as the department
+        head, TRICARE Operations Office and regional legal investigator, Naval Hospital
+        Naples, Italy.  DMRTI is a Tri-Service organization under the Defense Health
+        Agency (DHA) staffed by U.S. Army, Navy, and Air Force professionals.  Located
+        on Joint Base San Antonio (JBSA) Fort Sam Houston, DMRTI offers both resident
+        and non-resident joint medical readiness training courses as well as professional
+        medical programs. (U.S. Navy photo by Burrell Parmer, Naval Medical Research
+        Unit San Antonio/Released)</description>\n\t</photo>\n\t<photo id=\"53740090945\"
+        owner=\"61270229@N05\" secret=\"c1cb69f2c9\" server=\"65535\" farm=\"66\"
+        title=\"NAMRU Dayton hosts scientific meeting with directors across naval
+        medical research   240521-N-FS906-1001\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716408633\" datetaken=\"2024-05-21
+        08:33:18\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"22\" count_comments=\"0\" tags=\"usnavy
+        medicalresearch namrudayton nmrc dayton ohio unitedstates\" originalsecret=\"a1b37198c4\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9_t.jpg\"
+        height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9_m.jpg\"
+        height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9.jpg\"
+        height_m=\"375\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53740090945_a1b37198c4_o.jpg\"
+        height_o=\"4284\" width_o=\"5712\" url_q=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53740090945_c1cb69f2c9_b.jpg\"
+        height_l=\"768\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Capt.
+        Walter Dalitsch III, Naval Medical Research Command Dayton commanding officer,
+        provides opening remarks to leaders of the Navy&#039;s medical research and
+        development enterprise during a meeting at the Wright Brothers Institute in
+        Dayton, Ohio May 21. The event brought together scientific and technical directors
+        from across the NMR&amp;amp;D enterprise to discuss and advance research initiatives
+        crucial to the medical research missions of the eight NMR&amp;amp;D commands.
+        U.S. Navy photo by Tracy Straka.\n\n&lt;a href=&quot;https://www.dvidshub.net/news/471989/namru-dayton-hosts-scientific-meeting-with-directors-across-naval-medical-research&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471989/namru-dayton-hosts-scientifi...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53738734022\" owner=\"61270229@N05\" secret=\"208a2fe13b\" server=\"65535\"
+        farm=\"66\" title=\"U.S. Navy Surgeon General delivers keynote remarks at
+        the 25th NATO Maritime Medical Conference  240515-N-EA601-1001\" ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1716408237\"
+        datetaken=\"2024-05-15 04:00:00\" datetakengranularity=\"0\" datetakenunknown=\"0\"
+        ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"9\" count_comments=\"0\"
+        tags=\"navymedicine navy medicine nato navysurgeongeneral maritime medical
+        conference amsterdam netherlands\" originalsecret=\"e85140d557\" originalformat=\"jpg\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b_t.jpg\"
+        height_t=\"62\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b_m.jpg\"
+        height_s=\"150\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b.jpg\"
+        height_m=\"312\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53738734022_e85140d557_o.jpg\"
+        height_o=\"3567\" width_o=\"5709\" url_q=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53738734022_208a2fe13b_b.jpg\"
+        height_l=\"640\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>AMSTERDAM,
+        Netherlands (May 15, 2024) Rear Adm. Darin Via, the U.S. Navy Surgeon General,
+        delivers keynote remarks alongside 22 Allies and Partners at the 25th NATO
+        Maritime Medical Conference, May 15, 2024. Via discussed Navy Medicine\u2019s
+        efforts to modernize expeditionary capabilities to face current and future
+        operational scenarios and how these capabilities will enhance NATO crisis
+        response and warfighting readiness. (U.S. Navy photo by Cmdr. Jessica L. McNulty)</description>\n\t</photo>\n\t<photo
+        id=\"53738699247\" owner=\"61270229@N05\" secret=\"0f98ffcd82\" server=\"65535\"
+        farm=\"66\" title=\"New clinic expands physical therapy services for Marines,
+        Sailors on Lejeune 240513-N-FB730-1001\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716407391\" datetaken=\"2024-05-13
+        11:53:08\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"8\" count_comments=\"0\" tags=\"navalmedicalcentercamplejeune
+        nmccl readiness physicaltherapy navymedicine militaryhealth camplejeune northcarolina
+        unitedstates giantscissors\" originalsecret=\"756e82bf6d\" originalformat=\"jpg\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82_t.jpg\"
+        height_t=\"74\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82_m.jpg\"
+        height_s=\"178\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82.jpg\"
+        height_m=\"370\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53738699247_756e82bf6d_o.jpg\"
+        height_o=\"4385\" width_o=\"5919\" url_q=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53738699247_0f98ffcd82_b.jpg\"
+        height_l=\"759\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Capt.
+        Kevin Brown, center, cuts the grand opening ribbon with, from left to right,
+        Lt. Rudy Jones, Hospital Corpsman 2nd Class Cody Sapcut, Lt. Cmdr. Laura Riebel,
+        and Cmdr. Clara Stevens, at the opening of the Warfighter Readiness and Rehabilitation
+        Center on Marine Corps Base Camp Lejeune, May 13, 2024. Photo by Mass Communications
+        Specialist second class Justin Woods\n\n&lt;a href=&quot;https://www.dvidshub.net/news/471243/new-clinic-expands-physical-therapy-services-marines-sailors-lejeune&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471243/new-clinic-expands-physical-...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53738699262\" owner=\"61270229@N05\" secret=\"2cff468724\" server=\"65535\"
+        farm=\"66\" title=\"New clinic expands physical therapy services for Marines,
+        Sailors on Lejeune 240513-N-FB730-1003\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716407390\" datetaken=\"2024-05-13
+        11:57:03\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"8\" count_comments=\"0\" tags=\"navalmedicalcentercamplejeune
+        nmccl readiness physicaltherapy navymedicine militaryhealth camplejeune northcarolina
+        unitedstates\" originalsecret=\"9ae3fc9179\" originalformat=\"jpg\" latitude=\"0\"
+        longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+        url_sq=\"https://live.staticflickr.com/65535/53738699262_2cff468724_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53738699262_2cff468724_t.jpg\"
+        height_t=\"53\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53738699262_2cff468724_m.jpg\"
+        height_s=\"127\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53738699262_2cff468724.jpg\"
+        height_m=\"265\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53738699262_9ae3fc9179_o.jpg\"
+        height_o=\"4186\" width_o=\"7897\" url_q=\"https://live.staticflickr.com/65535/53738699262_2cff468724_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53738699262_2cff468724_b.jpg\"
+        height_l=\"543\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Naval
+        Medical Center Camp Lejeune staff pose for a photo outside of the Warfighter
+        Readiness and Rehabilitation Center after the ribbon-cutting ceremony,  on
+        Marine Corps Base Camp Lejeune, May 13, 2024. Photo by Mass Communications
+        Specialist second class Justin Woods\n\n&lt;a href=&quot;https://www.dvidshub.net/news/471243/new-clinic-expands-physical-therapy-services-marines-sailors-lejeune&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471243/new-clinic-expands-physical-...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53739957374\" owner=\"61270229@N05\" secret=\"2017105ab3\" server=\"0\"
+        farm=\"0\" title=\"24-0005-062 CAPT Brown Farewell Montage\" ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1716407389\"
+        datetaken=\"2024-05-20 15:31:47\" datetakengranularity=\"0\" datetakenunknown=\"0\"
+        ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"71\" count_comments=\"0\"
+        tags=\"changeofcommand camplejeune\" originalsecret=\"3d42f2a501\" originalformat=\"mp4\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"video\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/31337/53739957374_2017105ab3_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/31337/53739957374_2017105ab3_t.jpg\"
+        height_t=\"56\" width_t=\"100\" url_s=\"https://live.staticflickr.com/31337/53739957374_2017105ab3_m.jpg\"
+        height_s=\"135\" width_s=\"240\" url_m=\"https://live.staticflickr.com/31337/53739957374_2017105ab3.jpg\"
+        height_m=\"281\" width_m=\"500\" url_o=\"https://live.staticflickr.com/31337/53739957374_3d42f2a501_o.jpg\"
+        height_o=\"1080\" width_o=\"1920\" url_q=\"https://live.staticflickr.com/31337/53739957374_2017105ab3_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/31337/53739957374_2017105ab3_b.jpg\"
+        height_l=\"576\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>CAPT
+        Brown Farewell Montage  \n05.20.2024\nVideo by Petty Officer 2nd Class Justin
+        Woods \nNaval Medical Center Camp Lejeune  \n  \nA montage to celebrate the
+        time Capt. Kevin Brown spent as the commanding officer of Naval Medical Center
+        Camp Lejeune (NMCCL). Capt. Brown will relinquish command to NMCCL to Capt.
+        Anja Dabelic at a change of command ceremony at Marston Pavilion on Marine
+        Corps Base Camp Lejeune, May 21, 2024.\n\nDate Taken:05.20.2024\nDate Posted:05.20.2024
+        11:32\nCategory:Package\nVideo ID:924300\nVIRIN:240520-N-FB730-1001\nFilename:DOD_110321074\nLength:00:03:31\nLocation:CAMP
+        LEJEUNE, NC, US\n</description>\n\t</photo>\n\t<photo id=\"53739938714\" owner=\"61270229@N05\"
+        secret=\"b62d0fb53c\" server=\"65535\" farm=\"66\" title=\"NMRLC Ensures Joint
+        Warfighter Support is Ready for Action in Indo-Pacific AOR  240410-N-VL857-1410\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716406893\" datetaken=\"2024-04-10 04:00:00\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"7\" count_comments=\"0\" tags=\"nmrlc emf exmeds navymedicine
+        japan campfoster okinawa\" originalsecret=\"ef6819dc6f\" originalformat=\"jpg\"
+        latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\"
+        media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c_t.jpg\"
+        height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c_m.jpg\"
+        height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c.jpg\"
+        height_m=\"375\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53739938714_ef6819dc6f_o.jpg\"
+        height_o=\"769\" width_o=\"1025\" url_q=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53739938714_b62d0fb53c_b.jpg\"
+        height_l=\"768\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Lt.
+        Cassidhe Griffiths, NMRLC&#039;s Deputy Design Director was pictured here
+        while in Norway, but in Camp Foster, Okinawa, Japan, she lead the team as
+        NMRLC\u2019s Expeditionary Medical Facility (EMF) Activation Team Officer.\n\n&lt;a
+        href=&quot;https://www.dvidshub.net/news/471434/nmrlc-ensures-joint-warfighter-support-ready-action-indo-pacific-aor&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471434/nmrlc-ensures-joint-warfight...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53739938729\" owner=\"61270229@N05\" secret=\"5d97338ddf\" server=\"65535\"
+        farm=\"66\" title=\"NMRLC Ensures Joint Warfighter Support is Ready for Action
+        in Indo-Pacific AOR  240312-N-VL857-1312\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716406892\" datetaken=\"2024-03-12
+        04:00:00\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"8\" count_comments=\"0\" tags=\"nmrlc
+        campfoster japan emf exmeds harstad norway\" originalsecret=\"366b82fc8e\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf_t.jpg\"
+        height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf_m.jpg\"
+        height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf.jpg\"
+        height_m=\"375\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53739938729_366b82fc8e_o.jpg\"
+        height_o=\"3024\" width_o=\"4032\" url_q=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53739938729_5d97338ddf_b.jpg\"
+        height_l=\"768\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>NMRLC&#039;s
+        Senior Civilian of the Quarter, Matthew Gerten, supervises the movement of
+        heave equipment while in Norway. Gerten also played a critical role in NMRLC
+        logistics operation with EMF 144 at Camp Foster, Japan.\n\n&lt;a href=&quot;https://www.dvidshub.net/news/471434/nmrlc-ensures-joint-warfighter-support-ready-action-indo-pacific-aor&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471434/nmrlc-ensures-joint-warfight...&lt;/a&gt;</description>\n\t</photo>\n</photos>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -156,15 +322,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

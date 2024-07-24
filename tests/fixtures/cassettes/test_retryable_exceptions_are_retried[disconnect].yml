@@ -17,103 +17,383 @@ interactions:
     uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=61270229%40N05
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"2684\" perpage=\"10\" total=\"26834\">\n\t<photo id=\"53741638455\"
+        owner=\"61270229@N05\" secret=\"c95f92c37e\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-081 (8403864)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474418\" datetaken=\"2024-05-23
+        10:23:22\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"91bdcaba01\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e_t.jpg\"
+        height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e_m.jpg\"
+        height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e.jpg\"
+        height_m=\"330\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741638455_91bdcaba01_o.jpg\"
+        height_o=\"3728\" width_o=\"5648\" url_q=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741638455_c95f92c37e_b.jpg\"
+        height_l=\"676\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>
+        NMRC Trains Sailors for CTC Influenza Study 05.10.2024\nPhoto by Sidney Hinds
+        \nNaval Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024) Hospital
+        Corpsman 1st Class Adirachel Sauvou, from Naval Medical Research Command (NMRC),
+        instructs Hospitalman Vivien Taimai, from Naval Medical Leader and Professional
+        Development Command, on drawing blood samples in preparation for a flu prevention
+        study. The study, an ongoing trial conducted by the NMRC Clinical Trials Center
+        (CTC), evaluates the efficacy of SAb Biotherapeutics therapy SAB-176, a novel
+        infectious disease therapy designated by the U.S. Food and Drug Administration.
+        According to the Centers for Disease Control and Prevention, more than 14,000,000
+        medical visits, 360,000 hospitalizations and 21,000 deaths occurred in the
+        United States due to influenza from 2022-2023. Influenza outbreaks can spread
+        easily among active-duty service members, especially those living in congregate
+        settings, reducing mission readiness. A prevention option that can be administered
+        remotely could reduce disease burden and optimize health and operational readiness
+        of Navy, Marine Corps and joint service personnel in all domains that may
+        face a rapidly transmitted infectious disease threat.\n\nThis study is open
+        to all healthy active-duty military, dependents, retirees, WRNMMC personnel
+        and other local individuals between the ages of 18 and 60. Participants must
+        not be pregnant, cannot have received a flu shot in the past 90 days and must
+        be able to complete at least eight visits to the CTC over the course of three
+        months. Active-duty personnel will be required to complete a supervisor\u2019s
+        approval form. Participants may be eligible for compensation. If you would
+        like to participate or have any questions, please contact the center at 301-233-9640
+        (text), or via e-mail at usn.nmrc.ctc@health.mil to schedule an appointment.
+        The CTC, located at Naval Support Activity Bethesda, Building 17B (2nd floor),
+        evaluates vaccines, therapeutics, prophylactics and medical devices in human
+        subjects to advance products from the laboratory to the front line and maximize
+        the medical readiness of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\nDate
+        Taken:05.10.2024\nDate Posted:05.14.2024 12:16\nPhoto ID:8403864\nVIRIN:240510-N-KT630-1154\nResolution:5648x3728\nSize:2.14
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53741549219\"
+        owner=\"61270229@N05\" secret=\"3fe6d58f5c\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-082 (8403865)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474418\" datetaken=\"2024-05-23
+        10:23:22\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"8d77473efa\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c_t.jpg\"
+        height_t=\"68\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c_m.jpg\"
+        height_s=\"162\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c.jpg\"
+        height_m=\"338\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741549219_8d77473efa_o.jpg\"
+        height_o=\"3408\" width_o=\"5040\" url_q=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741549219_3fe6d58f5c_b.jpg\"
+        height_l=\"692\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>NMRC
+        Trains Sailors for CTC Influenza Study 05.10.2024\nPhoto by Sidney Hinds \nNaval
+        Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024) Hospital Corpsman
+        1st Class Adirachel Sauvou, from Naval Medical Research Command (NMRC), draws
+        a blood sample as training for a flu prevention study. The study, an ongoing
+        trial conducted by the NMRC Clinical Trials Center (CTC), evaluates the efficacy
+        of SAb Biotherapeutics therapy SAB-176, a novel infectious disease therapy
+        designated by the U.S. Food and Drug Administration. According to the Centers
+        for Disease Control and Prevention, more than 14,000,000 medical visits, 360,000
+        hospitalizations and 21,000 deaths occurred in the United States due to influenza
+        from 2022-2023. Influenza outbreaks can spread easily among active-duty service
+        members, especially those living in congregate settings, reducing mission
+        readiness. A prevention option that can be administered remotely could reduce
+        disease burden and optimize health and operational readiness of Navy, Marine
+        Corps and joint service personnel in all domains that may face a rapidly transmitted
+        infectious disease threat.\n\nThis study is open to all healthy active-duty
+        military, dependents, retirees, WRNMMC personnel and other local individuals
+        between the ages of 18 and 60. Participants must not be pregnant, cannot have
+        received a flu shot in the past 90 days and must be able to complete at least
+        eight visits to the CTC over the course of three months. Active-duty personnel
+        will be required to complete a supervisor\u2019s approval form. Participants
+        may be eligible for compensation. If you would like to participate or have
+        any questions, please contact the center at 301-233-9640 (text), or via e-mail
+        at usn.nmrc.ctc@health.mil to schedule an appointment. The CTC, located at
+        Naval Support Activity Bethesda, Building 17B (2nd floor), evaluates vaccines,
+        therapeutics, prophylactics and medical devices in human subjects to advance
+        products from the laboratory to the front line and maximize the medical readiness
+        of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\nDate Taken:05.10.2024\nDate
+        Posted:05.14.2024 12:16\nPhoto ID:8403865\nVIRIN:240510-N-KT630-1158\nResolution:5040x3408\nSize:1.94
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53741638520\"
+        owner=\"61270229@N05\" secret=\"1b2dd03b74\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-083 (8403866)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474417\" datetaken=\"2024-05-23
+        10:23:23\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"8c5a88cd43\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74_t.jpg\"
+        height_t=\"66\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74_m.jpg\"
+        height_s=\"158\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74.jpg\"
+        height_m=\"330\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741638520_8c5a88cd43_o.jpg\"
+        height_o=\"4064\" width_o=\"6160\" url_q=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741638520_1b2dd03b74_b.jpg\"
+        height_l=\"676\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>NMRC
+        Trains Sailors for CTC Influenza Study  \n05.10.2024\nPhoto by Sidney Hinds
+        \nNaval Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024) Hospital
+        Corpsman 1st Class Adirachel Sauvou, from Naval Medical Research Command (NMRC),
+        instructs Hospitalman Vivien Taimai, from Naval Medical Leader and Professional
+        Development Command, on drawing blood samples in preparation for a flu prevention
+        study. The study, an ongoing trial conducted by the NMRC Clinical Trials Center
+        (CTC), evaluates the efficacy of SAb Biotherapeutics therapy SAB-176, a novel
+        infectious disease therapy designated by the U.S. Food and Drug Administration.
+        According to the Centers for Disease Control and Prevention, more than 14,000,000
+        medical visits, 360,000 hospitalizations and 21,000 deaths occurred in the
+        United States due to influenza from 2022-2023. Influenza outbreaks can spread
+        easily among active-duty service members, especially those living in congregate
+        settings, reducing mission readiness. A prevention option that can be administered
+        remotely could reduce disease burden and optimize health and operational readiness
+        of Navy, Marine Corps and joint service personnel in all domains that may
+        face a rapidly transmitted infectious disease threat.\n\nThis study is open
+        to all healthy active-duty military, dependents, retirees, WRNMMC personnel
+        and other local individuals between the ages of 18 and 60. Participants must
+        not be pregnant, cannot have received a flu shot in the past 90 days and must
+        be able to complete at least eight visits to the CTC over the course of three
+        months. Active-duty personnel will be required to complete a supervisor\u2019s
+        approval form. Participants may be eligible for compensation. If you would
+        like to participate or have any questions, please contact the center at 301-233-9640
+        (text), or via e-mail at usn.nmrc.ctc@health.mil to schedule an appointment.
+        The CTC, located at Naval Support Activity Bethesda, Building 17B (2nd floor),
+        evaluates vaccines, therapeutics, prophylactics and medical devices in human
+        subjects to advance products from the laboratory to the front line and maximize
+        the medical readiness of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\nDate
+        Taken:05.10.2024\nDate Posted:05.14.2024 12:16\nPhoto ID:8403866\nVIRIN:240510-N-KT630-1136\nResolution:6160x4064\nSize:2.64
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53740294462\"
+        owner=\"61270229@N05\" secret=\"4ba334e835\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-084 (8403871)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474417\" datetaken=\"2024-05-23
+        10:23:22\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"fb842ca615\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53740294462_4ba334e835_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53740294462_4ba334e835_t.jpg\"
+        height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53740294462_4ba334e835_m.jpg\"
+        height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53740294462_4ba334e835.jpg\"
+        height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53740294462_fb842ca615_o.jpg\"
+        height_o=\"4480\" width_o=\"6720\" url_q=\"https://live.staticflickr.com/65535/53740294462_4ba334e835_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53740294462_4ba334e835_b.jpg\"
+        height_l=\"683\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>
+        NMRC Trains Sailors for CTC Influenza Study \n05.10.2024\nPhoto by Sidney
+        Hinds \nNaval Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024)
+        Hospital Corpsman 1st Class Adirachel Sauvou, from Naval Medical Research
+        Command (NMRC), draws a blood samples as part of training for a flu prevention
+        study. The study, an ongoing trial conducted by the NMRC Clinical Trials Center
+        (CTC), evaluates the efficacy of SAb Biotherapeutics therapy SAB-176, a novel
+        infectious disease therapy designated by the U.S. Food and Drug Administration.
+        According to the Centers for Disease Control and Prevention, more than 14,000,000
+        medical visits, 360,000 hospitalizations and 21,000 deaths occurred in the
+        United States due to influenza from 2022-2023. Influenza outbreaks can spread
+        easily among active-duty service members, especially those living in congregate
+        settings, reducing mission readiness. A prevention option that can be administered
+        remotely could reduce disease burden and optimize health and operational readiness
+        of Navy, Marine Corps and joint service personnel in all domains that may
+        face a rapidly transmitted infectious disease threat.\n\nThis study is open
+        to all healthy active-duty military, dependents, retirees, WRNMMC personnel
+        and other local individuals between the ages of 18 and 60. Participants must
+        not be pregnant, cannot have received a flu shot in the past 90 days and must
+        be able to complete at least eight visits to the CTC over the course of three
+        months. Active-duty personnel will be required to complete a supervisor\u2019s
+        approval form. Participants may be eligible for compensation. If you would
+        like to participate or have any questions, please contact the center at 301-233-9640
+        (text), or via e-mail at usn.nmrc.ctc@health.mil to schedule an appointment.
+        The CTC, located at Naval Support Activity Bethesda, Building 17B (2nd floor),
+        evaluates vaccines, therapeutics, prophylactics and medical devices in human
+        subjects to advance products from the laboratory to the front line and maximize
+        the medical readiness of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\nDate
+        Taken:05.10.2024\nDate Posted:05.14.2024 12:16\nPhoto ID:8403871\nVIRIN:240510-N-KT630-1144\nResolution:6720x4480\nSize:4.15
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53741549209\"
+        owner=\"61270229@N05\" secret=\"d289512734\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-085 (8403884)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474416\" datetaken=\"2024-05-10
+        13:08:10\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"1\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"d0a27f9521\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741549209_d289512734_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741549209_d289512734_t.jpg\"
+        height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53741549209_d289512734_m.jpg\"
+        height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53741549209_d289512734.jpg\"
+        height_m=\"500\" width_m=\"333\" url_o=\"https://live.staticflickr.com/65535/53741549209_d0a27f9521_o.jpg\"
+        height_o=\"6720\" width_o=\"4480\" url_q=\"https://live.staticflickr.com/65535/53741549209_d289512734_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741549209_d289512734_b.jpg\"
+        height_l=\"1024\" width_l=\"683\" pathalias=\"navymedicine\">\n\t\t<description>
+        NMRC Trains Sailors for CTC Influenza Study \n05.09.2024\nPhoto by Sidney
+        Hinds \nNaval Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024)
+        Hospital Corpsman 1st Class Adirachel Sauvou, from Naval Medical Research
+        Command (NMRC), instructs Hospitalman Vivien Taimai, from Naval Medical Leader
+        and Professional Development Command, on drawing blood samples in preparation
+        for a flu prevention study. The study, an ongoing trial conducted by the NMRC
+        Clinical Trials Center (CTC), evaluates the efficacy of SAb Biotherapeutics
+        therapy SAB-176, a novel infectious disease therapy designated by the U.S.
+        Food and Drug Administration. According to the Centers for Disease Control
+        and Prevention, more than 14,000,000 medical visits, 360,000 hospitalizations
+        and 21,000 deaths occurred in the United States due to influenza from 2022-2023.
+        Influenza outbreaks can spread easily among active-duty service members, especially
+        those living in congregate settings, reducing mission readiness. A prevention
+        option that can be administered remotely could reduce disease burden and optimize
+        health and operational readiness of Navy, Marine Corps and joint service personnel
+        in all domains that may face a rapidly transmitted infectious disease threat.\n\nThis
+        study is open to all healthy active-duty military, dependents, retirees, WRNMMC
+        personnel and other local individuals between the ages of 18 and 60. Participants
+        must not be pregnant, cannot have received a flu shot in the past 90 days
+        and must be able to complete at least eight visits to the CTC over the course
+        of three months. Active-duty personnel will be required to complete a supervisor\u2019s
+        approval form. Participants may be eligible for compensation. If you would
+        like to participate or have any questions, please contact the center at 301-233-9640
+        (text), or via e-mail at usn.nmrc.ctc@health.mil to schedule an appointment.
+        The CTC, located at Naval Support Activity Bethesda, Building 17B (2nd floor),
+        evaluates vaccines, therapeutics, prophylactics and medical devices in human
+        subjects to advance products from the laboratory to the front line and maximize
+        the medical readiness of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\n\nDate
+        Taken:05.09.2024\nDate Posted:05.14.2024 12:16\nPhoto ID:8403884\nVIRIN:240510-N-KT630-1073\nResolution:4480x6720\nSize:2.81
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53741638450\"
+        owner=\"61270229@N05\" secret=\"d7b54ab71d\" server=\"65535\" farm=\"66\"
+        title=\"24-0023-086 (8403898)\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
+        license=\"7\" safety_level=\"0\" dateupload=\"1716474415\" datetaken=\"2024-05-23
+        10:23:22\" datetakengranularity=\"0\" datetakenunknown=\"1\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\" tags=\"hospitalcorps
+        navalmedicalresearchcommand silverspring maryland influenza research\" originalsecret=\"0464f4af0b\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d_t.jpg\"
+        height_t=\"73\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d_m.jpg\"
+        height_s=\"174\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d.jpg\"
+        height_m=\"363\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741638450_0464f4af0b_o.jpg\"
+        height_o=\"3632\" width_o=\"5008\" url_q=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741638450_d7b54ab71d_b.jpg\"
+        height_l=\"743\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>NMRC
+        Trains Sailors for CTC Influenza Study 05.10.2024\nPhoto by Sidney Hinds \nNaval
+        Medical Research Command  \n \nBETHESDA, Md. (May 10, 2024) Hospital Corpsman
+        1st Class Adirachel Sauvou, from Naval Medical Research Command (NMRC), instructs
+        Hospitalman Vivien Taimai, from Naval Medical Leader and Professional Development
+        Command, on volunteer processing in preparation for a flu prevention study.
+        The study, an ongoing trial conducted by the NMRC Clinical Trials Center (CTC),
+        evaluates the efficacy of SAb Biotherapeutics therapy SAB-176, a novel infectious
+        disease therapy designated by the U.S. Food and Drug Administration. According
+        to the Centers for Disease Control and Prevention, more than 14,000,000 medical
+        visits, 360,000 hospitalizations and 21,000 deaths occurred in the United
+        States due to influenza from 2022-2023. Influenza outbreaks can spread easily
+        among active-duty service members, especially those living in congregate settings,
+        reducing mission readiness. A prevention option that can be administered remotely
+        could reduce disease burden and optimize health and operational readiness
+        of Navy, Marine Corps and joint service personnel in all domains that may
+        face a rapidly transmitted infectious disease threat.\n\nThis study is open
+        to all healthy active-duty military, dependents, retirees, WRNMMC personnel
+        and other local individuals between the ages of 18 and 60. Participants must
+        not be pregnant, cannot have received a flu shot in the past 90 days and must
+        be able to complete at least eight visits to the CTC over the course of three
+        months. Active-duty personnel will be required to complete a supervisor\u2019s
+        approval form. Participants may be eligible for compensation. If you would
+        like to participate or have any questions, please contact the center at 301-233-9640
+        (text), or via e-mail at usn.nmrc.ctc@health.mil to schedule an appointment.
+        The CTC, located at Naval Support Activity Bethesda, Building 17B (2nd floor),
+        evaluates vaccines, therapeutics, prophylactics and medical devices in human
+        subjects to advance products from the laboratory to the front line and maximize
+        the medical readiness of the warfighter. (U.S. Navy photo by Sidney Hinds/Released)\n\nDate
+        Taken:05.10.2024\nDate Posted:05.14.2024 12:16\nPhoto ID:8403898\nVIRIN:240510-N-KT630-1065\nResolution:5008x3632\nSize:1.9
+        MB\nLocation:BETHESDA, MD, US\n</description>\n\t</photo>\n\t<photo id=\"53740294427\"
+        owner=\"61270229@N05\" secret=\"578c278af7\" server=\"65535\" farm=\"66\"
+        title=\"AANHPI Heritage Month Spotlight: HM1 Adirachel Sauvou 240510-N-GC612-1007\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716474415\" datetaken=\"2024-05-10 04:00:00\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"1\" count_comments=\"0\" tags=\"silverspring maryland unitedstates
+        hospitalcorps navalmedicalresearchcommand\" originalsecret=\"941f00802d\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53740294427_578c278af7_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53740294427_578c278af7_t.jpg\"
+        height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53740294427_578c278af7_m.jpg\"
+        height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53740294427_578c278af7.jpg\"
+        height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53740294427_941f00802d_o.jpg\"
+        height_o=\"683\" width_o=\"1024\" url_q=\"https://live.staticflickr.com/65535/53740294427_578c278af7_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53740294427_578c278af7_b.jpg\"
+        height_l=\"683\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>SILVER
+        SPRING, Md. (May 10, 2024) Hospital Corpsman 1st Class Adirachel Sauvou poses
+        for a photo during Asian American, Native Hawaiian, and Pacific Islander Heritage
+        Month. Sauvou came to the U.S. from the Republic of Fiji in 2014, and currently
+        serves as the leading petty officer in the Administration Department at Naval
+        Medical Research Command (NMRC). NMRC is engaged in a broad spectrum of activity
+        from basic science in the laboratory to field studies in austere and remote
+        areas of the world to investigations in operational environments. In support
+        of the Navy, Marine Corps, and joint U.S. warfighters, researchers study infectious
+        diseases, biological warfare detection and defense, combat casualty care,
+        environmental health concerns, aerospace and undersea medicine, medical modeling,
+        simulation, operational mission support, epidemiology and behavioral sciences.
+        (U.S. Navy photo by Michael Wilson/Released)\n\n&lt;a href=&quot;https://www.dvidshub.net/image/8423523/aanhpi-heritage-month-spotlight-hm1-adirachel-sauvou&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/image/8423523/aanhpi-heritage-month-spot...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53741530509\" owner=\"61270229@N05\" secret=\"fdc9b3292d\" server=\"65535\"
+        farm=\"66\" title=\"I am Navy Medicine \u2013 and Behavioral Health Tech \u2013
+        Hospital Corpsman 3rd Class Gunnar Haskill 220301-N-HU933-7640\" ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1716473687\"
+        datetaken=\"2022-03-01 14:20:39\" datetakengranularity=\"0\" datetakenunknown=\"0\"
+        ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\"
+        tags=\"navymedicine dha nhb nmrtcbremerton behavioralhealthtech mentalhealth
+        bremerton washington unitedstates hospitalcorps\" originalsecret=\"71b0ea88d8\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d_t.jpg\"
+        height_t=\"79\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d_m.jpg\"
+        height_s=\"189\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d.jpg\"
+        height_m=\"393\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741530509_71b0ea88d8_o.jpg\"
+        height_o=\"3679\" width_o=\"4678\" url_q=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741530509_fdc9b3292d_b.jpg\"
+        height_l=\"805\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Professionalism
+        personified and recognized\u2026Hospital Corpsman 3rd Class Gunner Haskill
+        is informed that he was advanced in his chosen rate to the next highest paygrade
+        as part of the Navy\u2019s Meritoriously Advancement Program. Haskill was
+        selected for advancement due to his work as a behavioral health technician
+        assigned to Navy Medicine Readiness Training Command Bremerton and on deployment
+        onboard USS Carl Vinson (CVN 70) from August 2021 to February 2022. MAP authorizes
+        commanding officers to advance eligible enlisted Sailors like Haskill in paygrades
+        E5 and below to the next higher paygrade and provides leadership the opportunity
+        to acknowledge those personnel who have demonstrated they are ready for the
+        next level of responsibility by advancing them in rate (Official Navy photo
+        by Douglas H Stutz, NHB/NMRTC Bremerton public affairs officer).\n\n&lt;a
+        href=&quot;https://www.dvidshub.net/news/471965/am-navy-medicine-and-behavioral-health-tech-hospital-corpsman-3rd-class-gunnar-haskill&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/471965/am-navy-medicine-and-behavio...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
+        id=\"53741619845\" owner=\"61270229@N05\" secret=\"175bf1c555\" server=\"65535\"
+        farm=\"66\" title=\"Asian American Native Hawaiian Pacific Islander Heritage
+        Month 240522-N-QW460-1001\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\"
+        safety_level=\"0\" dateupload=\"1716473686\" datetaken=\"2024-05-22 04:00:00\"
+        datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
+        realname=\"Navy Medicine\" count_views=\"3\" count_comments=\"0\" tags=\"asianamericannativehawaiianpacificislandermonth
+        nhb nmrtcbremerton navymedicine dha bremerton washington unitedstates\" originalsecret=\"318fd609b9\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53741619845_175bf1c555_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741619845_175bf1c555_t.jpg\"
+        height_t=\"100\" width_t=\"75\" url_s=\"https://live.staticflickr.com/65535/53741619845_175bf1c555_m.jpg\"
+        height_s=\"240\" width_s=\"180\" url_m=\"https://live.staticflickr.com/65535/53741619845_175bf1c555.jpg\"
+        height_m=\"500\" width_m=\"375\" url_o=\"https://live.staticflickr.com/65535/53741619845_318fd609b9_o.jpg\"
+        height_o=\"3600\" width_o=\"2700\" url_q=\"https://live.staticflickr.com/65535/53741619845_175bf1c555_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741619845_175bf1c555_b.jpg\"
+        height_l=\"1024\" width_l=\"768\" pathalias=\"navymedicine\">\n\t\t<description>For
+        Interior Communications Electrician 1st Class Anh Lai, recognizing May as
+        designated by the Department of Defense as Asian American Native Hawaiian
+        Pacific Islander Heritage Month provides special significance in commemorating
+        the vital - and vibrant - contributions and diversity which Asian Americans,
+        native Hawaiians and Pacific islanders have brought to the nation and to the
+        U.S. Navy. \n&amp;quot;My parents are from Vietnam. Culture to me is a way
+        of life that has been passed down generation after generation. It&#039;s in
+        the food, the traditional outfits, the ceremonies, the music...everything,&amp;quot;
+        shared Lai. \nAccording to the U.S. Department of Defense, approximately six
+        out of every 100 servicemembers are of Asian American or Pacific islander
+        heritage (Official Navy photo/graphic by Mass Communication Specialist 2nd
+        Class Jenifer Benedict, NHB/NMRTC Bremerton public affairs office)</description>\n\t</photo>\n\t<photo
+        id=\"53741523459\" owner=\"61270229@N05\" secret=\"0fdbef921b\" server=\"65535\"
+        farm=\"66\" title=\"White Oak high school students in the applied health sciences
+        course visit the Naval Medical Center Camp Lejeune pharmacy 240516-N-FB730-1028\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1716473428\" datetaken=\"2024-05-16 08:30:06\" datetakengranularity=\"0\"
+        datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
+        count_views=\"2\" count_comments=\"0\" tags=\"navalmedicalcentercamplejeune
+        pharmacy whiteoakhighschool appliedhealthsciences camplejeune northcarolina
+        unitedstates\" originalsecret=\"2368a0b8fa\" originalformat=\"jpg\" latitude=\"0\"
+        longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
+        url_sq=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b_t.jpg\"
+        height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b_m.jpg\"
+        height_s=\"179\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b.jpg\"
+        height_m=\"374\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53741523459_2368a0b8fa_o.jpg\"
+        height_o=\"4635\" width_o=\"6199\" url_q=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53741523459_0fdbef921b_b.jpg\"
+        height_l=\"766\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>White
+        Oak high school students decide whether names are drug names or pokemon names
+        during a tour at Naval Medical Center Camp Lejeune, May 16, 2024.</description>\n\t</photo>\n</photos>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
@@ -171,15 +451,21 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA6WUS0/DMBCEz/RXrHyCQ+KWN6gpQq3EBRACIc6usyRWEruynRT49WwfKbRKKGpv
-        yWH8zUoz07/5KHKo0DpldMR6YZcBamlipZOIlf49uGRwM+j0rZuA88JHzGSM/nMlUTt0g85B/Q0q
-        jhjptSgwYrd5Ds8qSb2DZ3RoK4wZlDaPGAO+qTpdqby3alx6cgP3C8RSlXo/cdecS4vCqwqlKQqj
-        XWhswmszfPzJj8MubyCcNxCCRzNCqyq3GyrQcRvtpJmmh2QarVQi35st/8Afb8XverFsu7i3FRm8
-        pMLiba4y3JkeONFm4KzJwN7Idt5FzXs0kGkz1SDN5NPOEg8WHcVYzlLsNuI7nU7Dd8prZkNKMF+m
-        mJdOJNiUW6rfok+vWnmM4YU6iA7uDHVWF6g9vBmb/YJQRWYMejBMTEWApanQpb7IG5pxVROeyjEZ
-        g5EphNIwwlhJahoV8XA47B79o4aT+QPxXM+/0BpOe9J0VG+1EuvMB7F2Slvd1zgFaX44/dUW0EZx
-        Gq1B5xszAPMM4wQAAA==
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

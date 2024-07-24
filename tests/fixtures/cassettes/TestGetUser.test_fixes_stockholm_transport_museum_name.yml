@@ -17,25 +17,27 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=62173425%40N02
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA51Vy3LbRhA8m18xhYMuoQCQki3SIunErrhycHKIXMmRtQQGxJYW2M3sQrRyym/k
-        7nyJ/yRfkl6ApOio/EiqUCR2MdPT0z0LLF68awzdsXht22UySfOEuC1sqdvtMulCdT5L6MVqtBDv
-        yAcVlom9TbB2SLEt6XKZPJtOri4up0+//SmfJtT6x3vaO7FAT0j7dcmGAyMPpXRhW8+C+oCZzOfD
-        TqWkWSZXCTkV6rUyWvll4oMtbmtrmiCq9c5KaDrPXbMubNMAJaFa+XWkiGBAo+J6o8otx1TVlkpK
-        tPbOacHONJ9e5ZeXsxyBMU2VlTD298u4iFB91trX2rlej9PHXHaFClBNmbWwt50U3FdejZ4swExa
-        1fDq5sCa3h5o0489b3o18F5kx2AkCivTJ34yb5EdYxBv7ECCslg26IZ/ty2TURs2y+S7xgeWUjVj
-        eslidNv/4/dn2/CYjuTG9IvmtlUJ2aryDJO/ySfPozgHxHU09ftOrOPsiPrwGIpiTnoOJftCtIuk
-        Vm9rfijyWIG9ENqfBL2yXRvu//7jT0+u2xhd0NFvGgxP6QcWph1Hsix0p70OVjwpjCOmb1sH/AdL
-        AdVrjbmRe4RSlMo8BtXtkAih2AfYjGWJUddNZyAt1jt1n9KvwFJ3TB7K0bMcR6bWhWFUDX2hgduY
-        WBU1RQt2OtR9dKgjiFMSdAFIoUiNjaEOyRvbIV+AbGDPFjxOtCg7iXuljn1yG4idLWrfkylAWhkP
-        KFHFicq9cluxO1TvVVDU2BKmU2F9Y501GnNNhQ73tIEum3j8YpXYRMngYV0Ta0ExHR6bkI5GrztB
-        sDRWMEOwoddFYeZky+RqG+xWlKtR0Bgu4iAg7KAGXeb5OM/zk0A/pkps0zNgaI/K8XYyRwsFqHTw
-        D43s24gT6cHiDSs0FUkcVDy6ED05M+FaUS1cLc9+62y4rkNwz7Nst9ulHmbcqa2PnnFIvUk9D0Ek
-        ODbDbQtkyC6YsNZWaMXuhgdn23D9SRRUzVSMGI1eMt5MUZjXMGhj7S1VEB7N3bgPf8ndh/cHAqA7
-        +hzdap+fAi9zass+O57c85sdl9xmNx+1lE2v0vS/d/R/Cx2bThfZ6fHH26AfB9+JWUX9/d6ACuf6
-        VoZ++oDsS2/3bLGPjFARV2ylDX8OmK0z/FXAD1hAbuzmC8BfzfgB6qgEuD9ZVFp8KFXgoG65XU1m
-        s9l5PsFFeY63Lq5F9q+Yj9JWk4vJxeU8n13MTwJ76CK+PlfTp0AYblF5rxw+2tnw1Y53+J6vRv8A
-        VAbgFP4HAAA=
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+        id=\"62173425@N02\" nsid=\"62173425@N02\" ispro=\"1\" is_deleted=\"0\" iconserver=\"6199\"
+        iconfarm=\"7\" path_alias=\"stockholmtransportmuseum_commons\" has_stats=\"0\"
+        pro_badge=\"standard\" expire=\"2027044800\" has_adfree=\"0\" has_free_standard_shipping=\"0\"
+        has_free_educational_resources=\"0\">\n\t<username>Stockholm Transport Museum
+        Commons</username>\n\t<realname>tockholm Transport Museum</realname>\n\t<location
+        />\n\t<timezone label=\"Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna\"
+        offset=\"+01:00\" timezone_id=\"Europe/Amsterdam\" timezone=\"28\" />\n\t<description>The
+        Stockholm Transport Museum Museum is Stockholm County\u2019s public transport
+        museum. Here we offer visitors an insight into the history of local public
+        transport in an interesting and stimulating way. We have some 60 vehicles
+        at the museum, each one with something particular to tell us about travelling
+        in Stockholm during different epochs. We can also trace Stockholm\u2019s growth
+        into a modern cosmopolitan city by observing the development of its public
+        transport.\n\nFurthermore, we have a large photograph collection, with some
+        400,000 photographs, from the end of the 19th century to modern times.\n\nLearn
+        more about the museum at &lt;a href=&quot;http://www.sparvagsmuseet.sl.se&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.sparvagsmuseet.sl.se&lt;/a&gt;\n\nBecome
+        a Facebook fan of Sp\xE5rv\xE4gsmuseet at\n&lt;a href=&quot;http://www.facebook.com/pages/Stockholm-Sweden/Sparvagsmuseet/27..&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.facebook.com/pages/Stockholm-Sweden/Sparvagsmuseet/27..&lt;/a&gt;.</description>\n\t<photosurl>https://www.flickr.com/photos/stockholmtransportmuseum_commons/</photosurl>\n\t<profileurl>https://www.flickr.com/people/stockholmtransportmuseum_commons/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/stockholmtransportmuseum_commons/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>1888-01-01
+        00:00:00</firstdatetaken>\n\t\t<firstdate>1313490839</firstdate>\n\t\t<count>250</count>\n\t</photos>\n</person>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

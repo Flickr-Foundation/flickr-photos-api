@@ -17,9 +17,8 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getAllContexts&photo_id=35366357641
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAAw3LMQ6DMAwF0Jmc4st7S7t1SMIVuAKCpI0ENkoc1OPj/T0//Y8dV6qtCAd6P1+E
-        xKtshb+BuubHhzBF52s70XTRQHkpO0U3+FQrTCZrhKOZn3+iAhZFls4bYbQ5Wo3uBhsZ3qxpAAAA
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive

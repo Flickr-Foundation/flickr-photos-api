@@ -92,8 +92,6 @@ interactions:
       - LHR50-P8
       X-Cache:
       - Miss from cloudfront
-      content-encoding:
-      - gzip
       server:
       - Apache/2.4.57 (Ubuntu)
       set-cookie:
@@ -168,8 +166,6 @@ interactions:
       - LHR50-P8
       X-Cache:
       - Miss from cloudfront
-      content-encoding:
-      - gzip
       server:
       - Apache/2.4.57 (Ubuntu)
       set-cookie:
@@ -234,8 +230,6 @@ interactions:
       - LHR50-P8
       X-Cache:
       - Miss from cloudfront
-      content-encoding:
-      - gzip
       server:
       - Apache/2.4.57 (Ubuntu)
       set-cookie:

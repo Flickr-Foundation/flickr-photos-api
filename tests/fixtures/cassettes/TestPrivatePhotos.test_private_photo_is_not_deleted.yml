@@ -17,10 +17,8 @@ interactions:
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=35366357641
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAAw3LMQ7CMAwF0Jmc4ss7lDIxJOkVeoUIXLDUJpXtVhyf7O/F6betOFlNWk003u4E
-        rq/2lvpJdPhyfRKmHKLaDvPiiZYiK+VwiayKLjnRg7BZ9/O3eYMYdpWzOBOGXod+c/gD5Z9v1moA
-        AAA=
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"2\" msg=\"Photo is private\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
