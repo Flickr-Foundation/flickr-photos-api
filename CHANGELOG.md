@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.8.0 - 2024-07-25
+
+*   Add support for visibility.
+
+    When you look up a single photo with `get_single_photo()`, it now returns information about the photo's visibility (is it public, private, friends/family only).
+
 ## v2.7.0 - 2024-07-24
 
 *   Add support for raw tags.

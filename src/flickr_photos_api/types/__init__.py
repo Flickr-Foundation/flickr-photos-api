@@ -14,6 +14,7 @@ __all__ = [
     "PhotoContext",
     "User",
     "UserInfo",
+    "Visibility",
     "create_user",
     "get_machine_tags",
 ]
@@ -74,6 +75,12 @@ class Tag(typing.TypedDict):
     is_machine_tag: bool
 
 
+class Visibility(typing.TypedDict):
+    is_public: bool
+    is_friend: bool
+    is_family: bool
+
+
 # Represents the safety level of a photo on Flickr.
 #
 # https://www.flickrhelp.com/hc/en-us/articles/4404064206996-Content-filters#h_01HBRRKK6F4ZAW6FTWV8BPA2G7
@@ -110,6 +117,8 @@ class SinglePhotoInfo(typing.TypedDict):
 
     count_comments: int
     count_views: int
+
+    visibility: typing.NotRequired[Visibility]
 
     url: str
 

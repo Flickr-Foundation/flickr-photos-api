@@ -37,10 +37,11 @@ from .types import (
     PhotoContext,
     SinglePhotoInfo,
     Tag,
+    Visibility,
 )
 
 
-__version__ = "2.7.0"
+__version__ = "2.8.0"
 
 
 __all__ = [
@@ -80,5 +81,6 @@ __all__ = [
     "Tag",
     "UnrecognisedFlickrApiException",
     "UserDeleted",
+    "Visibility",
     "__version__",
 ]

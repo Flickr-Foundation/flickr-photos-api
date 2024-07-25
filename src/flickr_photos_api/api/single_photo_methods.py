@@ -15,6 +15,7 @@ from ..types import (
     SinglePhoto,
     Size,
     Tag,
+    Visibility,
     create_user,
     get_machine_tags,
 )
@@ -163,6 +164,19 @@ class SinglePhotoMethods(LicenseMethods):
         else:
             location = None
 
+        # Get visibility information about the photo.
+        #
+        # This is returned in the form:
+        #
+        #     <visibility ispublic="1" isfriend="0" isfamily="0"/>
+        #
+        visibility_elem = find_required_elem(photo_elem, path="visibility")
+        visibility: Visibility = {
+            "is_public": visibility_elem.attrib["ispublic"] == "1",
+            "is_friend": visibility_elem.attrib["isfriend"] == "1",
+            "is_family": visibility_elem.attrib["isfamily"] == "1",
+        }
+
         return {
             "id": photo_id,
             "secret": photo_elem.attrib["secret"],
@@ -183,6 +197,7 @@ class SinglePhotoMethods(LicenseMethods):
             "count_comments": count_comments,
             "count_views": count_views,
             "url": url,
+            "visibility": visibility,
         }
 
     def _get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
