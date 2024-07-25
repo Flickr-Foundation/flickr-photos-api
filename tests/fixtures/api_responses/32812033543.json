@@ -237,5 +237,10 @@
     "us"
   ],
   "title": "Puppy Kisses",
-  "url": "https://www.flickr.com/photos/coast_guard/32812033543/"
+  "url": "https://www.flickr.com/photos/coast_guard/32812033543/",
+  "visibility": {
+    "is_public": true,
+    "is_friend": false,
+    "is_family": false
+  }
 }
