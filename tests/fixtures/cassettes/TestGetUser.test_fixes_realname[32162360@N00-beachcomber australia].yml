@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=32162360%40N00
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+        id=\"32162360@N00\" nsid=\"32162360@N00\" ispro=\"0\" is_deleted=\"0\" iconserver=\"3722\"
+        iconfarm=\"4\" path_alias=\"beachcomberaustralia\" has_stats=\"0\" has_adfree=\"0\"
+        has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>\u0279\u01DDq\u026Fo\u0254\u0265\u0254\u0250\u01DDq</username>\n\t<description>Beachcomber
+        and musician.\n\nWell over 18.\n\nI spend far too much time on Flickr.  And
+        at the beach.</description>\n\t<photosurl>https://www.flickr.com/photos/beachcomberaustralia/</photosurl>\n\t<profileurl>https://www.flickr.com/people/beachcomberaustralia/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/beachcomberaustralia/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>1886-01-01
+        00:00:00</firstdatetaken>\n\t\t<firstdate>1158413300</firstdate>\n\t\t<count>340</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 15:41:01 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 da0472696f37c3fd9136c0c43a0dc866.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 8XwiZt0dhUuoKmy9o4bIYx7U0aGhVahi65nfc7u9-8v2XdkXzaMu3A==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '836'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:41:01 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:41:01 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b3958d-63b194e92393c8c1202b8728
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.15.162
+    status:
+      code: 200
+      message: OK
+version: 1

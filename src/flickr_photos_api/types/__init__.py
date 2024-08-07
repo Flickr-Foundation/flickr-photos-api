@@ -3,7 +3,7 @@ import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .machine_tags import get_machine_tags, MachineTags
-from .users import User, UserInfo, create_user
+from .users import User, UserInfo, create_user, fix_realname
 
 
 __all__ = [
@@ -17,6 +17,7 @@ __all__ = [
     "Visibility",
     "create_user",
     "get_machine_tags",
+    "fix_realname",
 ]
 
 

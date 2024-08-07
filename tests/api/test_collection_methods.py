@@ -172,6 +172,18 @@ class TestCollectionsPhotoResponse:
             "dc:identifier": ["httpsbiodiversitylibraryorgpage33665621"],
         }
 
+    @pytest.mark.parametrize(
+        ["user_id", "realname"],
+        [
+            ("62173425@N02", "Stockholm Transport Museum"),
+            ("32162360@N00", "beachcomber australia"),
+        ],
+    )
+    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
+        resp = api.get_photos_in_user_photostream(user_id=user_id, per_page=1)
+        user = resp["photos"][0]["owner"]
+        assert user["realname"] == realname
+
 
 class TestGetAlbum:
     def test_get_album_by_user_id(self, api: FlickrApi) -> None:

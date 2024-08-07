@@ -1,0 +1,143 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=1&user_id=62173425%40N02
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
+        page=\"1\" pages=\"250\" perpage=\"1\" total=\"250\">\n\t<photo id=\"29826215532\"
+        owner=\"62173425@N02\" secret=\"c65d485d70\" server=\"8278\" farm=\"9\" title=\"2017-59-89\"
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
+        dateupload=\"1474891587\" datetaken=\"2016-09-02 10:48:31\" datetakengranularity=\"0\"
+        datetakenunknown=\"1\" ownername=\"Stockholm Transport Museum Commons\" realname=\"tockholm
+        Transport Museum\" count_views=\"9787\" count_comments=\"2\" tags=\"\" originalsecret=\"1c3daca466\"
+        originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
+        media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_s.jpg\"
+        height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_t.jpg\"
+        height_t=\"100\" width_t=\"100\" url_s=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_m.jpg\"
+        height_s=\"240\" width_s=\"239\" url_m=\"https://live.staticflickr.com/8278/29826215532_c65d485d70.jpg\"
+        height_m=\"500\" width_m=\"499\" url_o=\"https://live.staticflickr.com/8278/29826215532_1c3daca466_o.jpg\"
+        height_o=\"1000\" width_o=\"997\" url_q=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_q.jpg\"
+        height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/8278/29826215532_c65d485d70_b.jpg\"
+        height_l=\"1000\" width_l=\"997\" pathalias=\"stockholmtransportmuseum_commons\">\n\t\t<description>Sp\xE5rv\xE4gsmuseet</description>\n\t</photo>\n</photos>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 16:01:00 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 97083199d9a34b826701781a1e43ba1e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - OdIQc38P_F5zuDTHGYzyYer61dOtNQaI8vPUTMJqaypeaHpImJz-Zw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1481'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 16:00:59 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 16:00:59 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b39a3b-6120e4d55086ebaa4ee08550
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.22.76
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 16:01:00 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 97083199d9a34b826701781a1e43ba1e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ztxxUkC4I1uQrdVxt7-XlUcnq7_QnJXEtqfQ5uhWoJ4bN-xn-m2aJg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1251'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 16:01:00 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b39a3c-0bd1ae40390715d735c7a95b
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.8.67
+    status:
+      code: 200
+      message: OK
+version: 1

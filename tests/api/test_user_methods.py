@@ -124,9 +124,16 @@ class TestGetUser:
         with pytest.raises(UnrecognisedFlickrApiException):
             api.get_user(user_id="-1")
 
-    def test_fixes_stockholm_transport_museum_name(self, api: FlickrApi) -> None:
-        user = api.get_user(user_id="62173425@N02")
-        assert user["realname"] == "Stockholm Transport Museum"
+    @pytest.mark.parametrize(
+        ["user_id", "realname"],
+        [
+            ("62173425@N02", "Stockholm Transport Museum"),
+            ("32162360@N00", "beachcomber australia"),
+        ],
+    )
+    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
+        user = api.get_user(user_id=user_id)
+        assert user["realname"] == realname
 
 
 class TestEnsureUserId:
