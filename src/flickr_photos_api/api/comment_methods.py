@@ -42,7 +42,7 @@ class CommentMethods(FlickrApi):
         #
         for comment_elem in resp.findall(".//comment"):
             author = create_user(
-                id=comment_elem.attrib["author"],
+                user_id=comment_elem.attrib["author"],
                 username=comment_elem.attrib["authorname"],
                 realname=comment_elem.attrib["realname"],
                 path_alias=comment_elem.attrib["path_alias"],

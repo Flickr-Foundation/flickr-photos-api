@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.8.1 - 2024-08-07
+
+*   Internal refactoring to make it slightly easier to "override" user `realname` values that get returned from the API.
+
 ## v2.8.0 - 2024-07-25
 
 *   Add support for visibility.

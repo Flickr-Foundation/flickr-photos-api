@@ -82,7 +82,7 @@ class SinglePhotoMethods(LicenseMethods):
 
         owner_elem = find_required_elem(photo_elem, path="owner")
         owner = create_user(
-            id=owner_elem.attrib["nsid"],
+            user_id=owner_elem.attrib["nsid"],
             username=owner_elem.attrib["username"],
             realname=owner_elem.attrib["realname"],
             path_alias=owner_elem.attrib["path_alias"],
@@ -411,7 +411,7 @@ class SinglePhotoMethods(LicenseMethods):
             )
 
             owner = create_user(
-                id=owner_id,
+                user_id=owner_id,
                 username=gallery_elem.attrib["username"],
                 path_alias=path_alias,
                 # This doesn't seem to be returned in the <gallery>

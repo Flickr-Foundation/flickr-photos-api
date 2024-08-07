@@ -1,0 +1,227 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=4895431370
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"4895431370\" secret=\"f2bdd1e68a\" server=\"4079\" farm=\"5\" dateuploaded=\"1281906139\"
+        isfavorite=\"0\" license=\"0\" safety_level=\"0\" rotation=\"0\" originalsecret=\"6fca54fb7f\"
+        originalformat=\"jpg\" views=\"70\" media=\"photo\">\n\t<owner nsid=\"7313941@N05\"
+        username=\"Matt Watkins\" realname=\"\" location=\"\" iconserver=\"0\" iconfarm=\"0\"
+        path_alias=\"\">\n\t\t<gift gift_eligible=\"1\" new_flow=\"1\">\n\t\t\t<eligible_durations
+        />\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations />\n\t\t</gift>\n\t</owner>\n\t<title>tea</title>\n\t<description>Taken
+        by Chris Dowling</description>\n\t<visibility ispublic=\"1\" isfriend=\"0\"
+        isfamily=\"0\" />\n\t<dates posted=\"1281906139\" taken=\"2010-07-16 20:47:02\"
+        takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1281907144\" />\n\t<editability
+        cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability cancomment=\"1\"
+        canaddmeta=\"0\" />\n\t<usage candownload=\"1\" canblog=\"0\" canprint=\"0\"
+        canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people haspeople=\"0\"
+        />\n\t<tags>\n\t\t<tag id=\"7308601-4895431370-4590\" author=\"7313941@N05\"
+        authorname=\"Matt Watkins\" raw=\"tea\" machine_tag=\"0\">tea</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/7313941@N05/4895431370/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 15:47:37 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rkfAPDnY7zhGXrsL1Cr5LrZL3Jh7L34PXpiu4nvFcnble1S9cwiL0Q==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1262'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:47:37 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:47:37 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b39719-7579061634ccc29c71e7fb8d
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.19.142
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 15:47:38 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - cm2FUyZiRJDZ093pjy3uiIDR0v3GfthfbYGQ5C5sFgpZBiknS2q0QQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1251'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:47:38 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b3971a-2b6cdd700c59d96464fca20b
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.8.67
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=4895431370
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_s.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/sq/\" media=\"photo\"
+        />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_q.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/q/\" media=\"photo\"
+        />\n\t<size label=\"Thumbnail\" width=\"75\" height=\"100\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_t.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/t/\" media=\"photo\"
+        />\n\t<size label=\"Small\" width=\"180\" height=\"240\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_m.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/s/\" media=\"photo\"
+        />\n\t<size label=\"Small 320\" width=\"240\" height=\"320\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_n.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/n/\" media=\"photo\"
+        />\n\t<size label=\"Small 400\" width=\"300\" height=\"400\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_w.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/w/\" media=\"photo\"
+        />\n\t<size label=\"Medium\" width=\"375\" height=\"500\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/m/\" media=\"photo\"
+        />\n\t<size label=\"Medium 640\" width=\"480\" height=\"640\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_z.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/z/\" media=\"photo\"
+        />\n\t<size label=\"Medium 800\" width=\"600\" height=\"800\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_c.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/c/\" media=\"photo\"
+        />\n\t<size label=\"Large\" width=\"768\" height=\"1024\" source=\"https://live.staticflickr.com/4079/4895431370_f2bdd1e68a_b.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/l/\" media=\"photo\"
+        />\n\t<size label=\"Large 1600\" width=\"1200\" height=\"1600\" source=\"https://live.staticflickr.com/4079/4895431370_cfb4f98cd5_h.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/h/\" media=\"photo\"
+        />\n\t<size label=\"Large 2048\" width=\"1536\" height=\"2048\" source=\"https://live.staticflickr.com/4079/4895431370_5b9ee3460d_k.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/k/\" media=\"photo\"
+        />\n\t<size label=\"Original\" width=\"2304\" height=\"3072\" source=\"https://live.staticflickr.com/4079/4895431370_6fca54fb7f_o.jpg\"
+        url=\"https://www.flickr.com/photos/7313941@N05/4895431370/sizes/o/\" media=\"photo\"
+        />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 Aug 2024 15:47:38 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - _S_knUZ7uoNstrXtFFRlcwMBHK1IVV4R-vPvmXyFwMD5Hqq4tdouig==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2807'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Sep-2024 15:47:38 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66b3971a-022868d07299f4c77203a5e5
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.37.54
+    status:
+      code: 200
+      message: OK
+version: 1

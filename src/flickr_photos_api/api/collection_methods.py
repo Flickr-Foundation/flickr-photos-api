@@ -47,7 +47,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
 
         if owner is None:
             owner = create_user(
-                id=photo_elem.attrib["owner"],
+                user_id=photo_elem.attrib["owner"],
                 username=photo_elem.attrib["ownername"],
                 realname=photo_elem.attrib.get("realname"),
                 path_alias=photo_elem.attrib["pathalias"],
@@ -220,7 +220,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
         photo_elem = find_required_elem(photoset_elem, path="photo")
 
         owner = create_user(
-            id=photoset_elem.attrib["owner"],
+            user_id=photoset_elem.attrib["owner"],
             username=photoset_elem.attrib["ownername"],
             realname=photo_elem.attrib.get("realname"),
             path_alias=photo_elem.attrib["pathalias"],
@@ -321,7 +321,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
             return {"count_pages": 1, "count_photos": 0, "photos": []}
 
         owner = create_user(
-            id=first_photo.attrib["owner"],
+            user_id=first_photo.attrib["owner"],
             username=first_photo.attrib["ownername"],
             realname=first_photo.attrib.get("realname"),
             path_alias=first_photo.attrib["pathalias"],

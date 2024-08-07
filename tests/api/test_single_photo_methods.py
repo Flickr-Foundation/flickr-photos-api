@@ -17,6 +17,13 @@ class TestGetSinglePhoto:
 
         assert info["owner"]["realname"] is None
 
+    def test_sets_path_alias_to_none_if_empty(self, api: FlickrApi) -> None:
+        # This photo was posted by a user who doesn't have a path_alias
+        # set on their profile.  Retrieved 7 August 2024.
+        info = api.get_single_photo(photo_id="4895431370")
+
+        assert info["owner"]["path_alias"] is None
+
     def test_sets_granularity_on_date_taken(self, api: FlickrApi) -> None:
         info = api.get_single_photo(photo_id="5240741057")
 
@@ -154,10 +161,17 @@ class TestGetSinglePhoto:
 
         assert "" in photo["tags"]
 
-    def test_fixes_stockholm_transport_museum_name(self, api: FlickrApi) -> None:
-        photo = api.get_single_photo(photo_id="29826215532")
+    @pytest.mark.parametrize(
+        ["photo_id", "realname"],
+        [
+            ("29826215532", "Stockholm Transport Museum"),
+            ("27242558570", "beachcomber australia"),
+        ],
+    )
+    def test_fixes_realname(self, api: FlickrApi, photo_id: str, realname: str) -> None:
+        photo = api.get_single_photo(photo_id=photo_id)
 
-        assert photo["owner"]["realname"] == "Stockholm Transport Museum"
+        assert photo["owner"]["realname"] == realname
 
     def test_gets_raw_tag_information(self, api: FlickrApi) -> None:
         photo = api.get_single_photo(photo_id="21609597615")

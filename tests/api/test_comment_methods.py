@@ -35,9 +35,11 @@ def test_finds_all_comments(api: FlickrApi, photo_id: str, count: int) -> None:
 
 
 def test_if_no_realname_then_empty(api: FlickrApi) -> None:
-    # The first comment is one where the ``author_realname`` attribute
-    # is an empty string, which we should map to ``None``.
-    comments = api.list_all_comments(photo_id="53654427282")
+    # The first comment comes from user 'pellepoet', who has no realname.
+    #
+    # The ``author_realname`` attribute in the response is
+    # an empty string, which we should map to ``None``.
+    comments = api.list_all_comments(photo_id="40373414385")
 
     assert comments[0]["author"]["realname"] is None
 

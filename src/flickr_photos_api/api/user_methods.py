@@ -9,7 +9,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .base import FlickrApi
 from ..exceptions import ResourceNotFound, UserDeleted
-from ..types import UserInfo
+from ..types import fix_realname, UserInfo
 
 
 class UserMethods(FlickrApi):
@@ -160,14 +160,7 @@ class UserMethods(FlickrApi):
         else:
             realname = realname_elem.text
 
-        # This is a fudge for a Flickr Commons member -- they removed the
-        # 'S' so it would look good with the big 'S' in their buddy icon,
-        # which doesn't work outside the Flickr.com website.
-        #
-        # This name needed fixing on 23 July 2024; if they ever change
-        # the name on the actual account, we can remove this fudge.
-        if user_id == "62173425@N02" and realname == "tockholm Transport Museum":
-            realname = "Stockholm Transport Museum"
+        realname = fix_realname(user_id, username=username, realname=realname)
 
         return {
             "id": user_id,
