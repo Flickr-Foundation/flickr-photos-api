@@ -2,8 +2,6 @@
 Methods for getting information about users from the Flickr API.
 """
 
-import functools
-
 from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
@@ -148,6 +146,9 @@ class UserMethods(FlickrApi):
         photos_elem = find_required_elem(person_elem, path="photos")
         count_photos = int(find_required_text(photos_elem, path="count"))
 
+        iconserver = int(person_elem.attrib["iconserver"])
+        iconfarm = int(person_elem.attrib["iconfarm"])
+
         # This is a 0/1 boolean attribute
         has_pro_account = person_elem.attrib["ispro"] == "1"
 
@@ -162,6 +163,15 @@ class UserMethods(FlickrApi):
 
         realname = fix_realname(user_id, username=username, realname=realname)
 
+        # We have enough information in this response to construct the
+        # user's "buddy icon" (aka avatar/profile picture).
+        #
+        # See https://www.flickr.com/services/api/misc.buddyicons.html
+        if iconserver > 0:
+            buddy_icon_url = f"https://farm{iconfarm}.staticflickr.com/{iconserver}/buddyicons/{user_id}.jpg"
+        else:
+            buddy_icon_url = "https://www.flickr.com/images/buddyicon.gif"
+
         return {
             "id": user_id,
             "username": username,
@@ -171,6 +181,7 @@ class UserMethods(FlickrApi):
             "path_alias": path_alias,
             "photos_url": photos_url,
             "profile_url": profile_url,
+            "buddy_icon_url": buddy_icon_url,
             "count_photos": count_photos,
         }
 
@@ -201,27 +212,3 @@ class UserMethods(FlickrApi):
         user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         return user_id
-
-    # We cache these because they're unlikely to change that often, and showing
-    # a stale user icon occasionally isn't a big deal.
-    #
-    # TODO: We already use the ``flickr.people.getInfo`` method elsewhere -- could we
-    # cache the buddy icon URL there, and delete this method?
-    @functools.lru_cache(maxsize=128)
-    def get_buddy_icon_url(self, *, user_id: str) -> str:
-        """
-        Returns the URL of a user's "buddy icon".
-
-        See https://www.flickr.com/services/api/misc.buddyicons.html
-        """
-        resp = self.call(method="flickr.people.getInfo", params={"user_id": user_id})
-
-        person_elem = find_required_elem(resp, path="person")
-
-        iconserver = int(person_elem.attrib["iconserver"])
-        iconfarm = int(person_elem.attrib["iconfarm"])
-
-        if iconserver > 0:
-            return f"https://farm{iconfarm}.staticflickr.com/{iconserver}/buddyicons/{user_id}.jpg"
-        else:
-            return "https://www.flickr.com/images/buddyicon.gif"
