@@ -14,6 +14,7 @@ class UserInfo(User):
     description: str | None
     has_pro_account: bool
     count_photos: int
+    buddy_icon_url: str
 
 
 def create_user(

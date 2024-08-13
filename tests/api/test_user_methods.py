@@ -22,6 +22,7 @@ class TestGetUser:
             "path_alias": "alexwlchan",
             "photos_url": "https://www.flickr.com/photos/alexwlchan/",
             "profile_url": "https://www.flickr.com/people/alexwlchan/",
+            "buddy_icon_url": "https://farm66.staticflickr.com/65535/buddyicons/199258389@N04.jpg",
             "description": "Tech lead at the Flickr Foundation.",
             "has_pro_account": False,
             "count_photos": 1,
@@ -39,6 +40,7 @@ class TestGetUser:
             "path_alias": None,
             "photos_url": "https://www.flickr.com/photos/199246608@N02/",
             "profile_url": "https://www.flickr.com/people/199246608@N02/",
+            "buddy_icon_url": "https://www.flickr.com/images/buddyicon.gif",
             "count_photos": 38,
         }
 
@@ -178,4 +180,4 @@ class TestEnsureUserId:
     ],
 )
 def test_get_buddy_icon_url(api: FlickrApi, user_id: str, expected_url: str) -> None:
-    assert api.get_buddy_icon_url(user_id=user_id) == expected_url
+    assert api.get_user(user_id=user_id)["buddy_icon_url"] == expected_url

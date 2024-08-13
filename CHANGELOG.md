@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.9.0 - 2024-08-13
+
+*   Remove the `get_buddy_icon_url(user_id)` method.
+
+    Instead, call `get_user(user_id)` and read the `buddy_icon_url` parameter from the response.
+
+    If you already have a result from `get_user(user_id)`, use that to save yourself an API call.
+
 ## v2.8.1 - 2024-08-07
 
 *   Internal refactoring to make it slightly easier to "override" user `realname` values that get returned from the API.
