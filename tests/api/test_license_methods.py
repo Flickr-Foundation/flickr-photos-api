@@ -1,9 +1,16 @@
+"""
+Tests for ``flickr_photos_api.api.license_methods``.
+"""
+
 import pytest
 
 from flickr_photos_api import FlickrApi, LicenseNotFound
 
 
 def test_get_licenses(api: FlickrApi) -> None:
+    """
+    We get all eleven Flickr licenses from ``get_licenses()``.
+    """
     assert api.get_licenses() == {
         "0": {"id": "in-copyright", "label": "All Rights Reserved", "url": None},
         "1": {
@@ -60,6 +67,9 @@ def test_get_licenses(api: FlickrApi) -> None:
 
 
 def test_lookup_license_by_id(api: FlickrApi) -> None:
+    """
+    Look up a license by its numeric ID.
+    """
     assert api.lookup_license_by_id(id="0") == {
         "id": "in-copyright",
         "label": "All Rights Reserved",
@@ -68,5 +78,9 @@ def test_lookup_license_by_id(api: FlickrApi) -> None:
 
 
 def test_throws_license_not_found_for_bad_id(api: FlickrApi) -> None:
+    """
+    Looking up a license with an ID that doesn't exist throws
+    ``LicenseNotFound``.
+    """
     with pytest.raises(LicenseNotFound, match="ID -1"):
         api.lookup_license_by_id(id="-1")
