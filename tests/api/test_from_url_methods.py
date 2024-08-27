@@ -1,3 +1,7 @@
+"""
+Tests for ``flickr_photos_api.api.from_url_methods``.
+"""
+
 import typing
 
 import pytest
@@ -78,6 +82,9 @@ T = typing.TypeVar("T")
 def test_get_photos_from_flickr_url(
     api: FlickrApi, url: str, filename: str, model: type[T]
 ) -> None:
+    """
+    Get one or more photos from a Flickr.com URL.
+    """
     photos = api.get_photos_from_flickr_url(url)
 
     assert photos == get_fixture(filename, model=model)
@@ -100,6 +107,10 @@ def test_get_photos_from_flickr_url(
     ],
 )
 def test_get_photos_from_flickr_url_is_paginated(api: FlickrApi, url: str) -> None:
+    """
+    If you get page 1 and page 2 of a paginated collection, you get
+    a diffeent set of photos.
+    """
     first_resp = api.get_photos_from_flickr_url(url)
     second_resp = api.get_photos_from_flickr_url(url + "/page2")
 
@@ -107,5 +118,9 @@ def test_get_photos_from_flickr_url_is_paginated(api: FlickrApi, url: str) -> No
 
 
 def test_unrecognised_url_type_is_error(api: FlickrApi) -> None:
+    """
+    If you try to get photos from a URL which isn't a string, it
+    throws a ``TypeError``.
+    """
     with pytest.raises(TypeError, match="Unrecognised URL type"):
         api.get_photos_from_parsed_flickr_url(parsed_url={"type": "unknown"})  # type: ignore
