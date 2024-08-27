@@ -1,3 +1,7 @@
+"""
+Tests for machine tag-related functions.
+"""
+
 import pytest
 
 from flickr_photos_api.types import get_machine_tags, MachineTags
@@ -36,4 +40,7 @@ from flickr_photos_api.types import get_machine_tags, MachineTags
     ],
 )
 def test_get_machine_tags(tags: list[str], machine_tags: MachineTags) -> None:
+    """
+    Identify the machine tags in a list of raw tags.
+    """
     assert get_machine_tags(tags) == machine_tags
