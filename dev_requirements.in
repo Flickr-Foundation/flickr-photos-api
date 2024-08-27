@@ -2,6 +2,7 @@
 -e file:.[oauth]
 
 build
+interrogate
 mypy
 pydantic
 pytest-cov
