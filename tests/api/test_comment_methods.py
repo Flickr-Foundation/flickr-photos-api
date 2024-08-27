@@ -1,3 +1,7 @@
+"""
+Tests for ``flickr_photos_api.api.comment_methods``.
+"""
+
 from collections.abc import Iterator
 import json
 
@@ -14,11 +18,6 @@ from flickr_photos_api import (
 from utils import get_optional_password
 
 
-# These all the outliers in terms of number of comments.
-#
-# The expected value comes from the "count_comments" field on the
-# photos API response.  This API seems to return everything at once,
-# and doesn't do pagination, but let's make sure it actually does.
 @pytest.mark.parametrize(
     ["photo_id", "count"],
     [
@@ -29,12 +28,25 @@ from utils import get_optional_password
     ],
 )
 def test_finds_all_comments(api: FlickrApi, photo_id: str, count: int) -> None:
+    """
+    Get all the comments, even if there are lots of them!
+
+    These all the outliers in terms of number of comments.
+
+    The expected value comes from the "count_comments" field on the
+    photos API response.  This API seems to return everything at once,
+    and doesn't do pagination, but let's make sure it actually does.
+    """
     comments = api.list_all_comments(photo_id=photo_id)
 
     assert len(comments) == count
 
 
 def test_if_no_realname_then_empty(api: FlickrApi) -> None:
+    """
+    If the comment author doesn't have a ``realname``, then we get ``None``
+    in the result.
+    """
     # The first comment comes from user 'pellepoet', who has no realname.
     #
     # The ``author_realname`` attribute in the response is
@@ -87,9 +99,38 @@ def flickr_comments_api(cassette_name: str, user_agent: str) -> Iterator[FlickrA
 
 
 class TestPostComment:
+    """
+    Tests for ``FlickrApi.post_comment``.
+    """
+
+    def test_can_successfully_post_a_comment(
+        self,
+        flickr_comments_api: FlickrApi,
+    ) -> None:
+        """
+        Post a comment successfully.
+        """
+        comment_id = flickr_comments_api.post_comment(
+            photo_id="53373661077",
+            comment_text="This is a comment posted by the Flickypedia unit tests",
+        )
+
+        # Check that if we double-post, we get the same comment ID back --
+        # that is, that commenting is an idempotent operation.
+        comment_id2 = flickr_comments_api.post_comment(
+            photo_id="53373661077",
+            comment_text="This is a comment posted by the Flickypedia unit tests",
+        )
+
+        assert comment_id == comment_id2
+
     def test_throws_if_not_allowed_to_post_comment(
         self, flickr_comments_api: FlickrApi
     ) -> None:
+        """
+        If you try to comment on a photo where comments are disabled,
+        it throws ``InsufficientPermissionsToComment``.
+        """
         with pytest.raises(InsufficientPermissionsToComment):
             flickr_comments_api.post_comment(
                 photo_id="53374767803",
@@ -97,6 +138,10 @@ class TestPostComment:
             )
 
     def test_throws_if_invalid_oauth_signature(self, cassette_name: str) -> None:
+        """
+        If you try to comment but the OAuth signature on the request is
+        invalid, it throws an ``httpx.HTTPStatusError``.
+        """
         stored_token = json.loads(
             get_optional_password("flickr_photos_api", "oauth_token", default="{}")
         )
@@ -136,25 +181,11 @@ class TestPostComment:
                     comment_text="This is a comment that uses bogus OAuth 1.0a credentials",
                 )
 
-    def test_can_successfully_post_a_comment(
-        self,
-        flickr_comments_api: FlickrApi,
-    ) -> None:
-        comment_id = flickr_comments_api.post_comment(
-            photo_id="53373661077",
-            comment_text="This is a comment posted by the Flickypedia unit tests",
-        )
-
-        # Check that if we double-post, we get the same comment ID back --
-        # that is, that commenting is an idempotent operation.
-        comment_id2 = flickr_comments_api.post_comment(
-            photo_id="53373661077",
-            comment_text="This is a comment posted by the Flickypedia unit tests",
-        )
-
-        assert comment_id == comment_id2
-
     def test_throws_if_photo_doesnt_exist(self, flickr_comments_api: FlickrApi) -> None:
+        """
+        If you try to comment on a photo that doesn't exist, it throws
+        a ``ResourceNotFound``.
+        """
         with pytest.raises(ResourceNotFound):
             flickr_comments_api.post_comment(
                 photo_id="-1", comment_text="This is a comment on a non-existent photo"
