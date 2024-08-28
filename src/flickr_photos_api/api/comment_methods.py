@@ -2,12 +2,12 @@
 Methods for getting information about comments from the Flickr API.
 """
 
+from nitrate.xml import find_required_elem
+
+from flickr_photos_api.date_parsers import parse_timestamp
 from .base import FlickrApi
 from ..exceptions import ResourceNotFound, InsufficientPermissionsToComment
 from ..types import Comment, create_user
-from ..utils import parse_date_posted
-
-from nitrate.xml import find_required_elem
 
 
 class CommentMethods(FlickrApi):
@@ -58,7 +58,7 @@ class CommentMethods(FlickrApi):
                     "author": author,
                     "text": comment_elem.text or "",
                     "permalink": comment_elem.attrib["permalink"],
-                    "date": parse_date_posted(comment_elem.attrib["datecreate"]),
+                    "date": parse_timestamp(comment_elem.attrib["datecreate"]),
                 }
             )
 

@@ -4,6 +4,7 @@ Methods for getting information about a single photo in the Flickr API.
 
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
+from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..types import (
@@ -19,12 +20,7 @@ from ..types import (
     create_user,
     get_machine_tags,
 )
-from ..utils import (
-    parse_date_posted,
-    parse_date_taken,
-    parse_location,
-    parse_safety_level,
-)
+from ..utils import parse_location, parse_safety_level
 
 
 class SinglePhotoMethods(LicenseMethods):
@@ -90,7 +86,7 @@ class SinglePhotoMethods(LicenseMethods):
 
         dates = find_required_elem(photo_elem, path="dates").attrib
 
-        date_posted = parse_date_posted(dates["posted"])
+        date_posted = parse_timestamp(dates["posted"])
 
         date_taken = parse_date_taken(
             value=dates["taken"],
@@ -430,12 +426,8 @@ class SinglePhotoMethods(LicenseMethods):
                     "owner": owner,
                     "title": find_required_text(gallery_elem, path="title"),
                     "description": description,
-                    "date_created": parse_date_posted(
-                        gallery_elem.attrib["date_create"]
-                    ),
-                    "date_updated": parse_date_posted(
-                        gallery_elem.attrib["date_update"]
-                    ),
+                    "date_created": parse_timestamp(gallery_elem.attrib["date_create"]),
+                    "date_updated": parse_timestamp(gallery_elem.attrib["date_update"]),
                     "count_photos": int(gallery_elem.attrib["count_photos"]),
                     "count_videos": int(gallery_elem.attrib["count_videos"]),
                     "count_views": int(gallery_elem.attrib["count_views"]),

@@ -69,3 +69,8 @@ filterwarnings = [
 [tool.mypy]
 mypy_path = "src"
 strict = true
+
+[tool.interrogate]
+# fail_under = 100
+fail_under = 27
+omit-covered-files = true

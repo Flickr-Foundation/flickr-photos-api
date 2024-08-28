@@ -1,6 +1,14 @@
 # CHANGELOG
 
-## 2.9.0 - 2024-08-13
+## v2.10.0 - 2024-08-28
+
+*   Add a `pro_account_expires: datetime.datetime` to the `UserInfo` type.
+
+    When you look up a user with `get_user(user_id)` and that user has Flickr Pro, you'll be able to see when their Flickr Pro subscription expires. 
+    
+    If you look up a user who doesn't have Flickr Pro, you won't get the `pro_account_expires` field.
+
+## v2.9.0 - 2024-08-13
 
 *   Remove the `get_buddy_icon_url(user_id)` method.
 
