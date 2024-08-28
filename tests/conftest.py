@@ -1,3 +1,7 @@
+"""
+Shared fixtures and utilities.
+"""
+
 from collections.abc import Iterator
 import os
 
@@ -10,6 +14,12 @@ from flickr_photos_api import FlickrApi
 
 @pytest.fixture
 def user_agent() -> str:
+    """
+    Create a User-Agent for testing only.
+
+    This clearly identifies our requests as being part of this library,
+    in the unlikely event it causes issues for Flickr.com.
+    """
     return "flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api; hello@flickr.org)"
 
 
