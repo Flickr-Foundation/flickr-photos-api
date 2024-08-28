@@ -1,3 +1,7 @@
+"""
+Helpers for the tests.
+"""
+
 import os
 import typing
 
@@ -10,6 +14,10 @@ T = typing.TypeVar("T")
 
 
 def get_fixture(filename: str, *, model: type[T]) -> T:
+    """
+    Read a fixture from the ``tests/fixtures/api_responses`` folder
+    and validate it as a particular type.
+    """
     return read_typed_json(
         os.path.join("tests/fixtures/api_responses", filename),
         model=model,
