@@ -4,7 +4,7 @@ Methods for getting information about a single photo in the Flickr API.
 
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
-from flickr_photos_api.date_parsers import parse_timestamp
+from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..types import (
@@ -20,11 +20,7 @@ from ..types import (
     create_user,
     get_machine_tags,
 )
-from ..utils import (
-    parse_date_taken,
-    parse_location,
-    parse_safety_level,
-)
+from ..utils import parse_location, parse_safety_level
 
 
 class SinglePhotoMethods(LicenseMethods):

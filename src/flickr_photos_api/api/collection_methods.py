@@ -7,7 +7,7 @@ from xml.etree import ElementTree as ET
 
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
-from flickr_photos_api.date_parsers import parse_timestamp
+from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
 from .user_methods import UserMethods
 from ..exceptions import ResourceNotFound
@@ -22,12 +22,7 @@ from ..types import (
     create_user,
     get_machine_tags,
 )
-from ..utils import (
-    parse_date_taken,
-    parse_location,
-    parse_safety_level,
-    parse_sizes,
-)
+from ..utils import parse_location, parse_safety_level, parse_sizes
 
 
 class CollectionMethods(LicenseMethods, UserMethods):
