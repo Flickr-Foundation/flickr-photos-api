@@ -5,6 +5,7 @@ Methods for getting information about users from the Flickr API.
 from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
+from flickr_photos_api.date_parsers import parse_timestamp
 from .base import FlickrApi
 from ..exceptions import ResourceNotFound, UserDeleted
 from ..types import fix_realname, UserInfo
@@ -152,6 +153,11 @@ class UserMethods(FlickrApi):
         # This is a 0/1 boolean attribute
         has_pro_account = person_elem.attrib["ispro"] == "1"
 
+        if has_pro_account:
+            pro_account_expires = parse_timestamp(person_elem.attrib["expire"])
+        else:
+            pro_account_expires = None
+
         # If the user hasn't set a realname in their profile, the element
         # will be absent from the response.
         realname_elem = person_elem.find(path="realname")
@@ -172,18 +178,34 @@ class UserMethods(FlickrApi):
         else:
             buddy_icon_url = "https://www.flickr.com/images/buddyicon.gif"
 
-        return {
-            "id": user_id,
-            "username": username,
-            "realname": realname,
-            "description": description,
-            "has_pro_account": has_pro_account,
-            "path_alias": path_alias,
-            "photos_url": photos_url,
-            "profile_url": profile_url,
-            "buddy_icon_url": buddy_icon_url,
-            "count_photos": count_photos,
-        }
+        if has_pro_account:
+            assert pro_account_expires is not None
+            return {
+                "id": user_id,
+                "username": username,
+                "realname": realname,
+                "description": description,
+                "path_alias": path_alias,
+                "photos_url": photos_url,
+                "profile_url": profile_url,
+                "buddy_icon_url": buddy_icon_url,
+                "count_photos": count_photos,
+                "has_pro_account": True,
+                "pro_account_expires": pro_account_expires,
+            }
+        else:
+            return {
+                "id": user_id,
+                "username": username,
+                "realname": realname,
+                "description": description,
+                "path_alias": path_alias,
+                "photos_url": photos_url,
+                "profile_url": profile_url,
+                "buddy_icon_url": buddy_icon_url,
+                "count_photos": count_photos,
+                "has_pro_account": False,
+            }
 
     def _lookup_user_id_for_user_url(self, *, user_url: str) -> str:
         """

@@ -1,8 +1,10 @@
+import datetime
 import typing
 from xml.etree import ElementTree as ET
 
 import pytest
 
+from data import FlickrUserIds
 from flickr_photos_api import (
     FlickrApi,
     UnrecognisedFlickrApiException,
@@ -88,16 +90,33 @@ class TestGetUser:
 
         assert user["description"] == description
 
-    @pytest.mark.parametrize(
-        ["user_id", "has_pro_account"],
-        [("199258389@N04", False), ("12403504@N02", True)],
-    )
-    def test_gets_pro_account_status(
-        self, api: FlickrApi, user_id: str, has_pro_account: bool
-    ) -> None:
-        user = api.get_user(user_id=user_id)
+    def test_knows_about_flickr_pro(self, api: FlickrApi) -> None:
+        """
+        If an account has Flickr Pro, then we set two attributes:
 
-        assert user["has_pro_account"] == has_pro_account
+        *   ``has_pro_account=True``
+        *   ``pro_account_expires``
+
+        """
+        user = api.get_user(user_id=FlickrUserIds.FlickrFoundation)
+
+        assert user["has_pro_account"]
+        assert user["pro_account_expires"] == datetime.datetime(
+            2033, 7, 19, 4, 0, tzinfo=datetime.timezone.utc
+        )
+
+    def test_knows_about_non_flickr_pro(self, api: FlickrApi) -> None:
+        """
+        If an account doesn't have Flickr Pro, then we set one attribute:
+
+        *   ``has_pro_account=False``
+
+        We shouldn't set an expiry date, because it doesn't apply here.
+        """
+        user = api.get_user(user_id=FlickrUserIds.Alexwlchan)
+
+        assert not user["has_pro_account"]
+        assert "pro_account_expires" not in user
 
     def test_get_deleted_user_id(self, api: FlickrApi) -> None:
         with pytest.raises(UserDeleted):
