@@ -7,6 +7,7 @@ from xml.etree import ElementTree as ET
 
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
+from flickr_photos_api.date_parsers import parse_timestamp
 from .license_methods import LicenseMethods
 from .user_methods import UserMethods
 from ..exceptions import ResourceNotFound
@@ -22,7 +23,6 @@ from ..types import (
     get_machine_tags,
 )
 from ..utils import (
-    parse_date_posted,
     parse_date_taken,
     parse_location,
     parse_safety_level,
@@ -63,7 +63,7 @@ class CollectionMethods(LicenseMethods, UserMethods):
         description = find_optional_text(photo_elem, path="description")
         tags = photo_elem.attrib["tags"].split()
 
-        date_posted = parse_date_posted(photo_elem.attrib["dateupload"])
+        date_posted = parse_timestamp(photo_elem.attrib["dateupload"])
         date_taken = parse_date_taken(
             value=photo_elem.attrib["datetaken"],
             granularity=photo_elem.attrib["datetakengranularity"],

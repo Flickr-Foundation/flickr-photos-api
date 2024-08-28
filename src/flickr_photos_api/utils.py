@@ -4,17 +4,6 @@ from xml.etree import ElementTree as ET
 from .types import DateTaken, LocationInfo, SafetyLevel, Size, TakenGranularity
 
 
-def parse_date_posted(p: str) -> datetime.datetime:
-    # See https://www.flickr.com/services/api/misc.dates.html
-    #
-    #     The posted date is always passed around as a unix timestamp,
-    #     which is an unsigned integer specifying the number of seconds
-    #     since Jan 1st 1970 GMT.
-    #
-    # e.g. '1490376472'
-    return datetime.datetime.fromtimestamp(int(p), tz=datetime.timezone.utc)
-
-
 def _parse_date_taken_value(p: str) -> datetime.datetime:
     # See https://www.flickr.com/services/api/misc.dates.html
     #
