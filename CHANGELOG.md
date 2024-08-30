@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v2.11.0 - 2024-08-30
+
+*   Add a `location: str | None` to the `UserInfo` type.
+
+    When you look up a user with `get_user(user_id)` and that user has a public location, it will be returned in the response.
+    
+    If you look up a user who doesn't have a location, or their location is private, this value will be `None`.
+
 ## v2.10.0 - 2024-08-28
 
 *   Add a `pro_account_expires: datetime.datetime` to the `UserInfo` type.

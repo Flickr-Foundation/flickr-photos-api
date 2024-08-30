@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=134319968%40N02
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+        id=\"134319968@N02\" nsid=\"134319968@N02\" ispro=\"1\" is_deleted=\"0\" iconserver=\"1743\"
+        iconfarm=\"2\" path_alias=\"bocono\" has_stats=\"0\" pro_badge=\"standard\"
+        expire=\"2025666000\" has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>Colecci\xF3n
+        Amadeo Le\xF3n - Bocon\xF3</username>\n\t<description>Colecci\xF3n de fotograf\xEDas
+        de Bocon\xF3 por Amadeo Le\xF3n\nEsfuerzo dedicado a compartir la colecci\xF3n
+        de miles de fotograf\xEDas tomadas en Bocon\xF3 por Amadeo Le\xF3n.\nAmadeo
+        Le\xF3n fue fot\xF3grafo en la ciudad durante el siglo 20 y su trabajo es
+        una forma de documentar las personas y lugares asociados a Bocon\xF3, durante
+        un per\xEDodo de tiempo donde Amadeo Le\xF3n fu\xE9 uno de los pocos fot\xF3grafos
+        de la ciudad.\nM\xE1s de 12,000 negativos fueron digitalizados para divulgar,
+        compartir y enriquecer esta c\xE1psula fotogr\xE1fica de Bocon\xF3.</description>\n\t<photosurl>https://www.flickr.com/photos/bocono/</photosurl>\n\t<profileurl>https://www.flickr.com/people/bocono/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/bocono/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2015-06-02
+        09:26:48</firstdatetaken>\n\t\t<firstdate>1528127657</firstdate>\n\t\t<count>12558</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 30 Aug 2024 11:05:49 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 ac0dbffb7a8577e06e873c0fe3eaab42.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 8gIjefebPbyl2LGExx99Nm-jAkFXfsDHbhDHGgPU9sV2UHtYhAMQaQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1267'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sun, 29-Sep-2024 11:05:49 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sun, 29-Sep-2024 11:05:49 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66d1a78d-2f7666fe431b98ac364d21e0
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.31.193
+    status:
+      code: 200
+      message: OK
+version: 1

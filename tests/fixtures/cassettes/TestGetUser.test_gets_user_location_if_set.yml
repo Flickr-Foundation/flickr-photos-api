@@ -1,0 +1,107 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=47062778%40N06
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+        id=\"47062778@N06\" nsid=\"47062778@N06\" ispro=\"1\" is_deleted=\"0\" iconserver=\"2928\"
+        iconfarm=\"3\" path_alias=\"ogawasan\" has_stats=\"0\" pro_badge=\"standard\"
+        expire=\"0\" has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>\u5C0F\u5DDD
+        Ogawasan</username>\n\t<realname>\u5C0F\u5DDD  Ogawasan</realname>\n\t<location>Kyoto,
+        Japan</location>\n\t<timezone label=\"Brussels, Copenhagen, Madrid, Paris\"
+        offset=\"+01:00\" timezone_id=\"Europe/Brussels\" timezone=\"30\" />\n\t<description>&lt;b&gt;&lt;a
+        href=&quot;https://www.flickr.com/groups/ogawasan/pool/show/with/8656043852/&quot;&gt;\u5C0F\u5DDD
+        Ogawasan Portfolio&lt;/a&gt;&lt;/b&gt; \n\n\n&lt;b&gt;Welcome\n\u3088\u3046\u3053\u305D\n
+        ...&lt;/b&gt;.. ..\n&lt;b&gt;To the Sacred Route&lt;/b&gt;\n&lt;b&gt;..&lt;/b&gt;\n&lt;b&gt;..&lt;/b&gt;\n\n\n&lt;a
+        href=&quot;https://www.flickr.com/photos/ogawasan/11205452233/&quot; title=&quot;Sayonara
+        de \u5C0F\u5DDD Ogawasan, sur Flickr&quot;&gt;&lt;img loading=&#039;lazy&#039;
+        class=&#039;notsowide&#039; src=&quot;https://farm4.staticflickr.com/3753/11205452233_e1da75ecb7_c.jpg&quot;
+        width=&quot;531&quot; height=&quot;800&quot; alt=&quot;Sayonara&quot; /&gt;&lt;/a&gt;\n\n*&lt;u&gt;&lt;b&gt;Copyright
+        \xA9 Ogawasan \u5C0F\u5DDD/Bach.sacha.Photography. &lt;i&gt;All Rights Reserved&lt;/i&gt;.&lt;/b&gt;
+        \ &lt;/u&gt;  \n\n_____________________________________________________________________________\n\n&lt;a
+        href=&quot;http://s06.flagcounter.com/more/kvC&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;&lt;img loading=&#039;lazy&#039; class=&#039;notsowide&#039;
+        src=&quot;https://flimg.flickr.com/?url=http%3A%2F%2Fs06.flagcounter.com%2Fcount%2FkvC%2Fbg%3D9233FF%2Ftxt%3D000000%2Fborder%3DCCC478%2Fcolumns%3D8%2Fmaxflags%3D250%2Fviewers%3D0%2Flabels%3D1%2Fpageviews%3D1%2F&amp;h=b65004180e2abc060160890b0dba512ff3a029b24d917ae251a475d7019f2f28&quot;
+        alt=&quot;free counters&quot; /&gt;&lt;/a&gt;\n_____________________________________________________________________________\n
+        &lt;b&gt;***  &lt;a href=&quot;http://ogawasan.tumblr.com/&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;Tumblr&lt;/a&gt;  ***  &lt;a href=&quot;http://500px.com/Ogawasan&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;500px B&amp;amp;W&lt;/a&gt; *** &lt;a
+        href=&quot;http://www.artlimited.net/26057?tabid=10&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;Art Limited&lt;/a&gt; *** &lt;a href=&quot;http://www.fotoblur.com/people/ogawasan&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;Fotoblur&lt;/a&gt;  *** &lt;a href=&quot;https://www.behance.net/Ogawasan&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;B\xE9hance&lt;/a&gt; ***  &lt;a href=&quot;https://500px.com/ogawasano&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;500px \u5C0F\u5DDD &lt;/a&gt;  ***
+        &lt;a href=&quot;https://www.facebook.com/OgawasanBachsacha/&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;FB \u5C0F\u5DDD &lt;/a&gt;  \n\n\n &lt;/b&gt;..................................................................................................................................................................................\n\n
+        \ \n&lt;a href=&quot;https://www.flickr.com/photos/ogawasan/6365979745/&quot;&gt;&lt;img
+        loading=&#039;lazy&#039; class=&#039;notsowide&#039; src=&quot;https://farm7.staticflickr.com/6107/6365979745_77546a8680.jpg&quot;
+        width=&quot;500&quot; height=&quot;500&quot; alt=&quot;Pure&quot; /&gt;&lt;/a&gt;\n\n*&lt;u&gt;&lt;b&gt;Copyright
+        \xA9 Ogawasan \u5C0F\u5DDD/Bach.sacha.Photography. &lt;i&gt;All Rights Reserved&lt;/i&gt;.&lt;/b&gt;
+        \ &lt;/u&gt;  \n \n&lt;a href=&quot;https://www.flickr.com/photos/ogawasan/6403834459/in/dateposted/&quot;
+        title=&quot;Prelude...&quot;&gt;&lt;img loading=&#039;lazy&#039; class=&#039;notsowide&#039;
+        src=&quot;https://farm7.staticflickr.com/6097/6403834459_b14a119ecf_z.jpg&quot;
+        width=&quot;438&quot; height=&quot;640&quot; alt=&quot;Prelude...&quot; /&gt;&lt;/a&gt;\n\n\n*all
+        my pictures on flickr are strictly under a full copyright. \n\xA9 All rights
+        reserved  for commercial use and publication (web, books,etc...)\nMy images
+        may not be reproduced or used without my written permission.\n\n\n*Please
+        don\u2019t use my pictures from this Flickr\xAE photo stream for any kind
+        of reproduction including post-processing or partly reproduction or by any
+        other means, for purposes such as of any commercial nature or for nonprofit
+        purposes without my explicit written permission.\n \nThis includes internet
+        blogs, internet pages, prints or any other digital or analog media. If you
+        want to use one of my pictures for the above mentioned purposes and for any
+        question or any further information around this issue please contact me. Legal
+        actions reserved.</description>\n\t<photosurl>https://www.flickr.com/photos/ogawasan/</photosurl>\n\t<profileurl>https://www.flickr.com/people/ogawasan/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/ogawasan/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>1974-07-08
+        12:37:24</firstdatetaken>\n\t\t<firstdate>1264815588</firstdate>\n\t\t<count>30129</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 30 Aug 2024 11:05:49 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 718d744faad6ff02c7a7ca517a01865a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PnNFQDBs52VUAWFmGjNFUl0ufhQ5vP75tBAekAQLUEwyStOIntqCnQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '4970'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sun, 29-Sep-2024 11:05:49 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sun, 29-Sep-2024 11:05:49 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66d1a78d-12ac933a5987596f7ece70f6
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.41.95
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -15,6 +15,7 @@ class User(typing.TypedDict):
 # in particular:
 #
 #   * their profile description (if any)
+#   * their location (if any)
 #   * the number of photos they've uploaded
 #   * their buddy icon URL
 #   * whether they have Flickr Pro, and if so, when it expires
@@ -29,6 +30,7 @@ class User(typing.TypedDict):
 #
 class _ExtraUserInfo(User):
     description: str | None
+    location: str | None
     count_photos: int
     buddy_icon_url: str
 
