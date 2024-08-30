@@ -15,12 +15,16 @@ from flickr_photos_api.api.user_methods import UserMethods
 
 class TestGetUser:
     def test_get_user_by_id(self, api: FlickrApi) -> None:
+        """
+        Look up a user with their Flickr NSID.
+        """
         user = api.get_user(user_id="199258389@N04")
 
         assert user == {
             "id": "199258389@N04",
             "username": "alexwlchan",
             "realname": "Alex Chan",
+            "location": None,
             "path_alias": "alexwlchan",
             "photos_url": "https://www.flickr.com/photos/alexwlchan/",
             "profile_url": "https://www.flickr.com/people/alexwlchan/",
@@ -31,6 +35,9 @@ class TestGetUser:
         }
 
     def test_get_user_by_url(self, api: FlickrApi) -> None:
+        """
+        Look up a user with a URL to their profile on Flickr.com.
+        """
         user = api.get_user(user_url="https://www.flickr.com/photos/199246608@N02")
 
         assert user == {
@@ -38,6 +45,7 @@ class TestGetUser:
             "username": "cefarrjf87",
             "realname": "Alex Chan",
             "description": None,
+            "location": None,
             "has_pro_account": False,
             "path_alias": None,
             "photos_url": "https://www.flickr.com/photos/199246608@N02/",
@@ -155,6 +163,52 @@ class TestGetUser:
     def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
         user = api.get_user(user_id=user_id)
         assert user["realname"] == realname
+
+    def test_gets_no_location_if_not_set(self, api: FlickrApi) -> None:
+        """
+        If the user doesn't have a location set, their location is ``None``.
+        """
+        # The Flickr Foundation account doesn't set a city/location;
+        # the XML response includes an empty ``<location/>`` element.
+        #
+        # In the account settings, location info is *not* private, it's
+        # just not set (https://www.flickr.com/account/privacy):
+        #
+        #     Who can see what on your profile
+        #     Current city: Public (n/a)
+        #
+        # (Retrieved 30 August 2024)
+        user = api.get_user(user_id=FlickrUserIds.FlickrFoundation)
+
+        assert user["location"] is None
+
+    def test_gets_no_location_if_private(self, api: FlickrApi) -> None:
+        """
+        If the user's location isn't private, their location is ``None``.
+        """
+        # The Colección Amadeo León account seems to have their location
+        # private -- when you call the ``flickr.people.getInfo`` API,
+        # there's no ``<location>`` element at all.
+        #
+        # (Retrieved 30 August 2024)
+        user = api.get_user(user_id="134319968@N02")
+
+        assert user["location"] is None
+
+    def test_gets_user_location_if_set(self, api: FlickrApi) -> None:
+        """
+        If a user has a public location, it's returned in this response.
+        """
+        # This is a user who was recommended to me while browsing Flickr.
+        # If you look at their profile, it says:
+        #
+        #     Current city    Kyoto
+        #     Country         Japan
+        #
+        # (Retrieved 30 August 2024)
+        user = api.get_user(user_id="47062778@N06")
+
+        assert user["location"] == "Kyoto, Japan"
 
 
 class TestEnsureUserId:

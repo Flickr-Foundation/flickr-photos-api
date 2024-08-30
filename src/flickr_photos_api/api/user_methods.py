@@ -178,6 +178,14 @@ class UserMethods(FlickrApi):
         else:
             buddy_icon_url = "https://www.flickr.com/images/buddyicon.gif"
 
+        # The <location> element may be:
+        #
+        #   * present and non-empty, if the user sets a location
+        #   * present and empty, if the user has not set a location
+        #   * absent, if the user has made their location private
+        #
+        location = find_optional_text(person_elem, path="location")
+
         if has_pro_account:
             assert pro_account_expires is not None
             return {
@@ -185,6 +193,7 @@ class UserMethods(FlickrApi):
                 "username": username,
                 "realname": realname,
                 "description": description,
+                "location": location,
                 "path_alias": path_alias,
                 "photos_url": photos_url,
                 "profile_url": profile_url,
@@ -199,6 +208,7 @@ class UserMethods(FlickrApi):
                 "username": username,
                 "realname": realname,
                 "description": description,
+                "location": location,
                 "path_alias": path_alias,
                 "photos_url": photos_url,
                 "profile_url": profile_url,
