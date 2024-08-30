@@ -31,6 +31,8 @@ cryptography==42.0.8
     # via authlib
 docutils==0.21.2
     # via readme-renderer
+execnet==2.1.1
+    # via pytest-xdist
 flickr-url-parser==1.9.0
     # via flickr-photos-api
 h11==0.14.0
@@ -103,8 +105,12 @@ pygments==2.18.0
 pyproject-hooks==1.1.0
     # via build
 pytest==8.2.1
-    # via pytest-cov
+    # via
+    #   pytest-cov
+    #   pytest-xdist
 pytest-cov==5.0.0
+    # via -r dev_requirements.in
+pytest-xdist==3.6.1
     # via -r dev_requirements.in
 pyyaml==6.0.1
     # via vcrpy

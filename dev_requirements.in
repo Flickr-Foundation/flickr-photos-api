@@ -6,6 +6,7 @@ interrogate
 mypy
 pydantic
 pytest-cov
+pytest-xdist
 ruff
 twine
 vcrpy
