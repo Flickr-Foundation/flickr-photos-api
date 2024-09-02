@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.11.2 - 2024-09-02
+
+*   Change the `UserInfo` type so it can be subclassed again (this broke in v2.10.0).
+    This doesn't change the output/behaviour of the library.
+
 ## v2.11.1 - 2024-09-02
 
 *   Internal refactoring for Flickr Foundation purposes; no public-facing changes.
