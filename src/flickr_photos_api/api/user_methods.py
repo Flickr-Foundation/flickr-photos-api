@@ -12,6 +12,10 @@ from ..types import fix_realname, UserInfo
 
 
 class UserMethods(FlickrApi):
+    """
+    Methods for getting information about users from the Flickr API.
+    """
+    
     def _ensure_user_id(
         self, *, user_id: str | None = None, user_url: str | None = None
     ) -> str:
