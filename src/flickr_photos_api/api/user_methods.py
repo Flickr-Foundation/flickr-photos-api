@@ -210,36 +210,25 @@ class UserMethods(FlickrApi):
         #
         location = find_optional_text(person_elem, path="location")
 
+        user: UserInfo = {
+            "id": user_id,
+            "username": username,
+            "realname": realname,
+            "description": description,
+            "location": location,
+            "path_alias": path_alias,
+            "photos_url": photos_url,
+            "profile_url": profile_url,
+            "buddy_icon_url": buddy_icon_url,
+            "count_photos": count_photos,
+            "has_pro_account": has_pro_account,
+        }
+
         if has_pro_account:
             assert pro_account_expires is not None
-            return {
-                "id": user_id,
-                "username": username,
-                "realname": realname,
-                "description": description,
-                "location": location,
-                "path_alias": path_alias,
-                "photos_url": photos_url,
-                "profile_url": profile_url,
-                "buddy_icon_url": buddy_icon_url,
-                "count_photos": count_photos,
-                "has_pro_account": True,
-                "pro_account_expires": pro_account_expires,
-            }
-        else:
-            return {
-                "id": user_id,
-                "username": username,
-                "realname": realname,
-                "description": description,
-                "location": location,
-                "path_alias": path_alias,
-                "photos_url": photos_url,
-                "profile_url": profile_url,
-                "buddy_icon_url": buddy_icon_url,
-                "count_photos": count_photos,
-                "has_pro_account": False,
-            }
+            user["pro_account_expires"] = pro_account_expires
+
+        return user
 
     def _lookup_user_id_for_user_url(self, *, user_url: str) -> str:
         """
