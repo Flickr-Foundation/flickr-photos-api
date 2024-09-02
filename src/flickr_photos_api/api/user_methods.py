@@ -2,6 +2,8 @@
 Methods for getting information about users from the Flickr API.
 """
 
+from xml.etree import ElementTree as ET
+
 from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
@@ -13,9 +15,10 @@ from ..types import fix_realname, UserInfo
 
 class UserMethods(FlickrApi):
     """
-    Methods for getting information about users from the Flickr API.
+    This class has a single method for getting information about
+    a Flickr user: ``get_user()``
     """
-    
+
     def _ensure_user_id(
         self, *, user_id: str | None = None, user_url: str | None = None
     ) -> str:
@@ -139,6 +142,23 @@ class UserMethods(FlickrApi):
             },
         )
 
+        return self._parse_get_info_response(user_id, info_resp)
+
+    @staticmethod
+    def _parse_get_info_response(user_id: str, info_resp: ET.Element) -> UserInfo:
+        """
+        Parse a response from the ``flickr.people.getInfo`` API.
+
+        Why is this a separate function, and not inlined in ``get_user()``?
+
+        There are a couple of private/undocumented parameters we can
+        pass to this API using "blessed" API keys.  They aren't described
+        or used in this repo because it's public, but you can find them
+        in our private projects.
+
+        Having this parsing code be a standalone method allows us to reuse
+        it when we call the API with extra keys.
+        """
         person_elem = find_required_elem(info_resp, path="person")
 
         username = find_required_text(person_elem, path="username")
