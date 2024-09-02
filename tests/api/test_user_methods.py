@@ -1,3 +1,7 @@
+"""
+Tests for ``flickr_photos_api.api.user_methods``.
+"""
+
 import datetime
 import typing
 from xml.etree import ElementTree as ET
@@ -14,6 +18,10 @@ from flickr_photos_api.api.user_methods import UserMethods
 
 
 class TestGetUser:
+    """
+    Tests for ``UserMethods.get_user``.
+    """
+
     def test_get_user_by_id(self, api: FlickrApi) -> None:
         """
         Look up a user with their Flickr NSID.
@@ -55,10 +63,22 @@ class TestGetUser:
         }
 
     def test_uses_url_not_username(self, api: FlickrApi) -> None:
-        # In this URL the last component is the _path alias_, not the
-        # username, but I got that mixed up when I was new to the Flickr API.
-        #
-        # Make sure this library does the right thing!
+        """
+        When you look up a user by URL, it treats the URL component
+        as their path alias, not their username.
+
+        This is a regression test from a bug based on my misunderstanding
+        of Flickr usernames/path aliases: here ``britishlibrary`` is the
+        path alias, not the username.
+
+        *   path alias = `britishlibrary` points to `12403504@N02`, the
+            official account used by the British Library
+
+        *   username = `britishlibrary` points to `156987034@N08`, an empty
+            account with no photos and no activity
+
+        Make sure we pickm the right one!
+        """
         user_info = api.get_user(
             user_url="https://www.flickr.com/photos/britishlibrary/"
         )
@@ -76,8 +96,25 @@ class TestGetUser:
     def test_gets_realname(
         self, api: FlickrApi, user_id: str, realname: str | None
     ) -> None:
+        """
+        Looking up a user gets their real name, if set.
+        """
         user = api.get_user(user_id=user_id)
 
+        assert user["realname"] == realname
+
+    @pytest.mark.parametrize(
+        ["user_id", "realname"],
+        [
+            ("62173425@N02", "Stockholm Transport Museum"),
+            ("32162360@N00", "beachcomber australia"),
+        ],
+    )
+    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
+        """
+        We apply our real name "fixes" for users of particular interest.
+        """
+        user = api.get_user(user_id=user_id)
         assert user["realname"] == realname
 
     @pytest.mark.parametrize(
@@ -94,6 +131,9 @@ class TestGetUser:
     def test_gets_description(
         self, api: FlickrApi, user_id: str, description: str | None
     ) -> None:
+        """
+        Looking up a user gets their profile description, if set.
+        """
         user = api.get_user(user_id=user_id)
 
         assert user["description"] == description
@@ -127,15 +167,30 @@ class TestGetUser:
         assert "pro_account_expires" not in user
 
     def test_get_deleted_user_id(self, api: FlickrApi) -> None:
+        """
+        Looking up a deleted user by ID throws a ``UserDeleted`` error.
+        """
         with pytest.raises(UserDeleted):
             api.get_user(user_id="51979177@N02")
 
     def test_get_deleted_user_url(self, api: FlickrApi) -> None:
+        """
+        Looking up a deleted user by profile URL throws a ``UserDeleted`` error.
+        """
         with pytest.raises(UserDeleted):
             api.get_user(user_url="https://www.flickr.com/photos/51979177@N02/")
 
     def test_get_user_with_unexpected_error(self) -> None:
+        """
+        If calling the Flickr API throws an unexpected error, then
+        ``get_user`` throws an ``UnrecognisedFlickrApiException``.
+        """
+
         class BrokenApi(UserMethods):
+            """
+            A broken API that returns weird errors.
+            """
+
             def call(
                 self,
                 *,
@@ -144,6 +199,9 @@ class TestGetUser:
                 params: dict[str, str] | None = None,
                 exceptions: dict[str, Exception] | None = None,
             ) -> ET.Element:
+                """
+                Rather than calling the HTTP method, just throw an error.
+                """
                 raise UnrecognisedFlickrApiException(
                     {"code": "6", "msg": "Mysterious error"}
                 )
@@ -152,17 +210,6 @@ class TestGetUser:
 
         with pytest.raises(UnrecognisedFlickrApiException):
             api.get_user(user_id="-1")
-
-    @pytest.mark.parametrize(
-        ["user_id", "realname"],
-        [
-            ("62173425@N02", "Stockholm Transport Museum"),
-            ("32162360@N00", "beachcomber australia"),
-        ],
-    )
-    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
-        user = api.get_user(user_id=user_id)
-        assert user["realname"] == realname
 
     def test_gets_no_location_if_not_set(self, api: FlickrApi) -> None:
         """
@@ -210,47 +257,68 @@ class TestGetUser:
 
         assert user["location"] == "Kyoto, Japan"
 
+    def test_get_buddy_icon_url(self, api: FlickrApi) -> None:
+        """
+        Get the user's custom buddy icon, if set.
+        """
+        user = api.get_user(user_id="28660070@N07")
+
+        assert (
+            user["buddy_icon_url"]
+            == "https://farm6.staticflickr.com/5556/buddyicons/28660070@N07.jpg"
+        )
+
+    def test_get_default_buddy_icon_url(self, api: FlickrApi) -> None:
+        """
+        If a user hasn't set a buddy icon, we get the default URL.
+        """
+        user = api.get_user(user_id="199246608@N02")
+
+        assert user["buddy_icon_url"] == "https://www.flickr.com/images/buddyicon.gif"
+
 
 class TestEnsureUserId:
+    """
+    Tests that you can call ``get_user()`` with a ``user_id`` or
+    ``user_url``, but not both.
+    """
+
     def test_passing_neither_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+        """
+        If you don't pass ``user_id`` or ``user_url``, it throws
+        a ``TypeError``.
+        """
         with pytest.raises(
             TypeError, match="You must pass one of `user_id` or `user_url`!"
         ):
             api.get_user()
 
     def test_passing_both_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+        """
+        If you pass both ``user_id`` and ``user_url``, it throws
+        a ``TypeError``.
+        """
         with pytest.raises(
             TypeError, match="You can only pass one of `user_id` and `user_url`!"
         ):
             api.get_user(user_id="123", user_url="https://www.flickr.com/photos/123")
 
     def test_passing_a_non_user_url_is_error(self, api: FlickrApi) -> None:
+        """
+        If you pass a ``user_url`` which is a Flickr URL but not a user
+        profile, it throws a ``ValueError``.
+        """
         with pytest.raises(
             ValueError, match="user_url was not the URL for a Flickr user"
         ):
             api.get_user(user_url="https://www.flickr.com")
 
     def test_passing_a_non_flickr_url_is_error(self, api: FlickrApi) -> None:
+        """
+        If you pass a ``user_url`` which isn't a Flickr URL, it throws
+        a ``ValueError``.
+        """
         with pytest.raises(
             ValueError, match="user_url was not the URL for a Flickr user"
         ):
             api.get_user(user_url="https://www.example.com")
-
-
-@pytest.mark.parametrize(
-    ["user_id", "expected_url"],
-    [
-        pytest.param(
-            "199246608@N02",
-            "https://www.flickr.com/images/buddyicon.gif",
-            id="user_with_no_buddyicon",
-        ),
-        pytest.param(
-            "28660070@N07",
-            "https://farm6.staticflickr.com/5556/buddyicons/28660070@N07.jpg",
-            id="user_with_buddyicon",
-        ),
-    ],
-)
-def test_get_buddy_icon_url(api: FlickrApi, user_id: str, expected_url: str) -> None:
-    assert api.get_user(user_id=user_id)["buddy_icon_url"] == expected_url
