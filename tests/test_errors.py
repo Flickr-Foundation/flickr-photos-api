@@ -17,7 +17,6 @@ from flickr_photos_api import (
     "method",
     [
         "get_photo_contexts",
-        "get_single_photo",
         "list_all_comments",
     ],
 )
