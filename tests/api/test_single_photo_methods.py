@@ -296,6 +296,15 @@ class TestInvalidPhotoIds:
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
             api.get_single_photo(photo_id=photo_id)
 
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Getting the contexts of a photo with an invalid ID throws
+        a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            api.get_photo_contexts(photo_id=photo_id)
+
 
 class TestNonExistentPhotos:
     """
@@ -313,6 +322,15 @@ class TestNonExistentPhotos:
         """
         with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
             api.get_single_photo(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Getting the contexts of a photo which doesn't exist throws
+        ``ResourceNotFound``.
+        """
+        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
+            api.get_photo_contexts(photo_id=photo_id)
 
 
 class TestPrivatePhotos:

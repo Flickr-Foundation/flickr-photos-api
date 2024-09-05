@@ -308,6 +308,9 @@ class SinglePhotoMethods(LicenseMethods):
 
         This includes albums, galleries, and groups.
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         # See https://www.flickr.com/services/api/flickr.photos.getAllContexts.html
         contexts_resp = self.call(
             method="flickr.photos.getAllContexts",

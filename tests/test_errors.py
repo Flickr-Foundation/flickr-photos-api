@@ -16,7 +16,6 @@ from flickr_photos_api import (
 @pytest.mark.parametrize(
     "method",
     [
-        "get_photo_contexts",
         "list_all_comments",
     ],
 )
