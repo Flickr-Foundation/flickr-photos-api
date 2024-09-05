@@ -16,40 +16,44 @@ interactions:
     method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=12345678901234567890
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
-      code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 01 May 2024 12:34:02 GMT
+      - Thu, 05 Sep 2024 05:14:29 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 359e7492ed603c981059a34a9e223592.cloudfront.net (CloudFront)
+      - 1.1 54b736c8a06d70ac689481ee738cbc60.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - YU0XX1XuZg4ofJsgvltd0xGSu6oefPWUOgRTC6GofmAosy3CNa6Yrw==
+      - d51owZww8GmkzezLDQMB7zvRDK7pKlQwQozGBnpzOqkGNsw0gkNlXg==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '105'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 31-May-2024 12:34:02 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 05:14:29 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Fri, 31-May-2024 12:34:02 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 05:14:29 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-663236ba-78f91d3d5879ede835260781;Root=1-663236ba-290f125a60b9717a1a524162
+      - Root=1-66d93e35-212e92dc332415cd10c7a379
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.32.246
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.7.165
+    status:
+      code: 200
+      message: OK
 version: 1

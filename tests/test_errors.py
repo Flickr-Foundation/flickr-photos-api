@@ -3,6 +3,7 @@ import typing
 import httpx
 import pytest
 
+from data import FlickrPhotoIds
 from flickr_photos_api import (
     FlickrApi,
     FlickrApiException,
@@ -39,6 +40,14 @@ class TestInvalidPhotoIds:
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
             api.get_photo_contexts(photo_id=photo_id)
 
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Looking up comments for an invalid photo ID throws a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            api.list_all_comments(photo_id=photo_id)
+
 
 class TestNonExistentPhotos:
     """
@@ -66,29 +75,14 @@ class TestNonExistentPhotos:
         with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
             api.get_photo_contexts(photo_id=photo_id)
 
-
-@pytest.mark.parametrize(
-    "method",
-    [
-        "list_all_comments",
-    ],
-)
-@pytest.mark.parametrize(
-    "photo_id",
-    [
-        "12345678901234567890",
-        "DefinitelyDoesNotExist",
-    ],
-)
-def test_look_up_single_photo_fails_if_not_found(
-    api: FlickrApi, method: str, photo_id: str
-) -> None:
-    api_method = getattr(api, method)
-
-    with pytest.raises(
-        ResourceNotFound, match=f"Could not find photo with ID: {photo_id!r}"
-    ):
-        api_method(photo_id=photo_id)
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Listing the comments on a photo which doesn't exist throws
+        ``ResourceNotFound``.
+        """
+        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
+            api.list_all_comments(photo_id=photo_id)
 
 
 @pytest.mark.parametrize(

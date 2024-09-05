@@ -14,42 +14,46 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=DefinitelyDoesNotExist
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=1
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
-      code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 01 May 2024 12:34:06 GMT
+      - Thu, 05 Sep 2024 05:14:29 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 1cc3fb840bf0d635b4ec2fb2c19ca094.cloudfront.net (CloudFront)
+      - 1.1 7441f523d9aa7a75eb213f3a670e46ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - SblS2ILZhdgEB3aZQb85aFMNZz8rKf7UMCvfhYJhV7EfwMwqYIRP_A==
+      - bri6qdkegc-0p3YDoCBkYVvIspGameguSAU84q_lF7lMXMNhyHzi1Q==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '105'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 31-May-2024 12:34:06 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 05:14:28 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Fri, 31-May-2024 12:34:06 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 05:14:28 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-663236be-5407405a63727ed0235fb29c;Root=1-663236be-3fe6929177d0f8ed1327c9e4
+      - Root=1-66d93e34-2c1514435dfab83116d72844
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.32.246
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.19.4
+    status:
+      code: 200
+      message: OK
 version: 1
