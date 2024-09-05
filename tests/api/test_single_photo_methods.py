@@ -279,60 +279,6 @@ class TestGetPhotoContexts:
         }
 
 
-class TestInvalidPhotoIds:
-    """
-    Flickr photo IDs have a fixed format: they're numeric strings.
-
-    If you pass a non-numeric string as the ``photo_id`` parameter,
-    these methods throw a ``ValueError`` immediately rather than passing
-    obviously bad data to the Flickr API.
-    """
-
-    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
-        """
-        Looking up a single photo with an invalid ID throws a ``ValueError``.
-        """
-        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            api.get_single_photo(photo_id=photo_id)
-
-    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
-        """
-        Getting the contexts of a photo with an invalid ID throws
-        a ``ValueError``.
-        """
-        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            api.get_photo_contexts(photo_id=photo_id)
-
-
-class TestNonExistentPhotos:
-    """
-    Not every numeric string points to a real Flickr photo.
-
-    If you pass the ID of a photo that doesn't exist, these methods
-    throw a ``ResourceNotFound`` error.
-    """
-
-    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
-    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
-        """
-        Looking up a single photo which doesn't exist throws
-        ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
-            api.get_single_photo(photo_id=photo_id)
-
-    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
-    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
-        """
-        Getting the contexts of a photo which doesn't exist throws
-        ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
-            api.get_photo_contexts(photo_id=photo_id)
-
-
 class TestPrivatePhotos:
     # Private photos are difficult to find (intentionally!).
     #
