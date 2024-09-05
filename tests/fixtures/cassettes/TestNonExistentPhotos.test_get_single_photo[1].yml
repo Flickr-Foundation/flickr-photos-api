@@ -8,47 +8,52 @@ interactions:
       - gzip, deflate
       connection:
       - keep-alive
-      content-length:
-      - '0'
       host:
       - api.flickr.com
       user-agent:
-      - python-httpx/0.25.1
-    method: POST
-    uri: https://api.flickr.com/services/rest/?method=flickr.photos.comments.addComment&photo_id=-1&comment_text=This%20is%20a%20comment%20on%20a%20non-existent%20photo
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=1
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
-      code=\"1\" msg=\"Photo not found\" />\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"1\" msg=\"Photo &quot;1&quot; not found (invalid ID)\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '114'
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 05 Dec 2023 10:47:27 GMT
+      - Thu, 05 Sep 2024 04:50:42 GMT
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 56d50c15e83a778a8a2df6031ec29098.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - WzXu8AvGAPCeD7VosFzc3QwU3sx7w04sOe7smM1mSlwM18jFYHQOGA==
+      - VOXurn61sDc5eX0XvXrMwEdzEjoc47tZ_ypY7LGQWUbl-j9jUKg9rg==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '132'
       server:
-      - Apache/2.4.58 (Ubuntu)
+      - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Thu, 04-Jan-2024 10:47:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 04:50:42 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Thu, 04-Jan-2024 10:47:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 05-Oct-2024 04:50:42 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
-      x-frame-options:
-      - SAMEORIGIN
+      x-flickr-api-request:
+      - Root=1-66d938a2-5bf7e3bd4f3594346c0ff244
       x-robots-tag:
       - noindex
-    http_version: HTTP/1.1
-    status_code: 200
+      x-server:
+      - serverless-proxy-10.78.41.95
+    status:
+      code: 200
+      message: OK
 version: 1

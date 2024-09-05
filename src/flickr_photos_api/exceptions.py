@@ -1,3 +1,7 @@
+"""
+Exceptions and errors that are thrown by this library.
+"""
+
 import re
 
 
@@ -76,10 +80,18 @@ class PhotoIsPrivate(FlickrApiException):
 
 
 class LicenseNotFound(FlickrApiException):
+    """
+    Thrown when you try to look up a license ID, but there's no such license.
+    """
+
     def __init__(self, license_id: str):
         super().__init__(f"Unable to find license with ID {license_id}")
 
 
 class InsufficientPermissionsToComment(FlickrApiException):
+    """
+    Thrown when you try to comment on a photo, but you're not allowed to.
+    """
+
     def __init__(self, *, photo_id: str) -> None:
         super().__init__(f"Insufficient permissions to comment on photo {photo_id}")

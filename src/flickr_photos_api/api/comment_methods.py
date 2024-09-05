@@ -2,6 +2,7 @@
 Methods for getting information about comments from the Flickr API.
 """
 
+from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_required_elem
 
 from flickr_photos_api.date_parsers import parse_timestamp
@@ -17,6 +18,9 @@ class CommentMethods(FlickrApi):
 
         See https://www.flickr.com/services/api/flickr.photos.comments.getList.htm
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         resp = self.call(
             method="flickr.photos.comments.getList",
             params={"photo_id": photo_id},
@@ -75,6 +79,9 @@ class CommentMethods(FlickrApi):
         the same comment twice, Flickr silently discards the second and
         returns the ID of the original comment.
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         xml = self.call(
             http_method="POST",
             method="flickr.photos.comments.addComment",

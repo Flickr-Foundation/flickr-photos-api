@@ -7,6 +7,10 @@ from utils import get_fixture
 
 
 class TestGetSinglePhoto:
+    """
+    Tests for ``SinglePhotoMethods.get_single_photo``.
+    """
+
     def test_can_get_single_photo(self, api: FlickrApi) -> None:
         photo = api.get_single_photo(photo_id="32812033543")
 

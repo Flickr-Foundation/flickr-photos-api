@@ -1,8 +1,16 @@
+"""
+Tests that we handle errors from the Flickr API in a consistent way.
+
+We test errors here rather than in per-method test files to ensure
+we're handling errors consistently across methods.
+"""
+
 import typing
 
 import httpx
 import pytest
 
+from data import FlickrPhotoIds
 from flickr_photos_api import (
     FlickrApi,
     FlickrApiException,
@@ -13,30 +21,90 @@ from flickr_photos_api import (
 )
 
 
-@pytest.mark.parametrize(
-    "method",
-    [
-        "get_photo_contexts",
-        "get_single_photo",
-        "list_all_comments",
-    ],
-)
-@pytest.mark.parametrize(
-    "photo_id",
-    [
-        "12345678901234567890",
-        "DefinitelyDoesNotExist",
-    ],
-)
-def test_look_up_single_photo_fails_if_not_found(
-    api: FlickrApi, method: str, photo_id: str
-) -> None:
-    api_method = getattr(api, method)
+class TestInvalidPhotoIds:
+    """
+    Flickr photo IDs have a fixed format: they're numeric strings.
 
-    with pytest.raises(
-        ResourceNotFound, match=f"Could not find photo with ID: {photo_id!r}"
-    ):
-        api_method(photo_id=photo_id)
+    If you pass a non-numeric string as the ``photo_id`` parameter,
+    these methods throw a ``ValueError`` immediately rather than passing
+    obviously bad data to the Flickr API.
+    """
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Looking up a single photo with an invalid ID throws a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            api.get_single_photo(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Getting the contexts of a photo with an invalid ID throws
+        a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            api.get_photo_contexts(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Looking up comments for an invalid photo ID throws a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            api.list_all_comments(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
+    def test_post_comment(self, comments_api: FlickrApi, photo_id: str) -> None:
+        """
+        Posting a comment to an invalid photo ID throws a ``ValueError``.
+        """
+        with pytest.raises(ValueError, match="Not a Flickr photo ID"):
+            comments_api.post_comment(
+                photo_id=photo_id, comment_text="This comment is for testing purposes"
+            )
+
+
+class TestNonExistentPhotos:
+    """
+    Not every numeric string points to a real Flickr photo.
+
+    If you pass the ID of a photo that doesn't exist, these methods
+    throw a ``ResourceNotFound`` error.
+    """
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Looking up a single photo which doesn't exist throws
+        ``ResourceNotFound``.
+        """
+        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
+            api.get_single_photo(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Getting the contexts of a photo which doesn't exist throws
+        ``ResourceNotFound``.
+        """
+        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
+            api.get_photo_contexts(photo_id=photo_id)
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Listing the comments on a photo which doesn't exist throws
+        ``ResourceNotFound``.
+        """
+        with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
+            api.list_all_comments(photo_id=photo_id)
+
+    # TODO: Add test that posting comments to a non-existent photo
+    # throws ``ResourceNotFound``.
+    #
+    # I need to remember how to set up that fixture with commenting perms.
 
 
 @pytest.mark.parametrize(

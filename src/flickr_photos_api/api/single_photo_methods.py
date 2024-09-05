@@ -2,6 +2,7 @@
 Methods for getting information about a single photo in the Flickr API.
 """
 
+from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
@@ -30,6 +31,9 @@ class SinglePhotoMethods(LicenseMethods):
 
         This uses the flickr.photos.getInfo API.
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         info_resp = self.call(
             method="flickr.photos.getInfo",
             params={"photo_id": photo_id},
@@ -304,6 +308,9 @@ class SinglePhotoMethods(LicenseMethods):
 
         This includes albums, galleries, and groups.
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         # See https://www.flickr.com/services/api/flickr.photos.getAllContexts.html
         contexts_resp = self.call(
             method="flickr.photos.getAllContexts",

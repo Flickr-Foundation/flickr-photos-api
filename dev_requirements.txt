@@ -31,7 +31,7 @@ cryptography==42.0.8
     # via authlib
 docutils==0.21.2
     # via readme-renderer
-flickr-url-parser==1.9.0
+flickr-url-parser==1.10.0
     # via flickr-photos-api
 h11==0.14.0
     # via httpcore
