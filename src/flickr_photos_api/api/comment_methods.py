@@ -79,6 +79,9 @@ class CommentMethods(FlickrApi):
         the same comment twice, Flickr silently discards the second and
         returns the ID of the original comment.
         """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
         xml = self.call(
             http_method="POST",
             method="flickr.photos.comments.addComment",

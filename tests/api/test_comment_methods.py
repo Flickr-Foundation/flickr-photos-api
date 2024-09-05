@@ -1,4 +1,3 @@
-from collections.abc import Iterator
 import json
 
 from authlib.integrations.httpx_client import OAuth1Client
@@ -9,7 +8,6 @@ import vcr
 from flickr_photos_api import (
     FlickrApi,
     InsufficientPermissionsToComment,
-    ResourceNotFound,
 )
 from utils import get_optional_password
 
@@ -44,54 +42,16 @@ def test_if_no_realname_then_empty(api: FlickrApi) -> None:
     assert comments[0]["author"]["realname"] is None
 
 
-@pytest.fixture(scope="function")
-def flickr_comments_api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
-    """
-    Creates an instance of the FlickrCommentsApi class for use in tests.
-
-    This instance of the API will record its interactions as "cassettes"
-    using vcr.py, which can be replayed offline (e.g. in CI tests).
-    """
-    with vcr.use_cassette(
-        cassette_name,
-        cassette_library_dir="tests/fixtures/cassettes",
-        filter_query_parameters=[
-            "oauth_consumer_key",
-            "oauth_nonce",
-            "oauth_signature",
-            "oauth_signature_method",
-            "oauth_timestamp",
-            "oauth_token",
-            "oauth_verifier",
-            "oauth_version",
-        ],
-        decode_compressed_response=True,
-    ):
-        stored_token = json.loads(
-            get_optional_password("flickr_photos_api", "oauth_token", default="{}")
-        )
-
-        client = OAuth1Client(
-            client_id=get_optional_password(
-                "flickr_photos_api", "api_key", default="123"
-            ),
-            client_secret=get_optional_password(
-                "flickr_photos_api", "api_secret", default="456"
-            ),
-            signature_type="QUERY",
-            token=stored_token.get("oauth_token"),
-            token_secret=stored_token.get("oauth_token_secret"),
-        )
-
-        yield FlickrApi(client=client)
-
-
 class TestPostComment:
+    """
+    Tests for ``CommentMethods.post_comment``.
+    """
+
     def test_throws_if_not_allowed_to_post_comment(
-        self, flickr_comments_api: FlickrApi
+        self, comments_api: FlickrApi
     ) -> None:
         with pytest.raises(InsufficientPermissionsToComment):
-            flickr_comments_api.post_comment(
+            comments_api.post_comment(
                 photo_id="53374767803",
                 comment_text="This is a comment on a photo where I’ve disabled commenting",
             )
@@ -138,24 +98,18 @@ class TestPostComment:
 
     def test_can_successfully_post_a_comment(
         self,
-        flickr_comments_api: FlickrApi,
+        comments_api: FlickrApi,
     ) -> None:
-        comment_id = flickr_comments_api.post_comment(
+        comment_id = comments_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
         )
 
         # Check that if we double-post, we get the same comment ID back --
         # that is, that commenting is an idempotent operation.
-        comment_id2 = flickr_comments_api.post_comment(
+        comment_id2 = comments_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
         )
 
         assert comment_id == comment_id2
-
-    def test_throws_if_photo_doesnt_exist(self, flickr_comments_api: FlickrApi) -> None:
-        with pytest.raises(ResourceNotFound):
-            flickr_comments_api.post_comment(
-                photo_id="-1", comment_text="This is a comment on a non-existent photo"
-            )
