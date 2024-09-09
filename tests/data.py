@@ -1,3 +1,12 @@
+"""
+This is some hard-coded data we can use as test values.
+
+Defining them in a single place allows us to keep notes on why we
+picked these IDs together, and keep the individual tests cleaner.
+It reduces the number of "magic values" in each test.
+"""
+
+
 class FlickrUserIds:
     """
     Named Flickr user IDs we can use for testing.
