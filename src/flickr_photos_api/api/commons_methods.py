@@ -11,6 +11,10 @@ from ..types import CommonsInstitution
 
 
 class FlickrCommonsMethods(FlickrApi):
+    """
+    Methods for getting information about the Flickr Commons.
+    """
+
     def list_commons_institutions(self) -> list[CommonsInstitution]:
         """
         Get a list of all the institutions in the Flickr Commons.
