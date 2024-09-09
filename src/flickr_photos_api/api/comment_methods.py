@@ -1,5 +1,5 @@
 """
-Methods for getting information about comments from the Flickr API.
+Code to read/write comments on Flickr.
 """
 
 from flickr_url_parser import looks_like_flickr_photo_id
@@ -12,6 +12,10 @@ from ..types import Comment, create_user
 
 
 class CommentMethods(FlickrApi):
+    """
+    Methods for listing and posting comments on Flickr.
+    """
+
     def list_all_comments(self, *, photo_id: str) -> list[Comment]:
         """
         List all the comments on a photo.
