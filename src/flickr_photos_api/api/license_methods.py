@@ -10,6 +10,10 @@ from ..types import License
 
 
 class LicenseMethods(FlickrApi):
+    """
+    License-related methods for the Flickr API.
+    """
+
     # Note: this list of licenses almost never changes, so we call this once
     # and cache the result for efficiency.
     @functools.cache
