@@ -17,6 +17,8 @@ class OAuth1Client(httpx.Client):
         token: str | None = None,
         token_secret: str | None = None,
     ) -> None: ...
+    token: str | None
+    token_secret: str | None
     def fetch_request_token(
         self, url: str, params: dict[str, str]
     ) -> RequestTokenResp: ...
@@ -24,7 +26,6 @@ class OAuth1Client(httpx.Client):
     def fetch_access_token(
         self, url: str, verifier: str | None = None
     ) -> typing.Any: ...
-    token: typing.Any
     def parse_authorization_response(self, url: str) -> None: ...
 
 class OAuth2Client(httpx.Client):

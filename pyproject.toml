@@ -67,5 +67,5 @@ strict = true
 
 [tool.interrogate]
 # fail_under = 100
-fail_under = 51
+fail_under = 54
 omit-covered-files = true

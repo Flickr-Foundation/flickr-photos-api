@@ -3,12 +3,13 @@ import json
 import os
 
 from authlib.integrations.httpx_client import OAuth1Client
+import keyring
+import keyring.errors
 from nitrate.cassettes import cassette_name, vcr_cassette
 import pytest
 import vcr
 
 from flickr_photos_api import FlickrApi
-from utils import get_optional_password
 
 
 @pytest.fixture
@@ -34,6 +35,16 @@ def api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
             api_key=os.environ.get("FLICKR_API_KEY", "<REDACTED>"),
             user_agent=user_agent,
         )
+
+
+def get_optional_password(username: str, password: str, *, default: str) -> str:
+    """
+    Get a password from the system keychain, or a default if unavailable.
+    """
+    try:
+        return keyring.get_password(username, password) or default
+    except keyring.errors.NoKeyringError:  # pragma: no cover
+        return default
 
 
 @pytest.fixture(scope="function")

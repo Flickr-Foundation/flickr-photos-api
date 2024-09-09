@@ -1,45 +1,59 @@
-import json
+"""
+Tests for ``flickr_photos_api.api.comment_methods``.
+"""
 
 from authlib.integrations.httpx_client import OAuth1Client
 import httpx
 import pytest
-import vcr
 
 from flickr_photos_api import (
     FlickrApi,
     InsufficientPermissionsToComment,
 )
-from utils import get_optional_password
 
 
-# These all the outliers in terms of number of comments.
-#
-# The expected value comes from the "count_comments" field on the
-# photos API response.  This API seems to return everything at once,
-# and doesn't do pagination, but let's make sure it actually does.
-@pytest.mark.parametrize(
-    ["photo_id", "count"],
-    [
-        ("12584715825", 154),
-        ("3334095096", 376),
-        ("2780177093", 501),
-        ("2960116125", 1329),
-    ],
-)
-def test_finds_all_comments(api: FlickrApi, photo_id: str, count: int) -> None:
-    comments = api.list_all_comments(photo_id=photo_id)
+class TestListAllComments:
+    """
+    Tests for ``CommentMethods.list_all_comments()``.
+    """
 
-    assert len(comments) == count
-
-
-def test_if_no_realname_then_empty(api: FlickrApi) -> None:
-    # The first comment comes from user 'pellepoet', who has no realname.
+    # These all the outliers in terms of number of comments.
     #
-    # The ``author_realname`` attribute in the response is
-    # an empty string, which we should map to ``None``.
-    comments = api.list_all_comments(photo_id="40373414385")
+    # The expected value comes from the "count_comments" field on the
+    # photos API response.  This API seems to return everything at once,
+    # and doesn't do pagination, but let's make sure it actually does.
+    @pytest.mark.parametrize(
+        ["photo_id", "count"],
+        [
+            ("12584715825", 154),
+            ("3334095096", 376),
+            ("2780177093", 501),
+            ("2960116125", 1329),
+        ],
+    )
+    def test_finds_all_comments(
+        self, api: FlickrApi, photo_id: str, count: int
+    ) -> None:
+        """
+        It gets all the comments on a photo, even if the photo has
+        a lot of comments.
+        """
+        comments = api.list_all_comments(photo_id=photo_id)
 
-    assert comments[0]["author"]["realname"] is None
+        assert len(comments) == count
+
+    def test_if_no_realname_then_empty(self, api: FlickrApi) -> None:
+        """
+        If the comment author doesn't have a real name, then the
+        ``realname`` property in the result is ``None``.
+        """
+        # The first comment comes from user 'pellepoet', who has no realname.
+        #
+        # The ``author_realname`` attribute in the response is
+        # an empty string, which we should map to ``None``.
+        comments = api.list_all_comments(photo_id="40373414385")
+
+        assert comments[0]["author"]["realname"] is None
 
 
 class TestPostComment:
@@ -47,59 +61,13 @@ class TestPostComment:
     Tests for ``CommentMethods.post_comment``.
     """
 
-    def test_throws_if_not_allowed_to_post_comment(
-        self, comments_api: FlickrApi
-    ) -> None:
-        with pytest.raises(InsufficientPermissionsToComment):
-            comments_api.post_comment(
-                photo_id="53374767803",
-                comment_text="This is a comment on a photo where I’ve disabled commenting",
-            )
-
-    def test_throws_if_invalid_oauth_signature(self, cassette_name: str) -> None:
-        stored_token = json.loads(
-            get_optional_password("flickr_photos_api", "oauth_token", default="{}")
-        )
-
-        client = OAuth1Client(
-            client_id=get_optional_password(
-                "flickr_photos_api", "api_key", default="123"
-            ),
-            client_secret=get_optional_password(
-                "flickr_photos_api", "api_secret", default="456"
-            ),
-            signature_type="QUERY",
-            token=stored_token.get("oauth_token"),
-            token_secret=None,
-        )
-
-        api = FlickrApi(client=client)
-
-        with vcr.use_cassette(
-            cassette_name,
-            cassette_library_dir="tests/fixtures/cassettes",
-            filter_query_parameters=[
-                "oauth_consumer_key",
-                "oauth_nonce",
-                "oauth_signature",
-                "oauth_signature_method",
-                "oauth_timestamp",
-                "oauth_token",
-                "oauth_verifier",
-                "oauth_version",
-            ],
-            decode_compressed_response=True,
-        ):
-            with pytest.raises(httpx.HTTPStatusError):
-                api.post_comment(
-                    photo_id="53374767803",
-                    comment_text="This is a comment that uses bogus OAuth 1.0a credentials",
-                )
-
     def test_can_successfully_post_a_comment(
         self,
         comments_api: FlickrApi,
     ) -> None:
+        """
+        You can post a comment, and posting is idempotent.
+        """
         comment_id = comments_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
@@ -113,3 +81,32 @@ class TestPostComment:
         )
 
         assert comment_id == comment_id2
+
+    def test_throws_if_not_allowed_to_post_comment(
+        self, api: FlickrApi, comments_api: FlickrApi
+    ) -> None:
+        """
+        If you try to comment on a photo but you're not allowed to,
+        you get an ``InsufficientPermissionsToComment`` error.
+        """
+        with pytest.raises(InsufficientPermissionsToComment):
+            comments_api.post_comment(
+                photo_id="53374767803",
+                comment_text="This is a comment on a photo where I’ve disabled commenting",
+            )
+
+    def test_throws_if_invalid_oauth_signature(
+        self, api: FlickrApi, comments_api: FlickrApi, cassette_name: str
+    ) -> None:
+        """
+        If you don't pass a valid OAuth signature, trying to post
+        a comment will fail with a ``httpx.HTTPStatusError``.
+        """
+        assert isinstance(comments_api.client, OAuth1Client)
+        comments_api.client.token_secret = None
+
+        with pytest.raises(httpx.HTTPStatusError):
+            comments_api.post_comment(
+                photo_id="53374767803",
+                comment_text="This is a comment that uses bogus OAuth 1.0a credentials",
+            )

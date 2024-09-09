@@ -1,8 +1,6 @@
 import os
 import typing
 
-import keyring
-import keyring.errors
 from nitrate.json import DatetimeDecoder
 from nitrate.types import read_typed_json
 
@@ -15,13 +13,3 @@ def get_fixture(filename: str, *, model: type[T]) -> T:
         model=model,
         cls=DatetimeDecoder,
     )
-
-
-def get_optional_password(username: str, password: str, *, default: str) -> str:
-    """
-    Get a password from the system keychain, or a default if unavailable.
-    """
-    try:
-        return keyring.get_password(username, password) or default
-    except keyring.errors.NoKeyringError:  # pragma: no cover
-        return default
