@@ -48,10 +48,7 @@ flickr_photos_api = ["py.typed"]
 
 [tool.coverage.run]
 branch = true
-source = [
-  "flickr_photos_api",
-  "tests",
-]
+source = ["flickr_photos_api", "tests"]
 
 [tool.coverage.report]
 show_missing = true
@@ -62,9 +59,7 @@ exclude_also = [
 ]
 
 [tool.pytest.ini_options]
-filterwarnings = [
-  "error",
-]
+filterwarnings = ["error"]
 
 [tool.mypy]
 mypy_path = "src"
