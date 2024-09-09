@@ -20,12 +20,15 @@ class TestCollectionsPhotoResponse:
     """
 
     def test_sets_owner_and_url_on_collection(self, api: FlickrApi) -> None:
+        """
+        The photos include an ``owner`` and ``url`` parameter.
+        """
         resp = api.get_photos_in_album(
             user_id="115357548@N08",
             album_id="72157640898611483",
         )
 
-        assert resp["photos"][0]["owner"] == {
+        expected_owner = {
             "id": "115357548@N08",
             "username": "Joshua Tree National Park",
             "realname": None,
@@ -33,6 +36,8 @@ class TestCollectionsPhotoResponse:
             "photos_url": "https://www.flickr.com/photos/joshuatreenp/",
             "profile_url": "https://www.flickr.com/people/joshuatreenp/",
         }
+
+        assert all(p["owner"] == expected_owner for p in resp["photos"])
 
         assert (
             resp["photos"][0]["url"]
