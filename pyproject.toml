@@ -67,5 +67,11 @@ strict = true
 
 [tool.interrogate]
 # fail_under = 100
-fail_under = 54
+fail_under = 59
 omit-covered-files = true
+
+# There are a lot of `__init__` methods and modules in this library,
+# and some of them wouldn't have interesting docstrings
+# (e.g. the `__init__` methods on the exceptions in `errors.py`)
+ignore-init-method = true
+ignore-init-module = true
