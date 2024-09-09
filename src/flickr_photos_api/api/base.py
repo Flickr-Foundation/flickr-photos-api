@@ -1,3 +1,7 @@
+"""
+Base classes for the Flickr API client.
+"""
+
 import abc
 import typing
 from xml.etree import ElementTree as ET
@@ -110,11 +114,23 @@ class HttpxImplementation(FlickrApi):
     """
 
     def __init__(self, *, client: httpx.Client) -> None:
+        """
+        Create an API from an ``httpx`` client.
+
+        This is useful if you want to customise the behaviour of the
+        underlying client.
+        """
         client.base_url = httpx.URL("https://api.flickr.com/services/rest/")
         self.client = client
 
     @classmethod
     def with_api_key(cls, *, api_key: str, user_agent: str) -> typing.Self:
+        """
+        Create a client from a Flickr API key.
+
+        This also requires a User-Agent, which is a recommended good
+        practice with the Flickr API (tho not required).
+        """
         if not api_key:
             raise ValueError(
                 "Cannot create a client with an empty string as the API key"
@@ -135,6 +151,18 @@ class HttpxImplementation(FlickrApi):
         params: dict[str, str] | None = None,
         exceptions: dict[str, Exception] | None = None,
     ) -> ET.Element:
+        """
+        Call the Flickr API and return the XML of the result.
+
+        :param method: The name of the Flickr API method, for example
+            ``flickr.photos.getInfo``
+
+        :param params: Any arguments to pass to the Flickr API method,
+            for example ``{"photo_id": "1234"}``
+
+        :param exceptions: A map from Flickr API error code to exceptions that should
+            be thrown.
+        """
         try:
             return self._call_api(
                 http_method=http_method,
@@ -158,6 +186,13 @@ class HttpxImplementation(FlickrApi):
         params: dict[str, str] | None,
         exceptions: dict[str, Exception],
     ) -> ET.Element:
+        """
+        Call the Flickr API and return the XML of the result.
+
+        This function may be retried if the Flickr API returns an error
+        that we think is retryable, e.g. if it returns
+        a 500 Internal Server Erorr.
+        """
         if params is not None:
             req_params = {"method": method, **params}
         else:
