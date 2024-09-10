@@ -1,3 +1,7 @@
+"""
+Fixtures and utilities to use in the tests.
+"""
+
 from collections.abc import Iterator
 import json
 import os
@@ -14,6 +18,12 @@ from flickr_photos_api import FlickrApi
 
 @pytest.fixture
 def user_agent() -> str:
+    """
+    Returns a User-Agent header to use in testing.
+
+    Although not required, Flickr strongly encourages all API clients
+    to provide a User-Agent header.
+    """
     return "flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api; hello@flickr.org)"
 
 
