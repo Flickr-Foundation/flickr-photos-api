@@ -2,11 +2,6 @@
 Tests for ``flickr_photos_api.api.from_url_methods``.
 """
 
-import os
-import typing
-
-from nitrate.json import DatetimeDecoder
-from nitrate.types import read_typed_json
 import pytest
 
 from flickr_photos_api import FlickrApi
@@ -17,26 +12,13 @@ from flickr_photos_api.types import (
     PhotosInGroup,
     SinglePhoto,
 )
-
-
-T = typing.TypeVar("T")
+from utils import get_fixture
 
 
 class TestGetPhotosFromFlickrUrl:
     """
     Tests for ``FromUrlMethods.get_photos_from_flickr_url``.
     """
-
-    @staticmethod
-    def get_fixture(filename: str, *, model: type[T]) -> T:
-        """
-        Read a JSON fixture and check it's the right type.
-        """
-        return read_typed_json(
-            os.path.join("tests/fixtures/api_responses", filename),
-            model=model,
-            cls=DatetimeDecoder,
-        )
 
     def test_get_single_photo_url(self, api: FlickrApi) -> None:
         """
@@ -45,7 +27,7 @@ class TestGetPhotosFromFlickrUrl:
         actual = api.get_photos_from_flickr_url(
             url="https://www.flickr.com/photos/coast_guard/32812033543"
         )
-        expected = self.get_fixture("32812033543.json", model=SinglePhoto)
+        expected = get_fixture("32812033543.json", model=SinglePhoto)
 
         assert actual == expected
 
@@ -59,7 +41,7 @@ class TestGetPhotosFromFlickrUrl:
         )
 
         actual = api.get_photos_from_flickr_url(url)
-        expected = self.get_fixture("album-72157640898611483.json", model=PhotosInAlbum)
+        expected = get_fixture("album-72157640898611483.json", model=PhotosInAlbum)
 
         assert actual == expected
 
@@ -70,7 +52,7 @@ class TestGetPhotosFromFlickrUrl:
         actual = api.get_photos_from_flickr_url(
             url="https://www.flickr.com/photos/joshuatreenp/albums/72157640898611483/page2"
         )
-        expected = self.get_fixture(
+        expected = get_fixture(
             "album-72157640898611483-page2.json", model=PhotosInAlbum
         )
 
@@ -86,7 +68,7 @@ class TestGetPhotosFromFlickrUrl:
         url = f"https://www.flickr.com/photos/{path_identifier}/"
 
         actual = api.get_photos_from_flickr_url(url)
-        expected = self.get_fixture("user-spike_yun.json", model=CollectionOfPhotos)
+        expected = get_fixture("user-spike_yun.json", model=CollectionOfPhotos)
 
         assert actual == expected
 
@@ -97,9 +79,7 @@ class TestGetPhotosFromFlickrUrl:
         actual = api.get_photos_from_flickr_url(
             url="https://www.flickr.com/photos/meldaniel/galleries/72157716953066942/"
         )
-        expected = self.get_fixture(
-            "gallery-72157716953066942.json", model=PhotosInGallery
-        )
+        expected = get_fixture("gallery-72157716953066942.json", model=PhotosInGallery)
 
         assert actual == expected
 
@@ -110,7 +90,7 @@ class TestGetPhotosFromFlickrUrl:
         actual = api.get_photos_from_flickr_url(
             url="https://www.flickr.com/groups/geologists/"
         )
-        expected = self.get_fixture("group-geologists.json", model=PhotosInGroup)
+        expected = get_fixture("group-geologists.json", model=PhotosInGroup)
 
         assert actual == expected
 
@@ -121,7 +101,7 @@ class TestGetPhotosFromFlickrUrl:
         actual = api.get_photos_from_flickr_url(
             url="https://www.flickr.com/photos/tags/botany"
         )
-        expected = self.get_fixture("tag-botany.json", model=CollectionOfPhotos)
+        expected = get_fixture("tag-botany.json", model=CollectionOfPhotos)
 
         assert actual == expected
 
