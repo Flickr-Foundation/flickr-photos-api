@@ -171,14 +171,16 @@ class TestGetUser:
         Looking up a deleted user by ID throws a ``UserDeleted`` error.
         """
         with pytest.raises(UserDeleted):
-            api.get_user(user_id="51979177@N02")
+            api.get_user(user_id=FlickrUserIds.Deleted)
 
     def test_get_deleted_user_url(self, api: FlickrApi) -> None:
         """
         Looking up a deleted user by profile URL throws a ``UserDeleted`` error.
         """
         with pytest.raises(UserDeleted):
-            api.get_user(user_url="https://www.flickr.com/photos/51979177@N02/")
+            api.get_user(
+                user_url=f"https://www.flickr.com/photos/{FlickrUserIds.Deleted}/"
+            )
 
     def test_get_user_with_unexpected_error(self) -> None:
         """
