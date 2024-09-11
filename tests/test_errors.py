@@ -107,69 +107,6 @@ class TestNonExistentPhotos:
     # I need to remember how to set up that fixture with commenting perms.
 
 
-@pytest.mark.parametrize(
-    ["method", "params"],
-    [
-        pytest.param(
-            "get_user",
-            {"user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist"},
-            id="get_user_by_url",
-        ),
-        pytest.param(
-            "get_user",
-            {"user_id": "1234567@N00"},
-            id="get_user_by_id",
-        ),
-        pytest.param(
-            "get_photos_in_album",
-            {
-                "user_id": "-1",
-                "album_id": "1234",
-            },
-            id="get_photos_in_album_with_missing_user",
-        ),
-        pytest.param(
-            "get_photos_in_album",
-            {
-                "user_url": "https://www.flickr.com/photos/DefinitelyDoesNotExist",
-                "album_id": "1234",
-            },
-            id="get_photos_in_album_with_missing_user_url",
-        ),
-        pytest.param(
-            "get_photos_in_album",
-            {
-                "user_id": "12403504@N02",
-                "album_id": "12345678901234567890",
-            },
-            id="get_photos_in_album_with_missing_album",
-        ),
-        pytest.param(
-            "get_photos_in_gallery",
-            {"gallery_id": "12345678901234567890"},
-            id="get_photos_in_gallery",
-        ),
-        pytest.param(
-            "get_photos_in_user_photostream",
-            {"user_id": "-1"},
-            id="get_public_photos_by_non_existent_user",
-        ),
-        pytest.param(
-            "get_photos_in_group_pool",
-            {"group_url": "https://www.flickr.com/groups/doesnotexist/pool/"},
-            id="get_photos_in_non_existent_group_pool",
-        ),
-    ],
-)
-def test_methods_fail_if_not_found(
-    api: FlickrApi, method: str, params: dict[str, str]
-) -> None:
-    api_method = getattr(api, method)
-
-    with pytest.raises(ResourceNotFound):
-        api_method(**params)
-
-
 def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
     api = FlickrApi.with_api_key(api_key="doesnotexist", user_agent=user_agent)
 

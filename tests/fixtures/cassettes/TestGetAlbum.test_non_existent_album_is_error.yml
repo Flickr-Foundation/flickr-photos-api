@@ -14,42 +14,46 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupGroup&url=https%3A%2F%2Fwww.flickr.com%2Fgroups%2Fdoesnotexist%2Fpool%2F
+    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.photosets.getPhotos&page=1&per_page=10&photoset_id=12345678901234567890&user_id=197130754%40N07
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
-      code=\"1\" msg=\"Group not found\" />\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
+        code=\"1\" msg=\"Photoset not found\" />\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Mon, 29 Apr 2024 14:05:46 GMT
+      - Wed, 11 Sep 2024 08:44:52 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 f9b4eb435f0b621adc8e78b8d2ac6e70.cloudfront.net (CloudFront)
+      - 1.1 5bbfbddc054a85758022c325fb08071e.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - ClfDupsOMMLL8RY_HXfkd9a309J18PIdOERqIj2QiJgxvfvu_lMJ9w==
+      - pOodaMxldgtFxrB_FuUmkQo8p-0CtWMOjglMrIqvI6hOcAltBA33zw==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '108'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Wed, 29-May-2024 14:05:46 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 11-Oct-2024 08:44:52 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Wed, 29-May-2024 14:05:46 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 11-Oct-2024 08:44:52 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-662fa93a-119f45e9359ee25c6ffdb9fb;Root=1-662fa93a-55336dda1d1f9e941ef9bd1d
+      - Root=1-66e15884-31ce28711d10bd0c63b292bc
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.44.190
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.30.122
+    status:
+      code: 200
+      message: OK
 version: 1
