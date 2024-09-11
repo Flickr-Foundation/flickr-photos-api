@@ -17,6 +17,10 @@ class FlickrUserIds:
     # My personal Flickr account
     Alexwlchan = "199258389@N04"
 
+    # This is the user ID of the Upper Midwest Jewish Archives, who deleted
+    # their Flickr account in May 2024.
+    Deleted = "48143042@N05"
+
 
 class FlickrPhotoIds:
     """
