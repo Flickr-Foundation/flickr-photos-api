@@ -1,3 +1,7 @@
+"""
+Get photos from a URL that points to Flickr.com.
+"""
+
 from flickr_url_parser import ParseResult, parse_flickr_url
 
 from .collection_methods import CollectionMethods
@@ -7,6 +11,14 @@ from ..types import PhotosFromUrl
 
 
 class FromUrlMethods(CollectionMethods, SinglePhotoMethods, UserMethods):
+    """
+    A couple of methods for getting data from a Flickr.com URL.
+
+    This allows us to build interfaces where people can select photos
+    by giving us a URL they found in their web browser, and we work
+    out what it points to.
+    """
+
     def get_photos_from_flickr_url(self, url: str) -> PhotosFromUrl:
         """
         Given a URL on Flickr.com, return the photos at that URL
