@@ -1,3 +1,7 @@
+"""
+Convert values retrieved from the Flickr API into nicely-typed values.
+"""
+
 from xml.etree import ElementTree as ET
 
 from .types import LocationInfo, SafetyLevel, Size
