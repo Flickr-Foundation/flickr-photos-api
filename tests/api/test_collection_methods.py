@@ -1,3 +1,7 @@
+"""
+Tests for ``flickr_photos_api.api.collection_methods``.
+"""
+
 import pytest
 
 from data import FlickrUserIds
@@ -192,7 +196,14 @@ class TestCollectionsPhotoResponse:
 
 
 class TestGetAlbum:
+    """
+    Tests for ``collection_methods.get_photos_in_album``.
+    """
+
     def test_get_album_by_user_id(self, api: FlickrApi) -> None:
+        """
+        Get an album by album ID and user ID.
+        """
         photos = api.get_photos_in_album(
             user_id="132051449@N06",
             album_id="72157677773252346",
@@ -203,6 +214,9 @@ class TestGetAlbum:
         )
 
     def test_get_album_by_user_url(self, api: FlickrApi) -> None:
+        """
+        Get an album by album ID and user URL.
+        """
         photos = api.get_photos_in_album(
             user_url="https://www.flickr.com/photos/132051449@N06",
             album_id="72157677773252346",
@@ -213,6 +227,9 @@ class TestGetAlbum:
         )
 
     def test_empty_album_title_is_none(self, api: FlickrApi) -> None:
+        """
+        Get an album where some of the photos don't have titles.
+        """
         album = api.get_photos_in_album(
             user_id="132051449@N06",
             album_id="72157677773252346",
@@ -222,6 +239,9 @@ class TestGetAlbum:
         assert album["photos"][7]["title"] is None
 
     def test_empty_album_description_is_none(self, api: FlickrApi) -> None:
+        """
+        Get an album where none of the photos have descriptions.
+        """
         album_without_desc = api.get_photos_in_album(
             user_id="32834977@N03",
             album_id="72157626164453131",
@@ -232,23 +252,34 @@ class TestGetAlbum:
         )
 
     def test_user_without_pathalias_is_none(self, api: FlickrApi) -> None:
-        photos = api.get_photos_in_album(
+        """
+        If the album's owner doesn't have a path alias set, we don't
+        set it on any of their photos.
+        """
+        result = api.get_photos_in_album(
             user_id="121626365@N06", album_id="72177720316555672"
         )
 
-        assert photos["album"]["owner"]["path_alias"] is None
-        assert photos["photos"][0]["owner"]["path_alias"] is None
+        assert result["album"]["owner"]["path_alias"] is None
+        assert all(photo["owner"]["path_alias"] is None for photo in result["photos"])
 
     def test_user_without_realname_is_none(self, api: FlickrApi) -> None:
-        photos = api.get_photos_in_album(
+        """
+        If the album's owner doesn't have a realname set, we don't
+        set it on any of their photos.
+        """
+        result = api.get_photos_in_album(
             user_id="115357548@N08", album_id="72177720303084733"
         )
 
-        assert photos["album"]["owner"]["realname"] is None
-        assert photos["photos"][0]["owner"]["realname"] is None
+        assert result["album"]["owner"]["realname"] is None
+        assert all(photo["owner"]["realname"] is None for photo in result["photos"])
 
 
 def test_get_gallery_from_id(api: FlickrApi) -> None:
+    """
+    Get photos for a gallery.
+    """
     photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
 
     assert photos == get_fixture(
@@ -326,6 +357,9 @@ class TestGetPhotosInUserPhotostream:
 
 
 def test_get_photos_in_group_pool(api: FlickrApi) -> None:
+    """
+    Get photos in a group pool.
+    """
     photos = api.get_photos_in_group_pool(
         group_url="https://www.flickr.com/groups/slovenia/pool/"
     )
@@ -334,6 +368,9 @@ def test_get_photos_in_group_pool(api: FlickrApi) -> None:
 
 
 def test_get_photos_with_tag(api: FlickrApi) -> None:
+    """
+    Get photos that have a given tag.
+    """
     photos = api.get_photos_with_tag(tag="sunset")
 
     assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos)
