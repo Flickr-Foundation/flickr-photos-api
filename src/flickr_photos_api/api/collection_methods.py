@@ -26,6 +26,11 @@ from ..utils import parse_location, parse_safety_level, parse_sizes
 
 
 class CollectionMethods(LicenseMethods, UserMethods):
+    """
+    Methods for getting collections of photos from Flickr,
+    e.g. albums or galleries.
+    """
+
     def _from_collection_photo(
         self, photo_elem: ET.Element, owner: User | None
     ) -> SinglePhoto:
@@ -288,13 +293,6 @@ class CollectionMethods(LicenseMethods, UserMethods):
         """
         user_id = self._ensure_user_id(user_id=user_id, user_url=user_url)
 
-        return self._get_photos_in_user_photostream(
-            user_id=user_id, page=page, per_page=per_page
-        )
-
-    def _get_photos_in_user_photostream(
-        self, *, user_id: str, page: int, per_page: int
-    ) -> CollectionOfPhotos:
         # See https://www.flickr.com/services/api/flickr.people.getPublicPhotos.html
         resp = self.call(
             method="flickr.people.getPublicPhotos",

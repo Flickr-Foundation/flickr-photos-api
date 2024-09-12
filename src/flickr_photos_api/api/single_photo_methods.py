@@ -25,6 +25,10 @@ from ..utils import parse_location, parse_safety_level
 
 
 class SinglePhotoMethods(LicenseMethods):
+    """
+    Methods for getting information about a single photo.
+    """
+
     def _get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
         """
         Look up the information for a single photo.
