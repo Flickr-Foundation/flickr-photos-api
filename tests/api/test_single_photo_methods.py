@@ -1,3 +1,7 @@
+"""
+Tests for ``flickr_photos_api.api.single_photo_methods``.
+"""
+
 import datetime
 
 import pytest
@@ -36,6 +40,10 @@ class TestGetSinglePhoto:
         ],
     )
     def test_fixes_realname(self, api: FlickrApi, photo_id: str, realname: str) -> None:
+        """
+        This function applies the realname "fixes" we have for users
+        of particular interest.
+        """
         photo = api.get_single_photo(photo_id=photo_id)
 
         assert photo["owner"]["realname"] == realname
@@ -196,14 +204,6 @@ class TestGetSinglePhoto:
             "media": "video",
         }
 
-    @pytest.mark.parametrize(
-        ["photo_id", "is_deleted"], [("16062734376", True), ("53509656752", False)]
-    )
-    def test_is_photo_deleted(
-        self, api: FlickrApi, photo_id: str, is_deleted: bool
-    ) -> None:
-        assert api.is_photo_deleted(photo_id=photo_id) == is_deleted
-
     def test_get_empty_tags_for_untagged_photo(self, api: FlickrApi) -> None:
         """
         Get a photo which doesn't have any tags.
@@ -268,6 +268,28 @@ class TestGetSinglePhoto:
                 "is_machine_tag": True,
             },
         ]
+
+
+class TestIsPhotoDeleted:
+    """
+    Tests for ``SinglePhotoMethods.is_photo_deleted``.
+    """
+
+    def test_if_photo_exists_its_not_deleted(self, api: FlickrApi) -> None:
+        """
+        If a photo exists, it's not deleted.
+        """
+        assert not api.is_photo_deleted(photo_id="53509656752")
+        api.get_single_photo(photo_id="53509656752")
+
+    def test_if_photo_doesnt_exist_its_deleted(self, api: FlickrApi) -> None:
+        """
+        If a photo doesn't exist, it's deleted.
+        """
+        assert api.is_photo_deleted(photo_id="16062734376")
+
+        with pytest.raises(ResourceNotFound):
+            api.get_single_photo(photo_id="16062734376")
 
 
 class TestGetPhotoContexts:
@@ -359,6 +381,16 @@ class TestGetPhotoContexts:
 
 
 class TestPrivatePhotos:
+    """
+    Tests that involve private photos.
+
+    Note, 12 September 2024: Flickr is changing the way private photos
+    are returned for API users who aren't logged in, so these tests
+    will need redoing at some point.
+
+    See https://github.com/Flickr-Foundation/flickr-photos-api/issues/103
+    """
+
     # Private photos are difficult to find (intentionally!).
     #
     # I found a link to this private photo from a Wikimedia Commons file,
@@ -366,12 +398,22 @@ class TestPrivatePhotos:
     # https://commons.wikimedia.org/wiki/File:Capital_Pride_Festival_2017_(35366357641).jpg
 
     def test_get_private_photo_is_error(self, api: FlickrApi) -> None:
+        """
+        If you look up a single photo, you get a ``PhotoIsPrivate`` error.
+        """
         with pytest.raises(PhotoIsPrivate):
             api.get_single_photo(photo_id="35366357641")
 
     def test_private_photo_is_not_deleted(self, api: FlickrApi) -> None:
+        """
+        Private photos aren't deleted.
+        """
         assert not api.is_photo_deleted(photo_id="35366357641")
 
     def test_get_private_photo_contexts_is_error(self, api: FlickrApi) -> None:
+        """
+        If you get the contexts of private photo, you get
+        a ``PhotoIsPrivate`` error.
+        """
         with pytest.raises(ResourceNotFound):
             api.get_photo_contexts(photo_id="35366357641")

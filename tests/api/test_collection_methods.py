@@ -52,6 +52,10 @@ class TestCollectionsPhotoResponse:
     def test_sets_date_unknown_on_date_taken_in_collection(
         self, api: FlickrApi
     ) -> None:
+        """
+        The photos don't include "date taken" if it's not known
+        for a photo in the collection.
+        """
         resp = api.get_photos_in_album(
             user_id="31575009@N05",
             album_id="72157664284840282",
@@ -60,6 +64,9 @@ class TestCollectionsPhotoResponse:
         assert resp["photos"][0]["date_taken"] is None
 
     def test_only_gets_publicly_available_sizes(self, api: FlickrApi) -> None:
+        """
+        Only get the list of publicly available sizes.
+        """
         # This user doesn't allow downloading of their original photos,
         # so when we try to look up an album of their photos in the API,
         # we shouldn't get an Original size.
@@ -73,6 +80,9 @@ class TestCollectionsPhotoResponse:
         )
 
     def test_sets_originalformat_to_none_if_no_downloads(self, api: FlickrApi) -> None:
+        """
+        If the photo can't be downloaded, then the ``original_format`` is None.
+        """
         # This user doesn't allow downloading of their original photos,
         # so when we try to look up an album of their photos in the API,
         # we shouldn't get an Original size.
@@ -84,6 +94,10 @@ class TestCollectionsPhotoResponse:
         assert all(photo["original_format"] is None for photo in resp["photos"])
 
     def test_discards_location_if_accuracy_zero(self, api: FlickrApi) -> None:
+        """
+        If a photo has location accuracy 0, the location information
+        is discarded.
+        """
         # This retrieves an album which a photo that has location accuracy 0,
         # so we want to make sure we discard the location info.
         resp = api.get_photos_in_album(
@@ -99,12 +113,18 @@ class TestCollectionsPhotoResponse:
         assert photo_from_album["location"] is None
 
     def test_can_get_collection_with_videos(self, api: FlickrApi) -> None:
+        """
+        Get a collection which includes videos.
+        """
         api.get_photos_in_album(
             user_id="91178292@N00",
             album_id="72157624715342071",
         )
 
     def test_gets_description_when_present(self, api: FlickrApi) -> None:
+        """
+        Get a collection where all the photos have descriptions.
+        """
         # This is a collection of screenshots from a Flickr Foundation album,
         # which we know have descriptions populated
         album_with_desc = api.get_photos_in_album(
@@ -147,6 +167,9 @@ class TestCollectionsPhotoResponse:
     def test_methods_are_paginated(
         self, api: FlickrApi, method: str, kwargs: dict[str, str]
     ) -> None:
+        """
+        You can page through methods for getting collections of photos.
+        """
         api_method = getattr(api, method)
 
         all_resp = api_method(**kwargs, page=1)
@@ -161,26 +184,24 @@ class TestCollectionsPhotoResponse:
         assert individual_resp["photos"][0] == all_resp["photos"][4]
 
     def test_user_without_pathalias_is_none(self, api: FlickrApi) -> None:
+        """
+        You can get photos in a collection where the owner doesn't
+        have a path alias.
+        """
         gallery = api.get_photos_in_gallery(gallery_id="72157722258598968")
 
         assert gallery["photos"][0]["id"] == "53651808642"
         assert gallery["photos"][0]["owner"]["path_alias"] is None
 
     def test_user_without_realname_is_none(self, api: FlickrApi) -> None:
+        """
+        You can get photos in a collection where the owner doesn't
+        have a real name.
+        """
         gallery = api.get_photos_in_gallery(gallery_id="72157722112740042")
 
         assert gallery["photos"][0]["id"] == "53683422277"
         assert gallery["photos"][0]["owner"]["realname"] is None
-
-    def test_gets_machine_tags(self, api: FlickrApi) -> None:
-        gallery = api.get_photos_in_gallery(gallery_id="72157722373536528")
-
-        photo = gallery["photos"][0]
-        assert photo["id"] == "51282506464"
-        assert photo["machine_tags"] == {
-            "bhl:page": ["33665621"],
-            "dc:identifier": ["httpsbiodiversitylibraryorgpage33665621"],
-        }
 
     @pytest.mark.parametrize(
         ["user_id", "realname"],
@@ -190,9 +211,26 @@ class TestCollectionsPhotoResponse:
         ],
     )
     def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
+        """
+        The collection functions apply the realname "fixes" we have for users
+        of particular interest.
+        """
         resp = api.get_photos_in_user_photostream(user_id=user_id, per_page=1)
         user = resp["photos"][0]["owner"]
         assert user["realname"] == realname
+
+    def test_gets_machine_tags(self, api: FlickrApi) -> None:
+        """
+        Get the machine tags on a collection of photos.
+        """
+        gallery = api.get_photos_in_gallery(gallery_id="72157722373536528")
+
+        photo = gallery["photos"][0]
+        assert photo["id"] == "51282506464"
+        assert photo["machine_tags"] == {
+            "bhl:page": ["33665621"],
+            "dc:identifier": ["httpsbiodiversitylibraryorgpage33665621"],
+        }
 
 
 class TestGetAlbum:

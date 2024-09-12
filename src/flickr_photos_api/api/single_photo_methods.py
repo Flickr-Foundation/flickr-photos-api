@@ -292,6 +292,13 @@ class SinglePhotoMethods(LicenseMethods):
     def is_photo_deleted(self, *, photo_id: str) -> bool:
         """
         Check if a photo has been deleted from Flickr.
+
+        TODO: This can tell us whether a photo exists, but not whether
+        it's been deleted -- we can't know whether a given photo ID
+        never existed, or if it used to exist but doesn't.
+
+        We should change this method to ``get_photo_state()`` returning
+        an enum like exists/does_not_exist/private.
         """
         try:
             self.call(
