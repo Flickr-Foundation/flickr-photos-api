@@ -1,0 +1,347 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=53509656752
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"53509656752\" secret=\"594008e8e3\" server=\"65535\" farm=\"66\" dateuploaded=\"1707143670\"
+        isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"75c674d756\"
+        originalformat=\"jpg\" views=\"570\" media=\"photo\">\n\t<owner nsid=\"126364681@N08\"
+        username=\"Congregation of Sisters of St. Joseph in Canada\" realname=\"Congregation
+        of Sisters of St. Joseph in Canada\" location=\"Canada\" iconserver=\"65535\"
+        iconfarm=\"66\" path_alias=\"csj_canada_archives\">\n\t\t<gift gift_eligible=\"\"
+        new_flow=\"1\" />\n\t</owner>\n\t<title>f13-s013-07-081-house-providence-marian-villa</title>\n\t<description>13
+        women of advanced age are seated in upholstered chairs around the perimeter
+        of a large common room with hardwood floors at House of Providence, London,
+        Ontario. The women are doing hand sewing, reading, or resting.  An unnamed
+        Sister, dressed in traditional habit, stands near a closed door in conversation
+        with one of the women.</description>\n\t<visibility ispublic=\"1\" isfriend=\"0\"
+        isfamily=\"0\" />\n\t<dates posted=\"1707143670\" taken=\"1923-01-01 00:00:00\"
+        takengranularity=\"8\" takenunknown=\"0\" lastupdate=\"1708349145\" />\n\t<editability
+        cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability cancomment=\"1\"
+        canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\" canprint=\"0\"
+        canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people haspeople=\"0\"
+        />\n\t<tags>\n\t\t<tag id=\"126271868-53509656752-451\" author=\"126364681@N08\"
+        authorname=\"Congregation of Sisters of St. Joseph in Canada\" raw=\"Canada\"
+        machine_tag=\"\">canada</tag>\n\t\t<tag id=\"126271868-53509656752-635581\"
+        author=\"126364681@N08\" authorname=\"Congregation of Sisters of St. Joseph
+        in Canada\" raw=\"London (Ont.)\" machine_tag=\"\">londonont</tag>\n\t\t<tag
+        id=\"126271868-53509656752-4329706\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Medical care\" machine_tag=\"\">medicalcare</tag>\n\t\t<tag
+        id=\"126271868-53509656752-5008\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Sister\" machine_tag=\"\">sister</tag>\n\t\t<tag
+        id=\"126271868-53509656752-7826493\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Sisters of St. Joseph\" machine_tag=\"\">sistersofstjoseph</tag>\n\t\t<tag
+        id=\"126271868-53509656752-2997\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Women\" machine_tag=\"\">women</tag>\n\t</tags>\n\t<location
+        latitude=\"42.998825\" longitude=\"-81.256198\" accuracy=\"15\" context=\"0\">\n\t\t<locality>Broughdale</locality>\n\t\t<neighbourhood
+        />\n\t\t<region>Ontario</region>\n\t\t<country>Canada</country>\n\t</location>\n\t<geoperms
+        ispublic=\"1\" iscontact=\"0\" isfriend=\"0\" isfamily=\"0\" />\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/csj_canada_archives/53509656752/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 12 Sep 2024 10:19:53 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - sKTTObkXojx2pyq_G0RzS-4SCRRN7PZof2WiR0ZSgVMNlSxJSocHdQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2842'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sat, 12-Oct-2024 10:19:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 12-Oct-2024 10:19:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66e2c049-40304fa7629a7f8b131b6850
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.3.100
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=53509656752
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"53509656752\" secret=\"594008e8e3\" server=\"65535\" farm=\"66\" dateuploaded=\"1707143670\"
+        isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"75c674d756\"
+        originalformat=\"jpg\" views=\"570\" media=\"photo\">\n\t<owner nsid=\"126364681@N08\"
+        username=\"Congregation of Sisters of St. Joseph in Canada\" realname=\"Congregation
+        of Sisters of St. Joseph in Canada\" location=\"Canada\" iconserver=\"65535\"
+        iconfarm=\"66\" path_alias=\"csj_canada_archives\">\n\t\t<gift gift_eligible=\"\"
+        new_flow=\"1\" />\n\t</owner>\n\t<title>f13-s013-07-081-house-providence-marian-villa</title>\n\t<description>13
+        women of advanced age are seated in upholstered chairs around the perimeter
+        of a large common room with hardwood floors at House of Providence, London,
+        Ontario. The women are doing hand sewing, reading, or resting.  An unnamed
+        Sister, dressed in traditional habit, stands near a closed door in conversation
+        with one of the women.</description>\n\t<visibility ispublic=\"1\" isfriend=\"0\"
+        isfamily=\"0\" />\n\t<dates posted=\"1707143670\" taken=\"1923-01-01 00:00:00\"
+        takengranularity=\"8\" takenunknown=\"0\" lastupdate=\"1708349145\" />\n\t<editability
+        cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability cancomment=\"1\"
+        canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\" canprint=\"0\"
+        canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people haspeople=\"0\"
+        />\n\t<tags>\n\t\t<tag id=\"126271868-53509656752-451\" author=\"126364681@N08\"
+        authorname=\"Congregation of Sisters of St. Joseph in Canada\" raw=\"Canada\"
+        machine_tag=\"\">canada</tag>\n\t\t<tag id=\"126271868-53509656752-635581\"
+        author=\"126364681@N08\" authorname=\"Congregation of Sisters of St. Joseph
+        in Canada\" raw=\"London (Ont.)\" machine_tag=\"\">londonont</tag>\n\t\t<tag
+        id=\"126271868-53509656752-4329706\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Medical care\" machine_tag=\"\">medicalcare</tag>\n\t\t<tag
+        id=\"126271868-53509656752-5008\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Sister\" machine_tag=\"\">sister</tag>\n\t\t<tag
+        id=\"126271868-53509656752-7826493\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Sisters of St. Joseph\" machine_tag=\"\">sistersofstjoseph</tag>\n\t\t<tag
+        id=\"126271868-53509656752-2997\" author=\"126364681@N08\" authorname=\"Congregation
+        of Sisters of St. Joseph in Canada\" raw=\"Women\" machine_tag=\"\">women</tag>\n\t</tags>\n\t<location
+        latitude=\"42.998825\" longitude=\"-81.256198\" accuracy=\"15\" context=\"0\">\n\t\t<locality>Broughdale</locality>\n\t\t<neighbourhood
+        />\n\t\t<region>Ontario</region>\n\t\t<country>Canada</country>\n\t</location>\n\t<geoperms
+        ispublic=\"1\" iscontact=\"0\" isfriend=\"0\" isfamily=\"0\" />\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/csj_canada_archives/53509656752/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 12 Sep 2024 10:19:53 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ar4SZzGyLz4CJSmrEq-MNxL8jZ3BqIADuIFqumPQOD9Z2gstZIMuLA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2842'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 12-Oct-2024 10:19:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66e2c049-2802a953620d4f1b276c3fa5
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.40.231
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
+        License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
+        id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 12 Sep 2024 10:19:54 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - -URWyr8jIJdhYRhIyumCgDJGny8mDs5_FrG0ofBglNTnQIZ5UXf-IQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1251'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 12-Oct-2024 10:19:53 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66e2c049-384c69e4624a4bf37f73890b
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.37.81
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=53509656752
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_s.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_q.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/q/\"
+        media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"81\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_t.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/t/\"
+        media=\"photo\" />\n\t<size label=\"Small\" width=\"240\" height=\"195\" source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_m.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/s/\"
+        media=\"photo\" />\n\t<size label=\"Small 320\" width=\"320\" height=\"260\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_n.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/n/\"
+        media=\"photo\" />\n\t<size label=\"Small 400\" width=\"400\" height=\"324\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_w.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/w/\"
+        media=\"photo\" />\n\t<size label=\"Medium\" width=\"500\" height=\"405\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/m/\"
+        media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"640\" height=\"519\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_z.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/z/\"
+        media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"800\" height=\"649\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_c.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/c/\"
+        media=\"photo\" />\n\t<size label=\"Large\" width=\"1024\" height=\"830\"
+        source=\"https://live.staticflickr.com/65535/53509656752_594008e8e3_b.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/l/\"
+        media=\"photo\" />\n\t<size label=\"Large 1600\" width=\"1600\" height=\"1298\"
+        source=\"https://live.staticflickr.com/65535/53509656752_ff8e8b83b6_h.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/h/\"
+        media=\"photo\" />\n\t<size label=\"Large 2048\" width=\"1894\" height=\"1536\"
+        source=\"https://live.staticflickr.com/65535/53509656752_627ecd4224_k.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/k/\"
+        media=\"photo\" />\n\t<size label=\"Original\" width=\"1894\" height=\"1536\"
+        source=\"https://live.staticflickr.com/65535/53509656752_75c674d756_o.jpg\"
+        url=\"https://www.flickr.com/photos/csj_canada_archives/53509656752/sizes/o/\"
+        media=\"photo\" />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 12 Sep 2024 10:19:54 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 1fca0a05bafb02d090ba78d3ff7b5b4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - wJnPTT8ZjSBC-dT6J2Wk_gs_-9TFhleeag92W9JiJneKSxLg93KjqQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2950'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 12-Oct-2024 10:19:54 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-66e2c04a-698c7bcf20bd66f11458a8ca
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.40.31
+    status:
+      code: 200
+      message: OK
+version: 1
