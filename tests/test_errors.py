@@ -173,6 +173,10 @@ class FlakyClient:
         params: dict[str, str],
         timeout: int,
     ) -> httpx.Response:
+        """
+        Throw the exception if this is the first request, or make
+        a real HTTP call if not.
+        """
         self.request_count += 1
 
         if self.request_count == 1:
@@ -199,6 +203,10 @@ class FlakyClient:
     ],
 )
 def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> None:
+    """
+    If you get a retryable exception, it gets retried and you get
+    the correct response.
+    """
     api.client = FlakyClient(underlying=api.client, exc=exc)  # type: ignore
 
     resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
@@ -207,6 +215,10 @@ def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> Non
 
 
 def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
+    """
+    If you get an unexpected/unexplained error from the underlying
+    HTTP call, it's immediately raised.
+    """
     api.client = FlakyClient(
         underlying=api.client, exc=httpx.ConnectError(message="BOOM!")
     )  # type: ignore
@@ -216,6 +228,10 @@ def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
 
 
 def test_retries_5xx_error(api: FlickrApi) -> None:
+    """
+    If you get a single 5xx error, it gets retried and you get the
+    correct response.
+    """
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add a 500 response as the first response,
     # then we want to see it make a second request to retry it.
@@ -225,6 +241,10 @@ def test_retries_5xx_error(api: FlickrApi) -> None:
 
 
 def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
+    """
+    If you keep getting 5xx errors, eventually the retrying gives up
+    and throws the error.
+    """
     # The cassette for this test was constructed manually: I copy/pasted
     # the 500 response from the previous test so that there were more
     # than it would retry.
@@ -235,6 +255,10 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
 
 
 def test_retries_invalid_xml_error(api: FlickrApi) -> None:
+    """
+    If you get a single invalid XML response, it gets retried and you
+    get the correct response.
+    """
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
@@ -244,6 +268,10 @@ def test_retries_invalid_xml_error(api: FlickrApi) -> None:
 
 
 def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
+    """
+    If you keep getting invalid XML, eventually the retrying gives up
+    and throws the error.
+    """
     # The cassette for this test was constructed manually: I copy/pasted
     # the invalid XML from the previous test so that there were more
     # than it would retry.
@@ -252,6 +280,10 @@ def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
 
 
 def test_retries_error_code_201(api: FlickrApi) -> None:
+    """
+    If you get a single error code 201 response, it gets retried and you
+    get the correct response.
+    """
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
@@ -261,6 +293,10 @@ def test_retries_error_code_201(api: FlickrApi) -> None:
 
 
 def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
+    """
+    If you keep getting error code 201, eventually the retrying gives up
+    and throws the error.
+    """
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
@@ -274,6 +310,10 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
 
 
 def test_an_unrecognised_error_is_generic_exception(api: FlickrApi) -> None:
+    """
+    A completely unrecognised error code from the Flickr API is thrown
+    as a ``UnrecognisedFlickrApiException``.
+    """
     with pytest.raises(UnrecognisedFlickrApiException) as exc:
         api.call(method="flickr.test.null")
 
