@@ -67,7 +67,7 @@ strict = true
 
 [tool.interrogate]
 # fail_under = 100
-fail_under = 90
+fail_under = 91
 omit-covered-files = true
 
 # There are a lot of `__init__` methods and modules in this library,

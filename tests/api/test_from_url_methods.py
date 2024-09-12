@@ -123,6 +123,10 @@ class TestGetPhotosFromFlickrUrl:
     ],
 )
 def test_get_photos_from_flickr_url_is_paginated(api: FlickrApi, url: str) -> None:
+    """
+    If you look up photos from a paginated URL, you get photos from
+    that specific page.
+    """
     first_resp = api.get_photos_from_flickr_url(url)
     second_resp = api.get_photos_from_flickr_url(url + "/page2")
 
@@ -130,5 +134,9 @@ def test_get_photos_from_flickr_url_is_paginated(api: FlickrApi, url: str) -> No
 
 
 def test_unrecognised_url_type_is_error(api: FlickrApi) -> None:
+    """
+    If you try to look up an unrecognised type of URL, it fails
+    with a ``TypeError``.
+    """
     with pytest.raises(TypeError, match="Unrecognised URL type"):
         api.get_photos_from_parsed_flickr_url(parsed_url={"type": "unknown"})  # type: ignore
