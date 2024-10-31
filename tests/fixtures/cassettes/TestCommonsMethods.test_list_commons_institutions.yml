@@ -16,455 +16,470 @@ interactions:
     method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.commons.getInstitutions
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<institutions>\n\t<institution
-      nsid=\"200049760@N08\" date_launch=\"1706549057\">\n\t\t<name>CommonsTestAccount</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">https://flickr.org</url>\n\t\t\t<url type=\"license\">https://flickr.org</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/200049760@N08/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"61270229@N05\" date_launch=\"1578333809\">\n\t\t<name>NavyMedicine</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">https://www.med.navy.mil/Pages/default.aspx</url>\n\t\t\t<url
-      type=\"license\">https://www.flickr.com/people/navymedicine/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/navymedicine/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"134319968@N02\" date_launch=\"1529602845\">\n\t\t<name>Colecci\xF3n Amadeo
-      Le\xF3n - Bocon\xF3</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">fotoleonbocono.tumblr.com</url>\n\t\t\t<url
-      type=\"license\">https://www.tumblr.com/fotoleonbocono-blog/174576043211/galer%C3%ADa-flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/bocono/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"150408343@N02\" date_launch=\"1494442159\">\n\t\t<name>M\xE9diath\xE8ques
-      Valence Romans agglom\xE9ration</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://mediatheques.valenceromans.fr</url>\n\t\t\t<url
-      type=\"license\">http://mediatheques.valenceromans.fr/patrimoine</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/mediathequesvalenceromansagglo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"148865600@N02\" date_launch=\"1491348647\">\n\t\t<name>Halifax Municipal
-      Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.halifax.ca/archives</url>\n\t\t\t<url
-      type=\"license\">https://www.halifax.ca/about-halifax/municipal-archives/services/copying-services</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/halifaxarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"145517650@N04\" date_launch=\"1488312432\">\n\t\t<name>Armenian Studies
-      Program, Fresno State</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.fresnostate.edu/artshum/armenianstudies/</url>\n\t\t\t<url
-      type=\"license\">http://www.fresnostate.edu/artshum/armenianstudies/library/index.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/armenianstudies/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"105662205@N04\" date_launch=\"1481666877\">\n\t\t<name>UC Berkeley, Department
-      of Geography</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://geography.berkeley.edu</url>\n\t\t\t<url
-      type=\"license\">http://geography.berkeley.edu/geography-at-berkeley-flickr-commons-site/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/105662205@N04/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"142575440@N02\" date_launch=\"1474649711\">\n\t\t<name>Liberas</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.liberaalarchief.be/</url>\n\t\t\t<url type=\"license\">http://www.liberaalarchief.be/doc/liberas_rights_statement.pdf</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/liberas/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"138361426@N08\" date_launch=\"1474307180\">\n\t\t<name>East Riding Archives</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www2.eastriding.gov.uk/leisure/archives-family-and-local-history/</url>\n\t\t\t<url
-      type=\"license\">http://www2.eastriding.gov.uk/leisure/archives-family-and-local-history/using-our-service/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/erarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"133323184@N07\" date_launch=\"1452639297\">\n\t\t<name>Camden Public
-      Library (Maine)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.librarycamden.org</url>\n\t\t\t<url
-      type=\"license\">http://www.librarycamden.org/learn-research/walsh-history-center/photo-services/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/cplmaine/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"135637350@N04\" date_launch=\"1444242445\">\n\t\t<name>American Aviation
-      Historical Society</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.aahs-online.org</url>\n\t\t\t<url
-      type=\"license\">http://www.aahs-online.org/cc_notice.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/aahs_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"132445284@N06\" date_launch=\"1440113261\">\n\t\t<name>TXSTATE Library
-      Digital Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://exhibits.library.txstate.edu</url>\n\t\t\t<url
-      type=\"license\">http://www.library.txstate.edu/about/departments/dws/flickr-rights-statement</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/txstate-library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"126398744@N08\" date_launch=\"1437424251\">\n\t\t<name>The Gallen-Kallela
-      Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.gallen-kallela.fi</url>\n\t\t\t<url
-      type=\"license\">http://www.gallen-kallela.fi/en/kokoelmat/the-gallen-kallela-museum-participates-in-the-flickr-commons/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/gallen-kallelanmuseo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"99115493@N08\" date_launch=\"1434742978\">\n\t\t<name>Sinaloa Fotograf\xEDas
-      Hist\xF3ricas</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://ahgs.gob.mx/</url>\n\t\t\t<url
-      type=\"license\">http://ahgs.gob.mx/servicios-digitales/archivo-fotografico/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/99115493@N08/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"128445772@N04\" date_launch=\"1433870682\">\n\t\t<name>Presidency Of
-      The Republic Of Turkey Directorate o</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.byegm.gov.tr/english</url>\n\t\t\t<url
-      type=\"license\">http://www.byegm.gov.tr/turkce/rightsstatement</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/dgpi/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"98304311@N03\" date_launch=\"1433530088\">\n\t\t<name>Regionaal Archief
-      Alkmaar Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.archiefalkmaar.nl</url>\n\t\t\t<url
-      type=\"license\">https://www.regionaalarchiefalkmaar.nl/over-ons-english/open-data-english</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/public-domain-archief-alkmaar/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"128520551@N04\" date_launch=\"1432770226\">\n\t\t<name>UVicLibraries</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.uvic.ca/library/</url>\n\t\t\t<url type=\"license\">http://www.uvic.ca/library/featured/collections/disclaimer-flickr.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/128520551@N04/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"126364681@N08\" date_launch=\"1429311795\">\n\t\t<name>Congregation of
-      Sisters of St. Joseph in Canada</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.csjcanada.org/csj-archives</url>\n\t\t\t<url
-      type=\"license\">http://www.csjcanada.org/csj-archives</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/csj_canada_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"130536320@N07\" date_launch=\"1427241867\">\n\t\t<name>VCU Libraries
-      Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.library.vcu.edu/</url>\n\t\t\t<url
-      type=\"license\">http://www.library.vcu.edu/about/policies/copyright-privacy/#flickr-policy</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/vcucommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"125149169@N06\" date_launch=\"1420651955\">\n\t\t<name>Vestfoldmuseene
-      | Vestfold Museums</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.vestfoldmuseene.no</url>\n\t\t\t<url
-      type=\"license\">http://vestfoldmuseene.no/flickr_commons/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/vestfoldmuseene/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"123233489@N03\" date_launch=\"1419716220\">\n\t\t<name>Aalto University
-      Library and Archive Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.aalto.fi/en/</url>\n\t\t\t<url
-      type=\"license\">http://lib.aalto.fi/en/materials/images/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/aaltocommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"127336509@N06\" date_launch=\"1419703242\">\n\t\t<name>Senado Federal
-      do Brasil</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www12.senado.gov.br/noticias</url>\n\t\t\t<url
-      type=\"license\">http://www12.senado.gov.br/noticias/arquivo-de-imagens-no-flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/senadothecommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"124448282@N08\" date_launch=\"1417713219\">\n\t\t<name>Huron County Museum
-      &amp; Historic Gaol</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://huroncounty.ca/museum/</url>\n\t\t\t<url
-      type=\"license\">http://huroncounty.ca/museum/online_collections.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/huroncountymuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"124495553@N05\" date_launch=\"1417632949\">\n\t\t<name>Archives of the
-      Finnish Broadcasting Company Yle</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.yle.fi
-      (in Finnish) or http://yle.fi/yleisradio/about-yle/this-is-yle (in English)</url>\n\t\t\t<url
-      type=\"license\">http://yle.fi/yleisradio/about-yle/yle-sales/yle-archives-flickr
-      </url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/ylearkisto/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"47756470@N03\" date_launch=\"1412080144\">\n\t\t<name>Archives of Medicine
-      - NLM - NIH</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nlm.nih.gov/</url>\n\t\t\t<url
-      type=\"license\">http://www.nlm.nih.gov/hmd/collections/photos/flickr.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nlmhmd/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"124344537@N02\" date_launch=\"1411475862\">\n\t\t<name>The Graduate Institute,
-      Geneva</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://graduateinstitute.ch/home/research/library.html</url>\n\t\t\t<url
-      type=\"license\">http://graduateinstitute.ch/fr/home/research/library/archives/boris-souvarine.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/graduateinstitute_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"126472954@N08\" date_launch=\"1410876445\">\n\t\t<name>Universit\xE9
-      de Caen Normandie</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.unicaen.fr</url>\n\t\t\t<url
-      type=\"license\">http://scd.unicaen.fr/flickr-commons/rights-statement-designation-juridique/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/universite_caen/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"35978124@N04\" date_launch=\"1410263071\">\n\t\t<name>Faculty of Music,
-      Trinity Laban</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.trinitylaban.ac.uk/jerwoodlibrary</url>\n\t\t\t<url
-      type=\"license\">http://www.trinitylaban.ac.uk/student-experience/facilities/faculty-music/jerwood-library/collections-resources/archives-and</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/jerwoodtcm/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"126377022@N07\" date_launch=\"1409324867\">\n\t\t<name>Internet Archive
-      Book Images</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://archive.org</url>\n\t\t\t<url
-      type=\"license\">https://archive.org/about/terms.php</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/internetarchivebookimages/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"104959762@N04\" date_launch=\"1402064583\">\n\t\t<name>Cloyne &amp; District
-      Historical Society</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.cloynepioneermuseum.ca</url>\n\t\t\t<url
-      type=\"license\">https://pioneer.mazinaw.on.ca/licensing-terms/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/cdhs/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"124327652@N02\" date_launch=\"1401802992\">\n\t\t<name>tyrrellhistoricallibrary</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.beaumontlibrary.org/tyrrell_historical_library.htm</url>\n\t\t\t<url
-      type=\"license\">http://cdm16058.contentdm.oclc.org/ui/custom/default/collection/default/resources/custompages/policies/FlickrCommons.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/124327652@N02/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"56434318@N05\" date_launch=\"1401193014\">\n\t\t<name>Preus museum</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">www.preusmuseum.no</url>\n\t\t\t<url type=\"license\">http://www.preusmuseum.no/Discover-the-Collections/Photographic-Collection/Flickr-The-Commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/preusmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"94268151@N07\" date_launch=\"1400586985\">\n\t\t<name>Local History &amp;
-      Archives, Hamilton Public Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.hpl.ca</url>\n\t\t\t<url
-      type=\"license\">http://www.hpl.ca/articles/use-images</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/hpllocalhistory/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"108745105@N04\" date_launch=\"1400007738\">\n\t\t<name>UBC Library Digitization
-      Centre</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://diginit.library.ubc.ca/</url>\n\t\t\t<url
-      type=\"license\">http://digitalcollections.library.ubc.ca/cdm/about</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/ubclibrary_digicentre/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"60147353@N07\" date_launch=\"1399375726\">\n\t\t<name>Salt Research</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://saltonline.org/en/anasayfa</url>\n\t\t\t<url type=\"license\">https://archives.saltresearch.org/salt/info_rights.jsp</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/saltonline/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"107895189@N03\" date_launch=\"1397132793\">\n\t\t<name>Tasmanian Archives
-      and State Library (Commons)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.linc.tas.gov.au/tasmaniasheritage</url>\n\t\t\t<url
-      type=\"license\">http://www.linc.tas.gov.au/tasmaniasheritage/browse/pictorial/flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/107895189@N03/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"108605878@N06\" date_launch=\"1397131200\">\n\t\t<name>The Finnish Museum
-      of Photography</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.valokuvataiteenmuseo.fi/</url>\n\t\t\t<url
-      type=\"license\">http://www.valokuvataiteenmuseo.fi/en/information-en/the-terms-of-use-of-the-images#images-on-flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/valokuvataiteenmuseo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"26491575@N05\" date_launch=\"1395348974\">\n\t\t<name>Library Company
-      of Philadelphia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.librarycompany.org/</url>\n\t\t\t<url
-      type=\"license\">http://www.librarycompany.org/collections/rightsrepro/rr_digitalresources.htm</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/library-company-of-philadelphia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"95711690@N03\" date_launch=\"1394537964\">\n\t\t<name>Provincial Archives
-      of Alberta</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://culture.alberta.ca/paa/default.aspx</url>\n\t\t\t<url
-      type=\"license\">http://culture.alberta.ca/paa/about/flickr.aspx</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/alberta_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"31033598@N03\" date_launch=\"1391520831\">\n\t\t<name>Miami U. Libraries
-      - Digital Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lib.miamioh.edu</url>\n\t\t\t<url
-      type=\"license\">https://spec.lib.miamioh.edu/home/services/copyright/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/muohio_digital_collections/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"12403504@N02\" date_launch=\"1386975388\">\n\t\t<name>The British Library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">www.bl.uk</url>\n\t\t\t<url type=\"license\">https://www.bl.uk/about-us/terms-and-conditions/content-on-flickr-and-wikimedia-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/britishlibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"109550159@N08\" date_launch=\"1386709335\">\n\t\t<name>Costic\u0103 Acsinte
-      Archive</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://colectiacosticaacsinte.eu/</url>\n\t\t\t<url
-      type=\"license\">http://colectiacosticaacsinte.eu/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/costicaacsinte/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"48220291@N04\" date_launch=\"1381954880\">\n\t\t<name>National Library
-      of Norway</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nb.no</url>\n\t\t\t<url
-      type=\"license\">http://www.nb.no/Kontakt/Kontakt/Sosiale-medier/Flickr-Commons-No-known-copyright-restrictions</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/national_library_of_norway/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"69269002@N04\" date_launch=\"1381528229\">\n\t\t<name>libraryrahs@gmail.com</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.rahs.org.au/</url>\n\t\t\t<url type=\"license\">http://www.rahs.org.au/about-rahs/rahs-copyright-statement/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/royalaustralianhistoricalsociety/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"88669438@N03\" date_launch=\"1378762017\">\n\t\t<name>Fotoarkivet NTM</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">www.tekniskmuseum.no / www.dextraphoto.no</url>\n\t\t\t<url type=\"license\">http://dextraphoto.photodeck.com/about</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/dextraphoto/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"99278405@N04\" date_launch=\"1378761917\">\n\t\t<name>California Historical
-      Society Digital Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.californiahistoricalsociety.org/</url>\n\t\t\t<url
-      type=\"license\">http://www.californiahistoricalsociety.org/research/flickr.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/chs_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"99902797@N03\" date_launch=\"1378760341\">\n\t\t<name>Schlesinger Library,
-      RIAS, Harvard University</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.radcliffe.harvard.edu/schlesinger-library</url>\n\t\t\t<url
-      type=\"license\">https://www.radcliffe.harvard.edu/schlesinger-library/research-services/permissions-and-copyright</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/schlesinger_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"95772747@N07\" date_launch=\"1376330725\">\n\t\t<name>National Museum
-      of Denmark</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://natmus.dk/</url>\n\t\t\t<url
-      type=\"license\">http://natmus.dk/en/forsknings-og-formidlingsafdelingen/center-for-strategi-kommunikation-og-administration/rights-statement-the-commons-on-flickr/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/thenationalmuseumofdenmark/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"48641766@N05\" date_launch=\"1372285018\">\n\t\t<name>Svenska litteraturs\xE4llskapet
-      i Finland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.sls.fi</url>\n\t\t\t<url
-      type=\"license\">http://www.sls.fi/doc.php?category=2&amp;language=eng</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/slsarkiva/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"94021017@N05\" date_launch=\"1372285004\">\n\t\t<name>National Archives
-      of Estonia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.ra.ee/</url>\n\t\t\t<url
-      type=\"license\">http://www.ra.ee/en/flickr-commons/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/national_archives_of_estonia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"47154409@N06\" date_launch=\"1371066890\">\n\t\t<name>Het Nieuwe Instituut
-      - Architecture Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.thenewinstitute.nl</url>\n\t\t\t<url
-      type=\"license\">https://collectie.hetnieuweinstituut.nl/en/flickr-commons-rights-statement</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nai_collection/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"39758725@N03\" date_launch=\"1371066882\">\n\t\t<name>Dundas Museum and
-      Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.dundasmuseum.ca</url>\n\t\t\t<url
-      type=\"license\">http://www.dundasmuseum.ca/photographs.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/dundasmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"95717549@N07\" date_launch=\"1371066881\">\n\t\t<name>UL Digital Library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.ul.ie/~library</url>\n\t\t\t<url type=\"license\">http://www2.ul.ie/web/WWW/Services/Library/Digital_Library</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/ul_digital_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"52529054@N06\" date_launch=\"1371066880\">\n\t\t<name>Mennonite Church
-      USA Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.mennoniteusa.org/executive-board/archives/</url>\n\t\t\t<url
-      type=\"license\">https://www.mennoniteusa.org/resource-portal/resource/archives-copyright-statement/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/mennonitechurchusa-archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"38561291@N04\" date_launch=\"1369941342\">\n\t\t<name>Archives of the
-      Law Society of Ontario</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lsuc.on.ca/PDC/Archives/Overview-of-the-Archives/</url>\n\t\t\t<url
-      type=\"license\">http://www.lsuc.on.ca/PDC/Archives/Archives-Collection/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/lsuc_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"27331537@N06\" date_launch=\"1369941313\">\n\t\t<name>MHNSW - State Archives
-      Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.records.nsw.gov.au/</url>\n\t\t\t<url
-      type=\"license\">http://www.records.nsw.gov.au/about-us/rights-and-permissions</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/state-records-nsw/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"54403180@N04\" date_launch=\"1367877142\">\n\t\t<name>Public Record Office
-      of Northern Ireland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.proni.gov.uk</url>\n\t\t\t<url
-      type=\"license\">http://www.proni.gov.uk/index/search_the_archives/pronionflickr.htm</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/proni/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"23121382@N07\" date_launch=\"1367877137\">\n\t\t<name>Deseronto Archives</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://deserontoarchives.wordpress.com</url>\n\t\t\t<url type=\"license\">http://deserontoarchives.wordpress.com/collections/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/deserontoarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"62173425@N02\" date_launch=\"1318321610\">\n\t\t<name>Stockholm Transport
-      Museum Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.sparvagsmuseet.sl.se</url>\n\t\t\t<url
-      type=\"license\">http://sparvagsmuseet.sl.se/stockholms-transport-museum-om-flickr-commons/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/stockholmtransportmuseum_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"67193564@N03\" date_launch=\"1317052532\">\n\t\t<name>National Library
-      of Australia Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.nla.gov.au</url>\n\t\t\t<url
-      type=\"license\">http://www.nla.gov.au/flickr-commons-copyright</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/national_library_of_australia_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"59811348@N05\" date_launch=\"1316418893\">\n\t\t<name>Arkivverket (National
-      Archives of Norway)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.arkivverket.no/</url>\n\t\t\t<url
-      type=\"license\">https://www.arkivverket.no/en/about-us/the-use-of-photos</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/national_archives_of_norway/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"45270502@N06\" date_launch=\"1309982163\">\n\t\t<name>Royal Danish Library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">www.kb.dk</url>\n\t\t\t<url type=\"license\">http://www.kb.dk/en/kb/copyright/index.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/departmentofmapsprintsandphotographstheroyallibrarydenmark/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"61498590@N03\" date_launch=\"1308358459\">\n\t\t<name>Museum of Photographic
-      Arts Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.mopa.org</url>\n\t\t\t<url
-      type=\"license\">http://www.mopa.org/content/museum-photographic-arts-flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/mopa1/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"47290943@N03\" date_launch=\"1306964341\">\n\t\t<name>National Library
-      of Ireland on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nli.ie/en/homepage.aspx</url>\n\t\t\t<url
-      type=\"license\">http://www.nli.ie/en/flickr-commons.aspx</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nlireland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"29295370@N07\" date_launch=\"1305744280\">\n\t\t<name>Tyne &amp; Wear
-      Archives &amp; Museums</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.twmuseums.org.uk/</url>\n\t\t\t<url
-      type=\"license\">http://www.twmuseums.org.uk/usingimagesfromflickr/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/twm_news/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"49487266@N07\" date_launch=\"1304524824\">\n\t\t<name>San Diego Air &amp;
-      Space Museum Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://sandiegoairandspace.org/</url>\n\t\t\t<url
-      type=\"license\">http://sandiegoairandspace.org/collections/collection_index.php?id=3</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/sdasmarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"47908901@N03\" date_launch=\"1303334080\">\n\t\t<name>Museum of Hartlepool</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.destinationhartlepool.com</url>\n\t\t\t<url type=\"license\">http://www.hartlepool.gov.uk/info/100009/leisure_and_culture/1533/collections/1</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/hartlepool_museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"41815917@N06\" date_launch=\"1302113053\">\n\t\t<name>Woodrow Wilson
-      Presidential Library Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.woodrowwilson.org</url>\n\t\t\t<url
-      type=\"license\">http://woodrowwilson.org/index.php/library-a-archives/research</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/wwplarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"44494372@N05\" date_launch=\"1283176250\">\n\t\t<name>NASA on The Commons</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.nasa.gov/</url>\n\t\t\t<url type=\"license\">http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nasacommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"14456531@N07\" date_launch=\"1277223438\">\n\t\t<name>National Library
-      of Scotland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nls.uk/</url>\n\t\t\t<url
-      type=\"license\">https://www.nls.uk/copyright/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/nlscotland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"9189488@N02\" date_launch=\"1276472500\">\n\t\t<name>Lj\xF3smyndasafn
-      Reykjav\xEDkur / Reykjav\xEDk Museum of</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.photomuseum.is</url>\n\t\t\t<url
-      type=\"license\">http://ljosmyndasafnreykjavikur.is/english/information.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/reykjavikmuseumofphotography/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"25960495@N06\" date_launch=\"1276472325\">\n\t\t<name>Keene and Cheshire
-      County (NH) Historical Photos</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.ci.keene.nh.us/library/
-      \  and  http://www.hsccnh.org/</url>\n\t\t\t<url type=\"license\">http://keenepubliclibrary.org/library/commons-rights-statement</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/keenepubliclibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"37547255@N08\" date_launch=\"1274822330\">\n\t\t<name>Fylkesarkivet i
-      Vestland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://fylkesarkiv.no</url>\n\t\t\t<url
-      type=\"license\">http://www.fylkesarkiv.no/en/side/flickr-commons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/fylkesarkiv/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"30515687@N05\" date_launch=\"1274286646\">\n\t\t<name>Cornell University
-      Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.library.cornell.edu/</url>\n\t\t\t<url
-      type=\"license\">http://hdl.handle.net/1813.001/62pk</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/cornelluniversitylibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"33147718@N05\" date_launch=\"1273608526\">\n\t\t<name>Australian National
-      Maritime Museum on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.anmm.gov.au/</url>\n\t\t\t<url
-      type=\"license\">http://www.anmm.gov.au/site/page.cfm?u=1657</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/anmm_thecommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"41131493@N06\" date_launch=\"1271294026\">\n\t\t<name>SMU Libraries Digital
-      Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://smu.edu/cul/</url>\n\t\t\t<url
-      type=\"license\">http://digitalcollections.smu.edu/all/cul/flickr/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/smu_cul_digitalcollections/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"47326604@N02\" date_launch=\"1271293732\">\n\t\t<name>Texas State Archives</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.tsl.state.tx.us</url>\n\t\t\t<url type=\"license\">http://www.tsl.state.tx.us/exhibits/ccc_flickr.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/texasstatearchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"36988361@N08\" date_launch=\"1271026069\">\n\t\t<name>Center for Jewish
-      History, NYC</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.cjh.org</url>\n\t\t\t<url
-      type=\"license\">http://www.cjh.org/collections/copyright.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/center_for_jewish_history/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"37784107@N08\" date_launch=\"1270656024\">\n\t\t<name>UA Archives | Upper
-      Arlington History</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.uaarchives.org</url>\n\t\t\t<url
-      type=\"license\">http://www.uaarchives.org/commons.htm</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/uaarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"48143042@N05\" date_launch=\"1270600982\">\n\t\t<name>Upper Midwest Jewish
-      Archives, University of Minne</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.jhsum.org/</url>\n\t\t\t<url
-      type=\"license\">http://www.jhsum.org/collections/copyright/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/jhsum-commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"31575009@N05\" date_launch=\"1269389812\">\n\t\t<name>The National Archives
-      UK</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nationalarchives.gov.uk/</url>\n\t\t\t<url
-      type=\"license\">http://www.nationalarchives.gov.uk/legal/copyright/creative-commons-and-photo-sharing/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationalarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"8337233@N06\" date_launch=\"1266878529\">\n\t\t<name>UW Digital Collections</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://content.lib.washington.edu/index.html</url>\n\t\t\t<url
-      type=\"license\">http://content.lib.washington.edu/FlickrCommons.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/uw_digital_images/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"35740357@N03\" date_launch=\"1265050904\">\n\t\t<name>The U.S. National
-      Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.archives.gov/</url>\n\t\t\t<url
-      type=\"license\">http://www.archives.gov/social-media/flickr-faqs.html#9</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/usnationalarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"37381115@N04\" date_launch=\"1260488220\">\n\t\t<name>Bergen Public Library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://nettbiblioteket.no/</url>\n\t\t\t<url type=\"license\">http://nettbiblioteket.no/biblioteksinformasjon/flickr-commons.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/bergen_public_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"35128489@N07\" date_launch=\"1256682119\">\n\t\t<name>LSE Library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www2.lse.ac.uk/library/Home.aspx</url>\n\t\t\t<url type=\"license\">https://www.lse.ac.uk/library/about/library-rules-and-general-policies#:~:text=Flickr%20Rights%20Statement</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/lselibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"36281769@N04\" date_launch=\"1255562741\">\n\t\t<name>JWA Commons</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://jwa.org/</url>\n\t\t\t<url type=\"license\">http://jwa.org/exhibits/ww2/flickrcommons</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/jwacommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"23686862@N03\" date_launch=\"1254441942\">\n\t\t<name>Galt Museum &amp;
-      Archives on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.galtmuseum.com/</url>\n\t\t\t<url
-      type=\"license\">http://www.galtmuseum.com/copyright.htm</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/galt-museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"35532303@N08\" date_launch=\"1242345692\">\n\t\t<name>Getty Research
-      Institute</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.getty.edu/</url>\n\t\t\t<url
-      type=\"license\">http://www.getty.edu/legal/copyright.html#flickr</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/gettyresearchinstitute/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"37199428@N06\" date_launch=\"1242082545\">\n\t\t<name>LlGC ~ NLW</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.llgc.org.uk/</url>\n\t\t\t<url type=\"license\">https://www.library.wales/commercial-services/media/licensing</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/llgc/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"35310696@N04\" date_launch=\"1241052256\">\n\t\t<name>The Field Museum
-      Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.fieldmuseum.org/</url>\n\t\t\t<url
-      type=\"license\">http://www.fieldmuseum.org/research_collections/library/library_sites/photo_archives/flickr.htm</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/field_museum_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"36038586@N04\" date_launch=\"1239745638\">\n\t\t<name>DC Public Library
-      Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.dclibrarylabs.org/</url>\n\t\t\t<url
-      type=\"license\">http://dclibrarylabs.org/projects/flickr-commons/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/dcplcommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"34419668@N08\" date_launch=\"1237325759\">\n\t\t<name>Swedish National
-      Heritage Board</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.kms.raa.se/cocoon/bild/public_search.html</url>\n\t\t\t<url
-      type=\"license\">https://www.raa.se/hitta-information/arkiv-och-bibliotek/om-arkivet-och-biblioteket/fotografier/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/swedish_heritage_board/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"34101160@N07\" date_launch=\"1236893050\">\n\t\t<name>nha.library</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.nha.org/</url>\n\t\t\t<url type=\"license\">http://www.nha.org/library/copyright-flickr.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nantuckethistoricalassociation/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"34586311@N05\" date_launch=\"1234571524\">\n\t\t<name>OSU Special Collections
-      &amp; Archives : Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://osulibrary.oregonstate.edu/archives/</url>\n\t\t\t<url
-      type=\"license\">http://scarc.library.oregonstate.edu/duplication.html</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/osucommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"31846825@N04\" date_launch=\"1234477028\">\n\t\t<name>State Library and
-      Archives of Florida</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.floridamemory.com/</url>\n\t\t\t<url
-      type=\"license\">http://floridamemory.com/disclaimer/disclaimer-flickr.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/floridamemory/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"32605636@N06\" date_launch=\"1233008101\">\n\t\t<name>State Library of
-      Queensland, Australia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.slq.qld.gov.au</url>\n\t\t\t<url
-      type=\"license\">http://www.slq.qld.gov.au/home/copyright/#flickr</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/statelibraryqueensland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"30835311@N07\" date_launch=\"1231971103\">\n\t\t<name>National Galleries
-      of Scotland Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nationalgalleries.org/</url>\n\t\t\t<url
-      type=\"license\">http://www.nationalgalleries.org/aboutus/article/1:4946/295</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationalgalleries/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"32951986@N05\" date_launch=\"1229382367\">\n\t\t<name>New York Public
-      Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://nypl.org</url>\n\t\t\t<url
-      type=\"license\">http://www.nypl.org/legal/flickr.cfm</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/nypl/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"32741315@N06\" date_launch=\"1227758262\">\n\t\t<name>National Library
-      NZ on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.natlib.govt.nz/</url>\n\t\t\t<url
-      type=\"license\">http://natlib.govt.nz/about-this-site/copyright-and-privacy/reusing-objects-from-this-site</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationallibrarynz_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"32300107@N06\" date_launch=\"1226398620\">\n\t\t<name>IWM Collections</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.iwm.org.uk</url>\n\t\t\t<url type=\"license\">http://www.iwm.org.uk/corporate/privacy-copyright/licence</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/imperialwarmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"30115723@N02\" date_launch=\"1226355399\">\n\t\t<name>Australian War
-      Memorial collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.awm.gov.au/</url>\n\t\t\t<url
-      type=\"license\">https://www.awm.gov.au/about/organisation/corporate/copyright</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/australian-war-memorial/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"29998366@N02\" date_launch=\"1224571148\">\n\t\t<name>Nationaal Archief</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.nationaalarchief.nl/</url>\n\t\t\t<url type=\"license\">http://beeldbank.nationaalarchief.nl/index.php?option=com_memorix&amp;mrx_mod=content&amp;mrx_item=auteursrechten</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationaalarchief/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"25786829@N08\" date_launch=\"1223937653\">\n\t\t<name>Mus\xE9e McCord
-      Stewart Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.mccord-museum.qc.ca/</url>\n\t\t\t<url
-      type=\"license\">https://www.musee-mccord-stewart.ca/en/collections/photographic-services-and-copyright/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/museemccordmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"30194653@N06\" date_launch=\"1223306569\">\n\t\t<name>The Library of
-      Virginia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lva.virginia.gov/</url>\n\t\t\t<url
-      type=\"license\">http://www.lva.virginia.gov/copyright.htm</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/library_of_virginia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"29454428@N08\" date_launch=\"1222730121\">\n\t\t<name>State Library of
-      NSW</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.sl.nsw.gov.au/</url>\n\t\t\t<url
-      type=\"license\">https://www.sl.nsw.gov.au/copyright</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/statelibraryofnsw/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"11334970@N05\" date_launch=\"1221664704\">\n\t\t<name>Royal Museums Greenwich</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.nmm.ac.uk/</url>\n\t\t\t<url type=\"license\">http://www.nmm.ac.uk/copyright</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationalmaritimemuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"26808453@N03\" date_launch=\"1219864305\">\n\t\t<name>National Science
-      and Media Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nmsi.ac.uk</url>\n\t\t\t<url
-      type=\"license\">http://www.nationalmediamuseum.org.uk/Photography/copyright.asp</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/nationalmediamuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"26577438@N06\" date_launch=\"1218756335\">\n\t\t<name>Biblioteca de Arte-Funda\xE7\xE3o
-      Calouste Gulbenkian</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.biblarte.gulbenkian.pt/</url>\n\t\t\t<url
-      type=\"license\">http://www.biblarte.gulbenkian.pt/content.asp?cod=servico_leitura&amp;menu=servicos&amp;parent=servicos&amp;lang=en</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/biblarte/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"7167652@N06\" date_launch=\"1216330862\">\n\t\t<name>George Eastman Museum</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.eastmanhouse.org/</url>\n\t\t\t<url type=\"license\">http://www.eastmanhouse.org/flickr/statement.php</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/george_eastman_house/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"26134435@N05\" date_launch=\"1214481989\">\n\t\t<name>bibliothequedetoulouse</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.bm-toulouse.fr/</url>\n\t\t\t<url type=\"license\">https://www.bibliotheque.toulouse.fr/pratique/nous-suivre/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/bibliothequedetoulouse/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"25053835@N03\" date_launch=\"1213633686\">\n\t\t<name>Smithsonian Institution</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.si.edu/</url>\n\t\t\t<url type=\"license\">http://www.si.edu/copyright/</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/smithsonian/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"24785917@N03\" date_launch=\"1207551600\">\n\t\t<name>Powerhouse Museum
-      Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.powerhousemuseum.com/</url>\n\t\t\t<url
-      type=\"license\">http://www.powerhousemuseum.com/imageservices/?page_id=157</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/powerhouse_museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
-      nsid=\"8623220@N02\" date_launch=\"1200470400\">\n\t\t<name>The Library of Congress</name>\n\t\t<urls>\n\t\t\t<url
-      type=\"site\">http://www.loc.gov/</url>\n\t\t\t<url type=\"license\">http://www.loc.gov/rr/print/195_copr.html#noknown</url>\n\t\t\t<url
-      type=\"flickr\">http://flickr.com/photos/library_of_congress/</url>\n\t\t</urls>\n\t</institution>\n</institutions>\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<institutions>\n\t<institution
+        nsid=\"134017397@N03\" date_launch=\"1730315663\">\n\t\t<name>Community Archives
+        of Belleville &amp; Hastings County</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">https://www.cabhc.ca/</url>\n\t\t\t<url
+        type=\"license\">https://www.cabhc.ca/en/collections/collections.aspx</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/cabhc/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"100017484@N04\" date_launch=\"1730315470\">\n\t\t<name>LetterformArchive</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">https://letterformarchive.org</url>\n\t\t\t<url type=\"license\">https://www.flickr.com/people/letterformarchive/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/letterformarchive/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"98726691@N05\" date_launch=\"1730314992\">\n\t\t<name>Port Morien Digital
+        Archive</name>\n\t\t<urls>\n\t\t\t<url type=\"site\" />\n\t\t\t<url type=\"license\">https://www.flickr.com/people/portmorienarchive/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/portmorienarchive/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"201268704@N06\" date_launch=\"1723824495\">\n\t\t<name>CommonsPrivacyTest</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">https://www.flickr.com</url>\n\t\t\t<url type=\"license\">http://www.getty.edu/legal/copyright.html#flickr</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/201268704@N06/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"200049760@N08\" date_launch=\"1706549057\">\n\t\t<name>CommonsTestAccount</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">https://flickr.org</url>\n\t\t\t<url type=\"license\">https://flickr.org</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/200049760@N08/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"61270229@N05\" date_launch=\"1578333809\">\n\t\t<name>NavyMedicine</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">https://www.med.navy.mil/Pages/default.aspx</url>\n\t\t\t<url
+        type=\"license\">https://www.flickr.com/people/navymedicine/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/navymedicine/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"134319968@N02\" date_launch=\"1529602845\">\n\t\t<name>Colecci\xF3n
+        Amadeo Le\xF3n - Bocon\xF3</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">fotoleonbocono.tumblr.com</url>\n\t\t\t<url
+        type=\"license\">https://www.tumblr.com/fotoleonbocono-blog/174576043211/galer%C3%ADa-flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/bocono/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"150408343@N02\" date_launch=\"1494442159\">\n\t\t<name>M\xE9diath\xE8ques
+        Valence Romans agglom\xE9ration</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://mediatheques.valenceromans.fr</url>\n\t\t\t<url
+        type=\"license\">http://mediatheques.valenceromans.fr/patrimoine</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/mediathequesvalenceromansagglo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"148865600@N02\" date_launch=\"1491348647\">\n\t\t<name>Halifax Municipal
+        Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.halifax.ca/archives</url>\n\t\t\t<url
+        type=\"license\">https://www.halifax.ca/about-halifax/municipal-archives/services/copying-services</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/halifaxarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"145517650@N04\" date_launch=\"1488312432\">\n\t\t<name>Armenian Studies
+        Program, Fresno State</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.fresnostate.edu/artshum/armenianstudies/</url>\n\t\t\t<url
+        type=\"license\">http://www.fresnostate.edu/artshum/armenianstudies/library/index.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/armenianstudies/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"105662205@N04\" date_launch=\"1481666877\">\n\t\t<name>UC Berkeley,
+        Department of Geography</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://geography.berkeley.edu</url>\n\t\t\t<url
+        type=\"license\">http://geography.berkeley.edu/geography-at-berkeley-flickr-commons-site/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/105662205@N04/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"142575440@N02\" date_launch=\"1474649711\">\n\t\t<name>Liberas</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.liberaalarchief.be/</url>\n\t\t\t<url type=\"license\">http://www.liberaalarchief.be/doc/liberas_rights_statement.pdf</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/liberas/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"138361426@N08\" date_launch=\"1474307180\">\n\t\t<name>East Riding
+        Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www2.eastriding.gov.uk/leisure/archives-family-and-local-history/</url>\n\t\t\t<url
+        type=\"license\">http://www2.eastriding.gov.uk/leisure/archives-family-and-local-history/using-our-service/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/erarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"133323184@N07\" date_launch=\"1452639297\">\n\t\t<name>Camden Public
+        Library (Maine)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.librarycamden.org</url>\n\t\t\t<url
+        type=\"license\">http://www.librarycamden.org/learn-research/walsh-history-center/photo-services/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/cplmaine/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"135637350@N04\" date_launch=\"1444242445\">\n\t\t<name>American Aviation
+        Historical Society</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.aahs-online.org</url>\n\t\t\t<url
+        type=\"license\">http://www.aahs-online.org/cc_notice.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/aahs_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"132445284@N06\" date_launch=\"1440113261\">\n\t\t<name>TXSTATE Library
+        Digital Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://exhibits.library.txstate.edu</url>\n\t\t\t<url
+        type=\"license\">http://www.library.txstate.edu/about/departments/dws/flickr-rights-statement</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/txstate-library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"126398744@N08\" date_launch=\"1437424251\">\n\t\t<name>The Gallen-Kallela
+        Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.gallen-kallela.fi</url>\n\t\t\t<url
+        type=\"license\">http://www.gallen-kallela.fi/en/kokoelmat/the-gallen-kallela-museum-participates-in-the-flickr-commons/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/gallen-kallelanmuseo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"99115493@N08\" date_launch=\"1434742978\">\n\t\t<name>Sinaloa Fotograf\xEDas
+        Hist\xF3ricas</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://ahgs.gob.mx/</url>\n\t\t\t<url
+        type=\"license\">http://ahgs.gob.mx/servicios-digitales/archivo-fotografico/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/99115493@N08/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"128445772@N04\" date_launch=\"1433870682\">\n\t\t<name>Presidency Of
+        The Republic Of Turkey Directorate o</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.byegm.gov.tr/english</url>\n\t\t\t<url
+        type=\"license\">http://www.byegm.gov.tr/turkce/rightsstatement</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/dgpi/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"98304311@N03\" date_launch=\"1433530088\">\n\t\t<name>Regionaal Archief
+        Alkmaar Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.archiefalkmaar.nl</url>\n\t\t\t<url
+        type=\"license\">https://www.regionaalarchiefalkmaar.nl/over-ons-english/open-data-english</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/public-domain-archief-alkmaar/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"128520551@N04\" date_launch=\"1432770226\">\n\t\t<name>UVicLibraries</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.uvic.ca/library/</url>\n\t\t\t<url type=\"license\">http://www.uvic.ca/library/featured/collections/disclaimer-flickr.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/128520551@N04/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"126364681@N08\" date_launch=\"1429311795\">\n\t\t<name>Congregation
+        of Sisters of St. Joseph in Canada</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.csjcanada.org/csj-archives</url>\n\t\t\t<url
+        type=\"license\">http://www.csjcanada.org/csj-archives</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/csj_canada_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"130536320@N07\" date_launch=\"1427241867\">\n\t\t<name>VCU Libraries
+        Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.library.vcu.edu/</url>\n\t\t\t<url
+        type=\"license\">http://www.library.vcu.edu/about/policies/copyright-privacy/#flickr-policy</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/vcucommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"125149169@N06\" date_launch=\"1420651955\">\n\t\t<name>Vestfoldmuseene
+        | Vestfold Museums</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.vestfoldmuseene.no</url>\n\t\t\t<url
+        type=\"license\">http://vestfoldmuseene.no/flickr_commons/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/vestfoldmuseene/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"123233489@N03\" date_launch=\"1419716220\">\n\t\t<name>Aalto University
+        Library and Archive Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.aalto.fi/en/</url>\n\t\t\t<url
+        type=\"license\">http://lib.aalto.fi/en/materials/images/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/aaltocommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"127336509@N06\" date_launch=\"1419703242\">\n\t\t<name>Senado Federal
+        do Brasil</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www12.senado.gov.br/noticias</url>\n\t\t\t<url
+        type=\"license\">http://www12.senado.gov.br/noticias/arquivo-de-imagens-no-flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/senadothecommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"124448282@N08\" date_launch=\"1417713219\">\n\t\t<name>Huron County
+        Museum &amp; Historic Gaol</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://huroncounty.ca/museum/</url>\n\t\t\t<url
+        type=\"license\">http://huroncounty.ca/museum/online_collections.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/huroncountymuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"124495553@N05\" date_launch=\"1417632949\">\n\t\t<name>Archives of
+        the Finnish Broadcasting Company Yle</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.yle.fi
+        (in Finnish) or http://yle.fi/yleisradio/about-yle/this-is-yle (in English)</url>\n\t\t\t<url
+        type=\"license\">http://yle.fi/yleisradio/about-yle/yle-sales/yle-archives-flickr
+        </url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/ylearkisto/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"47756470@N03\" date_launch=\"1412080144\">\n\t\t<name>Archives of Medicine
+        - NLM - NIH</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nlm.nih.gov/</url>\n\t\t\t<url
+        type=\"license\">http://www.nlm.nih.gov/hmd/collections/photos/flickr.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nlmhmd/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"124344537@N02\" date_launch=\"1411475862\">\n\t\t<name>The Graduate
+        Institute, Geneva</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://graduateinstitute.ch/home/research/library.html</url>\n\t\t\t<url
+        type=\"license\">http://graduateinstitute.ch/fr/home/research/library/archives/boris-souvarine.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/graduateinstitute_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"126472954@N08\" date_launch=\"1410876445\">\n\t\t<name>Universit\xE9
+        de Caen Normandie</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.unicaen.fr</url>\n\t\t\t<url
+        type=\"license\">http://scd.unicaen.fr/flickr-commons/rights-statement-designation-juridique/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/universite_caen/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"35978124@N04\" date_launch=\"1410263071\">\n\t\t<name>Faculty of Music,
+        Trinity Laban</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.trinitylaban.ac.uk/jerwoodlibrary</url>\n\t\t\t<url
+        type=\"license\">http://www.trinitylaban.ac.uk/student-experience/facilities/faculty-music/jerwood-library/collections-resources/archives-and</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/jerwoodtcm/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"126377022@N07\" date_launch=\"1409324867\">\n\t\t<name>Internet Archive
+        Book Images</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://archive.org</url>\n\t\t\t<url
+        type=\"license\">https://archive.org/about/terms.php</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/internetarchivebookimages/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"104959762@N04\" date_launch=\"1402064583\">\n\t\t<name>Cloyne &amp;
+        District Historical Society</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.cloynepioneermuseum.ca</url>\n\t\t\t<url
+        type=\"license\">https://pioneer.mazinaw.on.ca/licensing-terms/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/cdhs/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"124327652@N02\" date_launch=\"1401802992\">\n\t\t<name>tyrrellhistoricallibrary</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.beaumontlibrary.org/tyrrell_historical_library.htm</url>\n\t\t\t<url
+        type=\"license\">http://cdm16058.contentdm.oclc.org/ui/custom/default/collection/default/resources/custompages/policies/FlickrCommons.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/124327652@N02/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"56434318@N05\" date_launch=\"1401193014\">\n\t\t<name>Preus museum</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">www.preusmuseum.no</url>\n\t\t\t<url type=\"license\">http://www.preusmuseum.no/Discover-the-Collections/Photographic-Collection/Flickr-The-Commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/preusmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"94268151@N07\" date_launch=\"1400586985\">\n\t\t<name>Local History
+        &amp; Archives, Hamilton Public Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.hpl.ca</url>\n\t\t\t<url
+        type=\"license\">http://www.hpl.ca/articles/use-images</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/hpllocalhistory/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"108745105@N04\" date_launch=\"1400007738\">\n\t\t<name>UBC Library
+        Digitization Centre</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://diginit.library.ubc.ca/</url>\n\t\t\t<url
+        type=\"license\">http://digitalcollections.library.ubc.ca/cdm/about</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/ubclibrary_digicentre/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"60147353@N07\" date_launch=\"1399375726\">\n\t\t<name>Salt Research</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://saltonline.org/en/anasayfa</url>\n\t\t\t<url type=\"license\">https://archives.saltresearch.org/salt/info_rights.jsp</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/saltonline/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"107895189@N03\" date_launch=\"1397132793\">\n\t\t<name>Tasmanian Archives
+        and State Library (Commons)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.linc.tas.gov.au/tasmaniasheritage</url>\n\t\t\t<url
+        type=\"license\">http://www.linc.tas.gov.au/tasmaniasheritage/browse/pictorial/flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/107895189@N03/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"108605878@N06\" date_launch=\"1397131200\">\n\t\t<name>The Finnish
+        Museum of Photography</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.valokuvataiteenmuseo.fi/</url>\n\t\t\t<url
+        type=\"license\">http://www.valokuvataiteenmuseo.fi/en/information-en/the-terms-of-use-of-the-images#images-on-flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/valokuvataiteenmuseo/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"26491575@N05\" date_launch=\"1395348974\">\n\t\t<name>Library Company
+        of Philadelphia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.librarycompany.org/</url>\n\t\t\t<url
+        type=\"license\">http://www.librarycompany.org/collections/rightsrepro/rr_digitalresources.htm</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/library-company-of-philadelphia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"95711690@N03\" date_launch=\"1394537964\">\n\t\t<name>Provincial Archives
+        of Alberta</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://culture.alberta.ca/paa/default.aspx</url>\n\t\t\t<url
+        type=\"license\">http://culture.alberta.ca/paa/about/flickr.aspx</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/alberta_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"31033598@N03\" date_launch=\"1391520831\">\n\t\t<name>Miami U. Libraries
+        - Digital Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lib.miamioh.edu</url>\n\t\t\t<url
+        type=\"license\">https://spec.lib.miamioh.edu/home/services/copyright/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/muohio_digital_collections/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"12403504@N02\" date_launch=\"1386975388\">\n\t\t<name>The British Library</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">www.bl.uk</url>\n\t\t\t<url type=\"license\">https://www.bl.uk/about-us/terms-and-conditions/content-on-flickr-and-wikimedia-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/britishlibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"109550159@N08\" date_launch=\"1386709335\">\n\t\t<name>Costic\u0103
+        Acsinte Archive</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://colectiacosticaacsinte.eu/</url>\n\t\t\t<url
+        type=\"license\">http://colectiacosticaacsinte.eu/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/costicaacsinte/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"48220291@N04\" date_launch=\"1381954880\">\n\t\t<name>National Library
+        of Norway</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nb.no</url>\n\t\t\t<url
+        type=\"license\">http://www.nb.no/Kontakt/Kontakt/Sosiale-medier/Flickr-Commons-No-known-copyright-restrictions</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/national_library_of_norway/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"69269002@N04\" date_launch=\"1381528229\">\n\t\t<name>libraryrahs@gmail.com</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.rahs.org.au/</url>\n\t\t\t<url type=\"license\">http://www.rahs.org.au/about-rahs/rahs-copyright-statement/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/royalaustralianhistoricalsociety/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"88669438@N03\" date_launch=\"1378762017\">\n\t\t<name>Fotoarkivet NTM</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">www.tekniskmuseum.no / www.dextraphoto.no</url>\n\t\t\t<url
+        type=\"license\">http://dextraphoto.photodeck.com/about</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/dextraphoto/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"99278405@N04\" date_launch=\"1378761917\">\n\t\t<name>California Historical
+        Society Digital Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.californiahistoricalsociety.org/</url>\n\t\t\t<url
+        type=\"license\">http://www.californiahistoricalsociety.org/research/flickr.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/chs_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"99902797@N03\" date_launch=\"1378760341\">\n\t\t<name>Schlesinger Library,
+        RIAS, Harvard University</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.radcliffe.harvard.edu/schlesinger-library</url>\n\t\t\t<url
+        type=\"license\">https://www.radcliffe.harvard.edu/schlesinger-library/research-services/permissions-and-copyright</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/schlesinger_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"95772747@N07\" date_launch=\"1376330725\">\n\t\t<name>National Museum
+        of Denmark</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://natmus.dk/</url>\n\t\t\t<url
+        type=\"license\">http://natmus.dk/en/forsknings-og-formidlingsafdelingen/center-for-strategi-kommunikation-og-administration/rights-statement-the-commons-on-flickr/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/thenationalmuseumofdenmark/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"48641766@N05\" date_launch=\"1372285018\">\n\t\t<name>Svenska litteraturs\xE4llskapet
+        i Finland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.sls.fi</url>\n\t\t\t<url
+        type=\"license\">http://www.sls.fi/doc.php?category=2&amp;language=eng</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/slsarkiva/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"94021017@N05\" date_launch=\"1372285004\">\n\t\t<name>National Archives
+        of Estonia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.ra.ee/</url>\n\t\t\t<url
+        type=\"license\">http://www.ra.ee/en/flickr-commons/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/national_archives_of_estonia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"47154409@N06\" date_launch=\"1371066890\">\n\t\t<name>Het Nieuwe Instituut
+        - Architecture Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.thenewinstitute.nl</url>\n\t\t\t<url
+        type=\"license\">https://collectie.hetnieuweinstituut.nl/en/flickr-commons-rights-statement</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nai_collection/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"39758725@N03\" date_launch=\"1371066882\">\n\t\t<name>Dundas Museum
+        and Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.dundasmuseum.ca</url>\n\t\t\t<url
+        type=\"license\">http://www.dundasmuseum.ca/photographs.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/dundasmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"95717549@N07\" date_launch=\"1371066881\">\n\t\t<name>UL Digital Library</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.ul.ie/~library</url>\n\t\t\t<url type=\"license\">http://www2.ul.ie/web/WWW/Services/Library/Digital_Library</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/ul_digital_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"52529054@N06\" date_launch=\"1371066880\">\n\t\t<name>Mennonite Church
+        USA Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.mennoniteusa.org/executive-board/archives/</url>\n\t\t\t<url
+        type=\"license\">https://www.mennoniteusa.org/resource-portal/resource/archives-copyright-statement/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/mennonitechurchusa-archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"38561291@N04\" date_launch=\"1369941342\">\n\t\t<name>Archives of the
+        Law Society of Ontario</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lsuc.on.ca/PDC/Archives/Overview-of-the-Archives/</url>\n\t\t\t<url
+        type=\"license\">http://www.lsuc.on.ca/PDC/Archives/Archives-Collection/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/lsuc_archives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"27331537@N06\" date_launch=\"1369941313\">\n\t\t<name>MHNSW - State
+        Archives Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.records.nsw.gov.au/</url>\n\t\t\t<url
+        type=\"license\">http://www.records.nsw.gov.au/about-us/rights-and-permissions</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/state-records-nsw/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"54403180@N04\" date_launch=\"1367877142\">\n\t\t<name>Public Record
+        Office of Northern Ireland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.proni.gov.uk</url>\n\t\t\t<url
+        type=\"license\">http://www.proni.gov.uk/index/search_the_archives/pronionflickr.htm</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/proni/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"23121382@N07\" date_launch=\"1367877137\">\n\t\t<name>Deseronto Archives</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://deserontoarchives.wordpress.com</url>\n\t\t\t<url type=\"license\">http://deserontoarchives.wordpress.com/collections/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/deserontoarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"62173425@N02\" date_launch=\"1318321610\">\n\t\t<name>Stockholm Transport
+        Museum Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.sparvagsmuseet.sl.se</url>\n\t\t\t<url
+        type=\"license\">http://sparvagsmuseet.sl.se/stockholms-transport-museum-om-flickr-commons/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/stockholmtransportmuseum_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"67193564@N03\" date_launch=\"1317052532\">\n\t\t<name>National Library
+        of Australia Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.nla.gov.au</url>\n\t\t\t<url
+        type=\"license\">http://www.nla.gov.au/flickr-commons-copyright</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/national_library_of_australia_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"59811348@N05\" date_launch=\"1316418893\">\n\t\t<name>Arkivverket (National
+        Archives of Norway)</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.arkivverket.no/</url>\n\t\t\t<url
+        type=\"license\">https://www.arkivverket.no/en/about-us/the-use-of-photos</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/national_archives_of_norway/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"45270502@N06\" date_launch=\"1309982163\">\n\t\t<name>Royal Danish
+        Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.kb.dk</url>\n\t\t\t<url
+        type=\"license\">http://www.kb.dk/en/kb/copyright/index.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/departmentofmapsprintsandphotographstheroyallibrarydenmark/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"61498590@N03\" date_launch=\"1308358459\">\n\t\t<name>Museum of Photographic
+        Arts Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.mopa.org</url>\n\t\t\t<url
+        type=\"license\">http://www.mopa.org/content/museum-photographic-arts-flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/mopa1/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"47290943@N03\" date_launch=\"1306964341\">\n\t\t<name>National Library
+        of Ireland on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nli.ie/en/homepage.aspx</url>\n\t\t\t<url
+        type=\"license\">http://www.nli.ie/en/flickr-commons.aspx</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nlireland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"29295370@N07\" date_launch=\"1305744280\">\n\t\t<name>Tyne &amp; Wear
+        Archives &amp; Museums</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.twmuseums.org.uk/</url>\n\t\t\t<url
+        type=\"license\">http://www.twmuseums.org.uk/usingimagesfromflickr/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/twm_news/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"49487266@N07\" date_launch=\"1304524824\">\n\t\t<name>San Diego Air
+        &amp; Space Museum Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://sandiegoairandspace.org/</url>\n\t\t\t<url
+        type=\"license\">http://sandiegoairandspace.org/collections/collection_index.php?id=3</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/sdasmarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"47908901@N03\" date_launch=\"1303334080\">\n\t\t<name>Museum of Hartlepool</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.destinationhartlepool.com</url>\n\t\t\t<url type=\"license\">http://www.hartlepool.gov.uk/info/100009/leisure_and_culture/1533/collections/1</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/hartlepool_museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"41815917@N06\" date_launch=\"1302113053\">\n\t\t<name>Woodrow Wilson
+        Presidential Library Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.woodrowwilson.org</url>\n\t\t\t<url
+        type=\"license\">http://woodrowwilson.org/index.php/library-a-archives/research</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/wwplarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"44494372@N05\" date_launch=\"1283176250\">\n\t\t<name>NASA on The Commons</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.nasa.gov/</url>\n\t\t\t<url type=\"license\">http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nasacommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"14456531@N07\" date_launch=\"1277223438\">\n\t\t<name>National Library
+        of Scotland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nls.uk/</url>\n\t\t\t<url
+        type=\"license\">https://www.nls.uk/copyright/</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/nlscotland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"9189488@N02\" date_launch=\"1276472500\">\n\t\t<name>Lj\xF3smyndasafn
+        Reykjav\xEDkur / Reykjav\xEDk Museum of</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.photomuseum.is</url>\n\t\t\t<url
+        type=\"license\">http://ljosmyndasafnreykjavikur.is/english/information.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/reykjavikmuseumofphotography/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"25960495@N06\" date_launch=\"1276472325\">\n\t\t<name>Keene and Cheshire
+        County (NH) Historical Photos</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.ci.keene.nh.us/library/
+        \  and  http://www.hsccnh.org/</url>\n\t\t\t<url type=\"license\">http://keenepubliclibrary.org/library/commons-rights-statement</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/keenepubliclibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"37547255@N08\" date_launch=\"1274822330\">\n\t\t<name>Fylkesarkivet
+        i Vestland</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://fylkesarkiv.no</url>\n\t\t\t<url
+        type=\"license\">http://www.fylkesarkiv.no/en/side/flickr-commons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/fylkesarkiv/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"30515687@N05\" date_launch=\"1274286646\">\n\t\t<name>Cornell University
+        Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.library.cornell.edu/</url>\n\t\t\t<url
+        type=\"license\">http://hdl.handle.net/1813.001/62pk</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/cornelluniversitylibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"33147718@N05\" date_launch=\"1273608526\">\n\t\t<name>Australian National
+        Maritime Museum on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.anmm.gov.au/</url>\n\t\t\t<url
+        type=\"license\">http://www.anmm.gov.au/site/page.cfm?u=1657</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/anmm_thecommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"41131493@N06\" date_launch=\"1271294026\">\n\t\t<name>SMU Libraries
+        Digital Collections</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://smu.edu/cul/</url>\n\t\t\t<url
+        type=\"license\">http://digitalcollections.smu.edu/all/cul/flickr/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/smu_cul_digitalcollections/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"47326604@N02\" date_launch=\"1271293732\">\n\t\t<name>Texas State Archives</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.tsl.state.tx.us</url>\n\t\t\t<url type=\"license\">http://www.tsl.state.tx.us/exhibits/ccc_flickr.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/texasstatearchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"36988361@N08\" date_launch=\"1271026069\">\n\t\t<name>Center for Jewish
+        History, NYC</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">www.cjh.org</url>\n\t\t\t<url
+        type=\"license\">http://www.cjh.org/collections/copyright.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/center_for_jewish_history/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"37784107@N08\" date_launch=\"1270656024\">\n\t\t<name>UA Archives |
+        Upper Arlington History</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.uaarchives.org</url>\n\t\t\t<url
+        type=\"license\">http://www.uaarchives.org/commons.htm</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/uaarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"31575009@N05\" date_launch=\"1269389812\">\n\t\t<name>The National
+        Archives UK</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nationalarchives.gov.uk/</url>\n\t\t\t<url
+        type=\"license\">http://www.nationalarchives.gov.uk/legal/copyright/creative-commons-and-photo-sharing/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nationalarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"8337233@N06\" date_launch=\"1266878529\">\n\t\t<name>UW Digital Collections</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://content.lib.washington.edu/index.html</url>\n\t\t\t<url
+        type=\"license\">http://content.lib.washington.edu/FlickrCommons.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/uw_digital_images/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"35740357@N03\" date_launch=\"1265050904\">\n\t\t<name>U.S. National
+        Archives</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.archives.gov/</url>\n\t\t\t<url
+        type=\"license\">http://www.archives.gov/social-media/flickr-faqs.html#9</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/usnationalarchives/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"37381115@N04\" date_launch=\"1260488220\">\n\t\t<name>Bergen Public
+        Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://nettbiblioteket.no/</url>\n\t\t\t<url
+        type=\"license\">http://nettbiblioteket.no/biblioteksinformasjon/flickr-commons.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/bergen_public_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"35128489@N07\" date_launch=\"1256682119\">\n\t\t<name>LSE Library</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www2.lse.ac.uk/library/Home.aspx</url>\n\t\t\t<url type=\"license\">https://www.lse.ac.uk/library/about/library-rules-and-general-policies#:~:text=Flickr%20Rights%20Statement</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/lselibrary/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"36281769@N04\" date_launch=\"1255562741\">\n\t\t<name>JWA Commons</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://jwa.org/</url>\n\t\t\t<url type=\"license\">http://jwa.org/exhibits/ww2/flickrcommons</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/jwacommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"23686862@N03\" date_launch=\"1254441942\">\n\t\t<name>Galt Museum &amp;
+        Archives on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.galtmuseum.com/</url>\n\t\t\t<url
+        type=\"license\">http://www.galtmuseum.com/copyright.htm</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/galt-museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"35532303@N08\" date_launch=\"1242345692\">\n\t\t<name>Getty Research
+        Institute</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.getty.edu/</url>\n\t\t\t<url
+        type=\"license\">http://www.getty.edu/legal/copyright.html#flickr</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/gettyresearchinstitute/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"37199428@N06\" date_launch=\"1242082545\">\n\t\t<name>LlGC ~ NLW</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.llgc.org.uk/</url>\n\t\t\t<url type=\"license\">https://www.library.wales/commercial-services/media/licensing</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/llgc/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"35310696@N04\" date_launch=\"1241052256\">\n\t\t<name>The Field Museum
+        Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.fieldmuseum.org/</url>\n\t\t\t<url
+        type=\"license\">http://www.fieldmuseum.org/research_collections/library/library_sites/photo_archives/flickr.htm</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/field_museum_library/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"36038586@N04\" date_launch=\"1239745638\">\n\t\t<name>DC Public Library
+        Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.dclibrarylabs.org/</url>\n\t\t\t<url
+        type=\"license\">http://dclibrarylabs.org/projects/flickr-commons/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/dcplcommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"34419668@N08\" date_launch=\"1237325759\">\n\t\t<name>Swedish National
+        Heritage Board</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.kms.raa.se/cocoon/bild/public_search.html</url>\n\t\t\t<url
+        type=\"license\">https://www.raa.se/hitta-information/arkiv-och-bibliotek/om-arkivet-och-biblioteket/fotografier/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/swedish_heritage_board/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"34101160@N07\" date_launch=\"1236893050\">\n\t\t<name>nha.library</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.nha.org/</url>\n\t\t\t<url type=\"license\">http://www.nha.org/library/copyright-flickr.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nantuckethistoricalassociation/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"34586311@N05\" date_launch=\"1234571524\">\n\t\t<name>OSU Special Collections
+        &amp; Archives : Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://osulibrary.oregonstate.edu/archives/</url>\n\t\t\t<url
+        type=\"license\">http://scarc.library.oregonstate.edu/duplication.html</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/osucommons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"31846825@N04\" date_launch=\"1234477028\">\n\t\t<name>State Library
+        and Archives of Florida</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.floridamemory.com/</url>\n\t\t\t<url
+        type=\"license\">http://floridamemory.com/disclaimer/disclaimer-flickr.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/floridamemory/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"32605636@N06\" date_launch=\"1233008101\">\n\t\t<name>State Library
+        of Queensland, Australia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.slq.qld.gov.au</url>\n\t\t\t<url
+        type=\"license\">http://www.slq.qld.gov.au/home/copyright/#flickr</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/statelibraryqueensland/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"30835311@N07\" date_launch=\"1231971103\">\n\t\t<name>National Galleries
+        of Scotland Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nationalgalleries.org/</url>\n\t\t\t<url
+        type=\"license\">http://www.nationalgalleries.org/aboutus/article/1:4946/295</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nationalgalleries/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"32951986@N05\" date_launch=\"1229382367\">\n\t\t<name>New York Public
+        Library</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://nypl.org</url>\n\t\t\t<url
+        type=\"license\">http://www.nypl.org/legal/flickr.cfm</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/nypl/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"32741315@N06\" date_launch=\"1227758262\">\n\t\t<name>National Library
+        NZ on The Commons</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.natlib.govt.nz/</url>\n\t\t\t<url
+        type=\"license\">http://natlib.govt.nz/about-this-site/copyright-and-privacy/reusing-objects-from-this-site</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nationallibrarynz_commons/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"32300107@N06\" date_launch=\"1226398620\">\n\t\t<name>IWM Collections</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.iwm.org.uk</url>\n\t\t\t<url type=\"license\">http://www.iwm.org.uk/corporate/privacy-copyright/licence</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/imperialwarmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"30115723@N02\" date_launch=\"1226355399\">\n\t\t<name>Australian War
+        Memorial collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.awm.gov.au/</url>\n\t\t\t<url
+        type=\"license\">https://www.awm.gov.au/about/organisation/corporate/copyright</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/australian-war-memorial/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"29998366@N02\" date_launch=\"1224571148\">\n\t\t<name>Nationaal Archief</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.nationaalarchief.nl/</url>\n\t\t\t<url type=\"license\">http://beeldbank.nationaalarchief.nl/index.php?option=com_memorix&amp;mrx_mod=content&amp;mrx_item=auteursrechten</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nationaalarchief/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"25786829@N08\" date_launch=\"1223937653\">\n\t\t<name>Mus\xE9e McCord
+        Stewart Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.mccord-museum.qc.ca/</url>\n\t\t\t<url
+        type=\"license\">https://www.musee-mccord-stewart.ca/en/collections/photographic-services-and-copyright/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/museemccordmuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"30194653@N06\" date_launch=\"1223306569\">\n\t\t<name>The Library of
+        Virginia</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.lva.virginia.gov/</url>\n\t\t\t<url
+        type=\"license\">http://www.lva.virginia.gov/copyright.htm</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/library_of_virginia/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"29454428@N08\" date_launch=\"1222730121\">\n\t\t<name>State Library
+        of NSW</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.sl.nsw.gov.au/</url>\n\t\t\t<url
+        type=\"license\">https://www.sl.nsw.gov.au/copyright</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/statelibraryofnsw/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"11334970@N05\" date_launch=\"1221664704\">\n\t\t<name>Royal Museums
+        Greenwich</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nmm.ac.uk/</url>\n\t\t\t<url
+        type=\"license\">http://www.nmm.ac.uk/copyright</url>\n\t\t\t<url type=\"flickr\">http://flickr.com/photos/nationalmaritimemuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"26808453@N03\" date_launch=\"1219864305\">\n\t\t<name>National Science
+        and Media Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.nmsi.ac.uk</url>\n\t\t\t<url
+        type=\"license\">http://www.nationalmediamuseum.org.uk/Photography/copyright.asp</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/nationalmediamuseum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"7167652@N06\" date_launch=\"1216330862\">\n\t\t<name>George Eastman
+        Museum</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.eastmanhouse.org/</url>\n\t\t\t<url
+        type=\"license\">http://www.eastmanhouse.org/flickr/statement.php</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/george_eastman_house/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"26134435@N05\" date_launch=\"1214481989\">\n\t\t<name>bibliothequedetoulouse</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.bm-toulouse.fr/</url>\n\t\t\t<url type=\"license\">https://www.bibliotheque.toulouse.fr/pratique/nous-suivre/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/bibliothequedetoulouse/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"25053835@N03\" date_launch=\"1213633686\">\n\t\t<name>Smithsonian Institution</name>\n\t\t<urls>\n\t\t\t<url
+        type=\"site\">http://www.si.edu/</url>\n\t\t\t<url type=\"license\">http://www.si.edu/copyright/</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/smithsonian/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"24785917@N03\" date_launch=\"1207551600\">\n\t\t<name>Powerhouse Museum
+        Collection</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.powerhousemuseum.com/</url>\n\t\t\t<url
+        type=\"license\">http://www.powerhousemuseum.com/imageservices/?page_id=157</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/powerhouse_museum/</url>\n\t\t</urls>\n\t</institution>\n\t<institution
+        nsid=\"8623220@N02\" date_launch=\"1200470400\">\n\t\t<name>The Library of
+        Congress</name>\n\t\t<urls>\n\t\t\t<url type=\"site\">http://www.loc.gov/</url>\n\t\t\t<url
+        type=\"license\">http://www.loc.gov/rr/print/195_copr.html#noknown</url>\n\t\t\t<url
+        type=\"flickr\">http://flickr.com/photos/library_of_congress/</url>\n\t\t</urls>\n\t</institution>\n</institutions>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Wed, 01 May 2024 09:42:25 GMT
+      - Thu, 31 Oct 2024 10:33:40 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 56d50c15e83a778a8a2df6031ec29098.cloudfront.net (CloudFront)
+      - 1.1 7441f523d9aa7a75eb213f3a670e46ac.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - WNxCG3wzpss0ko3WiHgCjM8GxZjzZmojm5Dfv94YmTYqeNMn-2CHYQ==
+      - IrfUhviXJoWk-Weu-sRtAd8TmOSd1_1kV6kjw1DySdbxeHtlDsIxKw==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '41438'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Fri, 31-May-2024 09:42:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 30-Nov-2024 10:33:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Fri, 31-May-2024 09:42:25 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Sat, 30-Nov-2024 10:33:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-66320e81-60fd6b821ac432e64cc540be;Root=1-66320e81-7d0a2d5c7645fe81344ecfa0
+      - Root=1-67235d04-447a4bd129ecfe4b18c07f0f
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.32.246
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.23.20
+    status:
+      code: 200
+      message: OK
 version: 1

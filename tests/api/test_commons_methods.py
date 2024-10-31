@@ -19,13 +19,13 @@ class TestCommonsMethods:
         """
         institutions = api.list_commons_institutions()
 
-        assert len(institutions) == 113
+        assert len(institutions) == 115
         assert institutions[0] == {
+            "user_id": "134017397@N03",
             "date_launch": datetime.datetime(
-                2024, 1, 29, 17, 24, 17, tzinfo=datetime.timezone.utc
+                2024, 10, 30, 19, 14, 23, tzinfo=datetime.timezone.utc
             ),
-            "license_url": "https://flickr.org",
-            "name": "CommonsTestAccount",
-            "site_url": "https://flickr.org",
-            "user_id": "200049760@N08",
+            "name": "Community Archives of Belleville & Hastings County",
+            "site_url": "https://www.cabhc.ca/",
+            "license_url": "https://www.cabhc.ca/en/collections/collections.aspx",
         }

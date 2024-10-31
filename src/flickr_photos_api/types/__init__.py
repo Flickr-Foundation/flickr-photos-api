@@ -178,5 +178,5 @@ class CommonsInstitution(typing.TypedDict):
     user_id: str
     date_launch: datetime.datetime
     name: str
-    site_url: str
+    site_url: str | None
     license_url: str
