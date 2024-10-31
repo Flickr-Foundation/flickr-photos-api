@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.12.0 - 2024-10-31
+
+*   The `url` of a `CommonsInstitution` is now optional rather than required.
+
 ## v2.11.2 - 2024-09-02
 
 *   Change the `UserInfo` type so it can be subclassed again (this broke in v2.10.0).

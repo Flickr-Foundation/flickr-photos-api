@@ -4,7 +4,7 @@ Methods for getting information about the Flickr Commons.
 
 import datetime
 
-from nitrate.xml import find_required_text
+from nitrate.xml import find_optional_text, find_required_text
 
 from .base import FlickrApi
 from ..types import CommonsInstitution
@@ -43,7 +43,7 @@ class FlickrCommonsMethods(FlickrApi):
 
             name = find_required_text(institution_elem, path="name")
 
-            site_url = find_required_text(institution_elem, path='.//url[@type="site"]')
+            site_url = find_optional_text(institution_elem, path='.//url[@type="site"]')
             license_url = find_required_text(
                 institution_elem, path='.//url[@type="license"]'
             )
