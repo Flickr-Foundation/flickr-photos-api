@@ -30,7 +30,7 @@ class LicenseMethods(FlickrApi):
         # Add a short ID which can be used to more easily refer to this
         # license throughout the codebase.
         license_ids = {
-            "All Rights Reserved": "in-copyright",
+            "All Rights Reserved": "all-rights-reserved",
             "Attribution-NonCommercial-ShareAlike License": "cc-by-nc-sa-2.0",
             "Attribution-NonCommercial License": "cc-by-nc-2.0",
             "Attribution-NonCommercial-NoDerivs License": "cc-by-nc-nd-2.0",
@@ -74,7 +74,7 @@ class LicenseMethods(FlickrApi):
         Then you'd call this function to find out what that means:
 
                 >>> api.lookup_license_by_id(id="0")
-                {"id": "in-copyright", "name": "All Rights Reserved", "url": None}
+                {"id": "all-rights-reserved", "name": "All Rights Reserved", "url": None}
 
         See https://www.flickr.com/services/api/flickr.photos.licenses.getInfo.htm
         """
