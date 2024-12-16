@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.13.0 - 2024-12-16
+
+*   Change a license ID from `in-copyright` to `all-rights-reserved`, which is a better description of what it means.
+
 ## v2.12.0 - 2024-10-31
 
 *   The `url` of a `CommonsInstitution` is now optional rather than required.

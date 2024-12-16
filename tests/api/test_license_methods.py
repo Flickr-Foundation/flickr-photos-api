@@ -17,7 +17,11 @@ class TestLicenseMethods:
         You can get a complete list of licenses from the API.
         """
         assert api.get_licenses() == {
-            "0": {"id": "in-copyright", "label": "All Rights Reserved", "url": None},
+            "0": {
+                "id": "all-rights-reserved",
+                "label": "All Rights Reserved",
+                "url": None,
+            },
             "1": {
                 "id": "cc-by-nc-sa-2.0",
                 "label": "CC BY-NC-SA 2.0",
@@ -75,7 +79,7 @@ class TestLicenseMethods:
         You can look up a license by its numeric ID.
         """
         assert api.lookup_license_by_id(id="0") == {
-            "id": "in-copyright",
+            "id": "all-rights-reserved",
             "label": "All Rights Reserved",
             "url": None,
         }
