@@ -1,4 +1,5 @@
 from .api import FlickrApi
+from .downloader import download_photo
 from .exceptions import (
     FlickrApiException,
     InsufficientPermissionsToComment,
@@ -41,10 +42,11 @@ from .types import (
 )
 
 
-__version__ = "2.13.0"
+__version__ = "2.14.0"
 
 
 __all__ = [
+    "download_photo",
     "FlickrApi",
     "FlickrApiException",
     "ResourceNotFound",
