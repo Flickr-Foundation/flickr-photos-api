@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - live.staticflickr.com
+      user-agent:
+      - python-httpx/0.27.0
+    method: GET
+    uri: https://live.staticflickr.com/65535/doesnotexist.jpg
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 16 Dec 2024 11:44:12 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b54b5cd70d369047e56326913e0e2c5a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - bBzBClN9extZGRUTvX25irqxoTDw-lfmCtn15tfFLvDSV7bPXbUHOg==
+      X-Amz-Cf-Pop:
+      - LHR5-P2
+      X-Cache:
+      - Error from cloudfront
+      content-length:
+      - '0'
+      mib:
+      - '2'
+      x-ttdb-l:
+      - '0'
+      x-ttfb:
+      - '0.0035'
+    status:
+      code: 404
+      message: Not Found
+version: 1

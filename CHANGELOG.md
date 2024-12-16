@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.14.0 - 2024-12-16
+
+*   Add a new function `download_photo` for actually downloading a photo from Flickr.
+    This includes some logic for retrying downloads if they fail due to e.g. Flickr's rate limits.
+
 ## v2.13.0 - 2024-12-16
 
 *   Change a license ID from `in-copyright` to `all-rights-reserved`, which is a better description of what it means.
