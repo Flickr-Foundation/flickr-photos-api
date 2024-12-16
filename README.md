@@ -46,7 +46,7 @@ This httpx implementation is the default implementation.
 
 ```console
 >>> from flickr_photos_api import FlickrApi
->>> api = FlickrApi(api_key="…", user_agent="…")
+>>> api = FlickrApi.with_api_key(api_key="…", user_agent="…")
 
 >>> photo = api.get_single_photo(photo_id="14898030836")
 
@@ -74,7 +74,7 @@ This httpx implementation is the default implementation.
     ```python
     from flickr_photos_api import FlickrApi
 
-    api = FlickrApi(api_key="…", user_agent="…")
+    api = FlickrApi.with_api_key(api_key="…", user_agent="…")
     ```
 
 3.  Call methods on FlickrApi.
