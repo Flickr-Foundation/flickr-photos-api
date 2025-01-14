@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.14.1 - 2025-01-14
+
+*   The `download_photo` function will now retry if the request times out.
+
 ## v2.14.0 - 2024-12-16
 
 *   Add a new function `download_photo` for actually downloading a photo from Flickr.
