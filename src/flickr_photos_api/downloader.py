@@ -25,6 +25,13 @@ def is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, httpx.RemoteProtocolError):
         return True  # pragma: no cover
 
+    # We can retry a download if it timed out.
+    #
+    # There's no easy way to simulate this in tests, so we just don't
+    # test this branch -- but it's simple enough not to be a big issue.
+    if isinstance(exc, httpx.ReadTimeout):  # pragma: no cover
+        return True
+
     return False
 
 
