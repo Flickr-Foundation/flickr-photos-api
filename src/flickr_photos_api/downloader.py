@@ -10,6 +10,9 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception
 
 
+client = httpx.Client(headers={"User-Agent": "flickr-photos-api"})
+
+
 def is_retryable(exc: BaseException) -> bool:
     """
     Returns True if this is an exception we can safely retry (i.e. flaky
@@ -29,7 +32,7 @@ def is_retryable(exc: BaseException) -> bool:
     #
     # There's no easy way to simulate this in tests, so we just don't
     # test this branch -- but it's simple enough not to be a big issue.
-    if isinstance(exc, httpx.ReadTimeout):  # pragma: no cover
+    if isinstance(exc, (httpx.ConnectTimeout, httpx.ReadTimeout)):  # pragma: no cover
         return True
 
     return False
@@ -55,7 +58,7 @@ def download_photo(url: str, out_path: pathlib.Path) -> None:
     # We use a streaming response from HTTPX because some Flickr files
     # can be very big, e.g. original video files.  We don't need or
     # want to buffer the whole thing into memory.
-    with httpx.stream("GET", url) as resp:
+    with client.stream("GET", url) as resp:
         resp.raise_for_status()
 
         with open(tmp_path, "xb") as out_file:

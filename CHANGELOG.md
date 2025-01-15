@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.14.2 - 2025-01-15
+
+*   The `download_photo` function can retry more types of timeout.
+    It also uses a shared HTTP client for all downloads, which should make it a bit faster and more reliable.
+
 ## v2.14.1 - 2025-01-14
 
 *   The `download_photo` function will now retry if the request times out.
