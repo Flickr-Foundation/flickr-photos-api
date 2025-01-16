@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.14.3 - 2025-01-16
+
+*   Internal refactoring to expose a `parse_single_photo_info` method, for callers who want to customise their calls to `flickr.photos.getInfo`.
+
 ## v2.14.2 - 2025-01-15
 
 *   The `download_photo` function can retry more types of timeout.
