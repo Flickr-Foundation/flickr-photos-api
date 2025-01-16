@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.14.4 - 2025-01-16
+
+*   Expose a couple more methods on `SinglePhotoMethods` as part of the public API, for easier reuse and extension.
+
 ## v2.14.3 - 2025-01-16
 
 *   Internal refactoring to expose a `parse_single_photo_info` method, for callers who want to customise their calls to `flickr.photos.getInfo`.

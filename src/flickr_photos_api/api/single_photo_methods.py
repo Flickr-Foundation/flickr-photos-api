@@ -194,7 +194,7 @@ class SinglePhotoMethods(LicenseMethods):
             "visibility": visibility,
         }
 
-    def _get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
+    def get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
         """
         Look up the information for a single photo.
 
@@ -214,7 +214,7 @@ class SinglePhotoMethods(LicenseMethods):
 
         return self.parse_single_photo_info(info_resp, photo_id=photo_id)
 
-    def _get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
+    def get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
         """
         Look up the sizes for a single photo.
 
@@ -294,8 +294,8 @@ class SinglePhotoMethods(LicenseMethods):
         """
         Look up the information for a single photo.
         """
-        info = self._get_single_photo_info(photo_id=photo_id)
-        sizes = self._get_single_photo_sizes(photo_id=photo_id)
+        info = self.get_single_photo_info(photo_id=photo_id)
+        sizes = self.get_single_photo_sizes(photo_id=photo_id)
 
         return {**info, "sizes": sizes}
 
