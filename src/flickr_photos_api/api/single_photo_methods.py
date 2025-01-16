@@ -2,6 +2,8 @@
 Methods for getting information about a single photo in the Flickr API.
 """
 
+from xml.etree import ElementTree as ET
+
 from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
@@ -29,24 +31,12 @@ class SinglePhotoMethods(LicenseMethods):
     Methods for getting information about a single photo.
     """
 
-    def _get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
+    def parse_single_photo_info(
+        self, info_resp: ET.Element, *, photo_id: str
+    ) -> SinglePhotoInfo:
         """
-        Look up the information for a single photo.
-
-        This uses the flickr.photos.getInfo API.
+        Parse the XML response from the ``flickr.photos.getInfo`` API.
         """
-        if not looks_like_flickr_photo_id(photo_id):
-            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
-
-        info_resp = self.call(
-            method="flickr.photos.getInfo",
-            params={"photo_id": photo_id},
-            exceptions={
-                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
-                "2": PhotoIsPrivate(photo_id),
-            },
-        )
-
         # The getInfo response is a blob of XML of the form:
         #
         #       <?xml version="1.0" encoding="utf-8" ?>
@@ -203,6 +193,26 @@ class SinglePhotoMethods(LicenseMethods):
             "url": url,
             "visibility": visibility,
         }
+
+    def _get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
+        """
+        Look up the information for a single photo.
+
+        This uses the flickr.photos.getInfo API.
+        """
+        if not looks_like_flickr_photo_id(photo_id):
+            raise ValueError(f"Not a Flickr photo ID: {photo_id!r}")
+
+        info_resp = self.call(
+            method="flickr.photos.getInfo",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+                "2": PhotoIsPrivate(photo_id),
+            },
+        )
+
+        return self.parse_single_photo_info(info_resp, photo_id=photo_id)
 
     def _get_single_photo_sizes(self, *, photo_id: str) -> list[Size]:
         """
