@@ -4,7 +4,7 @@ Tests for ``flickr_photos_api.downloader``.
 
 from collections.abc import Iterator
 import hashlib
-import pathlib
+from pathlib import Path
 import time
 
 import httpx
@@ -28,7 +28,7 @@ def vcr_cassette(cassette_name: str) -> Iterator[str]:
         yield cassette_name
 
 
-def test_download_photo(vcr_cassette: str, tmp_path: pathlib.Path) -> None:
+def test_download_photo(vcr_cassette: str, tmp_path: Path) -> None:
     """
     Download a photo from Flickr and check it's downloaded correctly.
     """
@@ -47,7 +47,7 @@ def test_download_photo(vcr_cassette: str, tmp_path: pathlib.Path) -> None:
     )
 
 
-def test_not_found_is_error(vcr_cassette: str, tmp_path: pathlib.Path) -> None:
+def test_not_found_is_error(vcr_cassette: str, tmp_path: Path) -> None:
     """
     Trying to fetch a Flickr URL that doesn't exist throws an immediate
     404 error.

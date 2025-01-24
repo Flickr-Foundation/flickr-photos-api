@@ -3,7 +3,7 @@ Functions for actually downloading a photo -- you get the URL from
 the Flickr API, then download the image itself here.
 """
 
-import pathlib
+from pathlib import Path
 import uuid
 
 import httpx
@@ -43,7 +43,7 @@ def is_retryable(exc: BaseException) -> bool:
     wait=wait_exponential(multiplier=1, min=4, max=60),
     retry=retry_if_exception(is_retryable),
 )
-def download_photo(url: str, out_path: pathlib.Path) -> None:
+def download_photo(url: str, out_path: Path) -> None:
     """
     Download a photo from Flickr.com.
 
