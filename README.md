@@ -69,13 +69,33 @@ This httpx implementation is the default implementation.
     ```
 
 2.  Construct an instance of `FlickrApi`.
-    You need to pass a user-agent that identifies you, and a [Flickr API key][key].
 
-    ```python
-    from flickr_photos_api import FlickrApi
+    There are two approaches you can use:
 
-    api = FlickrApi.with_api_key(api_key="…", user_agent="…")
-    ```
+    *   You can make unauthenticated requests by passing a [Flickr API key][key] in the headers:
+
+        ```python
+        import httpx
+
+        client = httpx.Client(params={"api_key": api_key})
+
+        api = FlickrApi(cleint)
+        ```
+
+    *   You can make authenticated requests by using OAuth 1.0a:
+
+        ```python
+        from authlib.integrations.httpx_client import OAuth1Client
+
+        client=OAuth1Client(
+            client_id=client_id,
+            client_secret=client_secret,
+            token=token,
+            token_secret=token_secret,
+        )
+
+        api = FlickrApi(client)
+        ```
 
 3.  Call methods on FlickrApi.
     There's no complete list of methods right now; look at the files `X_methods.py` in the `api` directory.
