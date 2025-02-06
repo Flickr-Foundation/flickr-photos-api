@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.14.5 - 2025-02-06
+
+*   Improve the error messages from `UserMethods`, so if you try to look up an unrecognized URL, they actually include the URL in the error text.
+
 ## v2.14.4 - 2025-01-16
 
 *   Expose a couple more methods on `SinglePhotoMethods` as part of the public API, for easier reuse and extension.

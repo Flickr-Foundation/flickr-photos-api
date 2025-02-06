@@ -311,7 +311,8 @@ class TestEnsureUserId:
         profile, it throws a ``ValueError``.
         """
         with pytest.raises(
-            ValueError, match="user_url was not the URL for a Flickr user"
+            ValueError,
+            match="user_url was not the URL for a Flickr user: 'https://www.flickr.com'",
         ):
             api.get_user(user_url="https://www.flickr.com")
 
@@ -321,6 +322,7 @@ class TestEnsureUserId:
         a ``ValueError``.
         """
         with pytest.raises(
-            ValueError, match="user_url was not the URL for a Flickr user"
+            ValueError,
+            match="user_url was not the URL for a Flickr user: 'https://www.example.com'",
         ):
             api.get_user(user_url="https://www.example.com")
