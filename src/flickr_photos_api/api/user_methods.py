@@ -56,10 +56,12 @@ class UserMethods(FlickrApi):
 
             if parsed_user_url["type"] != "user":
                 raise ValueError(
-                    "user_url was not the URL for a Flickr user: {user_url!r}"
+                    f"user_url was not the URL for a Flickr user: {user_url!r}"
                 )
         except (NotAFlickrUrl, UnrecognisedUrl):
-            raise ValueError("user_url was not the URL for a Flickr user: {user_url!r}")
+            raise ValueError(
+                f"user_url was not the URL for a Flickr user: {user_url!r}"
+            )
 
         assert parsed_user_url["type"] == "user"
 
