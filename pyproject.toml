@@ -55,7 +55,7 @@ show_missing = true
 skip_covered = true
 fail_under = 100
 exclude_also = [
-  "return NotImplemented",
+  "raise NotImplementedError",
 ]
 
 [tool.pytest.ini_options]

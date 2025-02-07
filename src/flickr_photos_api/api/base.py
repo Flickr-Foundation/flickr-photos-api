@@ -58,7 +58,7 @@ class FlickrApi(abc.ABC):
         :param exceptions: A map from Flickr API error code to exceptions that should
             be thrown.
         """
-        return NotImplemented
+        raise NotImplementedError
 
 
 def is_retryable(exc: BaseException) -> bool:
