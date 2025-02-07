@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.16.0 - 2025-02-07
+
+*   Replace the `download_photo()` function with `download_file()`, which:
+
+    - Automatically chooses an appropriate extension based on the Content-Type header
+    - Returns the Content-Type as part of the result
+
 ## v2.15.1 - 2025-02-07
 
 *   Improve the type hints for `Size`, so now type checkers know that any photo size always has width/height.
