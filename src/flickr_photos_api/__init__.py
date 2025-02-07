@@ -35,6 +35,7 @@ from .types import (
     GalleryInfo,
     GroupContext,
     GroupInfo,
+    MediaType,
     PhotoContext,
     SinglePhotoInfo,
     Tag,
@@ -42,7 +43,7 @@ from .types import (
 )
 
 
-__version__ = "2.14.5"
+__version__ = "2.15.0"
 
 
 __all__ = [
@@ -78,6 +79,7 @@ __all__ = [
     "GroupContext",
     "GroupInfo",
     "InsufficientPermissionsToComment",
+    "MediaType",
     "PhotoContext",
     "PhotoIsPrivate",
     "Tag",

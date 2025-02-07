@@ -2,6 +2,7 @@
 Methods for getting information about a single photo in the Flickr API.
 """
 
+import typing
 from xml.etree import ElementTree as ET
 
 from flickr_url_parser import looks_like_flickr_photo_id
@@ -14,6 +15,7 @@ from ..types import (
     AlbumContext,
     GalleryContext,
     GroupContext,
+    MediaType,
     PhotoContext,
     SinglePhotoInfo,
     SinglePhoto,
@@ -171,8 +173,12 @@ class SinglePhotoMethods(LicenseMethods):
             "is_family": visibility_elem.attrib["isfamily"] == "1",
         }
 
+        assert photo_elem.attrib["media"] in {"photo", "video"}
+        media_type = typing.cast(MediaType, photo_elem.attrib["media"])
+
         return {
             "id": photo_id,
+            "media": media_type,
             "secret": photo_elem.attrib["secret"],
             "server": photo_elem.attrib["server"],
             "farm": photo_elem.attrib["farm"],

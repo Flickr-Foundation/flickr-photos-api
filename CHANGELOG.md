@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.15.0 - 2025-02-07
+
+*   Add the `media` type to results (i.e. photo or video).
+
 ## v2.14.5 - 2025-02-06
 
 *   Improve the error messages from `UserMethods`, so if you try to look up an unrecognized URL, they actually include the URL in the error text.

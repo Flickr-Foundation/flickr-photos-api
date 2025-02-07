@@ -196,6 +196,7 @@ class TestGetSinglePhoto:
         """
         video = api.get_single_photo(photo_id="4960396261")
 
+        assert video["media"] == "video"
         assert video["sizes"][-1] == {
             "label": "iphone_wifi",
             "width": None,
