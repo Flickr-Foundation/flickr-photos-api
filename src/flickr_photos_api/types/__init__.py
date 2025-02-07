@@ -3,6 +3,7 @@ import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .machine_tags import get_machine_tags, MachineTags
+from .sizes import Size
 from .users import User, UserInfo, create_user, fix_realname
 
 
@@ -12,6 +13,7 @@ __all__ = [
     "GroupContext",
     "MachineTags",
     "PhotoContext",
+    "Size",
     "User",
     "UserInfo",
     "Visibility",
@@ -42,14 +44,6 @@ TakenGranularity = typing.Literal["second", "month", "year", "circa"]
 class DateTaken(typing.TypedDict):
     value: datetime.datetime
     granularity: TakenGranularity
-
-
-class Size(typing.TypedDict):
-    label: str
-    width: int | None
-    height: int | None
-    media: typing.Literal["photo", "video"]
-    source: str
 
 
 class Comment(typing.TypedDict):
