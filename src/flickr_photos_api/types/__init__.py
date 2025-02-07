@@ -88,12 +88,16 @@ class Visibility(typing.TypedDict):
 SafetyLevel = typing.Literal["safe", "moderate", "restricted"]
 
 
+MediaType = typing.Literal["photo", "video"]
+
+
 class SinglePhotoInfo(typing.TypedDict):
     """
     Represents a response from the flickr.photos.getInfo API.
     """
 
     id: str
+    media: MediaType
 
     secret: str
     server: str

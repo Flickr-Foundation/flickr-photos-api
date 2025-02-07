@@ -3,6 +3,7 @@ Methods for getting information about collections of photos in Flickr
 (albums, galleries, groups, and so on).
 """
 
+import typing
 from xml.etree import ElementTree as ET
 
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
@@ -14,6 +15,7 @@ from ..exceptions import ResourceNotFound
 from ..types import (
     CollectionOfPhotos,
     GroupInfo,
+    MediaType,
     PhotosInAlbum,
     PhotosInGallery,
     PhotosInGroup,
@@ -90,8 +92,12 @@ class CollectionMethods(LicenseMethods, UserMethods):
 
         sizes = parse_sizes(photo_elem)
 
+        assert photo_elem.attrib["media"] in {"photo", "video"}
+        media_type = typing.cast(MediaType, photo_elem.attrib["media"])
+
         return {
             "id": photo_id,
+            "media": media_type,
             "secret": secret,
             "server": server,
             "farm": farm,
