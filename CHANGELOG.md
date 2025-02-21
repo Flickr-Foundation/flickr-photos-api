@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.16.1 - 2025-02-21
+
+*   Retry transient `httpx.ConnectError` errors in `download_file()`.
+
 ## v2.16.0 - 2025-02-07
 
 *   Replace the `download_photo()` function with `download_file()`, which:
