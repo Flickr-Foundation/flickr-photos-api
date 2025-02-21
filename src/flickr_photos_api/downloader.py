@@ -33,7 +33,9 @@ def is_retryable(exc: BaseException) -> bool:
     #
     # There's no easy way to simulate this in tests, so we just don't
     # test this branch -- but it's simple enough not to be a big issue.
-    if isinstance(exc, (httpx.ConnectTimeout, httpx.ReadTimeout)):  # pragma: no cover
+    if isinstance(
+        exc, (httpx.ConnectError, httpx.ConnectTimeout, httpx.ReadTimeout)
+    ):  # pragma: no cover
         return True
 
     return False
