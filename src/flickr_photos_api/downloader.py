@@ -11,7 +11,7 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception
 
 
-client = httpx.Client(headers={"User-Agent": "flickr-photos-api"})
+default_client = httpx.Client(headers={"User-Agent": "flickr-photos-api"})
 
 
 def is_retryable(exc: BaseException) -> bool:
@@ -55,7 +55,13 @@ class DownloadedFile(typing.TypedDict):
     wait=wait_exponential(multiplier=1, min=4, max=60),
     retry=retry_if_exception(is_retryable),
 )
-def download_file(url: str, download_dir: Path, base_name: str) -> DownloadedFile:
+def download_file(
+    client: httpx.Client = default_client,
+    *,
+    url: str,
+    download_dir: Path,
+    base_name: str,
+) -> DownloadedFile:
     """
     Download a file from Flickr.com.
 

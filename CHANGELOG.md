@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.16.2
+
+*   Add an optional `client` argument to `download_file`, so you can supply your own `httpx.Client` if, for example, you want to override the User-Agent header.
+
 ## v2.16.1 - 2025-02-21
 
 *   Retry transient `httpx.ConnectError` errors in `download_file()`.
