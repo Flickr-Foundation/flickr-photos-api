@@ -4,8 +4,10 @@
 build
 interrogate
 mypy
-pydantic
 pytest-cov
 ruff
 twine
-vcrpy
+
+silver-nitrate[cassettes]
+silver-nitrate[json]
+silver-nitrate[types]
