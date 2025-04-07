@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v2.16.2
+## v2.16.2 - 2025-02-28
 
 *   Add an optional `client` argument to `download_file`, so you can supply your own `httpx.Client` if, for example, you want to override the User-Agent header.
 
