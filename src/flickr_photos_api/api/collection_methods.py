@@ -212,8 +212,8 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "user_id": user_id,
                 "photoset_id": album_id,
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
+                "page": page,
+                "per_page": per_page,
             },
             exceptions={
                 "1": ResourceNotFound(f"Could not find album with ID: {album_id!r}"),
@@ -255,8 +255,8 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "gallery_id": gallery_id,
                 "get_gallery_info": "1",
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
+                "page": page,
+                "per_page": per_page,
             },
             exceptions={
                 "1": ResourceNotFound(f"Could not find gallery with ID: {gallery_id!r}")
@@ -305,8 +305,8 @@ class CollectionMethods(LicenseMethods, UserMethods):
             params={
                 "user_id": user_id,
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
+                "page": page,
+                "per_page": per_page,
             },
             exceptions={
                 "1": ResourceNotFound(f"Could not find user with ID: {user_id!r}")
@@ -370,8 +370,8 @@ class CollectionMethods(LicenseMethods, UserMethods):
             params={
                 "group_id": group_info["id"],
                 "extras": ",".join(self.extras),
-                "page": str(page),
-                "per_page": str(per_page),
+                "page": page,
+                "per_page": per_page,
             },
         )
 
@@ -396,8 +396,8 @@ class CollectionMethods(LicenseMethods, UserMethods):
             method="flickr.photos.search",
             params={
                 "tags": tag,
-                "page": str(page),
-                "per_page": str(per_page),
+                "page": page,
+                "per_page": per_page,
                 # This is so we get the same photos as you see on the "tag" page
                 # under "All Photos Tagged XYZ" -- if you click the URL to the
                 # full search results, you end up on a page like:
