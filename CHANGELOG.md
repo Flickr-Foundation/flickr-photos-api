@@ -1,6 +1,22 @@
 # CHANGELOG
 
-## v2.16.2
+## v2.17.0 - 2025-04-07
+
+*   Change the type hint on `FlickrApi.call`, so now `params` can take `str` or `int` values, not just `str`.
+
+    This means you can pass numeric values directly to the API, rather than casting them to `str` first -- for example:
+
+    ```python
+    FlickrApi.call(method="…", params={"page": 1, …})
+    ```
+
+    rather than:
+
+    ```python
+    FlickrApi.call(method="…", params={"page": str(1), …})
+    ```
+
+## v2.16.2 - 2025-02-28
 
 *   Add an optional `client` argument to `download_file`, so you can supply your own `httpx.Client` if, for example, you want to override the User-Agent header.
 

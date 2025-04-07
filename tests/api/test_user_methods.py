@@ -198,7 +198,7 @@ class TestGetUser:
                 *,
                 http_method: typing.Any = None,
                 method: str,
-                params: dict[str, str] | None = None,
+                params: dict[str, str | int] | None = None,
                 exceptions: dict[str, Exception] | None = None,
             ) -> ET.Element:
                 """
