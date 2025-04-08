@@ -153,7 +153,7 @@ class HttpxImplementation(FlickrApi):
         *,
         http_method: HttpMethod = "GET",
         method: str,
-        params: dict[str, str | int] | None = None,
+        params: Mapping[str, str | int] | None = None,
         exceptions: dict[str, Exception] | None = None,
     ) -> ET.Element:
         """
@@ -188,7 +188,7 @@ class HttpxImplementation(FlickrApi):
         *,
         http_method: HttpMethod,
         method: str,
-        params: dict[str, str | int] | None,
+        params: Mapping[str, str | int] | None,
         exceptions: dict[str, Exception],
     ) -> ET.Element:
         """

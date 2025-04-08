@@ -2,6 +2,7 @@
 Tests for ``flickr_photos_api.api.user_methods``.
 """
 
+from collections.abc import Mapping
 import datetime
 import typing
 from xml.etree import ElementTree as ET
@@ -198,7 +199,7 @@ class TestGetUser:
                 *,
                 http_method: typing.Any = None,
                 method: str,
-                params: dict[str, str | int] | None = None,
+                params: Mapping[str, str | int] | None = None,
                 exceptions: dict[str, Exception] | None = None,
             ) -> ET.Element:
                 """
