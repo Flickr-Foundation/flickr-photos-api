@@ -3,6 +3,7 @@ Base classes for the Flickr API client.
 """
 
 import abc
+from collections.abc import Mapping
 import typing
 from xml.etree import ElementTree as ET
 
@@ -43,7 +44,7 @@ class FlickrApi(abc.ABC):
         *,
         http_method: HttpMethod = "GET",
         method: str,
-        params: dict[str, str | int] | None = None,
+        params: Mapping[str, str | int] | None = None,
         exceptions: dict[str, Exception] | None = None,
     ) -> ET.Element:
         """

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.17.2 - 2025-04-08
+
+*   Tweak the type hint introduced in v2.17.0 to use a `Mapping` rather than a `dict`, which is a bit more flexible.
+
 ## v2.17.1 - 2025-04-08
 
 *   Retry flaky errors *"Sorry, the Flickr API service is not currently available"* for any error code, not just error code 201.
