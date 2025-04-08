@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.17.1 - 2025-04-08
+
+*   Retry flaky errors *"Sorry, the Flickr API service is not currently available"* for any error code, not just error code 201.
+
 ## v2.17.0 - 2025-04-07
 
 *   Change the type hint on `FlickrApi.call`, so now `params` can take `str` or `int` values, not just `str`.

@@ -97,10 +97,14 @@ def is_retryable(exc: BaseException) -> bool:
     #     />
     #
     # but this indicates a flaky connection rather than a genuine failure.
+    #
+    # We've seen similar with code "0", so we match on the error message
+    # rather than the code.
     if (
         isinstance(exc, UnrecognisedFlickrApiException)
         and isinstance(exc.args[0], dict)
-        and exc.args[0].get("code") == "201"
+        and exc.args[0].get("msg")
+        == "Sorry, the Flickr API service is not currently available."
     ):
         return True
 
