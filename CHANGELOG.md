@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.18.0 - 2025-04-09
+
+A couple of license-related improvements:
+
+*   There's a new type `LicenseId` which is all the human-readable license IDs returned by this library.
+*   You can now call `lookup_license_by_id()` with one of the human-readable license IDs returned by this library, not just the numeric ID.
+
 ## v2.17.2 - 2025-04-08
 
 *   Tweak the type hint introduced in v2.17.0 to use a `Mapping` rather than a `dict`, which is a bit more flexible.

@@ -42,9 +42,9 @@ interactions:
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 97083199d9a34b826701781a1e43ba1e.cloudfront.net (CloudFront)
+      - 1.1 56d50c15e83a778a8a2df6031ec29098.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Cd83rP83h9DpkbDOyzvWvzDp0fGl0L6USIyD7pSKMQRD6h2fYyDgKQ==
+      - OvG3iUGYPqX5G5Kzw820Y2paQ_I9BdRoGNrXZj6gfdOMmn1WTi9OVg==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -61,11 +61,11 @@ interactions:
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Root=1-67f666fb-4d4c559a281427255fa328b0
+      - Root=1-67f666fb-461b4b3b2729766521b1e2c6
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.12.219
+      - serverless-proxy-10.78.35.138
     status:
       code: 200
       message: OK

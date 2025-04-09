@@ -20,7 +20,7 @@ class TestLicenseMethods:
             "0": {
                 "id": "all-rights-reserved",
                 "label": "All Rights Reserved",
-                "url": None,
+                "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
             },
             "1": {
                 "id": "cc-by-nc-sa-2.0",
@@ -60,7 +60,7 @@ class TestLicenseMethods:
             "8": {
                 "id": "usgov",
                 "label": "United States Government Work",
-                "url": "http://www.usa.gov/copyright.shtml",
+                "url": "https://www.usa.gov/government-copyright",
             },
             "9": {
                 "id": "cc0-1.0",
@@ -74,14 +74,24 @@ class TestLicenseMethods:
             },
         }
 
-    def test_lookup_license_by_id(self, api: FlickrApi) -> None:
+    def test_lookup_license_by_numeric_id(self, api: FlickrApi) -> None:
         """
         You can look up a license by its numeric ID.
         """
         assert api.lookup_license_by_id(id="0") == {
             "id": "all-rights-reserved",
             "label": "All Rights Reserved",
-            "url": None,
+            "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
+        }
+
+    def test_lookup_license_by_human_readable_id(self, api: FlickrApi) -> None:
+        """
+        You can look up a license by its human-readable ID.
+        """
+        assert api.lookup_license_by_id(id="all-rights-reserved") == {
+            "id": "all-rights-reserved",
+            "label": "All Rights Reserved",
+            "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
         }
 
     def test_throws_license_not_found_for_bad_id(self, api: FlickrApi) -> None:
