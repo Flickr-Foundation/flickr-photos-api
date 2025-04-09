@@ -16,6 +16,7 @@ from .types import (
     CommonsInstitution,
     MachineTags,
     License,
+    LicenseId,
     User,
     UserInfo,
     TakenGranularity,
@@ -43,7 +44,7 @@ from .types import (
 )
 
 
-__version__ = "2.17.2"
+__version__ = "2.18.0"
 
 
 __all__ = [
@@ -55,6 +56,7 @@ __all__ = [
     "InvalidXmlException",
     "LicenseNotFound",
     "License",
+    "LicenseId",
     "LocationInfo",
     "MachineTags",
     "User",

@@ -2,6 +2,7 @@ import datetime
 import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
+from .licenses import License, LicenseId
 from .machine_tags import get_machine_tags, MachineTags
 from .sizes import Size
 from .users import User, UserInfo, create_user, fix_realname
@@ -11,6 +12,8 @@ __all__ = [
     "AlbumContext",
     "GalleryContext",
     "GroupContext",
+    "License",
+    "LicenseId",
     "MachineTags",
     "PhotoContext",
     "Size",
@@ -21,12 +24,6 @@ __all__ = [
     "get_machine_tags",
     "fix_realname",
 ]
-
-
-class License(typing.TypedDict):
-    id: str
-    label: str
-    url: str | None
 
 
 class LocationInfo(typing.TypedDict):
