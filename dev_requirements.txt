@@ -28,7 +28,9 @@ colorama==0.4.6
 coverage==7.8.0
     # via pytest-cov
 cryptography==44.0.2
-    # via authlib
+    # via
+    #   authlib
+    #   types-authlib
 docutils==0.21.2
     # via readme-renderer
 flickr-url-parser==1.11.0
@@ -140,6 +142,8 @@ tabulate==0.9.0
 tenacity==9.1.2
     # via flickr-photos-api
 twine==6.1.0
+    # via -r dev_requirements.in
+types-authlib==1.4.0.20250408
     # via -r dev_requirements.in
 typing-extensions==4.13.1
     # via
