@@ -94,10 +94,13 @@ class TestLicenseMethods:
             "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
         }
 
-    def test_throws_license_not_found_for_bad_id(self, api: FlickrApi) -> None:
+    @pytest.mark.parametrize("bad_id", ["-1", "100"])
+    def test_throws_license_not_found_for_bad_id(
+        self, api: FlickrApi, bad_id: str
+    ) -> None:
         """
         If you try to look up a license ID which doesn't exist, you
         get a ``LicenseNotFound`` error.
         """
-        with pytest.raises(LicenseNotFound, match="ID -1"):
-            api.lookup_license_by_id(id="-1")
+        with pytest.raises(LicenseNotFound, match=bad_id):
+            api.lookup_license_by_id(id=bad_id)
