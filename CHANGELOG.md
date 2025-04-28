@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.20.0 - 2025-04-28
+
+Remove the `get_photos_from_parsed_flickr_url()` method, which is no longer used in our projects.
+
 ## v2.19.0 - 2025-04-28
 
 Remove the `get_photos_from_flickr_url()` method, which is no longer used in our projects.

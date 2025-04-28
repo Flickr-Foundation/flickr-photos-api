@@ -26,7 +26,6 @@ from .types import (
     SafetyLevel,
     SinglePhoto,
     CollectionOfPhotos,
-    PhotosFromUrl,
     PhotosInAlbum,
     PhotosInGallery,
     PhotosInGroup,
@@ -44,7 +43,7 @@ from .types import (
 )
 
 
-__version__ = "2.19.0"
+__version__ = "2.20.0"
 
 
 __all__ = [
@@ -70,7 +69,6 @@ __all__ = [
     "SinglePhoto",
     "SinglePhotoInfo",
     "CollectionOfPhotos",
-    "PhotosFromUrl",
     "PhotosInAlbum",
     "PhotosInGallery",
     "PhotosInGroup",
