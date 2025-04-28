@@ -474,12 +474,3 @@ class TestGetPhotosInGroupPool:
             api.get_photos_in_group_pool(
                 group_url="https://www.flickr.com/groups/doesnotexist/pool/"
             )
-
-
-def test_get_photos_with_tag(api: FlickrApi) -> None:
-    """
-    Get photos that have a given tag.
-    """
-    photos = api.get_photos_with_tag(tag="sunset")
-
-    assert photos == get_fixture("tag-sunset.json", model=CollectionOfPhotos)

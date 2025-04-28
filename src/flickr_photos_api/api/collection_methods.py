@@ -381,34 +381,3 @@ class CollectionMethods(LicenseMethods, UserMethods):
             **self._create_collection(photos_elem),
             "group": group_info,
         }
-
-    def get_photos_with_tag(
-        self, *, tag: str, page: int = 1, per_page: int = 10
-    ) -> CollectionOfPhotos:
-        """
-        Get a page of photos in a tag.
-
-        Note that tag pagination and ordering results can be inconsistent,
-        especially for large tags -- it's tricky to do an "exhaustive" search
-        of a Flickr tag.
-        """
-        resp = self.call(
-            method="flickr.photos.search",
-            params={
-                "tags": tag,
-                "page": page,
-                "per_page": per_page,
-                # This is so we get the same photos as you see on the "tag" page
-                # under "All Photos Tagged XYZ" -- if you click the URL to the
-                # full search results, you end up on a page like:
-                #
-                #     https://flickr.com/search/?sort=interestingness-desc&…
-                #
-                "sort": "interestingness-desc",
-                "extras": ",".join(self.extras),
-            },
-        )
-
-        photos_elem = find_required_elem(resp, path="photos")
-
-        return self._create_collection(photos_elem)
