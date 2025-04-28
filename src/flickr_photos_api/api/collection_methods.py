@@ -14,11 +14,9 @@ from .user_methods import UserMethods
 from ..exceptions import ResourceNotFound
 from ..types import (
     CollectionOfPhotos,
-    GroupInfo,
     MediaType,
     PhotosInAlbum,
     PhotosInGallery,
-    PhotosInGroup,
     SinglePhoto,
     User,
     create_user,
@@ -329,55 +327,3 @@ class CollectionMethods(LicenseMethods, UserMethods):
         photos_elem = find_required_elem(resp, path="photos")
 
         return self._create_collection(photos_elem, owner=owner)
-
-    def _lookup_group_from_url(self, *, url: str) -> GroupInfo:
-        """
-        Given the link to a group's photos or profile, return some info.
-        """
-        # See https://www.flickr.com/services/api/flickr.urls.lookupGroup.html
-        resp = self.call(
-            method="flickr.urls.lookupGroup",
-            params={"url": url},
-            exceptions={
-                "1": ResourceNotFound(f"Could not find group with URL: {url!r}")
-            },
-        )
-
-        # The lookupUser response is of the form:
-        #
-        #       <group id="34427469792@N01">
-        #         <groupname>FlickrCentral</groupname>
-        #       </group>
-        #
-        group_elem = find_required_elem(resp, path=".//group")
-
-        return {
-            "id": group_elem.attrib["id"],
-            "name": find_required_text(group_elem, path="groupname"),
-        }
-
-    def get_photos_in_group_pool(
-        self, *, group_url: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInGroup:
-        """
-        Get a page of photos in a group pool.
-        """
-        group_info = self._lookup_group_from_url(url=group_url)
-
-        # See https://www.flickr.com/services/api/flickr.groups.pools.getPhotos.html
-        resp = self.call(
-            method="flickr.groups.pools.getPhotos",
-            params={
-                "group_id": group_info["id"],
-                "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
-            },
-        )
-
-        photos_elem = find_required_elem(resp, path="photos")
-
-        return {
-            **self._create_collection(photos_elem),
-            "group": group_info,
-        }

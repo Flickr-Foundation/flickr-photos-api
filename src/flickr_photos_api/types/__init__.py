@@ -151,15 +151,6 @@ class PhotosInGallery(CollectionOfPhotos):
     gallery: GalleryInfo
 
 
-class GroupInfo(typing.TypedDict):
-    id: str
-    name: str
-
-
-class PhotosInGroup(CollectionOfPhotos):
-    group: GroupInfo
-
-
 class CommonsInstitution(typing.TypedDict):
     """
     Represents an institution in the Flickr Commons programme.

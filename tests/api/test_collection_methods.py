@@ -9,7 +9,6 @@ from flickr_photos_api import FlickrApi, ResourceNotFound
 from flickr_photos_api.types import (
     PhotosInAlbum,
     PhotosInGallery,
-    PhotosInGroup,
     CollectionOfPhotos,
 )
 from utils import get_fixture
@@ -156,11 +155,6 @@ class TestCollectionsPhotoResponse:
                 "get_photos_in_user_photostream",
                 {"user_id": "34427469121@N01"},
                 id="get_photos_in_user_photostream",
-            ),
-            pytest.param(
-                "get_photos_in_group_pool",
-                {"group_url": "https://www.flickr.com/groups/slovenia/pool/"},
-                id="get_photos_in_group_pool",
             ),
         ],
     )
@@ -447,30 +441,4 @@ class TestGetPhotosInUserPhotostream:
         with pytest.raises(ResourceNotFound):
             api.get_photos_in_user_photostream(
                 user_url="https://www.flickr.com/photos/DefinitelyDoesNotExist"
-            )
-
-
-class TestGetPhotosInGroupPool:
-    """
-    Tests for ``CollectionOfPhotos.get_photos_in_group_pool``.
-    """
-
-    def test_get_photos_in_group_pool(self, api: FlickrApi) -> None:
-        """
-        Get photos in a group pool.
-        """
-        photos = api.get_photos_in_group_pool(
-            group_url="https://www.flickr.com/groups/slovenia/pool/"
-        )
-
-        assert photos == get_fixture("group-slovenia.json", model=PhotosInGroup)
-
-    def test_non_existent_group_pool_url_is_error(self, api: FlickrApi) -> None:
-        """
-        Getting photos for a group that doesn't exist throws
-        a ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound):
-            api.get_photos_in_group_pool(
-                group_url="https://www.flickr.com/groups/doesnotexist/pool/"
             )
