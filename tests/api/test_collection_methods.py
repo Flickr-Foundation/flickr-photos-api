@@ -6,10 +6,7 @@ import pytest
 
 from data import FlickrUserIds
 from flickr_photos_api import FlickrApi, ResourceNotFound
-from flickr_photos_api.types import (
-    PhotosInAlbum,
-    CollectionOfPhotos,
-)
+from flickr_photos_api.types import PhotosInAlbum
 from utils import get_fixture
 
 
@@ -145,11 +142,6 @@ class TestCollectionsPhotoResponse:
                 },
                 id="get_photos_in_album",
             ),
-            pytest.param(
-                "get_photos_in_user_photostream",
-                {"user_id": "34427469121@N01"},
-                id="get_photos_in_user_photostream",
-            ),
         ],
     )
     def test_methods_are_paginated(
@@ -170,22 +162,6 @@ class TestCollectionsPhotoResponse:
         )
 
         assert individual_resp["photos"][0] == all_resp["photos"][4]
-
-    @pytest.mark.parametrize(
-        ["user_id", "realname"],
-        [
-            ("62173425@N02", "Stockholm Transport Museum"),
-            ("32162360@N00", "beachcomber australia"),
-        ],
-    )
-    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
-        """
-        The collection functions apply the realname "fixes" we have for users
-        of particular interest.
-        """
-        resp = api.get_photos_in_user_photostream(user_id=user_id, per_page=1)
-        user = resp["photos"][0]["owner"]
-        assert user["realname"] == realname
 
 
 class TestGetAlbum:
@@ -294,89 +270,4 @@ class TestGetAlbum:
             api.get_photos_in_album(
                 user_url="https://www.flickr.com/photos/DefinitelyDoesNotExist",
                 album_id="1234",
-            )
-
-
-class TestGetPhotosInUserPhotostream:
-    """
-    Tests for ``CollectionMethods.get_photos_in_user_photostream``.
-    """
-
-    def test_get_photos_by_user_id(self, api: FlickrApi) -> None:
-        """
-        Look up a user's photo stream by NSID.
-        """
-        photos = api.get_photos_in_user_photostream(user_id="34427469121@N01")
-
-        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
-
-    def test_get_photos_by_user_url(self, api: FlickrApi) -> None:
-        """
-        Look up a user's photo stream from their profile URL.
-        """
-        photos = api.get_photos_in_user_photostream(
-            user_url="https://www.flickr.com/photos/34427469121@N01"
-        )
-
-        assert photos == get_fixture("user-george.json", model=CollectionOfPhotos)
-
-    def test_empty_result_if_no_public_photos(self, api: FlickrApi) -> None:
-        """
-        If a user doesn't have any public photos, we get an empty
-        result back.
-        """
-        # This is a user who doesn't have any public photos.
-        #
-        # I found them by looking for users on the Flickr help forums who wanted
-        # to make all their photos private:
-        # https://www.flickr.com/help/forum/en-us/72157668446667394/
-        photos = api.get_photos_in_user_photostream(user_id="51635425@N00")
-
-        assert photos == {"count_pages": 1, "count_photos": 0, "photos": []}
-
-    def test_no_realname_is_none(self, api: FlickrApi) -> None:
-        """
-        If a user doesn't have a ``realname`` set, we don't set it on
-        any of their photos.
-        """
-        # This is the Commons Test account, which doesn't have
-        # a 'realname' set
-        result = api.get_photos_in_user_photostream(user_id="200049760@N08")
-
-        assert all(photo["owner"]["realname"] is None for photo in result["photos"])
-
-    def test_no_path_alias_is_none(self, api: FlickrApi) -> None:
-        """
-        If a user doesn't have a ``path alias`` set, we don't set it on
-        any of their photos.
-        """
-        # This is the Commons Test account, which doesn't have
-        # a 'path_alias' set
-        result = api.get_photos_in_user_photostream(user_id="200049760@N08")
-
-        owner = result["photos"][0]["owner"]
-        assert owner["path_alias"] is None
-
-    def test_handles_deleted_user(self, api: FlickrApi) -> None:
-        """
-        If a user has deleted their account, trying to get their
-        public photos throws a ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound):
-            api.get_photos_in_user_photostream(user_id=FlickrUserIds.Deleted)
-
-    def test_non_existent_user_id_is_error(self, api: FlickrApi) -> None:
-        """
-        Getting photos for a non-existent user ID throws a ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound):
-            api.get_photos_in_user_photostream(user_id=FlickrUserIds.NonExistent)
-
-    def test_non_existent_user_url_is_error(self, api: FlickrApi) -> None:
-        """
-        Getting photos for a non-existent user URL throws a ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound):
-            api.get_photos_in_user_photostream(
-                user_url="https://www.flickr.com/photos/DefinitelyDoesNotExist"
             )
