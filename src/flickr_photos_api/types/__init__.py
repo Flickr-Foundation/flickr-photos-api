@@ -160,11 +160,6 @@ class PhotosInGroup(CollectionOfPhotos):
     group: GroupInfo
 
 
-PhotosFromUrl = (
-    SinglePhoto | CollectionOfPhotos | PhotosInAlbum | PhotosInGallery | PhotosInGroup
-)
-
-
 class CommonsInstitution(typing.TypedDict):
     """
     Represents an institution in the Flickr Commons programme.
