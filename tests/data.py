@@ -21,9 +21,6 @@ class FlickrUserIds:
     # their Flickr account in May 2024.
     Deleted = "48143042@N05"
 
-    # A user ID that looks like it might exist, but doesn't
-    NonExistent = "1234567@N00"
-
 
 class FlickrPhotoIds:
     """
