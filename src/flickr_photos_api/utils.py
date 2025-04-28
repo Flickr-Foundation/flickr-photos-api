@@ -4,7 +4,7 @@ Convert values retrieved from the Flickr API into nicely-typed values.
 
 from xml.etree import ElementTree as ET
 
-from .types import LocationInfo, SafetyLevel, Size
+from .types import LocationInfo, SafetyLevel
 
 
 def parse_safety_level(s: str) -> SafetyLevel:
@@ -24,53 +24,6 @@ def parse_safety_level(s: str) -> SafetyLevel:
         return lookup_table[s]
     except KeyError:
         raise ValueError(f"Unrecognised safety level: {s}")
-
-
-def parse_sizes(photo_elem: ET.Element) -> list[Size]:
-    """
-    Get a list of sizes from a photo in a collection response.
-    """
-    # When you get a collection of photos (e.g. in an album)
-    # you can get some of the sizes on the <photo> element, e.g.
-    #
-    #     <
-    #       photo
-    #       url_t="https://live.staticflickr.com/2893/1234567890_t.jpg"
-    #       height_t="78"
-    #       width_t="100"
-    #       …
-    #     />
-    #
-    sizes: list[Size] = []
-
-    for suffix, label in [
-        ("sq", "Square"),
-        ("q", "Large Square"),
-        ("t", "Thumbnail"),
-        ("s", "Small"),
-        ("m", "Medium"),
-        ("l", "Large"),
-        ("o", "Original"),
-    ]:
-        try:
-            media = photo_elem.attrib["media"]
-
-            if media not in ("video", "photo"):  # pragma: no cover
-                raise ValueError(f"Unrecognised media: {media!r}")
-
-            sizes.append(
-                {
-                    "height": int(photo_elem.attrib[f"height_{suffix}"]),
-                    "width": int(photo_elem.attrib[f"width_{suffix}"]),
-                    "label": label,
-                    "media": media,  # type: ignore
-                    "source": photo_elem.attrib[f"url_{suffix}"],
-                }
-            )
-        except KeyError:
-            pass
-
-    return sizes
 
 
 def parse_location(elem_with_location: ET.Element) -> LocationInfo | None:
