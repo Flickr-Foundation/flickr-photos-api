@@ -209,9 +209,9 @@ def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> Non
     """
     api.client = FlakyClient(underlying=api.client, exc=exc)  # type: ignore
 
-    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
+    photo = api.get_single_photo(photo_id="32812033543")
 
-    assert len(resp["photos"]) == 10
+    assert photo["title"] == "Puppy Kisses"
 
 
 def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
@@ -224,7 +224,7 @@ def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
     )  # type: ignore
 
     with pytest.raises(httpx.ConnectError):
-        api.get_photos_in_user_photostream(user_id="61270229@N05")
+        api.get_single_photo(photo_id="32812033543")
 
 
 def test_retries_5xx_error(api: FlickrApi) -> None:
@@ -235,9 +235,9 @@ def test_retries_5xx_error(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add a 500 response as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
+    photo = api.get_single_photo(photo_id="32812033543")
 
-    assert len(resp["photos"]) == 10
+    assert photo["title"] == "Puppy Kisses"
 
 
 def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
@@ -249,7 +249,7 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
     # the 500 response from the previous test so that there were more
     # than it would retry.
     with pytest.raises(httpx.HTTPStatusError) as err:
-        api.get_photos_in_user_photostream(user_id="61270229@N05")
+        api.get_single_photo(photo_id="32812033543")
 
     assert err.value.response.status_code == 500
 
@@ -262,9 +262,9 @@ def test_retries_invalid_xml_error(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
+    photo = api.get_single_photo(photo_id="32812033543")
 
-    assert len(resp["photos"]) == 10
+    assert photo["title"] == "Puppy Kisses"
 
 
 def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
@@ -276,7 +276,7 @@ def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
     # the invalid XML from the previous test so that there were more
     # than it would retry.
     with pytest.raises(InvalidXmlException):
-        api.get_photos_in_user_photostream(user_id="61270229@N05")
+        api.get_single_photo(photo_id="32812033543")
 
 
 def test_retries_error_code_201(api: FlickrApi) -> None:
@@ -287,9 +287,9 @@ def test_retries_error_code_201(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    resp = api.get_photos_in_user_photostream(user_id="61270229@N05")
+    photo = api.get_single_photo(photo_id="32812033543")
 
-    assert len(resp["photos"]) == 10
+    assert photo["title"] == "Puppy Kisses"
 
 
 def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
@@ -301,7 +301,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
     with pytest.raises(UnrecognisedFlickrApiException) as exc:
-        api.get_photos_in_user_photostream(user_id="61270229@N05")
+        api.get_single_photo(photo_id="32812033543")
 
     assert exc.value.args[0] == {
         "code": "201",

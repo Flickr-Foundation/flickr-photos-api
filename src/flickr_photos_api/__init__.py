@@ -25,16 +25,9 @@ from .types import (
     Size,
     SafetyLevel,
     SinglePhoto,
-    CollectionOfPhotos,
-    PhotosInAlbum,
-    PhotosInGallery,
-    PhotosInGroup,
     AlbumContext,
-    AlbumInfo,
     GalleryContext,
-    GalleryInfo,
     GroupContext,
-    GroupInfo,
     MediaType,
     PhotoContext,
     SinglePhotoInfo,
@@ -43,7 +36,7 @@ from .types import (
 )
 
 
-__version__ = "2.20.0"
+__version__ = "2.21.0"
 
 
 __all__ = [
@@ -68,16 +61,9 @@ __all__ = [
     "SafetyLevel",
     "SinglePhoto",
     "SinglePhotoInfo",
-    "CollectionOfPhotos",
-    "PhotosInAlbum",
-    "PhotosInGallery",
-    "PhotosInGroup",
     "AlbumContext",
-    "AlbumInfo",
     "GalleryContext",
-    "GalleryInfo",
     "GroupContext",
-    "GroupInfo",
     "InsufficientPermissionsToComment",
     "MediaType",
     "PhotoContext",
