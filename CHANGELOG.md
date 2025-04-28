@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v2.21.0 - 2025-04-28
+
+Remove the functions for getting a collection of photos:
+
+* `get_photos_in_album`
+* `get_photos_in_gallery`
+* `get_photos_in_group_pool`
+* `get_photos_in_user_photostream`
+* `get_photos_with_tag`
+
+In practice, it isn't actually useful to share code between projects -- these methods are too flexible for reuse to be sensible, e.g. each project needs a different set of `extras` to fetch.
+
 ## v2.20.0 - 2025-04-28
 
 Remove the `get_photos_from_parsed_flickr_url()` method, which is no longer used in our projects.
