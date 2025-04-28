@@ -14,310 +14,90 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?extras=license%2Cdate_upload%2Cdate_taken%2Cmedia%2Coriginal_format%2Cowner_name%2Curl_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o%2Ctags%2Cgeo%2Curl_q%2Curl_l%2Cdescription%2Csafety_level%2Crealname%2Cpath_alias%2Ccount_comments%2Ccount_views&method=flickr.people.getPublicPhotos&page=1&per_page=10&user_id=61270229%40N05
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=32812033543
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photos
-      page=\"1\" pages=\"2637\" perpage=\"10\" total=\"26370\">\n\t<photo id=\"53686041257\"
-      owner=\"61270229@N05\" secret=\"ccd68c36a4\" server=\"65535\" farm=\"66\" title=\"USUHS
-      Brigade Visits NMCSD  240424-N-GA297-1027\" ispublic=\"1\" isfriend=\"0\" isfamily=\"0\"
-      license=\"7\" safety_level=\"0\" dateupload=\"1714400658\" datetaken=\"2024-04-24
-      13:15:51\" datetakengranularity=\"0\" datetakenunknown=\"0\" ownername=\"NavyMedicine\"
-      realname=\"Navy Medicine\" count_views=\"8\" count_comments=\"0\" tags=\"defensehealthagency
-      nmcsd nmrtcsandiego navymedicine sandiego california unitedstates usuhs\" originalsecret=\"25efb50bbe\"
-      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4_t.jpg\"
-      height_t=\"74\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4_m.jpg\"
-      height_s=\"179\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4.jpg\"
-      height_m=\"372\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53686041257_25efb50bbe_o.jpg\"
-      height_o=\"3280\" width_o=\"4403\" url_q=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53686041257_ccd68c36a4_b.jpg\"
-      height_l=\"763\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Uniformed
-      Services University of Health Science Brigade leadership and Naval Medical Center
-      San Diego team members pose for a group photo at NMCSD, April 24, 2024. Navy
-      Medicine Readiness and Training Command San Diego\u2019s mission is to prepare
-      service members to deploy in support of operational forces, deliver high quality
-      healthcare services and shape the future of military medicine through education,
-      training and research. NMRTC San Diego employs more than 6,000 active duty military
-      personnel, civilians and contractors in Southern California to provide patients
-      with world-class care anytime, anywhere. (U.S. Navy photo by Mass Communication
-      Specialist 2nd Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687275164\" owner=\"61270229@N05\" secret=\"89f4108af4\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1053\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400657\"
-      datetaken=\"2024-04-24 13:41:59\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"10\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"55879e01c2\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53687275164_89f4108af4_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687275164_89f4108af4_t.jpg\"
-      height_t=\"76\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687275164_89f4108af4_m.jpg\"
-      height_s=\"183\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687275164_89f4108af4.jpg\"
-      height_m=\"382\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687275164_55879e01c2_o.jpg\"
-      height_o=\"2910\" width_o=\"3812\" url_q=\"https://live.staticflickr.com/65535/53687275164_89f4108af4_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687275164_89f4108af4_b.jpg\"
-      height_l=\"782\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>U.S.
-      Navy Capt. Cory Gaconnet, Naval Medical Center San Diego&#039;s Bioskills and
-      Simulation Training Center department head, third from left, speaks to Uniformed
-      Services University of Health Science Brigade leadership and team members during
-      a visit and tour at NMCSD, April 24, 2024. Navy Medicine Readiness and Training
-      Command San Diego\u2019s mission is to prepare service members to deploy in
-      support of operational forces, deliver high quality healthcare services and
-      shape the future of military medicine through education, training and research.
-      NMRTC San Diego employs more than 6,000 active duty military personnel, civilians
-      and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687369565\" owner=\"61270229@N05\" secret=\"2904892569\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1055\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400656\"
-      datetaken=\"2024-04-24 13:44:28\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"9\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"d505645f5f\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53687369565_2904892569_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687369565_2904892569_t.jpg\"
-      height_t=\"70\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687369565_2904892569_m.jpg\"
-      height_s=\"167\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687369565_2904892569.jpg\"
-      height_m=\"348\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687369565_d505645f5f_o.jpg\"
-      height_o=\"3159\" width_o=\"4533\" url_q=\"https://live.staticflickr.com/65535/53687369565_2904892569_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687369565_2904892569_b.jpg\"
-      height_l=\"714\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>U.S.
-      Navy Capt. Cory Gaconnet, Naval Medical Center San Diego&#039;s Bioskills and
-      Simulation Training Center department head, left, speaks to U.S. Army Col. Albert
-      Kinkead, Uniformed Services University of Health Science Brigade Commander,
-      right, and team members during a visit and tour at NMCSD, April 24, 2024. Navy
-      Medicine Readiness and Training Command San Diego\u2019s mission is to prepare
-      service members to deploy in support of operational forces, deliver high quality
-      healthcare services and shape the future of military medicine through education,
-      training and research. NMRTC San Diego employs more than 6,000 active duty military
-      personnel, civilians and contractors in Southern California to provide patients
-      with world-class care anytime, anywhere. (U.S. Navy photo by Mass Communication
-      Specialist 2nd Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53686041182\" owner=\"61270229@N05\" secret=\"7cca3ec29e\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1067\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400656\"
-      datetaken=\"2024-04-24 14:00:11\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"8\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"98fc5ae318\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e_t.jpg\"
-      height_t=\"77\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e_m.jpg\"
-      height_s=\"186\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e.jpg\"
-      height_m=\"387\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53686041182_98fc5ae318_o.jpg\"
-      height_o=\"3228\" width_o=\"4173\" url_q=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53686041182_7cca3ec29e_b.jpg\"
-      height_l=\"792\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Tabitha
-      Shannon, Naval Medical Center San Diego&#039;s Comprehensive Combat and Complex
-      Casualty Care department&#039;s division officer, left, speaks to Uniformed
-      Services University of Health Science Brigade leadership and team members in
-      the rehabilitation courtyard during a tour of NMCSD, April 24, 2024. Navy Medicine
-      Readiness and Training Command San Diego\u2019s mission is to prepare service
-      members to deploy in support of operational forces, deliver high quality healthcare
-      services and shape the future of military medicine through education, training
-      and research. NMRTC San Diego employs more than 6,000 active duty military personnel,
-      civilians and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687135508\" owner=\"61270229@N05\" secret=\"7031d37fe5\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1073\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400655\"
-      datetaken=\"2024-04-24 14:03:23\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"7d43574f36\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5_t.jpg\"
-      height_t=\"77\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5_m.jpg\"
-      height_s=\"184\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5.jpg\"
-      height_m=\"384\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687135508_7d43574f36_o.jpg\"
-      height_o=\"3108\" width_o=\"4047\" url_q=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687135508_7031d37fe5_b.jpg\"
-      height_l=\"786\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Nathaniel
-      Leoncio, Naval Medical Center San Diego&#039;s Comprehensive Combat and Complex
-      Casualty Care department&#039;s prosthetist, right, speaks to Uniformed Services
-      University of Health Science Brigade leadership and team members in the prosthetics
-      center during a visit and tour at NMCSD, April 24, 2024. Navy Medicine Readiness
-      and Training Command San Diego\u2019s mission is to prepare service members
-      to deploy in support of operational forces, deliver high quality healthcare
-      services and shape the future of military medicine through education, training
-      and research. NMRTC San Diego employs more than 6,000 active duty military personnel,
-      civilians and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687369555\" owner=\"61270229@N05\" secret=\"de0b262113\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1078\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400654\"
-      datetaken=\"2024-04-24 14:05:25\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"3\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"9ffd23f48c\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53687369555_de0b262113_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687369555_de0b262113_t.jpg\"
-      height_t=\"76\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687369555_de0b262113_m.jpg\"
-      height_s=\"183\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687369555_de0b262113.jpg\"
-      height_m=\"380\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687369555_9ffd23f48c_o.jpg\"
-      height_o=\"3130\" width_o=\"4116\" url_q=\"https://live.staticflickr.com/65535/53687369555_de0b262113_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687369555_de0b262113_b.jpg\"
-      height_l=\"779\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Nathaniel
-      Leoncio, Naval Medical Center San Diego&#039;s Comprehensive Combat and Complex
-      Casualty Care department&#039;s prosthetist, right, speaks to Uniformed Services
-      University of Health Science Brigade leadership and team members in the prosthetics
-      center during a visit and tour at NMCSD, April 24, 2024. Navy Medicine Readiness
-      and Training Command San Diego\u2019s mission is to prepare service members
-      to deploy in support of operational forces, deliver high quality healthcare
-      services and shape the future of military medicine through education, training
-      and research. NMRTC San Diego employs more than 6,000 active duty military personnel,
-      civilians and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687135533\" owner=\"61270229@N05\" secret=\"836f2e3576\" server=\"65535\"
-      farm=\"66\" title=\"USUHS Brigade Visits NMCSD  240424-N-GA297-1089\" ispublic=\"1\"
-      isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\" dateupload=\"1714400654\"
-      datetaken=\"2024-04-24 14:45:04\" datetakengranularity=\"0\" datetakenunknown=\"0\"
-      ownername=\"NavyMedicine\" realname=\"Navy Medicine\" count_views=\"2\" count_comments=\"0\"
-      tags=\"defensehealthagency nmcsd nmrtcsandiego navymedicine sandiego california
-      unitedstates usuhs\" originalsecret=\"732eb295d3\" originalformat=\"jpg\" latitude=\"0\"
-      longitude=\"0\" accuracy=\"0\" context=\"0\" media=\"photo\" media_status=\"ready\"
-      url_sq=\"https://live.staticflickr.com/65535/53687135533_836f2e3576_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687135533_836f2e3576_t.jpg\"
-      height_t=\"75\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687135533_836f2e3576_m.jpg\"
-      height_s=\"180\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687135533_836f2e3576.jpg\"
-      height_m=\"376\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687135533_732eb295d3_o.jpg\"
-      height_o=\"3280\" width_o=\"4367\" url_q=\"https://live.staticflickr.com/65535/53687135533_836f2e3576_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687135533_836f2e3576_b.jpg\"
-      height_l=\"769\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>Uniformed
-      Services University of Health Science Brigade leadership and Naval Medical Center
-      San Diego leadership and team members pose for a group photo at NMCSD, April
-      24, 2024. Navy Medicine Readiness and Training Command San Diego\u2019s mission
-      is to prepare service members to deploy in support of operational forces, deliver
-      high quality healthcare services and shape the future of military medicine through
-      education, training and research. NMRTC San Diego employs more than 6,000 active
-      duty military personnel, civilians and contractors in Southern California to
-      provide patients with world-class care anytime, anywhere. (U.S. Navy photo by
-      Mass Communication Specialist 2nd Celia Martin)  &lt;a href=&quot;https://www.dvidshub.net/news/469526/uniformed-services-university-health-sciences-brigade-visits-nmcsd&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469526/uniformed-services-universit...&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53686019237\" owner=\"61270229@N05\" secret=\"0db08d1b98\" server=\"65535\"
-      farm=\"66\" title=\"NMCSD Sailor Commissions as Ensign 240424-N-AU520-1057\"
-      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
-      dateupload=\"1714400032\" datetaken=\"2024-04-25 05:25:05\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
-      count_views=\"3\" count_comments=\"0\" tags=\"defensehealthagency msc nmcsd
-      nmrtcsandiego navymedicine sandiego california unitedstates medicalcorps\" originalsecret=\"a1dfdafc5c\"
-      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98_t.jpg\"
-      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98_m.jpg\"
-      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98.jpg\"
-      height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53686019237_a1dfdafc5c_o.jpg\"
-      height_o=\"3280\" width_o=\"4928\" url_q=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53686019237_0db08d1b98_b.jpg\"
-      height_l=\"682\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>U.S.
-      Navy Ens. James Owens is commissioned during a ceremony at Naval Medical Center
-      San Diego, Apr. 24, 2024. NMCSD&#039;s mission is to prepare service members
-      to deploy in support of operational forces, deliver high quality healthcare
-      services and shape the future of military medicine through education, training
-      and research. NMCSD employs more than 6,000 active duty military personnel,
-      civilians and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Jacob Woitzel)\n\n&lt;a href=&quot;https://www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687253064\" owner=\"61270229@N05\" secret=\"cb371bccd8\" server=\"65535\"
-      farm=\"66\" title=\"NMCSD Sailor Commissions as Ensign 240424-N-AU520-1064\"
-      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
-      dateupload=\"1714400031\" datetaken=\"2024-04-25 05:25:43\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
-      count_views=\"3\" count_comments=\"0\" tags=\"defensehealthagency msc nmcsd
-      nmrtcsandiego navymedicine sandiego california unitedstates medicalcorps\" originalsecret=\"ec205de128\"
-      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8_t.jpg\"
-      height_t=\"100\" width_t=\"67\" url_s=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8_m.jpg\"
-      height_s=\"240\" width_s=\"160\" url_m=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8.jpg\"
-      height_m=\"500\" width_m=\"333\" url_o=\"https://live.staticflickr.com/65535/53687253064_ec205de128_o.jpg\"
-      height_o=\"3209\" width_o=\"2136\" url_q=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687253064_cb371bccd8_b.jpg\"
-      height_l=\"1024\" width_l=\"682\" pathalias=\"navymedicine\">\n\t\t<description>U.S.
-      Navy Ens. James Owens poses for a photo during a commissioning ceremony at Naval
-      Medical Center San Diego, Apr. 24, 2024. NMCSD&#039;s mission is to prepare
-      service members to deploy in support of operational forces, deliver high quality
-      healthcare services and shape the future of military medicine through education,
-      training and research. NMCSD employs more than 6,000 active duty military personnel,
-      civilians and contractors in Southern California to provide patients with world-class
-      care anytime, anywhere. (U.S. Navy photo by Mass Communication Specialist 2nd
-      Jacob Woitzel)\n\n&lt;a href=&quot;https://www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&lt;/a&gt;</description>\n\t</photo>\n\t<photo
-      id=\"53687253074\" owner=\"61270229@N05\" secret=\"ffcfa48856\" server=\"65535\"
-      farm=\"66\" title=\"NMCSD Sailor Commissions as Ensign 240424-N-AU520-1068\"
-      ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" license=\"7\" safety_level=\"0\"
-      dateupload=\"1714400030\" datetaken=\"2024-04-25 05:26:37\" datetakengranularity=\"0\"
-      datetakenunknown=\"0\" ownername=\"NavyMedicine\" realname=\"Navy Medicine\"
-      count_views=\"4\" count_comments=\"0\" tags=\"defensehealthagency msc nmcsd
-      nmrtcsandiego navymedicine sandiego california unitedstates medicalcorps\" originalsecret=\"378d914abb\"
-      originalformat=\"jpg\" latitude=\"0\" longitude=\"0\" accuracy=\"0\" context=\"0\"
-      media=\"photo\" media_status=\"ready\" url_sq=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856_s.jpg\"
-      height_sq=\"75\" width_sq=\"75\" url_t=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856_t.jpg\"
-      height_t=\"67\" width_t=\"100\" url_s=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856_m.jpg\"
-      height_s=\"160\" width_s=\"240\" url_m=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856.jpg\"
-      height_m=\"333\" width_m=\"500\" url_o=\"https://live.staticflickr.com/65535/53687253074_378d914abb_o.jpg\"
-      height_o=\"2257\" width_o=\"3391\" url_q=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856_q.jpg\"
-      height_q=\"150\" width_q=\"150\" url_l=\"https://live.staticflickr.com/65535/53687253074_ffcfa48856_b.jpg\"
-      height_l=\"682\" width_l=\"1024\" pathalias=\"navymedicine\">\n\t\t<description>U.S.
-      Navy Ens. James Owens renders his first salute as a Naval officer during a commissioning
-      ceremony at Naval Medical Center San Diego, Apr. 24, 2024. NMCSD&#039;s mission
-      is to prepare service members to deploy in support of operational forces, deliver
-      high quality healthcare services and shape the future of military medicine through
-      education, training and research. NMRTC San Diego employs more than 6,000 active
-      duty military personnel, civilians and contractors in Southern California to
-      provide patients with world-class care anytime, anywhere. (U.S. Navy photo by
-      Mass Communication Specialist 2nd Jacob Woitzel)\n\n&lt;a href=&quot;https://www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&quot;
-      rel=&quot;noreferrer nofollow&quot;&gt;www.dvidshub.net/news/469567/nmcsd-sailor-commissions-ensign&lt;/a&gt;</description>\n\t</photo>\n</photos>\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"32812033543\" secret=\"c1b3784192\" server=\"2903\" farm=\"3\" dateuploaded=\"1490376472\"
+        isfavorite=\"0\" license=\"8\" safety_level=\"0\" rotation=\"0\" originalsecret=\"41cc4e453a\"
+        originalformat=\"jpg\" views=\"18804\" media=\"photo\">\n\t<owner nsid=\"30884892@N08\"
+        username=\"U.S. Coast Guard\" realname=\"Coast Guard\" location=\"\" iconserver=\"65535\"
+        iconfarm=\"66\" path_alias=\"coast_guard\">\n\t\t<gift gift_eligible=\"1\"
+        new_flow=\"1\">\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations
+        />\n\t\t</gift>\n\t</owner>\n\t<title>Puppy Kisses</title>\n\t<description>Seaman
+        Nina Bowen shows some love to Chief Bert, Station Elizabeth City, N.C.&#039;s
+        mascot, near the boathouse at the station, Feb. 17, 2017. Chief Bert is a
+        retired explosive detection dog who worked for six years with the Maritime
+        Safety and Security Team in Gavelston, Texas. U.S. Coast Guard photo by Petty
+        Officer 2nd Class Nate Littlejohn.</description>\n\t<visibility ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1490376472\" taken=\"2017-02-17
+        00:00:00\" takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1497407834\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"0\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people
+        haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"30792079-32812033543-11349\" author=\"30884892@N08\"
+        authorname=\"U.S. Coast Guard\" raw=\"mascot\" machine_tag=\"0\">mascot</tag>\n\t\t<tag
+        id=\"30792079-32812033543-317354343\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"Chief Bert\" machine_tag=\"0\">chiefbert</tag>\n\t\t<tag
+        id=\"30792079-32812033543-32307\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"German Shepherd\" machine_tag=\"0\">germanshepherd</tag>\n\t\t<tag
+        id=\"30792079-32812033543-70809218\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"Station Elizabeth City\" machine_tag=\"0\">stationelizabethcity</tag>\n\t\t<tag
+        id=\"30792079-32812033543-328026416\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"Week in the Life 2017\" machine_tag=\"0\">weekinthelife2017</tag>\n\t\t<tag
+        id=\"30792079-32812033543-317354353\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"Nina Bowen\" machine_tag=\"0\">ninabowen</tag>\n\t\t<tag
+        id=\"30792079-32812033543-90623\" author=\"30884892@N08\" authorname=\"U.S.
+        Coast Guard\" raw=\"D5\" machine_tag=\"0\">d5</tag>\n\t\t<tag id=\"30792079-32812033543-329791\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"Mid-Atlantic\"
+        machine_tag=\"0\">midatlantic</tag>\n\t\t<tag id=\"30792079-32812033543-8419\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"North Carolina\"
+        machine_tag=\"0\">northcarolina</tag>\n\t\t<tag id=\"30792079-32812033543-161990\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"Elizabeth City\"
+        machine_tag=\"0\">elizabethcity</tag>\n\t\t<tag id=\"30792079-32812033543-36920038\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"explosive detection
+        dog\" machine_tag=\"0\">explosivedetectiondog</tag>\n\t\t<tag id=\"30792079-32812033543-4074\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"United States\"
+        machine_tag=\"0\">unitedstates</tag>\n\t\t<tag id=\"30792079-32812033543-2296\"
+        author=\"30884892@N08\" authorname=\"U.S. Coast Guard\" raw=\"US\" machine_tag=\"0\">us</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/coast_guard/32812033543/</url>\n\t</urls>\n</photo>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Mon, 29 Apr 2024 17:23:36 GMT
+      - Mon, 28 Apr 2025 17:26:27 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 d67d31689e6e1651260ad9b2311bb686.cloudfront.net (CloudFront)
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - s1b0oYM25FknvC7fKZ29JhcApinnGTOJyjSngohCAVBCTfEUMnmrYA==
+      - 2QIyITL7PqgBkBL0KalEsDdkLKmrRpLxHuxdk0kxuPwTpdG_wrhgTQ==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '3416'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Wed, 29-May-2024 17:23:36 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Wed, 28-May-2025 17:26:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Wed, 29-May-2024 17:23:36 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Wed, 28-May-2025 17:26:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-662fd798-2576c23a624df270115ab304;Root=1-662fd798-73853f74794264fd00b4a274
+      - Root=1-680fba43-2bfbd4021749d241798d890b
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.38.101
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.13.149
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
@@ -337,51 +117,139 @@ interactions:
     method: GET
     uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
   response:
-    content: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
-      id=\"0\" name=\"All Rights Reserved\" url=\"\" />\n\t<license id=\"4\" name=\"Attribution
-      License\" url=\"https://creativecommons.org/licenses/by/2.0/\" />\n\t<license
-      id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
-      />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
-      url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license id=\"2\"
-      name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
-      />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
-      url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license id=\"5\"
-      name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
-      />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
-      />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"http://www.usa.gov/copyright.shtml\"
-      />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
-      />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
-      />\n</licenses>\n</rsp>\n"
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members\"
+        />\n\t<license id=\"4\" name=\"Attribution License\" url=\"https://creativecommons.org/licenses/by/2.0/\"
+        />\n\t<license id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"https://www.usa.gov/government-copyright\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Mon, 29 Apr 2024 17:23:36 GMT
+      - Mon, 28 Apr 2025 17:26:27 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 d67d31689e6e1651260ad9b2311bb686.cloudfront.net (CloudFront)
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - jEsU3wfOhP_k2epgTiADC0uyn_W5VH2PKskNu2rwBmX-fU-oa0UEbw==
+      - cx0PEvnHs0RaGvrADi5FbnetvQxK62hpo1S5AzLINSXO9E4PqemFsQ==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
       - Miss from cloudfront
+      content-length:
+      - '1360'
       server:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Wed, 29-May-2024 17:23:36 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Wed, 28-May-2025 17:26:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Self=1-662fd798-5c7b3b0015adabaa7074041f;Root=1-662fd798-078246da2c7beaff03eb1a65
+      - Root=1-680fba43-3626a1f129a83a9601b9218b
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.16.171
-    http_version: HTTP/1.1
-    status_code: 200
+      - serverless-proxy-10.78.19.48
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=32812033543
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_s.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/sq/\" media=\"photo\"
+        />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_q.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/q/\" media=\"photo\"
+        />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"61\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_t.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/t/\" media=\"photo\"
+        />\n\t<size label=\"Small\" width=\"240\" height=\"146\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_m.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/s/\" media=\"photo\"
+        />\n\t<size label=\"Small 320\" width=\"320\" height=\"195\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_n.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/n/\" media=\"photo\"
+        />\n\t<size label=\"Small 400\" width=\"400\" height=\"243\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_w.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/w/\" media=\"photo\"
+        />\n\t<size label=\"Medium\" width=\"500\" height=\"304\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/m/\" media=\"photo\"
+        />\n\t<size label=\"Medium 640\" width=\"640\" height=\"389\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_z.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/z/\" media=\"photo\"
+        />\n\t<size label=\"Medium 800\" width=\"800\" height=\"486\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_c.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/c/\" media=\"photo\"
+        />\n\t<size label=\"Large\" width=\"1024\" height=\"623\" source=\"https://live.staticflickr.com/2903/32812033543_c1b3784192_b.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/l/\" media=\"photo\"
+        />\n\t<size label=\"Large 1600\" width=\"1600\" height=\"973\" source=\"https://live.staticflickr.com/2903/32812033543_c34e251a30_h.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/h/\" media=\"photo\"
+        />\n\t<size label=\"Large 2048\" width=\"2048\" height=\"1245\" source=\"https://live.staticflickr.com/2903/32812033543_04e9bcc8a2_k.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/k/\" media=\"photo\"
+        />\n\t<size label=\"Original\" width=\"5172\" height=\"3145\" source=\"https://live.staticflickr.com/2903/32812033543_41cc4e453a_o.jpg\"
+        url=\"https://www.flickr.com/photos/coast_guard/32812033543/sizes/o/\" media=\"photo\"
+        />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 28 Apr 2025 17:26:27 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - N8s1GnWQQYZ0mNe673Q-SVAygEiv1hiTdBDLJzkV2ng463aPB4yQ1w==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2832'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 28-May-2025 17:26:27 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-680fba43-389d1a3761ac503f2f4d3983
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.47.180
+    status:
+      code: 200
+      message: OK
 version: 1
