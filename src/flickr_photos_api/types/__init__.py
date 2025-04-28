@@ -142,15 +142,6 @@ class PhotosInAlbum(CollectionOfPhotos):
     album: AlbumInfo
 
 
-class GalleryInfo(typing.TypedDict):
-    owner_name: str
-    title: str
-
-
-class PhotosInGallery(CollectionOfPhotos):
-    gallery: GalleryInfo
-
-
 class CommonsInstitution(typing.TypedDict):
     """
     Represents an institution in the Flickr Commons programme.

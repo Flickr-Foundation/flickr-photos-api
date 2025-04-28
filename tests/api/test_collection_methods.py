@@ -8,7 +8,6 @@ from data import FlickrUserIds
 from flickr_photos_api import FlickrApi, ResourceNotFound
 from flickr_photos_api.types import (
     PhotosInAlbum,
-    PhotosInGallery,
     CollectionOfPhotos,
 )
 from utils import get_fixture
@@ -147,11 +146,6 @@ class TestCollectionsPhotoResponse:
                 id="get_photos_in_album",
             ),
             pytest.param(
-                "get_photos_in_gallery",
-                {"gallery_id": "72157720932863274"},
-                id="get_photos_in_gallery",
-            ),
-            pytest.param(
                 "get_photos_in_user_photostream",
                 {"user_id": "34427469121@N01"},
                 id="get_photos_in_user_photostream",
@@ -177,26 +171,6 @@ class TestCollectionsPhotoResponse:
 
         assert individual_resp["photos"][0] == all_resp["photos"][4]
 
-    def test_user_without_pathalias_is_none(self, api: FlickrApi) -> None:
-        """
-        You can get photos in a collection where the owner doesn't
-        have a path alias.
-        """
-        gallery = api.get_photos_in_gallery(gallery_id="72157722258598968")
-
-        assert gallery["photos"][0]["id"] == "53651808642"
-        assert gallery["photos"][0]["owner"]["path_alias"] is None
-
-    def test_user_without_realname_is_none(self, api: FlickrApi) -> None:
-        """
-        You can get photos in a collection where the owner doesn't
-        have a real name.
-        """
-        gallery = api.get_photos_in_gallery(gallery_id="72157722112740042")
-
-        assert gallery["photos"][0]["id"] == "53683422277"
-        assert gallery["photos"][0]["owner"]["realname"] is None
-
     @pytest.mark.parametrize(
         ["user_id", "realname"],
         [
@@ -212,19 +186,6 @@ class TestCollectionsPhotoResponse:
         resp = api.get_photos_in_user_photostream(user_id=user_id, per_page=1)
         user = resp["photos"][0]["owner"]
         assert user["realname"] == realname
-
-    def test_gets_machine_tags(self, api: FlickrApi) -> None:
-        """
-        Get the machine tags on a collection of photos.
-        """
-        gallery = api.get_photos_in_gallery(gallery_id="72157722373536528")
-
-        photo = gallery["photos"][0]
-        assert photo["id"] == "51282506464"
-        assert photo["machine_tags"] == {
-            "bhl:page": ["33665621"],
-            "dc:identifier": ["httpsbiodiversitylibraryorgpage33665621"],
-        }
 
 
 class TestGetAlbum:
@@ -334,29 +295,6 @@ class TestGetAlbum:
                 user_url="https://www.flickr.com/photos/DefinitelyDoesNotExist",
                 album_id="1234",
             )
-
-
-class TestGetPhotosInGallery:
-    """
-    Tests for ``CollectionMethods.get_photos_in_gallery``.
-    """
-
-    def test_get_gallery_from_id(self, api: FlickrApi) -> None:
-        """
-        Get photos for a gallery.
-        """
-        photos = api.get_photos_in_gallery(gallery_id="72157720932863274")
-
-        assert photos == get_fixture(
-            "gallery-72157677773252346.json", model=PhotosInGallery
-        )
-
-    def test_not_existent_gallery_id_is_error(self, api: FlickrApi) -> None:
-        """
-        Getting a gallery that doesn't exist throws a ``ResourceNotFound``.
-        """
-        with pytest.raises(ResourceNotFound):
-            api.get_photos_in_gallery(gallery_id="12345678901234567890")
 
 
 class TestGetPhotosInUserPhotostream:

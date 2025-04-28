@@ -6,7 +6,7 @@ Methods for getting information about collections of photos in Flickr
 import typing
 from xml.etree import ElementTree as ET
 
-from nitrate.xml import find_optional_text, find_required_elem, find_required_text
+from nitrate.xml import find_optional_text, find_required_elem
 
 from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
@@ -16,7 +16,6 @@ from ..types import (
     CollectionOfPhotos,
     MediaType,
     PhotosInAlbum,
-    PhotosInGallery,
     SinglePhoto,
     User,
     create_user,
@@ -238,39 +237,6 @@ class CollectionMethods(LicenseMethods, UserMethods):
                 "owner": owner,
                 "title": album_title,
             },
-        }
-
-    def get_photos_in_gallery(
-        self, *, gallery_id: str, page: int = 1, per_page: int = 10
-    ) -> PhotosInGallery:
-        """
-        Get a page of photos in a gallery.
-        """
-        # https://www.flickr.com/services/api/flickr.galleries.getPhotos.html
-        resp = self.call(
-            method="flickr.galleries.getPhotos",
-            params={
-                "gallery_id": gallery_id,
-                "get_gallery_info": "1",
-                "extras": ",".join(self.extras),
-                "page": page,
-                "per_page": per_page,
-            },
-            exceptions={
-                "1": ResourceNotFound(f"Could not find gallery with ID: {gallery_id!r}")
-            },
-        )
-
-        gallery_elem = find_required_elem(resp, path="gallery")
-
-        gallery_title = find_required_text(gallery_elem, path="title")
-        gallery_owner_name = gallery_elem.attrib["username"]
-
-        photos_elem = find_required_elem(resp, path="photos")
-
-        return {
-            **self._create_collection(photos_elem),
-            "gallery": {"owner_name": gallery_owner_name, "title": gallery_title},
         }
 
     def get_photos_in_user_photostream(
