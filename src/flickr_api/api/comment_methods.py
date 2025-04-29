@@ -6,9 +6,9 @@ from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_required_elem
 
 from .base import FlickrApi
-from ..date_parsers import parse_timestamp
 from ..exceptions import ResourceNotFound, InsufficientPermissionsToComment
-from ..models import Comment, create_user
+from ..models import Comment
+from ..parsers import create_user, parse_timestamp
 
 
 class CommentMethods(FlickrApi):

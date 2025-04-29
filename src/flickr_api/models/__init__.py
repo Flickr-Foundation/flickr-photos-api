@@ -3,9 +3,9 @@ import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId
-from .machine_tags import get_machine_tags, MachineTags
+from .machine_tags import MachineTags
 from .sizes import Size
-from .users import User, UserInfo, create_user, fix_realname
+from .users import User, UserInfo
 
 
 __all__ = [
@@ -20,9 +20,6 @@ __all__ = [
     "User",
     "UserInfo",
     "Visibility",
-    "create_user",
-    "get_machine_tags",
-    "fix_realname",
 ]
 
 

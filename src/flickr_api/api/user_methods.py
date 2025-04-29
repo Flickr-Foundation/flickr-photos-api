@@ -8,9 +8,9 @@ from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .base import FlickrApi
-from ..date_parsers import parse_timestamp
 from ..exceptions import ResourceNotFound, UserDeleted
-from ..models import fix_realname, UserInfo
+from ..models import UserInfo
+from ..parsers import fix_realname, parse_timestamp
 
 
 class UserMethods(FlickrApi):
