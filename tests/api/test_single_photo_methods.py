@@ -6,7 +6,8 @@ import datetime
 
 import pytest
 
-from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound, SinglePhoto
+from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound
+from flickr_api.models import SinglePhoto
 from utils import get_fixture
 
 

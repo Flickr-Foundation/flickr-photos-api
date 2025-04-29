@@ -7,7 +7,7 @@ import datetime
 from nitrate.xml import find_optional_text, find_required_text
 
 from .base import FlickrApi
-from ..types import CommonsInstitution
+from ..models import CommonsInstitution
 
 
 class FlickrCommonsMethods(FlickrApi):

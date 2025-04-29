@@ -10,7 +10,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 from .base import FlickrApi
 from ..date_parsers import parse_timestamp
 from ..exceptions import ResourceNotFound, UserDeleted
-from ..types import fix_realname, UserInfo
+from ..models import fix_realname, UserInfo
 
 
 class UserMethods(FlickrApi):

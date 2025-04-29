@@ -11,7 +11,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 from .license_methods import LicenseMethods
 from ..date_parsers import parse_date_taken, parse_timestamp
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
-from ..types import (
+from ..models import (
     AlbumContext,
     GalleryContext,
     GroupContext,

@@ -2,7 +2,7 @@
 Tests for ``flickr_api.types.machine_tags``.
 """
 
-from flickr_api.types import get_machine_tags
+from flickr_api.models import get_machine_tags
 
 
 def test_empty_tags_is_empty_machine_tags() -> None:

@@ -5,7 +5,7 @@ parse these dates and turn them into native Python types.
 
 import datetime
 
-from flickr_api.types import DateTaken, TakenGranularity
+from flickr_api.models import DateTaken, TakenGranularity
 
 
 def parse_timestamp(ts: str, /) -> datetime.datetime:

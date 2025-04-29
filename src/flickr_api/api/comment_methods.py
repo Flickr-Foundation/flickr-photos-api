@@ -8,7 +8,7 @@ from nitrate.xml import find_required_elem
 from .base import FlickrApi
 from ..date_parsers import parse_timestamp
 from ..exceptions import ResourceNotFound, InsufficientPermissionsToComment
-from ..types import Comment, create_user
+from ..models import Comment, create_user
 
 
 class CommentMethods(FlickrApi):
