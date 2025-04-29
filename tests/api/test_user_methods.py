@@ -1,5 +1,5 @@
 """
-Tests for ``flickr_photos_api.api.user_methods``.
+Tests for ``flickr_api.api.user_methods``.
 """
 
 from collections.abc import Mapping
@@ -10,12 +10,12 @@ from xml.etree import ElementTree as ET
 import pytest
 
 from data import FlickrUserIds
-from flickr_photos_api import (
+from flickr_api import (
     FlickrApi,
     UnrecognisedFlickrApiException,
     UserDeleted,
 )
-from flickr_photos_api.api.user_methods import UserMethods
+from flickr_api.api.user_methods import UserMethods
 
 
 class TestGetUser:

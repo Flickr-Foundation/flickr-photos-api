@@ -1,10 +1,10 @@
 """
-Tests for ``flickr_photos_api.api.commons_methods``.
+Tests for ``flickr_api.api.commons_methods``.
 """
 
 import datetime
 
-from flickr_photos_api import FlickrApi
+from flickr_api import FlickrApi
 
 
 class TestCommonsMethods:

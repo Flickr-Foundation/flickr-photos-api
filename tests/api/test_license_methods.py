@@ -1,10 +1,10 @@
 """
-Tests for ``flickr_photos_api.api.licenses``.
+Tests for ``flickr_api.api.licenses``.
 """
 
 import pytest
 
-from flickr_photos_api import FlickrApi, LicenseNotFound
+from flickr_api import FlickrApi, LicenseNotFound
 
 
 class TestLicenseMethods:

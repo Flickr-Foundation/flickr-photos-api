@@ -30,7 +30,7 @@ To make changes to the library:
 
 To create a new version on PyPI:
 
-1.  Update the version in `src/flickr_photos_api/__init__.py`
+1.  Update the version in `src/flickr_api/__init__.py`
 2.  Add release notes in `CHANGELOG.md` and push a new tag to GitHub
 3.  Deploy the release using twine:
 
@@ -41,4 +41,3 @@ To create a new version on PyPI:
 
     You will need [a PyPI API token](https://pypi.org/help/#apitoken) to publish packages.
     This token is stored in 1Password.
-  

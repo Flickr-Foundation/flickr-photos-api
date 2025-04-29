@@ -1,12 +1,12 @@
 """
-Tests for ``flickr_photos_api.api.single_photo_methods``.
+Tests for ``flickr_api.api.single_photo_methods``.
 """
 
 import datetime
 
 import pytest
 
-from flickr_photos_api import FlickrApi, PhotoIsPrivate, ResourceNotFound, SinglePhoto
+from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound, SinglePhoto
 from utils import get_fixture
 
 

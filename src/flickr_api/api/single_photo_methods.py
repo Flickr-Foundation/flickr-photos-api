@@ -8,8 +8,8 @@ from xml.etree import ElementTree as ET
 from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
-from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
+from ..date_parsers import parse_date_taken, parse_timestamp
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..types import (
     AlbumContext,

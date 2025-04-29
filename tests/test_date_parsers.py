@@ -1,10 +1,10 @@
 """
-Tests for ``flickr_photos_api.date_parsers``.
+Tests for ``flickr_api.date_parsers``.
 """
 
 import pytest
 
-from flickr_photos_api.date_parsers import parse_date_taken
+from flickr_api.date_parsers import parse_date_taken
 
 
 def test_unrecognised_date_granularity_is_error() -> None:

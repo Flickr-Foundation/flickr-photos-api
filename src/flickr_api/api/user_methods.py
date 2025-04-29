@@ -7,8 +7,8 @@ from xml.etree import ElementTree as ET
 from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
-from flickr_photos_api.date_parsers import parse_timestamp
 from .base import FlickrApi
+from ..date_parsers import parse_timestamp
 from ..exceptions import ResourceNotFound, UserDeleted
 from ..types import fix_realname, UserInfo
 
