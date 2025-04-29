@@ -4,6 +4,7 @@ import typing
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId
 from .machine_tags import MachineTags
+from .photo import Rotation
 from .sizes import Size
 from .users import User, UserInfo
 
@@ -16,6 +17,7 @@ __all__ = [
     "LicenseId",
     "MachineTags",
     "PhotoContext",
+    "Rotation",
     "Size",
     "User",
     "UserInfo",
@@ -91,6 +93,8 @@ class SinglePhotoInfo(typing.TypedDict):
     server: str
     farm: str
     original_format: str | None
+
+    rotation: Rotation
 
     owner: User
 

@@ -126,6 +126,7 @@
     "realname": "Coast Guard",
     "username": "U.S. Coast Guard"
   },
+  "rotation": 0,
   "safety_level": "safe",
   "secret": "c1b3784192",
   "server": "2903",

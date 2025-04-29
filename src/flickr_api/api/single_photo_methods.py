@@ -27,6 +27,7 @@ from ..parsers import (
     parse_date_taken,
     parse_location,
     parse_machine_tags,
+    parse_rotation,
     parse_timestamp,
     parse_safety_level,
 )
@@ -102,6 +103,8 @@ class SinglePhotoMethods(LicenseMethods):
 
         count_comments = int(find_required_text(photo_elem, path="comments"))
         count_views = int(photo_elem.attrib["views"])
+
+        rotation = parse_rotation(photo_elem.attrib["rotation"])
 
         # The originalformat parameter will only be returned if the user
         # allows downloads of the photo.
@@ -187,6 +190,7 @@ class SinglePhotoMethods(LicenseMethods):
             "server": photo_elem.attrib["server"],
             "farm": photo_elem.attrib["farm"],
             "original_format": original_format,
+            "rotation": rotation,
             "owner": owner,
             "safety_level": safety_level,
             "license": license,
