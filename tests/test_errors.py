@@ -11,7 +11,7 @@ import httpx
 import pytest
 
 from data import FlickrPhotoIds
-from flickr_photos_api import (
+from flickr_api import (
     FlickrApi,
     FlickrApiException,
     InvalidApiKey,

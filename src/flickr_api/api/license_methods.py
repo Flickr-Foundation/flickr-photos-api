@@ -7,7 +7,7 @@ import re
 
 from .base import FlickrApi
 from ..exceptions import LicenseNotFound
-from ..types import License, LicenseId
+from ..models import License, LicenseId
 
 
 class LicenseMethods(FlickrApi):

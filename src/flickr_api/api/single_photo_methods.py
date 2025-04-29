@@ -8,10 +8,9 @@ from xml.etree import ElementTree as ET
 from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
-from flickr_photos_api.date_parsers import parse_date_taken, parse_timestamp
 from .license_methods import LicenseMethods
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
-from ..types import (
+from ..models import (
     AlbumContext,
     GalleryContext,
     GroupContext,
@@ -22,10 +21,15 @@ from ..types import (
     Size,
     Tag,
     Visibility,
-    create_user,
-    get_machine_tags,
 )
-from ..utils import parse_location, parse_safety_level
+from ..parsers import (
+    create_user,
+    parse_date_taken,
+    parse_location,
+    parse_machine_tags,
+    parse_timestamp,
+    parse_safety_level,
+)
 
 
 class SinglePhotoMethods(LicenseMethods):
@@ -190,7 +194,7 @@ class SinglePhotoMethods(LicenseMethods):
             "description": description,
             "tags": tags,
             "raw_tags": raw_tags,
-            "machine_tags": get_machine_tags(tags),
+            "machine_tags": parse_machine_tags(tags),
             "date_posted": date_posted,
             "date_taken": date_taken,
             "location": location,

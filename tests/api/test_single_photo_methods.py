@@ -1,12 +1,13 @@
 """
-Tests for ``flickr_photos_api.api.single_photo_methods``.
+Tests for ``flickr_api.api.single_photo_methods``.
 """
 
-import datetime
+from datetime import datetime, timezone
 
 import pytest
 
-from flickr_photos_api import FlickrApi, PhotoIsPrivate, ResourceNotFound, SinglePhoto
+from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound
+from flickr_api.models import SinglePhoto
 from utils import get_fixture
 
 
@@ -66,7 +67,7 @@ class TestGetSinglePhoto:
         info = api.get_single_photo(photo_id="5240741057")
 
         assert info["date_taken"] == {
-            "value": datetime.datetime(1950, 1, 1, 0, 0, 0),
+            "value": datetime(1950, 1, 1, 0, 0, 0),
             "granularity": "year",
         }
 
@@ -345,12 +346,8 @@ class TestGetPhotoContexts:
             },
             "title": "paisatges",
             "description": None,
-            "date_created": datetime.datetime.fromtimestamp(
-                1680980061, tz=datetime.timezone.utc
-            ),
-            "date_updated": datetime.datetime.fromtimestamp(
-                1714564015, tz=datetime.timezone.utc
-            ),
+            "date_created": datetime.fromtimestamp(1680980061, tz=timezone.utc),
+            "date_updated": datetime.fromtimestamp(1714564015, tz=timezone.utc),
             "count_photos": 166,
             "count_videos": 0,
             "count_views": 152,

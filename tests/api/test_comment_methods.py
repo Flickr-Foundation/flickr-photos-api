@@ -1,12 +1,12 @@
 """
-Tests for ``flickr_photos_api.api.comment_methods``.
+Tests for ``flickr_api.api.comment_methods``.
 """
 
 from authlib.integrations.httpx_client import OAuth1Client
 import httpx
 import pytest
 
-from flickr_photos_api import (
+from flickr_api import (
     FlickrApi,
     InsufficientPermissionsToComment,
 )

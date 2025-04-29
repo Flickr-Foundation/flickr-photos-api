@@ -1,5 +1,5 @@
 """
-Tests for ``flickr_photos_api.downloader``.
+Tests for ``flickr_api.downloader``.
 """
 
 from collections.abc import Iterator
@@ -11,7 +11,7 @@ import httpx
 import pytest
 import vcr
 
-from flickr_photos_api import download_file
+from flickr_api import download_file
 
 
 @pytest.fixture

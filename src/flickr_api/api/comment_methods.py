@@ -5,10 +5,10 @@ Code to read/write comments on Flickr.
 from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_required_elem
 
-from flickr_photos_api.date_parsers import parse_timestamp
 from .base import FlickrApi
 from ..exceptions import ResourceNotFound, InsufficientPermissionsToComment
-from ..types import Comment, create_user
+from ..models import Comment
+from ..parsers import create_user, parse_timestamp
 
 
 class CommentMethods(FlickrApi):

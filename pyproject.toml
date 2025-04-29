@@ -38,7 +38,7 @@ oauth=["authlib"]
 "Changelog" = "https://github.com/Flickr-Foundation/flickr-photos-api/blob/main/CHANGELOG.md"
 
 [tool.setuptools.dynamic]
-version = {attr = "flickr_photos_api.__version__"}
+version = {attr = "flickr_api.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -48,7 +48,7 @@ flickr_photos_api = ["py.typed"]
 
 [tool.coverage.run]
 branch = true
-source = ["flickr_photos_api", "tests"]
+source = ["flickr_api", "tests"]
 
 [tool.coverage.report]
 show_missing = true

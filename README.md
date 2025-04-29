@@ -45,7 +45,7 @@ This httpx implementation is the default implementation.
 ## Examples
 
 ```console
->>> from flickr_photos_api import FlickrApi
+>>> from flickr_api import FlickrApi
 >>> api = FlickrApi.with_api_key(api_key="…", user_agent="…")
 
 >>> photo = api.get_single_photo(photo_id="14898030836")

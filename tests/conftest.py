@@ -13,7 +13,7 @@ from nitrate.cassettes import cassette_name, vcr_cassette
 import pytest
 import vcr
 
-from flickr_photos_api import FlickrApi
+from flickr_api import FlickrApi
 
 
 @pytest.fixture

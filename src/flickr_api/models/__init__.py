@@ -1,11 +1,11 @@
-import datetime
+from datetime import datetime
 import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId
-from .machine_tags import get_machine_tags, MachineTags
+from .machine_tags import MachineTags
 from .sizes import Size
-from .users import User, UserInfo, create_user, fix_realname
+from .users import User, UserInfo
 
 
 __all__ = [
@@ -20,9 +20,6 @@ __all__ = [
     "User",
     "UserInfo",
     "Visibility",
-    "create_user",
-    "get_machine_tags",
-    "fix_realname",
 ]
 
 
@@ -39,7 +36,7 @@ TakenGranularity = typing.Literal["second", "month", "year", "circa"]
 
 
 class DateTaken(typing.TypedDict):
-    value: datetime.datetime
+    value: datetime
     granularity: TakenGranularity
 
 
@@ -54,7 +51,7 @@ class Comment(typing.TypedDict):
     author: User
     text: str
     permalink: str
-    date: datetime.datetime
+    date: datetime
 
 
 class Tag(typing.TypedDict):
@@ -107,7 +104,7 @@ class SinglePhotoInfo(typing.TypedDict):
     machine_tags: MachineTags
     raw_tags: typing.NotRequired[list[Tag]]
 
-    date_posted: datetime.datetime
+    date_posted: datetime
     date_taken: DateTaken | None
     location: LocationInfo | None
 
@@ -129,7 +126,7 @@ class CommonsInstitution(typing.TypedDict):
     """
 
     user_id: str
-    date_launch: datetime.datetime
+    date_launch: datetime
     name: str
     site_url: str | None
     license_url: str

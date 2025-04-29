@@ -5,7 +5,7 @@ a larger collection -- not just on its own.
 It could be part of an album, a gallery, or a group.
 """
 
-import datetime
+from datetime import datetime
 import typing
 
 from .users import User
@@ -46,8 +46,8 @@ class GalleryContext(typing.TypedDict):
     title: str
     description: str | None
 
-    date_created: datetime.datetime
-    date_updated: datetime.datetime
+    date_created: datetime
+    date_updated: datetime
 
     count_photos: int
     count_videos: int

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v3.0 - 2025-04-29
+
+This is a major refactor that splits the package into a couple of namespaces.
+
+*   `flickr_api` contains the main API client, `download_file`, and the exceptions that the API client might throw
+*   `flickr_api.models` contains type definitions for the data structures returned by the API
+*   `flickr_api.parsers` contains functions that can convert raw values from the Flickr API into nicely-typed values. This is useful if you're calling the Flickr API in ways not handled by this library (e.g. to get collections of photos).
+
+This library has grown organically and a lot of the stuff added in v2.x wasn't consistent -- it was a collection of code rammed together, but not always in the most ergonomic or useful way.
+This major update is a bit of a reset, trying to make it easier to understand again.
+
 ## v2.21.0 - 2025-04-28
 
 Remove the functions for getting a collection of photos:
