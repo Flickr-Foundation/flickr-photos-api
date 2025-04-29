@@ -3,19 +3,19 @@ The Flickr API returns dates in several formats; the helpers in this file
 parse these dates and turn them into native Python types.
 """
 
-import datetime
+from datetime import datetime, timezone
 
 from flickr_api.models import DateTaken, TakenGranularity
 
 
-def parse_timestamp(ts: str, /) -> datetime.datetime:
+def parse_timestamp(ts: str, /) -> datetime:
     """
-    Convert a Unix timestamp into a Python-native ``datetime.datetime``.
+    Convert a Unix timestamp into a Python-native ``datetime``.
 
     Example:
 
         >>> parse_timestamp('1490376472')
-        datetime.datetime(2017, 3, 24, 17, 27, 52, tzinfo=datetime.timezone.utc)
+        datetime(2017, 3, 24, 17, 27, 52, tzinfo=timezone.utc)
 
     The Flickr API frequently returns dates as Unix timestamps, for example:
 
@@ -29,17 +29,17 @@ def parse_timestamp(ts: str, /) -> datetime.datetime:
 
     [1] https://www.flickr.com/services/api/misc.dates.html
     """
-    return datetime.datetime.fromtimestamp(int(ts), tz=datetime.timezone.utc)
+    return datetime.fromtimestamp(int(ts), tz=timezone.utc)
 
 
-def _parse_date_taken_value(dt: str) -> datetime.datetime:
+def _parse_date_taken_value(dt: str) -> datetime:
     """
-    Convert a "date taken" string to a Python-native ``datetime.datetime``.
+    Convert a "date taken" string to a Python-native ``datetime``.
 
     Example:
 
         >>> _parse_date_taken_value('2017-02-17 00:00:00')
-        datetime.datetime(2017, 2, 17, 0, 0)
+        datetime(2017, 2, 17, 0, 0)
 
     """
     # See https://www.flickr.com/services/api/misc.dates.html
@@ -48,7 +48,7 @@ def _parse_date_taken_value(dt: str) -> datetime.datetime:
     #     of the photo owner, which is to say, don't perform
     #     any conversion on it.
     #
-    return datetime.datetime.strptime(dt, "%Y-%m-%d %H:%M:%S")
+    return datetime.strptime(dt, "%Y-%m-%d %H:%M:%S")
 
 
 def _parse_date_taken_granularity(g: str) -> TakenGranularity:

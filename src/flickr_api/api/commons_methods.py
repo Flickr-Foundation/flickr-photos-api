@@ -2,7 +2,7 @@
 Methods for getting information about the Flickr Commons.
 """
 
-import datetime
+from datetime import datetime, timezone
 
 from nitrate.xml import find_optional_text, find_required_text
 
@@ -37,8 +37,8 @@ class FlickrCommonsMethods(FlickrApi):
         for institution_elem in resp.findall(path=".//institution"):
             user_id = institution_elem.attrib["nsid"]
 
-            date_launch = datetime.datetime.fromtimestamp(
-                int(institution_elem.attrib["date_launch"]), tz=datetime.timezone.utc
+            date_launch = datetime.fromtimestamp(
+                int(institution_elem.attrib["date_launch"]), tz=timezone.utc
             )
 
             name = find_required_text(institution_elem, path="name")

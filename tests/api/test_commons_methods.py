@@ -2,7 +2,7 @@
 Tests for ``flickr_api.api.commons_methods``.
 """
 
-import datetime
+from datetime import datetime, timezone
 
 from flickr_api import FlickrApi
 
@@ -22,9 +22,7 @@ class TestCommonsMethods:
         assert len(institutions) == 115
         assert institutions[0] == {
             "user_id": "134017397@N03",
-            "date_launch": datetime.datetime(
-                2024, 10, 30, 19, 14, 23, tzinfo=datetime.timezone.utc
-            ),
+            "date_launch": datetime(2024, 10, 30, 19, 14, 23, tzinfo=timezone.utc),
             "name": "Community Archives of Belleville & Hastings County",
             "site_url": "https://www.cabhc.ca/",
             "license_url": "https://www.cabhc.ca/en/collections/collections.aspx",

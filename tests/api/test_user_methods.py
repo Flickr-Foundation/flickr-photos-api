@@ -3,7 +3,7 @@ Tests for ``flickr_api.api.user_methods``.
 """
 
 from collections.abc import Mapping
-import datetime
+from datetime import datetime, timezone
 import typing
 from xml.etree import ElementTree as ET
 
@@ -150,8 +150,8 @@ class TestGetUser:
         user = api.get_user(user_id=FlickrUserIds.FlickrFoundation)
 
         assert user["has_pro_account"]
-        assert user["pro_account_expires"] == datetime.datetime(
-            2033, 7, 19, 4, 0, tzinfo=datetime.timezone.utc
+        assert user["pro_account_expires"] == datetime(
+            2033, 7, 19, 4, 0, tzinfo=timezone.utc
         )
 
     def test_knows_about_non_flickr_pro(self, api: FlickrApi) -> None:

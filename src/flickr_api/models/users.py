@@ -1,8 +1,8 @@
 """
-Types related to Flickr user accounts.
+Models related to Flickr user accounts.
 """
 
-import datetime
+from datetime import datetime
 import typing
 
 
@@ -47,7 +47,7 @@ class UserInfo(User):
     #
     #     class UserInfoWithPro(…)
     #         has_pro_account: typing.Literal[True]
-    #         pro_account_expires: datetime.datetime
+    #         pro_account_expires: datetime
     #
     #     class UserInfoWithoutPro(…)
     #         has_pro_account: typing.Literal[False]
@@ -58,7 +58,7 @@ class UserInfo(User):
     # Commons Explorer -- so it's a convention rather than enforced
     # by the type system.
     has_pro_account: bool
-    pro_account_expires: typing.NotRequired[datetime.datetime]
+    pro_account_expires: typing.NotRequired[datetime]
 
 
 def create_user(
