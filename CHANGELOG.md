@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.1 - 2025-04-29
+
+Expose the rotation of a photo in our `SinglePhoto` model (0°, 90°, 180°, 270°).
+
 ## v3.0 - 2025-04-29
 
 This is a major refactor that splits the package into a couple of namespaces.
