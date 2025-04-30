@@ -170,6 +170,12 @@ class TestGetSinglePhoto:
             "latitude": 9.135158,
             "longitude": 40.083811,
             "accuracy": 16,
+            "context": None,
+            "neighborhood": None,
+            "locality": "Galoch",
+            "county": None,
+            "region": "Āfar",
+            "country": "Ethiopia",
         }
 
     def test_get_empty_location_for_photo_without_geo(self, api: FlickrApi) -> None:
