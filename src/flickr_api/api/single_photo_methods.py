@@ -14,6 +14,7 @@ from ..models import (
     AlbumContext,
     GalleryContext,
     GroupContext,
+    Location,
     MediaType,
     PhotoContext,
     SinglePhotoInfo,
@@ -25,8 +26,9 @@ from ..models import (
 from ..parsers import (
     create_user,
     parse_date_taken,
-    parse_location,
     parse_machine_tags,
+    parse_named_location,
+    parse_numeric_location,
     parse_rotation,
     parse_timestamp,
     parse_safety_level,
@@ -161,11 +163,14 @@ class SinglePhotoMethods(LicenseMethods):
         # location data; if the user hasn't made location available to
         # public users, it'll be missing.
         location_elem = photo_elem.find(path="location")
+        location: Location | None = None
 
         if location_elem is not None:
-            location = parse_location(location_elem)
-        else:
-            location = None
+            numeric_location = parse_numeric_location(location_elem)
+
+            if numeric_location is not None:
+                named_location = parse_named_location(location_elem)
+                location = {**numeric_location, **named_location}
 
         # Get visibility information about the photo.
         #

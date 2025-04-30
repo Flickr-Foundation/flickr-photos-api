@@ -8,10 +8,14 @@ import re
 import typing
 from xml.etree import ElementTree as ET
 
+from nitrate.xml import find_optional_text
+
 from .models import (
     DateTaken,
-    LocationInfo,
+    LocationContext,
     MachineTags,
+    NumericLocation,
+    NamedLocation,
     Rotation,
     SafetyLevel,
     TakenGranularity,
@@ -23,8 +27,9 @@ __all__ = [
     "create_user",
     "fix_realname",
     "parse_date_taken",
-    "parse_location",
     "parse_machine_tags",
+    "parse_numeric_location",
+    "parse_named_location",
     "parse_safety_level",
     "parse_timestamp",
 ]
@@ -153,7 +158,7 @@ def parse_safety_level(s: str) -> SafetyLevel:
         raise ValueError(f"Unrecognised safety level: {s}")
 
 
-def parse_location(elem_with_location: ET.Element) -> LocationInfo | None:
+def parse_numeric_location(elem_with_location: ET.Element) -> NumericLocation | None:
     """
     Get location information about a photo.
 
@@ -180,6 +185,48 @@ def parse_location(elem_with_location: ET.Element) -> LocationInfo | None:
         "latitude": float(elem_with_location.attrib["latitude"]),
         "longitude": float(elem_with_location.attrib["longitude"]),
         "accuracy": int(elem_with_location.attrib["accuracy"]),
+    }
+
+
+def parse_named_location(location_elem: ET.Element) -> NamedLocation:
+    """
+    Get named location information about a photo.
+    """
+    # The context tells us whether the photo is indoors or outdoors.
+    # See https://www.flickr.com/services/api/flickr.photos.geo.setLocation.html
+    context_lookup: dict[str, LocationContext | None] = {
+        "0": None,
+        "1": "indoors",
+        "2": "outdoors",
+    }
+
+    try:
+        context = context_lookup[location_elem.attrib["context"]]
+    except KeyError:  # pragma: no cover
+        raise ValueError(
+            f"Unrecognised location conext: {location_elem.attrib['context']}"
+        )
+
+    # On responses form the `flickr.photos.getInfo` endpoint, the
+    # <location> element will be of the form:
+    #
+    #     <location latitude="9.135158" longitude="40.083811" accuracy="16" context="0">
+    #       <locality>Galoch</locality>
+    #       <neighbourhood/>
+    #       <region>Āfar</region>
+    #       <country>Ethiopia</country>
+    #     </location>
+    #
+    return {
+        "context": context,
+        "locality": find_optional_text(location_elem, path="locality"),
+        "county": find_optional_text(location_elem, path="county"),
+        "region": find_optional_text(location_elem, path="region"),
+        "country": find_optional_text(location_elem, path="country"),
+        # The mismatched spelling here is intentional --
+        # the Flickr API uses the British English spelling, but
+        # we use US English throughout Data Lifeboat so we fix it.
+        "neighborhood": find_optional_text(location_elem, path="neighbourhood"),
     }
 
 

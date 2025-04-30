@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v3.2 - 2025-04-30
+
+Return more information about photo locations.
+
+*   The `LocationInfo` type has been replaced with `NumericLocation`, `NamedLocation`, and `Location`.
+*   The `parse_location` function has been replaced with `parse_numeric_location` and `parse_named_location`.
+
 ## v3.1 - 2025-04-29
 
 Expose the rotation of a photo in our `SinglePhoto` model (0°, 90°, 180°, 270°).

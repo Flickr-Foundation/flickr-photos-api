@@ -4,7 +4,13 @@ import typing
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId
 from .machine_tags import MachineTags
-from .photo import Rotation
+from .photo import (
+    Location,
+    LocationContext,
+    NamedLocation,
+    NumericLocation,
+    Rotation,
+)
 from .sizes import Size
 from .users import User, UserInfo
 
@@ -15,7 +21,11 @@ __all__ = [
     "GroupContext",
     "License",
     "LicenseId",
+    "Location",
+    "LocationContext",
     "MachineTags",
+    "NamedLocation",
+    "NumericLocation",
     "PhotoContext",
     "Rotation",
     "Size",
@@ -23,12 +33,6 @@ __all__ = [
     "UserInfo",
     "Visibility",
 ]
-
-
-class LocationInfo(typing.TypedDict):
-    latitude: float
-    longitude: float
-    accuracy: int
 
 
 # Represents the accuracy to which we know a date taken to be true.
@@ -110,7 +114,7 @@ class SinglePhotoInfo(typing.TypedDict):
 
     date_posted: datetime
     date_taken: DateTaken | None
-    location: LocationInfo | None
+    location: Location | None
 
     count_comments: int
     count_views: int
