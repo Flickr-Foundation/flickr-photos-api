@@ -16,7 +16,7 @@ class License(typing.TypedDict):
 
     id: "LicenseId"
     label: str
-    url: str | None
+    url: str
 
 
 LicenseId = typing.Literal[
