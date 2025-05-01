@@ -3,11 +3,15 @@ Methods for getting information about licenses from the Flickr API.
 """
 
 import functools
+import itertools
 import re
+import typing
 
 from .base import FlickrApi
-from ..exceptions import LicenseNotFound
-from ..models import License, LicenseId
+from ..exceptions import LicenseNotFound, ResourceNotFound
+from ..models import License, LicenseChange, LicenseId
+from ..models.licenses import LicenseChangeEntry
+from ..parsers import parse_timestamp
 
 
 class LicenseMethods(FlickrApi):
@@ -61,7 +65,7 @@ class LicenseMethods(FlickrApi):
             result[lic.attrib["id"]] = {
                 "id": license_ids[lic.attrib["name"]],
                 "label": license_labels.get(lic.attrib["name"], lic.attrib["name"]),
-                "url": lic.attrib["url"] or None,
+                "url": lic.attrib["url"],
             }
 
         return result
@@ -96,3 +100,70 @@ class LicenseMethods(FlickrApi):
             return matching_license
         except StopIteration:
             raise LicenseNotFound(license_id=id)
+
+    def get_license_history(self, photo_id: str) -> list[LicenseChange]:
+        """
+        Return the license history of a photo.
+
+        This always returns license events in sorted order.
+        """
+        licenses_by_url = {lic["url"]: lic for lic in self.get_licenses().values()}
+
+        # First call the getLicenseHistory API.
+        # See https://www.flickr.com/services/api/flickr.photos.licenses.getLicenseHistory.html
+        history_resp = self.call(
+            method="flickr.photos.licenses.getLicenseHistory",
+            params={"photo_id": photo_id},
+            exceptions={"1": ResourceNotFound()},
+        )
+
+        # Look for <license_history> elements in the response.
+        history_elems = history_resp.findall("./license_history")
+
+        # If there's a single <license_history> element and the `new_license`
+        # is empty, it means this is the original license.
+        #
+        #     <rsp stat="ok">
+        #       <license_history
+        #         date_change="1733215279"
+        #         old_license="All Rights Reserved" old_license_url="https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members"
+        #         new_license="" new_license_url=""
+        #       />
+        #     </rsp>
+        #
+        if len(history_elems) == 1 and history_elems[0].attrib["new_license"] == "":
+            date_posted = parse_timestamp(history_elems[0].attrib["date_change"])
+            license_url = history_elems[0].attrib["old_license_url"]
+
+            return [
+                {
+                    "date_posted": date_posted,
+                    "license": licenses_by_url[license_url],
+                }
+            ]
+
+        # Restructure the <license_history> elements -- at this point,
+        # we know that they all have both an `old_license` and a `new_license`.
+        #
+        # While we're here, let's make sure the events are in date order.
+        # The Flickr API usually returns them in this order, but it's
+        # not guaranteed -- let's make sure that's true.
+        license_events: list[LicenseChangeEntry.ChangedLicense] = sorted(
+            [
+                {
+                    "date_changed": parse_timestamp(elem.attrib["date_change"]),
+                    "old_license": licenses_by_url[elem.attrib["old_license_url"]],
+                    "new_license": licenses_by_url[elem.attrib["new_license_url"]],
+                }
+                for elem in history_elems
+            ],
+            key=lambda ev: ev["date_changed"],
+        )
+
+        # Do a quick consistency check that this history makes sense
+        # -- when a license changes, the `old_license` is the same
+        # as the previous `new_license`.
+        for ev1, ev2 in itertools.pairwise(license_events):
+            assert ev1["new_license"] == ev2["old_license"]
+
+        return typing.cast(list[LicenseChange], license_events)

@@ -2,7 +2,7 @@ from datetime import datetime
 import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
-from .licenses import License, LicenseId
+from .licenses import License, LicenseId, LicenseChange
 from .machine_tags import MachineTags
 from .photo import (
     Location,
@@ -21,6 +21,7 @@ __all__ = [
     "GroupContext",
     "License",
     "LicenseId",
+    "LicenseChange",
     "Location",
     "LocationContext",
     "MachineTags",

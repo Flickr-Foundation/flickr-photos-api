@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.3 - 2025-05-01
+
+Add a new method `get_license_history(photo_id)`, which returns the license history of a photo with our nicely-typed `License` model.
+
 ## v3.2 - 2025-04-30
 
 Return more information about photo locations.

@@ -2,6 +2,7 @@
 Types for the licenses used on Flickr.
 """
 
+from datetime import datetime
 import typing
 
 
@@ -15,7 +16,7 @@ class License(typing.TypedDict):
 
     id: "LicenseId"
     label: str
-    url: str | None
+    url: str
 
 
 LicenseId = typing.Literal[
@@ -31,3 +32,24 @@ LicenseId = typing.Literal[
     "cc0-1.0",
     "pdm",
 ]
+
+
+class LicenseChangeEntry:
+    """
+    Events in the license history of a photo -- both the initial license
+    and any subsequent changes.
+    """
+
+    # The initial license, set when the photo was uploaded
+    InitialLicense = typing.TypedDict(
+        "InitialLicense", {"date_posted": datetime, "license": License}
+    )
+
+    # Any changes to the license made after the initial upload
+    ChangedLicense = typing.TypedDict(
+        "ChangedLicense",
+        {"date_changed": datetime, "old_license": License, "new_license": License},
+    )
+
+
+LicenseChange = LicenseChangeEntry.InitialLicense | LicenseChangeEntry.ChangedLicense
