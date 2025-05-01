@@ -48,7 +48,6 @@ class SinglePhotoMethods(LicenseMethods):
         """
         # The getInfo response is a blob of XML of the form:
         #
-        #       <?xml version="1.0" encoding="utf-8" ?>
         #       <rsp stat="ok">
         #       <photo license="8" …>
         #           <owner
