@@ -21,6 +21,7 @@ from ..models import (
     SinglePhoto,
     Size,
     Tag,
+    Usage,
     Visibility,
 )
 from ..parsers import (
@@ -184,6 +185,22 @@ class SinglePhotoMethods(LicenseMethods):
             "is_family": visibility_elem.attrib["isfamily"] == "1",
         }
 
+        # Get usage information about the photo.
+        #
+        # This is returned in the form:
+        #
+        #     <usage candownload="0" canblog="0" canprint="0" canshare="0"/>
+        #
+        # fmt: off
+        usage_elem = find_required_elem(photo_elem, path="usage")
+        usage: Usage = {
+            "can_download": usage_elem.attrib["candownload"] == "1",
+            "can_blog":     usage_elem.attrib["canblog"]     == "1",
+            "can_print":    usage_elem.attrib["canprint"]    == "1",
+            "can_share":    usage_elem.attrib["canshare"]    == "1",
+        }
+        # fmt: on
+
         assert photo_elem.attrib["media"] in {"photo", "video"}
         media_type = typing.cast(MediaType, photo_elem.attrib["media"])
 
@@ -210,6 +227,7 @@ class SinglePhotoMethods(LicenseMethods):
             "count_views": count_views,
             "url": url,
             "visibility": visibility,
+            "usage": usage,
         }
 
     def get_single_photo_info(self, *, photo_id: str) -> SinglePhotoInfo:
