@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.3.1 - 2025-05-02
+
+If you call `get_single_photo_sizes()` for a photo that doesn't exist, you now get a `ResourceNotFound` exception instead of `UnrecognisedFlickrApiException`.
+
 ## v3.3 - 2025-05-01
 
 Add a new method `get_license_history(photo_id)`, which returns the license history of a photo with our nicely-typed `License` model.

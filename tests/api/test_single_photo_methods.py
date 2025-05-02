@@ -278,6 +278,20 @@ class TestGetSinglePhoto:
         ]
 
 
+class TestGetSinglePhotoSizes:
+    """
+    Tests for `SinglePhotoMethods.get_single_photo_sizes`.
+    """
+
+    def test_non_existent_photo_is_error(self, api: FlickrApi) -> None:
+        """
+        If a photo doesn't exist, then getting the sizes throws
+        a ResourceNotFound.
+        """
+        with pytest.raises(ResourceNotFound):
+            api.get_single_photo_sizes(photo_id="does_not_exist")
+
+
 class TestIsPhotoDeleted:
     """
     Tests for ``SinglePhotoMethods.is_photo_deleted``.

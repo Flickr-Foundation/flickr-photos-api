@@ -239,7 +239,11 @@ class SinglePhotoMethods(LicenseMethods):
         This uses the flickr.photos.getSizes API.
         """
         sizes_resp = self.call(
-            method="flickr.photos.getSizes", params={"photo_id": photo_id}
+            method="flickr.photos.getSizes",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+            },
         )
 
         # The getSizes response is a blob of XML of the form:
