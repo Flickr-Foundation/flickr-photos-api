@@ -10,6 +10,7 @@ from .photo import (
     NamedLocation,
     NumericLocation,
     Rotation,
+    Usage,
 )
 from .sizes import Size
 from .users import User, UserInfo
@@ -30,6 +31,7 @@ __all__ = [
     "PhotoContext",
     "Rotation",
     "Size",
+    "Usage",
     "User",
     "UserInfo",
     "Visibility",
@@ -111,7 +113,7 @@ class SinglePhotoInfo(typing.TypedDict):
     description: str | None
     tags: list[str]
     machine_tags: MachineTags
-    raw_tags: typing.NotRequired[list[Tag]]
+    raw_tags: list[Tag]
 
     date_posted: datetime
     date_taken: DateTaken | None
@@ -120,7 +122,8 @@ class SinglePhotoInfo(typing.TypedDict):
     count_comments: int
     count_views: int
 
-    visibility: typing.NotRequired[Visibility]
+    visibility: Visibility
+    usage: Usage
 
     url: str
 

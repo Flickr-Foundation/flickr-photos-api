@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4 - 2025-05-02
+
+Return information about photo permissions: can you download, share, or print a photo.
+
 ## v3.3.1 - 2025-05-02
 
 If you call `get_single_photo_sizes()` for a photo that doesn't exist, you now get a `ResourceNotFound` exception instead of `UnrecognisedFlickrApiException`.

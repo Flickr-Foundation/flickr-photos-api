@@ -240,6 +240,12 @@
   ],
   "title": "Puppy Kisses",
   "url": "https://www.flickr.com/photos/coast_guard/32812033543/",
+  "usage": {
+    "can_download": true,
+    "can_blog": false,
+    "can_print": false,
+    "can_share": true
+  },
   "visibility": {
     "is_public": true,
     "is_friend": false,

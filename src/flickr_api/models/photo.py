@@ -41,3 +41,14 @@ class Location(NumericLocation, NamedLocation):
     """
     Both numeric and named information about a location.
     """
+
+
+class Usage(typing.TypedDict):
+    """
+    Describes the permissions that can be set on a photo.
+    """
+
+    can_download: bool
+    can_blog: bool
+    can_print: bool
+    can_share: bool
