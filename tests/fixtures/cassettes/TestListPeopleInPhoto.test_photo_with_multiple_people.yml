@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.people.getList&photo_id=19403592468
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<people
+        total=\"2\" photo_width=\"500\" photo_height=\"400\">\n\t<person nsid=\"48857242@N00\"
+        username=\"simonwistow\" iconserver=\"8120\" iconfarm=\"9\" path_alias=\"simonwistow\"
+        added_by=\"8107300@N03\" is_deleted=\"0\" realname=\"Simon Wistow\" />\n\t<person
+        nsid=\"87944415@N00\" username=\"hitherto\" iconserver=\"1\" iconfarm=\"1\"
+        path_alias=\"hitherto\" added_by=\"8107300@N03\" is_deleted=\"0\" realname=\"Simon
+        Batistoni\" />\n</people>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 09:53:57 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 5e8927f6dbbe16e857124daf8548aeb2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Sb4vlKb-T7WbRE5zKCh57Pvf-BB2hzo9VRQOdztbqXAtcpKLvO2Rag==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '469'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 09:53:57 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 09:53:57 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-6819dc35-45defe9e74ed8279113e7ebe
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.33.228
+    status:
+      code: 200
+      message: OK
+version: 1

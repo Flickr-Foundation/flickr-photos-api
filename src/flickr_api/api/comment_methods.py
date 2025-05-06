@@ -49,20 +49,20 @@ class CommentMethods(FlickrApi):
         #     </comment>
         #
         for comment_elem in resp.findall(".//comment"):
+            author_is_deleted = comment_elem.attrib["author_is_deleted"] == "1"
+
             author = create_user(
                 user_id=comment_elem.attrib["author"],
                 username=comment_elem.attrib["authorname"],
                 realname=comment_elem.attrib["realname"],
                 path_alias=comment_elem.attrib["path_alias"],
+                is_deleted=author_is_deleted,
             )
-
-            author_is_deleted = comment_elem.attrib["author_is_deleted"] == "1"
 
             result.append(
                 {
                     "id": comment_elem.attrib["id"],
                     "photo_id": photo_id,
-                    "author_is_deleted": author_is_deleted,
                     "author": author,
                     "text": comment_elem.text or "",
                     "permalink": comment_elem.attrib["permalink"],

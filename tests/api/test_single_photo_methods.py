@@ -292,6 +292,106 @@ class TestGetSinglePhotoSizes:
             api.get_single_photo_sizes(photo_id="does_not_exist")
 
 
+class TestListPeopleInPhoto:
+    """
+    Tests for `SinglePhotoMethods.list_people_in_photo`.
+    """
+
+    def test_photo_with_one_person(self, api: FlickrApi) -> None:
+        """
+        Get a photo with one person.
+        """
+        people = api.list_people_in_photo(photo_id="13914947499")
+
+        assert people == [
+            {
+                "user": {
+                    "id": "87944415@N00",
+                    "username": "hitherto",
+                    "realname": "Simon Batistoni",
+                    "path_alias": "hitherto",
+                    "photos_url": "https://www.flickr.com/photos/hitherto/",
+                    "profile_url": "https://www.flickr.com/people/hitherto/",
+                },
+                "bounding_box": None,
+            }
+        ]
+
+    def test_photo_with_multiple_people(self, api: FlickrApi) -> None:
+        """
+        Get a photo with multiple people.
+        """
+        people = api.list_people_in_photo(photo_id="19403592468")
+
+        assert people == [
+            {
+                "user": {
+                    "id": "48857242@N00",
+                    "username": "simonwistow",
+                    "realname": "Simon Wistow",
+                    "path_alias": "simonwistow",
+                    "photos_url": "https://www.flickr.com/photos/simonwistow/",
+                    "profile_url": "https://www.flickr.com/people/simonwistow/",
+                },
+                "bounding_box": None,
+            },
+            {
+                "user": {
+                    "id": "87944415@N00",
+                    "username": "hitherto",
+                    "realname": "Simon Batistoni",
+                    "path_alias": "hitherto",
+                    "photos_url": "https://www.flickr.com/photos/hitherto/",
+                    "profile_url": "https://www.flickr.com/people/hitherto/",
+                },
+                "bounding_box": None,
+            },
+        ]
+
+    def test_photo_with_coordinates(self, api: FlickrApi) -> None:
+        """
+        Get a photo where there are coordinates identifying where
+        the people are in the photo.
+        """
+        people = api.list_people_in_photo(photo_id="2973028271")
+
+        assert people == [
+            {
+                "user": {
+                    "id": "35034348999@N01",
+                    "username": "straup",
+                    "realname": "Aaron Straup Cope",
+                    "path_alias": "straup",
+                    "photos_url": "https://www.flickr.com/photos/straup/",
+                    "profile_url": "https://www.flickr.com/people/straup/",
+                },
+                "bounding_box": {"height": 164, "width": 39, "x": 461, "y": 155},
+            },
+            {
+                "user": {
+                    "id": "87944415@N00",
+                    "username": "hitherto",
+                    "realname": "Simon Batistoni",
+                    "path_alias": "hitherto",
+                    "photos_url": "https://www.flickr.com/photos/hitherto/",
+                    "profile_url": "https://www.flickr.com/people/hitherto/",
+                },
+                "bounding_box": {"height": 50, "width": 50, "x": 105, "y": 147},
+            },
+            {
+                "user": {
+                    "id": "48857242@N00",
+                    "username": "simonwistow",
+                    "realname": "Simon Wistow",
+                    "path_alias": "simonwistow",
+                    "photos_url": "https://www.flickr.com/photos/simonwistow/",
+                    "profile_url": "https://www.flickr.com/people/simonwistow/",
+                },
+                "bounding_box": {"height": 31, "width": 31, "x": 209, "y": 160},
+            },
+        ]
+
+
 class TestIsPhotoDeleted:
     """
     Tests for ``SinglePhotoMethods.is_photo_deleted``.

@@ -231,7 +231,11 @@ def parse_named_location(location_elem: ET.Element) -> NamedLocation:
 
 
 def create_user(
-    user_id: str, username: str, realname: str | None, path_alias: str | None
+    user_id: str,
+    username: str,
+    realname: str | None,
+    path_alias: str | None,
+    is_deleted: bool = False,
 ) -> User:
     """
     Given some core attributes, construct a ``User`` object.
@@ -245,7 +249,7 @@ def create_user(
     # empty string.
     #
     # In our type system, we want all of these empty values to map to ``None``.
-    return {
+    user: User = {
         "id": user_id,
         "username": username,
         "realname": realname,
@@ -253,6 +257,11 @@ def create_user(
         "photos_url": f"https://www.flickr.com/photos/{path_alias or user_id}/",
         "profile_url": f"https://www.flickr.com/people/{path_alias or user_id}/",
     }
+
+    if is_deleted:
+        return {**user, "is_deleted": True}
+    else:
+        return user
 
 
 def fix_realname(user_id: str, username: str, realname: str | None) -> str | None:
