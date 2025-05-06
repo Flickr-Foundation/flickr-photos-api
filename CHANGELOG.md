@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v3.5 - 2025-05-06
+
+Return information about people tagged in photos:
+
+*   The `get_single_photo()` method returns a new field: `has_people`
+*   The new `list_people_in_photo()` returns a list of people tagged in a photo
+
+There's also a small tweak to the way `list_all_comments()` works: rather than returning an `author_is_deleted` bool, there's now an optional `is_deleted` field on `author`.
+
 ## v3.4 - 2025-05-02
 
 Return information about photo permissions: can you download, share, or print a photo.
