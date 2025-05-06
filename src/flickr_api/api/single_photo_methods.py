@@ -17,6 +17,7 @@ from ..models import (
     GroupContext,
     Location,
     MediaType,
+    Note,
     Person,
     PhotoContext,
     SinglePhotoInfo,
@@ -159,6 +160,48 @@ class SinglePhotoMethods(LicenseMethods):
                 }
             )
 
+        # The notes on the photo are stored as a structured block of data:
+        #
+        #     <notes>
+        #       <note
+        #         id="72157620890011304"
+        #         photo_id="2959326615"
+        #         author="34870218@N07"
+        #         authorname="othercoby"
+        #         authorrealname=""
+        #         authorispro="0"
+        #         authorisdeleted="0"
+        #         x="236" y="200" w="50" h="50">the size of those paws!</note>
+        #       …
+        #
+        notes_elem = find_required_elem(photo_elem, path="notes")
+
+        notes: list[Note] = []
+
+        for n in notes_elem.findall("note"):
+            note_text = n.text
+            assert isinstance(note_text, str)
+
+            notes.append(
+                {
+                    "id": n.attrib["id"],
+                    "author": create_user(
+                        user_id=n.attrib["author"],
+                        username=n.attrib["authorname"],
+                        realname=n.attrib["authorrealname"],
+                        path_alias=None,
+                        is_deleted=n.attrib["authorisdeleted"] == "1",
+                    ),
+                    "bounding_box": {
+                        "x": int(n.attrib["x"]),
+                        "y": int(n.attrib["y"]),
+                        "width": int(n.attrib["w"]),
+                        "height": int(n.attrib["h"]),
+                    },
+                    "text": note_text,
+                }
+            )
+
         # Get location information about the photo.
         #
         # The <location> tag is only present in photos which have
@@ -230,6 +273,7 @@ class SinglePhotoMethods(LicenseMethods):
             "description": description,
             "tags": tags,
             "raw_tags": raw_tags,
+            "notes": notes,
             "machine_tags": parse_machine_tags(tags),
             "date_posted": date_posted,
             "date_taken": date_taken,

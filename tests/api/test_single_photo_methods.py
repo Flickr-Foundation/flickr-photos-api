@@ -292,6 +292,43 @@ class TestGetSinglePhoto:
 
         assert photo["has_people"] == has_people
 
+    def test_photo_with_notes(self, api: FlickrApi) -> None:
+        """
+        Get a photo with notes.
+        """
+        photo = api.get_single_photo(photo_id="2959326615")
+
+        assert len(photo["notes"]) == 32
+        assert photo["notes"][0] == {
+            "id": "72157618520987052",
+            "author": {
+                "id": "38017871@N04",
+                "username": "Membedeep",
+                "realname": "Valentin Manus",
+                "path_alias": None,
+                "photos_url": "https://www.flickr.com/photos/38017871@N04/",
+                "profile_url": "https://www.flickr.com/people/38017871@N04/",
+            },
+            "bounding_box": {"x": 7, "y": 279, "width": 50, "height": 50},
+            "text": "Nice siberian husky!",
+        }
+
+        # Check a note that was written by a now-deleted user.
+        assert photo["notes"][5] == {
+            "id": "72157622377081784",
+            "author": {
+                "id": "83333609@N00",
+                "username": "flagrant popcorn",
+                "realname": "Flagrant Popcorn",
+                "path_alias": None,
+                "photos_url": "https://www.flickr.com/photos/83333609@N00/",
+                "profile_url": "https://www.flickr.com/people/83333609@N00/",
+                "is_deleted": True,
+            },
+            "bounding_box": {"x": 293, "y": 57, "width": 45, "height": 16},
+            "text": "scritch, scritch... good doggie!",
+        }
+
 
 class TestGetSinglePhotoSizes:
     """
