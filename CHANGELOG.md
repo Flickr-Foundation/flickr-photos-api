@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.6.1 - 2025-05-06
+
+If you call `list_people_in_photo()` with a non-existent photo, it now throws a `ResourceNotFound` exception instead of `UnrecognisedFlickrApiException`.
+
 ## v3.6 - 2025-05-06
 
 Return notes on photos from the `get_single_photo()` method.

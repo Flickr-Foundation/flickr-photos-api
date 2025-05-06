@@ -443,6 +443,13 @@ class TestListPeopleInPhoto:
             },
         ]
 
+    def test_non_existent_photo(self, api: FlickrApi) -> None:
+        """
+        Getting a list of people in a non-existent photo throws an error.
+        """
+        with pytest.raises(ResourceNotFound):
+            api.list_people_in_photo(photo_id="does_not_exist")
+
 
 class TestIsPhotoDeleted:
     """
