@@ -60,6 +60,11 @@ exclude_also = [
 
 [tool.pytest.ini_options]
 filterwarnings = ["error"]
+addopts = [
+  "--cov=src",
+  "--cov=tests",
+  "--numprocesses=auto",
+]
 
 [tool.mypy]
 mypy_path = "src"

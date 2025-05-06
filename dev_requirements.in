@@ -5,6 +5,7 @@ build
 interrogate
 mypy
 pytest-cov
+pytest-xdist
 ruff
 twine
 types-Authlib

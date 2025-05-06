@@ -33,6 +33,8 @@ cryptography==44.0.2
     #   types-authlib
 docutils==0.21.2
     # via readme-renderer
+execnet==2.1.1
+    # via pytest-xdist
 flickr-url-parser==1.11.0
     # via flickr-photos-api
 h11==0.14.0
@@ -109,11 +111,14 @@ pytest==8.3.5
     # via
     #   pytest-cov
     #   pytest-vcr
+    #   pytest-xdist
     #   silver-nitrate
 pytest-cov==6.1.1
     # via -r dev_requirements.in
 pytest-vcr==1.0.2
     # via silver-nitrate
+pytest-xdist==3.6.1
+    # via -r dev_requirements.in
 pyyaml==6.0.2
     # via vcrpy
 readme-renderer==44.0
