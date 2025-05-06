@@ -1,0 +1,375 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=2179931434
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"2179931434\" secret=\"6da491430f\" server=\"2106\" farm=\"3\" dateuploaded=\"1199853105\"
+        isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"6174be7831\"
+        originalformat=\"jpg\" views=\"150742\" media=\"photo\">\n\t<owner nsid=\"8623220@N02\"
+        username=\"The Library of Congress\" realname=\"\" location=\"Washington,
+        DC, United States\" iconserver=\"65535\" iconfarm=\"66\" path_alias=\"library_of_congress\">\n\t\t<gift
+        gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>Children gathering
+        potatoes on a large farm, vicinity of Caribou, Aroostook County, Me. Schools
+        do not open until the potatoes are harvested  (LOC)</title>\n\t<description>Delano,
+        Jack,, photographer.\n\nChildren gathering potatoes on a large farm, vicinity
+        of Caribou, Aroostook County, Me. Schools do not open until the potatoes are
+        harvested\n\n1940 Oct. \n\n1 slide : color.\n\n&lt;b&gt;Notes:\n&lt;/b&gt;
+        Title from FSA or OWI agency caption.\nTransfer from U.S. Office of War Information,
+        1944.\n\n&lt;b&gt;Subjects:\n&lt;/b&gt; Potatoes\nHarvesting\nChild labor\nUnited
+        States--Maine--Caribou \nUnited States--Maine--Aroostook County \n\n&lt;b&gt;Format:
+        &lt;/b&gt; Slides--Color\n\n&lt;b&gt;Rights Info: &lt;/b&gt; No known restrictions
+        on publication.\n\n&lt;b&gt;Repository: &lt;/b&gt; Library of Congress, Prints
+        and Photographs Division, Washington, D.C. 20540 USA, &lt;a href=&quot;http://hdl.loc.gov/loc.pnp/pp.print&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;hdl.loc.gov/loc.pnp/pp.print&lt;/a&gt;\n\n&lt;b&gt;Part
+        Of: &lt;/b&gt; Farm Security Administration - Office of War Information Collection
+        11671-4 (DLC)   93845501\n\nGeneral information about the FSA/OWI Color Photographs
+        is available at &lt;a href=&quot;http://hdl.loc.gov/loc.pnp/pp.fsac&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;hdl.loc.gov/loc.pnp/pp.fsac&lt;/a&gt;\n\n&lt;b&gt;Higher
+        resolution image is available (Persistent URL): &lt;/b&gt;  &lt;a href=&quot;http://hdl.loc.gov/loc.pnp/fsac.1a33844&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;hdl.loc.gov/loc.pnp/fsac.1a33844&lt;/a&gt;\n\n&lt;b&gt;Call
+        Number: &lt;/b&gt; LC-USF35-63  \n\n</description>\n\t<visibility ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1199853105\" taken=\"1939-01-01
+        00:00:00\" takengranularity=\"8\" takenunknown=\"0\" lastupdate=\"1607105185\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>60</comments>\n\t<notes>\n\t\t<note
+        id=\"72157603795982393\" photo_id=\"2179931434\" author=\"25109272@N00\" authorname=\"cloudy
+        root\" authorrealname=\"Cloudy Root\" authorispro=\"0\" authorisdeleted=\"1\"
+        x=\"304\" y=\"116\" w=\"50\" h=\"50\">Is he crying? (serious question)</note>\n\t\t<note
+        id=\"72157626441564842\" photo_id=\"2179931434\" author=\"61465791@N02\" authorname=\"andre.madalen\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"16\" y=\"16\"
+        w=\"31\" h=\"31\">Pobrecitos</note>\n\t</notes>\n\t<people haspeople=\"0\"
+        />\n\t<tags>\n\t\t<tag id=\"8602872-2179931434-22301\" author=\"8623220@N02\"
+        authorname=\"The Library of Congress\" raw=\"Library of Congress\" machine_tag=\"0\">libraryofcongress</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19012067\" author=\"8623220@N02\" authorname=\"The
+        Library of Congress\" raw=\"dc:identifier=http://hdl.loc.gov/loc.pnp/fsac.1a33844\"
+        machine_tag=\"1\">dc:identifier=httphdllocgovlocpnpfsac1a33844</tag>\n\t\t<tag
+        id=\"8602872-2179931434-8499312\" author=\"8623220@N02\" authorname=\"The
+        Library of Congress\" raw=\"xmlns:dc=http://purl.org/dc/elements/1.1/\" machine_tag=\"1\">xmlns:dc=httppurlorgdcelements11</tag>\n\t\t<tag
+        id=\"8602872-2179931434-12565\" author=\"21367926@N00\" authorname=\"judemat\"
+        raw=\"potato\" machine_tag=\"0\">potato</tag>\n\t\t<tag id=\"8602872-2179931434-7243\"
+        author=\"21367926@N00\" authorname=\"judemat\" raw=\"maine\" machine_tag=\"0\">maine</tag>\n\t\t<tag
+        id=\"8602872-2179931434-7419\" author=\"21367926@N00\" authorname=\"judemat\"
+        raw=\"harvest\" machine_tag=\"0\">harvest</tag>\n\t\t<tag id=\"8602872-2179931434-6961\"
+        author=\"54576824@N00\" authorname=\"fschnell\" raw=\"1940\" machine_tag=\"0\">1940</tag>\n\t\t<tag
+        id=\"8602872-2179931434-3002\" author=\"54576824@N00\" authorname=\"fschnell\"
+        raw=\"october\" machine_tag=\"0\">october</tag>\n\t\t<tag id=\"8602872-2179931434-794\"
+        author=\"34427469121@N01\" authorname=\"George\" raw=\"boys\" machine_tag=\"0\">boys</tag>\n\t\t<tag
+        id=\"8602872-2179931434-2685\" author=\"34427469121@N01\" authorname=\"George\"
+        raw=\"potatoes\" machine_tag=\"0\">potatoes</tag>\n\t\t<tag id=\"8602872-2179931434-1611\"
+        author=\"17726343@N00\" authorname=\"chrishammond\" raw=\"children\" machine_tag=\"0\">children</tag>\n\t\t<tag
+        id=\"8602872-2179931434-5276\" author=\"17726343@N00\" authorname=\"chrishammond\"
+        raw=\"farm\" machine_tag=\"0\">farm</tag>\n\t\t<tag id=\"8602872-2179931434-3925\"
+        author=\"17726343@N00\" authorname=\"chrishammond\" raw=\"basket\" machine_tag=\"0\">basket</tag>\n\t\t<tag
+        id=\"8602872-2179931434-9321\" author=\"51948089@N00\" authorname=\"milly
+        and tilly\" raw=\"vegetable\" machine_tag=\"0\">vegetable</tag>\n\t\t<tag
+        id=\"8602872-2179931434-915\" author=\"51948089@N00\" authorname=\"milly and
+        tilly\" raw=\"field\" machine_tag=\"0\">field</tag>\n\t\t<tag id=\"8602872-2179931434-338\"
+        author=\"10126823@N00\" authorname=\"deegolden\" raw=\"food\" machine_tag=\"0\">food</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19373676\" author=\"21791237@N00\" authorname=\"advicepig\"
+        raw=\"hats with earflaps\" machine_tag=\"0\">hatswithearflaps</tag>\n\t\t<tag
+        id=\"8602872-2179931434-369\" author=\"12344830@N05\" authorname=\"Satyricom\"
+        raw=\"brown\" machine_tag=\"0\">brown</tag>\n\t\t<tag id=\"8602872-2179931434-5081\"
+        author=\"12344830@N05\" authorname=\"Satyricom\" raw=\"earth\" machine_tag=\"0\">earth</tag>\n\t\t<tag
+        id=\"8602872-2179931434-1483309\" author=\"67675092@N00\" authorname=\"shelbyhodgkins\"
+        raw=\"the county\" machine_tag=\"0\">thecounty</tag>\n\t\t<tag id=\"8602872-2179931434-35849\"
+        author=\"76209814@N00\" authorname=\"blue trampoline\" raw=\"caribou\" machine_tag=\"0\">caribou</tag>\n\t\t<tag
+        id=\"8602872-2179931434-1280826\" author=\"76209814@N00\" authorname=\"blue
+        trampoline\" raw=\"aroostook\" machine_tag=\"0\">aroostook</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19380260\" author=\"75159446@N00\" authorname=\"the
+        life of liza\" raw=\"large wooden drums\" machine_tag=\"0\">largewoodendrums</tag>\n\t\t<tag
+        id=\"8602872-2179931434-3744285\" author=\"90846565@N00\" authorname=\"peylex\"
+        raw=\"Jack Delano\" machine_tag=\"0\">jackdelano</tag>\n\t\t<tag id=\"8602872-2179931434-1297\"
+        author=\"88442983@N00\" authorname=\"taberandrew\" raw=\"rural\" machine_tag=\"0\">rural</tag>\n\t\t<tag
+        id=\"8602872-2179931434-93520\" author=\"88442983@N00\" authorname=\"taberandrew\"
+        raw=\"bucolic\" machine_tag=\"0\">bucolic</tag>\n\t\t<tag id=\"8602872-2179931434-26702\"
+        author=\"88442983@N00\" authorname=\"taberandrew\" raw=\"spuds\" machine_tag=\"0\">spuds</tag>\n\t\t<tag
+        id=\"8602872-2179931434-105301\" author=\"88442983@N00\" authorname=\"taberandrew\"
+        raw=\"pomme de terre\" machine_tag=\"0\">pommedeterre</tag>\n\t\t<tag id=\"8602872-2179931434-7660\"
+        author=\"64105875@N00\" authorname=\"Valerie Rene\xE9\" raw=\"culture\" machine_tag=\"0\">culture</tag>\n\t\t<tag
+        id=\"8602872-2179931434-14691\" author=\"99655906@N00\" authorname=\"Purrrpl_Haze\"
+        raw=\"crop\" machine_tag=\"0\">crop</tag>\n\t\t<tag id=\"8602872-2179931434-22424\"
+        author=\"99655906@N00\" authorname=\"Purrrpl_Haze\" raw=\"produce\" machine_tag=\"0\">produce</tag>\n\t\t<tag
+        id=\"8602872-2179931434-12251\" author=\"19617694@N00\" authorname=\"Brian.H\"
+        raw=\"dirt\" machine_tag=\"0\">dirt</tag>\n\t\t<tag id=\"8602872-2179931434-432185\"
+        author=\"19617694@N00\" authorname=\"Brian.H\" raw=\"tubers\" machine_tag=\"0\">tubers</tag>\n\t\t<tag
+        id=\"8602872-2179931434-12194\" author=\"49132007@N00\" authorname=\"n1ckpharris\"
+        raw=\"soil\" machine_tag=\"0\">soil</tag>\n\t\t<tag id=\"8602872-2179931434-12652\"
+        author=\"14009419@N00\" authorname=\"christine kelly\" raw=\"domestic\" machine_tag=\"0\">domestic</tag>\n\t\t<tag
+        id=\"8602872-2179931434-256950\" author=\"14009419@N00\" authorname=\"christine
+        kelly\" raw=\"sustenance\" machine_tag=\"0\">sustenance</tag>\n\t\t<tag id=\"8602872-2179931434-13568\"
+        author=\"53705842@N00\" authorname=\"Finecrafted by Nori\" raw=\"rows\" machine_tag=\"0\">rows</tag>\n\t\t<tag
+        id=\"8602872-2179931434-5219\" author=\"53705842@N00\" authorname=\"Finecrafted
+        by Nori\" raw=\"barrels\" machine_tag=\"0\">barrels</tag>\n\t\t<tag id=\"8602872-2179931434-30713\"
+        author=\"53705842@N00\" authorname=\"Finecrafted by Nori\" raw=\"plaid\" machine_tag=\"0\">plaid</tag>\n\t\t<tag
+        id=\"8602872-2179931434-7665\" author=\"53705842@N00\" authorname=\"Finecrafted
+        by Nori\" raw=\"hats\" machine_tag=\"0\">hats</tag>\n\t\t<tag id=\"8602872-2179931434-545\"
+        author=\"80551831@N00\" authorname=\"leftantler\" raw=\"colour\" machine_tag=\"0\">colour</tag>\n\t\t<tag
+        id=\"8602872-2179931434-1373\" author=\"7411260@N07\" authorname=\"redredshoes\"
+        raw=\"work\" machine_tag=\"0\">work</tag>\n\t\t<tag id=\"8602872-2179931434-174221\"
+        author=\"8764562@N06\" authorname=\"h_dwight_beers\" raw=\"child labor\" machine_tag=\"0\">childlabor</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19293671\" author=\"8764562@N06\" authorname=\"h_dwight_beers\"
+        raw=\"Maine potatos\" machine_tag=\"0\">mainepotatos</tag>\n\t\t<tag id=\"8602872-2179931434-6265540\"
+        author=\"37996584267@N01\" authorname=\"sweet lil&#039; bunny\" raw=\"whitechildren\"
+        machine_tag=\"0\">whitechildren</tag>\n\t\t<tag id=\"8602872-2179931434-9899\"
+        author=\"73749943@N00\" authorname=\"Jos\xE9 X\" raw=\"ni\xF1os\" machine_tag=\"0\">ni\xF1os</tag>\n\t\t<tag
+        id=\"8602872-2179931434-6354\" author=\"73749943@N00\" authorname=\"Jos\xE9
+        X\" raw=\"papas\" machine_tag=\"0\">papas</tag>\n\t\t<tag id=\"8602872-2179931434-28266\"
+        author=\"68967084@N00\" authorname=\"hungry relation\" raw=\"agriculture\"
+        machine_tag=\"0\">agriculture</tag>\n\t\t<tag id=\"8602872-2179931434-13430\"
+        author=\"94521106@N00\" authorname=\"maapu\" raw=\"cap\" machine_tag=\"0\">cap</tag>\n\t\t<tag
+        id=\"8602872-2179931434-13903\" author=\"22919837@N07\" authorname=\"wizbak\"
+        raw=\"red hat\" machine_tag=\"0\">redhat</tag>\n\t\t<tag id=\"8602872-2179931434-19407362\"
+        author=\"22919837@N07\" authorname=\"wizbak\" raw=\"maroon hat\" machine_tag=\"0\">maroonhat</tag>\n\t\t<tag
+        id=\"8602872-2179931434-4074\" author=\"74239725@N00\" authorname=\"rb06\"
+        raw=\"united states\" machine_tag=\"0\">unitedstates</tag>\n\t\t<tag id=\"8602872-2179931434-118371\"
+        author=\"74239725@N00\" authorname=\"rb06\" raw=\"FSA\" machine_tag=\"0\">fsa</tag>\n\t\t<tag
+        id=\"8602872-2179931434-1026019\" author=\"74239725@N00\" authorname=\"rb06\"
+        raw=\"OWI\" machine_tag=\"0\">owi</tag>\n\t\t<tag id=\"8602872-2179931434-3181081\"
+        author=\"20301187@N05\" authorname=\"SouthPhilly\" raw=\"gatherers\" machine_tag=\"0\">gatherers</tag>\n\t\t<tag
+        id=\"8602872-2179931434-4751\" author=\"35265143@N00\" authorname=\"9121\"
+        raw=\"brothers\" machine_tag=\"0\">brothers</tag>\n\t\t<tag id=\"8602872-2179931434-214\"
+        author=\"35265143@N00\" authorname=\"9121\" raw=\"friends\" machine_tag=\"0\">friends</tag>\n\t\t<tag
+        id=\"8602872-2179931434-37389\" author=\"76095413@N00\" authorname=\"nfoto\"
+        raw=\"cold weather\" machine_tag=\"0\">coldweather</tag>\n\t\t<tag id=\"8602872-2179931434-13280\"
+        author=\"76095413@N00\" authorname=\"nfoto\" raw=\"gloves\" machine_tag=\"0\">gloves</tag>\n\t\t<tag
+        id=\"8602872-2179931434-4564\" author=\"22282469@N00\" authorname=\"dvaires\"
+        raw=\"farmers\" machine_tag=\"0\">farmers</tag>\n\t\t<tag id=\"8602872-2179931434-1386\"
+        author=\"60162443@N00\" authorname=\"Emily Barney\" raw=\"vintage\" machine_tag=\"0\">vintage</tag>\n\t\t<tag
+        id=\"8602872-2179931434-10042\" author=\"60162443@N00\" authorname=\"Emily
+        Barney\" raw=\"slide film\" machine_tag=\"0\">slidefilm</tag>\n\t\t<tag id=\"8602872-2179931434-20374\"
+        author=\"60162443@N00\" authorname=\"Emily Barney\" raw=\"4x5\" machine_tag=\"0\">4x5</tag>\n\t\t<tag
+        id=\"8602872-2179931434-58962\" author=\"60162443@N00\" authorname=\"Emily
+        Barney\" raw=\"large format\" machine_tag=\"0\">largeformat</tag>\n\t\t<tag
+        id=\"8602872-2179931434-20375\" author=\"60162443@N00\" authorname=\"Emily
+        Barney\" raw=\"LF\" machine_tag=\"0\">lf</tag>\n\t\t<tag id=\"8602872-2179931434-16032\"
+        author=\"60162443@N00\" authorname=\"Emily Barney\" raw=\"transparency\" machine_tag=\"0\">transparency</tag>\n\t\t<tag
+        id=\"8602872-2179931434-154596\" author=\"60162443@N00\" authorname=\"Emily
+        Barney\" raw=\"transparencies\" machine_tag=\"0\">transparencies</tag>\n\t\t<tag
+        id=\"8602872-2179931434-22559\" author=\"83104715@N00\" authorname=\"gonzaloh\"
+        raw=\"enfants\" machine_tag=\"0\">enfants</tag>\n\t\t<tag id=\"8602872-2179931434-633563\"
+        author=\"83104715@N00\" authorname=\"gonzaloh\" raw=\"pommes de terre\" machine_tag=\"0\">pommesdeterre</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19422998\" author=\"55183368@N00\" authorname=\"Etienne
+        Posthumus\" raw=\"iconclass:n=42A571\" machine_tag=\"1\">iconclass:n=42a571</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19423012\" author=\"55183368@N00\" authorname=\"Etienne
+        Posthumus\" raw=\"iconclass:n=31D12(+72)\" machine_tag=\"1\">iconclass:n=31d1272</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19321905\" author=\"55183368@N00\" authorname=\"Etienne
+        Posthumus\" raw=\"iconclass:n=41C651(+5)\" machine_tag=\"1\">iconclass:n=41c6515</tag>\n\t\t<tag
+        id=\"8602872-2179931434-19423024\" author=\"55183368@N00\" authorname=\"Etienne
+        Posthumus\" raw=\"iconclass:n=47I112(+84)\" machine_tag=\"1\">iconclass:n=47i11284</tag>\n\t\t<tag
+        id=\"8602872-2179931434-6656\" author=\"7745644@N04\" authorname=\"allenellisdewitt\"
+        raw=\"farming\" machine_tag=\"0\">farming</tag>\n\t\t<tag id=\"8602872-2179931434-19328615\"
+        author=\"55183368@N00\" authorname=\"Etienne Posthumus\" raw=\"iconclass:n=42G2221\"
+        machine_tag=\"1\">iconclass:n=42g2221</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/library_of_congress/2179931434/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:21 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 40e3ed7c6b85417046e956c87e47596a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - OdzreMp3a8CcIXY8ndi86D4Ol5gsD0J-xE1M2cfiXMkFbLI1U-tQCw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '13131'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:21 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:21 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e5-0fc8da4411e07ffe082e4a68
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.13.145
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members\"
+        />\n\t<license id=\"4\" name=\"Attribution License\" url=\"https://creativecommons.org/licenses/by/2.0/\"
+        />\n\t<license id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"https://www.usa.gov/government-copyright\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:22 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 40e3ed7c6b85417046e956c87e47596a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Ft0DOhnQZaP4z-SKIbB-SjDGCSWAgr4i14Xo4ZwDY6BV845hksEyFA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1360'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:21 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e5-1ca76b500e01cbb34aecb2f9
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.14.139
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=2179931434
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_s.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_q.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/q/\"
+        media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"71\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_t.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/t/\"
+        media=\"photo\" />\n\t<size label=\"Small\" width=\"240\" height=\"171\" source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_m.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/s/\"
+        media=\"photo\" />\n\t<size label=\"Small 320\" width=\"320\" height=\"228\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_n.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/n/\"
+        media=\"photo\" />\n\t<size label=\"Small 400\" width=\"400\" height=\"285\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_w.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/w/\"
+        media=\"photo\" />\n\t<size label=\"Medium\" width=\"500\" height=\"356\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f.jpg\" url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/m/\"
+        media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"640\" height=\"456\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_z.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/z/\"
+        media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"800\" height=\"570\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_c.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/c/\"
+        media=\"photo\" />\n\t<size label=\"Large\" width=\"1024\" height=\"729\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6da491430f_b.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/l/\"
+        media=\"photo\" />\n\t<size label=\"Original\" width=\"1024\" height=\"729\"
+        source=\"https://live.staticflickr.com/2106/2179931434_6174be7831_o.jpg\"
+        url=\"https://www.flickr.com/photos/library_of_congress/2179931434/sizes/o/\"
+        media=\"photo\" />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:22 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 40e3ed7c6b85417046e956c87e47596a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - TqX5INrexCaekg3NaxrkM3zZ9ZQKKCID1uobnUMh31cQGLwNs8rYBg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2474'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:22 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e6-0133fa4f09bc85b31be7cdda
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.45.136
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -277,6 +277,21 @@ class TestGetSinglePhoto:
             },
         ]
 
+    @pytest.mark.parametrize(
+        "photo_id, has_people",
+        [
+            ("54216619200", True),
+            ("2179931434", False),
+        ],
+    )
+    def test_has_people(self, api: FlickrApi, photo_id: str, has_people: bool) -> None:
+        """
+        Does this photo have people tagged in it?
+        """
+        photo = api.get_single_photo(photo_id=photo_id)
+
+        assert photo["has_people"] == has_people
+
 
 class TestGetSinglePhotoSizes:
     """

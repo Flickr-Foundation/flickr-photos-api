@@ -203,6 +203,15 @@ class SinglePhotoMethods(LicenseMethods):
         }
         # fmt: on
 
+        # Determine whether there are any people in the photo.
+        #
+        # This is returned in the form:
+        #
+        #     <people haspeople="1"/>
+        #
+        people_elem = find_required_elem(photo_elem, path="people")
+        has_people = people_elem.attrib["haspeople"] == "1"
+
         assert photo_elem.attrib["media"] in {"photo", "video"}
         media_type = typing.cast(MediaType, photo_elem.attrib["media"])
 
@@ -227,6 +236,7 @@ class SinglePhotoMethods(LicenseMethods):
             "location": location,
             "count_comments": count_comments,
             "count_views": count_views,
+            "has_people": has_people,
             "url": url,
             "visibility": visibility,
             "usage": usage,

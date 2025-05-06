@@ -122,6 +122,7 @@ class SinglePhotoInfo(typing.TypedDict):
 
     count_comments: int
     count_views: int
+    has_people: bool
 
     visibility: Visibility
     usage: Usage
