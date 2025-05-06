@@ -28,6 +28,7 @@ __all__ = [
     "LocationContext",
     "MachineTags",
     "NamedLocation",
+    "Note",
     "NumericLocation",
     "Person",
     "PhotoContext",
@@ -115,6 +116,7 @@ class SinglePhotoInfo(typing.TypedDict):
     tags: list[str]
     machine_tags: MachineTags
     raw_tags: list[Tag]
+    notes: list["Note"]
 
     date_posted: datetime
     date_taken: DateTaken | None
@@ -164,3 +166,14 @@ class Person(typing.TypedDict):
 
     user: User
     bounding_box: BoundingBox | None
+
+
+class Note(typing.TypedDict):
+    """
+    A note left on a photo.
+    """
+
+    id: str
+    author: User
+    bounding_box: BoundingBox
+    text: str

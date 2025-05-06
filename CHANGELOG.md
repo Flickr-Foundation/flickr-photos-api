@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.6 - 2025-05-06
+
+Return notes on photos from the `get_single_photo()` method.
+
 ## v3.5 - 2025-05-06
 
 Return information about people tagged in photos:

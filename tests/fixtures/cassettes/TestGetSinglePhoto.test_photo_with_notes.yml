@@ -1,0 +1,402 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=2959326615
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"2959326615\" secret=\"af04f9878a\" server=\"3190\" farm=\"4\" dateuploaded=\"1224547791\"
+        isfavorite=\"0\" license=\"7\" safety_level=\"0\" rotation=\"0\" originalsecret=\"58635430ca\"
+        originalformat=\"jpg\" views=\"205509\" media=\"photo\">\n\t<owner nsid=\"29454428@N08\"
+        username=\"State Library of NSW\" realname=\"State Library of New South Wales\"
+        location=\"Australia\" iconserver=\"8544\" iconfarm=\"9\" path_alias=\"statelibraryofnsw\">\n\t\t<gift
+        gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>Blizzard, the pup
+        in Antarctica / photograph by Frank Hurley</title>\n\t<description>Format:
+        Silver gelatin negative\n\nPrint this image on a product via our &lt;a href=&quot;http://www.redbubble.com/people/madewithslnsw&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;#madewithslnsw store on Redbubble&lt;/a&gt;.
+        \n\nNotes: First Australasian Antarctic Expedition, 1911-1914\n\nFrank Hurley
+        visited the Antarctic six times between 1911 and 1932. For more information
+        and pictures, visit Discover Collections: Hurley&#039;s Antarctica on the
+        State Library of NSW&#039;s website: &lt;a href=&quot;http://www.sl.nsw.gov.au/discover_collections/natural_world/antarctica/hurley/index.html&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;www.sl.nsw.gov.au/discover_collections/natural_world/anta...&lt;/a&gt;\n\nFrom
+        the collections of the Mitchell Library, State Library of New South Wales
+        &lt;a href=&quot;http://www.sl.nsw.gov.au&quot; rel=&quot;noreferrer nofollow&quot;&gt;www.sl.nsw.gov.au&lt;/a&gt;\n\nInformation
+        about photographic collections of the State Library of New South Wales: &lt;a
+        href=&quot;http://acms.sl.nsw.gov.au/search/SimpleSearch.aspx&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;acms.sl.nsw.gov.au/search/SimpleSearch.aspx&lt;/a&gt;\n\nPersistent
+        url: &lt;a href=&quot;http://acms.sl.nsw.gov.au/item/itemDetailPaged.aspx?itemID=41576&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;acms.sl.nsw.gov.au/item/itemDetailPaged.aspx?itemID=41576&lt;/a&gt;</description>\n\t<visibility
+        ispublic=\"1\" isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1224547791\"
+        taken=\"1912-01-01 00:00:00\" takengranularity=\"8\" takenunknown=\"0\" lastupdate=\"1666715810\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>526</comments>\n\t<notes>\n\t\t<note
+        id=\"72157618520987052\" photo_id=\"2959326615\" author=\"38017871@N04\" authorname=\"Membedeep\"
+        authorrealname=\"Valentin Manus\" authorispro=\"0\" authorisdeleted=\"0\"
+        x=\"7\" y=\"279\" w=\"50\" h=\"50\">Nice siberian husky!</note>\n\t\t<note
+        id=\"72157620890011304\" photo_id=\"2959326615\" author=\"34870218@N07\" authorname=\"othercoby\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"236\" y=\"200\"
+        w=\"50\" h=\"50\">the size of those paws!</note>\n\t\t<note id=\"72157620950652211\"
+        photo_id=\"2959326615\" author=\"39954472@N02\" authorname=\"Nicole Lee(:\"
+        authorrealname=\"Nicole Allen\" authorispro=\"0\" authorisdeleted=\"0\" x=\"289\"
+        y=\"80\" w=\"50\" h=\"50\">Such a cute expression!</note>\n\t\t<note id=\"72157621254313277\"
+        photo_id=\"2959326615\" author=\"47811210@N00\" authorname=\"liyananaznim\"
+        authorrealname=\"LiyanaNaznim\" authorispro=\"0\" authorisdeleted=\"0\" x=\"315\"
+        y=\"74\" w=\"50\" h=\"50\">aww..very sleepy..</note>\n\t\t<note id=\"72157621594613370\"
+        photo_id=\"2959326615\" author=\"40536613@N02\" authorname=\"Erdbeere55\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"20\" y=\"20\"
+        w=\"50\" h=\"50\">bild ist voll geil achso ja suche noch kontakte bittte nimm
+        mich auf, auch wenns nur einer ist..</note>\n\t\t<note id=\"72157622377081784\"
+        photo_id=\"2959326615\" author=\"83333609@N00\" authorname=\"flagrant popcorn\"
+        authorrealname=\"Flagrant Popcorn\" authorispro=\"0\" authorisdeleted=\"1\"
+        x=\"293\" y=\"57\" w=\"45\" h=\"16\">scritch, scritch... good doggie!</note>\n\t\t<note
+        id=\"72157622412418908\" photo_id=\"2959326615\" author=\"41421986@N08\" authorname=\"SerQHC\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"337\" y=\"129\"
+        w=\"50\" h=\"50\">Aww!</note>\n\t\t<note id=\"72157622409113149\" photo_id=\"2959326615\"
+        author=\"35416586@N02\" authorname=\"Hammu \uF8FF\" authorrealname=\"Hammu\"
+        authorispro=\"0\" authorisdeleted=\"0\" x=\"276\" y=\"52\" w=\"86\" h=\"81\">lil
+        dude looks abit drunk?</note>\n\t\t<note id=\"72157622469712357\" photo_id=\"2959326615\"
+        author=\"43611153@N07\" authorname=\"justTres\" authorrealname=\"tres wade\"
+        authorispro=\"0\" authorisdeleted=\"0\" x=\"278\" y=\"95\" w=\"50\" h=\"50\">he
+        is so cute.</note>\n\t\t<note id=\"72157622517687261\" photo_id=\"2959326615\"
+        author=\"84411726@N00\" authorname=\"sambuffygeek\" authorrealname=\"Sam\"
+        authorispro=\"1\" authorisdeleted=\"0\" x=\"147\" y=\"59\" w=\"50\" h=\"50\"
+        pro_badge=\"standard\">He looks lost - and sad :-( Great shot though</note>\n\t\t<note
+        id=\"72157622644261086\" photo_id=\"2959326615\" author=\"43742214@N03\" authorname=\"kristiyana1\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"276\" y=\"259\"
+        w=\"38\" h=\"29\">ohh...he look sad</note>\n\t\t<note id=\"72157622521648069\"
+        photo_id=\"2959326615\" author=\"43528493@N08\" authorname=\"good sound\"
+        authorrealname=\"Good Sound\" authorispro=\"0\" authorisdeleted=\"1\" x=\"1\"
+        y=\"183\" w=\"50\" h=\"50\">Good line and point to good composition.</note>\n\t\t<note
+        id=\"72157622666397674\" photo_id=\"2959326615\" author=\"41265077@N05\" authorname=\"nancytsao\"
+        authorrealname=\"Nancy Tsao\" authorispro=\"0\" authorisdeleted=\"0\" x=\"289\"
+        y=\"83\" w=\"50\" h=\"50\">so \ncute</note>\n\t\t<note id=\"72157622601030397\"
+        photo_id=\"2959326615\" author=\"96249525@N00\" authorname=\"asmith62378\"
+        authorrealname=\"Alex Smith\" authorispro=\"0\" authorisdeleted=\"0\" x=\"296\"
+        y=\"167\" w=\"50\" h=\"50\">Nice Belly</note>\n\t\t<note id=\"72157622776599524\"
+        photo_id=\"2959326615\" author=\"43771507@N08\" authorname=\"Radio Mofee\"
+        authorrealname=\"Radio Mofee\" authorispro=\"0\" authorisdeleted=\"0\" x=\"106\"
+        y=\"209\" w=\"50\" h=\"50\">Agrega tu nota aqu\xED.</note>\n\t\t<note id=\"72157623163707364\"
+        photo_id=\"2959326615\" author=\"42694022@N05\" authorname=\"{Missbee}\" authorrealname=\"\"
+        authorispro=\"0\" authorisdeleted=\"0\" x=\"256\" y=\"133\" w=\"50\" h=\"50\">He
+        looks so cute and fuzzy!</note>\n\t\t<note id=\"72157623064988321\" photo_id=\"2959326615\"
+        author=\"10129324@N00\" authorname=\"BaybayQuincy\" authorrealname=\"\" authorispro=\"0\"
+        authorisdeleted=\"0\" x=\"289\" y=\"200\" w=\"125\" h=\"37\">I love this fat
+        little paw tucked back here...</note>\n\t\t<note id=\"72157623118254803\"
+        photo_id=\"2959326615\" author=\"46747429@N06\" authorname=\"ehabhorani\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"222\" y=\"41\"
+        w=\"218\" h=\"263\">ddd</note>\n\t\t<note id=\"72157623192163177\" photo_id=\"2959326615\"
+        author=\"38236511@N04\" authorname=\"kateatsdust\" authorrealname=\"\" authorispro=\"0\"
+        authorisdeleted=\"0\" x=\"298\" y=\"100\" w=\"24\" h=\"26\">kisses*</note>\n\t\t<note
+        id=\"72157623255080343\" photo_id=\"2959326615\" author=\"46766882@N03\" authorname=\"Maksim2012\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"203\" y=\"27\"
+        w=\"256\" h=\"292\">sorry for the dog cuz u guys post to much notes.</note>\n\t\t<note
+        id=\"72157623255098999\" photo_id=\"2959326615\" author=\"83333609@N00\" authorname=\"flagrant
+        popcorn\" authorrealname=\"Flagrant Popcorn\" authorispro=\"0\" authorisdeleted=\"1\"
+        x=\"190\" y=\"307\" w=\"24\" h=\"22\">If you mouse over to the left, they
+        all disappear. The dog said he loved all the notes and attention he was getting!
+        =)</note>\n\t\t<note id=\"72157623447269971\" photo_id=\"2959326615\" author=\"40905497@N06\"
+        authorname=\"tightfisted grape\" authorrealname=\"Tightfisted Grape\" authorispro=\"0\"
+        authorisdeleted=\"1\" x=\"0\" y=\"0\" w=\"500\" h=\"340\">so cute :)\ni love
+        this\nfav</note>\n\t\t<note id=\"72157623885632608\" photo_id=\"2959326615\"
+        author=\"43097963@N05\" authorname=\"\u6309\u4E0D\u7D2F\u5927\u5E2B\" authorrealname=\"iPlay
+        Buzz\" authorispro=\"0\" authorisdeleted=\"0\" x=\"20\" y=\"20\" w=\"50\"
+        h=\"50\">Cute dog</note>\n\t\t<note id=\"72157623892040944\" photo_id=\"2959326615\"
+        author=\"49143315@N02\" authorname=\"Lovisa_93\" authorrealname=\"\" authorispro=\"0\"
+        authorisdeleted=\"0\" x=\"106\" y=\"156\" w=\"30\" h=\"26\">Love the light
+        and the grey colour!</note>\n\t\t<note id=\"72157623894038685\" photo_id=\"2959326615\"
+        author=\"9466748@N04\" authorname=\"Rafael Bucio\" authorrealname=\"\" authorispro=\"0\"
+        authorisdeleted=\"0\" x=\"5\" y=\"73\" w=\"495\" h=\"46\">&amp;lt;3 aw cute</note>\n\t\t<note
+        id=\"72157624072415660\" photo_id=\"2959326615\" author=\"49160931@N04\" authorname=\"idsk@\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"97\" y=\"15\"
+        w=\"50\" h=\"50\">beautiful\n</note>\n\t\t<note id=\"72157624097252952\" photo_id=\"2959326615\"
+        author=\"40685477@N02\" authorname=\"ajxaal\" authorrealname=\"aalissa Flores\"
+        authorispro=\"0\" authorisdeleted=\"0\" x=\"154\" y=\"121\" w=\"46\" h=\"219\">Loveeeeeee</note>\n\t\t<note
+        id=\"72157624161080738\" photo_id=\"2959326615\" author=\"24236150@N04\" authorname=\"justDONQUE.images\"
+        authorrealname=\"Allan Donque\" authorispro=\"0\" authorisdeleted=\"0\" x=\"236\"
+        y=\"9\" w=\"85\" h=\"325\">huggables!!!!</note>\n\t\t<note id=\"72157624123315547\"
+        photo_id=\"2959326615\" author=\"37303406@N08\" authorname=\"The Fanged One\"
+        authorrealname=\"\" authorispro=\"0\" authorisdeleted=\"0\" x=\"275\" y=\"46\"
+        w=\"99\" h=\"55\">these cute little ears!</note>\n\t\t<note id=\"72157624478641744\"
+        photo_id=\"2959326615\" author=\"50808804@N07\" authorname=\"Acid Tear\" authorrealname=\"\"
+        authorispro=\"0\" authorisdeleted=\"0\" x=\"228\" y=\"170\" w=\"171\" h=\"83\">Me
+        encaaaaaaaaaaaaaaaaanta esta foto es de 10! \u2665</note>\n\t\t<note id=\"72157624488395136\"
+        photo_id=\"2959326615\" author=\"23906142@N03\" authorname=\"Pez Brige\" authorrealname=\"Pez
+        Brige\" authorispro=\"0\" authorisdeleted=\"0\" x=\"46\" y=\"20\" w=\"50\"
+        h=\"50\">heheheh!! how nice!</note>\n\t\t<note id=\"72157625615630250\" photo_id=\"2959326615\"
+        author=\"42240751@N02\" authorname=\"weo1weo1weo1\" authorrealname=\"\" authorispro=\"0\"
+        authorisdeleted=\"0\" x=\"296\" y=\"66\" w=\"31\" h=\"31\">He looks so sleepy....</note>\n\t</notes>\n\t<people
+        haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"29361615-2959326615-3148\" author=\"26336714@N06\"
+        authorname=\"wiskinator\" raw=\"husky\" machine_tag=\"0\">husky</tag>\n\t\t<tag
+        id=\"29361615-2959326615-224033\" author=\"26336714@N06\" authorname=\"wiskinator\"
+        raw=\"huskie\" machine_tag=\"0\">huskie</tag>\n\t\t<tag id=\"29361615-2959326615-1559\"
+        author=\"26336714@N06\" authorname=\"wiskinator\" raw=\"puppy\" machine_tag=\"0\">puppy</tag>\n\t\t<tag
+        id=\"29361615-2959326615-4203\" author=\"26336714@N06\" authorname=\"wiskinator\"
+        raw=\"mask\" machine_tag=\"0\">mask</tag>\n\t\t<tag id=\"29361615-2959326615-355\"
+        author=\"26336714@N06\" authorname=\"wiskinator\" raw=\"dog\" machine_tag=\"0\">dog</tag>\n\t\t<tag
+        id=\"29361615-2959326615-412\" author=\"26336714@N06\" authorname=\"wiskinator\"
+        raw=\"snow\" machine_tag=\"0\">snow</tag>\n\t\t<tag id=\"29361615-2959326615-8689\"
+        author=\"83823117@N00\" authorname=\"muzzanese\" raw=\"antarctica\" machine_tag=\"0\">antarctica</tag>\n\t\t<tag
+        id=\"29361615-2959326615-36506\" author=\"25652278@N03\" authorname=\"David
+        Masters\" raw=\"blizzard\" machine_tag=\"0\">blizzard</tag>\n\t\t<tag id=\"29361615-2959326615-26584\"
+        author=\"25652278@N03\" authorname=\"David Masters\" raw=\"pup\" machine_tag=\"0\">pup</tag>\n\t\t<tag
+        id=\"29361615-2959326615-682\" author=\"25652278@N03\" authorname=\"David
+        Masters\" raw=\"ice\" machine_tag=\"0\">ice</tag>\n\t\t<tag id=\"29361615-2959326615-294\"
+        author=\"25652278@N03\" authorname=\"David Masters\" raw=\"b&amp;w\" machine_tag=\"0\">bw</tag>\n\t\t<tag
+        id=\"29361615-2959326615-1994\" author=\"25652278@N03\" authorname=\"David
+        Masters\" raw=\"grey\" machine_tag=\"0\">grey</tag>\n\t\t<tag id=\"29361615-2959326615-2862\"
+        author=\"25652278@N03\" authorname=\"David Masters\" raw=\"eyes\" machine_tag=\"0\">eyes</tag>\n\t\t<tag
+        id=\"29361615-2959326615-559\" author=\"25652278@N03\" authorname=\"David
+        Masters\" raw=\"cute\" machine_tag=\"0\">cute</tag>\n\t\t<tag id=\"29361615-2959326615-7452172\"
+        author=\"14424372@N02\" authorname=\"bluetongue-oz\" raw=\"Frank Hurley\"
+        machine_tag=\"0\">frankhurley</tag>\n\t\t<tag id=\"29361615-2959326615-73218\"
+        author=\"9291396@N08\" authorname=\"terra lei\" raw=\"hurley\" machine_tag=\"0\">hurley</tag>\n\t\t<tag
+        id=\"29361615-2959326615-952\" author=\"9291396@N08\" authorname=\"terra lei\"
+        raw=\"animal\" machine_tag=\"0\">animal</tag>\n\t\t<tag id=\"29361615-2959326615-68497\"
+        author=\"73368734@N00\" authorname=\"Jean Knowles\" raw=\"sled dog\" machine_tag=\"0\">sleddog</tag>\n\t\t<tag
+        id=\"29361615-2959326615-282777\" author=\"43878178@N00\" authorname=\"Xerxes2K\"
+        raw=\"Welpe\" machine_tag=\"0\">welpe</tag>\n\t\t<tag id=\"29361615-2959326615-8903\"
+        author=\"43854658@N00\" authorname=\"square view\" raw=\"huskies\" machine_tag=\"0\">huskies</tag>\n\t\t<tag
+        id=\"29361615-2959326615-2878\" author=\"43854658@N00\" authorname=\"square
+        view\" raw=\"pups\" machine_tag=\"0\">pups</tag>\n\t\t<tag id=\"29361615-2959326615-7664\"
+        author=\"35637513@N08\" authorname=\"eloncom374\" raw=\"adorable\" machine_tag=\"0\">adorable</tag>\n\t\t<tag
+        id=\"29361615-2959326615-21819\" author=\"35637513@N08\" authorname=\"eloncom374\"
+        raw=\"lonely\" machine_tag=\"0\">lonely</tag>\n\t\t<tag id=\"29361615-2959326615-472\"
+        author=\"10101046@N06\" authorname=\"Beverly &amp; Pack\" raw=\"black\" machine_tag=\"0\">black</tag>\n\t\t<tag
+        id=\"29361615-2959326615-395\" author=\"10101046@N06\" authorname=\"Beverly
+        &amp; Pack\" raw=\"white\" machine_tag=\"0\">white</tag>\n\t\t<tag id=\"29361615-2959326615-1935\"
+        author=\"10101046@N06\" authorname=\"Beverly &amp; Pack\" raw=\"photography\"
+        machine_tag=\"0\">photography</tag>\n\t\t<tag id=\"29361615-2959326615-7503\"
+        author=\"10101046@N06\" authorname=\"Beverly &amp; Pack\" raw=\"picture\"
+        machine_tag=\"0\">picture</tag>\n\t\t<tag id=\"29361615-2959326615-2883\"
+        author=\"28344157@N02\" authorname=\"KassKiss \u2665~(* 3*)~\u2665\" raw=\"furry\"
+        machine_tag=\"0\">furry</tag>\n\t\t<tag id=\"29361615-2959326615-3414308\"
+        author=\"29454428@N08\" authorname=\"State Library of NSW\" raw=\"State Library
+        of New South Wales\" machine_tag=\"0\">statelibraryofnewsouthwales</tag>\n\t\t<tag
+        id=\"29361615-2959326615-8811\" author=\"24714202@N04\" authorname=\"amanda.nef\"
+        raw=\"canine\" machine_tag=\"0\">canine</tag>\n\t\t<tag id=\"29361615-2959326615-1823\"
+        author=\"24714202@N04\" authorname=\"amanda.nef\" raw=\"mammal\" machine_tag=\"0\">mammal</tag>\n\t\t<tag
+        id=\"29361615-2959326615-46516843\" author=\"51035718466@N01\" authorname=\"waferbaby\"
+        raw=\"commons:event=commonground2009\" machine_tag=\"1\">commons:event=commonground2009</tag>\n\t\t<tag
+        id=\"29361615-2959326615-7242809\" author=\"46014098@N08\" authorname=\"sunshine1732\"
+        raw=\"1911-1914\" machine_tag=\"0\">19111914</tag>\n\t\t<tag id=\"29361615-2959326615-8923654\"
+        author=\"29454428@N08\" authorname=\"State Library of NSW\" raw=\"magical
+        beauty\" machine_tag=\"0\">magicalbeauty</tag>\n\t\t<tag id=\"29361615-2959326615-6819\"
+        author=\"51685178@N08\" authorname=\"Hygor Lennon\" raw=\"bonito\" machine_tag=\"0\">bonito</tag>\n\t\t<tag
+        id=\"29361615-2959326615-21941\" author=\"60189710@N08\" authorname=\"mrecine10290\"
+        raw=\"sweetie\" machine_tag=\"0\">sweetie</tag>\n\t\t<tag id=\"29361615-2959326615-7005504\"
+        author=\"29454428@N08\" authorname=\"State Library of NSW\" raw=\"platinumphoto\"
+        machine_tag=\"0\">platinumphoto</tag>\n\t\t<tag id=\"29361615-2959326615-533255102\"
+        author=\"196796126@N03\" authorname=\"crystalcruz143\" raw=\"austrailiansheperard\"
+        machine_tag=\"0\">austrailiansheperard</tag>\n\t\t<tag id=\"29361615-2959326615-200979\"
+        author=\"196796126@N03\" authorname=\"crystalcruz143\" raw=\"puppers\" machine_tag=\"0\">puppers</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/statelibraryofnsw/2959326615/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 15:44:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 5a98aec7da8cddc4fee7bc85f8beb31a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hDA2EETO40pBkHY8M9dCWc1LmBEJYySVZvMcXLVKIh2o8WrdU5m5cg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '14920'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 15:44:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 15:44:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a2e4f-4a4f444d784fbe717afbb5d8
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.35.86
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members\"
+        />\n\t<license id=\"4\" name=\"Attribution License\" url=\"https://creativecommons.org/licenses/by/2.0/\"
+        />\n\t<license id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"https://www.usa.gov/government-copyright\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 15:44:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 5a98aec7da8cddc4fee7bc85f8beb31a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 5a6AY8dh4Mx_f6Y_PDl0_2i_v3bTpMJjIpXMzmAbmvFTlOWPBZQdrQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1360'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 15:44:16 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a2e50-10bf8bac794d56950d36c6a2
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.26.188
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=2959326615
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_s.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_q.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/q/\"
+        media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"68\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_t.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/t/\"
+        media=\"photo\" />\n\t<size label=\"Small\" width=\"240\" height=\"163\" source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_m.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/s/\"
+        media=\"photo\" />\n\t<size label=\"Small 320\" width=\"320\" height=\"218\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_n.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/n/\"
+        media=\"photo\" />\n\t<size label=\"Small 400\" width=\"400\" height=\"272\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_w.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/w/\"
+        media=\"photo\" />\n\t<size label=\"Medium\" width=\"500\" height=\"340\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a.jpg\" url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/m/\"
+        media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"640\" height=\"436\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_z.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/z/\"
+        media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"800\" height=\"545\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_c.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/c/\"
+        media=\"photo\" />\n\t<size label=\"Large\" width=\"1024\" height=\"697\"
+        source=\"https://live.staticflickr.com/3190/2959326615_af04f9878a_b.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/l/\"
+        media=\"photo\" />\n\t<size label=\"Original\" width=\"1100\" height=\"749\"
+        source=\"https://live.staticflickr.com/3190/2959326615_58635430ca_o.jpg\"
+        url=\"https://www.flickr.com/photos/statelibraryofnsw/2959326615/sizes/o/\"
+        media=\"photo\" />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 15:44:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 5a98aec7da8cddc4fee7bc85f8beb31a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - kariQjdKVOTye_kXhKN3cpA1H6t9GE8uovK9L-p6xRYh3oo-kGT6WQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2452'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 15:44:16 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a2e50-3f99c33043f4fa6e2abc1991
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.21.174
+    status:
+      code: 200
+      message: OK
+version: 1
