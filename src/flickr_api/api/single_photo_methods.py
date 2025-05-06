@@ -402,7 +402,11 @@ class SinglePhotoMethods(LicenseMethods):
         See https://www.flickr.com/services/api/flickr.photos.people.getList.html
         """
         resp = self.call(
-            method="flickr.photos.people.getList", params={"photo_id": photo_id}
+            method="flickr.photos.people.getList",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+            },
         )
 
         # The response will be of the form
