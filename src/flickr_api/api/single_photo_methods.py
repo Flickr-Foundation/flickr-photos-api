@@ -12,10 +12,12 @@ from .license_methods import LicenseMethods
 from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..models import (
     AlbumContext,
+    BoundingBox,
     GalleryContext,
     GroupContext,
     Location,
     MediaType,
+    Person,
     PhotoContext,
     SinglePhotoInfo,
     SinglePhoto,
@@ -201,6 +203,15 @@ class SinglePhotoMethods(LicenseMethods):
         }
         # fmt: on
 
+        # Determine whether there are any people in the photo.
+        #
+        # This is returned in the form:
+        #
+        #     <people haspeople="1"/>
+        #
+        people_elem = find_required_elem(photo_elem, path="people")
+        has_people = people_elem.attrib["haspeople"] == "1"
+
         assert photo_elem.attrib["media"] in {"photo", "video"}
         media_type = typing.cast(MediaType, photo_elem.attrib["media"])
 
@@ -225,6 +236,7 @@ class SinglePhotoMethods(LicenseMethods):
             "location": location,
             "count_comments": count_comments,
             "count_views": count_views,
+            "has_people": has_people,
             "url": url,
             "visibility": visibility,
             "usage": usage,
@@ -338,6 +350,49 @@ class SinglePhotoMethods(LicenseMethods):
         sizes = self.get_single_photo_sizes(photo_id=photo_id)
 
         return {**info, "sizes": sizes}
+
+    def list_people_in_photo(self, *, photo_id: str) -> list[Person]:
+        """
+        Return a list of people who are tagged in this photo.
+
+        See https://www.flickr.com/services/api/flickr.photos.people.getList.html
+        """
+        resp = self.call(
+            method="flickr.photos.people.getList", params={"photo_id": photo_id}
+        )
+
+        # The response will be of the form
+        #
+        #    <rsp stat="ok">
+        #      <people total="1" photo_width="500" photo_height="333">
+        #        <person nsid="87944415@N00" username="hitherto" iconserver="1" iconfarm="1" path_alias="hitherto" added_by="12289718@N00" is_deleted="0" realname="Simon Batistoni"/>
+        #      </people>
+        #    </rsp>
+        #
+        result: list[Person] = []
+
+        for person_elem in resp.findall(".//person"):
+            user = create_user(
+                user_id=person_elem.attrib["nsid"],
+                username=person_elem.attrib["username"],
+                realname=person_elem.attrib["realname"],
+                path_alias=person_elem.attrib["path_alias"],
+                is_deleted=person_elem.attrib["is_deleted"] == "1",
+            )
+
+            try:
+                bounding_box: BoundingBox | None = {
+                    "x": int(person_elem.attrib["x"]),
+                    "y": int(person_elem.attrib["y"]),
+                    "width": int(person_elem.attrib["w"]),
+                    "height": int(person_elem.attrib["h"]),
+                }
+            except KeyError:
+                bounding_box = None
+
+            result.append({"user": user, "bounding_box": bounding_box})
+
+        return result
 
     def is_photo_deleted(self, *, photo_id: str) -> bool:
         """

@@ -18,6 +18,7 @@ from .users import User, UserInfo
 
 __all__ = [
     "AlbumContext",
+    "BoundingBox",
     "GalleryContext",
     "GroupContext",
     "License",
@@ -28,6 +29,7 @@ __all__ = [
     "MachineTags",
     "NamedLocation",
     "NumericLocation",
+    "Person",
     "PhotoContext",
     "Rotation",
     "Size",
@@ -56,7 +58,6 @@ class Comment(typing.TypedDict):
 
     id: str
     photo_id: str
-    author_is_deleted: bool
     author: User
     text: str
     permalink: str
@@ -121,6 +122,7 @@ class SinglePhotoInfo(typing.TypedDict):
 
     count_comments: int
     count_views: int
+    has_people: bool
 
     visibility: Visibility
     usage: Usage
@@ -142,3 +144,23 @@ class CommonsInstitution(typing.TypedDict):
     name: str
     site_url: str | None
     license_url: str
+
+
+class BoundingBox(typing.TypedDict):
+    """
+    A "bounding" box that highlights a specific region of a photo.
+    """
+
+    x: int
+    y: int
+    width: int
+    height: int
+
+
+class Person(typing.TypedDict):
+    """
+    A person tagged in a photo.
+    """
+
+    user: User
+    bounding_box: BoundingBox | None

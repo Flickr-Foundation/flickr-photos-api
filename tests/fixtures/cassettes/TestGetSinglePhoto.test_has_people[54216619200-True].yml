@@ -1,0 +1,242 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=54216619200
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"54216619200\" secret=\"cd006f932e\" server=\"65535\" farm=\"66\" dateuploaded=\"1734696758\"
+        isfavorite=\"0\" license=\"0\" safety_level=\"0\" rotation=\"0\" originalsecret=\"09a02ac89e\"
+        originalformat=\"jpg\" views=\"86\" media=\"photo\">\n\t<owner nsid=\"197130754@N07\"
+        username=\"Flickr Foundation\" realname=\"Flickr Foundation\" location=\"\"
+        iconserver=\"65535\" iconfarm=\"66\" path_alias=\"flickrfoundation\">\n\t\t<gift
+        gift_eligible=\"\" new_flow=\"1\" />\n\t</owner>\n\t<title>Donor pins!</title>\n\t<description>We
+        have invented three donor tiers: Flamingo, Sparkly Love, and Cherry Tree.
+        Find our more: flickr.org/donate\n</description>\n\t<visibility ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1734696758\" taken=\"2024-12-02
+        11:52:58\" takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1734696761\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"0\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people
+        haspeople=\"1\" />\n\t<tags>\n\t\t<tag id=\"197109424-54216619200-533379773\"
+        author=\"197130754@N07\" authorname=\"Flickr Foundation\" raw=\"flickr foundation\"
+        machine_tag=\"0\">flickrfoundation</tag>\n\t\t<tag id=\"197109424-54216619200-540709996\"
+        author=\"197130754@N07\" authorname=\"Flickr Foundation\" raw=\"flickr.org\"
+        machine_tag=\"0\">flickrorg</tag>\n\t\t<tag id=\"197109424-54216619200-1113766\"
+        author=\"197130754@N07\" authorname=\"Flickr Foundation\" raw=\"2024\" machine_tag=\"0\">2024</tag>\n\t\t<tag
+        id=\"197109424-54216619200-93492\" author=\"197130754@N07\" authorname=\"Flickr
+        Foundation\" raw=\"day in the life\" machine_tag=\"0\">dayinthelife</tag>\n\t</tags>\n\t<location
+        latitude=\"51.526511\" longitude=\"-0.079362\" accuracy=\"16\" context=\"0\">\n\t\t<locality>Hackney</locality>\n\t\t<county>Greater
+        London</county>\n\t\t<region>England</region>\n\t\t<country>UK</country>\n\t\t<neighbourhood>Shoreditch</neighbourhood>\n\t</location>\n\t<geoperms
+        ispublic=\"1\" iscontact=\"0\" isfriend=\"0\" isfamily=\"0\" />\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/flickrfoundation/54216619200/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:20 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - NoyhzQb5mb6P34-8B86RgvmwqS07tFddzJJwDJACldXiskzmg_PUIA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2120'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:20 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:20 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e4-79b0f61e379673692cfbeb4e
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.6.164
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members\"
+        />\n\t<license id=\"4\" name=\"Attribution License\" url=\"https://creativecommons.org/licenses/by/2.0/\"
+        />\n\t<license id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"https://www.usa.gov/government-copyright\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:21 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - xLYXKyC-SVKJ1Q8AwFS2oUw3XEga3Xq0IcO5m3qn-Qr8UAJw1_6s9w==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1360'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:20 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e4-0f260491646da38b0aaa94a3
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.11.123
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=54216619200
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_s.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/sq/\"
+        media=\"photo\" />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_q.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/q/\"
+        media=\"photo\" />\n\t<size label=\"Thumbnail\" width=\"100\" height=\"75\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_t.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/t/\"
+        media=\"photo\" />\n\t<size label=\"Small\" width=\"240\" height=\"180\" source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_m.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/s/\"
+        media=\"photo\" />\n\t<size label=\"Small 320\" width=\"320\" height=\"240\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_n.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/n/\"
+        media=\"photo\" />\n\t<size label=\"Small 400\" width=\"400\" height=\"300\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_w.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/w/\"
+        media=\"photo\" />\n\t<size label=\"Medium\" width=\"500\" height=\"375\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/m/\"
+        media=\"photo\" />\n\t<size label=\"Medium 640\" width=\"640\" height=\"481\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_z.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/z/\"
+        media=\"photo\" />\n\t<size label=\"Medium 800\" width=\"800\" height=\"601\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_c.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/c/\"
+        media=\"photo\" />\n\t<size label=\"Large\" width=\"1024\" height=\"769\"
+        source=\"https://live.staticflickr.com/65535/54216619200_cd006f932e_b.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/l/\"
+        media=\"photo\" />\n\t<size label=\"Original\" width=\"1024\" height=\"769\"
+        source=\"https://live.staticflickr.com/65535/54216619200_09a02ac89e_o.jpg\"
+        url=\"https://www.flickr.com/photos/flickrfoundation/54216619200/sizes/o/\"
+        media=\"photo\" />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 13:00:21 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ZwTzm58U9GCyyJUWcgYdLp6EO-cwUlVTccI5D5pHkOpmenf1X4ohZQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2474'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 05-Jun-2025 13:00:21 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681a07e5-53cc35a60f8a6f3f573b4447
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.21.174
+    status:
+      code: 200
+      message: OK
+version: 1

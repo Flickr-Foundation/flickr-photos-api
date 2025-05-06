@@ -18,6 +18,7 @@ class User(typing.TypedDict):
     path_alias: str | None
     photos_url: str
     profile_url: str
+    is_deleted: typing.NotRequired[bool]
 
 
 class UserInfo(User):
