@@ -5,6 +5,7 @@ from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId, LicenseChange
 from .machine_tags import MachineTags
 from .photo import (
+    ExifTag,
     Location,
     LocationContext,
     NamedLocation,
@@ -19,6 +20,7 @@ from .users import User, UserInfo
 __all__ = [
     "AlbumContext",
     "BoundingBox",
+    "ExifTag",
     "GalleryContext",
     "GroupContext",
     "License",
