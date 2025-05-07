@@ -1,10 +1,15 @@
 # CHANGELOG
 
-## 3.7.1 - 2025-05-07
+## v3.7.2 - 2025-05-07
+
+Add a `PermissionDenied` exception for cases where users have chosen to hide their EXIF data.
+See <https://www.flickrhelp.com/hc/en-us/articles/4404078521108-EXIF-data-FAQ>
+
+## v3.7.1 - 2025-05-07
 
 Tweak the `SinglePhotoInfo` model to make it more compatible with Pydantic.
 
-## 3.7 - 2025-05-07
+## v3.7 - 2025-05-07
 
 The new `get_exif_tags_for_photo()` method returns a list of EXIF tags for a photo.
 

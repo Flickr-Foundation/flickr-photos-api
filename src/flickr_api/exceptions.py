@@ -95,3 +95,9 @@ class InsufficientPermissionsToComment(FlickrApiException):
 
     def __init__(self, *, photo_id: str) -> None:
         super().__init__(f"Insufficient permissions to comment on photo {photo_id}")
+
+
+class PermissionDenied(FlickrApiException):
+    """
+    Thrown when you try to look up something you're not allowed to access.
+    """
