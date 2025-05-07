@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 
 import pytest
 
+from data import FlickrPhotoIds
 from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound
 from flickr_api.models import SinglePhoto
 from utils import get_fixture
@@ -16,7 +17,7 @@ class TestGetSinglePhoto:
     Tests for ``SinglePhotoMethods.get_single_photo``.
     """
 
-    def test_can_get_single_photo(self, api: FlickrApi) -> None:
+    def test_get_single_photo(self, api: FlickrApi) -> None:
         """
         Get a single photo and compared it to a saved response.
         """
@@ -335,13 +336,14 @@ class TestGetSinglePhotoSizes:
     Tests for `SinglePhotoMethods.get_single_photo_sizes`.
     """
 
-    def test_non_existent_photo_is_error(self, api: FlickrApi) -> None:
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_non_existent_photo_is_error(self, api: FlickrApi, photo_id: str) -> None:
         """
         If a photo doesn't exist, then getting the sizes throws
         a ResourceNotFound.
         """
         with pytest.raises(ResourceNotFound):
-            api.get_single_photo_sizes(photo_id="does_not_exist")
+            api.get_single_photo_sizes(photo_id=photo_id)
 
 
 class TestListPeopleInPhoto:
@@ -443,12 +445,13 @@ class TestListPeopleInPhoto:
             },
         ]
 
-    def test_non_existent_photo(self, api: FlickrApi) -> None:
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_non_existent_photo(self, api: FlickrApi, photo_id: str) -> None:
         """
         Getting a list of people in a non-existent photo throws an error.
         """
         with pytest.raises(ResourceNotFound):
-            api.list_people_in_photo(photo_id="does_not_exist")
+            api.list_people_in_photo(photo_id=photo_id)
 
 
 class TestIsPhotoDeleted:

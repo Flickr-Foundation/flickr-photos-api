@@ -14,7 +14,7 @@ interactions:
       - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
         hello@flickr.org)
     method: GET
-    uri: https://api.flickr.com/services/rest/?method=flickr.photos.people.getList&photo_id=does_not_exist
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.people.getList&photo_id=12345678901234567890
   response:
     body:
       string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"fail\">\n\t<err
@@ -25,13 +25,13 @@ interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 06 May 2025 15:56:06 GMT
+      - Wed, 07 May 2025 11:46:34 GMT
       Transfer-Encoding:
       - chunked
       Via:
-      - 1.1 97083199d9a34b826701781a1e43ba1e.cloudfront.net (CloudFront)
+      - 1.1 281c9390ff02ec3c7b07e745cb742ca6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - S2ot2aNsxCUrM5gJr0rz1jdKsGKzcB3oyOHzNlQbE_D-Av-kMZYtgQ==
+      - C6efclZ3nZF0MYutEPkYbK4DB9VbPt_X9zPaApI4vwrMoDgug9b4qQ==
       X-Amz-Cf-Pop:
       - LHR5-P1
       X-Cache:
@@ -42,17 +42,17 @@ interactions:
       - openresty
       set-cookie:
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
-        expires=Thu, 05-Jun-2025 15:56:06 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 06-Jun-2025 11:46:34 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
-        expires=Thu, 05-Jun-2025 15:56:06 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+        expires=Fri, 06-Jun-2025 11:46:34 GMT; Max-Age=2592000; path=/; domain=.flickr.com
       vary:
       - Accept-Encoding
       x-flickr-api-request:
-      - Root=1-681a3116-740bd12f4aa1c00c387f135c
+      - Root=1-681b481a-7b42daec0e856bbe05ffa9f1
       x-robots-tag:
       - noindex
       x-server:
-      - serverless-proxy-10.78.21.57
+      - serverless-proxy-10.78.39.65
     status:
       code: 200
       message: OK
