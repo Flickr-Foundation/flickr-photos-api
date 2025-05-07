@@ -1,0 +1,251 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=54159643533
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"54159643533\" secret=\"1515544622\" server=\"65535\" farm=\"66\" dateuploaded=\"1732380151\"
+        isfavorite=\"0\" license=\"5\" safety_level=\"0\" rotation=\"90\" originalsecret=\"cbda635a39\"
+        originalformat=\"jpg\" views=\"221\" media=\"photo\">\n\t<owner nsid=\"36379654@N04\"
+        username=\"Igor Zeiger\" realname=\"\" location=\"\" iconserver=\"3601\" iconfarm=\"4\"
+        path_alias=\"igorzed\">\n\t\t<gift gift_eligible=\"1\" new_flow=\"1\">\n\t\t\t<eligible_durations
+        />\n\t\t\t<eligible_durations />\n\t\t\t<eligible_durations />\n\t\t</gift>\n\t</owner>\n\t<title>The
+        Benedictine monastery in Abu Ghosh, officially St Mary of the Resurrection
+        Abbey</title>\n\t<description>The Benedictine monastery in Abu Ghosh, officially
+        St Mary of the Resurrection Abbey</description>\n\t<visibility ispublic=\"1\"
+        isfriend=\"0\" isfamily=\"0\" />\n\t<dates posted=\"1732380151\" taken=\"2024-11-23
+        15:56:14\" takengranularity=\"0\" takenunknown=\"0\" lastupdate=\"1732524267\"
+        />\n\t<editability cancomment=\"0\" canaddmeta=\"0\" />\n\t<publiceditability
+        cancomment=\"1\" canaddmeta=\"1\" />\n\t<usage candownload=\"1\" canblog=\"0\"
+        canprint=\"0\" canshare=\"1\" />\n\t<comments>0</comments>\n\t<notes />\n\t<people
+        haspeople=\"0\" />\n\t<tags>\n\t\t<tag id=\"36347515-54159643533-35603\" author=\"36379654@N04\"
+        authorname=\"Igor Zeiger\" raw=\"Abu\" machine_tag=\"0\">abu</tag>\n\t\t<tag
+        id=\"36347515-54159643533-60355\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"Gosh\" machine_tag=\"0\">gosh</tag>\n\t\t<tag id=\"36347515-54159643533-2198\"
+        author=\"36379654@N04\" authorname=\"Igor Zeiger\" raw=\"Israel\" machine_tag=\"0\">israel</tag>\n\t\t<tag
+        id=\"36347515-54159643533-12823\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"Monastery\" machine_tag=\"0\">monastery</tag>\n\t\t<tag id=\"36347515-54159643533-549465015\"
+        author=\"36379654@N04\" authorname=\"Igor Zeiger\" raw=\"The Benedictine monastery
+        in Abu Ghosh\" machine_tag=\"0\">thebenedictinemonasteryinabughosh</tag>\n\t\t<tag
+        id=\"36347515-54159643533-972\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"St\" machine_tag=\"0\">st</tag>\n\t\t<tag id=\"36347515-54159643533-6322\"
+        author=\"36379654@N04\" authorname=\"Igor Zeiger\" raw=\"Mary\" machine_tag=\"0\">mary</tag>\n\t\t<tag
+        id=\"36347515-54159643533-173784\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"Resurrection\" machine_tag=\"0\">resurrection</tag>\n\t\t<tag
+        id=\"36347515-54159643533-883\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"Abbey\" machine_tag=\"0\">abbey</tag>\n\t\t<tag id=\"36347515-54159643533-765\"
+        author=\"36379654@N04\" authorname=\"Igor Zeiger\" raw=\"church\" machine_tag=\"0\">church</tag>\n\t\t<tag
+        id=\"36347515-54159643533-3545\" author=\"36379654@N04\" authorname=\"Igor
+        Zeiger\" raw=\"Catholic\" machine_tag=\"0\">catholic</tag>\n\t\t<tag id=\"36347515-54159643533-6991364\"
+        author=\"36379654@N04\" authorname=\"Igor Zeiger\" raw=\"benedectine\" machine_tag=\"0\">benedectine</tag>\n\t</tags>\n\t<urls>\n\t\t<url
+        type=\"photopage\">https://www.flickr.com/photos/igorzed/54159643533/</url>\n\t</urls>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 May 2025 13:19:07 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 718d744faad6ff02c7a7ca517a01865a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - SY7AzXMyGzp1POSBBnlI0buMqtq7kKxE-ItUMUB95L2yaP8vHy26eQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '2899'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:19:07 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:19:07 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681b5dcb-0bab6d590d16fc9c5f413e9f
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.40.36
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.licenses.getInfo
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<licenses>\n\t<license
+        id=\"0\" name=\"All Rights Reserved\" url=\"https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members\"
+        />\n\t<license id=\"4\" name=\"Attribution License\" url=\"https://creativecommons.org/licenses/by/2.0/\"
+        />\n\t<license id=\"6\" name=\"Attribution-NoDerivs License\" url=\"https://creativecommons.org/licenses/by-nd/2.0/\"
+        />\n\t<license id=\"3\" name=\"Attribution-NonCommercial-NoDerivs License\"
+        url=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" />\n\t<license
+        id=\"2\" name=\"Attribution-NonCommercial License\" url=\"https://creativecommons.org/licenses/by-nc/2.0/\"
+        />\n\t<license id=\"1\" name=\"Attribution-NonCommercial-ShareAlike License\"
+        url=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" />\n\t<license
+        id=\"5\" name=\"Attribution-ShareAlike License\" url=\"https://creativecommons.org/licenses/by-sa/2.0/\"
+        />\n\t<license id=\"7\" name=\"No known copyright restrictions\" url=\"https://www.flickr.com/commons/usage/\"
+        />\n\t<license id=\"8\" name=\"United States Government Work\" url=\"https://www.usa.gov/government-copyright\"
+        />\n\t<license id=\"9\" name=\"Public Domain Dedication (CC0)\" url=\"https://creativecommons.org/publicdomain/zero/1.0/\"
+        />\n\t<license id=\"10\" name=\"Public Domain Mark\" url=\"https://creativecommons.org/publicdomain/mark/1.0/\"
+        />\n</licenses>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 May 2025 13:19:07 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 718d744faad6ff02c7a7ca517a01865a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - w5j-pjelO3MmIgMcrkX6-WcVI_RGtVEElVr0vFVtBgftA736dwYMbg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1360'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:19:07 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681b5dcb-0a00bf3111eec0771518eba3
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.13.16
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&photo_id=54159643533
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<sizes
+        canblog=\"0\" canprint=\"0\" candownload=\"1\">\n\t<size label=\"Square\"
+        width=\"75\" height=\"75\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_s.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/sq/\" media=\"photo\"
+        />\n\t<size label=\"Large Square\" width=\"150\" height=\"150\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_q.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/q/\" media=\"photo\"
+        />\n\t<size label=\"Thumbnail\" width=\"75\" height=\"100\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_t.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/t/\" media=\"photo\"
+        />\n\t<size label=\"Small\" width=\"180\" height=\"240\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_m.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/s/\" media=\"photo\"
+        />\n\t<size label=\"Small 320\" width=\"240\" height=\"320\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_n.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/n/\" media=\"photo\"
+        />\n\t<size label=\"Small 400\" width=\"300\" height=\"400\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_w.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/w/\" media=\"photo\"
+        />\n\t<size label=\"Medium\" width=\"375\" height=\"500\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/m/\" media=\"photo\"
+        />\n\t<size label=\"Medium 640\" width=\"480\" height=\"640\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_z.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/z/\" media=\"photo\"
+        />\n\t<size label=\"Medium 800\" width=\"600\" height=\"800\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_c.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/c/\" media=\"photo\"
+        />\n\t<size label=\"Large\" width=\"768\" height=\"1024\" source=\"https://live.staticflickr.com/65535/54159643533_1515544622_b.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/l/\" media=\"photo\"
+        />\n\t<size label=\"Large 1600\" width=\"1200\" height=\"1600\" source=\"https://live.staticflickr.com/65535/54159643533_c510c4b8e6_h.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/h/\" media=\"photo\"
+        />\n\t<size label=\"Large 2048\" width=\"1536\" height=\"2048\" source=\"https://live.staticflickr.com/65535/54159643533_df493c0b59_k.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 3K\" width=\"2304\" height=\"3072\" source=\"https://live.staticflickr.com/65535/54159643533_7a1e8320a3_3k.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/3k/\" media=\"photo\"
+        />\n\t<size label=\"X-Large 4K\" width=\"3024\" height=\"4032\" source=\"https://live.staticflickr.com/65535/54159643533_03236bbcc4_4k.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/4k/\" media=\"photo\"
+        />\n\t<size label=\"Original\" width=\"4032\" height=\"3024\" source=\"https://live.staticflickr.com/65535/54159643533_cbda635a39_o.jpg\"
+        url=\"https://www.flickr.com/photos/igorzed/54159643533/sizes/o/\" media=\"photo\"
+        />\n</sizes>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 May 2025 13:19:08 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 718d744faad6ff02c7a7ca517a01865a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - z6b7W2rYKdeIljtGIUoqltWjTVKJCp0BoTh61zgktw1aIUKA5pjyUg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '3216'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:19:07 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681b5dcb-73117c5015568db371c685ea
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.34.175
+    status:
+      code: 200
+      message: OK
+version: 1
