@@ -31,4 +31,4 @@ class FlickrPhotoIds:
     Invalid = ["-1", "does_not_exist", ""]
 
     # Strings that are numeric and could be Flickr photo IDs, but aren't
-    NonExistent = ["1", "12345678901234567890"]
+    NonExistent = ["1", "35366357641", "12345678901234567890"]
