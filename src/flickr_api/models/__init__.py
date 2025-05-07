@@ -92,64 +92,6 @@ SafetyLevel = typing.Literal["safe", "moderate", "restricted"]
 MediaType = typing.Literal["photo", "video"]
 
 
-class SinglePhotoInfo(typing.TypedDict):
-    """
-    Represents a response from the flickr.photos.getInfo API.
-    """
-
-    id: str
-    media: MediaType
-
-    secret: str
-    server: str
-    farm: str
-    original_format: str | None
-
-    rotation: Rotation
-
-    owner: User
-
-    safety_level: SafetyLevel
-
-    license: License
-
-    title: str | None
-    description: str | None
-    tags: list[str]
-    machine_tags: MachineTags
-    raw_tags: list[Tag]
-    notes: list["Note"]
-
-    date_posted: datetime
-    date_taken: DateTaken | None
-    location: Location | None
-
-    count_comments: int
-    count_views: int
-    has_people: bool
-
-    visibility: Visibility
-    usage: Usage
-
-    url: str
-
-
-class SinglePhoto(SinglePhotoInfo):
-    sizes: list[Size]
-
-
-class CommonsInstitution(typing.TypedDict):
-    """
-    Represents an institution in the Flickr Commons programme.
-    """
-
-    user_id: str
-    date_launch: datetime
-    name: str
-    site_url: str | None
-    license_url: str
-
-
 class BoundingBox(typing.TypedDict):
     """
     A "bounding" box that highlights a specific region of a photo.
@@ -179,3 +121,61 @@ class Note(typing.TypedDict):
     author: User
     bounding_box: BoundingBox
     text: str
+
+
+class SinglePhotoInfo(typing.TypedDict):
+    """
+    Represents a response from the flickr.photos.getInfo API.
+    """
+
+    id: str
+    media: MediaType
+
+    secret: str
+    server: str
+    farm: str
+    original_format: str | None
+
+    rotation: Rotation
+
+    owner: User
+
+    safety_level: SafetyLevel
+
+    license: License
+
+    title: str | None
+    description: str | None
+    tags: list[str]
+    machine_tags: MachineTags
+    raw_tags: list[Tag]
+    notes: list[Note]
+
+    date_posted: datetime
+    date_taken: DateTaken | None
+    location: Location | None
+
+    count_comments: int
+    count_views: int
+    has_people: bool
+
+    visibility: Visibility
+    usage: Usage
+
+    url: str
+
+
+class SinglePhoto(SinglePhotoInfo):
+    sizes: list[Size]
+
+
+class CommonsInstitution(typing.TypedDict):
+    """
+    Represents an institution in the Flickr Commons programme.
+    """
+
+    user_id: str
+    date_launch: datetime
+    name: str
+    site_url: str | None
+    license_url: str
