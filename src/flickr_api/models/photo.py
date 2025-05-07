@@ -52,3 +52,19 @@ class Usage(typing.TypedDict):
     can_blog: bool
     can_print: bool
     can_share: bool
+
+
+class ExifTag(typing.TypedDict):
+    """
+    An EXIF/TIFF/GPS tag for a photo, as returned by the
+    `flickr.photos.getExif` API.
+
+    See https://www.flickr.com/services/api/flickr.photos.getExif.html
+    """
+
+    tagspace: str
+    tagspaceid: str
+    tag: str
+    label: str
+    raw_value: str
+    clean_value: typing.NotRequired[str]

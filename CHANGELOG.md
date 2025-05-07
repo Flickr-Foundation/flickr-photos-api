@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.7 - 2025-05-07
+
+The new `get_exif_tags_for_photo()` method returns a list of EXIF tags for a photo.
+
 ## v3.6.1 - 2025-05-06
 
 If you call `list_people_in_photo()` with a non-existent photo, it now throws a `ResourceNotFound` exception instead of `UnrecognisedFlickrApiException`.

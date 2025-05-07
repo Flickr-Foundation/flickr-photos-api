@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getExif&photo_id=283148152
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"283148152\" secret=\"df74e4cf08\" server=\"109\" farm=\"1\" camera=\"\">\n\t<exif
+        tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"JFIFVersion\" label=\"JFIFVersion\">\n\t\t<raw>1.02</raw>\n\t</exif>\n\t<exif
+        tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"ResolutionUnit\" label=\"Resolution
+        Unit\">\n\t\t<raw>None</raw>\n\t</exif>\n\t<exif tagspace=\"JFIF\" tagspaceid=\"0\"
+        tag=\"XResolution\" label=\"X-Resolution\">\n\t\t<raw>100</raw>\n\t</exif>\n\t<exif
+        tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"YResolution\" label=\"Y-Resolution\">\n\t\t<raw>100</raw>\n\t</exif>\n\t<exif
+        tagspace=\"Ducky\" tagspaceid=\"0\" tag=\"Quality\" label=\"Quality\">\n\t\t<raw>80%</raw>\n\t</exif>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 May 2025 13:02:00 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cf3cba9ef862793ca67254b0061e513a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - tPO_N0Fd4J_YtTYLUIdEeydwa7xrQKqSkYcSbl9Lywjna264T8yTwQ==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '666'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:02:00 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:02:00 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681b59c8-374928c91bfe2a522ceb87f7
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.7.125
+    status:
+      code: 200
+      message: OK
+version: 1

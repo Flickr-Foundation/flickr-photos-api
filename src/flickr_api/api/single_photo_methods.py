@@ -13,6 +13,7 @@ from ..exceptions import PhotoIsPrivate, ResourceNotFound
 from ..models import (
     AlbumContext,
     BoundingBox,
+    ExifTag,
     GalleryContext,
     GroupContext,
     Location,
@@ -611,3 +612,49 @@ class SinglePhotoMethods(LicenseMethods):
             "galleries": galleries,
             "groups": groups,
         }
+
+    def get_exif_tags_for_photo(self, photo_id: str) -> list[ExifTag]:
+        """
+        Return a list of EXIF/TIFF/GPS tags for a given photo.
+        """
+        # See https://www.flickr.com/services/api/flickr.photos.getExif.html
+        resp = self.call(
+            method="flickr.photos.getExif",
+            params={"photo_id": photo_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+            },
+        )
+
+        # The format of the response will be of the form:
+        #
+        #   <photo id="4424" secret="06b8e43bc7" server="2">
+        #     <exif tagspace="TIFF" tagspaceid="1" tag="271" label="Manufacturer">
+        #       <raw>Canon</raw>
+        #     </exif>
+        #     <exif tagspace="EXIF" tagspaceid="0" tag="33437" label="Aperture">
+        #       <raw>90/10</raw>
+        #       <clean>f/9</clean>
+        #     </exif>
+        #     …
+        #
+        result: list[ExifTag] = []
+
+        for exif_elem in resp.findall("photo/exif"):
+            raw_value = find_required_text(exif_elem, path="raw")
+            clean_value = find_optional_text(exif_elem, path="clean")
+
+            tag: ExifTag = {
+                "tagspace": exif_elem.attrib["tagspace"],
+                "tagspaceid": exif_elem.attrib["tagspaceid"],
+                "tag": exif_elem.attrib["tag"],
+                "label": exif_elem.attrib["label"],
+                "raw_value": raw_value,
+            }
+
+            if clean_value:
+                tag["clean_value"] = clean_value
+
+            result.append(tag)
+
+        return result

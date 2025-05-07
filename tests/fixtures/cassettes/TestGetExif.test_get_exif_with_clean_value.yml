@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getExif&photo_id=54159643533
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"54159643533\" secret=\"1515544622\" server=\"65535\" farm=\"66\" camera=\"Apple
+        iPhone 13 Pro\">\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Compression\"
+        label=\"Compression\">\n\t\t<raw>JPEG (old-style)</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Make\" label=\"Make\">\n\t\t<raw>Apple</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Model\" label=\"Model\">\n\t\t<raw>iPhone
+        13 Pro</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Orientation\"
+        label=\"Orientation\">\n\t\t<raw>Rotate 90 CW</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\"
+        tagspaceid=\"0\" tag=\"XResolution\" label=\"X-Resolution\">\n\t\t<raw>72</raw>\n\t\t<clean>72
+        dpi</clean>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"YResolution\"
+        label=\"Y-Resolution\">\n\t\t<raw>72</raw>\n\t\t<clean>72 dpi</clean>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"ResolutionUnit\" label=\"Resolution
+        Unit\">\n\t\t<raw>inches</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\"
+        tag=\"Software\" label=\"Software\">\n\t\t<raw>17.6.1</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"ModifyDate\" label=\"Date and Time
+        (Modified)\">\n\t\t<raw>2024:11:23 15:56:14</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\"
+        tagspaceid=\"0\" tag=\"HostComputer\" label=\"Host Computer\">\n\t\t<raw>iPhone
+        13 Pro</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"YCbCrPositioning\"
+        label=\"YCbCr Positioning\">\n\t\t<raw>Centered</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExposureTime\" label=\"Exposure\">\n\t\t<raw>1/50</raw>\n\t\t<clean>0.02
+        sec (1/50)</clean>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"FNumber\" label=\"Aperture\">\n\t\t<raw>1.8</raw>\n\t\t<clean>f/1.8</clean>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExposureProgram\" label=\"Exposure
+        Program\">\n\t\t<raw>Program AE</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"ISO\" label=\"ISO Speed\">\n\t\t<raw>250</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExifVersion\" label=\"Exif Version\">\n\t\t<raw>0232</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"DateTimeOriginal\" label=\"Date
+        and Time (Original)\">\n\t\t<raw>2024:11:23 15:56:14</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"CreateDate\" label=\"Date and
+        Time (Digitized)\">\n\t\t<raw>2024:11:23 15:56:14</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"OffsetTime\" label=\"Offset Time\">\n\t\t<raw>+02:00</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"OffsetTimeOriginal\" label=\"Offset
+        Time Original\">\n\t\t<raw>+02:00</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"OffsetTimeDigitized\" label=\"Offset Time Digitized\">\n\t\t<raw>+02:00</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ComponentsConfiguration\" label=\"Components
+        Configuration\">\n\t\t<raw>Y, Cb, Cr, -</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"BrightnessValue\" label=\"Brightness Value\">\n\t\t<raw>1.704856527</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExposureCompensation\" label=\"Exposure
+        Bias\">\n\t\t<raw>-1.01</raw>\n\t\t<clean>-1.01 EV</clean>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"MeteringMode\" label=\"Metering
+        Mode\">\n\t\t<raw>Spot</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"Flash\" label=\"Flash\">\n\t\t<raw>Off, Did not fire</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"FocalLength\" label=\"Focal Length\">\n\t\t<raw>1.6
+        mm</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SubjectArea\"
+        label=\"Subject Area\">\n\t\t<raw>2506 1359 755 754</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SubSecTimeOriginal\" label=\"Sub
+        Sec Time Original\">\n\t\t<raw>906</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"SubSecTimeDigitized\" label=\"Sub Sec Time Digitized\">\n\t\t<raw>906</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"FlashpixVersion\" label=\"Flashpix
+        Version\">\n\t\t<raw>0100</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"ColorSpace\" label=\"Color Space\">\n\t\t<raw>Uncalibrated</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SensingMethod\" label=\"Sensing
+        Method\">\n\t\t<raw>One-chip color area</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"SceneType\" label=\"Scene Type\">\n\t\t<raw>Directly
+        photographed</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"ExposureMode\" label=\"Exposure Mode\">\n\t\t<raw>Auto</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"WhiteBalance\" label=\"White Balance\">\n\t\t<raw>Auto</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"DigitalZoomRatio\" label=\"Digital
+        Zoom Ratio\">\n\t\t<raw>1.33451015</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"FocalLengthIn35mmFormat\" label=\"Focal Length (35mm
+        format)\">\n\t\t<raw>18 mm</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"SceneCaptureType\" label=\"Scene Capture Type\">\n\t\t<raw>Standard</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"LensInfo\" label=\"Lens Info\">\n\t\t<raw>1.570000052-9mm
+        f/1.5-2.8</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"LensMake\" label=\"Lens Make\">\n\t\t<raw>Apple</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"LensModel\" label=\"Lens Model\">\n\t\t<raw>iPhone
+        13 Pro back triple camera 1.57mm f/1.8</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"CompositeImage\" label=\"Composite Image\">\n\t\t<raw>General
+        Composite Image</raw>\n\t</exif>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Wed, 07 May 2025 13:02:43 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 6637d17b3d1e6049c28f8f48b8c57cc6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - G15slznR8R0Cu2rDdi1pkvHZsYkT4t_dUqq4jAbbH3PzGFJR80PSTw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '5335'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:02:43 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Fri, 06-Jun-2025 13:02:43 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-681b59f3-6340105e02ee42b823443499
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.21.174
+    status:
+      code: 200
+      message: OK
+version: 1

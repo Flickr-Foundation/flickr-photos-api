@@ -597,3 +597,48 @@ class TestPrivatePhotos:
         """
         with pytest.raises(ResourceNotFound):
             api.get_photo_contexts(photo_id="35366357641")
+
+
+class TestGetExif:
+    """
+    Tests for `SinglePhotoMethods.get_exif_tags_for_photo`.
+    """
+
+    def test_get_exif(self, api: FlickrApi) -> None:
+        """
+        Get the EXIF data for a photo.
+        """
+        exif = api.get_exif_tags_for_photo(photo_id="283148152")
+
+        assert len(exif) == 5
+        assert exif[0] == {
+            "tagspace": "JFIF",
+            "tagspaceid": "0",
+            "tag": "JFIFVersion",
+            "label": "JFIFVersion",
+            "raw_value": "1.02",
+        }
+
+    def test_get_exif_with_clean_value(self, api: FlickrApi) -> None:
+        """
+        Get an EXIF tag with a cleaned value.
+        """
+        exif = api.get_exif_tags_for_photo(photo_id="54159643533")
+
+        assert len(exif) == 43
+        assert exif[4] == {
+            "tagspace": "IFD0",
+            "tagspaceid": "0",
+            "tag": "XResolution",
+            "label": "X-Resolution",
+            "raw_value": "72",
+            "clean_value": "72 dpi",
+        }
+
+    @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
+    def test_non_existent_photo_is_error(self, api: FlickrApi, photo_id: str) -> None:
+        """
+        Getting the EXIF for a non-existent photo throws a ResourceNotFound.
+        """
+        with pytest.raises(ResourceNotFound):
+            api.get_exif_tags_for_photo(photo_id=photo_id)
