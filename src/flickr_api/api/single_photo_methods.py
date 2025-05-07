@@ -9,7 +9,7 @@ from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
-from ..exceptions import PhotoIsPrivate, ResourceNotFound
+from ..exceptions import PermissionDenied, PhotoIsPrivate, ResourceNotFound
 from ..models import (
     AlbumContext,
     BoundingBox,
@@ -622,7 +622,10 @@ class SinglePhotoMethods(LicenseMethods):
             method="flickr.photos.getExif",
             params={"photo_id": photo_id},
             exceptions={
-                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}")
+                "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
+                "2": PermissionDenied(
+                    f"Not allowed to get EXIF data for photo {photo_id}"
+                ),
             },
         )
 

@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 import pytest
 
 from data import FlickrPhotoIds
-from flickr_api import FlickrApi, PhotoIsPrivate, ResourceNotFound
+from flickr_api import FlickrApi, PermissionDenied, PhotoIsPrivate, ResourceNotFound
 from flickr_api.models import SinglePhoto
 from utils import get_fixture
 
@@ -634,6 +634,14 @@ class TestGetExif:
             "raw_value": "72",
             "clean_value": "72 dpi",
         }
+
+    def test_get_exif_with_permission_denied(self, api: FlickrApi) -> None:
+        """
+        If a Flickr member has hidden EXIF data in their privacy settings,
+        we get a named exception.
+        """
+        with pytest.raises(PermissionDenied):
+            api.get_exif_tags_for_photo(photo_id="54208962452")
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
     def test_non_existent_photo_is_error(self, api: FlickrApi, photo_id: str) -> None:
