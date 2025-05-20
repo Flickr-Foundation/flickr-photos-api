@@ -330,6 +330,21 @@ class TestGetSinglePhoto:
             "text": "scritch, scritch... good doggie!",
         }
 
+    def test_editability(self, api: FlickrApi) -> None:
+        """
+        Get the `editability` and `public_editability` for a photo.
+        """
+        photo = api.get_single_photo(photo_id="2959326615")
+
+        # This is because we're using an unauthenticated API client,
+        # which isn't allowed to make edits -- but other Flickr members
+        # can make edits, if they're logged in.
+        assert photo["editability"] == {"can_comment": False, "can_add_meta": False}
+        assert photo["public_editability"] == {
+            "can_comment": True,
+            "can_add_meta": True,
+        }
+
 
 class TestGetSinglePhotoSizes:
     """
