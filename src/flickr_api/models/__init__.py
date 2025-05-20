@@ -5,6 +5,7 @@ from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
 from .licenses import License, LicenseId, LicenseChange
 from .machine_tags import MachineTags
 from .photo import (
+    Editability,
     ExifTag,
     Location,
     LocationContext,
@@ -20,6 +21,7 @@ from .users import User, UserInfo
 __all__ = [
     "AlbumContext",
     "BoundingBox",
+    "Editability",
     "ExifTag",
     "GalleryContext",
     "GroupContext",
@@ -160,6 +162,8 @@ class SinglePhotoInfo(typing.TypedDict):
     has_people: bool
 
     visibility: Visibility
+    editability: Editability
+    public_editability: Editability
     usage: Usage
 
     url: str

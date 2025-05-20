@@ -13,6 +13,10 @@
     }
   },
   "description": "Seaman Nina Bowen shows some love to Chief Bert, Station Elizabeth City, N.C.'s mascot, near the boathouse at the station, Feb. 17, 2017. Chief Bert is a retired explosive detection dog who worked for six years with the Maritime Safety and Security Team in Gavelston, Texas. U.S. Coast Guard photo by Petty Officer 2nd Class Nate Littlejohn.",
+  "editability": {
+    "can_comment": false,
+    "can_add_meta": false
+  },
   "farm": "3",
   "has_people": false,
   "id": "32812033543",
@@ -26,6 +30,10 @@
   },
   "media": "photo",
   "notes": [],
+  "public_editability": {
+    "can_comment": true,
+    "can_add_meta": false
+  },
   "raw_tags": [
     {
       "author_id": "30884892@N08",

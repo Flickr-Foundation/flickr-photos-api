@@ -43,6 +43,15 @@ class Location(NumericLocation, NamedLocation):
     """
 
 
+class Editability(typing.TypedDict):
+    """
+    Describes if/how somebody can interact with a photo.
+    """
+
+    can_comment: bool
+    can_add_meta: bool
+
+
 class Usage(typing.TypedDict):
     """
     Describes the permissions that can be set on a photo.

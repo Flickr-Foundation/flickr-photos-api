@@ -13,6 +13,7 @@ from ..exceptions import PermissionDenied, PhotoIsPrivate, ResourceNotFound
 from ..models import (
     AlbumContext,
     BoundingBox,
+    Editability,
     ExifTag,
     GalleryContext,
     GroupContext,
@@ -231,6 +232,27 @@ class SinglePhotoMethods(LicenseMethods):
             "is_family": visibility_elem.attrib["isfamily"] == "1",
         }
 
+        # Get editability information about the photo.
+        #
+        # This is returned in the form:
+        #
+        #     <editability cancomment="0" canaddmeta="0"/>
+        #     <publiceditability cancomment="1" canaddmeta="1"/>
+        #
+        # fmt: off
+        editability_elem = find_required_elem(photo_elem, path="editability")
+        editability: Editability = {
+            "can_comment":  editability_elem.attrib["cancomment"] == "1",
+            "can_add_meta": editability_elem.attrib["canaddmeta"] == "1",
+        }
+
+        public_editability_elem = find_required_elem(photo_elem, path="publiceditability")
+        public_editability: Editability = {
+            "can_comment":  public_editability_elem.attrib["cancomment"] == "1",
+            "can_add_meta": public_editability_elem.attrib["canaddmeta"] == "1",
+        }
+        # fmt: on
+
         # Get usage information about the photo.
         #
         # This is returned in the form:
@@ -284,6 +306,8 @@ class SinglePhotoMethods(LicenseMethods):
             "has_people": has_people,
             "url": url,
             "visibility": visibility,
+            "editability": editability,
+            "public_editability": public_editability,
             "usage": usage,
         }
 

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8 - 2025-05-20
+
+Return information about the "editability" of a photo -- that is, whether you're allowed to add comments or metadata.
+
 ## v3.7.2 - 2025-05-07
 
 Add a `PermissionDenied` exception for cases where users have chosen to hide their EXIF data.
