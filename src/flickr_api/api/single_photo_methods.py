@@ -448,7 +448,7 @@ class SinglePhotoMethods(LicenseMethods):
             user = create_user(
                 user_id=person_elem.attrib["nsid"],
                 username=person_elem.attrib["username"],
-                realname=person_elem.attrib["realname"],
+                realname=person_elem.attrib.get("realname"),
                 path_alias=person_elem.attrib["path_alias"],
                 is_deleted=person_elem.attrib["is_deleted"] == "1",
             )

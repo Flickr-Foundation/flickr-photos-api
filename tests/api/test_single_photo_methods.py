@@ -460,6 +460,30 @@ class TestListPeopleInPhoto:
             },
         ]
 
+    def test_photo_with_person_with_hidden_realname(self, api: FlickrApi) -> None:
+        """
+        If a person is tagged who doesn't expose their `realname` publicly,
+        then their `realname` is None.
+
+        This is a reggression test for an earlier version of the code,
+        where we assumed that `realname` is always present.  It's not!
+        """
+        people = api.list_people_in_photo(photo_id="3417584159")
+
+        assert people == [
+            {
+                "user": {
+                    "id": "62295857@N00",
+                    "username": "WF&DT",
+                    "realname": None,
+                    "path_alias": "wfdt",
+                    "photos_url": "https://www.flickr.com/photos/wfdt/",
+                    "profile_url": "https://www.flickr.com/people/wfdt/",
+                },
+                "bounding_box": None,
+            },
+        ]
+
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
     def test_non_existent_photo(self, api: FlickrApi, photo_id: str) -> None:
         """

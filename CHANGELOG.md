@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8.1 - 2025-05-23
+
+Fix a bug where looking up people in a photo where a tagged person had a private realname would throw an error `KeyError: 'realname'`.
+
 ## v3.8 - 2025-05-20
 
 Return information about the "editability" of a photo -- that is, whether you're allowed to add comments or metadata.
