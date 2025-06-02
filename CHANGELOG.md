@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8.2 - 2025-06-02
+
+Make sure all the models are described in `flickr_api.models.__all__`.
+
 ## v3.8.1 - 2025-05-23
 
 Fix a bug where looking up people in a photo where a tagged person had a private realname would throw an error `KeyError: 'realname'`.
