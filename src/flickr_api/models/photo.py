@@ -75,5 +75,5 @@ class ExifTag(typing.TypedDict):
     tagspaceid: str
     tag: str
     label: str
-    raw_value: str
+    raw_value: str | None
     clean_value: typing.NotRequired[str]
