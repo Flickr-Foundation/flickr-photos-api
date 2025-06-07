@@ -674,6 +674,25 @@ class TestGetExif:
             "clean_value": "72 dpi",
         }
 
+    def test_get_exif_with_empty_raw(self, api: FlickrApi) -> None:
+        """
+        Get an EXIF tag with an empty raw value.
+        """
+        # This is a photo I discovered where there's no raw EXIF data,
+        # and just a </raw> element in the API response.
+        exif = api.get_exif_tags_for_photo(photo_id="9682774177")
+
+        expected_tag = {
+            "tagspace": "ExifIFD",
+            "tagspaceid": "0",
+            "tag": "UserComment",
+            "label": "User Comment",
+            "raw_value": None,
+            "clean_value": ".\n\t\t\t\t\t",
+        }
+
+        assert expected_tag in exif
+
     def test_get_exif_with_permission_denied(self, api: FlickrApi) -> None:
         """
         If a Flickr member has hidden EXIF data in their privacy settings,

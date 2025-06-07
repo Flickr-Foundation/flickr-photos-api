@@ -1,0 +1,153 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api;
+        hello@flickr.org)
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.photos.getExif&photo_id=9682774177
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<photo
+        id=\"9682774177\" secret=\"86976804dd\" server=\"5524\" farm=\"6\" camera=\"Nikon
+        D90\">\n\t<exif tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"JFIFVersion\" label=\"JFIFVersion\">\n\t\t<raw>1.02</raw>\n\t</exif>\n\t<exif
+        tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"ResolutionUnit\" label=\"Resolution
+        Unit\">\n\t\t<raw>inches</raw>\n\t</exif>\n\t<exif tagspace=\"JFIF\" tagspaceid=\"0\"
+        tag=\"XResolution\" label=\"X-Resolution\">\n\t\t<raw>300</raw>\n\t\t<clean>300
+        dpi</clean>\n\t</exif>\n\t<exif tagspace=\"JFIF\" tagspaceid=\"0\" tag=\"YResolution\"
+        label=\"Y-Resolution\">\n\t\t<raw>300</raw>\n\t\t<clean>300 dpi</clean>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Make\" label=\"Make\">\n\t\t<raw>NIKON
+        CORPORATION</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"Model\"
+        label=\"Model\">\n\t\t<raw>NIKON D90</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\"
+        tagspaceid=\"0\" tag=\"Orientation\" label=\"Orientation\">\n\t\t<raw>Horizontal
+        (normal)</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"ResolutionUnit\"
+        label=\"Resolution Unit\">\n\t\t<raw>inches</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\"
+        tagspaceid=\"0\" tag=\"Software\" label=\"Software\">\n\t\t<raw>Adobe Photoshop
+        CS Windows</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"ModifyDate\"
+        label=\"Date and Time (Modified)\">\n\t\t<raw>2011:03:08 23:11:22</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"WhitePoint\" label=\"White Point\">\n\t\t<raw>0.313
+        0.329</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"PrimaryChromaticities\"
+        label=\"Primary Chromaticities\">\n\t\t<raw>0.64 0.33 0.21 0.71 0.15 0.06</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"YCbCrCoefficients\" label=\"YCb Cr
+        Coefficients\">\n\t\t<raw>0.299 0.587 0.114</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\"
+        tagspaceid=\"0\" tag=\"YCbCrPositioning\" label=\"YCbCr Positioning\">\n\t\t<raw>Co-sited</raw>\n\t</exif>\n\t<exif
+        tagspace=\"IFD0\" tagspaceid=\"0\" tag=\"XPTitle\" label=\"XPTitle\">\n\t\t<raw>USAID/FAO
+        Post Flood Recovery Project</raw>\n\t</exif>\n\t<exif tagspace=\"IFD0\" tagspaceid=\"0\"
+        tag=\"XPAuthor\" label=\"XPAuthor\">\n\t\t<raw>Mehdi Ali Khan/USAID</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExposureTime\" label=\"Exposure\">\n\t\t<raw>1/250</raw>\n\t\t<clean>0.004
+        sec (1/250)</clean>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"FNumber\" label=\"Aperture\">\n\t\t<raw>4.0</raw>\n\t\t<clean>f/4.0</clean>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ExposureProgram\" label=\"Exposure
+        Program\">\n\t\t<raw>Not Defined</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"ExifVersion\" label=\"Exif Version\">\n\t\t<raw>0221</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"DateTimeOriginal\" label=\"Date
+        and Time (Original)\">\n\t\t<raw>2011:03:08 16:23:00</raw>\n\t\t<clean>2011:03:08
+        11:23:00Z</clean>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"CreateDate\" label=\"Date and Time (Digitized)\">\n\t\t<raw>2011:03:08
+        16:23:00</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"ComponentsConfiguration\"
+        label=\"Components Configuration\">\n\t\t<raw>Y, Cb, Cr, -</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"CompressedBitsPerPixel\" label=\"Compressed
+        Bits Per Pixel\">\n\t\t<raw>4</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"ExposureCompensation\" label=\"Exposure Bias\">\n\t\t<raw>0</raw>\n\t\t<clean>0
+        EV</clean>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"MaxApertureValue\"
+        label=\"Max Aperture Value\">\n\t\t<raw>2.8</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"MeteringMode\" label=\"Metering Mode\">\n\t\t<raw>Multi-segment</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"LightSource\" label=\"Light Source\">\n\t\t<raw>Unknown</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"Flash\" label=\"Flash\">\n\t\t<raw>Auto,
+        Did not fire</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"FocalLength\" label=\"Focal Length\">\n\t\t<raw>70.0 mm</raw>\n\t\t<clean>70
+        mm</clean>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"UserComment\"
+        label=\"User Comment\">\n\t\t<raw />\n\t\t<clean>.\n\t\t\t\t\t</clean>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SubSecTime\" label=\"Sub Sec Time\">\n\t\t<raw>00</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SubSecTimeOriginal\" label=\"Sub
+        Sec Time Original\">\n\t\t<raw>00</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"SubSecTimeDigitized\" label=\"Sub Sec Time Digitized\">\n\t\t<raw>00</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"FlashpixVersion\" label=\"Flashpix
+        Version\">\n\t\t<raw>0100</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"ColorSpace\" label=\"Color Space\">\n\t\t<raw>Uncalibrated</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SensingMethod\" label=\"Sensing
+        Method\">\n\t\t<raw>One-chip color area</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"FileSource\" label=\"File Source\">\n\t\t<raw>Digital
+        Camera</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SceneType\"
+        label=\"Scene Type\">\n\t\t<raw>Directly photographed</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"CFAPattern\" label=\"CFAPattern\">\n\t\t<raw>[Green,Blue][Red,Green]</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"CustomRendered\" label=\"Custom
+        Rendered\">\n\t\t<raw>Normal</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"ExposureMode\" label=\"Exposure Mode\">\n\t\t<raw>Auto</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"WhiteBalance\" label=\"White Balance\">\n\t\t<raw>Auto</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"DigitalZoomRatio\" label=\"Digital
+        Zoom Ratio\">\n\t\t<raw>1</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\"
+        tag=\"FocalLengthIn35mmFormat\" label=\"Focal Length (35mm format)\">\n\t\t<raw>105
+        mm</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SceneCaptureType\"
+        label=\"Scene Capture Type\">\n\t\t<raw>Standard</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"GainControl\" label=\"Gain Control\">\n\t\t<raw>None</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"Contrast\" label=\"Contrast\">\n\t\t<raw>Normal</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"Saturation\" label=\"Saturation\">\n\t\t<raw>Normal</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"Sharpness\" label=\"Sharpness\">\n\t\t<raw>Normal</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"SubjectDistanceRange\" label=\"Subject
+        Distance Range\">\n\t\t<raw>Unknown</raw>\n\t</exif>\n\t<exif tagspace=\"ExifIFD\"
+        tagspaceid=\"0\" tag=\"Gamma\" label=\"Gamma\">\n\t\t<raw>2.2</raw>\n\t</exif>\n\t<exif
+        tagspace=\"ExifIFD\" tagspaceid=\"0\" tag=\"Padding\" label=\"Padding\">\n\t\t<raw>(Binary
+        data 50 bytes, use -b option to extract)</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-x\"
+        tagspaceid=\"0\" tag=\"XMPToolkit\" label=\"XMPToolkit\">\n\t\t<raw>Image::ExifTool
+        13.25</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-rdf\" tagspaceid=\"0\" tag=\"About\"
+        label=\"About\">\n\t\t<raw>uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b</raw>\n\t</exif>\n\t<exif
+        tagspace=\"XMP-dc\" tagspaceid=\"0\" tag=\"Creator\" label=\"Creator\">\n\t\t<raw>Mehdi
+        Ali Khan/USAID</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-dc\" tagspaceid=\"0\"
+        tag=\"Title\" label=\"Title\">\n\t\t<raw>USAID/FAO Post Flood Recovery Project</raw>\n\t</exif>\n\t<exif
+        tagspace=\"XMP-tiff\" tagspaceid=\"0\" tag=\"Artist\" label=\"Artist\">\n\t\t<raw>Mehdi
+        Ali Khan/USAID</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-tiff\" tagspaceid=\"0\"
+        tag=\"Make\" label=\"Make\">\n\t\t<raw>NIKON CORPORATION</raw>\n\t</exif>\n\t<exif
+        tagspace=\"XMP-tiff\" tagspaceid=\"0\" tag=\"Model\" label=\"Model\">\n\t\t<raw>NIKON
+        D90</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-tiff\" tagspaceid=\"0\" tag=\"Orientation\"
+        label=\"Orientation\">\n\t\t<raw>Horizontal (normal)</raw>\n\t</exif>\n\t<exif
+        tagspace=\"XMP-tiff\" tagspaceid=\"0\" tag=\"Software\" label=\"Software\">\n\t\t<raw>Adobe
+        Photoshop CS Windows</raw>\n\t</exif>\n\t<exif tagspace=\"XMP-xmp\" tagspaceid=\"0\"
+        tag=\"CreatorTool\" label=\"Creator Tool\">\n\t\t<raw>Adobe Photoshop CS Windows</raw>\n\t</exif>\n</photo>\n</rsp>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Sat, 07 Jun 2025 09:19:20 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 b1e5e18d3663c842a7617d7893ff405e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - -sjGDbzr2Xx4G1VX155iI3U8sg7O1uhIFAUejFHh0dRxJr7EMiS1Uw==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '7760'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Mon, 07-Jul-2025 09:19:19 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Mon, 07-Jul-2025 09:19:19 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-68440417-68b109af018e2f27175b0236
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.21.118
+    status:
+      code: 200
+      message: OK
+version: 1

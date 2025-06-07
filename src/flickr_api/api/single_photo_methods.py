@@ -668,7 +668,7 @@ class SinglePhotoMethods(LicenseMethods):
         result: list[ExifTag] = []
 
         for exif_elem in resp.findall("photo/exif"):
-            raw_value = find_required_text(exif_elem, path="raw")
+            raw_value = find_optional_text(exif_elem, path="raw")
             clean_value = find_optional_text(exif_elem, path="clean")
 
             tag: ExifTag = {

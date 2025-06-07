@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8.3 - 2025-06-07
+
+Fix a bug when getting EXIF data for photos with no "raw" EXIF value -- this is now returned as `None` rather than throwing an exception.
+
 ## v3.8.2 - 2025-06-02
 
 Make sure all the models are described in `flickr_api.models.__all__`.
