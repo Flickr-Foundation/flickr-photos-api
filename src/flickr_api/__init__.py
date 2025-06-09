@@ -14,7 +14,7 @@ from .exceptions import (
 )
 
 
-__version__ = "3.8.3"
+__version__ = "3.8.4"
 
 
 __all__ = [
