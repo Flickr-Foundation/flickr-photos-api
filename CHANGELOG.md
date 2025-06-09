@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.8.4 - 2025-06-09
+
+Fix a bug in the data returned from `list_commons_institutions()`.
+
 ## v3.8.3 - 2025-06-07
 
 Fix a bug when getting EXIF data for photos with no "raw" EXIF value -- this is now returned as `None` rather than throwing an exception.

@@ -37,9 +37,18 @@ class FlickrCommonsMethods(FlickrApi):
         for institution_elem in resp.findall(path=".//institution"):
             user_id = institution_elem.attrib["nsid"]
 
-            date_launch = datetime.fromtimestamp(
-                int(institution_elem.attrib["date_launch"]), tz=timezone.utc
-            )
+            # AWLC: While experimenting with Flickr Commons Admin APIs,
+            # I inadvertently kicked Belleville & Hastings from the Commons,
+            # then re-added them, which reset their join date.
+            #
+            # In this case, override the value from the Flickr API and
+            # return the correct date.
+            if user_id == "134017397@N03":
+                date_launch = datetime(2024, 10, 30, 19, 14, 23, tzinfo=timezone.utc)
+            else:
+                date_launch = datetime.fromtimestamp(
+                    int(institution_elem.attrib["date_launch"]), tz=timezone.utc
+                )
 
             name = find_required_text(institution_elem, path="name")
 
