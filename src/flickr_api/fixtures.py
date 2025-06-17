@@ -14,7 +14,6 @@ from collections.abc import Iterator
 import os
 import typing
 
-from authlib.integrations.httpx_client import OAuth1Client
 import httpx
 import pytest
 import vcr
@@ -149,6 +148,8 @@ def flickr_oauth_api(cassette_name: str) -> Iterator[FlickrApi]:
     be checked into the repo, then replayed offline (e.g. in CI tests).
     The cassette is redacted to ensure it does not contain OAuth credentials.
     """
+    from authlib.integrations.httpx_client import OAuth1Client
+
     client_id = os.environ.get("FLICKR_CLIENT_KEY", "CLIENT_KEY")
     client_secret = os.environ.get("FLICKR_CLIENT_SECRET", "CLIENT_SECRET")
     token = os.environ.get("FLICKR_OAUTH_TOKEN", "OAUTH_TOKEN")
