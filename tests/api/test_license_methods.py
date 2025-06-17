@@ -14,11 +14,11 @@ class TestLicenseMethods:
     Tests for ``LicenseMethods``.
     """
 
-    def test_get_licenses(self, api: FlickrApi) -> None:
+    def test_get_licenses(self, flickr_api: FlickrApi) -> None:
         """
         You can get a complete list of licenses from the API.
         """
-        assert api.get_licenses() == {
+        assert flickr_api.get_licenses() == {
             "0": {
                 "id": "all-rights-reserved",
                 "label": "All Rights Reserved",
@@ -76,21 +76,21 @@ class TestLicenseMethods:
             },
         }
 
-    def test_lookup_license_by_numeric_id(self, api: FlickrApi) -> None:
+    def test_lookup_license_by_numeric_id(self, flickr_api: FlickrApi) -> None:
         """
         You can look up a license by its numeric ID.
         """
-        assert api.lookup_license_by_id(id="0") == {
+        assert flickr_api.lookup_license_by_id(id="0") == {
             "id": "all-rights-reserved",
             "label": "All Rights Reserved",
             "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
         }
 
-    def test_lookup_license_by_human_readable_id(self, api: FlickrApi) -> None:
+    def test_lookup_license_by_human_readable_id(self, flickr_api: FlickrApi) -> None:
         """
         You can look up a license by its human-readable ID.
         """
-        assert api.lookup_license_by_id(id="all-rights-reserved") == {
+        assert flickr_api.lookup_license_by_id(id="all-rights-reserved") == {
             "id": "all-rights-reserved",
             "label": "All Rights Reserved",
             "url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
@@ -98,14 +98,14 @@ class TestLicenseMethods:
 
     @pytest.mark.parametrize("bad_id", ["-1", "100"])
     def test_throws_license_not_found_for_bad_id(
-        self, api: FlickrApi, bad_id: str
+        self, flickr_api: FlickrApi, bad_id: str
     ) -> None:
         """
         If you try to look up a license ID which doesn't exist, you
         get a ``LicenseNotFound`` error.
         """
         with pytest.raises(LicenseNotFound, match=bad_id):
-            api.lookup_license_by_id(id=bad_id)
+            flickr_api.lookup_license_by_id(id=bad_id)
 
 
 class TestGetLicenseHistory:
@@ -113,7 +113,7 @@ class TestGetLicenseHistory:
     Tests for `get_license_history`.
     """
 
-    def test_photo_with_initial_license(self, api: FlickrApi) -> None:
+    def test_photo_with_initial_license(self, flickr_api: FlickrApi) -> None:
         """
         The license history of a photo which has the same license as
         it was initially uploaded with has a single entry.
@@ -128,11 +128,11 @@ class TestGetLicenseHistory:
                 },
             }
         ]
-        actual = api.get_license_history(photo_id="3948976954")
+        actual = flickr_api.get_license_history(photo_id="3948976954")
 
         assert expected == actual
 
-    def test_photo_with_single_license_change(self, api: FlickrApi) -> None:
+    def test_photo_with_single_license_change(self, flickr_api: FlickrApi) -> None:
         """
         The license history of a photo which has a single license change
         has two entries: the initial license and the change.
@@ -152,11 +152,11 @@ class TestGetLicenseHistory:
                 },
             },
         ]
-        actual = api.get_license_history(photo_id="54049228596")
+        actual = flickr_api.get_license_history(photo_id="54049228596")
 
         assert expected == actual
 
-    def test_photo_with_changed_license(self, api: FlickrApi) -> None:
+    def test_photo_with_changed_license(self, flickr_api: FlickrApi) -> None:
         """
         The license history of a photo whose license has been edited
         multiple times has multiple entries.
@@ -189,17 +189,19 @@ class TestGetLicenseHistory:
                 },
             },
         ]
-        actual = api.get_license_history(photo_id="54450311696")
+        actual = flickr_api.get_license_history(photo_id="54450311696")
 
         assert expected == actual
 
     @pytest.mark.parametrize(
         "photo_id", ["does_not_exist", "12345678901234567890", "-1"]
     )
-    def test_non_existent_photo_is_error(self, api: FlickrApi, photo_id: str) -> None:
+    def test_non_existent_photo_is_error(
+        self, flickr_api: FlickrApi, photo_id: str
+    ) -> None:
         """
         Looking up the license history of a non-existent photo is
         an error.
         """
         with pytest.raises(ResourceNotFound):
-            api.get_license_history(photo_id)
+            flickr_api.get_license_history(photo_id)

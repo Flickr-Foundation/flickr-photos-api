@@ -23,11 +23,11 @@ class TestGetUser:
     Tests for ``UserMethods.get_user``.
     """
 
-    def test_get_user_by_id(self, api: FlickrApi) -> None:
+    def test_get_user_by_id(self, flickr_api: FlickrApi) -> None:
         """
         Look up a user with their Flickr NSID.
         """
-        user = api.get_user(user_id="199258389@N04")
+        user = flickr_api.get_user(user_id="199258389@N04")
 
         assert user == {
             "id": "199258389@N04",
@@ -43,11 +43,13 @@ class TestGetUser:
             "count_photos": 1,
         }
 
-    def test_get_user_by_url(self, api: FlickrApi) -> None:
+    def test_get_user_by_url(self, flickr_api: FlickrApi) -> None:
         """
         Look up a user with a URL to their profile on Flickr.com.
         """
-        user = api.get_user(user_url="https://www.flickr.com/photos/199246608@N02")
+        user = flickr_api.get_user(
+            user_url="https://www.flickr.com/photos/199246608@N02"
+        )
 
         assert user == {
             "id": "199246608@N02",
@@ -63,7 +65,7 @@ class TestGetUser:
             "count_photos": 38,
         }
 
-    def test_uses_url_not_username(self, api: FlickrApi) -> None:
+    def test_uses_url_not_username(self, flickr_api: FlickrApi) -> None:
         """
         When you look up a user by URL, it treats the URL component
         as their path alias, not their username.
@@ -80,7 +82,7 @@ class TestGetUser:
 
         Make sure we pickm the right one!
         """
-        user_info = api.get_user(
+        user_info = flickr_api.get_user(
             user_url="https://www.flickr.com/photos/britishlibrary/"
         )
 
@@ -95,12 +97,12 @@ class TestGetUser:
         ],
     )
     def test_gets_realname(
-        self, api: FlickrApi, user_id: str, realname: str | None
+        self, flickr_api: FlickrApi, user_id: str, realname: str | None
     ) -> None:
         """
         Looking up a user gets their real name, if set.
         """
-        user = api.get_user(user_id=user_id)
+        user = flickr_api.get_user(user_id=user_id)
 
         assert user["realname"] == realname
 
@@ -111,11 +113,13 @@ class TestGetUser:
             ("32162360@N00", "beachcomber australia"),
         ],
     )
-    def test_fixes_realname(self, api: FlickrApi, user_id: str, realname: str) -> None:
+    def test_fixes_realname(
+        self, flickr_api: FlickrApi, user_id: str, realname: str
+    ) -> None:
         """
         We apply our real name "fixes" for users of particular interest.
         """
-        user = api.get_user(user_id=user_id)
+        user = flickr_api.get_user(user_id=user_id)
         assert user["realname"] == realname
 
     @pytest.mark.parametrize(
@@ -130,16 +134,16 @@ class TestGetUser:
         ],
     )
     def test_gets_description(
-        self, api: FlickrApi, user_id: str, description: str | None
+        self, flickr_api: FlickrApi, user_id: str, description: str | None
     ) -> None:
         """
         Looking up a user gets their profile description, if set.
         """
-        user = api.get_user(user_id=user_id)
+        user = flickr_api.get_user(user_id=user_id)
 
         assert user["description"] == description
 
-    def test_knows_about_flickr_pro(self, api: FlickrApi) -> None:
+    def test_knows_about_flickr_pro(self, flickr_api: FlickrApi) -> None:
         """
         If an account has Flickr Pro, then we set two attributes:
 
@@ -147,14 +151,14 @@ class TestGetUser:
         *   ``pro_account_expires``
 
         """
-        user = api.get_user(user_id=FlickrUserIds.FlickrFoundation)
+        user = flickr_api.get_user(user_id=FlickrUserIds.FlickrFoundation)
 
         assert user["has_pro_account"]
         assert user["pro_account_expires"] == datetime(
             2033, 7, 19, 4, 0, tzinfo=timezone.utc
         )
 
-    def test_knows_about_non_flickr_pro(self, api: FlickrApi) -> None:
+    def test_knows_about_non_flickr_pro(self, flickr_api: FlickrApi) -> None:
         """
         If an account doesn't have Flickr Pro, then we set one attribute:
 
@@ -162,24 +166,24 @@ class TestGetUser:
 
         We shouldn't set an expiry date, because it doesn't apply here.
         """
-        user = api.get_user(user_id=FlickrUserIds.Alexwlchan)
+        user = flickr_api.get_user(user_id=FlickrUserIds.Alexwlchan)
 
         assert not user["has_pro_account"]
         assert "pro_account_expires" not in user
 
-    def test_get_deleted_user_id(self, api: FlickrApi) -> None:
+    def test_get_deleted_user_id(self, flickr_api: FlickrApi) -> None:
         """
         Looking up a deleted user by ID throws a ``UserDeleted`` error.
         """
         with pytest.raises(UserDeleted):
-            api.get_user(user_id=FlickrUserIds.Deleted)
+            flickr_api.get_user(user_id=FlickrUserIds.Deleted)
 
-    def test_get_deleted_user_url(self, api: FlickrApi) -> None:
+    def test_get_deleted_user_url(self, flickr_api: FlickrApi) -> None:
         """
         Looking up a deleted user by profile URL throws a ``UserDeleted`` error.
         """
         with pytest.raises(UserDeleted):
-            api.get_user(
+            flickr_api.get_user(
                 user_url=f"https://www.flickr.com/photos/{FlickrUserIds.Deleted}/"
             )
 
@@ -214,7 +218,7 @@ class TestGetUser:
         with pytest.raises(UnrecognisedFlickrApiException):
             api.get_user(user_id="-1")
 
-    def test_gets_no_location_if_not_set(self, api: FlickrApi) -> None:
+    def test_gets_no_location_if_not_set(self, flickr_api: FlickrApi) -> None:
         """
         If the user doesn't have a location set, their location is ``None``.
         """
@@ -228,11 +232,11 @@ class TestGetUser:
         #     Current city: Public (n/a)
         #
         # (Retrieved 30 August 2024)
-        user = api.get_user(user_id=FlickrUserIds.FlickrFoundation)
+        user = flickr_api.get_user(user_id=FlickrUserIds.FlickrFoundation)
 
         assert user["location"] is None
 
-    def test_gets_no_location_if_private(self, api: FlickrApi) -> None:
+    def test_gets_no_location_if_private(self, flickr_api: FlickrApi) -> None:
         """
         If the user's location isn't private, their location is ``None``.
         """
@@ -241,11 +245,11 @@ class TestGetUser:
         # there's no ``<location>`` element at all.
         #
         # (Retrieved 30 August 2024)
-        user = api.get_user(user_id="134319968@N02")
+        user = flickr_api.get_user(user_id="134319968@N02")
 
         assert user["location"] is None
 
-    def test_gets_user_location_if_set(self, api: FlickrApi) -> None:
+    def test_gets_user_location_if_set(self, flickr_api: FlickrApi) -> None:
         """
         If a user has a public location, it's returned in this response.
         """
@@ -256,26 +260,26 @@ class TestGetUser:
         #     Country         Japan
         #
         # (Retrieved 30 August 2024)
-        user = api.get_user(user_id="47062778@N06")
+        user = flickr_api.get_user(user_id="47062778@N06")
 
         assert user["location"] == "Kyoto, Japan"
 
-    def test_get_buddy_icon_url(self, api: FlickrApi) -> None:
+    def test_get_buddy_icon_url(self, flickr_api: FlickrApi) -> None:
         """
         Get the user's custom buddy icon, if set.
         """
-        user = api.get_user(user_id="28660070@N07")
+        user = flickr_api.get_user(user_id="28660070@N07")
 
         assert (
             user["buddy_icon_url"]
             == "https://farm6.staticflickr.com/5556/buddyicons/28660070@N07.jpg"
         )
 
-    def test_get_default_buddy_icon_url(self, api: FlickrApi) -> None:
+    def test_get_default_buddy_icon_url(self, flickr_api: FlickrApi) -> None:
         """
         If a user hasn't set a buddy icon, we get the default URL.
         """
-        user = api.get_user(user_id="199246608@N02")
+        user = flickr_api.get_user(user_id="199246608@N02")
 
         assert user["buddy_icon_url"] == "https://www.flickr.com/images/buddyicon.gif"
 
@@ -286,7 +290,9 @@ class TestEnsureUserId:
     ``user_url``, but not both.
     """
 
-    def test_passing_neither_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+    def test_passing_neither_of_user_id_or_url_is_error(
+        self, flickr_api: FlickrApi
+    ) -> None:
         """
         If you don't pass ``user_id`` or ``user_url``, it throws
         a ``TypeError``.
@@ -294,9 +300,11 @@ class TestEnsureUserId:
         with pytest.raises(
             TypeError, match="You must pass one of `user_id` or `user_url`!"
         ):
-            api.get_user()
+            flickr_api.get_user()
 
-    def test_passing_both_of_user_id_or_url_is_error(self, api: FlickrApi) -> None:
+    def test_passing_both_of_user_id_or_url_is_error(
+        self, flickr_api: FlickrApi
+    ) -> None:
         """
         If you pass both ``user_id`` and ``user_url``, it throws
         a ``TypeError``.
@@ -304,9 +312,11 @@ class TestEnsureUserId:
         with pytest.raises(
             TypeError, match="You can only pass one of `user_id` and `user_url`!"
         ):
-            api.get_user(user_id="123", user_url="https://www.flickr.com/photos/123")
+            flickr_api.get_user(
+                user_id="123", user_url="https://www.flickr.com/photos/123"
+            )
 
-    def test_passing_a_non_user_url_is_error(self, api: FlickrApi) -> None:
+    def test_passing_a_non_user_url_is_error(self, flickr_api: FlickrApi) -> None:
         """
         If you pass a ``user_url`` which is a Flickr URL but not a user
         profile, it throws a ``ValueError``.
@@ -315,9 +325,9 @@ class TestEnsureUserId:
             ValueError,
             match="user_url was not the URL for a Flickr user: 'https://www.flickr.com'",
         ):
-            api.get_user(user_url="https://www.flickr.com")
+            flickr_api.get_user(user_url="https://www.flickr.com")
 
-    def test_passing_a_non_flickr_url_is_error(self, api: FlickrApi) -> None:
+    def test_passing_a_non_flickr_url_is_error(self, flickr_api: FlickrApi) -> None:
         """
         If you pass a ``user_url`` which isn't a Flickr URL, it throws
         a ``ValueError``.
@@ -326,4 +336,4 @@ class TestEnsureUserId:
             ValueError,
             match="user_url was not the URL for a Flickr user: 'https://www.example.com'",
         ):
-            api.get_user(user_url="https://www.example.com")
+            flickr_api.get_user(user_url="https://www.example.com")
