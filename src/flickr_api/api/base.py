@@ -118,7 +118,7 @@ class HttpxImplementation(FlickrApi):
     and ``tenacity`` for retrying failed API calls.
     """
 
-    def __init__(self, *, client: httpx.Client) -> None:
+    def __init__(self, client: httpx.Client) -> None:
         """
         Create an API from an ``httpx`` client.
 
