@@ -12,6 +12,7 @@ import pytest
 from data import FlickrUserIds
 from flickr_api import (
     FlickrApi,
+    ResourceNotFound,
     UnrecognisedFlickrApiException,
     UserDeleted,
 )
@@ -337,3 +338,51 @@ class TestEnsureUserId:
             match="user_url was not the URL for a Flickr user: 'https://www.example.com'",
         ):
             flickr_api.get_user(user_url="https://www.example.com")
+
+
+class TestGetProfile:
+    """
+    Tests for `UserMethods.get_profile()`.
+    """
+
+    def test_get_public_profile_info(self, flickr_api: FlickrApi) -> None:
+        """
+        Get the profile information about a public user.
+        """
+        profile = flickr_api.get_profile(user_id="66956608@N06")
+
+        assert profile == {
+            "id": "66956608@N06",
+            "join_date": datetime(2004, 2, 10, 20, 0, 0, tzinfo=timezone.utc),
+            "occupation": None,
+            "hometown": "San Francisco",
+            "showcase_album_id": "72157677399602224",
+            "showcase_album_title": "Profile Showcase",
+            "first_name": "Flickr",
+            "last_name": None,
+            "email": None,
+            "profile_description": 'Welcome to the official Flickr account on Flickr.   Follow us to learn about new exciting things happening in Flickr\'s community, the product, and the team here, and also find us on social media - we are on Facebook, Twitter, Instagram and anywhere else! (See links below).  For any site and customer service-related issues, go here: <a href="https://help.flickr.com/" rel="noreferrer nofollow">help.flickr.com/</a>  Make sure to check out the <a href="https://blog.flickr.net/en" rel="noreferrer nofollow">Flickr Blog</a> where you can find features on some of our favorite photographers, events, product updates and more!  If you\'d like your work featured by Flickr feel free to join our official groups:  <a href="https://www.flickr.com/groups/flickrsocialmedia/">www.flickr.com/groups/flickrsocialmedia/</a> <a href="https://www.flickr.com/groups/flickr10photowalks/">www.flickr.com/groups/flickr10photowalks/</a>',
+            "city": None,
+            "country": None,
+            "facebook": "flickr",
+            "twitter": "Flickr",
+            "tumblr": "flickr",
+            "instagram": "flickr",
+            "pinterest": "flickr",
+        }
+
+    def test_get_private_profile_info(self, flickr_oauth_api: FlickrApi) -> None:
+        """
+        If you're logged in as a user, you can see their email address.
+        """
+        profile = flickr_oauth_api.get_profile(user_id="197130754@N07")
+
+        assert profile["email"] == "hello@flickr.org"
+
+    def test_get_nonexistent_user_is_error(self, flickr_oauth_api: FlickrApi) -> None:
+        """
+        Looking up the profile information of a user who doesn't exist
+        is an error.
+        """
+        with pytest.raises(ResourceNotFound):
+            flickr_oauth_api.get_profile(user_id="does_not_exist")

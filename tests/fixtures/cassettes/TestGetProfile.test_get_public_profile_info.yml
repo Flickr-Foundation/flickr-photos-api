@@ -1,0 +1,75 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - Close
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api <hello@flickr.org>
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.profile.getProfile&user_id=66956608%40N06
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<profile
+        id=\"66956608@N06\" nsid=\"66956608@N06\" join_date=\"1076443200\" occupation=\"\"
+        hometown=\"San Francisco\" showcase_set=\"72157677399602224\" showcase_set_title=\"Profile
+        Showcase\" first_name=\"Flickr\" last_name=\"\" profile_description=\"Welcome
+        to the official Flickr account on Flickr. \n\nFollow us to learn about new
+        exciting things happening in Flickr&#039;s community, the product, and the
+        team here, and also find us on social media - we are on Facebook, Twitter,
+        Instagram and anywhere else! (See links below).\n\nFor any site and customer
+        service-related issues, go here: &lt;a href=&quot;https://help.flickr.com/&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;help.flickr.com/&lt;/a&gt;\n\nMake
+        sure to check out the &lt;a href=&quot;https://blog.flickr.net/en&quot; rel=&quot;noreferrer
+        nofollow&quot;&gt;Flickr Blog&lt;/a&gt; where you can find features on some
+        of our favorite photographers, events, product updates and more!\n\nIf you&#039;d
+        like your work featured by Flickr feel free to join our official groups:\n\n&lt;a
+        href=&quot;https://www.flickr.com/groups/flickrsocialmedia/&quot;&gt;www.flickr.com/groups/flickrsocialmedia/&lt;/a&gt;\n&lt;a
+        href=&quot;https://www.flickr.com/groups/flickr10photowalks/&quot;&gt;www.flickr.com/groups/flickr10photowalks/&lt;/a&gt;\"
+        website=\"https://www.flickr.com\" city=\"\" country=\"\" facebook=\"flickr\"
+        twitter=\"Flickr\" tumblr=\"flickr\" instagram=\"flickr\" pinterest=\"flickr\"
+        />\n</rsp>\n"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 17 Jun 2025 11:27:45 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 7441f523d9aa7a75eb213f3a670e46ac.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 7julZbAQpWIBw1goYm7yZZOgQW5Lgez4EOa55_O04PM8OSKoGJkVfA==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1478'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 17-Jul-2025 11:27:45 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 17-Jul-2025 11:27:45 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-68515131-22e32da11fe01a967a5d8eb1
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.6.186
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -9,7 +9,7 @@ from nitrate.xml import find_optional_text, find_required_elem, find_required_te
 
 from .base import FlickrApi
 from ..exceptions import ResourceNotFound, UserDeleted
-from ..models import UserInfo
+from ..models import ProfileInfo, UserInfo
 from ..parsers import fix_realname, parse_timestamp
 
 
@@ -259,3 +259,47 @@ class UserMethods(FlickrApi):
         user_id = find_required_elem(lookup_resp, path=".//user").attrib["id"]
 
         return user_id
+
+    def get_profile(
+        self, *, user_id: str | None = None, user_url: str | None = None
+    ) -> ProfileInfo:
+        """
+        Return the given user's profile information.
+
+        Note: this can return information about now-deleted users
+
+        See https://www.flickr.com/services/api/flickr.profile.getProfile.html
+        """
+        user_id = self._ensure_user_id(user_id=user_id, user_url=user_url)
+
+        profile_resp = self.call(
+            method="flickr.profile.getProfile",
+            params={"user_id": user_id},
+            exceptions={
+                "1": ResourceNotFound(f"Could not find user with ID: {user_id!r}")
+            },
+        )
+
+        # The response is a single <profile> element which includes
+        # all the fields we want as attributes.
+        profile_elem = find_required_elem(profile_resp, path=".//profile")
+
+        return {
+            "id": profile_elem.attrib["id"],
+            "join_date": parse_timestamp(profile_elem.attrib["join_date"]),
+            "occupation": profile_elem.attrib["occupation"] or None,
+            "hometown": profile_elem.attrib["hometown"] or None,
+            "showcase_album_id": profile_elem.attrib["showcase_set"],
+            "showcase_album_title": profile_elem.attrib["showcase_set_title"],
+            "first_name": profile_elem.attrib["first_name"] or None,
+            "last_name": profile_elem.attrib["last_name"] or None,
+            "email": profile_elem.attrib.get("email"),
+            "profile_description": profile_elem.attrib["profile_description"] or None,
+            "city": profile_elem.attrib["city"] or None,
+            "country": profile_elem.attrib["country"] or None,
+            "facebook": profile_elem.attrib["facebook"] or None,
+            "twitter": profile_elem.attrib["twitter"] or None,
+            "tumblr": profile_elem.attrib["tumblr"] or None,
+            "instagram": profile_elem.attrib["instagram"] or None,
+            "pinterest": profile_elem.attrib["pinterest"] or None,
+        }

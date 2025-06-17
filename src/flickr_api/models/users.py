@@ -6,6 +6,9 @@ from datetime import datetime
 import typing
 
 
+__all__ = ["ProfileInfo", "User", "UserInfo"]
+
+
 class User(typing.TypedDict):
     """
     Basic information about a user.  This is enough to identify the
@@ -60,3 +63,31 @@ class UserInfo(User):
     # by the type system.
     has_pro_account: bool
     pro_account_expires: typing.NotRequired[datetime]
+
+
+class ProfileInfo(typing.TypedDict):
+    """
+    A user's profile information.
+    """
+
+    id: str
+    join_date: datetime
+
+    occupation: str | None
+    hometown: str | None
+
+    showcase_album_id: str
+    showcase_album_title: str
+
+    first_name: str | None
+    last_name: str | None
+    email: str | None
+    profile_description: str | None
+    city: str | None
+    country: str | None
+
+    facebook: str | None
+    twitter: str | None
+    tumblr: str | None
+    instagram: str | None
+    pinterest: str | None
