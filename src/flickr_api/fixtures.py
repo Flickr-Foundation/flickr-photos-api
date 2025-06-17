@@ -15,13 +15,14 @@ import os
 import typing
 
 import httpx
+from nitrate.cassettes import cassette_name
 import pytest
 import vcr
 
 from flickr_api import FlickrApi
 
 
-__all__ = ["flickr_api", "flickr_oauth_api"]
+__all__ = ["cassette_name", "flickr_api", "flickr_oauth_api"]
 
 
 def check_for_invalid_api_key(response: typing.Any) -> typing.Any:

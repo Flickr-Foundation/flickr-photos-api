@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.9.1 - 2025-06-17
+
+Fix the instructions for using the new fixtures.
+
 ## v3.9 - 2025-06-17
 
 This adds a new subpackage `flickr-photos-api[fixtures]` which has two pytest fixtures to use in tests:
@@ -14,8 +18,9 @@ To use the new fixtures, add the following lines to your `conftest.py`:
 
 ```python
 from flickr_api.fixtures import flickr_api, flickr_oauth_api
+from nitrate.cassettes import cassette_name
 
-__all__ = ["flickr_api", "flickr_oauth_api"]
+__all__ = ["cassette_name", "flickr_api", "flickr_oauth_api"]
 ```
 
 These fixtures have instructions explaining how to set up credentials when you want to record new Flickr API interactions.
