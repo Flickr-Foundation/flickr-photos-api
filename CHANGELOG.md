@@ -18,6 +18,8 @@ from flickr_api.fixtures import flickr_api, flickr_oauth_api
 __all__ = ["flickr_api", "flickr_oauth_api"]
 ```
 
+These fixtures have instructions explaining how to set up credentials when you want to record new Flickr API interactions.
+
 ## v3.8.4 - 2025-06-09
 
 Fix a bug in the data returned from `list_commons_institutions()`.
