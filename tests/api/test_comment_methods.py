@@ -60,19 +60,19 @@ class TestPostComment:
 
     def test_can_successfully_post_a_comment(
         self,
-        comments_api: FlickrApi,
+        flickr_oauth_api: FlickrApi,
     ) -> None:
         """
         You can post a comment, and posting is idempotent.
         """
-        comment_id = comments_api.post_comment(
+        comment_id = flickr_oauth_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
         )
 
         # Check that if we double-post, we get the same comment ID back --
         # that is, that commenting is an idempotent operation.
-        comment_id2 = comments_api.post_comment(
+        comment_id2 = flickr_oauth_api.post_comment(
             photo_id="53373661077",
             comment_text="This is a comment posted by the Flickypedia unit tests",
         )
@@ -80,30 +80,30 @@ class TestPostComment:
         assert comment_id == comment_id2
 
     def test_throws_if_not_allowed_to_post_comment(
-        self, flickr_api: FlickrApi, comments_api: FlickrApi
+        self, flickr_api: FlickrApi, flickr_oauth_api: FlickrApi
     ) -> None:
         """
         If you try to comment on a photo but you're not allowed to,
         you get an ``InsufficientPermissionsToComment`` error.
         """
         with pytest.raises(InsufficientPermissionsToComment):
-            comments_api.post_comment(
+            flickr_oauth_api.post_comment(
                 photo_id="53374767803",
                 comment_text="This is a comment on a photo where I’ve disabled commenting",
             )
 
     def test_throws_if_invalid_oauth_signature(
-        self, flickr_api: FlickrApi, comments_api: FlickrApi, cassette_name: str
+        self, flickr_api: FlickrApi, flickr_oauth_api: FlickrApi, cassette_name: str
     ) -> None:
         """
         If you don't pass a valid OAuth signature, trying to post
         a comment will fail with a ``httpx.HTTPStatusError``.
         """
-        assert isinstance(comments_api.client, OAuth1Client)
-        comments_api.client.token_secret = None
+        assert isinstance(flickr_oauth_api.client, OAuth1Client)
+        flickr_oauth_api.client.token_secret = None
 
         with pytest.raises(httpx.HTTPStatusError):
-            comments_api.post_comment(
+            flickr_oauth_api.post_comment(
                 photo_id="53374767803",
                 comment_text="This is a comment that uses bogus OAuth 1.0a credentials",
             )

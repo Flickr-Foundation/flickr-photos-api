@@ -56,12 +56,12 @@ class TestInvalidPhotoIds:
             flickr_api.list_all_comments(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_post_comment(self, comments_api: FlickrApi, photo_id: str) -> None:
+    def test_post_comment(self, flickr_oauth_api: FlickrApi, photo_id: str) -> None:
         """
         Posting a comment to an invalid photo ID throws a ``ValueError``.
         """
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            comments_api.post_comment(
+            flickr_oauth_api.post_comment(
                 photo_id=photo_id, comment_text="This comment is for testing purposes"
             )
 
