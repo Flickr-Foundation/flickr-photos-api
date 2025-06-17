@@ -6,10 +6,7 @@ from authlib.integrations.httpx_client import OAuth1Client
 import httpx
 import pytest
 
-from flickr_api import (
-    FlickrApi,
-    InsufficientPermissionsToComment,
-)
+from flickr_api import FlickrApi, InsufficientPermissionsToComment
 
 
 class TestListAllComments:
