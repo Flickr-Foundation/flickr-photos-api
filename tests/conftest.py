@@ -27,7 +27,7 @@ def user_agent() -> str:
     return "flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api; hello@flickr.org)"
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
     """
     Creates an instance of the FlickrApi class for use in tests.
