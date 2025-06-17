@@ -2,30 +2,14 @@
 Tests for ``flickr_api.downloader``.
 """
 
-from collections.abc import Iterator
 import hashlib
 from pathlib import Path
 import time
 
 import httpx
 import pytest
-import vcr
 
 from flickr_api import download_file
-
-
-@pytest.fixture
-def vcr_cassette(cassette_name: str) -> Iterator[str]:
-    """
-    A basic pytest fixture to save responses to the cassette directory,
-    so we don't download the file every time.
-    """
-    with vcr.use_cassette(
-        cassette_name,
-        cassette_library_dir="tests/fixtures/cassettes",
-        decode_compressed_response=True,
-    ):
-        yield cassette_name
 
 
 def test_download_photo(vcr_cassette: str, tmp_path: Path) -> None:
