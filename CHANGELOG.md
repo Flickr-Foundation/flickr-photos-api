@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v3.9 - 2025-06-17
+
+This adds a new subpackage `flickr-photos-api[fixtures]` which has two pytest fixtures to use in tests:
+
+*   `flickr_api` returns an instance of `FlickrApi` which authenticates using an API key
+*   `flickr_oauth_api` returns an instance of `FlickrApi` which authenticates using OAuth
+
+These fixtures record the request/response as "cassettes" using [vcrpy](https://vcrpy.readthedocs.io/en/latest/).
+These cassettes can be checked into a Git repo, so you can replay the tests offline or when you don't have credentials available (e.g. in CI).
+
+To use the new fixtures, add the following lines to your `conftest.py`:
+
+```python
+from flickr_api.fixtures import flickr_api, flickr_oauth_api
+
+__all__ = ["flickr_api", "flickr_oauth_api"]
+```
+
 ## v3.8.4 - 2025-06-09
 
 Fix a bug in the data returned from `list_commons_institutions()`.
