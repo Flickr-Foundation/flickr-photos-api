@@ -107,18 +107,20 @@ class TestNonExistentPhotos:
     # I need to remember how to set up that fixture with commenting perms.
 
 
-def test_it_throws_if_bad_auth(vcr_cassette: str, user_agent: str) -> None:
+def test_it_throws_if_bad_auth(vcr_cassette: str) -> None:
     """
     If you call the Flickr API with a non-existent key, you get
     a ``FlickrApiException``.
     """
-    api = FlickrApi.with_api_key(api_key="doesnotexist", user_agent=user_agent)
+    api = FlickrApi.with_api_key(
+        api_key="doesnotexist", user_agent="flickr-photos-api <hello@flickr.org>"
+    )
 
     with pytest.raises(FlickrApiException):
         api.get_user(user_url="https://www.flickr.com/photos/flickr/")
 
 
-def test_empty_api_key_is_error(user_agent: str) -> None:
+def test_empty_api_key_is_error() -> None:
     """
     If you create a Flickr API client with an empty string as the key,
     you get a ``ValueError``.
@@ -126,15 +128,19 @@ def test_empty_api_key_is_error(user_agent: str) -> None:
     with pytest.raises(
         ValueError, match="Cannot create a client with an empty string as the API key"
     ):
-        FlickrApi.with_api_key(api_key="", user_agent=user_agent)
+        FlickrApi.with_api_key(
+            api_key="", user_agent="flickr-photos-api <hello@flickr.org>"
+        )
 
 
-def test_invalid_api_key_is_error(user_agent: str) -> None:
+def test_invalid_api_key_is_error() -> None:
     """
     If you call the Flickr API with a non-empty string which isn't
     a valid API key (judged by Flickr), you get an ``InvalidApiKey`` error.
     """
-    api = FlickrApi.with_api_key(api_key="<bad key>", user_agent=user_agent)
+    api = FlickrApi.with_api_key(
+        api_key="<bad key>", user_agent="flickr-photos-api <hello@flickr.org>"
+    )
 
     with pytest.raises(InvalidApiKey) as err:
         api.get_single_photo(photo_id="52578982111")
