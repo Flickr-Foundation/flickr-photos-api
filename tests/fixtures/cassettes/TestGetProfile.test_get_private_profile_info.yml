@@ -1,0 +1,72 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - Close
+      content-length:
+      - '0'
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api <hello@flickr.org>
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.profile.getProfile&user_id=197130754%40N07
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<profile
+        id=\"197130754@N07\" nsid=\"197130754@N07\" join_date=\"1670863244\" occupation=\"Preservin&#039;
+        Flickr\" hometown=\"\" showcase_set=\"72177720304396582\" showcase_set_title=\"Profile
+        Showcase\" first_name=\"Flickr\" last_name=\"Foundation\" email=\"hello@flickr.org\"
+        profile_description=\"Hi. We&#039;re the &lt;strong&gt;&lt;a href=&quot;https://flickr.org&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;Flickr Foundation&lt;/a&gt;&lt;/strong&gt;.\n\nOne
+        hundred years from now, future generations will have access to the unique
+        visual content available on Flickr today as a result of the Flickr Foundation\u2019s
+        efforts to protect and preserve it.\n\nWe also operate a little robot called
+        &lt;a href=&quot;https://flickr.com/people/flickypedia&quot;&gt;FlickypediaBot&lt;/a&gt;.
+        This leaves comments in Flickr on behalf of people who move Flickr photos
+        to Wikimedia Commons using a tool we built called Flickypedia.\" website=\"https://flickr.org\"
+        city=\"\" country=\"\" facebook=\"\" twitter=\"flickrfdn\" tumblr=\"\" instagram=\"\"
+        pinterest=\"\" />\n</rsp>\n"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 17 Jun 2025 11:29:58 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 a4fe4605acede182bb5c399b9c69b8c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - EjbXH4UjsIeO2bSC_LUCuVsGo_7wAOuDPNO339HTZwiP9dt53A6Ojg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1084'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 17-Jul-2025 11:29:58 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 17-Jul-2025 11:29:58 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-685151b6-4fd9e05d32c88e4243bf0c53
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.23.0
+    status:
+      code: 200
+      message: OK
+version: 1

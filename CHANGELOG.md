@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.10 - 2025-06-17
+
+Add a new method `get_profile()` which returns profile information about a user.
+
+If you are using an API client authenticated as that user, this includes their email address.
+
 ## v3.9.1 - 2025-06-17
 
 Fix the instructions for using the new fixtures.

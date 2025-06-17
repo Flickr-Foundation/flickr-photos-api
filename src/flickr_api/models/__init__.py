@@ -15,7 +15,7 @@ from .photo import (
     Usage,
 )
 from .sizes import Size
-from .users import User, UserInfo
+from .users import ProfileInfo, User, UserInfo
 
 
 __all__ = [
@@ -40,6 +40,7 @@ __all__ = [
     "NumericLocation",
     "Person",
     "PhotoContext",
+    "ProfileInfo",
     "Rotation",
     "SafetyLevel",
     "SinglePhotoInfo",
