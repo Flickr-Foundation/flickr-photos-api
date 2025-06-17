@@ -32,17 +32,17 @@ class TestListAllComments:
         ],
     )
     def test_finds_all_comments(
-        self, api: FlickrApi, photo_id: str, count: int
+        self, flickr_api: FlickrApi, photo_id: str, count: int
     ) -> None:
         """
         It gets all the comments on a photo, even if the photo has
         a lot of comments.
         """
-        comments = api.list_all_comments(photo_id=photo_id)
+        comments = flickr_api.list_all_comments(photo_id=photo_id)
 
         assert len(comments) == count
 
-    def test_if_no_realname_then_empty(self, api: FlickrApi) -> None:
+    def test_if_no_realname_then_empty(self, flickr_api: FlickrApi) -> None:
         """
         If the comment author doesn't have a real name, then the
         ``realname`` property in the result is ``None``.
@@ -51,7 +51,7 @@ class TestListAllComments:
         #
         # The ``author_realname`` attribute in the response is
         # an empty string, which we should map to ``None``.
-        comments = api.list_all_comments(photo_id="40373414385")
+        comments = flickr_api.list_all_comments(photo_id="40373414385")
 
         assert comments[0]["author"]["realname"] is None
 
@@ -83,7 +83,7 @@ class TestPostComment:
         assert comment_id == comment_id2
 
     def test_throws_if_not_allowed_to_post_comment(
-        self, api: FlickrApi, comments_api: FlickrApi
+        self, flickr_api: FlickrApi, comments_api: FlickrApi
     ) -> None:
         """
         If you try to comment on a photo but you're not allowed to,
@@ -96,7 +96,7 @@ class TestPostComment:
             )
 
     def test_throws_if_invalid_oauth_signature(
-        self, api: FlickrApi, comments_api: FlickrApi, cassette_name: str
+        self, flickr_api: FlickrApi, comments_api: FlickrApi, cassette_name: str
     ) -> None:
         """
         If you don't pass a valid OAuth signature, trying to post

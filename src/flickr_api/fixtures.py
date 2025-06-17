@@ -33,7 +33,12 @@ def check_for_invalid_api_key(response: typing.Any) -> typing.Any:
 
     If so, give the developer an instruction explaining what to do next.
     """
-    is_error_response = response["body"]["string"] == (
+    try:
+        body: bytes = response["body"]["string"]
+    except KeyError:
+        body = response["content"]
+
+    is_error_response = body == (
         b'<?xml version="1.0" encoding="utf-8" ?>\n'
         b'<rsp stat="fail">\n\t'
         b'<err code="100" msg="Invalid API Key (Key has invalid format)" />\n'

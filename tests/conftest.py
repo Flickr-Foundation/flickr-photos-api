@@ -4,7 +4,6 @@ Fixtures and utilities to use in the tests.
 
 from collections.abc import Iterator
 import json
-import os
 
 from authlib.integrations.httpx_client import OAuth1Client
 import keyring
@@ -14,6 +13,7 @@ import pytest
 import vcr
 
 from flickr_api import FlickrApi
+from flickr_api.fixtures import flickr_api, flickr_oauth_api
 
 
 @pytest.fixture
@@ -25,26 +25,6 @@ def user_agent() -> str:
     to provide a User-Agent header.
     """
     return "flickr-photos-api/dev (https://github.com/Flickr-Foundation/flickr-photos-api; hello@flickr.org)"
-
-
-@pytest.fixture
-def api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
-    """
-    Creates an instance of the FlickrApi class for use in tests.
-
-    This instance of the API will record its interactions as "cassettes"
-    using vcr.py, which can be replayed offline (e.g. in CI tests).
-    """
-    with vcr.use_cassette(
-        cassette_name,
-        cassette_library_dir="tests/fixtures/cassettes",
-        filter_query_parameters=["api_key"],
-        decode_compressed_response=True,
-    ):
-        yield FlickrApi.with_api_key(
-            api_key=os.environ.get("FLICKR_API_KEY", "<REDACTED>"),
-            user_agent=user_agent,
-        )
 
 
 def get_optional_password(username: str, password: str, *, default: str) -> str:
@@ -95,9 +75,17 @@ def comments_api(cassette_name: str, user_agent: str) -> Iterator[FlickrApi]:
             signature_type="QUERY",
             token=stored_token.get("oauth_token"),
             token_secret=stored_token.get("oauth_token_secret"),
+            headers={},
         )
 
-        yield FlickrApi(client=client)
+        yield FlickrApi(client)
 
 
-__all__ = ["cassette_name", "vcr_cassette", "user_agent", "api", "comments_api"]
+__all__ = [
+    "cassette_name",
+    "flickr_api",
+    "flickr_oauth_api",
+    "vcr_cassette",
+    "user_agent",
+    "comments_api",
+]

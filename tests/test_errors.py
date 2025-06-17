@@ -31,29 +31,29 @@ class TestInvalidPhotoIds:
     """
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
+    def test_get_single_photo(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Looking up a single photo with an invalid ID throws a ``ValueError``.
         """
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            api.get_single_photo(photo_id=photo_id)
+            flickr_api.get_single_photo(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+    def test_get_photo_contexts(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Getting the contexts of a photo with an invalid ID throws
         a ``ValueError``.
         """
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            api.get_photo_contexts(photo_id=photo_id)
+            flickr_api.get_photo_contexts(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
-    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+    def test_list_all_comments(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Looking up comments for an invalid photo ID throws a ``ValueError``.
         """
         with pytest.raises(ValueError, match="Not a Flickr photo ID"):
-            api.list_all_comments(photo_id=photo_id)
+            flickr_api.list_all_comments(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.Invalid)
     def test_post_comment(self, comments_api: FlickrApi, photo_id: str) -> None:
@@ -75,31 +75,31 @@ class TestNonExistentPhotos:
     """
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
-    def test_get_single_photo(self, api: FlickrApi, photo_id: str) -> None:
+    def test_get_single_photo(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Looking up a single photo which doesn't exist throws
         ``ResourceNotFound``.
         """
         with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
-            api.get_single_photo(photo_id=photo_id)
+            flickr_api.get_single_photo(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
-    def test_get_photo_contexts(self, api: FlickrApi, photo_id: str) -> None:
+    def test_get_photo_contexts(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Getting the contexts of a photo which doesn't exist throws
         ``ResourceNotFound``.
         """
         with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
-            api.get_photo_contexts(photo_id=photo_id)
+            flickr_api.get_photo_contexts(photo_id=photo_id)
 
     @pytest.mark.parametrize("photo_id", FlickrPhotoIds.NonExistent)
-    def test_list_all_comments(self, api: FlickrApi, photo_id: str) -> None:
+    def test_list_all_comments(self, flickr_api: FlickrApi, photo_id: str) -> None:
         """
         Listing the comments on a photo which doesn't exist throws
         ``ResourceNotFound``.
         """
         with pytest.raises(ResourceNotFound, match="Could not find photo with ID"):
-            api.list_all_comments(photo_id=photo_id)
+            flickr_api.list_all_comments(photo_id=photo_id)
 
     # TODO: Add test that posting comments to a non-existent photo
     # throws ``ResourceNotFound``.
@@ -202,32 +202,34 @@ class FlakyClient:
         ),
     ],
 )
-def test_retryable_exceptions_are_retried(api: FlickrApi, exc: Exception) -> None:
+def test_retryable_exceptions_are_retried(
+    flickr_api: FlickrApi, exc: Exception
+) -> None:
     """
     If you get a retryable exception, it gets retried and you get
     the correct response.
     """
-    api.client = FlakyClient(underlying=api.client, exc=exc)  # type: ignore
+    flickr_api.client = FlakyClient(underlying=flickr_api.client, exc=exc)  # type: ignore
 
-    photo = api.get_single_photo(photo_id="32812033543")
+    photo = flickr_api.get_single_photo(photo_id="32812033543")
 
     assert photo["title"] == "Puppy Kisses"
 
 
-def test_an_unexplained_connecterror_fails(api: FlickrApi) -> None:
+def test_an_unexplained_connecterror_fails(flickr_api: FlickrApi) -> None:
     """
     If you get an unexpected/unexplained error from the underlying
     HTTP call, it's immediately raised.
     """
-    api.client = FlakyClient(
-        underlying=api.client, exc=httpx.ConnectError(message="BOOM!")
+    flickr_api.client = FlakyClient(
+        underlying=flickr_api.client, exc=httpx.ConnectError(message="BOOM!")
     )  # type: ignore
 
     with pytest.raises(httpx.ConnectError):
-        api.get_single_photo(photo_id="32812033543")
+        flickr_api.get_single_photo(photo_id="32812033543")
 
 
-def test_retries_5xx_error(api: FlickrApi) -> None:
+def test_retries_5xx_error(flickr_api: FlickrApi) -> None:
     """
     If you get a single 5xx error, it gets retried and you get the
     correct response.
@@ -235,12 +237,12 @@ def test_retries_5xx_error(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add a 500 response as the first response,
     # then we want to see it make a second request to retry it.
-    photo = api.get_single_photo(photo_id="32812033543")
+    photo = flickr_api.get_single_photo(photo_id="32812033543")
 
     assert photo["title"] == "Puppy Kisses"
 
 
-def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
+def test_a_persistent_5xx_error_is_raised(flickr_api: FlickrApi) -> None:
     """
     If you keep getting 5xx errors, eventually the retrying gives up
     and throws the error.
@@ -249,12 +251,12 @@ def test_a_persistent_5xx_error_is_raised(api: FlickrApi) -> None:
     # the 500 response from the previous test so that there were more
     # than it would retry.
     with pytest.raises(httpx.HTTPStatusError) as err:
-        api.get_single_photo(photo_id="32812033543")
+        flickr_api.get_single_photo(photo_id="32812033543")
 
     assert err.value.response.status_code == 500
 
 
-def test_retries_invalid_xml_error(api: FlickrApi) -> None:
+def test_retries_invalid_xml_error(flickr_api: FlickrApi) -> None:
     """
     If you get a single invalid XML response, it gets retried and you
     get the correct response.
@@ -262,12 +264,12 @@ def test_retries_invalid_xml_error(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    photo = api.get_single_photo(photo_id="32812033543")
+    photo = flickr_api.get_single_photo(photo_id="32812033543")
 
     assert photo["title"] == "Puppy Kisses"
 
 
-def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
+def test_a_persistent_invalid_xml_error_is_raised(flickr_api: FlickrApi) -> None:
     """
     If you keep getting invalid XML, eventually the retrying gives up
     and throws the error.
@@ -276,10 +278,10 @@ def test_a_persistent_invalid_xml_error_is_raised(api: FlickrApi) -> None:
     # the invalid XML from the previous test so that there were more
     # than it would retry.
     with pytest.raises(InvalidXmlException):
-        api.get_single_photo(photo_id="32812033543")
+        flickr_api.get_single_photo(photo_id="32812033543")
 
 
-def test_retries_error_code_201(api: FlickrApi) -> None:
+def test_retries_error_code_201(flickr_api: FlickrApi) -> None:
     """
     If you get a single error code 201 response, it gets retried and you
     get the correct response.
@@ -287,12 +289,12 @@ def test_retries_error_code_201(api: FlickrApi) -> None:
     # The cassette for this test was constructed manually: I edited
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
-    photo = api.get_single_photo(photo_id="32812033543")
+    photo = flickr_api.get_single_photo(photo_id="32812033543")
 
     assert photo["title"] == "Puppy Kisses"
 
 
-def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
+def test_a_persistent_error_201_is_raised(flickr_api: FlickrApi) -> None:
     """
     If you keep getting error code 201, eventually the retrying gives up
     and throws the error.
@@ -301,7 +303,7 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
     # an existing cassette to add the invalid XML as the first response,
     # then we want to see it make a second request to retry it.
     with pytest.raises(UnrecognisedFlickrApiException) as exc:
-        api.get_single_photo(photo_id="32812033543")
+        flickr_api.get_single_photo(photo_id="32812033543")
 
     assert exc.value.args[0] == {
         "code": "201",
@@ -309,24 +311,24 @@ def test_a_persistent_error_201_is_raised(api: FlickrApi) -> None:
     }
 
 
-def test_an_unrecognised_error_is_generic_exception(api: FlickrApi) -> None:
+def test_an_unrecognised_error_is_generic_exception(flickr_api: FlickrApi) -> None:
     """
     A completely unrecognised error code from the Flickr API is thrown
     as a ``UnrecognisedFlickrApiException``.
     """
     with pytest.raises(UnrecognisedFlickrApiException) as exc:
-        api.call(method="flickr.test.null")
+        flickr_api.call(method="flickr.test.null")
 
     assert exc.value.args[0]["code"] == "99"
 
 
-def test_error_code_1_is_unrecognised_if_not_found(api: FlickrApi) -> None:
+def test_error_code_1_is_unrecognised_if_not_found(flickr_api: FlickrApi) -> None:
     """
     This is a regression test for an old mistake, where we were mapping
     error code ``1`` a bit too broadly, and this call was throwing a
     ``ResourceNotFound`` exception, which is wrong.
     """
     with pytest.raises(UnrecognisedFlickrApiException) as exc:
-        api.call(method="flickr.galleries.getListForPhoto")
+        flickr_api.call(method="flickr.galleries.getListForPhoto")
 
     assert exc.value.args[0] == {"code": "1", "msg": "Required parameter missing"}
