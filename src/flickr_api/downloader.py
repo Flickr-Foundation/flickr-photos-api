@@ -20,14 +20,13 @@ def is_retryable(exc: BaseException) -> bool:
     or transient errors that might return a different result),or
     False otherwise.
     """
-    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code in {
-        403,
-        429,
-    }:
-        return True  # pragma: no cover
+    if isinstance(exc, httpx.HTTPStatusError):
+        status_code = exc.response.status_code
 
-    if isinstance(exc, httpx.RemoteProtocolError):
-        return True  # pragma: no cover
+        return status_code in {403, 429} or status_code >= 500
+
+    if isinstance(exc, httpx.RemoteProtocolError):  # pragma: no cover
+        return True
 
     # We can retry a download if it timed out.
     #
@@ -38,7 +37,7 @@ def is_retryable(exc: BaseException) -> bool:
     ):  # pragma: no cover
         return True
 
-    return False
+    return False  # pragma: no cover
 
 
 class DownloadedFile(typing.TypedDict):

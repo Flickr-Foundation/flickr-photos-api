@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.10.1 - 2025-06-18
+
+When downloading files with `download_file()`, retry HTTP 502 and other 5xx errors from Flickr.com.
+
 ## v3.10 - 2025-06-17
 
 Add a new method `get_profile()` which returns profile information about a user.
