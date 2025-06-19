@@ -1,16 +1,35 @@
 """
 Methods for getting information about licenses from the Flickr API.
+
+When Flickr adds new licenses, we add support for them as follows:
+
+*   Add a new human-readable ID in `flickr_api.models.licenses`,
+    e.g. we refer to a license as "cc-by-2.0" rather than "4"
+
+    This needs to be added to `LicenseId` and `NAME_TO_LICENSE_ID`.
+
+*   Optionally: add a new mapping to NAME_OVERRIDES, if you want to change
+    the label on the license from that supplied by the Flickr API.
+
+*   Delete all the test cassettes named `TestLicenseMethods.*` and re-run
+    the tests.
+
+You may need to regenerate the test cassettes for vcrpy, to include the
+new licenses in the response.  There's an example script for doing that
+in the ticket where we added support for CC 4.0 licenses:
+https://github.com/Flickr-Foundation/flickr-photos-api/issues/158
 """
 
 import functools
 import itertools
 import re
 import typing
+from xml.etree import ElementTree as ET
 
 from .base import FlickrApi
 from ..exceptions import LicenseNotFound, ResourceNotFound
-from ..models import License, LicenseChange, LicenseId
-from ..models.licenses import LicenseChangeEntry
+from ..models import License, LicenseChange
+from ..models.licenses import LicenseChangeEntry, NAME_TO_LICENSE_ID, NAME_OVERRIDES
 from ..parsers import parse_timestamp
 
 
@@ -33,42 +52,36 @@ class LicenseMethods(FlickrApi):
         """
         license_resp = self.call(method="flickr.photos.licenses.getInfo")
 
-        result: dict[str, License] = {}
-
-        # Add a short ID which can be used to more easily refer to this
-        # license throughout the codebase.
-        license_ids: dict[str, LicenseId] = {
-            "All Rights Reserved": "all-rights-reserved",
-            "Attribution-NonCommercial-ShareAlike License": "cc-by-nc-sa-2.0",
-            "Attribution-NonCommercial License": "cc-by-nc-2.0",
-            "Attribution-NonCommercial-NoDerivs License": "cc-by-nc-nd-2.0",
-            "Attribution License": "cc-by-2.0",
-            "Attribution-ShareAlike License": "cc-by-sa-2.0",
-            "Attribution-NoDerivs License": "cc-by-nd-2.0",
-            "No known copyright restrictions": "nkcr",
-            "United States Government Work": "usgov",
-            "Public Domain Dedication (CC0)": "cc0-1.0",
-            "Public Domain Mark": "pdm",
+        # This API returns results in the form:
+        #
+        #     <licenses>
+        #       <license
+        #         id="4"
+        #         name="CC BY 2.0"
+        #         url="https://creativecommons.org/licenses/by/2.0/"/>
+        #       <license …>
+        #       <license …>
+        #       …
+        #     </license>
+        #
+        return {
+            lic_elem.attrib["id"]: self._parse_license_elem(lic_elem)
+            for lic_elem in license_resp.findall(".//license")
         }
 
-        license_labels = {
-            "Attribution-NonCommercial-ShareAlike License": "CC BY-NC-SA 2.0",
-            "Attribution-NonCommercial License": "CC BY-NC 2.0",
-            "Attribution-NonCommercial-NoDerivs License": "CC BY-NC-ND 2.0",
-            "Attribution License": "CC BY 2.0",
-            "Attribution-ShareAlike License": "CC BY-SA 2.0",
-            "Attribution-NoDerivs License": "CC BY-ND 2.0",
-            "Public Domain Dedication (CC0)": "CC0 1.0",
-        }
+    @staticmethod
+    def _parse_license_elem(elem: ET.Element) -> License:
+        """
+        Map a <license> element from the `flickr.photos.licenses.getInfo`
+        to our nicely-typed `License` model.
+        """
+        human_readable_id = NAME_TO_LICENSE_ID[elem.attrib["name"]]
 
-        for lic in license_resp.findall(".//license"):
-            result[lic.attrib["id"]] = {
-                "id": license_ids[lic.attrib["name"]],
-                "label": license_labels.get(lic.attrib["name"], lic.attrib["name"]),
-                "url": lic.attrib["url"],
-            }
+        label = NAME_OVERRIDES.get(elem.attrib["name"], elem.attrib["name"])
 
-        return result
+        url = elem.attrib["url"]
+
+        return {"id": human_readable_id, "label": label, "url": url}
 
     @functools.cache
     def lookup_license_by_id(self, *, id: str) -> License:
