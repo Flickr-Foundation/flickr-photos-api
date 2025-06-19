@@ -74,6 +74,36 @@ class TestLicenseMethods:
                 "label": "Public Domain Mark",
                 "url": "https://creativecommons.org/publicdomain/mark/1.0/",
             },
+            "11": {
+                "id": "cc-by-4.0",
+                "label": "CC BY 4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+            },
+            "12": {
+                "id": "cc-by-sa-4.0",
+                "label": "CC BY-SA 4.0",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            },
+            "13": {
+                "id": "cc-by-nd-4.0",
+                "label": "CC BY-ND 4.0",
+                "url": "https://creativecommons.org/licenses/by-nd/4.0/",
+            },
+            "14": {
+                "id": "cc-by-nc-4.0",
+                "label": "CC BY-NC 4.0",
+                "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+            },
+            "15": {
+                "id": "cc-by-nc-sa-4.0",
+                "label": "CC BY-NC-SA 4.0",
+                "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+            },
+            "16": {
+                "id": "cc-by-nc-nd-4.0",
+                "label": "CC BY-NC-ND 4.0",
+                "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+            },
         }
 
     def test_lookup_license_by_numeric_id(self, flickr_api: FlickrApi) -> None:

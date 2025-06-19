@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v3.11 - 2025-06-19
+
 ## v3.10.1 - 2025-06-18
 
 When downloading files with `download_file()`, retry HTTP 502 and other 5xx errors from Flickr.com.
