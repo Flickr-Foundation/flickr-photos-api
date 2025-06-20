@@ -1,6 +1,12 @@
 # CHANGELOG
 
+## v3.11.1 - 2025-06-20
+
+When connecting to the Flickr API, retry `httpx.ConnectTimeout` exceptions.
+
 ## v3.11 - 2025-06-19
+
+Add support for Creative Commons 4.0 licenses, which are [now supported on Flickr.com](https://blog.flickr.net/en/2025/06/18/creative-commons-4-0-has-arrived-on-flickr/).
 
 ## v3.10.1 - 2025-06-18
 
