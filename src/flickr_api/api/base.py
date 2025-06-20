@@ -71,7 +71,7 @@ def is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code >= 500:
         return True
 
-    if isinstance(exc, httpx.ReadTimeout):
+    if isinstance(exc, (httpx.ConnectTimeout, httpx.ReadTimeout)):
         return True
 
     if isinstance(exc, InvalidXmlException):
