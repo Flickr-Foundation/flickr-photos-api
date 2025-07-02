@@ -70,15 +70,6 @@ class UserDeleted(ResourceNotFound):
         super().__init__(f"User is deleted: {user_id!r}")
 
 
-class PhotoIsPrivate(FlickrApiException):
-    """
-    Thrown when you try to look up a photo which is private.
-    """
-
-    def __init__(self, photo_id: str):
-        super().__init__(f"Photo is private: {photo_id}")
-
-
 class LicenseNotFound(FlickrApiException):
     """
     Thrown when you try to look up a license ID, but there's no such license.

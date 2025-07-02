@@ -638,7 +638,7 @@ class TestPrivatePhotos:
     def test_get_private_photo_contexts_is_error(self, flickr_api: FlickrApi) -> None:
         """
         If you get the contexts of private photo, you get
-        a `PhotoIsPrivate` error.
+        a `ResourceNotFound` error.
         """
         with pytest.raises(ResourceNotFound):
             flickr_api.get_photo_contexts(photo_id="35366357641")
