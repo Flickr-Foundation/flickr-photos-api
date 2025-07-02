@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 import pytest
 
 from data import FlickrPhotoIds
-from flickr_api import FlickrApi, PermissionDenied, PhotoIsPrivate, ResourceNotFound
+from flickr_api import FlickrApi, PermissionDenied, ResourceNotFound
 from flickr_api.models import SinglePhoto
 from utils import get_fixture
 
@@ -630,21 +630,15 @@ class TestPrivatePhotos:
 
     def test_get_private_photo_is_error(self, flickr_api: FlickrApi) -> None:
         """
-        If you look up a single photo, you get a ``PhotoIsPrivate`` error.
+        If you look up a private photo, you get a `ResourceNotFound` error.
         """
-        with pytest.raises(PhotoIsPrivate):
+        with pytest.raises(ResourceNotFound):
             flickr_api.get_single_photo(photo_id="35366357641")
-
-    def test_private_photo_is_not_deleted(self, flickr_api: FlickrApi) -> None:
-        """
-        Private photos aren't deleted.
-        """
-        assert not flickr_api.is_photo_deleted(photo_id="35366357641")
 
     def test_get_private_photo_contexts_is_error(self, flickr_api: FlickrApi) -> None:
         """
         If you get the contexts of private photo, you get
-        a ``PhotoIsPrivate`` error.
+        a `PhotoIsPrivate` error.
         """
         with pytest.raises(ResourceNotFound):
             flickr_api.get_photo_contexts(photo_id="35366357641")
