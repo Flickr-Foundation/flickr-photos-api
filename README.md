@@ -6,7 +6,7 @@ It's *not* a general-purpose Flickr API library.
 It provides a subset of Flickr API methods with the following goals:
 
 *   Provide reusable code that can be called across all our projects.
-*   Abstract away some of the details of the Flickr API -- for example, licenses are returned as complete dictionaries, rather than as the numeric license IDs returned by Flickr API methods.
+*   Keep all the details of dealing with the Flickr API in one place.
 *   Apply types to all results, so the Flickr API can be used safely in a typed context.
 
 [Flickr Foundation]: https://www.flickr.org/

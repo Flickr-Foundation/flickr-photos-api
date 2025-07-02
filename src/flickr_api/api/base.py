@@ -22,6 +22,7 @@ from ..exceptions import (
     InvalidXmlException,
     UnrecognisedFlickrApiException,
 )
+from ..retrying import is_retryable
 
 
 HttpMethod = typing.Literal["GET", "POST"]
@@ -60,56 +61,6 @@ class FlickrApi(abc.ABC):
             be thrown.
         """
         raise NotImplementedError
-
-
-def is_retryable(exc: BaseException) -> bool:
-    """
-    Returns True if this is an exception we can safely retry (i.e. flaky
-    or transient errors that might return a different result),or
-    False otherwise.
-    """
-    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code >= 500:
-        return True
-
-    if isinstance(exc, (httpx.ConnectTimeout, httpx.ReadTimeout)):
-        return True
-
-    if isinstance(exc, InvalidXmlException):
-        return True
-
-    # These are a particular set of slightly flaky errors that are hard
-    # to reproduce -- relying on matching the text of the error is a bit
-    # fragile, but that's all we get from httpx.
-    if isinstance(exc, (httpx.ReadError, httpx.ConnectError)) and exc.args == (
-        "[Errno 54] Connection reset by peer",
-    ):
-        return True
-
-    if isinstance(exc, httpx.RemoteProtocolError) and exc.args == (
-        "Server disconnected without sending a response.",
-    ):
-        return True
-
-    # Sometimes we get an error from the Flickr API like:
-    #
-    #     <err
-    #       code="201"
-    #       msg="Sorry, the Flickr API service is not currently available."
-    #     />
-    #
-    # but this indicates a flaky connection rather than a genuine failure.
-    #
-    # We've seen similar with code "0", so we match on the error message
-    # rather than the code.
-    if (
-        isinstance(exc, UnrecognisedFlickrApiException)
-        and isinstance(exc.args[0], dict)
-        and exc.args[0].get("msg")
-        == "Sorry, the Flickr API service is not currently available."
-    ):
-        return True
-
-    return False
 
 
 class HttpxImplementation(FlickrApi):
