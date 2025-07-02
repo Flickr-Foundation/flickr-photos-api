@@ -9,7 +9,7 @@ from flickr_url_parser import looks_like_flickr_photo_id
 from nitrate.xml import find_optional_text, find_required_elem, find_required_text
 
 from .license_methods import LicenseMethods
-from ..exceptions import PermissionDenied, PhotoIsPrivate, ResourceNotFound
+from ..exceptions import PermissionDenied, ResourceNotFound
 from ..models import (
     AlbumContext,
     BoundingBox,
@@ -325,7 +325,6 @@ class SinglePhotoMethods(LicenseMethods):
             params={"photo_id": photo_id},
             exceptions={
                 "1": ResourceNotFound(f"Could not find photo with ID: {photo_id!r}"),
-                "2": PhotoIsPrivate(photo_id),
             },
         )
 
@@ -482,12 +481,10 @@ class SinglePhotoMethods(LicenseMethods):
             self.call(
                 method="flickr.photos.getInfo",
                 params={"photo_id": photo_id},
-                exceptions={"1": ResourceNotFound(), "2": PhotoIsPrivate(photo_id)},
+                exceptions={"1": ResourceNotFound()},
             )
         except ResourceNotFound:
             return True
-        except PhotoIsPrivate:
-            return False
         else:
             return False
 

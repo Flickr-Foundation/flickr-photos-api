@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.11.3 - 2025-07-02
+
+Remove the `PhotoIsPrivate` exception -- if you try to look up a photo which isn't visible to you, you just get a `ResourceNotFound` error.
+
 ## v3.11.2 - 2025-07-02
 
 Refactor the retrying logic to make it more consistent between "API calls" and "downloading media files".
