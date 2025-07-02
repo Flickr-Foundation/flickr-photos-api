@@ -222,19 +222,6 @@ def test_retryable_exceptions_are_retried(
     assert photo["title"] == "Puppy Kisses"
 
 
-def test_an_unexplained_connecterror_fails(flickr_api: FlickrApi) -> None:
-    """
-    If you get an unexpected/unexplained error from the underlying
-    HTTP call, it's immediately raised.
-    """
-    flickr_api.client = FlakyClient(
-        underlying=flickr_api.client, exc=httpx.ConnectError(message="BOOM!")
-    )  # type: ignore
-
-    with pytest.raises(httpx.ConnectError):
-        flickr_api.get_single_photo(photo_id="32812033543")
-
-
 def test_retries_5xx_error(flickr_api: FlickrApi) -> None:
     """
     If you get a single 5xx error, it gets retried and you get the

@@ -10,34 +10,10 @@ import uuid
 import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception
 
+from .retrying import is_retryable
+
 
 default_client = httpx.Client(headers={"User-Agent": "flickr-photos-api"})
-
-
-def is_retryable(exc: BaseException) -> bool:
-    """
-    Returns True if this is an exception we can safely retry (i.e. flaky
-    or transient errors that might return a different result),or
-    False otherwise.
-    """
-    if isinstance(exc, httpx.HTTPStatusError):
-        status_code = exc.response.status_code
-
-        return status_code in {403, 429} or status_code >= 500
-
-    if isinstance(exc, httpx.RemoteProtocolError):  # pragma: no cover
-        return True
-
-    # We can retry a download if it timed out.
-    #
-    # There's no easy way to simulate this in tests, so we just don't
-    # test this branch -- but it's simple enough not to be a big issue.
-    if isinstance(
-        exc, (httpx.ConnectError, httpx.ConnectTimeout, httpx.ReadTimeout)
-    ):  # pragma: no cover
-        return True
-
-    return False  # pragma: no cover
 
 
 class DownloadedFile(typing.TypedDict):

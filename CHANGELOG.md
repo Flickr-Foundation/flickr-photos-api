@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.11.2 - 2025-07-02
+
+Refactor the retrying logic to make it more consistent between "API calls" and "downloading media files".
+
 ## v3.11.1 - 2025-06-20
 
 When connecting to the Flickr API, retry `httpx.ConnectTimeout` exceptions.
