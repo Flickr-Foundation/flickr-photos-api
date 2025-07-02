@@ -2,11 +2,17 @@
 Tests for `flickr_api.fixtures`.
 """
 
+import os
+
 import pytest
 
 from flickr_api import FlickrApi
 
 
+@pytest.mark.skipif(
+    "FLICKR_API_KEY" in os.environ,
+    reason="This test relies on the FLICKR_API_KEY env var not being set",
+)
 def test_using_flickr_api_fixture_without_env_var_is_error(
     flickr_api: FlickrApi,
 ) -> None:
