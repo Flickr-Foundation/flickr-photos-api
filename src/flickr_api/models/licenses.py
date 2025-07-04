@@ -2,6 +2,7 @@
 Types for the licenses used on Flickr.
 """
 
+from collections.abc import Iterable
 from datetime import datetime
 import typing
 
@@ -85,3 +86,21 @@ class LicenseChangeEntry:
 
 
 LicenseChange = LicenseChangeEntry.InitialLicense | LicenseChangeEntry.ChangedLicense
+
+
+def assert_have_all_license_ids(
+    license_ids: Iterable[LicenseId], *, label: str
+) -> None:
+    """
+    Check that a collection of license IDs includes every license ID.
+
+    This is useful if you want to ensure you have an exhaustive enumeration
+    of all license IDs, e.g. for a lookup or chart.
+    """
+    # See https://docs.python.org/3/library/typing.html#typing.get_args
+    these_license_ids = set(license_ids)
+    all_license_ids = set(typing.get_args(LicenseId))
+
+    assert these_license_ids == all_license_ids, (
+        f"Missing licenses in {label}: {', '.join(all_license_ids - these_license_ids)}"
+    )

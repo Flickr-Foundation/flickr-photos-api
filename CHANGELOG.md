@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.12.0 - 2025-07-04
+
+Add a new method `flickr_api.models.assert_have_all_license_ids` that checks a particular collection of license IDs is complete.
+
+This is useful if you want to ensure you have an exhaustive enumeration of all license IDs, e.g. for a lookup or chart.
+
 ## v3.11.3 - 2025-07-02
 
 Remove the `PhotoIsPrivate` exception -- if you try to look up a photo which isn't visible to you, you just get a `ResourceNotFound` error.

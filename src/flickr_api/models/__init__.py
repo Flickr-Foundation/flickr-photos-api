@@ -2,7 +2,7 @@ from datetime import datetime
 import typing
 
 from .contexts import AlbumContext, GalleryContext, GroupContext, PhotoContext
-from .licenses import License, LicenseId, LicenseChange
+from .licenses import assert_have_all_license_ids, License, LicenseId, LicenseChange
 from .machine_tags import MachineTags
 from .photo import (
     Editability,
@@ -19,6 +19,7 @@ from .users import ProfileInfo, User, UserInfo
 
 
 __all__ = [
+    "assert_have_all_license_ids",
     "AlbumContext",
     "BoundingBox",
     "Comment",
