@@ -10,7 +10,7 @@ from flickr_api import FlickrApi
 
 
 @pytest.mark.skipif(
-    "FLICKR_API_KEY" in os.environ,
+    os.environ.get("FLICKR_API_KEY", "") != "",
     reason="This test relies on the FLICKR_API_KEY env var not being set",
 )
 def test_using_flickr_api_fixture_without_env_var_is_error(

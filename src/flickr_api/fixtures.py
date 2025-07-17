@@ -46,6 +46,11 @@ def check_for_invalid_api_key(response: typing.Any) -> typing.Any:
     )
     skip_invalid_api_key_check = os.environ.get("SKIP_INVALID_API_KEY_CHECK") == "true"
 
+    # Note: if you get a warning from coverage that these lines aren't
+    # covered, it's because you're running tests with a FLICKR_API_KEY value
+    # set, which causes the test that checks this branch to be skipped.
+    #
+    # Unset the environment variable and this branch will be tested.
     if is_error_response and not skip_invalid_api_key_check:
         raise RuntimeError(
             "You tried to record a new call to the Flickr API, \n"
