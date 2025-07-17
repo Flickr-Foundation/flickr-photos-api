@@ -303,18 +303,32 @@ class TestEnsureUserId:
         ):
             flickr_api.get_user()
 
-    def test_passing_both_of_user_id_or_url_is_error(
+    def test_passing_both_user_id_and_url(self, flickr_api: FlickrApi) -> None:
+        """
+        If you pass `user_id` and `user_url` and they point to the same user,
+        you get that user.
+        """
+        user = flickr_api.get_user(
+            user_id="197130754@N07",
+            user_url="https://www.flickr.com/photos/flickrfoundation/",
+        )
+
+        assert user["username"] == "Flickr Foundation"
+
+    def test_passing_different_user_id_and_url_is_error(
         self, flickr_api: FlickrApi
     ) -> None:
         """
-        If you pass both ``user_id`` and ``user_url``, it throws
-        a ``TypeError``.
+        If you pass `user_id` and `user_url` and they point to different
+        users, you get an error.
         """
         with pytest.raises(
-            TypeError, match="You can only pass one of `user_id` and `user_url`!"
+            ValueError,
+            match="user_url='https://www.flickr.com/photos/66956608@N06/' points to '66956608@N06'",
         ):
             flickr_api.get_user(
-                user_id="123", user_url="https://www.flickr.com/photos/123"
+                user_id="197130754@N07",
+                user_url="https://www.flickr.com/photos/66956608@N06/",
             )
 
     def test_passing_a_non_user_url_is_error(self, flickr_api: FlickrApi) -> None:
