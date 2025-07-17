@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.12.1 - 2025-07-17
+
+Allow passing both `user_id` and `user_url` to user-related methods; previously you were only allowed to pass one.
+
+If you pass both, these methods will verify that the `user_id`/`user_url` refer to the same user.
+
 ## v3.12.0 - 2025-07-04
 
 Add a new method `flickr_api.models.assert_have_all_license_ids` that checks a particular collection of license IDs is complete.
