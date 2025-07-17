@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - Close
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api <hello@flickr.org>
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.urls.lookupUser&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fflickrfoundation%2F
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<user
+        id=\"197130754@N07\">\n\t<username>Flickr Foundation</username>\n</user>\n</rsp>\n"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 17 Jul 2025 13:18:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 8dbddccb44fea3c0ae7cceef434a136a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - VIh3-y2DWIyS1WNV3z9n0I_uHRVomFyw_UGHLOXQlumWx48sV0XaFg==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '137'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Sat, 16-Aug-2025 13:18:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 16-Aug-2025 13:18:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-6878f817-3d29845e54d613cc0b42236a
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.41.202
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - Close
+      cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D
+      host:
+      - api.flickr.com
+      user-agent:
+      - flickr-photos-api <hello@flickr.org>
+    method: GET
+    uri: https://api.flickr.com/services/rest/?method=flickr.people.getInfo&user_id=197130754%40N07
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<rsp stat=\"ok\">\n<person
+        id=\"197130754@N07\" nsid=\"197130754@N07\" ispro=\"1\" is_deleted=\"0\" iconserver=\"65535\"
+        iconfarm=\"66\" path_alias=\"flickrfoundation\" has_stats=\"0\" pro_badge=\"standard\"
+        expire=\"2005358400\" has_adfree=\"0\" has_free_standard_shipping=\"0\" has_free_educational_resources=\"0\">\n\t<username>Flickr
+        Foundation</username>\n\t<realname>Flickr Foundation</realname>\n\t<location
+        />\n\t<description>Hi. We&#039;re the &lt;strong&gt;&lt;a href=&quot;https://flickr.org&quot;
+        rel=&quot;noreferrer nofollow&quot;&gt;Flickr Foundation&lt;/a&gt;&lt;/strong&gt;.\n\nOne
+        hundred years from now, future generations will have access to the unique
+        visual content available on Flickr today as a result of the Flickr Foundation\u2019s
+        efforts to protect and preserve it.\n\nWe also operate a little robot called
+        &lt;a href=&quot;https://flickr.com/people/flickypedia&quot;&gt;FlickypediaBot&lt;/a&gt;.
+        This leaves comments in Flickr on behalf of people who move Flickr photos
+        to Wikimedia Commons using a tool we built called Flickypedia.</description>\n\t<photosurl>https://www.flickr.com/photos/flickrfoundation/</photosurl>\n\t<profileurl>https://www.flickr.com/people/flickrfoundation/</profileurl>\n\t<mobileurl>https://www.flickr.com/photos/flickrfoundation/</mobileurl>\n\t<photos>\n\t\t<firstdatetaken>2022-05-04
+        14:05:20</firstdatetaken>\n\t\t<firstdate>1670863424</firstdate>\n\t\t<count>553</count>\n\t</photos>\n</person>\n</rsp>\n"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Thu, 17 Jul 2025 13:18:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 000b6e373a5d3beff463a36c3e473e6a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - YxJJ8MePVzPzgR-O7BopvBjEyVP77aATvzAKiwhggqp_dWupl29b6g==
+      X-Amz-Cf-Pop:
+      - LHR5-P1
+      X-Cache:
+      - Miss from cloudfront
+      content-length:
+      - '1440'
+      server:
+      - openresty
+      set-cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Sat, 16-Aug-2025 13:18:16 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      vary:
+      - Accept-Encoding
+      x-flickr-api-request:
+      - Root=1-6878f818-67f463280db4e5602124ff04
+      x-robots-tag:
+      - noindex
+      x-server:
+      - serverless-proxy-10.78.4.192
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -2,6 +2,7 @@
 Methods for getting information about users from the Flickr API.
 """
 
+import typing
 from xml.etree import ElementTree as ET
 
 from flickr_url_parser import NotAFlickrUrl, UnrecognisedUrl, parse_flickr_url
@@ -32,18 +33,9 @@ class UserMethods(FlickrApi):
         This function will resolve the two parameters down to a single
         unambiguous ID which can be passed to the Flickr API.
         """
-        # Check we got exactly one of `user_id` and `user_url`
+        # Check we got at least one of `user_id` and `user_url`
         if user_id is None and user_url is None:
             raise TypeError("You must pass one of `user_id` or `user_url`!")
-
-        if user_id is not None and user_url is not None:
-            raise TypeError("You can only pass one of `user_id` and `user_url`!")
-
-        # If we got a `user_id`, we're done
-        if user_id is not None:
-            return user_id
-
-        assert user_url is not None
 
         # Try to parse the user URL as a Flickr URL.  What we're looking
         # to see is whether the URL contains the NSID already, e.g.
@@ -51,24 +43,49 @@ class UserMethods(FlickrApi):
         #
         # If it does, we're done.  If not, we can pass the whole URL to
         # Flickr to see what the NSID is.
-        try:
-            parsed_user_url = parse_flickr_url(user_url)
+        if user_url is None:
+            user_id_from_url = None
+        else:
+            try:
+                parsed_user_url = parse_flickr_url(user_url)
 
-            if parsed_user_url["type"] != "user":
+                if parsed_user_url["type"] != "user":
+                    raise ValueError(
+                        f"user_url was not the URL for a Flickr user: {user_url!r}"
+                    )
+            except (NotAFlickrUrl, UnrecognisedUrl):
                 raise ValueError(
                     f"user_url was not the URL for a Flickr user: {user_url!r}"
                 )
-        except (NotAFlickrUrl, UnrecognisedUrl):
+
+            if parsed_user_url["user_id"]:
+                user_id_from_url = parsed_user_url["user_id"]
+            else:
+                user_id_from_url = self._lookup_user_id_for_user_url(user_url=user_url)
+
+        # Case 1: we got both a `user_id` and `user_url`, and they point
+        # to the same user ID.
+        if (
+            user_id is not None
+            and user_id_from_url is not None
+            and user_id == user_id_from_url
+        ):
+            return user_id
+
+        # Case 2: we got both a `user_id` and `user_url`, and they point
+        # to different user IDs.
+        elif (
+            user_id is not None
+            and user_id_from_url is not None
+            and user_id != user_id_from_url
+        ):
             raise ValueError(
-                f"user_url was not the URL for a Flickr user: {user_url!r}"
+                f"user_url={user_url!r} points to {user_id_from_url!r}, which is different from {user_id!r}"
             )
 
-        assert parsed_user_url["type"] == "user"
-
-        if parsed_user_url["user_id"]:
-            return parsed_user_url["user_id"]
-        else:
-            return self._lookup_user_id_for_user_url(user_url=user_url)
+        # Case 3: we got one of `user_id` or `user_url`
+        assert (user_id is not None) or (user_id_from_url is not None)
+        return typing.cast(str, user_id or user_id_from_url)
 
     def get_user(
         self, *, user_id: str | None = None, user_url: str | None = None
