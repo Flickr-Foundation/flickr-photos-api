@@ -2,7 +2,6 @@
 Methods for getting information about a single photo in the Flickr API.
 """
 
-import typing
 from xml.etree import ElementTree as ET
 
 from flickr_url_parser import looks_like_flickr_photo_id
@@ -18,7 +17,6 @@ from ..models import (
     GalleryContext,
     GroupContext,
     Location,
-    MediaType,
     Note,
     Person,
     PhotoContext,
@@ -39,6 +37,7 @@ from ..parsers import (
     parse_timestamp,
     parse_safety_level,
 )
+from ..xml_helpers import attrib_flag, attrib_str, parse_media_type
 
 
 class SinglePhotoMethods(LicenseMethods):
@@ -111,7 +110,7 @@ class SinglePhotoMethods(LicenseMethods):
         count_comments = int(find_required_text(photo_elem, path="comments"))
         count_views = int(photo_elem.attrib["views"])
 
-        rotation = parse_rotation(photo_elem.attrib["rotation"])
+        rotation = parse_rotation(attrib_str(photo_elem, "rotation", default="0"))
 
         # The originalformat parameter will only be returned if the user
         # allows downloads of the photo.
@@ -227,9 +226,9 @@ class SinglePhotoMethods(LicenseMethods):
         #
         visibility_elem = find_required_elem(photo_elem, path="visibility")
         visibility: Visibility = {
-            "is_public": visibility_elem.attrib["ispublic"] == "1",
-            "is_friend": visibility_elem.attrib["isfriend"] == "1",
-            "is_family": visibility_elem.attrib["isfamily"] == "1",
+            "is_public": attrib_flag(visibility_elem, "ispublic"),
+            "is_friend": attrib_flag(visibility_elem, "isfriend"),
+            "is_family": attrib_flag(visibility_elem, "isfamily"),
         }
 
         # Get editability information about the photo.
@@ -242,14 +241,14 @@ class SinglePhotoMethods(LicenseMethods):
         # fmt: off
         editability_elem = find_required_elem(photo_elem, path="editability")
         editability: Editability = {
-            "can_comment":  editability_elem.attrib["cancomment"] == "1",
-            "can_add_meta": editability_elem.attrib["canaddmeta"] == "1",
+            "can_comment": attrib_flag(editability_elem, "cancomment"),
+            "can_add_meta": attrib_flag(editability_elem, "canaddmeta"),
         }
 
         public_editability_elem = find_required_elem(photo_elem, path="publiceditability")
         public_editability: Editability = {
-            "can_comment":  public_editability_elem.attrib["cancomment"] == "1",
-            "can_add_meta": public_editability_elem.attrib["canaddmeta"] == "1",
+            "can_comment": attrib_flag(public_editability_elem, "cancomment"),
+            "can_add_meta": attrib_flag(public_editability_elem, "canaddmeta"),
         }
         # fmt: on
 
@@ -262,10 +261,10 @@ class SinglePhotoMethods(LicenseMethods):
         # fmt: off
         usage_elem = find_required_elem(photo_elem, path="usage")
         usage: Usage = {
-            "can_download": usage_elem.attrib["candownload"] == "1",
-            "can_blog":     usage_elem.attrib["canblog"]     == "1",
-            "can_print":    usage_elem.attrib["canprint"]    == "1",
-            "can_share":    usage_elem.attrib["canshare"]    == "1",
+            "can_download": attrib_flag(usage_elem, "candownload"),
+            "can_blog": attrib_flag(usage_elem, "canblog"),
+            "can_print": attrib_flag(usage_elem, "canprint"),
+            "can_share": attrib_flag(usage_elem, "canshare"),
         }
         # fmt: on
 
@@ -276,10 +275,9 @@ class SinglePhotoMethods(LicenseMethods):
         #     <people haspeople="1"/>
         #
         people_elem = find_required_elem(photo_elem, path="people")
-        has_people = people_elem.attrib["haspeople"] == "1"
+        has_people = attrib_flag(people_elem, "haspeople")
 
-        assert photo_elem.attrib["media"] in {"photo", "video"}
-        media_type = typing.cast(MediaType, photo_elem.attrib["media"])
+        media_type = parse_media_type(attrib_str(photo_elem, "media", default="photo"))
 
         return {
             "id": photo_id,

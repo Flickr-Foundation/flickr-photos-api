@@ -3,6 +3,8 @@ Tests for ``flickr_api.api.single_photo_methods``.
 """
 
 from datetime import datetime, timezone
+from unittest.mock import patch
+from xml.etree import ElementTree as ET
 
 import pytest
 
@@ -716,3 +718,126 @@ class TestGetExif:
         """
         with pytest.raises(ResourceNotFound):
             flickr_api.get_exif_tags_for_photo(photo_id=photo_id)
+
+
+def _minimal_get_info_xml(*, usage_attributes: str, rotation: str = "180") -> str:
+    """Build a minimal ``flickr.photos.getInfo`` XML response for unit tests."""
+    return f"""\
+<?xml version="1.0" encoding="utf-8" ?>
+<rsp stat="ok">
+<photo id="53240138684" secret="84874746d5" server="65535" farm="66"
+       dateuploaded="1696652280" isfavorite="0" license="0" safety_level="0"
+       rotation="{rotation}" views="312" media="photo">
+    <owner nsid="28724605@N05" username="Mary Faith." realname="" location=""
+           iconserver="65535" iconfarm="66" path_alias="mary_faith" />
+    <title>Perfect Petals</title>
+    <description />
+    <visibility ispublic="1" isfriend="0" isfamily="0" />
+    <dates posted="1696652280" taken="2023-10-07 14:46:48" takengranularity="0"
+           takenunknown="0" lastupdate="1704952435" />
+    <editability cancomment="0" canaddmeta="0" />
+    <publiceditability cancomment="1" canaddmeta="1" />
+    <usage {usage_attributes} />
+    <comments>0</comments>
+    <notes />
+    <people haspeople="0" />
+    <tags />
+    <urls>
+        <url type="photopage">https://www.flickr.com/photos/mary_faith/53240138684/</url>
+    </urls>
+</photo>
+</rsp>
+"""
+
+
+_USAGE_FIELD_BY_XML_ATTR = {
+    "candownload": "can_download",
+    "canblog": "can_blog",
+    "canprint": "can_print",
+    "canshare": "can_share",
+}
+
+_LICENSE_INFO = {
+    "id": "all-rights-reserved",
+    "label": "All Rights Reserved",
+    "url": "https://www.flickr.com/help/forum/en-us/72157618475218805/",
+}
+
+
+class TestParseSinglePhotoInfo:
+    """
+    Tests for lenient parsing of ``flickr.photos.getInfo`` responses.
+    """
+
+    def test_missing_canprint_in_usage(self, flickr_api: FlickrApi) -> None:
+        """
+        Flickr sometimes omits ``canprint`` from the usage block in getInfo.
+        """
+        info_resp = ET.fromstring(
+            _minimal_get_info_xml(
+                usage_attributes='candownload="1" canblog="0" canshare="1"'
+            )
+        )
+
+        with patch.object(
+            flickr_api, "lookup_license_by_id", return_value=_LICENSE_INFO
+        ):
+            info = flickr_api.parse_single_photo_info(info_resp, photo_id="53240138684")
+
+        assert info["usage"]["can_print"] is False
+        assert info["usage"]["can_download"] is True
+
+    @pytest.mark.parametrize(
+        "missing_key",
+        ["candownload", "canblog", "canprint", "canshare"],
+    )
+    def test_missing_each_usage_attribute(
+        self, flickr_api: FlickrApi, missing_key: str
+    ) -> None:
+        """
+        Each usage flag defaults to off when Flickr omits it.
+        """
+        attrs = {
+            "candownload": "1",
+            "canblog": "0",
+            "canprint": "0",
+            "canshare": "1",
+        }
+        del attrs[missing_key]
+        usage_attributes = " ".join(f'{key}="{value}"' for key, value in attrs.items())
+
+        info_resp = ET.fromstring(
+            _minimal_get_info_xml(usage_attributes=usage_attributes)
+        )
+        with patch.object(
+            flickr_api, "lookup_license_by_id", return_value=_LICENSE_INFO
+        ):
+            info = flickr_api.parse_single_photo_info(info_resp, photo_id="53240138684")
+
+        field = _USAGE_FIELD_BY_XML_ATTR[missing_key]
+        if field == "can_download":
+            assert info["usage"]["can_download"] is False
+        elif field == "can_blog":
+            assert info["usage"]["can_blog"] is False
+        elif field == "can_print":
+            assert info["usage"]["can_print"] is False
+        else:
+            assert info["usage"]["can_share"] is False
+
+    def test_unknown_rotation_defaults_to_zero(self, flickr_api: FlickrApi) -> None:
+        """
+        An unrecognised rotation value should not break parsing.
+        """
+        info_resp = ET.fromstring(
+            _minimal_get_info_xml(
+                usage_attributes='candownload="1" canblog="0" canprint="0" canshare="1"',
+                rotation="45",
+            )
+        )
+
+        with patch.object(
+            flickr_api, "lookup_license_by_id", return_value=_LICENSE_INFO
+        ):
+            info = flickr_api.parse_single_photo_info(info_resp, photo_id="53240138684")
+
+        assert info["rotation"] == 0

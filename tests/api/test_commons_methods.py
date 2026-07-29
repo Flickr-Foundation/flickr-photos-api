@@ -3,8 +3,10 @@ Tests for ``flickr_api.api.commons_methods``.
 """
 
 from datetime import datetime, timezone
+from xml.etree import ElementTree as ET
 
 from flickr_api import FlickrApi
+from flickr_api.api.commons_methods import FlickrCommonsMethods
 
 
 class TestCommonsMethods:
@@ -44,3 +46,55 @@ class TestCommonsMethods:
         assert belleville["date_launch"] == datetime(
             2024, 10, 30, 19, 14, 23, tzinfo=timezone.utc
         )
+
+    def test_empty_license_url_does_not_abort_list(self) -> None:
+        """
+        An empty license URL is returned as ``""``; other institutions
+        in the same response are still returned.
+        """
+        xml = """
+        <rsp stat="ok">
+          <institutions>
+            <institution nsid="111@N00" date_launch="1722472152">
+              <name>Empty License Org</name>
+              <urls>
+                <url type="site">https://example.org/</url>
+                <url type="license"></url>
+              </urls>
+            </institution>
+            <institution nsid="222@N00" date_launch="1200470400">
+              <name>Has License Org</name>
+              <urls>
+                <url type="site">https://example.com/</url>
+                <url type="license">https://example.com/license</url>
+              </urls>
+            </institution>
+          </institutions>
+        </rsp>
+        """
+
+        class StubApi(FlickrCommonsMethods):
+            def call(self, *args: object, **kwargs: object) -> ET.Element:
+                return ET.fromstring(xml)
+
+            def fetch_raw_api_response(self, *args: object, **kwargs: object) -> object:
+                raise NotImplementedError
+
+        institutions = StubApi().list_commons_institutions()
+
+        assert institutions == [
+            {
+                "user_id": "111@N00",
+                "date_launch": datetime(2024, 8, 1, 0, 29, 12, tzinfo=timezone.utc),
+                "name": "Empty License Org",
+                "site_url": "https://example.org/",
+                "license_url": "",
+            },
+            {
+                "user_id": "222@N00",
+                "date_launch": datetime(2008, 1, 16, 8, 0, 0, tzinfo=timezone.utc),
+                "name": "Has License Org",
+                "site_url": "https://example.com/",
+                "license_url": "https://example.com/license",
+            },
+        ]
