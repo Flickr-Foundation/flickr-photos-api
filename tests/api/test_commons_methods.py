@@ -3,6 +3,7 @@ Tests for ``flickr_api.api.commons_methods``.
 """
 
 from datetime import datetime, timezone
+from unittest.mock import MagicMock
 from xml.etree import ElementTree as ET
 
 from flickr_api import FlickrApi
@@ -72,15 +73,10 @@ class TestCommonsMethods:
           </institutions>
         </rsp>
         """
+        api = MagicMock()
+        api.call.return_value = ET.fromstring(xml)
 
-        class StubApi(FlickrCommonsMethods):
-            def call(self, *args: object, **kwargs: object) -> ET.Element:
-                return ET.fromstring(xml)
-
-            def fetch_raw_api_response(self, *args: object, **kwargs: object) -> object:
-                raise NotImplementedError
-
-        institutions = StubApi().list_commons_institutions()
+        institutions = FlickrCommonsMethods.list_commons_institutions(api)
 
         assert institutions == [
             {

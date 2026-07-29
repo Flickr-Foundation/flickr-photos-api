@@ -24,7 +24,9 @@ def test_check_for_oauth_token_raises_for_invalid_token_response() -> None:
         }
     }
 
-    with pytest.raises(RuntimeError, match="Pass OAuth credentials in the following env vars"):
+    with pytest.raises(
+        RuntimeError, match="Pass OAuth credentials in the following env vars"
+    ):
         check_for_oauth_token(response)
 
 
@@ -45,7 +47,9 @@ def test_check_for_oauth_token_raises_for_invalid_api_key_with_placeholder_crede
         }
     }
 
-    with pytest.raises(RuntimeError, match="Pass OAuth credentials in the following env vars"):
+    with pytest.raises(
+        RuntimeError, match="Pass OAuth credentials in the following env vars"
+    ):
         check_for_oauth_token(response)
 
 
