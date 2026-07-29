@@ -101,6 +101,16 @@ def flickr_api(cassette_name: str) -> Iterator[FlickrApi]:
         yield FlickrApi(client)
 
 
+def _using_placeholder_oauth_credentials() -> bool:
+    """
+    Return True if the test is using the default placeholder OAuth credentials.
+    """
+    return (
+        os.environ.get("FLICKR_CLIENT_KEY", "CLIENT_KEY") == "CLIENT_KEY"
+        and os.environ.get("FLICKR_OAUTH_TOKEN", "OAUTH_TOKEN") == "OAUTH_TOKEN"
+    )
+
+
 def check_for_oauth_token(response: typing.Any) -> typing.Any:
     """
     Before we record a new response to a cassette, check if it's
@@ -109,19 +119,34 @@ def check_for_oauth_token(response: typing.Any) -> typing.Any:
 
     If so, give the developer an instruction explaining what to do next.
     """
+    from xml.etree import ElementTree as ET
+
     try:
         body: bytes = response["body"]["string"]
     except KeyError:  # pragma: no cover
         body = response["content"]
 
-    is_error_response = body == (
+    is_invalid_token_response = body == (
         b'<?xml version="1.0" encoding="utf-8" ?>\n'
         b'<rsp stat="fail">\n\t<err code="98" msg="Invalid auth token" />\n</rsp>'
         b"\n"
     )
+    is_auth_failure_with_placeholder_credentials = False
+    if _using_placeholder_oauth_credentials():
+        try:
+            xml = ET.fromstring(body)
+            if xml.attrib.get("stat") == "fail":
+                err = xml.find("err")
+                if err is not None and err.attrib.get("code") in {"98", "100", "105"}:
+                    is_auth_failure_with_placeholder_credentials = True
+        except ET.ParseError:
+            pass
+
     skip_invalid_api_key_check = os.environ.get("SKIP_INVALID_API_KEY_CHECK") == "true"
 
-    if is_error_response and not skip_invalid_api_key_check:
+    if (
+        is_invalid_token_response or is_auth_failure_with_placeholder_credentials
+    ) and not skip_invalid_api_key_check:
         raise RuntimeError(
             "You tried to record a new call to the Flickr API, \n"
             "but the tests didn't get a valid OAuth credentials.\n"

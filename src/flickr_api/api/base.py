@@ -62,6 +62,19 @@ class FlickrApi(abc.ABC):
         """
         raise NotImplementedError
 
+    @abc.abstractmethod
+    def fetch_raw_api_response(
+        self,
+        *,
+        http_method: HttpMethod = "GET",
+        method: str,
+        params: Mapping[str, str | int] | None = None,
+    ) -> str:
+        """
+        Fetch the raw text of a Flickr API response without parsing it as XML.
+        """
+        raise NotImplementedError
+
 
 class HttpxImplementation(FlickrApi):
     """
@@ -203,3 +216,24 @@ class HttpxImplementation(FlickrApi):
                 raise UnrecognisedFlickrApiException(errors) from None
 
         return xml
+
+    def fetch_raw_api_response(
+        self,
+        *,
+        http_method: HttpMethod = "GET",
+        method: str,
+        params: Mapping[str, str | int] | None = None,
+    ) -> str:
+        """
+        Fetch the raw text of a Flickr API response without parsing it as XML.
+        """
+        if params is not None:
+            req_params: dict[str, str | int] = {"method": method, **params}
+        else:
+            req_params = {"method": method}
+
+        resp = self.client.request(
+            method=http_method, url="", params=req_params, timeout=15
+        )
+        resp.raise_for_status()
+        return str(resp.text)

@@ -53,8 +53,12 @@ class FlickrCommonsMethods(FlickrApi):
             name = find_required_text(institution_elem, path="name")
 
             site_url = find_optional_text(institution_elem, path='.//url[@type="site"]')
-            license_url = find_required_text(
-                institution_elem, path='.//url[@type="license"]'
+            # Some Commons members (especially newly launched ones) have an
+            # empty <url type="license">.  Treat that like a missing site URL
+            # rather than aborting the whole list.
+            license_url = (
+                find_optional_text(institution_elem, path='.//url[@type="license"]')
+                or ""
             )
 
             institution: CommonsInstitution = {

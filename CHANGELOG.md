@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v3.13.0 - 2026-07-03
+
+Relax XML parsing for incomplete Flickr API responses:
+
+*   ``parse_single_photo_info()`` defaults missing permission attributes on ``<usage>``, ``<editability>``, ``<publiceditability>``, ``<visibility>``, and ``<people>`` nodes
+*   Unknown ``media`` and ``rotation`` values log a warning and use safe defaults
+*   ``list_all_comments()`` defaults missing comment attributes and retries with sanitized XML when Flickr embeds illegal control characters
+*   ``list_commons_institutions()`` treats an empty or missing license URL as ``""`` instead of raising, so one incomplete Commons member no longer blocks the whole list
+
 ## v3.12.1 - 2025-07-17
 
 Allow passing both `user_id` and `user_url` to user-related methods; previously you were only allowed to pass one.

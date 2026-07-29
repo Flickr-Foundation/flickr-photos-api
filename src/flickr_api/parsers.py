@@ -4,6 +4,7 @@ Convert values from the Flickr API into nicely-typed values.
 
 import collections
 from datetime import datetime, timezone
+import logging
 import re
 import typing
 from xml.etree import ElementTree as ET
@@ -21,6 +22,8 @@ from .models import (
     TakenGranularity,
     User,
 )
+
+logger = logging.getLogger(__name__)
 
 
 __all__ = [
@@ -357,7 +360,8 @@ def parse_rotation(rs: str) -> Rotation:
     """
     Given a raw rotation value from Flickr, turn it into a rotation.
     """
-    if rs not in {"0", "90", "180", "270"}:  # pragma: no cover
-        raise ValueError(f"Unrecognised rotation value: {rs!r}")
+    if rs in {"0", "90", "180", "270"}:
+        return typing.cast(Rotation, int(rs))
 
-    return typing.cast(Rotation, int(rs))
+    logger.warning("Unrecognised rotation value %r; defaulting to 0", rs)
+    return 0

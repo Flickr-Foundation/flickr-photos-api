@@ -214,6 +214,16 @@ class TestGetUser:
                     {"code": "6", "msg": "Mysterious error"}
                 )
 
+            def fetch_raw_api_response(
+                self,
+                *,
+                http_method: typing.Any = None,
+                method: str,
+                params: Mapping[str, str | int] | None = None,
+            ) -> str:
+                """Broken APIs do not support raw response fetches."""
+                raise NotImplementedError
+
         api = BrokenApi()
 
         with pytest.raises(UnrecognisedFlickrApiException):

@@ -3,10 +3,14 @@ Tests for ``flickr_api.api.comment_methods``.
 """
 
 from authlib.integrations.httpx_client import OAuth1Client
+from unittest.mock import MagicMock
+
 import httpx
 import pytest
+from tenacity import RetryError
 
 from flickr_api import FlickrApi, InsufficientPermissionsToComment
+from flickr_api.exceptions import InvalidXmlException
 
 
 class TestListAllComments:
@@ -51,6 +55,195 @@ class TestListAllComments:
         comments = flickr_api.list_all_comments(photo_id="40373414385")
 
         assert comments[0]["author"]["realname"] is None
+
+    def test_list_comments_with_illegal_xml_char(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        Comment bodies with illegal XML control characters are sanitized.
+        """
+        bad_xml = (
+            '<?xml version="1.0" encoding="utf-8" ?>'
+            '<rsp stat="ok"><comments page="1" pages="1" perpage="1000" total="1">'
+            '<comment id="1" author="35468159852@N01" authorname="Rev Dan Catt"'
+            ' realname="Daniel Catt" datecreate="1141841470"'
+            ' permalink="http://www.flickr.com/photos/example/1" path_alias=""'
+            ' author_is_deleted="0">hello\x14world</comment>'
+            "</comments></rsp>"
+        )
+
+        def mock_call(*args: object, **kwargs: object) -> None:
+            """Simulate malformed XML from the Flickr comments API."""
+            raise InvalidXmlException("bad xml")
+
+        monkeypatch.setattr(flickr_api, "call", mock_call)
+        monkeypatch.setattr(
+            flickr_api,
+            "fetch_raw_api_response",
+            lambda *, method, params: bad_xml,
+        )
+
+        comments = flickr_api.list_all_comments(photo_id="53373661077")
+
+        assert len(comments) == 1
+        assert comments[0]["text"] == "helloworld"
+
+    def test_returns_empty_list_when_xml_still_invalid_after_sanitization(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        If sanitization cannot produce parseable XML, return no comments.
+        """
+
+        def mock_call(*args: object, **kwargs: object) -> None:
+            """Simulate malformed XML from the Flickr comments API."""
+            raise InvalidXmlException("bad xml")
+
+        monkeypatch.setattr(flickr_api, "call", mock_call)
+        monkeypatch.setattr(
+            flickr_api,
+            "fetch_raw_api_response",
+            lambda *, method, params: "not xml at all",
+        )
+
+        comments = flickr_api.list_all_comments(photo_id="53373661077")
+
+        assert comments == []
+
+    def test_returns_empty_list_when_sanitized_response_is_api_failure(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        Unrecognised Flickr API errors after sanitization return no comments.
+        """
+        fail_xml = (
+            '<?xml version="1.0" encoding="utf-8" ?>'
+            '<rsp stat="fail"><err code="999" msg="Unknown error" /></rsp>'
+        )
+
+        def mock_call(*args: object, **kwargs: object) -> None:
+            """Simulate malformed XML from the Flickr comments API."""
+            raise InvalidXmlException("bad xml")
+
+        monkeypatch.setattr(flickr_api, "call", mock_call)
+        monkeypatch.setattr(
+            flickr_api,
+            "fetch_raw_api_response",
+            lambda *, method, params: fail_xml,
+        )
+
+        comments = flickr_api.list_all_comments(photo_id="53373661077")
+
+        assert comments == []
+
+    def test_list_comments_after_retry_error_with_invalid_xml(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        Retryable ``InvalidXmlException`` errors fall back to sanitized parsing.
+        """
+        bad_xml = (
+            '<?xml version="1.0" encoding="utf-8" ?>'
+            '<rsp stat="ok"><comments page="1" pages="1" perpage="1000" total="1">'
+            '<comment id="1" author="35468159852@N01" authorname="a"'
+            ' realname="" datecreate="1141841470"'
+            ' permalink="http://www.flickr.com/photos/example/1" path_alias=""'
+            ' author_is_deleted="0">ok</comment>'
+            "</comments></rsp>"
+        )
+        attempt = MagicMock()
+        attempt.exception.return_value = InvalidXmlException("bad xml")
+
+        def mock_call(*args: object, **kwargs: object) -> None:
+            """Simulate a retried Flickr API call that still has invalid XML."""
+            raise RetryError(attempt)
+
+        monkeypatch.setattr(flickr_api, "call", mock_call)
+        monkeypatch.setattr(
+            flickr_api,
+            "fetch_raw_api_response",
+            lambda *, method, params: bad_xml,
+        )
+
+        comments = flickr_api.list_all_comments(photo_id="53373661077")
+
+        assert len(comments) == 1
+        assert comments[0]["text"] == "ok"
+
+    def test_list_comments_reraises_retry_error_for_non_xml_cause(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        ``RetryError`` causes other than ``InvalidXmlException`` are re-raised.
+        """
+        attempt = MagicMock()
+        attempt.exception.return_value = ValueError("transient error")
+
+        def mock_call(*args: object, **kwargs: object) -> None:
+            """Simulate a retried Flickr API call that failed for another reason."""
+            raise RetryError(attempt)
+
+        monkeypatch.setattr(flickr_api, "call", mock_call)
+
+        with pytest.raises(RetryError):
+            flickr_api.list_all_comments(photo_id="53373661077")
+
+
+class TestFetchRawApiResponse:
+    """
+    Tests for ``FlickrApi.fetch_raw_api_response()``.
+    """
+
+    def test_returns_raw_xml(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        The raw response body can be fetched without parsing it as XML.
+        """
+        captured_params: dict[str, object] = {}
+
+        def mock_request(
+            *, method: str, url: str, params: dict[str, object], timeout: int
+        ) -> httpx.Response:
+            """Record the request params and return a fake response."""
+            captured_params.update(params)
+            request = httpx.Request(method, "https://api.flickr.com/services/rest/")
+            return httpx.Response(
+                200,
+                text='<?xml version="1.0" ?><rsp stat="ok"><echo>hello</echo></rsp>',
+                request=request,
+            )
+
+        monkeypatch.setattr(flickr_api.client, "request", mock_request)
+
+        raw = flickr_api.fetch_raw_api_response(
+            method="flickr.test.echo", params={"name": "hello"}
+        )
+
+        assert 'stat="ok"' in raw
+        assert captured_params == {"method": "flickr.test.echo", "name": "hello"}
+
+    def test_returns_raw_xml_without_extra_params(
+        self, flickr_api: FlickrApi, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """
+        ``fetch_raw_api_response`` works when no extra params are passed.
+        """
+        captured_params: dict[str, object] = {}
+
+        def mock_request(
+            *, method: str, url: str, params: dict[str, object], timeout: int
+        ) -> httpx.Response:
+            """Record the request params and return a fake response."""
+            captured_params.update(params)
+            request = httpx.Request(method, "https://api.flickr.com/services/rest/")
+            return httpx.Response(200, text='<rsp stat="ok"/>', request=request)
+
+        monkeypatch.setattr(flickr_api.client, "request", mock_request)
+
+        flickr_api.fetch_raw_api_response(method="flickr.test.echo")
+
+        assert captured_params == {"method": "flickr.test.echo"}
 
 
 class TestPostComment:
